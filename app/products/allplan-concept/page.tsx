@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import { Check } from "lucide-react";
 import VideoModal from "@/components/VideoModal";
+import CloudServicesSection from "@/components/CloudServicesSection";
 
 import workWayWantIcon from "@/assets/products/allplan-concept/work-way-want.png";
 import powerfulModelingIcon from "@/assets/products/allplan-concept/powerful-modeling.png";
@@ -28,15 +29,6 @@ import urbanLandscapeRemote from "@/assets/products/allplan-concept/remote/10_ur
 import sewerageUtilitiesRemote from "@/assets/products/allplan-concept/remote/11_sewerage_utilities.jpg";
 import quantityTakeoffRemote from "@/assets/products/allplan-concept/remote/12_quantity_takeoff_costing.jpg";
 import visualizationRemote from "@/assets/products/allplan-concept/remote/visualization.jpg";
-import projectTeamworkingRemote from "@/assets/products/allplan-concept/remote/cloud/15_project_teamworking.jpg";
-import drawingPlanDistributionRemote from "@/assets/products/allplan-concept/remote/cloud/16_drawing_plan_distribution.jpg";
-import analyticalModelGenerationRemote from "@/assets/products/allplan-concept/remote/cloud/17_analytical_model_generation.jpg";
-import workgroupManagerRemote from "@/assets/products/allplan-concept/remote/cloud/workgroup_manager.jpg";
-import cloudEnabledProjectResourcesRemote from "@/assets/products/allplan-concept/remote/cloud/cloud_enabled_project_resources.jpg";
-import allplanModelViewerRemote from "@/assets/products/allplan-concept/remote/cloud/allplan_model_viewer.jpg";
-import cloudBasedCollaborationOverlay from "@/assets/products/allplan-concept/remote/cloud/cloud_based_collaboration.jpg";
-import designCheckingOverlay from "@/assets/products/allplan-concept/remote/cloud/design_checking.jpg";
-import bluebeamConnectionOverlay from "@/assets/products/allplan-concept/remote/cloud/bluebeam_connection.jpg";
 
 interface FeatureItem {
   title: string;
@@ -67,18 +59,6 @@ const coreFeatures: FeatureItem[] = [
   { title: "Kanalizasyon ve Altyapı", description: "Su, atık su, elektrik, internet, doğalgaz veya merkezi ısıtma gibi hizmetlerin yönlendirilmesi.", image: sewerageUtilitiesRemote },
   { title: "Miktar Hesaplama ve Maliyetlendirme", description: "Modelleme yapılmış ve yapılmamış nesnelerin hassas ve doğrulanabilir miktar hesaplaması ile maliyetlendirilmesi.", youtubeId: "toZosw6NtMQ", image: quantityTakeoffRemote },
   { title: "Görselleştirme", description: "Vulkan gibi en son teknolojilere dayanan geniş bir görselleştirme yetenekleri yelpazesi. Gerçek zamanlı render ve CineWare'ı içerir, ayrıca Lumion ve Twinmotion ile canlı bağlantılar sunar.", youtubeId: "IqNuiMaveas", image: visualizationRemote },
-];
-
-const cloudServices: FeatureItem[] = [
-  { title: "Bulut Tabanlı İşbirliği", description: "Bimplus Pro, bulut tabanlı BIM işbirliği platformu.", youtubeId: "7xzpEhLQhEI", image: cloudBasedCollaborationOverlay },
-  { title: "Proje Takım Çalışması", description: "ALLPLAN Share, bir şirket ağı üzerinden ekip çalışmasını sağlar; uzaktan çalışan ekip üyeleri için de idealdir.", image: projectTeamworkingRemote },
-  { title: "Çizim ve Plan Dağıtımı", description: "Çeşitli plan formatlarının oluşturulmasını ve dağıtımını yönetmek için özel olarak tasarlanmış web tabanlı plan dağıtım aracı ALLPLAN Exchange, ayrıca e-posta grupları aracılığıyla otomatik değişiklik bildirimleri sağlar.", image: drawingPlanDistributionRemote },
-  { title: "Analitik Model Üretimi", description: "AutoConverter aracılığıyla geometrik modellerin, Frilo Statics, Scia Engineer gibi yapısal analiz çözümleri tarafından doğrudan kullanılabilen analitik modellere akıllı bir şekilde dönüştürülmesi.", image: analyticalModelGenerationRemote },
-  { title: "Tasarım Kontrolü", description: "Solibri Inside, kullanıcı istediği zaman ALLPLAN modellerinde kontroller gerçekleştirebilir; bu, ALLPLAN içindeki BIM Explorer'dan palet benzeri bir işlevsellik kullanarak yapılır. (ALLPLAN Abonelik lisansı ile birlikte 12 aylık Solibri Inside aboneliği dahildir.)", youtubeId: "t4axrE0TWO4", image: designCheckingOverlay },
-  { title: "Ofis Ekip Çalışması", description: "ALLPLAN Çalışma Grubu Yöneticisi aracılığıyla yerel bir şirket ağı içinde verimli ekip çalışmasını kolaylaştırın.", image: workgroupManagerRemote },
-  { title: "Bulut Destekli Proje Kaynakları", description: "Bulut ofis kaynakları, ALLPLAN proje kaynaklarının tamamen bulut tabanlı dağıtımını sağlar.", image: cloudEnabledProjectResourcesRemote },
-  { title: "ALLPLAN Model Viewer", description: "Yeni bir dosyayı hızlıca önizlemek, IFC modellerini görsel olarak görüntülemek ve tam olarak yüklemeden önce kontrol etmek için kullanılır. (Sadece ALLPLAN Aboneliği veya Bimplus Professional satın alımı ile kullanılabilir.)", image: allplanModelViewerRemote },
-  { title: "ALLPLAN - Bluebeam Bağlantısı", description: "Geliştirilmiş iş akışları – dijital teslim sürecine yardımcı olmak için Bluebeam ile bağlantı kuracağız. Kullanıcılar, Bluebeam Studio Proje ortamından ALLPLAN iş akışlarına 2D belgeleri kolayca aktarabilecekler.", youtubeId: "u4GZUL7WdQU", image: bluebeamConnectionOverlay },
 ];
 
 const purchaseOptions: FeatureItem[] = [
@@ -198,16 +178,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12"><h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">ALLPLAN Bulut Hizmetleri</h2></div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">{cloudServices.map((service, index) => (<FeatureCard key={index} feature={service} />))}</div>
-          <div className="text-center mt-12">
-            <p className="text-muted-foreground mb-6">İşbirliğinizi bir üst seviyeye taşıyan araçlara anında erişim imkanı sağlayın.</p>
-            <Button asChild><Link href="/solutions/allplan-bulut-hizmetleri">ALLPLAN Bulut Hizmetleri</Link></Button>
-          </div>
-        </div>
-      </section>
+      <CloudServicesSection />
 
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
