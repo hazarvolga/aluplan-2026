@@ -48,6 +48,11 @@ export const metadata: Metadata = {
     description: "Mimarlık, mühendislik ve inşaat sektörü için premium yazılım çözümleri.",
     siteName: "Aluplan",
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Aluplan - Premium Mühendislik Çözümleri',
+    description: 'Mimarlık, mühendislik ve inşaat sektörü için premium yazılım çözümleri.',
+  },
   robots: {
     index: true,
     follow: true,

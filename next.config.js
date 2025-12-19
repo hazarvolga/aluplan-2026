@@ -4,7 +4,9 @@ const nextConfig = {
   output: "standalone",
   reactStrictMode: true,
   images: {
-    // unoptimized: true, // Disabled to enable Next.js Image Optimization
+    formats: ['image/avif', 'image/webp'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256],
     remotePatterns: [
       {
         protocol: 'https',
@@ -12,7 +14,7 @@ const nextConfig = {
         port: '',
         pathname: '/wp-content/uploads/**'
       }
-      ,{
+      , {
         protocol: 'https',
         hostname: 'addon.aluplan.com.tr',
         port: '',
@@ -35,15 +37,23 @@ const nextConfig = {
           },
           {
             key: 'X-Frame-Options',
-            value: 'SAMEORIGIN'
+            value: 'DENY'
           },
           {
             key: 'X-Content-Type-Options',
             value: 'nosniff'
           },
           {
+            key: 'X-XSS-Protection',
+            value: '1; mode=block'
+          },
+          {
             key: 'Referrer-Policy',
-            value: 'origin-when-cross-origin'
+            value: 'strict-origin-when-cross-origin'
+          },
+          {
+            key: 'Permissions-Policy',
+            value: 'camera=(), microphone=(), geolocation=()'
           }
         ]
       }
@@ -89,7 +99,7 @@ const nextConfig = {
         destination: '/solutions/addons/drive-curve',
         permanent: true,
       },
-      
+
 
     ]
   },

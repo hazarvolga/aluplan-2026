@@ -212,15 +212,24 @@ const ProductPageTemplate = ({
             {heroImage && (
               <div className="relative">
                 {typeof heroImage === 'string' ? (
-                   <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl">
-                     <Image src={heroImage.startsWith('http') ? '/placeholder.svg' : heroImage} alt={title} fill className="object-cover" />
-                   </div>
+                  <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl">
+                    <Image
+                      src={heroImage.startsWith('http') ? '/placeholder.svg' : heroImage}
+                      alt={title}
+                      fill
+                      className="object-cover"
+                      priority
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
                 ) : (
-                   <Image
-                     src={heroImage}
-                     alt={title}
-                     className="rounded-2xl shadow-2xl w-full h-auto"
-                   />
+                  <Image
+                    src={heroImage}
+                    alt={title}
+                    className="rounded-2xl shadow-2xl w-full h-auto"
+                    priority
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 )}
               </div>
             )}

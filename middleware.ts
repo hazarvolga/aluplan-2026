@@ -30,6 +30,7 @@ export function middleware(req: NextRequest) {
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: https:",
       "font-src 'self' data:",
+      "media-src 'self' https:",
       "frame-src https:",
       "connect-src 'self' https:",
     ].join("; ")

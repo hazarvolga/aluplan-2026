@@ -17,7 +17,7 @@ const Header = () => {
     setLanguage(language === "tr" ? "en" : "tr");
   };
 
-  
+
 
   const productsMenu = [
     {
@@ -65,12 +65,12 @@ const Header = () => {
   ];
 
   const navigation = [
-    { 
-      name: language === "tr" ? "Çözümler" : "Solutions", 
+    {
+      name: language === "tr" ? "Çözümler" : "Solutions",
       megaMenu: "solutions",
     },
-    { 
-      name: language === "tr" ? "Ürünler" : "Products", 
+    {
+      name: language === "tr" ? "Ürünler" : "Products",
       megaMenu: "products",
     },
     { name: language === "tr" ? "Kaynaklar" : "Resources", href: "#resources" },
@@ -92,7 +92,7 @@ const Header = () => {
   };
 
   return (
-    <header 
+    <header
       className="sticky top-0 z-[100] w-full border-b border-white/10 bg-graphite-950 text-white relative"
       onMouseLeave={handleMouseLeave}
     >
@@ -124,7 +124,7 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Image src={logoWhite} alt="Aluplan" height={40} className="h-10 w-auto" />
+            <Image src={logoWhite} alt="Aluplan" height={40} className="h-10 w-auto" priority />
           </Link>
 
           {/* Desktop Navigation */}
@@ -148,9 +148,8 @@ const Header = () => {
                   >
                     {item.name}
                     {item.megaMenu && (
-                      <ChevronDown className={`h-4 w-4 opacity-70 group-hover:opacity-100 transition-all ${
-                        activeMegaMenu === item.megaMenu ? 'rotate-180' : ''
-                      }`} />
+                      <ChevronDown className={`h-4 w-4 opacity-70 group-hover:opacity-100 transition-all ${activeMegaMenu === item.megaMenu ? 'rotate-180' : ''
+                        }`} />
                     )}
                   </button>
                 )}
@@ -169,11 +168,11 @@ const Header = () => {
               <Globe className="h-4 w-4" />
               {language.toUpperCase()}
             </Button>
-            
+
             <Button variant="outline" size="sm" className="hidden sm:inline-flex">
               {language === "tr" ? "Ücretsiz Deneme" : "Free Trial"}
             </Button>
-            
+
             <Button variant="accent" size="sm" className="hidden sm:inline-flex">
               {language === "tr" ? "Teklif Al" : "Get Quote"}
             </Button>
