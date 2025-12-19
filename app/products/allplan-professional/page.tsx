@@ -43,6 +43,14 @@ import licenseServerImg from "@/assets/products/allplan-professional/license-ser
 import bimplusProImg from "@/assets/products/allplan-professional/bimplus-pro.jpg";
 import cloudStorageImg from "@/assets/products/allplan-professional/cloud-storage.jpg";
 
+// Bulut hizmetleri görselleri
+import cloudResourcesImg from "@/assets/products/allplan-professional/cloud-resources.jpg";
+import projectTeamworkImg from "@/assets/products/allplan-professional/project-teamwork.jpg";
+import planDistributionImg from "@/assets/products/allplan-professional/plan-distribution.jpg";
+import analyticalModelImg from "@/assets/products/allplan-professional/analytical-model.jpg";
+import modelViewerImg from "@/assets/products/allplan-professional/model-viewer.jpg";
+import workgroupManagerImg from "@/assets/products/allplan-professional/workgroup-manager.jpg";
+
 interface FeatureItem {
   title: string;
   description: string;
@@ -87,6 +95,18 @@ const purchaseOptions: FeatureItem[] = [
   { title: "Lisans Server", description: "Mevcut lisansların birden fazla kullanıcı tarafından optimal şekilde kullanılmasını sağlar. Ofis dışında lisans kullanımı mümkündür.", image: licenseServerImg },
   { title: "BIMPLUS Pro", description: "Bulut iş birliği kapasitenizi artırmak için ek Bimplus Pro lisansları.", image: bimplusProImg },
   { title: "ALLPLAN Bulut Depolama", description: "Projelerinizin kesintisiz devam etmesini sağlamak için ek depolama alanı.", image: cloudStorageImg },
+];
+
+const cloudServices: FeatureItem[] = [
+  { title: "Bulut Tabanlı İşbirliği", description: "Bimplus Pro, bulut tabanlı BIM işbirliği platformu.", youtubeId: "7xzpEhLQhEI", image: cloudResourcesImg },
+  { title: "Proje Takım Çalışması", description: "ALLPLAN Share, bir şirket ağı üzerinden ekip çalışmasını sağlar; uzaktan çalışan ekip üyeleri için de idealdir.", image: projectTeamworkImg },
+  { title: "Çizim ve Plan Dağıtımı", description: "Çeşitli plan formatlarının oluşturulmasını ve dağıtımını yönetmek için özel olarak tasarlanmış web tabanlı plan dağıtım aracı ALLPLAN Exchange, ayrıca e-posta grupları aracılığıyla otomatik değişiklik bildirimleri sağlar.", image: planDistributionImg },
+  { title: "Analitik Model Üretimi", description: "AutoConverter aracılığıyla geometrik modellerin, Frilo Statics, Scia Engineer gibi yapısal analiz çözümleri tarafından doğrudan kullanılabilen analitik modellere akıllı bir şekilde dönüştürülmesi.", image: analyticalModelImg },
+  { title: "Tasarım Kontrolü", description: "Solibri Inside, kullanıcı istediği zaman ALLPLAN modellerinde kontroller gerçekleştirebilir; bu, ALLPLAN içindeki BIM Explorer'dan palet benzeri bir işlevsellik kullanarak yapılır. (ALLPLAN Abonelik lisansı ile birlikte 12 aylık Solibri Inside aboneliği dahildir.)", youtubeId: "t4axrE0TWO4", image: clashDetectionImg },
+  { title: "Ofis Ekip Çalışması", description: "ALLPLAN Çalışma Grubu Yöneticisi aracılığıyla yerel bir şirket ağı içinde verimli ekip çalışmasını kolaylaştırın.", image: workgroupManagerImg },
+  { title: "Bulut Destekli Proje Kaynakları", description: "Bulut ofis kaynakları, ALLPLAN proje kaynaklarının tamamen bulut tabanlı dağıtımını sağlar.", image: cloudResourcesImg },
+  { title: "ALLPLAN Model Viewer", description: "Yeni bir dosyayı hızlıca önizlemek, IFC modellerini görsel olarak görüntülemek ve tam olarak yüklemeden önce kontrol etmek için kullanılır. (Sadece ALLPLAN Aboneliği veya Bimplus Professional satın alımı ile kullanılabilir.)", image: modelViewerImg },
+  { title: "ALLPLAN - Bluebeam Bağlantısı", description: "Geliştirilmiş iş akışları – dijital teslim sürecine yardımcı olmak için Bluebeam ile bağlantı kuracağız. Kullanıcılar, Bluebeam Studio Proje ortamından ALLPLAN iş akışlarına 2D belgeleri kolayca aktarabilecekler.", youtubeId: "u4GZUL7WdQU", image: bimplusProImg },
 ];
 
 const FeatureCard = ({ feature }: { feature: FeatureItem }) => (
@@ -177,6 +197,20 @@ export default function Page() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {coreFeatures.map((feature, index) => (
               <FeatureCard key={index} feature={feature} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Bulut Hizmetleri Section */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">ALLPLAN Bulut Hizmetleri</h2>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {cloudServices.map((service, index) => (
+              <FeatureCard key={index} feature={service} />
             ))}
           </div>
         </div>
