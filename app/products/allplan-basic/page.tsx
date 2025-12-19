@@ -6,7 +6,9 @@ import Image, { StaticImageData } from "next/image";
 import { Check } from "lucide-react";
 import VideoModal from "@/components/VideoModal";
 import ReasonsSection from "@/components/ReasonsSection";
+import PostHeroSection from "@/components/PostHeroSection";
 
+// Statik görseller
 import interfacesImg from "@/assets/products/allplan-basic/interfaces.jpg";
 import clashDetectionImg from "@/assets/products/allplan-basic/clash-detection.jpg";
 import layoutingImg from "@/assets/products/allplan-basic/layouting.png";
@@ -20,6 +22,14 @@ import licenseServerImg from "@/assets/products/allplan-basic/license-server.jpg
 import bimplusProPurchaseImg from "@/assets/products/allplan-basic/bimplus-pro-purchase.jpg";
 import cloudStorageImg from "@/assets/products/allplan-basic/cloud-storage.jpg";
 
+// Video thumbnail görselleri
+import modeling3dImg from "@/assets/products/allplan-basic/3d-modeling.jpg";
+import drafting2dImg from "@/assets/products/allplan-basic/2d-drafting.jpg";
+import bimplusProImg from "@/assets/products/allplan-basic/bimplus-pro.jpg";
+import designCheckingImg from "@/assets/products/allplan-basic/design-checking.jpg";
+import bluebeamConnectionImg from "@/assets/products/allplan-basic/bluebeam-connection.jpg";
+
+// Faydalar ikonları
 import workWayWantIcon from "@/assets/products/allplan-basic/benefits/work-way-want.png";
 import powerfulModelingIcon from "@/assets/products/allplan-basic/benefits/powerful-modeling.png";
 import productiveCollabIcon from "@/assets/products/allplan-basic/benefits/productive-collab.png";
@@ -29,6 +39,7 @@ interface FeatureItem {
   description: string;
   image?: string | StaticImageData;
   youtubeId?: string;
+  thumbnailUrl?: string | StaticImageData;
 }
 
 const benefits = [
@@ -39,23 +50,23 @@ const benefits = [
 
 const coreFeatures: FeatureItem[] = [
   { title: "Arayüzler", description: "IFC, BCF, PDF, RVT, 3DM, SKP, OBJ, LandXML, DWG, DGN, C4D, STL, WRL, SAF ve daha fazlası.", image: interfacesImg },
-  { title: "3D Modelleme", description: "Siemens Parasolid çekirdeğiyle yüksek performanslı 3D modelleme.", youtubeId: "kxDkWW01hRY" },
-  { title: "2D Çizim", description: "Hassas 2D çizim için kapsamlı işlevsellik.", youtubeId: "_b6Z-1U8Ri4" },
-  { title: "Görselleştirme", description: "Gerçek zamanlı Render, CineWare ve Lumion/Twinmotion canlı bağlantılar.", youtubeId: "IqNuiMaveas" },
+  { title: "3D Modelleme", description: "Siemens Parasolid çekirdeğiyle yüksek performanslı 3D modelleme.", youtubeId: "kxDkWW01hRY", thumbnailUrl: modeling3dImg },
+  { title: "2D Çizim", description: "Hassas 2D çizim için kapsamlı işlevsellik.", youtubeId: "_b6Z-1U8Ri4", thumbnailUrl: drafting2dImg },
+  { title: "Görselleştirme", description: "Gerçek zamanlı Render, CineWare ve Lumion/Twinmotion canlı bağlantılar.", youtubeId: "IqNuiMaveas", thumbnailUrl: modeling3dImg },
   { title: "Çarpışma Tespiti", description: "Yumuşak ve sert çakışmalar için araçlar.", image: clashDetectionImg },
   { title: "Düzenleme", description: "Güçlü düzenleme araçları ile profesyonel plan üretimi.", image: layoutingImg },
 ];
 
 const cloudServices: FeatureItem[] = [
-  { title: "Bulut Tabanlı İşbirliği", description: "Bimplus Pro, bulut tabanlı BIM işbirliği platformu.", youtubeId: "7xzpEhLQhEI" },
+  { title: "Bulut Tabanlı İşbirliği", description: "Bimplus Pro, bulut tabanlı BIM işbirliği platformu.", youtubeId: "7xzpEhLQhEI", thumbnailUrl: bimplusProImg },
   { title: "Proje Takım Çalışması", description: "ALLPLAN Share ile ekip çalışması.", image: projectTeamworkImg },
   { title: "Çizim ve Plan Dağıtımı", description: "ALLPLAN Exchange ile plan dağıtımı ve otomatik bildirimler.", image: planDistributionImg },
   { title: "Analitik Model Üretimi", description: "AutoConverter ile yapısal analize hazır modeller.", image: analyticalModelImg },
-  { title: "Tasarım Kontrolü", description: "Solibri Inside ile model kontrolleri.", youtubeId: "t4axrE0TWO4" },
+  { title: "Tasarım Kontrolü", description: "Solibri Inside ile model kontrolleri.", youtubeId: "t4axrE0TWO4", thumbnailUrl: designCheckingImg },
   { title: "Ofis Ekip Çalışması", description: "Çalışma Grubu Yöneticisi ile verimli ekip çalışması.", image: workgroupManagerImg },
   { title: "Bulut Destekli Proje Kaynakları", description: "Tamamen bulut tabanlı kaynak dağıtımı.", image: cloudResourcesImg },
   { title: "ALLPLAN Model Viewer", description: "IFC ve dosya önizlemeleri.", image: modelViewerImg },
-  { title: "Bluebeam Bağlantısı", description: "Dijital teslim süreçleri için entegrasyon.", youtubeId: "u4GZUL7WdQU" },
+  { title: "Bluebeam Bağlantısı", description: "Dijital teslim süreçleri için entegrasyon.", youtubeId: "u4GZUL7WdQU", thumbnailUrl: bluebeamConnectionImg },
 ];
 
 const purchaseOptions: FeatureItem[] = [
@@ -69,7 +80,12 @@ const FeatureCard = ({ feature }: { feature: FeatureItem }) => (
     <div className="pointer-events-none absolute top-0 left-0 h-px w-0 group-hover:w-full bg-accent/60 transition-all duration-500" />
     <div className="aspect-video overflow-hidden relative">
       {feature.youtubeId ? (
-        <VideoModal youtubeId={feature.youtubeId!} title={feature.title} className="w-full h-full" />
+        <VideoModal
+          youtubeId={feature.youtubeId}
+          title={feature.title}
+          thumbnailUrl={feature.thumbnailUrl}
+          className="w-full h-full"
+        />
       ) : (
         <Image src={feature.image!} alt={feature.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
       )}
@@ -96,9 +112,22 @@ export default function Page() {
           <div className="max-w-4xl">
             <span className="text-accent font-medium text-sm tracking-wider uppercase mb-4 block">/ ALLPLAN BASIC</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">Tasarım, Görüntüleme ve İş Birliği için Temel Çözüm</h1>
+            <p className="text-xl text-muted-foreground leading-relaxed">
+              ALLPLAN Basic, temel tasarım görevleri için 2D/3D iş akışlarına odaklanan, görüntüleme ve iş birliği sağlayan CAD kullanıcılarına yönelik ALLPLAN dünyasının giriş seviyesi ürünüdür.
+            </p>
           </div>
         </div>
       </section>
+
+      <PostHeroSection
+        title="ALLPLAN Basic nedir?"
+        paragraphs={[
+          "• Geniş kapsamlı 2D CAD ve temel 3D fonksiyonları",
+          "• Detaylandırma ve teslimat üretim iş akışları",
+          "• Temel bulut işlevselliği (Bimplus)"
+        ]}
+        videoUrl="https://www.youtube.com/embed/SnuaHSL18e8"
+      />
 
       <ReasonsSection
         items={benefits.map((b) => ({ title: b.title, description: b.description, image: b.icon }))}
@@ -113,7 +142,7 @@ export default function Page() {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">ALLPLAN Basic Özellikleri</h2>
             <p className="text-xl text-muted-foreground">Fonksiyonellik Hızlı Bakış</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {coreFeatures.map((feature, index) => (
               <FeatureCard key={index} feature={feature} />
             ))}
@@ -127,7 +156,7 @@ export default function Page() {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">ALLPLAN Bulut Hizmetleri</h2>
             <p className="text-xl text-muted-foreground">Bulut Tabanlı İşbirliği</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {cloudServices.map((service, index) => (
               <FeatureCard key={index} feature={service} />
             ))}
