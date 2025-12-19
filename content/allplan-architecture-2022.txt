@@ -1,0 +1,62 @@
+SAYFA: https://aluplan.com.tr/allplan-architecture-2022/
+
+HERO SECTION:
+- Başlık: Mimarlık için BIM çözümleri
+- İçerik: ALLPLAN, tüm tasarım sürecini kapsayan ve proje ortaklarıyla işbirliğini yeni bir düzeye taşıyan mimarlar için çözümler geliştirir.
+
+MİMARLIK YAZILIMI BÖLÜMÜ:
+- Başlık: Her görev için doğru araç
+- İçerik: Mimari tasarımın kapsamı, bireysel yapılardan seçkin dönüm noktası projelerine kadar uzanmaktadır. Her ikisi de maksimum bilgi birikimi, yenilik ve yaratıcılık gerektirir. Bunu başarmak için mimarların hem 2B hem de 3B olarak çalışabilmeleri, tasarım ortaklarıyla verimli bir şekilde iletişim kurabilmeleri ve en iyi tasarım kalitesini sunabilmeleri gerekir. ALLPLAN, tüm bu görevler için ideal yazılım çözümlerini sunar.
+
+ÖZELLİKLER:
+• Özellikle çalışma çizimlerinde eşsiz bilgi kalitesi
+• Tüm disiplinlerde verimli işbirliği için açık BIM platformu
+• Doğru maliyetlendirme için hassas malzemeler
+
+ÇÖZÜM PORTFÖYÜ:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2021/10/monitor-allplan-design2-build_01.jpg
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2021/10/architecture_555x300.jpg
+
+MİMARLAR İÇİN YARATMA KONSEPTİ:
+- Başlık: MİMARLAR İÇİN YARATMA KONSEPTİ
+- İçerik: Doğru dokümantasyon yoluyla projeleri konseptten sahaya daha başarılı bir şekilde gerçekleştirmek için detaylandırma hassasiyeti ile birlikte yenilikçi konseptler geliştirmek için yaratıcı özgürlük. Dijital iş akışları, mimarlar için tasarımda başarının anahtarıdır. OpenBIM yaklaşımı sayesinde tüm proje ortakları sorunsuz bir şekilde birlikte çalışabilir ve böylece birlikte daha fazla kalite ve doğruluk elde edebilir.
+
+ALLPLAN İLE FAYDALAR:
+• İhtiyaçlarınıza göre 2B veya 3B olarak tasarlayın
+• Projelerinizi hızlı ve kolay bir şekilde görselleştirin
+• Eşsiz modelleme hassasiyeti ve ayrıntılı çıktı
+• Farklı disiplinler arasında sorunsuz bir şekilde birlikte çalışın
+• Zamandan tasarruf edin ve inşaat için tasarım kalitenizi artırın
+
+REFERANS PROJE:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2021/10/csm_Gissenturm_0498e7c62e.jpg
+- Proje: Giessen Tower
+- Müşteri Yorumu: "Birçok Allplan aracı, modelleri verimli bir şekilde geliştirmemize ve 3D görselleştirmeyi kullanarak planlarımızı kolayca kontrol etmemize yardımcı oluyor."
+- Kaynak: Matthias Moog, atelier ww
+
+ÖZELLİK BÖLÜMÜ:
+
+BIM DESTEKLİ TASARIM:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2020/10/csm_bim_5cd1eb1d2e.png
+- Açıklama: Allplan, inşaatta gecikmeleri önleyerek, tasarım aşamasında bile hataları ve çelişkileri erkenden göstererek, önce sanal sonra gerçekte inşa etmenizi sağlar.
+
+SINIRSIZ MODELLEME:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/10/model-creation-1024x1024.png
+- Açıklama: Siemens'in güçlü Parasolid modelleme çekirdeği, hassasiyet ve performansı artırırken 3D modeller oluştururken size daha fazla özgürlük sağlar.
+
+EN ÜST DÜZEYDE DONATILAR:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/elementor/thumbs/csm_3d_aa5cc5908b-qq8zfu11oa94lh2jieif1bl1rs1tbkfmg0z48nsiqw.png
+- Açıklama: Donatı, fikstür ve gerekirse kirişlerle tamamlanmış entegre bir 3B model, mümkün olan en yüksek tasarım güvenilirliğini ve netliğini sağlar.
+
+KEŞFEDİN ALLPLAN ÜRÜN SUNUMU:
+- Başlık: Daha iyi yapılı bir çevre için tasarım çözümleri
+
+ALLPLAN AÇIKLAMASI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2021/10/allplan-suit-icon.png
+- İçerik: Allplan, inşaat sektörünün zorluklarını karşılamak ve dijital dönüşümden yararlanmak için nihai BIM çözümüdür. BIM yazılımı ve ALLPLAN'ın sektör lideri işbirliği ve entegrasyon araçları ideal kombinasyonu oluşturur.
+
+ALLPLAN BIMPLUS:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2021/10/Allplan_Bimplus.png
+- İçerik: Allplan Bimplus, tüm disiplinlerin proje oluşturmada verimli bir şekilde işbirliği yapması için nihai açık BIM platformudur. BIM modeli verileri, bilgileri, belgeleri ve görevleri, tüm bina yaşam döngüsü boyunca merkezi olarak yönetilir.
+
+YOUTUBE VİDEOLARI: Yok

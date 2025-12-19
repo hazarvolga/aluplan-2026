@@ -1,0 +1,27 @@
+HERO SECTION:
+Başlık: İNŞAAT ENDÜSTRİSİ İÇİN BIM YAZILIMI
+Alt Başlık: TASARIMDAN İNŞAATA
+Ana Başlık: ALLPLAN SHARE
+
+POST HERO SECTION:
+Açıklama: Allplan Share, BIM platformu Allplan Bimplus'ı baz alır ve Model Görüntüleyici, Görev Panosu veya Revizyon Kontrolü gibi ek fonksiyonlar sunar: Görev Panosu veya hesap kontrolü ve daha fazlası.
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/10/allplan-share-1.png
+
+SERVİS KAPSAMI:
+Başlık: Servis Kapsamı
+Açıklama: Allplan Share ve Allplan Architecture veya Allplan Engineering'in yanı sıra bir Allplan Bimplus hesabının kombinasyonu, dünyanın her yerindeki proje paydaşlarının doğrudan tek ve aynı Allplan projesi üzerinde çalışmalarına olanak sağlar. Allplan Share, BIM platformu Allplan Bimplus'ı baz alır ve Model Görüntüleyici, Görev Panosu gibi ek fonksiyonlar sunar: Görev Panosu veya hesap kontrolü ve daha fazlası. Allplan Share ile yönetimsel ve personel masraflarından tasarruf edersiniz. Veri Allplan Bimplus bulut ortamında depolandığından, yerel bir sunucunun temini, yüklenmesi ve bakımı gibi ek maliyetlerden kurtulunmuş olur.
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/10/allplan-share-1.png
+
+ALLPLAN SHARE AVANTAJLARI:
+
+1. Otomatik senkronizasyon: Seçili Allplan verisi otomatik olarak Allplan Bimplus BIM koordinasyon modeline aktarılır ve orada diğer işlemler için kullanılabilir. Allplan ve Allplan Bimplus içerisindeki BIM koordinasyon modeli, daima senkrondur.
+
+2. Veri tutarlılığı garantisi: Bir Allplan versiyonunda, tüm Allplan verisinin en son detayına kadar aynı olduğu ve hiç bir bilginin kaybedilmediği garanti altına alınır. Allplan Share hiç bir bilgi kaybı olmaması için orijinal Allplan verisi kullanarak çalışır.
+
+3. Güvenilir veri koruma: Verinizin güvenliği önceliğimizdir. Bu nedenle Allplan Share olarak etkin korumaya önem veriyoruz. Veri aktarımı yetkisiz erişime karşı şifreleme ile korunmaktadır.
+
+4. Net düzenlenmiş erişim hakları: Roller ve erişim hakları tüm proje paydaşları için rahat kullanılabilir bir şekilde Allplan Bimplus merkezi kullanıcı ve proje yönetimi üzerinden düzenlenir. Bu, sadece yetkileri olan kullanıcıların projeleri yönetmesi, değiştirmesi veya görebilmesini garanti altına alır.
+
+5. Projeleri eş zamanlı düzenleyin: Allplan Share kullanıcıların aynı yerel ağın (LAN) bir parçası olmasalar dahi bir projeye eş zamanlı erişebilmelerini sağlar. Yerel ağ ortamları, bu sayede, ayrı iş istasyonlarını da sisteme dahil edecek şekilde genişletilebilirler. Konumlar arasındaki veri transferi Allplan Bimplus bulut ortamı üzerinden gerçekleşir. Allplan Share birden fazla yerel ve harici iş istasyonunun birbirlerine bağlanmasını olası kılar. Tüm paydaşlar, devam eden projenin aynı veri durumuna erişirler. Bu, özellikle esnek ofis strüktürlerinin oluşturulabilmesini destekler.
+
+6. Pratik kullanım: Allplan Share CAD ve düzenleme iş istasyonlarının merkezi organizasyonunu düzenler ve planlama ve tasarım ofislerinde net koordinasyon faydaları sağlar. Çalışmak, tekil çalışan bir iş istasyonu kullanmaktan farklı değildir. Allplan Bimplus bulut ortamından veri ve proje erişimi haricinde, merkezi kullanıcı ve proje yönetimi de bir anahtar avantajdır.

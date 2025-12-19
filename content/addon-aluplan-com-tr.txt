@@ -1,0 +1,51 @@
+HERO SECTION:
+Başlık: Allplan CDS Eklentiler
+
+ADDON PRODUCTS:
+
+1. Sürüş Eğrisi (Drive Curve):
+Görsel URL: https://cdn-ildjmdd.nitrocdn.com/tcdVFlIBFQtnSTNLgsIOcKKpRMOOdqtW/assets/images/optimized/rev-0504ba4/addon.aluplan.com.tr/wp-content/uploads/2023/03/surus.webp
+Link URL: https://addon.aluplan.com.tr/add-on-drive-curve-surus-egrisi/
+
+2. Çelik Profil Bileşenleri:
+Açıklama: Çelik konstrüksiyon-Vidalar-Levhalar
+Görsel URL: https://cdn-ildjmdd.nitrocdn.com/tcdVFlIBFQtnSTNLgsIOcKKpRMOOdqtW/assets/images/optimized/rev-0504ba4/addon.aluplan.com.tr/wp-content/uploads/2021/02/celik-yapi-elemanlari.jpeg
+Link URL: https://addon.aluplan.com.tr/?page_id=54
+
+3. Parametrik Arazi:
+Açıklama: Kazıdan fazlası
+Görsel URL: https://cdn-ildjmdd.nitrocdn.com/tcdVFlIBFQtnSTNLgsIOcKKpRMOOdqtW/assets/images/optimized/rev-0504ba4/addon.aluplan.com.tr/wp-content/uploads/2021/02/Arazi.jpeg
+Link URL: https://addon.aluplan.com.tr/?page_id=52
+
+4. Rampa (Ramp):
+Görsel URL: https://cdn-ildjmdd.nitrocdn.com/tcdVFlIBFQtnSTNLgsIOcKKpRMOOdqtW/assets/images/optimized/rev-0504ba4/addon.aluplan.com.tr/wp-content/uploads/2023/03/rampa.webp
+Link URL: https://addon.aluplan.com.tr/add-on-rampa/
+
+5. Geometri Araçları (Geometry Tools):
+Görsel URL: https://cdn-ildjmdd.nitrocdn.com/tcdVFlIBFQtnSTNLgsIOcKKpRMOOdqtW/assets/images/optimized/rev-0504ba4/addon.aluplan.com.tr/wp-content/uploads/2023/03/gormet.webp
+Link URL: https://addon.aluplan.com.tr/add-on-geometri-araclari/
+
+6. 2B DWG Converter:
+Açıklama: 2B elemanların hızlı dönüşümü
+Görsel URL: https://cdn-ildjmdd.nitrocdn.com/tcdVFlIBFQtnSTNLgsIOcKKpRMOOdqtW/assets/images/optimized/rev-0504ba4/addon.aluplan.com.tr/wp-content/uploads/2021/02/element-converter.jpeg
+Link URL: https://addon.aluplan.com.tr/?page_id=57
+
+7. 3B Ölçülendirme:
+Açıklama: Serbest 3B Ölçülendirme
+Görsel URL: https://cdn-ildjmdd.nitrocdn.com/tcdVFlIBFQtnSTNLgsIOcKKpRMOOdqtW/assets/images/optimized/rev-0504ba4/addon.aluplan.com.tr/wp-content/uploads/2021/02/3B-Olculendirme-1.jpeg
+Link URL: https://addon.aluplan.com.tr/?page_id=55
+
+8. Grafiksel Yazı:
+Açıklama: Vektörleştirilmiş ve 3B metinler
+Görsel URL: https://cdn-ildjmdd.nitrocdn.com/tcdVFlIBFQtnSTNLgsIOcKKpRMOOdqtW/assets/images/optimized/rev-0504ba4/addon.aluplan.com.tr/wp-content/uploads/2021/02/grafik-etxt.jpeg
+Link URL: https://addon.aluplan.com.tr/?page_id=56
+
+9. SketchUp Dönüştürücü:
+Açıklama: Dokularla Allplan import, Lumion export, vb.
+Görsel URL: https://cdn-ildjmdd.nitrocdn.com/tcdVFlIBFQtnSTNLgsIOcKKpRMOOdqtW/assets/images/optimized/rev-0504ba4/addon.aluplan.com.tr/wp-content/uploads/2023/03/skec.webp
+Link URL: https://addon.aluplan.com.tr/?page_id=60
+
+10. Download:
+Açıklama: Hemen indirin ve 14 gün boyunca deneyin.
+Görsel URL: https://cdn-ildjmdd.nitrocdn.com/tcdVFlIBFQtnSTNLgsIOcKKpRMOOdqtW/assets/images/optimized/rev-0504ba4/addon.aluplan.com.tr/wp-content/uploads/2021/02/download-150x150.jpeg
+Link URL: https://aluplan-my.sharepoint.com/:f:/g/personal/melih_aluplan_com_tr/Eg1dsxntUVBHkB0F9W_K_5ABvxC4eq7RGtlOT5ktaZYiLw?e=oLCvgG

@@ -1,0 +1,178 @@
+SAYFA: https://aluplan.com.tr/2025-allplan-precast-software-for-precast/
+
+HERO SECTION:
+- Başlık: allplan precast
+- Alt Başlık: PREKAST TASARIMI İÇİN EŞSİZ BIM ÇÖZÜMÜ
+
+POST HERO SECTION:
+- Başlık: ALLPLAN PREKAST NEDİR?
+- İçerik: Allplan Precast, yapısal prefabrik elemanların, prefabrik duvarların ve döşemelerin yüksek düzeyde otomatik ve hassas tasarımını sağlar. Çözümümüz, prefabrik beton projenizin tüm aşamalarında sizi en iyi şekilde destekler.
+
+• Etkileyici 3B fiyat teklifinden, doğru üretim verilerini içeren son derece hassas 3B prefabrik modele kadar.
+• Maksimum üretkenliğe olanak tanıyan otomatik iş akışları.
+• Güvenilir veriler ve en yüksek hassasiyeti sağlayan akıllı kalite güvencesi.
+
+ALLPLAN PRECAST'IN ÖZELLİKLERİ:
+
+1 \ Structural Precast Elements
+2 \ Precast Walls  
+3 \ Precast Slabs
+
+• Otomatik Prefabrik Tasarım
+• Otomatik Üretim Paftaları
+• BIM Modellerinin Kolay İçe Aktarılması
+• Parametrik veya Serbest Modelleme
+• Yüksek Düzeyde Otomatik Üretime Yönelik Araçlar
+
+TAB 1 / OTOMATIK PREFABRİK TASARIM:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_1_automated-precast-design_8fadfacfac-1.jpg
+- Açıklama: Her türlü karmaşıklık ve geometrideki yapısal prefabrik elemanları hızlı ve kolay bir şekilde tasarlayın ve detaylandırın.
+
+TAB 2 / OTOMATIK ÜRETİM PAFTALARI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_2_automated-shop-drawings_ba890fa1a8-1.jpg
+- Açıklama: Donatı, fikstür ve ölçülendirme dahil olmak üzere yüksek düzeyde otomatikleştirilmiş üretim paftalarını hızlı bir şekilde oluşturun.
+
+TAB 3 / BIM MODELLERİNİN KOLAY İÇE AKTARILMASI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_3_easy-import-of-BIM-models_6a4d98e570-1.jpg
+- Açıklama: Mimari modellerin yanı sıra MEP objelerini de hızla içe aktarın ve bunları prefabrik tasarımınız için yeniden kullanın.
+
+TAB 4 / PARAMETRİK VEYA SERBEST MODELLEME:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_4_parametric-or-free-modeling_e7d5d617f0-1.jpg
+- Açıklama: Prefabrik elemanları parametrik girdiyle oluşturun veya bunları tamamen özgürce modelleyin.
+
+TAB 5 / YÜKSEK DÜZEYDE OTOMATIK ÜRETİME YÖNELİK ARAÇLAR:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_5_Highly-automated-fabrication_31dcdc35fa-1.jpg
+- Açıklama: Özel Allplan Prekast çözümümüz, duvarların ve döşemelerin yüksek düzeyde otomatik tasarım ve detaylandırılmasını sağlar.
+
+DUVAR ÖZELLİKLERİ:
+• Yüksek Düzeyde Otomatik Duvar Tasarımı
+• Otomatik Duvar Bölmeleri
+• Üreticiye Özel Donatı
+• Fikstürler Kolaylaştı
+• Güvenilir Üretim Verileri
+
+TAB 6 / YÜKSEK DÜZEYDE OTOMATIK DUVAR TASARIMI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_6_highly-automated-wall-division_01_8bd1d0680c.jpg
+- Açıklama: Katı, çift, sandviç, tuğla ve termal duvarları her zamankinden daha hızlı ve daha doğru bir şekilde modelleyin.
+
+TAB 7 / OTOMATIK DUVAR BÖLMELERİ:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_7_automated-wall-division_1d622c56c3.jpg
+- Açıklama: Allplan Prefabrik Duvarlar, bireysel üretim tesislerinize göre duvarları akıllıca üretilebilir ve teslim edilebilir duvar elemanlarına ayırır.
+
+TAB 8 / ÜRETİCİYE ÖZEL DONATI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_8_Plant-specific-reinforcement-walls_d93547e7db.jpg
+- Açıklama: Allplan Prefabrik Duvarlar, özel üretim yeteneklerinize mükemmel şekilde uyum sağlayan donatı verilerini otomatik olarak üretir.
+
+TAB 9 / FİKSTÜRLER KOLAYLAŞTI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_9_fixtures-made-easy_4d0ce1a059.jpg
+- Açıklama: Stok durumuna ve ağırlığa bağlı olarak eğimli destekler için kaldırma ankrajları veya manşonlar gibi fikstürleri otomatik olarak hesaplayın.
+
+TAB 10 / GÜVENİLİR ÜRETİM VERİLERİ:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_10_reliable-production-data_b20ec051b6.jpg
+- Açıklama: Ticari ve üretimle ilgili verilerin sağlanmasında mutlak hassasiyete güvenin.
+
+DÖŞEME ÖZELLİKLERİ:
+• Yüksek Düzeyde Otomatik Döşeme Tasarımı
+• Otomatik Döşeme Bölmeleri
+• Üretime Özel Donatı
+• Otomatik İş Akışları
+• Güvenilir Üretim Verileri
+
+TAB 11 / YÜKSEK DÜZEYDE OTOMATIK DÖŞEME TASARIMI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_11_highly-automated-slab-design_01_f2f28d1e46.jpg
+- Açıklama: Allplan Prekast Döşemeler, eleman döşemeleri, masif döşemeler ve boşluklu döşemeler tasarlarken büyük miktarda zaman tasarrufu yapmanızı sağlar.
+
+TAB 12 / OTOMATIK DÖŞEME BÖLMELERİ:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_12_automated-slab-devision_0cb6d3530d.jpg
+- Açıklama: Allplan Prefabrik Döşemeler, bireysel üretim tesislerinize göre döşemeleri akıllı bir şekilde üretilebilir ve teslim edilebilir döşeme elemanlarına ayırır.
+
+TAB 13 / ÜRETİME ÖZEL DONATI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_13_plant-specific-reinforcement-slabs_651d3f9e62.jpg
+- Açıklama: Allplan Prefabrik Döşemeler, özel üretim yeteneklerinize mükemmel şekilde uyum sağlayan donatı verilerini otomatik olarak üretir.
+
+TAB 14 / OTOMATIK İŞ AKIŞLARI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_14_fixtures-made-easy_ba0ea66b8b.jpg
+- Açıklama: Allplan Prefabrik Döşemeler kompozit girintileri otomatik olarak yerleştirir ve birleşimli sistemler için maksimum esneklik sunar. Yazılım, filigran döşemeler için kesme kuvveti ve bağ kontrolü gerçekleştirir ve gerekirse gerekli kafes kirişlerini kurar.
+
+TAB 15 / GÜVENİLİR ÜRETİM VERİLERİ:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_15_reliable-production-data_0ed720bec0.jpg
+- Açıklama: Ticari ve üretimle ilgili verilerin sağlanmasında mutlak hassasiyete güvenin.
+
+ZORLU DURUMLAR BÖLÜMÜ:
+AŞAĞIDAKİ ZORLUKLARLA SÜREKLİ MÜCADELE EDİYOR MUSUNUZ?
+
+• Tasarım, planlama ve inşaat için artan karmaşıklık ve işbirliği gereksinimleri.
+• Çok fazla zaman alan, kaliteyi etkileyen ve risk oluşturan sürekli proje değişiklikleri.
+• Proje maliyetleriniz hakkında devam eden endişeler ve kontrolden çıkan zaman gecikmeleri.
+
+İSTATİSTİKLER:
+
+MORE PRODUCTIVITY - 52%:
+Increase efficiency with highly automated workflows.
+
+HIGHER QUALITY - 60%:
+Minimize error rate in design with validation rules and safety checks.
+
+FASTER MEP DESIGN - 75%:
+precise modeling due to modeling techniques which are tailored for bridges and workflows for different bridge types, such as precast girder bridges.
+
+MORE PERFORMANCE - 50%:
+Convert imported IFC objects directly into intelligent precast elements.
+
+FAYDA BÖLÜMÜ:
+
+CREATE SHOP DRAWINGS AUTOMATICALLY:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/automated_workflows.png
+- Açıklama: Generate shop drawings including reinforcement, fixtures, and dimensioning efficiently and in a highly automated fashion.
+
+CHOOSE YOUR INDIVIDUAL WORKING METHOD:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/structural-engineering-allplan-turkey-work_way_want.png
+- Açıklama: Work comfortably either in 2D or 3D, as the plan and model are always consistent.
+
+SAVE TIME WITH 1-CLICK REINFORCEMENT:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/save_time_1_click_reinforcement.png
+- Açıklama: Benefit from fully automated creation of basic reinforcement for all types of walls and slabs.
+
+MODEL PARAMETRICALLY OR FREELY:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/structural-engineering-allplan-turkey-powerful_modeling.png
+- Açıklama: Create structural precast elements highly efficiently using parametric input or model unique precast elements completely freely.
+
+EASILY IMPORT BIM MODELS:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/structural-engineering-allplan-turkey-bim2field.png
+- Açıklama: Conveniently import architectural models and MEP objects and easily reuse them for precast design.
+
+ACCURATELY PRODUCE PRODUCTION DATA:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/accurate_production_data.png
+- Açıklama: Generate reliable production data at the push of a button.
+
+ALUPLAN - ALLPLAN TÜRKİYE DİSTRİBÜTÖRÜ
+
+ALLPLAN ÇÖZÜMLERİ:
+
+BİNA TASARIMI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/2023-solutions-building-Design-allplan-turkey-370x275.png
+- Açıklama: © Harfa Design Residence, Visualisierung| Central Group
+
+ALTYAPI TASARIMI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/solutions-Infrastructure-Design-370x275.png
+- Açıklama: iStock-1308514772
+
+İNŞAAT PLANLAMASI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/2023-prefabrication-product-allplan-turkey-370x270.png
+- Açıklama: © SK Rapid Wien
+
+KAYNAK BÖLÜMÜ:
+
+Infographic #1 "Why Prefab":
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/Precast-Gated-Content_Teaser-infograph1.jpg
+- Başlık: GROWTH RATES AND Advantages of precast
+
+precast Whitepaper #1:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/Precast-Gated-Content_Teaser-whitepaper1.jpg
+- Başlık: the prefab revolution how to benefit
+
+CHECKLIST "Precast software":
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/Precast-Gated-Content_Teaser-checklist.jpg
+- Başlık: PRECAST DESIGN and Detailing 35 SUCCESS FACTORS
+
+YOUTUBE VİDEOLARI: Yok

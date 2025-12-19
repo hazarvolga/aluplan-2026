@@ -1,0 +1,100 @@
+SAYFA: https://aluplan.com.tr/2024-product-bimplus-by-allplan/
+
+HERO SECTION:
+- Başlık: Bimplus by Allplan
+- Alt Başlık: the ULTIMATE OPEN bim COLLABORATION PLATFORM
+
+POST HERO SECTION:
+- Başlık: WHAT IS BIMPLUS BY ALLPLAN?
+- İçerik: Allplan Bridge is a powerful parametric BIM solution for bridge engineers, combining all phases of bridge design from highly detailed model creation, including prestressing tendons, to the integration of the construction process, structural analysis with code-based design, and drawing production, in one solution.
+
+• Access project data anywhere, at any time, efficiently communicate all your information needs to the right people and collaborate with project partners in real time.
+• Easily incorporate project data from any construction industry software, merge, coordinate, review and manage effectively in a centralized model.
+• Manage and control BIM based projects across all phases, easily tracking revisions and tasks, using effective issue management and powerful visualization tools.
+
+ZORLU DURUMLAR BÖLÜMÜ:
+AŞAĞIDAKİ ZORLUKLARLA SÜREKLİ MÜCADELE EDİYOR MUSUNUZ?
+
+• Tasarım, planlama ve inşaat için artan karmaşıklık ve işbirliği gereksinimleri.
+• Çok fazla zaman alan, kaliteyi etkileyen ve risk oluşturan sürekli proje değişiklikleri.
+• Proje maliyetleriniz hakkında devam eden endişeler ve kontrolden çıkan zaman gecikmeleri.
+
+HOW BIMPLUS BENEFITS YOUR BUSINESS:
+
+İSTATİSTİKLER:
+
+COORDINATED AND CONSISTENT - 100%:
+because everything is accomplished with one software solution – the common data environment minimizes unnecessary data exchange and re-entry between different solutions.
+
+UP TO DATE - 100%:
+All data is integrated, centralized, and coordinated on one platform – a single source of truth giving access and up to date status to all stakeholders at any stage.
+
+TRANSPARENT AND EFFECTIVE - 100%:
+Powerful visualization tools, issue management and task tracking enable effective and transparent change processes and revision control.
+
+FAYDA BÖLÜMÜ:
+
+COORDINATE PROJECT DATA:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/coordinate_project_data-1.png
+- Açıklama: Centrally aggregate models in a neutral environment and visualize in a powerful viewer. Assign attribute data and run clash checks. Avoid uncoordinated information leading to errors.
+
+MANAGE INFORMATION:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/manage_information-1.png
+- Açıklama: Manage, access, and exchange more information in shorter timeframes, from multiple sources in multiple formats. Instant status availability, together with documents and models history.
+
+CHANGE MANAGEMENT:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-improved_change_management.png
+- Açıklama: Visualize any revision of any model and compare revisions of the same model. Make informed decisions sooner, reduce risk, errors, and the impact of multiple revisions and change.
+
+ORGANIZE PROJECTS:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/organize_projects-1.png
+- Açıklama: Monitor and manage BIM projects efficiently over entire design to build lifecycles. Maintain full control over all sub-models and track all open and closed tasks.
+
+EASY COMMUNICATION:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/communicate-1.png
+- Açıklama: Visually communicate and establish discrepancies or collisions easily in design stages. Convey BIM2Field design intent into construction.
+
+CLOUD-BASED DATA:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-productive_collab.png
+- Açıklama: Conveniently access and update project data anywhere, at any time and on any device. Connect teams, partners, suppliers and contractors across all project stages.
+
+ALUPLAN - ALLPLAN TÜRKİYE DİSTRİBÜTÖRÜ
+
+ALLPLAN ÇÖZÜMLERİNİ KEŞFEDİN:
+
+BİNA TASARIMI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/2023-solutions-building-Design-allplan-turkey-370x275.png
+- Açıklama: © Harfa Design Residence, Visualisierung| Central Group
+
+ALTYAPI TASARIMI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/solutions-Infrastructure-Design-370x275.png
+- Açıklama: iStock-1308514772
+
+İNŞAAT PLANLAMASI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/2023-prefabrication-product-allplan-turkey-370x270.png
+- Açıklama: © SK Rapid Wien
+
+EĞİTİM & HİZMETLER BÖLÜMÜ:
+
+EĞİTİM & HİZMETLER:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/03/1-dramatic-perspective-with-low-angle-view-skyscrapers-looking-up-sky-dubai-vanishing-point.jpg
+- Başlık: ALLPLAN BECERİNİZİ ARTIRIN
+
+ALLPLAN ON DEMAND:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/03/2-dramatic-perspective-with-low-angle-view-skyscrapers-looking-up-sky-dubai-vanishing-point.jpg
+- Başlık: KULLANICI DENEYİMİ PLATFORMU
+
+GENİŞLETİLMİŞ EKOSİSTEM:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/03/3-dramatic-perspective-with-low-angle-view-skyscrapers-looking-up-sky-dubai-vanishing-point.jpg
+- Başlık: ORTAK YAZILIM ÇÖZÜMLERİ
+
+BUTON: EĞİTİM & HİZMETLER
+BUTON URL: https://www.allplan.com/events/events/?&tx_jvevents_events%5BeventsFilter%5D%5Bcitys%5D=undefined
+
+BUTON: ALLPLAN ON DEMAND
+BUTON URL: https://gateway.eu.on24.com/wcc/eh/8000008863/allplan
+
+BUTON: GENİŞLETİLMİŞ EKOSİSTEM
+BUTON URL: https://marketing.allplan.com/allplan-partner-solutions/
+
+YOUTUBE VİDEOLARI: Yok

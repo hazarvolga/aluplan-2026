@@ -1,0 +1,111 @@
+SAYFA: https://aluplan.com.tr/features-allplan-bridge-2024/
+BAŞLIK: Features Allplan Bridge 2024
+
+=== HERO SECTION ===
+BAŞLIK: Features Allplan Bridge 2024
+ALT BAŞLIK: -
+AÇIKLAMA: -
+HERO GÖRSELI: -
+BUTON: -
+BUTON URL: -
+
+=== POST HERO SECTION ===
+
+=== ÖZELLİKLER SECTION ===
+
+ÖZELLIK 1:
+BAŞLIK: Parametrik referanslama ile arazi görselleştirmesi
+GÖRSEL URL: -
+AÇIKLAMA: Yeni bir köprüyü bir ortama yerleştirirken büyük dikkat gerektiren başlıca hususlar köprünün işlevselliği, güvenliği ve estetik çekiciliğidir. Tasarım sürecinde yerel topoğrafya, su, toprak bileşimi, doğal ve insan yapımı engellerin varlığı gibi birçok faktörün araştırılması gerekmektedir. Doğrudan Allplan Bridge'de arazi görselleştirmesi ile tasarım süreci artık önemli ölçüde daha akıcı hale geldi.
+
+Yalnızca görselleştirme amacıyla değil, arazi aynı zamanda modelleme ve açıklıkların kontrol edilmesi için de kullanılabilir. Örneğin, otomatik olarak oluşturulan bir arazi aksını kullanarak bir iskele veya kazık gibi altyapıyı araziye göre referans almak mümkündür. Bu sadece modelleme için değil, aynı zamanda değişiklikler uygulandığında da kullanışlıdır - çünkü tam tanım parametrik olduğundan, örneğin kiriş yüksekliği gibi bir değişiklik uygulandığında iskele yüksekliği otomatik olarak ayarlanır.
+
+ÖZELLIK 2:
+BAŞLIK: Allplan Cloud aracılığıyla dever verilerinin içe aktarılması
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_02_Import_of_super-elevation_data_via_Allplan_Cloud_1c567fda80.jpg
+ALT BAŞLIK: Daha verimli tasarım çalışması
+AÇIKLAMA: Aks ve kaplama geometrisi (kesit) normalde yol mühendisi tarafından tanımlanır. Aks, plan ve yükseklik geometrisi tarafından tanımlanır ve kaplama, bir veya daha fazla çapraz eğim ve aks boyunca değişen karşılık gelen genişlikler tarafından tanımlanır. Köprüleri modellerken tüm bunların dikkate alınması gerekir. Bu verinin tekrar girilmesini atlamak olmasa da en aza indirmek için, Allplan Bridge'de artık yalnızca aks geometrisini değil, aynı zamanda çapraz eğimin karşılık gelen tanımını/tanımlarını da içe aktarmak mümkün.
+
+ÖZELLIK 3:
+BAŞLIK: Parametrik Donatı Bağlantısı
+GÖRSEL URL: -
+ALT BAŞLIK: Daha hızlı ve daha verimli detaylandırma
+AÇIKLAMA: Tatmin edici bir marjı korurken, makul bir zaman dilimi içinde gerekli kalite standartlarında BIM donatılandırma modellerini ve detay çizimlerini üretmek her zaman bir zorluktur. Üretkenliğe ve kârlılığa zarar vermeden kaliteyi sağlamak, proje türü ve konumu ne olursa olsun, her donatılandırma projesi için mühendislik ve detaylandırma şirketleri için sürekli bir zorluktur. ALLPLAN bunu anlıyor ve bu nedenle Allplan, yaygın donatı detaylandırma sorunlarının üstesinden gelmek için özel olarak geliştirildi.
+
+Allplan Bridge 2024 ile bir sonraki büyük adım atılıyor. İki parametrik teknoloji, parametrik tasarımdan inşaya çözüm sağlamak için birleştirildi; Allplan Bridge ve Allplan'daki PythonParts'ın parametrik modelleme çözümü. Allplan Köprü donatı setleri öncelikle donatı tasarımı ve kod kontrolü için tanımlanır ve bu donatı setleri artık Allplan'daki PythonPart teknolojisine parametrik olarak bağlanmıştır. Sadece boyuna, kesme ve burulma donatısının geometrisi değil, aynı zamanda çubukların konumu, çubuk sayısı ve çubuk çapları gibi diğer tüm bilgiler de Allplan'a aktarılır. Sonuç olarak, tasarımdan üretime tamamen parametrik bir iş akışı mümkün oluyor; bu da işin daha hızlı ve daha az hataya açık olmasını sağlıyor ve aynı zamanda daha yüksek kalite, üretkenlik ve karlılık sağlıyor.
+
+ÖZELLIK 4:
+BAŞLIK: Serbest Parametrik modelleme 2.0
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_04_Free_Parametric_modeling_2.0_a03a10dd38.jpg
+ALT BAŞLIK: Güçlü, esnek ve zaman kazandıran modelleme
+AÇIKLAMA: Allplan Bridge'de üç ana modelleme yöntemi vardır. İlk yaklaşım, tam bir geometri oluşturmak amacıyla bir kesitin ekstrüzyonu için aksın 3 boyutlu formunu kullanır. Bununla birlikte, köprü yapılarında, prefabrik kirişler gibi aksı takip etmeyen elemanların sıklıkla bulunması nedeniyle, bu köprü elemanları için özel olarak uyarlanmış başka bir modelleme yaklaşımı gerekliydi ve önceki versiyonlardan birinde uygulandı.
+
+2023 sürümünde üçüncü bir modelleme yaklaşımı yayınlandı: Serbest Parametrik modelleme. Versiyon 2024 ile bu modelleme yaklaşımı önemli ölçüde geliştirildi ve daha da güçlü hale geliyor çünkü Allplan Bridge'deki kiriş, iskele, bağlantı kirişi veya tabliye gibi herhangi bir modelleme elemanı bir 3B gövdeye dönüştürülür ve serbestçe kullanılır. Çıkarılan gövde herhangi bir değişikliğe kusursuz bir şekilde uyum sağladığı için model tamamen parametrik kalıyor. Ayrıca, çıkarılan gövde Boolean işlemleri için kullanılabilir, şablon olarak kullanılabilir ve modelleme alanı içinde serbestçe hareket ettirilebilir.
+
+Serbest parametrik modellemeye ilişkin bir başka gelişme, bir prizma şablonunda daha fazla prizma elemanının kullanılması ve bunların Boolean işlemleri kullanılarak birleştirilmesidir. Bu, bir köprü modeline birden çok kez kolayca yerleştirilip konumlandırılabilen ve kolaylıkla dışa aktarılıp diğer projelerde kullanılabilen şablonlar gibi abutmentler gibi daha karmaşık objelerin oluşturulmasına olanak sağlar.
+
+Gövde Konteynerleri bir başka güçlü gelişmedir. Kendi yerel koordinat sistemi içerisinde çalışan yeni bir obje türüdür. Bu sistem içerisinde kullanıcılar, 3B gövdelerin yerleştirilmesine olanak tanıyan konteyner orijini ile değişen ilişkilere sahip 3B yerleştirme noktalarını konumlandırabilirler. Gövde Konteynerleri, birden fazla gövde grubunu barındırma kapasitesine sahip olup, modelleme iş akışını daha da geliştirir ve daha karmaşık objelerin dahil edilmesini kolaylaştırır.
+
+ÖZELLIK 5:
+BAŞLIK: Otomatik olarak türetilen hesaplama eylemleri
+GÖRSEL URL: -
+ALT BAŞLIK: Konsol yapım yöntemi için özel yükler
+AÇIKLAMA: Dengeli konsol yapım yöntemi, köprü yapımında sıklıkla kullanılan bir tekniktir. Bir iskeleden başlayarak, bireysel bölümler (prefabrik veya yerinde dökülmüş), simetrik veya simetrik olmayan bir sırayla her iki tarafta adım adım monte edilir. Form gezginleri, segmentleri oluşturmak için kullanılır ve aşamadan aşamaya ilerletilir. Bu döngü sırasında, köprüye, doğru yapısal ve zamana bağlı davranışı yansıtabilmek için uygun konum ve zaman noktasında dikkate alınması gereken çeşitli tipte yükler etkimektedir.
+
+Allplan Bridge 2024'teki yeni dengeli konsol görevi, yalnızca form gezgininin geometrik verilerinin obje odaklı girdisini ve ayrıca belirli inşaat adımlarının zaman çizelgesini gerektirir. Tüm bu veriler net bir şekilde düzenlenmiş tek bir giriş penceresinde sağlanırken, kopçanın uygulanması/hareket ettirilmesi, segmentin dökülmesi/montajı, kendi ağırlığının uygulanması, tendonların ön gerilmesi gibi çok sayıda hesaplama işleminin otomatik olarak gerçekleştirilmesiyle sonuçlanacaktır. ve değişen tüm yük uygulamaları sırasında sünme ve büzülmenin uygun şekilde dikkate alınması.
+
+ÖZELLIK 6:
+BAŞLIK: EN'nin diğer ulusal ekleri
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_06_Easily_design_to_key_national_standards_04aad0ab45.png
+ALT BAŞLIK: Temel ulusal standartlara göre kolayca tasarlayın
+AÇIKLAMA: Allplan Bridge'in kod tabanlı tasarım modülündeki en son versiyonunun geliştirilmesi, üç yeni ulusal ekin ve bunların özelliklerinin tanıtılmasına odaklandı. Ulusal eklerin en son geçerli versiyonunun uygulanması artık Almanya (DIN EN), Fransa (NF EN), İspanya (UNE EN), Birleşik Krallık (BS EN), Avusturya (ÖNORM EN) ve Polonya (PN EN) için mevcuttur. ). Tüm sınır durumları artık eke özgü sınır değerleri veya yöntemleri kapsamındadır ve raporlarda da bunlara atıfta bulunulmaktadır.
+
+ÖZELLIK 7:
+BAŞLIK: Allplan Bridge Raporlama Aracı
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_07_Allplan_Bridge_Reporting_Tool_b57ea20487.jpg
+ALT BAŞLIK: Raporlama sürecinde devrim yaratın
+AÇIKLAMA: Allplan Bridge 2024 iki dünyayı tek bir dünyada birleştiriyor ve bu sayede verimliliği, doğruluğu ve görsel etkiyi artıran bir dizi güçlü özellik sunarak raporlama sürecinde devrim yaratıyor. Tablolar, görüntüler, 2B ve 3B diyagramlar ve çok daha fazlası biçimindeki köprü tasarımı ve analiz verileri, kolayca bağlantılandırılabilir ve doğrudan MS Word belgelerine yerleştirilebilir. Bu, manuel veri girişi ve güncelleme ihtiyacını ortadan kaldırarak zamandan tasarruf sağlar ve hata riskini azaltır.
+
+Sürükle ve bırak sistemi, verilerin kullanıcı tanımlı raporlara kusursuz şekilde entegre edilmesini sağlar. Kurulan bağlantı tüm verilerin güncel olmasını sağlar. Bir Allplan Bridge projesinde yapılan, tasarım elemanlarında, hesaplamalarda, diyagramlarda, resimlerde, tablolarda ve tasarım parçalarında yapılan değişiklikler gibi değişiklikler otomatik olarak yapısal rapora yansıtılır. Bu gerçek zamanlı güncelleme özelliği, manuel güncelleme ihtiyacını ortadan kaldırarak doğruluk sağlar ve değerli zamandan tasarruf sağlar. Ayrıca, kullanıcıların ilgili sonuçları saklamasına ve filtrelemesine olanak tanıyan bir gönderi veritabanı da sağlanmaktadır. Bu, önemli verilere hızlı erişim ve analiz yapılmasına olanak tanır. Özel sorgular oluşturmak, filtreler uygulamak ve özel tablolar oluşturmak için kapsamlı verileri sıralamak mümkündür.
+
+Raporlama Aracının temel avantajları: MS Word AddIn - herkesin çalışmaya alışık olduğu aracı kullanma Dinamik Veri Bağlantısı (Parametrik) Gerçek Zamanlı Güncelleme Veritabanı sonrası kullanılarak özelleştirilebilir tablolar Görseller için kapsamlı destek
+
+ÖZELLIK 8:
+BAŞLIK: Özet raporu
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_08_Automatic_summary_of_the_design_and_code_checking_4d3bcb9f58.png
+ALT BAŞLIK: Tasarımın otomatik özeti ve kod kontrolü
+AÇIKLAMA: Donatı tasarımı ve kod kontrol prosedürlerinin kapsamlı çıktı yetenekleri, yeni bir türle genişletildi. "Özet Rapor" olarak adlandırılan rapor, kod tasarımı ve kontrollerin ana sonuçlarına genel bir bakış sunar. Allplan Bridge 2024 kod kontrollerini uygun sonuç adlarıyla çalıştırır. Her bölüm için sonuçlar kaydedilir ve ardından, yönetim sonuçları, tüm sonuç adları ve tüm bölümler için bir döngüde filtrelenir. Daha sonra yönetim bölümleri ve sonuçları sıralanır, uç noktalar bulunur, genel bakış tabloları oluşturulur ve ayrıntılı sonuçlar özet rapora yerleştirilir.
+
+ÖZELLIK 9:
+BAŞLIK: Kompozit köprülerin yapısal analizi
+GÖRSEL URL: -
+ALT BAŞLIK: Teknik önizleme: Kompozit köprüler için yeni analiz yetenekleri
+AÇIKLAMA: Kompozit yapılar, köprüler için tipik olarak çelik kirişler ve beton tabliye gibi farklı malzeme türlerinin yanı sıra, yerinde dökme betonarme tabliyeli prefabrik beton kirişler gibi farklı zamanlarda birleştirilen aynı türdeki malzemeleri birleştiren gelişmiş mühendislik çözümleridir. Ayrıca bu çözüm köprü rehabilitasyonunun hesaplanmasında da kullanılabilir.
+
+Allplan Bridge'in küresel yapısal analiz yetenekleri, kompozit yapıların davranışını doğru şekilde dikkate alacak şekilde geliştirildi. Örneğin, inşaat sırası hesaplaması yalnızca yeni eklenen yapısal bileşenleri değil aynı zamanda halihazırda etkinleştirilmiş kesit bileşenlerini de dikkate alır. Bu, sertlikte temel bir değişikliğe neden olur. Kompozit kesitler için, kompozit ünite için tipik ideal malzeme kullanılarak dönüştürülmüş kesit değerlerinin hesaplanmasına dayanmaktadır. Ayrıca çözüm, farklı kısmi elemanların sünme ve büzülme davranışlarındaki farklılığı doğru bir şekilde dikkate alır ve bu da kısmi elemanlarda fazla mesai içsel kuvvetlere (gerilmelere) neden olur. Çözüm, tüm kalıcı yüklerin yanı sıra kullanıcıların trafik veya deprem gibi tüm değişken yükleri de dikkate almasına olanak tanır. Bu yükler için kompozit elemanlar yüklenir ve hesaplanan kuvvetler otomatik olarak bölünür ve tasarım fonksiyonları için uygun şekilde kısmi elemanlara atanır.
+
+ÖZELLIK 10:
+BAŞLIK: Yeni kod tabanlı tasarım özellikleri
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2022/10/2D-Diagrams-1024x576.jpg
+ALT BAŞLIK: Kompozit bölümler için Tasarım ve Kontrol prosedürlerinin genişletilmesi
+AÇIKLAMA: Kompozit yapıların genel analizine ek olarak tasarım modülü, kompozit betondan betona kesitlerin kod değerlendirmesiyle de geliştirildi. Kesit, sonradan gerilmiş bir yapısal ünite ve inşaatın daha sonraki bir aşamasında dökülen bir beton levhadan oluşabilir. Enine kesitin herhangi bir gerilim durumu, inşaat ve hizmet aşamalarında analiz edilebilir. Bunun üzerinde nihai ve kullanılabilirlik durumlarının kontrolleri geçerli standartlara uygun olarak yapılabilir. Değerlendirme aynı zamanda eski ve yeni beton arasındaki arayüzdeki gerilimlerin değerlendirilmesini ve derzdeki donatı kapasitesinin kontrolünü de içerir.
+
+ÖZELLIK 11:
+BAŞLIK: Daha fazla yeni özellik ve iyileştirme
+GÖRSEL URL: -
+ALT BAŞLIK: -
+AÇIKLAMA: Bir dizi yeni özellik ve iyileştirme daha mevcuttur. Örneğin, eşlik eden çokgen aks, gürültü bariyerleri veya Jersey benzeri beton bariyerler gibi uzunlamasına doğrusal altyapı objelerinin modellenmesine olanak tanır. Aks geometrisinin çıktısının iyileştirilmesi veya yapısal bir elemana atanmış bir kesitte tanımlanan referans noktalarının kullanıldığı aplikasyon raporu gibi birçok yeni raporlama ve çıktı işlevselliği ilavesi yapılmıştır.
+
+İki parametrik inşaat çizgisinin kesişimine bir dış sınır referansı verilmesi, modelleme sürecini iyileştirecek ve inşaat sırası tanımındaki yük görselleştirmesi, yapısal analiz iş akışını iyileştirecek ve 2024 sürümü için bir başka ürün iyileştirmesini temsil edecektir.
+
+=== YOUTUBE VİDEOLARI ===
+VİDEO BULUNAMADI
+
+=== MODAL POPUP VİDEOLARI ===
+MODAL POPUP VİDEO BULUNAMADI
+
+=== İSTATİSTİKLER ===
+İSTATİSTİK BULUNAMADI
+
+=== FOOTER ===
+FOOTER BİLGİSİ BULUNAMADI

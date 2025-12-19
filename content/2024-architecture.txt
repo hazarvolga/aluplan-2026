@@ -1,0 +1,285 @@
+ALLPLAN MİMARİ SAYFASI İÇERİĞİ
+================================
+
+HERO SECTION:
+============
+ALLPLAN
+MİMARİ
+DAHA FAZLASINI İSTEYEN MİMARLAR İÇİN.
+
+ALLPLAN'in mimariye yönelik BIM çözümleri, verimli tasarım ve sorunsuz proje yönetimi için tüm tasarımı inşa sürecine de taşır. İşbirliğine dayalı iş akışları, tüm proje yaşam döngüsü boyunca artan hassasiyet ve daha fazla üretkenlik sağlar. Mimari tasarım yazılımınızdan daha fazlasını bekleyin!
+
+BUTON: "İŞ AKIŞINI KEŞFEDİN"
+BUTON URL: #akis (sayfa içi bağlantı - iş akışları bölümüne yönlendiriyor)
+
+POST HERO SECTION:
+==================
+MİMARİ İÇİN ALLPLAN – BIM ÇÖZÜMLERİ
+
+Müstakil evlerden olağanüstü önemli projelere kadar, çarpıcı mimari tasarım ve güvenilir proje teslimi için bilgi, yaratıcılık ve hassas araçlar gerekir.
+
+Allplan ile konseptlerinizi kolayca oluşturabilir ve görselleştirebilir, değişkenleri hızlı bir şekilde detaylandırabilir, zahmetsizce işbirliği yapabilir, değişiklikleri verimli bir şekilde yönetebilir ve tasarımlarınızın daha başarılı bir şekilde gerçekleştirilmesini sağlamak için kesin metrajlarla hızlı bir şekilde doğru raporlar oluşturabilirsiniz.
+
+YOUTUBE VİDEO SECTION:
+=====================
+BAŞLIK: MİMARİ İÇİN ALLPLAN – BIM ÇÖZÜMLERİ
+ALT BAŞLIK: Allplan Mimari Çözümleri Tanıtım Videosu
+
+VİDEO THUMBNAIL: [Video thumbnail görsel URL'si mevcut değil]
+YOUTUBE VİDEO URL: https://youtu.be/SnuaHSL18e8
+YOUTUBE EMBED URL: https://www.youtube.com/embed/SnuaHSL18e8
+
+BUTON: "Videoyu İzle"
+BUTON URL: https://youtu.be/SnuaHSL18e8
+
+VİDEO AÇIKLAMASI:
+Allplan'ın mimari tasarım için sunduğu BIM çözümlerini tanıtan video. Müstakil evlerden büyük projelere kadar çarpıcı mimari tasarım ve güvenilir proje teslimi için gerekli araçları gösterir.
+
+VİDEO SÜRESİ: [Süre bilgisi mevcut değil]
+VİDEO DİLİ: [Dil bilgisi mevcut değil]
+
+MİMARİ İŞ AKIŞLARI SECTION (TABLI YAPI):
+========================================
+Başlık: mİmari İş akışları
+Alt Başlık: Insert a meaningful line to evaluate the headline.
+
+TAB 1 / ÖN VE KONSEPT TASARIM:
+- Hızlıca Başlayın
+  Görsel URL: https://www.allplan.com/fileadmin/_processed_/1/a/csm_01_QuicklyGetStarted_c54bec5884.png
+  Açıklama: Tasarımınızı optimize etmek için projenize tüm saha gereksinimleri açıkça entegre edilmiş şekilde başlayın. Planlama Yetkililerinden çeşitli formatları ve verileri içe aktarın, proje çerçeve koşullarını netleştirin ve hızla başlayın. Kolayca yapı elemanlarına dönüştürülen PDF dosyalarıyla zamandan tasarruf edin ve mükerrer çalışmalardan kaçının.
+
+- Güvenilir Yapılandırılmış Veri
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_02_ReliableStructuredData_07df6b0586.png
+  Açıklama: Dijital eskiz kağıdının etkisi, Allplan'da verilerin çizim dosyaları halinde yapılandırılmasıyla elde edilir. As-built verileri planlama için temel olarak kullanılabilir ve alttaki zeminler takip edenler için başlangıç noktası olarak hizmet edebilir.
+
+- Şantiyenizi Anlayın
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_03_Understand_YourSite_efcc870845.png
+  Açıklama: Mevcut şantiye özelliklerini zahmetsizce birleştirin. Konturlar veya noktalar biçimindeki saha bilgilerini hızla gerçekçi ve hassas dijital arazi modellerine dönüştürün. Daha iyi bir tasarım kalitesi için çevrenizi görselleştirin, anlayın ve şantiyedeki gerçek koşulları değerlendirin.
+
+- Şantiye Planlarını ve Potansiyeli Optimize Edin
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_04_OptimizeSitePotential_ae5a47fe8b.png
+  Açıklama: 2B planları kolayca görselleştirin, ayrı ayrı tasarlayın ve tasarımınızın şantiye planı içindeki temsilini optimize etmek için gölgeler gibi özellikleri hızla ekleyin. Tasarımınızın kalitesini artırmak için gerçekçi yönler sunarak saha planı çıktılarını geliştirin.
+
+- Tasarımınızı Hacim Modeline Dönüştürün
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_05_EvolveYourDesign_e7ddd65742.png
+  Açıklama: Tasarım fikirlerinizi ve vizyonunuzu hızla hayata geçirmek için güçlü ve esnek araçlarla konseptinizi hayata geçirin. 3B modelin aynı anda oluşturulacağı şekilde ayak iziniz üzerinde 2B olarak çalışmanın veya doğrudan 3B olarak çalışmanın avantajından yararlanın.
+TAB 2 / TASARIM GELİŞTİRMEK:
+- Hacimden Bileşen Modeline Geçiş
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_06_Transition_120bc2babb.png
+  Açıklama: Otomatik araçlarla konseptinizden gelişmiş bir tasarıma hızla geçin. Hacim konseptinden kolayca bileşen tabanlı bir model oluşturun. Tasarımınızı hızla geliştirebilmek için gerçekçi ve akıllı bileşenler kullanarak tasarım çalışmalarını hızlandırın.
+
+- Taslaktan Detaya Sorunsuz Bir Şekilde Geliştirin
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_07_SmoothlyEvolve_2cffd8f21c.png
+  Açıklama: Allplan'da çalışırken mevcut veriler en iyi şekilde kullanılır; böylece inşa edilen model her proje aşamasında gelişmeye devam eder. Mevcut veriler, modelleme veya bilgi derinliği açısından rafine edilir ve zenginleştirilir.
+
+- Farklı Değişkenleri Kolayca Değerlendirin
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_08_EasilyAssess-Kopie_059223b95b.png
+  Açıklama: Farklı varyasyonlara ve bunların avantajlarına rahatça odaklanın; Çatı tasarım seçeneklerini kolayca değerlendirin ve standartlara uygunluğu sağlayın. Hızlı değişiklikler veya negatif eğimler gibi çeşitli çatı modelleme seçeneklerinden yararlanın.
+
+- Görünümler ve Kesitler için Güçlü Araçlar
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_09_PowerfulTools_271464c768.png
+  Açıklama: Planlarınızı ve paftalarınızı doğru bir şekilde üretmek için ihtiyaç duyduğunuz görünümlere ve kesitlere kolayca erişin ve bunları hazırlayın. Tasarımlarınızı görselleştirin ve sunun, inşa edilebilirliğini kontrol edin.
+
+- Fikirleri ve Tasarımları Sunun ve Görselleştirin
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_10_PresentAndVisualize_00426c4d74.png
+  Açıklama: Allplan, ilk konseptlerden detaylı izlenecek yollara kadar fikirlerinizi sunmak ve görselleştirmek için çeşitli araçlar sunar. Müşterilerin binayı anlamasını sağlamak, Render araçlarıyla veya LUMION arayüzü aracılığıyla ikna edici görselleştirmeler oluşturmak için modelleri kolayca erişilebilen bir 3B PDF'e aktarın.
+TAB 3 / DETAYLI TASARIM:
+- Başlangıç Maliyetlerini Değerlendirin
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_11_Evaluate_38bb62ba10.png
+  Açıklama: Kapı listeleri, pencereler, kaplamalar, işçilikler, inşaat malzemeleri vb. raporlara dayalı olarak maliyet tahminlerini hızla modelleyin. Anında kullanabileceğiniz veya ihtiyacınız olan formata veya paftaya aktarabileceğiniz raporlardan yararlanın.
+
+- Parametrik Boşluk Tasarımlarını Kolayca Detaylandırın
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_12_EasilyDetail_5f7aec045b.png
+  Açıklama: Uygulamaları planlamak ve inşa edilebilirlik kontrolleri için ayrıntıları tasarımınıza uygulayın. Pencereleri, kapıları vb. tasarlamak için güçlü parametrik araçlardan yararlanın. Belirli standartlara göre bireysel tasarımlar oluşturun.
+
+- Akıllı Oda Kaplamalarını Tasarlayın ve Yönetin
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_13_DesignAndManage_02a8bbc06f.png
+  Açıklama: Sezgisel programlamanın avantajlarından yararlanın. Oda kaplamaları, odalara tek tek elemanlar olarak değil, bütünüyle akıllıca uygulanır. Bu, kaplama işlemlerinin merkezi olarak yönetilmesini sağlar.
+
+- Gerçekçi İç Mekanlar Yaratın
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_14_CreateRealistic_32295918c0.png
+  Açıklama: Tasarımlarınızı döşemek için gerçekçi unsurlar uygulayın. Oda iç mekanlarını hızlı bir şekilde tasarlamak, projeniz genelinde kolayca çoğaltmak ve her oda için anında envanter çıkarmak için kütüphane elemanlarını kolayca uygulayın.
+
+- Tasarım Değişikliklerini Yönet
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_15_ManageDesignChanges_ed942b8446.png
+  Açıklama: Objelerin akıllı parametrik ayarlamasıyla tasarımlarınızdaki değişiklikleri yönetin. Tasarım değişikliklerini saniyeler içinde uygulamak için değişiklikleri evrensel olarak uygulayın.
+
+- Odaları ve Birimleri Yönetin
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_16_ManageRoomsAndUnits_5131809b6d.png
+  Açıklama: Kat alanını anında gözden geçirmek için tek tek odaları veya kat gibi oda gruplarını kolayca analiz edin. Yatırım amaçlı alanı veya odalara tahsis edilen envanter unsurlarını hesaplayın.
+
+- Yasal Gereksinimleri Doğrulayın
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_17_Verify_abd6baf696.png
+  Açıklama: Bina uygulamanıza yönelik özel hesaplamaların otomatik olarak oluşturulması için, mümkün olduğunda, Alman DIN 277 gibi ilgili bölgesel normları uygulayın.
+
+- Nihai Uygulama Çiziminin Derlenmesi
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_18_Compile_feb483609b.png
+  Açıklama: Şematik tasarım, sunum çizimleri, inşaat veya uygulama planları gibi tüm ihtiyaçlara uygun sunum tarzında çizimlerinizi kolaylıkla üretin. Üstün gösterim sunmak için hızlı ve sezgisel araçlardan yararlanın.
+TAB 4 / YÜRÜTME PLANLAMASI:
+- Prefabrik Beton Gibi Çeşitli Malzemelerle Tasarım
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_19_DesignWithVariousMaterials_335d7d9b36.png
+  Açıklama: Prefabrik beton bireysel, canlı ve renkli olabilir; eğimli prekast duvarlar, yaratıcı cephe tasarımı için yapısal matrisler veya renkli beton, mimari vizyonların gerçekleştirilmesi için bol miktarda özgürlük sunar. Şimdi Allplan'daki entegre prefabrik fonksiyonları keşfedin.
+
+- Gerekli Detaylara Sahip Çizimlerin Güvenilir Bir Şekilde Çıkarılması
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_20_ReliablyExtractDrawings_9dd6759231.png
+  Açıklama: Allplan'da çizim oluşturmak, onları 3 boyutlu modelden çıkarmak kadar basittir. Bu, günlük iş akışını son derece kolaylaştırır. İlk yerleşimden sonra, modelin kendisinde veya özel çizim ekranında birçok değişiklik yapılabilir.
+
+- Proje Verilerini Organize Edin, Zenginleştirin ve Analiz Edin
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_21_Organize_d2f8cf33cb.png
+  Açıklama: Allplan'daki verilerin çizim dosyası sistemi aracılığıyla etkin ve mantıksal yönetimi, yalnızca uygulamadaki performansı artırmakla kalmaz, aynı zamanda kullanıcının bireysel model alanlarını düzenlerken kendi performansını da artırır.
+
+- Proje Ortaklarıyla İşbirliği ve Koordinasyon Yapın
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_22_CollaborateAndCoordinate_b83c55fea2.png
+  Açıklama: Senkronize Allplan ve Bimplus Konu Yönetimi ile görevlerin koordinasyonu, özellikle BIM yönetimi ve BIM koordinasyonunda gerçek bir avantajdır. Model kontrolü ve kalite kontrolü için Bimplus'tan Solibri'ye bir arayüz geliştirildi.
+
+- Yapı Mühendisi ile Değişim
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_23_ExchangeWithStructuralEngineers_7a962bf1a2.png
+  Açıklama: Bimplus, yapı mühendisleriyle çalışırken (SCIA) AutoConverter aracılığıyla avantaj sunar. Yapısal tasarımcılarla geliştirilmiş ve hızlandırılmış iletişim, daha hızlı inceleme ve karar üzerinde doğrudan etkiye sahiptir.
+
+İSTATİSTİKLER SECTION:
+=====================
+
+DAHA KESİN - 50%
+Kırmızı bir paragraf. daha hızlı ve daha kesin tasarım çıktıları, görselleştirmeler ve ayrıntılı paftalar.
+* 3B olarak 2B ile karşılaştırıldığında
+
+DAHA VERİMLİ - 70%
+Güvenilir otomatik malzeme çıktısı ve metrajlar ile erken aşamalarda daha verimli ve hassas proje maliyeti.
+* Elden metrajla karşılaştırıldığında
+
+DAHA ÜRETKEN - 30%
+İşbirliğine dayalı planlamayı ve geliştirilmiş inşa edilebilirliği destekleyen verimli iş akışları ile tasarım üretkenliğinde artış.
+* 3B tasarım kullanarak
+
+ZORLU DURUMLAR SECTION:
+======================
+AŞAĞIDAKİ ZORLUKLARLA SÜREKLİ MÜCADELE EDİYOR MUSUNUZ?
+
+• Tasarım, planlama ve inşaat için artan karmaşıklık ve işbirliği gereksinimleri.
+• Çok fazla zaman alan, kaliteyi etkileyen ve risk oluşturan sürekli proje değişiklikleri.
+• Proje maliyetleriniz hakkında devam eden endişeler ve kontrolden çıkan zaman gecikmeleri.
+
+12 GEREKÇE - NEDEN ALLPLAN SECTION:
+===================================
+
+1. İSTEDİĞİNİZ GİBİ ÇALIŞIN
+GÖRSEL: work_way_want.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/work_way_want.png
+2B, 2.5B ve 3B'de esnek iş akışlarının yanı sıra tam obje yönelimli BIM çalışma metodolojisi.
+
+2. GÜÇLÜ ve SEZGİSEL MODELLEME
+GÖRSEL: powerful_modeling.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-powerful_modeling.png
+Bina bileşenlerini hızla geliştirmek ve daha kısa sürede inşaat belgeleri oluşturmak için güçlü araçlarla desteklenen modelleme özgürlüğü.
+3. ÜRETKEN İŞBİRLİĞİ
+GÖRSEL: productive_collab.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-productive_collab.png
+Çok kullanıcılı gerçek zamanlı çalışma için entegre bulut teknolojisinin yanı sıra iş ortaklarıyla model ve proje işbirliği.
+
+4. GERÇEK DİSİPLİNLER ARASI AEC TASARIMI
+GÖRSEL: interdisciplinary_aec_design.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-interdisciplinary_aec_design.png
+Mimari tasarım, yapı mühendisliği ve MEP hizmetleri tasarımı ve detaylandırması için tek bir yazılım çözümü.
+
+5. ETKİN OPEN BIM
+GÖRSEL: bim2field.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-bim2field.png
+Çoklu değişim formatları, IFC4 RV içe/dışa aktarma ve işbirliğine dayalı OPEN BIM veri platformu Bimplus ile kolayca veri alışverişi yapın.
+
+6. İKNA EDİCİ GÖRSELLEŞTİRMELER
+GÖRSEL: convincing_visualizations.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/convincing_visualizations.png
+2B, 2.5B ve 3B'de esnek iş akışlarının yanı sıra tam obje yönelimli BIM çalışma metodolojisi.
+
+7. ÇOKLU MALZEMEYLE PLANLAMA
+GÖRSEL: planable_multi_materials.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-planable_multi_materials.png
+Geliştirilmiş inşa edilebilirlik ve sürdürülebilirlik için yerinde dökme/prekast beton, çelik ve ahşap dahil malzemeleri optimize edin.
+
+8. TÜM TASARIM AŞAMALARINDA EXCEL
+GÖRSEL: excel_across_design_phases.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/excel_across_design_phases.png
+2B, 2.5B ve 3B'de esnek iş akışlarının yanı sıra tam obje yönelimli BIM çalışma metodolojisi.
+9. GÜVENİLİR ERKEN MALİYET TAHMİNLERİ
+GÖRSEL: realiable_earlier_cost_estimates.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-realiable_earlier_cost_estimates.png
+Doğru teklifler için ayrıntılı listeleri kullanarak metrajları ve malzemeleri daha erken bir aşamada hızlı ve hassas bir şekilde hesaplayın.
+
+10. GELİŞTİRİLMİŞ DEĞİŞİM YÖNETİMİ
+GÖRSEL: improved_change_management.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-improved_change_management.png
+Çizimlerde veya modelde yalnızca bir kez düzenleyerek çıktılar arasında otomatik olarak yapılan değişikliklerle zamandan tasarruf edin.
+
+11. ÜSTÜN KALİTELİ TESLİMATLAR
+GÖRSEL: superior_quality_deliverables.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/superior_quality_deliverables.png
+Doğrudan 3B modelden hızlı ve doğru bir şekilde planlar, çizimler ve raporlar oluşturun ve yüksek kaliteli belgeler için bilgi alışverişini kontrol edin.
+
+12. GELİŞTİRİLMİŞ PROJE İLETİŞİMİ
+GÖRSEL: enhanced_project_comm.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/enhanced_project_comm.png
+Bulut tabanlı platform kullanarak inşaat ekipleriyle ayrıntılı tasarımları koordine edin – Net ve şeffaf iletişim için Bimplus
+
+FOOTER SECTION:
+===============
+ALUPLAN - ALLPLAN TÜRKİYE DİSTRİBÜTÖRÜ
+
+Allplan Çözümlerİ:
+• BİNA TASARIMI
+• ALTYAPI TASARIMI
+• İNŞAAT PLANLAMASI
+
+GÖRSEL: Building Design
+URL: https://aluplan.com.tr/wp-content/uploads/2022/09/2023-solutions-building-Design-allplan-turkey-370x275.png
+© Harfa Design Residence, Visualisierung| Central Group
+
+GÖRSEL: Infrastructure Design
+URL: https://aluplan.com.tr/wp-content/uploads/2022/09/solutions-Infrastructure-Design-370x275.png
+iStock-1308514772
+
+GÖRSEL: Prefabrication Product
+URL: https://aluplan.com.tr/wp-content/uploads/2022/09/2023-prefabrication-product-allplan-turkey-370x270.png
+© SK Rapid Wien
+BLOG SECTION:
+=============
+BAŞLIK: Öncü Güneş Enerjisi İnovasyonu
+ALT BAŞLIK: CW Enerji'nin Gelecekteki Ar-Ge Tesisine Kısa Bir Bakış
+
+GÖRSEL: CW Enerji Blog Post
+URL: https://aluplan.com.tr/wp-content/uploads/2023/10/instagram_2_sanlilar-1024x707.jpg
+
+BUTON: "Devamını Oku" 
+BUTON URL: https://allplanblogturkiye.aluplan.com.tr/oncu-gunes-enerjisi-inovasyonu-cw-enerjinin-gelecekteki-ar-ge-tesisine-kisa-bir-bakis/
+
+İÇERİK ÖZETİ:
+Türkiye'nin önde gelen güneş paneli üreticilerinden CW Enerji, yenilenebilir enerji sektöründe bir kez daha inovasyonun ön saflarında yer alıyor. Dünya çapında dağıttığı güneş enerjisi panelleriyle tanınan CW Enerji, yakın zamanda sıra dışı bir mimari projeye yönelik planlarını açıkladı: CW Akademi için Antalya Organize Sanayi Bölgesi Teknoloji Geliştirme Bölgesi'nde yer alan yeni Araştırma ve Geliştirme (Ar-Ge) binası. Proje, Şanlılar Mimarlık mimarı Semih Şanlılar tarafından mimarlara yönelik Allplan 3B modelleme yazılımı kullanılarak tasarlandı.
+
+================================
+SAYFA SONU
+================================
+
+================================
+YOUTUBE VİDEO FORMAT ŞABLONU:
+================================
+
+YOUTUBE VİDEO SECTION:
+=====================
+BAŞLIK: [Video Başlığı]
+ALT BAŞLIK: [Video Alt Başlığı]
+
+VİDEO THUMBNAIL: [Thumbnail Görsel URL'si]
+YOUTUBE VİDEO URL: [YouTube Video Linki]
+YOUTUBE EMBED URL: [YouTube Embed Linki]
+
+BUTON: "Videoyu İzle" / "Play Video" / "Watch Now"
+BUTON URL: [YouTube Video Linki]
+
+VİDEO AÇIKLAMASI:
+[Video hakkında açıklama metni]
+
+VİDEO SÜRESİ: [Dakika:Saniye formatında]
+VİDEO DİLİ: [Türkçe/İngilizce vb.]
+
+================================
+NOT: Gelecekteki sayfalarda YouTube videosu bulunursa bu format kullanılacak
+================================

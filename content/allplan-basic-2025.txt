@@ -1,0 +1,107 @@
+HERO SECTION:
+Başlık: ALLPLAN BASIC
+Alt Başlık: Tasarım, Görüntüleme ve İş Birliği için Temel Çözüm
+
+ALLPLAN BASIC NEDİR:
+Başlık: ALLPLAN Basic nedir?
+Açıklama: ALLPLAN Basic, temel tasarım görevleri için 2D/3D iş akışlarına odaklanan, görüntüleme ve iş birliği sağlayan CAD kullanıcılarına yönelik ALLPLAN dünyasının giriş seviyesi ürünüdür.
+
+Özellikler:
+- Geniş kapsamlı 2D CAD ve temel 3D fonksiyonları
+- Detaylandırma ve teslimat üretim iş akışları
+- Temel bulut işlevselliği (Bimplus)
+
+ALLPLAN BASIC FAYDALARI:
+
+1. İstediğiniz Gibi Çalışın:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/work_way_want.png
+Açıklama: 2D, 2.5D ve 3D'de esnek iş akışları.
+
+2. Güçlü & Sezgisel modelleme:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/powerful_modeling.png
+Açıklama: Herhangi bir şekli kolayca modellemek için tam özgürlük.
+
+3. Verimli İş Birliği:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/productive_collab.png
+Açıklama: Optimized bulut tabanlı iş birliği, proje ve ofis ekip çalışması ile çizim ve plan dağıtımı için entegre ALLPLAN Cloud hizmetleri.
+
+ALLPLAN BASIC ÖZELLİKLERİ:
+Başlık: Fonksiyonellik Hızlı Bakış
+
+Arayüzler:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/01_Interfaces_2.jpg
+Açıklama: Veri alışverişinin sorunsuz bir şekilde gerçekleşmesi için tüm ilgili dosya arayüzleri, bunlar arasında ifc, bcf, pdf, rvt, 3dm, skp, obj, LandXML, dwg, dgn, c4d, stl, wrl, saf ve daha birçok format bulunmaktadır. Yazılım arayüzleri (örn. Python API ve Görsel Script) otomatik iş akışlarını mümkün kılar.
+
+3D Modelleme: En karmaşık ve zor geometriler için bile yüksek performanslı 3D modelleme. Modelleme işlevselliği, Siemens Parasolid modelleme çekirdeği ile desteklenmektedir.
+
+2D Çizim: Çekici, özlü ve detaylı çizimler için hassas 2D çizim için kapsamlı işlevsellik.
+
+Görselleştirme: En son teknolojilerden (Vulkan gibi) faydalanan geniş bir görselleştirme yelpazesi. Gerçek zamanlı Render ve CineWare'ı, ayrıca Lumion ve Twinmotion'a canlı bağlantıları içerir.
+
+Çarpışma Tespiti:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/06_CLASH_DETECTION_2.jpg
+Açıklama: Yumuşak ve sert çarpışmaları tanımlamak için kullanılan araç.
+
+Düzenleme:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/Layouting__basic__Conc___Prof___Ulti_.png
+Açıklama: Güçlü düzenleme araçları, tasarlanmış çizimlerin ve modellerin, tasarım ve detay vizyonlarını yansıtan profesyonel dijital planlara dönüştürülmesini sağlar.
+
+ALLPLAN BULUT HİZMETLERİ:
+
+Bulut Tabanlı İşbirliği: Bimplus Pro, bulut tabanlı BIM işbirliği platformu.
+
+Proje Takım Çalışması:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/15_PROJECT_TEAMWORKING_2_01.jpg
+Açıklama: ALLPLAN Share, bir şirket ağı üzerinden ekip çalışmasını sağlar; uzaktan çalışan ekip üyeleri için de idealdir.
+
+Çizim ve Plan Dağıtımı:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/16_DRAWING_AND_PLAN_DISTRIBUTION_2.jpg
+Açıklama: Çeşitli plan formatlarının oluşturulmasını ve dağıtımını yönetmek için özel olarak tasarlanmış web tabanlı plan dağıtım aracı ALLPLAN Exchange, ayrıca e-posta grupları aracılığıyla otomatik değişiklik bildirimleri sağlar.
+
+Analitik Model Üretimi:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/17_ANALYTICAL_MODEL_GENERATION_2.jpg
+Açıklama: AutoConverter aracılığıyla geometrik modellerin, Frilo Statics, Scia Engineer gibi yapısal analiz çözümleri tarafından doğrudan kullanılabilen analitik modellere akıllı bir şekilde dönüştürülmesi.
+
+Tasarım Kontrolü: Solibri Inside, kullanıcı istediği zaman ALLPLAN modellerinde kontroller gerçekleştirebilir; bu, ALLPLAN içindeki BIM Explorer'dan palet benzeri bir işlevsellik kullanarak yapılır. (ALLPLAN Abonelik lisansı ile birlikte 12 aylık Solibri Inside aboneliği dahildir.)
+
+Ofis Ekip Çalışması:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/Allplan-WorkgroupManager.jpg
+Açıklama: ALLPLAN Çalışma Grubu Yöneticisi aracılığıyla yerel bir şirket ağı içinde verimli ekip çalışmasını kolaylaştırın.
+
+Bulut Destekli Proje Kaynakları:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/CLOUD-ENABLED_PROJECT_RESOURCES_Filter_01.jpg
+Açıklama: Bulut ofis kaynakları, ALLPLAN proje kaynaklarının tamamen bulut tabanlı dağıtımını sağlar.
+
+ALLPLAN Model Viewer:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/ALLPLAN_Model_Viewer_700x400.jpg
+Açıklama: Yeni bir dosyayı hızlıca önizlemek, IFC modellerini görsel olarak görüntülemek ve tam olarak yüklemeden önce kontrol etmek için kullanılır. (Sadece ALLPLAN Aboneliği veya Bimplus Professional satın alımı ile kullanılabilir.)
+
+ALLPLAN - Bluebeam Bağlantısı: Geliştirilmiş iş akışları – dijital teslim sürecine yardımcı olmak için Bluebeam ile bağlantı kuracağız. Kullanıcılar, Bluebeam Studio Proje ortamından ALLPLAN iş akışlarına 2D belgeleri kolayca aktarabilecekler.
+
+SATIN ALINABİLİR SEÇENEKLER:
+
+Lisans Server:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/License_Server_Filter_01.jpg
+Açıklama: Mevcut lisansların birden fazla kullanıcı tarafından optimal şekilde kullanılmasını sağlar. Ofis dışında lisans kullanımı mümkündür.
+
+BIMPLUS Pro:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/23_BIMPLUS_PRO_2.jpg
+Açıklama: Bulut iş birliği kapasitenizi artırmak için ek Bimplus Pro lisansları.
+
+ALLPLAN Bulut Depolama:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/ALLPLAN_CLOUD_STORAGE_Filter_01.jpg
+Açıklama: Projelerinizin kesintisiz devam etmesini sağlamak için ek depolama alanı.
+
+ALLPLAN ÇÖZÜMLERİ:
+
+BİNA TASARIMI:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/2023-solutions-building-Design-allplan-turkey-370x275.png
+Açıklama: © Harfa Design Residence, Visualisierung| Central Group
+
+ALTYAPI TASARIMI:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/solutions-Infrastructure-Design-370x275.png
+Açıklama: iStock-1308514772
+
+İNŞAAT PLANLAMASI:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/2023-prefabrication-product-allplan-turkey-370x270.png
+Açıklama: © SK Rapid Wien

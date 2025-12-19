@@ -1,0 +1,26 @@
+HERO SECTION:
+Başlık: İNŞAAT ENDÜSTRİSİ İÇİN BIM YAZILIMI
+Alt Başlık: TASARIMDAN İNŞAATA
+Ana Başlık: Donatı Mühendisliği için BIM çözümleri
+
+POST HERO SECTION:
+Açıklama: Donatı, herhangi bir beton yapının bütünlüğü için hayati bir unsurdur, ancak bir donatı detaylandırıcısı için verimli bir iş akışı elde etmenin mevcut yolu, iyileştirilecek çok şey bırakmaktadır. Yapı mühendisi, genel yükleniciler, alt yükleniciler ve saha personeli arasındaki bozuk iletişim, şantiyede maliyetli hatalara ve çakışmalara neden olabilir.
+
+MAIN SECTION:
+Başlık: DEMİR DONATI DETAYLANDIRMA YAZILIMI
+Alt Başlık: Beton yapıları hızlı ve kolay bir şekilde donatılandırın ve detaylandırın
+
+Açıklama: Sıkı bir inşaat programını sürdürmek, saha hatalarını önlemek ve maliyetli uzantıları ortadan kaldırmak için koordinasyon çok önemlidir. Yapı bilgi modellemesi (BIM), taslak hazırlayanlara bir 3B model oluştururken aşina oldukları 2B çizimlerinde çalışma yeteneği sağlar. Otomatik çubuk donatı yerleştirme ve bükme araçları gibi işlevler, projeleri tasarlamak için gereken süreyi kısaltabilir.
+
+KEY BENEFITS:
+- Allplan, donatı detaycılarının beton yapıları hızlı ve doğru bir şekilde modellemesine, donatılandırmasına ve detaylandırmasına olanak tanır
+- 3B ve BIM'i mevcut 2B iş akışlarına entegre edin
+- Doğru maliyet raporları oluşturun
+- Çakışmaları otomatik olarak tespit edin
+
+FOOTER NOTE:
+Aşağıda ayrıntılı ürün bilgileri ve ilham verici referans projeleri bulacaksınız.
+
+SOLUTION PORTFOLIO:
+Başlık: donatı detaylandırması için Çözüm portföyümüz
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2020/10/monitor-allplan-design2-build_01.jpg

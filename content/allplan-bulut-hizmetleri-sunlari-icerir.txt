@@ -1,0 +1,56 @@
+SAYFA: https://aluplan.com.tr/allplan-bulut-hizmetleri-sunlari-icerir/
+BAŞLIK: Allplan Bulut Hizmetleri şunları İçerir
+
+=== HERO SECTION ===
+BAŞLIK: Allplan Bulut Hizmetleri şunları İçerir
+ALT BAŞLIK: -
+AÇIKLAMA: -
+HERO GÖRSELI: -
+BUTON: -
+BUTON URL: -
+
+=== POST HERO SECTION ===
+
+=== BULUT HİZMETLERİ SECTION ===
+
+HİZMET 1:
+BAŞLIK: Allplan Exchange
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2023/11/Exchange__2_-1024x576.jpg
+AÇIKLAMA: Allplan Exchange ile Allplan, çeşitli plan formatlarının oluşturulmasını ve dağıtımını yönetmek ve e-posta grupları aracılığıyla otomatik değişiklik bildirimleri sağlamak için özel olarak tasarlanmış web tabanlı bir plan dağıtım aracı sunar. Platform, 2D çizim indirme ortamı sağlar ve bir denetim raporuna dahil edilmek üzere nakliye ve indirme faaliyetlerini izler.
+
+HİZMET 2:
+BAŞLIK: Allplan Share
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2023/11/Share__2_.png
+AÇIKLAMA: Allplan Share ve Allplan'ın yanı sıra Allplan Bimplus hesabının birleşimi, dünya çapındaki planlama ortaklarıyla doğrudan tek ve aynı Allplan projesi üzerinde birlikte çalışmayı mümkün kılar. Allplan Share, BIM platformu Allplan Bimplus'ı temel alır ve size Model Görüntüleyici, görev yönetimi aracı: Görev Panosu veya denetim kontrolü ve çok daha fazlası gibi ek işlevler sunar.
+
+HİZMET 3:
+BAŞLIK: Allplan Workgroup Manager
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2023/11/Allplan-WorkgroupManager.png
+AÇIKLAMA: Allplan Workgroup Manager CAD iş istasyonlarının yerel ağlarda (LAN) ve İnternet üzerinden organizasyonunu üstlenir. Orta ve büyük ölçekli planlama ve inşaat firmalarında belirgin sinerji etkileri yaratır. Bireysel bir ağ iş istasyonunda çalışmak, normal bir bireysel istasyonda çalışmak kadar basittir.
+
+HİZMET 4:
+BAŞLIK: Allplan Bimplus
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2023/11/GrafikBimplus-1024x576.jpg
+AÇIKLAMA: Bimplus by ALLPLAN, inşaat projelerinde yer alan tüm disiplinler için açık BIM modeli tabanlı veri ve proje işbirliği platformudur. Tasarımdan inşaya ve operasyona kadar tüm proje yaşam döngüleri boyunca bulut teknolojisini kullanarak birden fazla paydaşı birbirine bağlayın, etkinliği koordine edin ve proje bilgilerini kontrol edin.
+
+HİZMET 5:
+BAŞLIK: Allplan Autoconverter
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2023/11/sciaAutoConverter.jpg
+AÇIKLAMA: Bimplus, yapı mühendisleriyle çalışırken (SCIA) AutoConverter aracılığıyla avantaj sunar. Yapısal tasarımcılarla geliştirilmiş ve hızlandırılmış iletişim, daha hızlı inceleme ve karar üzerinde doğrudan etkiye sahiptir. Revizyon karşılaştırması da dahil olmak üzere SAF dosyalarının dışa ve içe aktarılması, mimarların veya yapı mühendislerinin modellerini yeniden inşa etmelerine gerek kalmadığı için mimari ve yapısal analiz arasındaki işbirliğindeki engelleri ortadan kaldırıyor.
+
+HİZMET 6:
+BAŞLIK: Solibri Inside
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2023/11/Solibri-1024x576.jpg
+AÇIKLAMA: Tasarımcılar için bir çözüm olarak oluşturulan Solibri Inside, Allplan'daki BIM Explorer içinden, palet benzeri işlevsellik kullanarak Allplan modellerinde kontrolleri kullanıcının istediği zaman ve zamanda çalıştırabilir. Artık tasarımcının temel model kontrolünü gerçekleştirmek için başka bir yazılımı açmasına gerek yok. Solibri Inside, iş akışı içinde diğer ekip üyeleriyle paylaşılmadan önce her modelin önceden kontrol edilebilmesini sağlar.
+
+=== YOUTUBE VİDEOLARI ===
+VİDEO BULUNAMADI
+
+=== MODAL POPUP VİDEOLARI ===
+MODAL POPUP VİDEO BULUNAMADI
+
+=== İSTATİSTİKLER ===
+İSTATİSTİK BULUNAMADI
+
+=== FOOTER ===
+FOOTER BİLGİSİ BULUNAMADI

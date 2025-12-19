@@ -1,0 +1,40 @@
+SAYFA: https://aluplan.com.tr/10-duke-yeni-lisanslama/
+
+HERO SECTION:
+- Logo: https://aluplan.com.tr/wp-content/uploads/2025/04/ALLPLAN-Connect_Logo.png
+- Başlık: ALLPLAN 2026
+
+POST HERO SECTION:
+- Başlık: Allplan Connect Lisans Yönetim Paneli Nedir?
+
+AÇIKLAMA BÖLÜMÜ:
+🔐 Allplan Connect Lisans Yönetim Paneli Nedir?
+
+Allplan Connect Lisans Yönetim Paneli, Allplan yazılım lisanslarınızı, yönetmek ve etkin bir şekilde kullanabilmek için geliştirilmiş çevrimiçi bir sistemdir.
+
+KAYIT UYARISI:
+Allplan Connect'e kayıt olurken lütfen kurumsal iş e-postanızı kullanın.
+
+ÖRNEK E-POSTALAR:
+✅ lisans.yoneticisi@abc.com.tr
+✅ it@abc.com.tr
+✅ bilgiislem@abc.com.tr
+
+NEDEN ALLPLAN CONNECT LİSANS PANELİ GEREKLİ:
+
+MERKEZİ LİSANS YÖNETİMİ:
+Tüm lisanslarınızı tek bir merkezden görüntüleyebilir, yetkilendirmeleri yönetebilirsiniz.
+
+CİHAZ DEĞİŞİKLİĞİ DESTEĞİ:
+Bilgisayar değişikliği gibi durumlarda farklı bir bilgisayarda Connect'e bağlanarak kolayca kendi lisansınızla çalışmaya devam edebilirsiniz. Bilgisayarınıza format atılsa bile sadece Allplan'i kurmanız yeterlidir. Connect'e bağlanarak sahip olduğunuz Connect kullanıcı adı ve şifresi ile lisansınızı seçerek kullanıma devam edersiniz.
+
+LİSANS KULLANIM TAKİBİ:
+Kim, hangi lisansı kullanmış?
+
+ONLİNE ERİŞİM:
+Web üzerinden her yerden erişilebilir. Kurulum veya teknik müdahale gerekmez.
+
+BUTON: Allplan Connect
+BUTON URL: https://connect2.allplan.com/
+
+YOUTUBE VİDEOLARI: Yok

@@ -1,0 +1,52 @@
+HERO SECTION:
+Başlık: DENGELERİ DEĞİŞTİRİN
+Alt Başlık: Akıllı BIM Eklentisi ile Alanları Tanımla, Hemen Raporunu Al...
+Ana Başlık: İmar Yönetmeliğine Allplan'den BIM Eklentisi!
+
+POST HERO SECTION:
+Açıklama: 2018'de yürürlüğe giren Planlı Alanlar İmar Yönetmeliğini Allplan tanıyor, projenizi kolayca denetleyin, ruhsatınızı alın.
+Görsel URL: https://cdn-ildjmbl.nitrocdn.com/GRFqhZNXqvDZUqSaMXEMUaHzZalKDvEu/assets/images/optimized/rev-73bf7de/planlialanlar.aluplan.com.tr/wp-content/uploads/2023/05/Untitled-600-%C3%97-700-px.png
+
+STATISTICS:
+- Zamandan Tasarruf 100%
+- Hatasız Hesaplama 100%
+- Hızlı Kontrol ve Onay 100%
+
+MAIN CONTENT:
+Başlık: Planla ve Hesapla
+Açıklama: Allplan ile projelerinizi doğrudan 2018'de yürürlüğe giren Planlı Alanlar İmar Yönetmeliğine uyumlu üreteceksiniz.
+
+Saatlerinizi ve hatta günlerinizi vererek yaptığınız hesaplar Allplan'e entegre akıllı yönetmelik eklentisi ile kolayca yapılabiliyor.
+
+Çizimin her aşamasında yönetmeliğe uygunluğu raporlamanız mümkün. Metrekare cetvellerinizi otomatik oluşturabilir, projenizde değişiklik yaptığınızda bu hesabı anında güncelleyebilirsiniz.
+
+Taks/kaks hesabı, Emsal hesabı, Otopark hesabı, Su deposu hesabı, Mahallerin minimum ölçüleri, Sığınak hesabı, vb., birçok hesabı kolayca raporlayarak projenizin imar yönetmeliğinin gerekliliklerini karşıladığını kontrol eder, sorunlu bölümleri tespit edip kolayca gerekli düzeltmeleri yaparsınız.
+
+İmar yönetmeliğinin bir BIM yazılımı kapsımında ilk kez kullanıldığı çalışmamızda, yönetmeliğe göre blok, kat, daire bazında brüt alan, toplam brüt alan, ortak alanlar, toplam inşaat alanı ve dairelerin net alanını doğru ve hızlı şekilde hesaplayabileceğiniz bir yazılım Allplan'e entegre edilmiştir.
+
+FEATURES:
+
+Metrekare Listesi Hazırlamak:
+Görsel URL: https://cdn-ildjmbl.nitrocdn.com/GRFqhZNXqvDZUqSaMXEMUaHzZalKDvEu/assets/images/optimized/rev-73bf7de/planlialanlar.aluplan.com.tr/wp-content/uploads/2023/05/01_m2-cetveli.jpg
+Açıklama: Allplan ile çizimini yaptığınız projelerin metrekare listesini planlı alanlar imar yönetmeliğine uygun bir formatta kolayca oluşturmanız mümkündür. Çok katlı ve bağımsız bölüm sayısı fazla olan projelerde hızlı ve çabuk bir şekilde listenizi oluşturabilirsiniz. Üstelik projenizde yaptığınız değişikliklerden sonra listenizi kolayca yeni duruma göre güncelleyebilirsiniz.
+
+Modelleyin ve Raporlayın:
+Görsel URL: https://cdn-ildjmbl.nitrocdn.com/GRFqhZNXqvDZUqSaMXEMUaHzZalKDvEu/assets/images/optimized/rev-73bf7de/planlialanlar.aluplan.com.tr/wp-content/uploads/2023/05/30emsal.jpg
+Açıklama: Projelerinizin yönetmelik esasları doğrultusunda gerekli kısasları sağlayıp sağlamadığı veya eksik kalmış, unutulan, gözden kaçan kısımlarını kolayca tespit edebilir; gerekli düzeltmeleri yapabilirsiniz. Örneğin Allplan size projenizdeki bağımsız bölümlerin nitelikleri ve sayısına göre yönetmelikte öngörülen hesaba uygun şekilde gerekli su deposu hesabını söyler ve yaptığınız depo miktarının yeterli olup olmadığının kontrolünü sağlar. Ayrıca emsal,taks /kaks ve emsal harici %30 alan hesaplarının kontrolü, min. ve maks. oda mahal ölçüleri, pencere ve kapı genişlikleri-uygunlukları, merdiven rıht yükseklik ve genişliklerinin kontrolü, otopark hesabı gibi birçok yönetmelik maddesinin kontrolünü sağlayabilirsiniz.
+
+SUPPORTERS:
+Görsel URL: https://cdn-ildjmbl.nitrocdn.com/GRFqhZNXqvDZUqSaMXEMUaHzZalKDvEu/assets/images/optimized/rev-73bf7de/planlialanlar.aluplan.com.tr/wp-content/uploads/2023/05/logo-aydin.png
+Açıklama: Aydın Proje
+
+VIDEOS SECTION:
+Başlık: Videolar
+Açıklama: Allplan ile imar yönetmeliğine uyumlu proje oluşturulması ile ilgili filmleri izleyin.
+
+Video Listesi:
+- Allplan ile Metrekare Cetveli Hazırlama
+- Allplan ile Emsal Taks Kaks Hesabı
+- Allplan ile %30 Emsal Harici Alan ve Otopark Hesabı
+- Allplan Su Deposu Hesabı
+- Allplan ile Merdiven Kontrolü
+- Allplan ile Mahal Kontrolü
+- Allplan ile Pencere Kontrolü

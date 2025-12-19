@@ -1,0 +1,85 @@
+SAYFA: https://aluplan.com.tr
+
+HERO SECTION:
+- Başlık: ALLPLAN 2026
+- Alt Başlık: DAHA İYİ BİR GELECEK İNŞA ETMEK İÇİN TASARLANDI
+- İçerik: Yenilikçi AEC iş akışları, otomasyon ve bulut tabanlı iş birliği ile daha başarılı projeler.
+
+ALLPLAN 2026 ÇIKTI BÖLÜMÜ:
+- Başlık: ALLPLAN CLOUD 2026 HİZMETLERİ NELERİ İÇERİR
+
+ÜRÜN KARTLARI:
+- Allplan Basic: https://aluplan.com.tr/wp-content/uploads/2024/10/csm_Basic_EN_1cc4616630-499x1024.jpg
+- Allplan Concept: https://aluplan.com.tr/wp-content/uploads/2024/10/csm_Concept_EN_a42eb6bb96-2-499x1024.jpg
+- Allplan Professional: https://aluplan.com.tr/wp-content/uploads/2024/10/csm_Professional_EN_10fc10f757-499x1024.jpg
+- Allplan Ultimate: https://aluplan.com.tr/wp-content/uploads/2024/10/csm_Ultimate_EN_469ef0d00c-499x1024.jpg
+- Allplan Civil: https://aluplan.com.tr/wp-content/uploads/2024/10/csm_Civil_EN_01_f6057ef634-499x1024.jpg
+- Allplan Precast: https://aluplan.com.tr/wp-content/uploads/2024/10/csm_Precast_EN_01_7399933092-499x1024.jpg
+
+ÜRETKENLİK BÖLÜMÜ:
+- Başlık: Üretkenlik Üst Seviyede
+- Alt Başlık: Çelik detaylandırma yazılımı
+- İçerik: SDS2 ile projeleri daha hızlı teslim edin. Çelik detaylayıcılar, imalatçılar ve mühendisler projeleri daha hızlı sunmak, riski azaltmak ve YG'yi en üst düzeye çıkarmak için SDS2 kullanır.
+
+KAMPANYA BÖLÜMÜ:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/11/Copy-of-Q4-Kampanya-Web-Header.png
+
+BARBIE'NİN RÜYA EVİ BÖLÜMÜ:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/11/Startbildschirm_Barbie_555X300.jpg
+- Başlık: Barbie'nin Rüya Evi
+- Alt Başlık: Scratch'ten video ve proje indirme
+- İçerik: Barbie'nin rüya evinden ilham alın. Sıfırdan Başlayan videomuz, oluşturma sürecinde size adım adım yol gösterecektir. kaydırak havuzu, mobilyalar, çevresi ve B desenli duvarlar dahil. Proje dosyasını kuruyoruz ve tasarımı kendi isteklerimize göre değiştiriyoruz.
+
+HELLO ALLPLAN EĞİTİM BÖLÜMÜ:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2021/12/01-Look-and-Feel_555x300.png
+- Başlık: Hello Allplan!
+- İçerik: Eğitim Videoları: Allplan 2024 versiyonun öne çıkan özelliklerini sizler için bir dizi videoda özetledik. İzlemek için yandaki butonu tıklayın.
+
+ALLPLAN ÇÖZÜMLERİ:
+
+BİNA TASARIMI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/2023-solutions-building-Design-allplan-turkey-370x275.png
+- Açıklama: © Harfa Design Residence, Visualisierung| Central Group
+
+ALTYAPI TASARIMI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/solutions-Infrastructure-Design-370x275.png
+- Açıklama: iStock-1308514772
+
+İNŞAAT PLANLAMASI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/2023-prefabrication-product-allplan-turkey-370x270.png
+- Açıklama: © SK Rapid Wien
+
+E-BÜLTEN BÖLÜMÜ:
+- Başlık: E-bültenimize üye olun
+- Alt Başlık: ALLPLAN HAKKINDAKİ YENİLİKLERİ İLK ÖĞRENEN OL
+- İçerik: Şimdi kaydolun ve ALLPLAN ile güncel kalın: Allplan'ın en son sürümü için yayın bilgileri, Etkinliklere, eğitim kurslarına ve web seminerlerine davetiyeler, En son sektör, şirket ve ürün haberleri
+
+DENEME BÖLÜMÜ:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2021/10/allplan-2021-demodownload_600x600-300x300.png
+- Başlık: ALLPLAN'I 14 GÜN ÜCRETSİZ DENEYİN VEYA YEREL SATIŞ ORTAĞIMIZLA İLETİŞİME GEÇİN
+
+BUTON: Allplan Basic
+BUTON URL: https://aluplan.com.tr/allplan-basic-2025/
+
+BUTON: Allplan Concept
+BUTON URL: https://aluplan.com.tr/allplan-concept-2025/
+
+BUTON: Allplan Professional
+BUTON URL: https://aluplan.com.tr/allplan-professional-2025/
+
+BUTON: Allplan Ultimate
+BUTON URL: https://aluplan.com.tr/allplan-ultimate-2025/
+
+BUTON: Allplan Civil
+BUTON URL: https://aluplan.com.tr/product-allplan-civil/
+
+BUTON: Allplan Precast
+BUTON URL: https://aluplan.com.tr/2024-allplan-precast-software-for-precast/
+
+BUTON: Q4 Kampanya
+BUTON URL: https://aluplan.com.tr/q4-kampanya-allto-2023-kasim/
+
+BUTON: Hello Allplan Eğitim Videoları
+BUTON URL: https://aluplan.com.tr/hello-allplan-2022/
+
+YOUTUBE VİDEOLARI: Yok

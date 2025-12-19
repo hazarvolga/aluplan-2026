@@ -1,0 +1,40 @@
+import icons_0 from "./2000_6543b9d8b381a.webp";
+import icons_1 from "./2000_6543b9e866e33.webp";
+import icons_2 from "./2000_6543b9f3aee14.webp";
+import icons_3 from "./2000_6543ba044a531.webp";
+import icons_4 from "./2000_6543ba10aa773.webp";
+import icons_5 from "./2000_6543ba1f8183a.webp";
+import icons_6 from "./2000_6543ba2c34545.webp";
+import icons_7 from "./2000_6543ba3731850.webp";
+import icons_8 from "./2000_6543ba42bb596.webp";
+import icons_9 from "./2000_6543ba4f5d57a.webp";
+import icons_10 from "./2000_6543ba5b0a119.webp";
+import icons_11 from "./2000_6543ba6759cd2.webp";
+import icons_12 from "./2000_6543ba73ef294.webp";
+import icons_13 from "./2000_6543ba82360f0.webp";
+import icons_14 from "./2000_6543ba8dbe7e5.webp";
+import icons_15 from "./2000_6543ba9a60154.webp";
+import icons_16 from "./2000_6543baa787f64.webp";
+import icons_17 from "./2000_6543bab2dc002.webp";
+import icons_18 from "./2000_6543babf086fa.webp";
+import icons_19 from "./2000_6543bac9f223f.webp";
+import icons_20 from "./2000_6543bad532aa8.webp";
+import icons_21 from "./2000_6543badf132a7.webp";
+import icons_22 from "./2000_6543bae93140c.webp";
+import icons_23 from "./2000_6543baf362338.webp";
+import icons_24 from "./2000_6543bb03b5a75.webp";
+import icons_25 from "./2000_6543bb118a297.webp";
+import icons_26 from "./2000_6543bb1c6bd33.webp";
+import icons_27 from "./2000_6543bb2bca83a.webp";
+import icons_28 from "./2000_6543bb3a3c858.webp";
+import icons_29 from "./2000_6543bb4ca1dbd.webp";
+import icons_30 from "./2000_6543bb5b08957.webp";
+import icons_31 from "./2000_6543bb69399f3.webp";
+import icons_32 from "./2000_6543bb74e18a5.webp";
+import icons_33 from "./2000_6543bb825d1b0.webp";
+import icons_34 from "./2000_6543bb95484c8.webp";
+import icons_35 from "./2000_6543bba430b98.webp";
+
+export const icons = [
+icons_0, icons_1, icons_2, icons_3, icons_4, icons_5, icons_6, icons_7, icons_8, icons_9, icons_10, icons_11, icons_12, icons_13, icons_14, icons_15, icons_16, icons_17, icons_18, icons_19, icons_20, icons_21, icons_22, icons_23, icons_24, icons_25, icons_26, icons_27, icons_28, icons_29, icons_30, icons_31, icons_32, icons_33, icons_34, icons_35
+];

@@ -1,0 +1,74 @@
+HERO SECTION:
+Başlık: PREFABRICATION
+Alt Başlık: FOR PRECAST DESIGNERS WHO DEMAND MORE
+Açıklama: Precast is one of the fastest growing segments of the construction industry. That's why ALLPLAN offers unique workflows for the design, detailing, and implementation of precast projects. Highly automated workflows enable maximum productivity and precision. Learn more about the integrated precast functions in Allplan!
+
+POST HERO SECTION:
+Başlık: ALLPLAN – BIM SOLUTIONS FOR PREFABRICATION
+Açıklama: What characterizes successful precast projects is the perfect mix of extensive knowledge, the commitment to absolute precision, and the right tools.
+
+Allplan supports you in all project phases: from the impressive 3D quotation model and 3D precast model to complete sequence and production planning, as well as clear 3D stacking and seamless billing data.
+
+STATISTICS:
+MORE TIME - 52%: faster and more accurate design deliverables, visualizations, and detailed construction drawings. (* In 3D vs 2D)
+
+LESS ERRORS - 60%: more efficient and precise project costing, at earlier stages, with reliable automated quantities and materials take-off. (* Versus manual quantity take-off)
+
+MORE PRODUCTIVE - 25%: increased overall productivity with 3D stacking.
+
+ZORLU DURUMLAR:
+Başlık: AŞAĞIDAKİ ZORLUKLARLA SÜREKLİ MÜCADELE EDİYOR MUSUNUZ?
+- Tasarım, planlama ve inşaat için artan karmaşıklık ve işbirliği gereksinimleri.
+- Çok fazla zaman alan, kaliteyi etkileyen ve risk oluşturan sürekli proje değişiklikleri.
+- Proje maliyetleriniz hakkında devam eden endişeler ve kontrolden çıkan zaman gecikmeleri.
+
+12 REASONS TO CHOOSE ALLPLAN:
+
+1. CONSISTENT TIME AND COST PLANNING, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/automated_workflows.png, Açıklama: Powerful tools to create and accurately design objects of any shape for even the most complex of project requirements.
+
+2. EASILY DESIGN & DETAIL COMPLEX REINFORCEMENT, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/high_design_quality.png, Açıklama: Automated solutions for the rapid reinforcement design and detailing of complex geometry, such as curved structures or freeform objects.
+
+3. CONSISTENT TIME AND COST PLANNING, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/intuitive_terrain_integration-1.png, Açıklama: Quickly integrate all common terrain formats, displaying and conveniently editing them as digital terrain models.
+
+4. INDIVIDUAL WAYS OF WORKING, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/work_way_want-1.png, Açıklama: Flexible workflows in 2D, 2.5D and 3D as well as the full object-orientated BIM working methodology
+
+5. SEAMLESS COLLABORATION, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-productive_collab.png, Açıklama: Optimize materials and construction approaches including cast insitu/precast concrete, steel and timber for enhanced buildability and sustainability.
+
+6. SMART CONVERTER, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/smart_converter-1.png, Açıklama: A single software solution for architectural design, structural engineering, MEP services, and civil engineering design and detailing.
+
+7. CONVINCING VISUALIZATION, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/convincing_visualizations.png, Açıklama: Integrated cloud technology for multi-user working in real-time, plus model and project collaboration with partners
+
+8. COMPLETE OVERVIEW, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/keep_overview-1.png, Açıklama: Easily exchange data with multiple exchange formats, IFC4 RV import/export, and the collaborative OPEN BIM data platform, Bimplus.
+
+9. QUALITY-ASSURED DATA FOR ERP AND MES, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/quality_assured_data-1.png, Açıklama: Quickly and precisely calculate quantities and materials from an earlier stage using detailed lists for accurate tenders.
+
+10. DIGITALIZATION OF THE PRECAST PLANT, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/digitalization_precast_plant-1-1.png, Açıklama: Save time, with changes made automatically across deliverables, simply by editing once in either drawings or model.
+
+11. OPTIMIZED DECISION MAKING, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/optimized_decisions-1.png, Açıklama: Swiftly and accurately generate plans, drawings, and reports directly from the 3D model and control information exchange for high-quality documentation.
+
+12. MOBILE SOLUTIONS, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/mobile_solutions-1.png, Açıklama: Coordinate detailed designs with construction teams using cloud-based platform – Bimplus for clear and transparent communication
+
+YOUTUBE VİDEO SECTION:
+=====================
+BAŞLIK: Eğitim Youtube Videoları
+YOUTUBE VİDEO URL: https://youtu.be/uS_xihYzWoA
+YOUTUBE EMBED URL: https://www.youtube.com/embed/uS_xihYzWoA
+BUTON: "Videoyu İzle"
+BUTON URL: https://youtu.be/uS_xihYzWoA
+
+ADDITIONAL SECTIONS:
+
+EĞİTİM & HİZMETLER:
+Başlık: ALLPLAN BECERİNİZİ ARTIRIN
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/03/1-dramatic-perspective-with-low-angle-view-skyscrapers-looking-up-sky-dubai-vanishing-point.jpg
+Link URL: https://www.allplan.com/events/events/?&tx_jvevents_events%5BeventsFilter%5D%5Bcitys%5D=undefined
+
+ALLPLAN ON DEMAND:
+Başlık: KULLANICI DENEYİMİ PLATFORMU
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/03/2-dramatic-perspective-with-low-angle-view-skyscrapers-looking-up-sky-dubai-vanishing-point.jpg
+Link URL: https://gateway.eu.on24.com/wcc/eh/8000008863/allplan
+
+GENİŞLETİLMİŞ EKOSİSTEM:
+Başlık: ORTAK YAZILIM ÇÖZÜMLERİ
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/03/3-dramatic-perspective-with-low-angle-view-skyscrapers-looking-up-sky-dubai-vanishing-point.jpg
+Link URL: https://marketing.allplan.com/allplan-partner-solutions/

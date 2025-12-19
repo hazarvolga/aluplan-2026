@@ -1,0 +1,39 @@
+SAYFA: https://aluplan.com.tr/engineering/
+
+HERO SECTION:
+- Başlık: ALLPLAN TASARIMDAN İNŞAATA
+- Alt Başlık: Daha iyi yapılı bir çevre için tasarım çözümleri.
+
+ÖZELLİK BÖLÜMÜ:
+
+BIM DESTEKLİ TASARIM:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2020/10/csm_bim_5cd1eb1d2e.png
+- Açıklama: Allplan, inşaatta gecikmeleri önleyerek, tasarım aşamasında bile hataları ve çelişkileri erkenden göstererek, önce sanal sonra gerçekte inşa etmenizi sağlar.
+
+SINIRSIZ MODELLEME:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/10/model-creation-1024x1024.png
+- Açıklama: Siemens'in güçlü Parasolid modelleme çekirdeği, hassasiyet ve performansı artırırken 3D modeller oluştururken size daha fazla özgürlük sağlar.
+
+EN ÜST DÜZEYDE DONATILAR:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/elementor/thumbs/csm_3d_aa5cc5908b-qq8zfu11oa94lh2jieif1bl1rs1tbkfmg0z48nsiqw.png
+- Açıklama: Donatı, fikstür ve gerekirse kirişlerle tamamlanmış entegre bir 3B model, mümkün olan en yüksek tasarım güvenilirliğini ve netliğini sağlar.
+
+KEŞFEDİN ALLPLAN ÜRÜN SUNUMU:
+- Başlık: Daha iyi yapılı bir çevre için tasarım çözümleri
+
+ALLPLAN AÇIKLAMASI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2021/10/allplan-suit-icon.png
+- İçerik: Allplan, inşaat sektörünün zorluklarını karşılamak ve dijital dönüşümden yararlanmak için nihai BIM çözümüdür. BIM yazılımı ve ALLPLAN'ın sektör lideri işbirliği ve entegrasyon araçları ideal kombinasyonu oluşturur.
+
+ALLPLAN BIMPLUS:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2021/10/Allplan_Bimplus.png
+- İçerik: Allplan Bimplus, tüm disiplinlerin proje oluşturmada verimli bir şekilde işbirliği yapması için nihai açık BIM platformudur. BIM modeli verileri, bilgileri, belgeleri ve görevleri, tüm bina yaşam döngüsü boyunca merkezi olarak yönetilir.
+
+AX3000 BÖLÜMÜ:
+- Başlık: AX3000
+- İçerik: AX3000, Allplan için bina hizmetleri mühendisliğinin tüm yönlerini sağlayan tam entegre bir eklentidir: havalandırma, ısıtma, elektrik, sıhhi tesisat ve sprinkler sistemleri.
+
+BUTON: DAHA FAZLA BİLGİ
+BUTON URL: https://www.ax3000-group.de/en/building-services-engineering
+
+YOUTUBE VİDEOLARI: Yok

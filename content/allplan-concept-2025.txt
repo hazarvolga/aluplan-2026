@@ -1,0 +1,126 @@
+HERO SECTION:
+Başlık: ALLPLAN CONCEPT
+Alt Başlık: Modelleme ve tasarım dokümantasyonu için BIM çözümü
+
+ALLPLAN CONCEPT NEDİR:
+Başlık: ALLPLAN Concept Nedir?
+Açıklama: Modelleme ve tasarım dokümantasyonu için BIM çözümüdür. Mimarlık ofisleri, çok disiplinli danışmanlık firmaları, konut geliştiricileri ve kamu kurumları tarafından kullanılır. Bina modelleme, görselleştirme, değerlendirme ve dokümantasyon hazırlığı için gerekli tüm araçları içerir. ALLPLAN Concept, her türlü mimari gereksinim için evrensel bir BIM çözümüdür.
+
+Özellikler:
+- BIM modelleme için verimli araçlar
+- Tasarım ve çıktı üretiminde otomasyon
+- Miktar hesaplamalarında güvenilirlik
+- Render ve görselleştirme iş akışları
+- Veri alışverişi için sorunsuz arayüzler
+- Bulut tabanlı model koordinasyonu ve iş birliği
+
+ALLPLAN CONNECT FAYDALARI:
+
+1. İstediğiniz Gibi Çalışın:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/work_way_want.png
+Açıklama: 2D, 2.5D ve 3D'de esnek iş akışları.
+
+2. Güçlü & Sezgisel modelleme:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/powerful_modeling.png
+Açıklama: Herhangi bir formu kolayca modelleme özgürlüğü, yapı bileşenlerini hızlıca geliştirmek için güçlü araçlarla desteklenir.
+
+3. Verimli İş Birliği:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/productive_collab.png
+Açıklama: Optimized bulut tabanlı iş birliği, proje ve ofis ekip çalışması ile çizim ve plan dağıtımı için entegre ALLPLAN Cloud hizmetleri.
+
+4. İkna Edici Görselleştirmeler:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/convincing_visualizations.png
+Açıklama: Projelerinizi sunumlar için entegre render araçlarıyla hayata geçirin.
+
+5. Güvenilir Erken Maliyet Tahminleri:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/realiable_earlier_cost_estimates.png
+Açıklama: Detaylı listelerle, teklif süreçleri için gerekli miktar ve malzemeleri erken aşamalarda hızlı ve doğru bir şekilde hesaplayın.
+
+6. Üstün Kalitede Çıktılar:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/superior_quality_deliverables.png
+Açıklama: 3D modelden plan, çizim ve raporları doğru bir şekilde oluşturun ve yüksek kaliteli dokümantasyon için bilgileri kontrol edin.
+
+ALLPLAN CONNECT ÖZELLİKLERİ:
+Başlık: Fonksiyonellik Hızlı Bakış
+
+Arayüzler:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/01_Interfaces_2.jpg
+Açıklama: Veri alışverişinin sorunsuz bir şekilde gerçekleşmesi için tüm ilgili dosya arayüzleri, bunlar arasında ifc, bcf, pdf, rvt, 3dm, skp, obj, LandXML, dwg, dgn, c4d, stl, wrl, saf ve daha birçok format bulunmaktadır.
+
+Dış Veri Kaynakları:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/02_EXTERNAL_DATA_SOURCES_Graphic_2.jpg
+Açıklama: GIS bilgilerini, 3D içerikleri ve dokuları içe aktarmak için GIS Bağlayıcı ve İçerik Bağlayıcı.
+
+3D Modelleme:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/03_3D_Modeling_2.jpg
+Açıklama: En karmaşık ve zor geometriler için bile yüksek performanslı 3D modelleme. Modelleme işlevselliği, Siemens Parasolid modelleme çekirdeği ile desteklenmektedir.
+
+2D Çizim:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/04_2D_DRAFTING_2.jpg
+Açıklama: Çekici, özlü ve detaylı çizimler için hassas 2D çizim için kapsamlı işlevsellik.
+
+Çarpışma Tespiti:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/06_CLASH_DETECTION_2.jpg
+Açıklama: Yumuşak ve sert çarpışmaları tanımlamak için kullanılan araç.
+
+Content Package BIM Easy:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/07_CONTENT_PACKAGE_BIM_EASY_Klein_2.jpg
+Açıklama: Önceden tanımlanmış ancak özelleştirilebilir şirket standartları. Kapsamlı sihirbazlar aracılığıyla modeller ve çizimler oluştururken tutarlı bir çalışma biçimi sağlar.
+
+Yapı Bileşenleri:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/08_BUILDING_COMPONENTS_2.jpg
+Açıklama: Duvarlar, döşemeler, kirişler, kolonlar, temeller, merdivenler, çatılar, pencereler, kapılar ve cepheler gibi esnek yapı bileşenleri.
+
+Arazi Modeli:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/09_Terrain_Model_2.jpg
+Açıklama: Anket noktaları veya nokta bulutlarına dayalı güçlü arazi modelleme.
+
+Kentsel ve Peyzaj Tasarımı:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/10_Urban_and_Landscape_Design_2.jpg
+Açıklama: Kütle modelleri, kentsel ve alan tasarımı ile bitkilendirme planları için fonksiyonlar.
+
+Kanalizasyon ve Altyapı:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/11_Sewerage_and_Utilities_2.jpg
+Açıklama: Su, atık su, elektrik, internet, doğalgaz veya merkezi ısıtma gibi hizmetlerin yönlendirilmesi.
+
+Miktar Hesaplama ve Maliyetlendirme:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/12_QUANTITY_TAKE-OFF_AND_COSTING_3.jpg
+Açıklama: Modelleme yapılmış ve yapılmamış nesnelerin hassas ve doğrulanabilir miktar hesaplaması ile maliyetlendirilmesi.
+
+Görselleştirme:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/Visualization__basic__Conc___Prof___Ulti_-1.jpg
+Açıklama: Vulkan gibi en son teknolojilere dayanan geniş bir görselleştirme yetenekleri yelpazesi. Gerçek zamanlı render ve CineWare'ı içerir, ayrıca Lumion ve Twinmotion ile canlı bağlantılar sunar.
+
+ALLPLAN BULUT HİZMETLERİ:
+
+Bulut Tabanlı İşbirliği: Bimplus Pro, bulut tabanlı BIM işbirliği platformu.
+
+Proje Takım Çalışması:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/15_PROJECT_TEAMWORKING_2_01.jpg
+Açıklama: ALLPLAN Share, bir şirket ağı üzerinden ekip çalışmasını sağlar; uzaktan çalışan ekip üyeleri için de idealdir.
+
+Çizim ve Plan Dağıtımı:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/16_DRAWING_AND_PLAN_DISTRIBUTION_2.jpg
+Açıklama: Çeşitli plan formatlarının oluşturulmasını ve dağıtımını yönetmek için özel olarak tasarlanmış web tabanlı plan dağıtım aracı ALLPLAN Exchange.
+
+Analitik Model Üretimi:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/17_ANALYTICAL_MODEL_GENERATION_2.jpg
+Açıklama: AutoConverter aracılığıyla geometrik modellerin, Frilo Statics, Scia Engineer gibi yapısal analiz çözümleri tarafından doğrudan kullanılabilen analitik modellere akıllı bir şekilde dönüştürülmesi.
+
+Ofis Ekip Çalışması:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/Allplan-WorkgroupManager.jpg
+Açıklama: ALLPLAN Çalışma Grubu Yöneticisi aracılığıyla yerel bir şirket ağı içinde verimli ekip çalışmasını kolaylaştırın.
+
+Bulut Destekli Proje Kaynakları:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/CLOUD-ENABLED_PROJECT_RESOURCES_Filter_01.jpg
+Açıklama: Bulut ofis kaynakları, ALLPLAN proje kaynaklarının tamamen bulut tabanlı dağıtımını sağlar.
+
+ALLPLAN Model Viewer:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/ALLPLAN_Model_Viewer_700x400.jpg
+Açıklama: Yeni bir dosyayı hızlıca önizlemek, IFC modellerini görsel olarak görüntülemek ve tam olarak yüklemeden önce kontrol etmek için kullanılır.
+
+SATIN ALINABİLİR SEÇENEKLER:
+
+Lisans Server:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/License_Server_Filter_01.jpg
+Açıklama: Mevcut lisansların birden fazla kullanıcı tarafından optimal şekilde kullanılmasını sağlar. Ofis dışında lisans kullanımı mümkündür.

@@ -1,0 +1,84 @@
+SAYFA: https://aluplan.com.tr/onemli-bilgiler-baglantilar/
+
+HERO SECTION:
+- Başlık: İNŞAAT ENDÜSTRİSİ İÇİN BIM YAZILIMI
+- Alt Başlık: TASARIMDAN İNŞAATA
+
+KAMPANYA BÖLÜMÜ:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/11/Q4-Kampanya-Web-Header.jpg
+
+BIM BRIDGE WORKFLOW WEBİNAR:
+- Başlık: BIM Bridge Workflow webinar
+- İçerik:
+  • Parametric Modelling with Allplan Bridge,
+  • Structural analysis in Allplan Bridge,
+  • Reinforcement design and code checking,
+  • Detailing and rebar modeling,
+  • Drawing production,
+  • BIM bridge model
+
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/04/c6a898e3-8830-4da2-bfe2-55f1bd9887bb-ticket.social_media_picture-ab2020-1_E7PwB_resized_large.png
+
+- Açıklama: İlk web semineri olan Parametrik modellemede, çok disiplinli bir modelin nasıl oluşturulacağı gösterilecektir. Model her ikisi için de kullanılacaktır; yapısal analiz ve diğer yandan detaylandırma, donatı modelleme ve çizim paftası için.
+
+DESTEK PLATFORMU:
+- Başlık: Yeni destek platformumuz hizmette…
+- Alt Başlık: ALLPLAN TÜRKİYE DESTEK
+- İçerik: Her türlü soru, talep ve teknik destek hizmetleri için bu platform üzerinden bizimle iletişime geçebilirsiniz.
+
+EĞİTİM BÖLÜMÜ:
+- Başlık: KOLAYCA ALLPLAN ÖĞRENİN
+- Alt Başlık: ALLPLAN EĞİTİM VİDEOLARI
+
+DEMO PROJESİ İLE EĞİTİM:
+- İçerik: Daha sonra Allplan'i kendiniz denemek isterseniz, Allplan'i bir deneme lisansı ile kurun. Kurulum sırasında demo projesi Hello Allplan! 2023 doğrudan kurulur ve açılabilir. Böylece tüm işlevleri hızlı ve kolay bir şekilde görüntüleyebilir ve deneyebilirsiniz.
+
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/11/Newsletter_Allplan-2023-field-1.jpg
+- Açıklama: © Bauart Architekten und Planer AG | © dsp Ingenieure & Planer AG, ZH, Flughafen Zürich AG, ZH
+
+REFERANSLARIMIZ:
+- Orion Mühendislik: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-orion-muh.jpg
+- Türkerler Gama: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-turkerler-gama.jpg
+- Türk Ytong: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-turk-ytong.jpg
+- TOKİ: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-toki.jpg
+- Tesem Yapı: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-tesem-yapi.jpg
+- Temelsu: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-TEMELSU-TM-2.webp
+- Su Yapı: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-su-yapi-ref.webp
+- REC Uluslararası: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-rec-uluslarasi.jpg
+- Promer: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-promer.jpg
+- Penti: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-penti.webp
+- Modern Mühendislik: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-modern-muh.jpg
+- İskenderun Demir Çelik: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-iskenderun-demir-celik.jpg
+- Hidro Dizayn: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-hidro-dizayn.jpg
+- Genser Mühendislik: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-genser-muh.jpg
+- Freyssinet: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-fressinet.png
+- Ete Beton: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-ete-beton.png
+- Enka: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-enka.jpg
+- EFK: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-efk.jpg
+- Dergan Carpar Mimarlık: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-Dergan-Carpar-Mimarlik.jpg
+- Çalık Enerji: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-calik-enerji.jpg
+- Baytec Mühendislik: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-baytec-muhendislik.png
+- Avinal Yazılım: https://aluplan.com.tr/wp-content/uploads/2023/03/ref-avinal-yazilim.png
+
+WEBİNARLAR BÖLÜMÜ:
+- Başlık: Allplan Çevrimiçi Eğitim
+- İçerik: Şimdi geliştirilmiş çevrimiçi webinalarları keşfedin.
+
+IFC AKTARIM EL KİTABI:
+- İçerik: Sektör paydaşlarının birlikte çalışabilme potansiyelini artırmak, openBIM kültürünü tanıtmak ve yaygınlaştırmak amacıyla buildingSMART Türkiye tarafından hazırlanan IFC Aktarım El Kitabı yayımlandı!
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/ifc-212x300.jpg
+
+ALLPLAN'LE BIM MODELLEMESİ VE METRAJ:
+- Başlık: İhale, Metraj, Hakediş ve BIM modellemesi için nihai çözüm
+- İçerik: Allplan ve 2b dwg Converter hızıyla doğru ve kesin metraja yönelik BIM modellemesi. e-HakedişPro, derin bir yaklaşık maliyet, analiz ve hakediş bilgisini gerektirmeyen tasarım özellikleri ve kullanıcı dostu arayüzleri sayesinde yapı sektöründeki teknik elemanların yapı yaklaşık maliyeti ve hakediş hesaplamadaki tüm zorluklarını ortadan kaldırır.
+
+İMAR YÖNETMELİĞİNE ALLPLAN'DEN BIM EKLENTİSİ:
+- İçerik: 2018'de yürürlüğe giren Planlı Alanlar İmar Yönetmeliğini Allplan tanıyor, projenizi kolayca denetleyin, ruhsatınızı alın. Allplan ile projelerinizi doğrudan 2018'de yürürlüğe giren Planlı Alanlar İmar Yönetmeliğine uyumlu üreteceksiniz.
+
+BUTON: Q4 Kampanya
+BUTON URL: http://tr/q4-kampanya-2023-kasim/
+
+BUTON: IFC Aktarım El Kitabı
+BUTON URL: https://buildingsmartturkiye.org/paylasimlar/yayinlar/buildingsmart-turkiye-tarafindan-hazirlanan-ifc-aktarim-el-kitabi-yayimlandi
+
+YOUTUBE VİDEOLARI: Yok

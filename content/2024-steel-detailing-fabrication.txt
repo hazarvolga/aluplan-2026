@@ -1,0 +1,44 @@
+HERO SECTION:
+Başlık: ÇELİK ÜRETİCİLERİ
+Alt Başlık: DAHA FAZLASINI İSTEYEN ÇELİK ÜRETİCİLERİ İÇİN
+Açıklama: ALLPLAN'deki SDS2, pazarın tek hepsi bir arada çelik detaylandırma ve bağlantı tasarımı BIM çözümünü sunar, imalattan sahaya çalışan eksiksiz tasarımlar sunar ve çelik konstrüksiyon projelerinizin doğruluğunu ve verimliliğini artırır. Çelik detaylandırma yazılımınızdan daha fazlasını bekleyin.
+
+POST HERO SECTION:
+Başlık: ALLPLAN SDS2 – ÇELİK ÜRETİMİ İÇİN BIM ÇÖZÜMLERİ
+Alt Başlık: ÜSTÜN İNŞAAT İÇİN ÇOK MALZEMELİ ÇÖZÜM
+Açıklama: Çarpıcı mimari yapılardan devasa endüstriyel tesislere kadar strüktürel çelik tasarımı, en üst düzeyde doğruluk, teknik uzmanlık ve hassas, birlikte çalışabilir araçlar gerektirir.
+
+ALLPLAN SDS2 ile, modelleme yaparken otomatik olarak akıllı bağlantılar tasarlayabilir, tasarımları imalathanenizin güçlü yönlerine göre uyarlayabilir ve her projede daha fazla verimlilik ve doğruluk için diğer BIM ve imalat yönetim sistemleriyle entegre edebilirsiniz.
+
+STATISTICS:
+TIME SAVING - 93%: of users report completing projects at least 25% faster with SDS2 by ALLPLAN. (Source: SDS2 ROI Survey conducted in 2021 among SDS2 customers. Participant experience with other steel detailing software solutions varied.)
+
+MORE EFFICIENT - 86%: of users say SDS2 by ALLPLAN helps increase fabrication efficiency. (Source: SDS2 ROI Survey conducted in 2021 among SDS2 customers. Participant experience with other steel detailing software solutions varied.)
+
+MORE PRODUCTIVE - 71%: of users saw productivity gains within one year of adoption (Source: SDS2 ROI Survey conducted in 2021 among SDS2 customers. Participant experience with other steel detailing software solutions varied.)
+
+ZORLU DURUMLAR:
+Başlık: AŞAĞIDAKİ ZORLUKLARLA SÜREKLİ MÜCADELE EDİYOR MUSUNUZ?
+- Tasarım, planlama ve inşaat için artan karmaşıklık ve işbirliği gereksinimleri.
+- Çok fazla zaman alan, kaliteyi etkileyen ve risk oluşturan sürekli proje değişiklikleri.
+- Proje maliyetleriniz hakkında devam eden endişeler ve kontrolden çıkan zaman gecikmeleri.
+
+9 GEREKÇE - NEDEN ALLPLAN SDS2:
+
+1. AKILLI İMALAT, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/work_way_want-1.png, Açıklama: Özel tasarım otomasyonu, maksimum verimlilik ve karlılık için çelik üreticisinin güçlü yönlerine ve tercihlerine göre optimize edilmiştir.
+
+2. OTOMATİK BAĞLANTILAR, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/integrated_structural_analysis-2.png, Açıklama: Tam olarak doğrulanmış bağlantılar, siz modelledikçe tasarlanır ve en sıkıcı detaylandırma görevlerinden birini hızlandırır.
+
+3. İNŞA EDİLEBİLİR TASARIMLAR, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/convincing_visualizations.png, Açıklama: Tasarım zekamız, üstün inşa edilebilirlik için imalata ve montaja hazır bağlantılar sağlar.
+
+4. İŞÇİ VERİMLİ TASARIMLAR, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/easyliy_modify_requirements-1.png, Açıklama: Üretim tercihlerine göre otomatik olarak tasarlanan bağlantılarla proje süresini ve maliyetini azaltın ve karlılığı en üst düzeye çıkarın.
+
+5. GÜÇLÜ İŞBİRLİĞİ, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/productive_collab-1.png, Açıklama: Entegre bulut teknolojisi, çakışmasız işbirliği için gerçek zamanlı çok kullanıcılı modellemeyi destekler.
+
+6. TAM BİRLİKTE ÇALIŞABİLİRLİK, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/complete_interoperability-1.png, Açıklama: Tasarım, tahmin, üretim yönetimi ve otomatikleştirilmiş üretim iş akışlarınız için kolayca veri alışverişi yapın.
+
+7. ÜSTÜN KALİTELİ TESLİMATLAR, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/superior_quality_deliverables.png, Açıklama: Doğru, yüksek kaliteli belgeler için 3B modelden otomatik olarak çizimler ve raporlar oluşturun.
+
+8. GELİŞTİRİLMİŞ PROJE İLETİŞİMİ, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-enhanced_project_comm.png, Açıklama: Etkileşimli raporlar ve basit model inceleme iş akışlarıyla tasarım amacını kolayca iletin.
+
+9. OTOMATİK KARMAŞIK MODELLEME GÖREVLERİ, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/automated_workflows.png, Açıklama: Merdivenleri, korkulukları, karmaşık geometriyi ve daha fazlasını modellemek için otomatik araçlarla çeşitli çeliği modellemede zamandan tasarruf edin.

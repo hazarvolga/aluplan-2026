@@ -1,0 +1,81 @@
+HERO SECTION:
+Başlık: Bridge Engineering
+Alt Başlık: FOR BRIDGE ENGINEERS WHO DEMAND MORE.
+Açıklama: With ALLPLAN's innovative BIM solution for bridge engineering, users can create an interdisciplinary 4D model of any bridge type. The common data environment enables use of the comprehensive 3D bridge model for detailing and drawing production and the same model to be used for generating the analysis model to perform structural analysis including reinforcement design and code checking.
+
+POST HERO SECTION:
+Başlık: ALLPLAN – BIM SOLUTIONS FOR BRIDGE ENGINEERING
+Açıklama: To design and build attractive and safe bridges, reliably meet deadlines and budget targets, ultimate transparency as well as clear communication and coordination with project partners is essential and requires powerful software tools.
+
+With Allplan Bridge you can easily model, analyse, design, and detail different kinds of bridges. You work with a single solution from parametric model creation with a high level of detail, including prestressing, to integration of the construction process, structural analysis, reinforcement design and detailing.
+
+STATISTICS:
+Consistent Data - 100%: because everything is accomplished with one software solution – the common data environment minimizes unnecessary data exchange and re-entry between different solutions.
+
+MORE TIME - 63%: time saving through adaption of project templates and model modifications that occur throughout the entire design phase that are made quickly, easily and reliably.
+
+MORE PRICISE - 100%: due to modeling techniques which are tailored for bridges and workflows for different bridge types, such as precast girder bridges.
+
+MORE EFFICIENCY - 100%: reuse of data as a result of the parametric model description – modeled bridge elements can be saved as a template and reused in subsequent projects.
+
+ZORLU DURUMLAR:
+Başlık: AŞAĞIDAKİ ZORLUKLARLA SÜREKLİ MÜCADELE EDİYOR MUSUNUZ?
+- Tasarım, planlama ve inşaat için artan karmaşıklık ve işbirliği gereksinimleri.
+- Çok fazla zaman alan, kaliteyi etkileyen ve risk oluşturan sürekli proje değişiklikleri.
+- Proje maliyetleriniz hakkında devam eden endişeler ve kontrolden çıkan zaman gecikmeleri.
+
+12 GEREKÇE - NEDEN ALLPLAN:
+
+1. ARAZİ KOŞULLARINI BAŞTAN HESABA KATIN, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/intuitive_terrain_integration-1.png, Açıklama: Tüm yaygın arazi biçimlerini hızla entegre edin, dijital arazi modellerini görüntüleyin ve uygun şekilde düzenleyin.
+
+2. TEK ÇÖZÜM, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-interdisciplinary_aec_design.png, Açıklama: Öngerilme de dahil olmak üzere yüksek düzeyde ayrıntıya sahip parametrik model oluşturmadan, inşaat sürecinin entegrasyonuna ve köprü modelinin yapısal analizine kadar tek bir çözümle çalışın.
+
+3. HIZLA MODEL DEĞİŞKENLERİ VE ŞABLONLARI OLUŞTURUN, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/quickly_create_model_variants_templates-1.png, Açıklama: 3B parametrik model açıklaması, yol paftasını, köprü hizalamasını ve gerekli kesitleri dikkate alarak model yapılandırmasını ve varyasyonunu hızlı ve kolay hale getirir. Bu, doğrudan yazılımda veya hatta kodlama yoluyla yapılabilir.
+
+4. DOĞRU TENDON TASARIMI, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/accurate_tendon_design-1.png, Açıklama: İç ve dış, uzunlamasına, enine ve dikey anında ve ardından yapıştırma ile birkaç parametrik ön gerdirmeli ve art germeli tendon tipi oluşturun.
+
+5. ENTEGRE STRÜKTÜREL ANALİZ, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/integrated_structural_analysis-2.png, Açıklama: Allplan Bridge, geometrik modelden analiz modelini otomatik olarak oluşturur. Bu, çalışma miktarını ve hatalara duyarlılığı büyük ölçüde azaltır.
+
+6. AKILLI YAPI SIRALAMA ANALİZİ, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/intelligent_construction_sequence_analysis-1.png, Açıklama: İnşaat süreci belirlenirken zaman dördüncü bir boyut olarak düşünülür. Diğer şeylerin yanı sıra, aynı köprü yapısı için farklı programları tanımlamak ve karşılaştırmak mümkündür.
+
+7. DONATI TASARIMI VE KOD KONTROLÜ, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/reinforcement_design_code_checking-2.png, Açıklama: Tüm kalıcı ve değişken yükler, son bir zarf içinde birbirleri arasında birleştirilir. Bu zarf, donatı tasarımı ve kod kontrolü yapmak için kullanılır.
+
+8. DEĞİŞİKLİKLERİN KOLAY UYGULANMASI, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/easily_implement_changes-1.png, Açıklama: 4B modelin tamamı, hizalama ile ilgili olarak herhangi bir değişiklik olması durumunda ayarlanır. Bu nedenle, bir eksenin geometrisi değişirse, tüm köprü modeli otomatik olarak ayarlanır.
+
+9. GELİŞMİŞ DONATI MODELLEMESİ, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-powerful_modeling.png, Açıklama: Çift eğriliğe ve değişen kesitlere sahip zorlu köprüler bile uygun ve hızlı bir şekilde donatılandırılır. Otomatik donatı üretimini sağlamak için donatı bağlantılarının nasıl yapılacağı gibi çeşitli geçişler ve kurallar tanımlanabilir.
+
+10. ÜSTÜN KALİTELİ TESLİMATLAR, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/more_accurate_deliverables-2.png, Açıklama: Doğrudan 3B modelden hızlı ve doğru bir şekilde planlar, çizimler ve raporlar oluşturun ve yüksek kaliteli belgeler için bilgi alışverişini kontrol edin.
+
+11. ÜSTÜN BİRLİKTE ÇALIŞABİLİRLİK, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/complete_interoperability-1.png, Açıklama: ALLPLAN, OPEN BIM konseptini takip eder. Geometrik model sadece IFC gibi çok sayıda format kullanılarak değiştirilemez, aynı zamanda analitik model diğer uygulamalarla paylaşılabilir.
+
+12. KALİTELİ TEKNİK DESTEK, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/technical_support-1.png, Açıklama: ALLPLAN'ın köprü uzmanları, dünya çapında mühendisleri destekleme konusunda 30 yılı aşkın deneyime sahiptir. Kapsamlı ürün danışmanlığı, eğitim ve destek sağlayan teknik uzmanlarımızdan yararlanabilirsiniz.
+
+CASE STUDY:
+Başlık: Türkiye'de Verimli Köprü Tasarımı
+Alt Başlık: Rize-Artvin Havaalanı Köprüsü
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/ezgif.com-webp-to-jpg1-800x445-1.jpg
+Link URL: https://allplanblogturkiye.aluplan.com.tr/turkiyede-verimli-kopru-tasarimi-2/
+Açıklama: 2017 yılında Türkiye'nin en büyük mühendislik danışmanlarından biri olan Yüksel Proje 3D modellemeye geçiş yaptı. Şirket, sadece dört Allplan lisansı ile köprüleri, alt geçitleri, menfezleri ve istinat duvarlarını modellemeye başladı ve talebi karşılamak için hızla 19 lisansa çıktı. Allplan Bridge tasarım yazılımının ilk uygulayıcılarından biriydiler ve tüm köprü projeleri için piyasaya sürüldüğünden beri kullanıyorlardı. Allplan Bridge Day 2021 etkinliğinin bir parçası olarak, Türkiye'de Allplan Bridge kullanılarak başarıyla teslim edilebilen üç köprü tasarım projesini paylaştılar.
+
+YOUTUBE VİDEO SECTION:
+=====================
+BAŞLIK: Eğitim Youtube Videoları
+YOUTUBE VİDEO URL: https://youtu.be/SeA6ncaqUhY
+YOUTUBE EMBED URL: https://www.youtube.com/embed/SeA6ncaqUhY
+BUTON: "Videoyu İzle"
+BUTON URL: https://youtu.be/SeA6ncaqUhY
+
+FOOTER SECTION:
+Başlık: Allplan Bridge 2024 - A NEW ERA IN PARAMETRIC BRIDGE MODELING.
+Alt Başlık: Shaping Bridges in a better way with Allplan Bridge
+BUTON: Try Allplan Bridge for free
+Özellikler:
+- Free parametric modeling – flexible and time saving
+- Easily design to key national standards (German, Spanish and French)
+- Avoid repetitive tasks with powerful templating and improved project collaboration
+- Smoother analytical interoperability
+- Improved collaboration with Allplan Engineering
+Açıklama: Test the full version of Allplan Bridge 2024 for 14 days free of charge and with no obligation. Simply download the software and experience all the advantages for yourself.
+
+ADDITIONAL SECTION:
+Başlık: Allplan Bridge product presentation

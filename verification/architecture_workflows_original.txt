@@ -1,0 +1,54 @@
+Mimari İş Akışları
+Fikir aşamasından teslimata kadar kesintisiz ve verimli süreçler.
+
+1 / Ön ve Konsept Tasarım
+- Hızlıca Başlayın
+  Tasarımınızı optimize etmek için projenize tüm saha gereksinimleri açıkça entegre edilmiş şekilde başlayın. Planlama Yetkililerinden çeşitli formatları ve verileri içe aktarın, proje çerçeve koşullarını netleştirin ve hızla başlayın. Kolayca yapı elemanlarına dönüştürülen PDF dosyalarıyla zamandan tasarruf edin ve mükerrer çalışmalardan kaçının.
+- Güvenilir Yapılandırılmış Veri
+  Dijital eskiz kağıdının etkisi, Allplan’da verilerin çizim dosyaları halinde yapılandırılmasıyla elde edilir. As-built verileri planlama için temel olarak kullanılabilir ve alttaki zeminler takip edenler için başlangıç noktası olarak hizmet edebilir; varyantların karşılaştırılması, ayarlanması ve sunulması da özellikle sezgisel ve etkileyicidir. Burada gerçek çoklu ekran işlevselliği görsel olarak yardımcı olur.
+- Şantiyenizi Anlayın
+  Mevcut şantiye özelliklerini zahmetsizce birleştirin. Konturlar veya noktalar biçimindeki saha bilgilerini hızla gerçekçi ve hassas dijital arazi modellerine dönüştürün. Daha iyi bir tasarım kalitesi için çevrenizi görselleştirin, anlayın ve şantiyedeki gerçek koşulları değerlendirin.
+- Şantiye Planlarını ve Potansiyeli Optimize Edin
+  Saha verilerini ve kısıtları bütünleştirerek planları iyileştirin; seçenekleri hızla karşılaştırın.
+- Tasarımınızı Hacim Modeline Dönüştürün
+  Tasarım fikirlerinizi ve vizyonunuzu hızla hayata geçirmek için güçlü ve esnek araçlarla konseptinizi hayata geçirin. 3B modelin aynı anda oluşturulacağı şekilde ayak iziniz üzerinde 2B olarak çalışmanın veya doğrudan 3B olarak çalışmanın avantajından yararlanın. 2B çalışma görünümlerinden yararlanırken 3B çalışmaya güvenle geçin. 2B planları kolayca görselleştirin, ayrı ayrı tasarlayın ve tasarımınızın şantiye planı içindeki temsilini optimize etmek için gölgeler gibi özellikleri hızla ekleyin. Tasarımınızın kalitesini artırmak için gerçekçi yönler sunarak saha planı çıktılarını geliştirin. İlk tasarım şekilleriyle hızla tasarım ayak izleri oluşturun. İlk taslakları anında değerlendirmek için varyantları sorunsuz bir şekilde karşılaştırın. İnşaat sahanızdaki seçeneklerin görselleştirilmesi yoluyla ilk karar verme sürecinizi iyileştirin.
+
+2 / Tasarım Geliştirmek
+- Hacimden Bileşen Modeline Geçiş
+  Otomatik araçlarla konseptinizden gelişmiş bir tasarıma hızla geçin. Hacim konseptinden kolayca bileşen tabanlı bir model oluşturun. Tasarımınızı hızla geliştirebilmek için gerçekçi ve akıllı bileşenler kullanarak tasarım çalışmalarını hızlandırın. BIM çalışma yöntemi aracılığıyla obje tabanlı planlamadan yararlanın. Herhangi bir serbest biçimli geometri, Allplan’ın bunları bileşen olarak tanıyacağı ve örneğin metraj alımında dikkate alacağı şekilde modellenebilir ve dönüştürülebilir. Allplan’daki serbest biçimli modelleme ile yaratıcılığınızın ve hassasiyetinizin sınırı yoktur. Parasolid modelleme çekirdeği sayesinde kavisli şekiller hassas bir şekilde görüntülenir ve hesaplanır. Yarışmalar için yaratıcı mimari tasarım ve hassas uygulama planlaması alanlarında, çok çeşitli karmaşık şekiller kolayca oluşturulabilir, hızlı bir şekilde değiştirilebilir ve raporlarda değerlendirilebilir.
+- Taslaktan Detaya Sorunsuz Bir Şekilde Geliştirin
+  Allplan’da çalışırken mevcut veriler en iyi şekilde kullanılır; böylece inşa edilen model her proje aşamasında gelişmeye devam eder. Mevcut veriler, modelleme veya bilgi derinliği açısından rafine edilir ve zenginleştirilir. Modellerin her proje aşamasında sürekli olarak yeniden modellenmesi gerekmez. Genel olarak bu felsefe, muazzam bir zaman tasarrufu sağlar ve en başından itibaren BIM’in temel fikrini temsil eder. İlk tasarımdan inşaata kadar çizimler sürekli ve sürekli olarak değiştirilebilir.
+- Farklı Değişkenleri Kolayca Değerlendirin
+  Farklı varyasyonlara ve bunların avantajlarına rahatça odaklanın; çatı tasarım seçeneklerini kolayca değerlendirin ve standartlara uygunluğu sağlayın. Hızlı değişiklikler veya negatif eğimler gibi çeşitli çatı modelleme seçeneklerinden yararlanın. Çatı, duvarlar ve cepheler gibi ilgili objelerle bağlantılı olduğundan, çatı tasarımı değiştiğinde otomatik olarak güncellenir.
+- Görünümler ve Kesitler için Güçlü Araçlar
+  Planlarınızı ve paftalarınızı doğru bir şekilde üretmek için ihtiyaç duyduğunuz görünümlere ve kesitlere kolayca erişin ve bunları hazırlayın. Tasarımlarınızı görselleştirin ve sunun, inşa edilebilirliğini kontrol edin ve kat planlarını dikey tasarım boyutunda bir araya getirin. Gerekli stil ve formatta çizimleri hızla üretmek için güçlü araçlardan yararlanın. Modelde yapılan değişiklikler görünümlerinizde ve kesitlerinizde otomatik olarak güncellendiğinden zamandan tasarruf edin.
+- Fikirleri ve Tasarımları Sunun ve Görselleştirin
+  Etkileyici görselleştirmeler ve sunumlarla iletişimi güçlendirin.
+
+3 / Detaylı Tasarım
+- Başlangıç Maliyetlerini Değerlendirin
+  Erken aşamada güvenilir metraj ve maliyet tahmini ile bütçe kontrolü sağlayın.
+- Parametrik Boşluk Tasarımlarını Kolayca Detaylandırın
+  Kapı/pencere boşluklarını parametrik tanımlarla hızla detaylandırın.
+- Akıllı Oda Kaplamalarını Tasarlayın ve Yönetin
+  Oda kaplamalarını kurallara bağlı yönetin; malzeme ve metrajı otomatik çıkarın.
+- Gerçekçi İç Mekanlar Yaratın
+  Işık ve malzeme ayarlarıyla gerçekçi iç mekan görselleri üretin.
+- Tasarım Değişikliklerini Yönet
+  Model ve çıktı arasında bağlantı ile değişiklikleri otomatik yansıtın.
+- Odaları ve Birimleri Yönetin
+  Oda/birim verilerini merkezi yönetin; etiket ve listeleri senkron tutun.
+- Yasal Gereksinimleri Doğrulayın
+  Yerel mevzuat ve standartlara uygunluğu kontrol edin.
+- Nihai Uygulama Çiziminin Derlenmesi
+  Uygulama çizimlerini modelden güvenle derleyin ve yayınlayın.
+
+4 / Yürütme Planlaması
+- Prefabrik Beton Gibi Çeşitli Malzemelerle Tasarım
+  Beton, çelik, ahşap ve prefabrik çözümlerle malzeme odaklı planlama yapın.
+- Gerekli Detaylara Sahip Çizimlerin Güvenilir Bir Şekilde Çıkarılması
+  Modelden tutarlı ve güncel çizimleri otomatik üretin.
+- Proje Verilerini Organize Edin, Zenginleştirin ve Analiz Edin
+  Plan/pafta organizasyonu, veri zenginleştirme ve raporlama ile teslimatları yönetin.
+- Proje Ortaklarıyla İşbirliği ve Koordinasyon Yapın
+  Bimplus üzerinden disiplinler arası koordinasyonu sağlayın ve değişimleri yönetin.

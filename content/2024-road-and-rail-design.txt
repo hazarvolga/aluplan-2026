@@ -1,0 +1,107 @@
+HERO SECTION:
+Başlık: KARAYOLU VE DEMİRYOLU ALTYAPISI
+Alt Başlık: DAHA FAZLASINI İSTEYEN ALTYAPI TASARIMCILARI İÇİN.
+Açıklama: ALLPLAN'in karayolu, demiryolu ve altyapı tasarımına yönelik BIM çözümleri, tasarımdan inşa sürecine kadar tüm süreci kapsar. Allplan, proje tasarımı ve teslimatı için daha fazla üretkenliği destekleyen işbirlikçi iş akışlarıyla köprüler dahil olmak üzere diğer inşaat mühendisliği disiplini tasarım gereksinimleriyle sorunsuz entegrasyon sağlar. Karayolu, demiryolu ve altyapı planlama yazılımınızdan daha fazlasını bekleyin!
+
+POST HERO SECTION:
+Başlık: ÜSTÜN İNŞAAT İÇİN ÇOK MALZEMELİ ÇÖZÜM
+Açıklama: Köprülere veya tünellere giden yollara şantiye erişiminden, istinat duvarları, kavşaklar ve üst geçit viyadükleri içeren otoyollara veya demiryolu ve yeni inşa edilen istasyon binaları arasındaki etkileşimleri tasarlamaya ve yepyeni hatların ve ilgili çalışmaların planlanmasına kadar, etkin ve entegre yol ve demiryolu ve altyapı tasarımı, bilgi, deneyim ve hassas araçlar gerektirir.
+
+Allplan ile, dijital şantiye arazi modellerini kolayca dahil edebilir, hizalamaları hızlı bir şekilde içe aktarabilir, yolları ve yardımcı programları parametrik olarak modelleyebilir ve hatta şantiye yerleşim tasarımını planlamak ve optimize etmek için inşaat ekipmanı ekleyebilirsiniz. Bu, tünelleri modellemek için gelişmiş parametrik köprü tasarım araçları ve yetenekleri ile geliştirilmiştir. Bu entegre çözümler, projelerin daha başarılı bir şekilde gerçekleştirilmesini sağlamak için değişkenleri hızlı bir şekilde detaylandırmak, değişiklikleri verimli bir şekilde yönetmek ve hızlı bir şekilde doğru saha ve inşaat paftaları oluşturmak için zahmetsiz işbirliği işlevselliği ve güçlü araçlarla birleştirilmiştir.
+
+TABBED WORKFLOWS:
+Başlık: Yol ve Altyapı Tasarımı İçİn Allplan İş akışları
+
+TAB 1 / Şantiye Analizi:
+- Terrain Survey, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_01_Gelaendeaufnahme_1_a7f683ba59.jpg, Açıklama: Terrain data can be read in the form of large point clouds (for example from Scalypso) and displayed graphically. This makes it possible to use high-resolution terrain models as the basis for mass determinations within infrastructure projects.
+
+- Geodata Processing (SHP), Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_02_Geodata-processing-_SHP__c0d07ce58c-1.jpg, Açıklama: The processing of geodata enables the recording of property boundaries, flood plains, road networks and much more. With this information, critical zones or points of conflict can be recognised at an early stage and taken into account in project planning. The imported geo-information can also be considered when creating output plans.
+
+- Data Exchange, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_03_Datenastausch_c31460311d.jpg, Açıklama: For the interdisciplinary exchange of project information, the elements of a road model can be provided with attributes and subdivided into logical road sections. For this purpose, the specifications of the open standard IFC 4.3 from BuildingSmart were implemented for object structuring. By defining attributes, the model can be enriched with essential project and product information. This information can then be made available to all project participants via cloud services.
+
+TAB 2 / Modelleme:
+- Parametric Modeling, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_04_Parametric_Modeling_1_c6f8e3df68.jpg, Açıklama: No project is immune to adapted framework conditions or unforeseeable project changes. With the help of the consistent parametric modelling concept, geometric adaptations can be made at any time and the model updated according to the changed initial conditions. The effort required to adapt the geometric model is minimal and changes are made possible in short time frames.
+
+- Free-form Modeling, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_05_Freiform-modellierung_kombi_edbef6efc9.jpg, Açıklama: In Allplan it is easy to extrude freely defined profiles along a line element. This allows, for example, railroad tracks, road dividers, guard rails, support elements, etc. to be placed relative to the axis and consequently also taken into account in the output plans.
+
+- Visualisation, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_06_Visualisierung_1_3f473d5ad3.jpg, Açıklama: Visualisation facilitates cooperation and communication between the project participants. All disciplines can analyse the model together for details, improvements, etc. The visual representation of the road facilitates feedback. Thanks to the excellent visualisation quality within Allplan, structural features can be checked in real time and discrepancies can be resolved quickly.
+
+TAB 3 / Model Analizi:
+- Variant Comparison, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_07_Variantenvergleich_83b3954181.jpg, Açıklama: Creating multiple road axes for optimal line routing is achieved effortlessly. Once an axis has been defined, a rule profile can be assigned to it. The differences between different alignment variants can be quickly recorded and easily compared with each other.
+
+- Change Management, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_08_Change-Management_941e60ca95.jpg, Açıklama: The project area is often surveyed during the execution phase – for example by means of drone flights – and directly compared with the model. Any deviations between the model and the construction situation on site can be quickly detected, validated and, if necessary, adjusted accordingly.
+
+TAB 4 / Teslimatlar:
+- Drawings: Cross section, Longitudinal section and Site plan, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_09_Drawings_1_791a30d4b6.jpg, Açıklama: The creation of output drawings is fully automated and always reflects the current model. Depending on requirements, the plan contents can be expanded and adapted as desired.
+
+- Reports, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_10_Reports_Grafik_c293e04d7a.jpg, Açıklama: With the help of reports, parameters of the road model can be output in tabular form. For example, staking points can be created, point distances calculated or bulk and fill volumes determined. The calculation accuracy is freely selectable, and the results can be easily transferred to corresponding programmes for data processing.
+
+STATISTICS:
+DAHA KESİN - 50%: daha hızlı ve daha kesin tasarım çıktıları, görselleştirmeler ve ayrıntılı paftalar. (* 3B olarak 2B ile karşılaştırıldığında)
+
+DAHA VERİMLİ - 70%: Güvenilir otomatik malzeme çıktısı ve metrajlar ile erken aşamalarda daha verimli ve hassas proje maliyeti. (* Elden metrajla karşılaştırıldığında)
+
+DAHA ÜRETKEN - 30%: İşbirliğine dayalı planlamayı ve geliştirilmiş inşa edilebilirliği destekleyen verimli iş akışları ile tasarım üretkenliğinde artış. (* 3B tasarım kullanarak)
+
+ZORLU DURUMLAR:
+Başlık: AŞAĞIDAKİ ZORLUKLARLA SÜREKLİ MÜCADELE EDİYOR MUSUNUZ?
+- Tasarım, planlama ve inşaat için artan karmaşıklık ve işbirliği gereksinimleri.
+- Çok fazla zaman alan, kaliteyi etkileyen ve risk oluşturan sürekli proje değişiklikleri.
+- Proje maliyetleriniz hakkında devam eden endişeler ve kontrolden çıkan zaman gecikmeleri.
+
+12 GEREKÇE - NEDEN ALLPLAN:
+
+1. GÜÇLÜ ŞANTİYE MODELLEME ARAÇLARI, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/powerful_site_modelling_tools-1.png, Açıklama: Şantiye arazi gereksinimlerini kolayca dahil edin, erişim yolları tasarlayın, altyapı hizmetlerini modelleyin ve inşaat ekipmanı yerleşimini planlayın.
+
+2. PARAMETRİK YOL MODELLEME, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/reinforcement_modelling-1.png, Açıklama: Bina ve altyapı projelerinize yol tasarımlarının entegrasyonu için güçlü ve kullanımı kolay modelleme fonksiyonları.
+
+3. PARAMETRİK KÖPRÜ MODELLEME, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/intelligent_construction_sequence_analysis-1.png, Açıklama: Parametrik model oluşturma ve köprü modelinin inşaat süreci ve yapısal analizinin tek bir çözümde entegrasyonunu sağlar.
+
+4. ÖZELLEŞTİRMEYLE PERFORMANSI ARTIRIN, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/automated_workflows.png, Açıklama: Tekrarlayan görevleri otomatikleştirin, ısmarlama iş akışları oluşturun ve entegre araçlarla tasarım süreçlerini hızlandırın.
+
+5. ÜRETKEN İŞBİRLİĞİ, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-productive_collab.png, Açıklama: Çok kullanıcılı gerçek zamanlı çalışma için entegre bulut teknolojisinin yanı sıra iş ortaklarıyla model ve proje işbirliği.
+
+6. GERÇEK DİSİPLİNLER ARASI AEC TASARIMI, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-interdisciplinary_aec_design.png, Açıklama: Mimari tasarım, yapı mühendisliği ve MEP hizmetleri tasarımı ve detaylandırması için tek bir yazılım çözümü.
+
+7. ETKİN OPEN BIM, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-bim2field.png, Açıklama: Çoklu değişim formatları, IFC4 RV içe/dışa aktarma ve işbirliğine dayalı OPEN BIM veri platformu Bimplus ile kolayca veri alışverişi yapın.
+
+8. ALLPLAN'LE DAHA HIZLI BAŞLANGIÇ, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-enhanced_project_comm.png, Açıklama: Allplan araç ipuçları ile fonksiyonlara daha hızlı alışabilir ve Allplan'ın gücünden daha erken yararlanmaya başlayabilirsiniz.
+
+9. HIZLI METRAJLAR VE TAHMİNLER, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-realiable_earlier_cost_estimates.png, Açıklama: Güvenilir ihale hazırlığı ve maliyet tahminleri için otomatik raporlarla metrajları, malzemeleri ve maliyetleri hızlı ve hassas bir şekilde hesaplayın.
+
+10. GELİŞTİRİLMİŞ DEĞİŞİM YÖNETİMİ, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/improved_change_management-1.png, Açıklama: Çizimlerde veya modelde yalnızca bir kez düzenleyerek çıktılar arasında otomatik olarak yapılan değişikliklerle zamandan tasarruf edin.
+
+11. ÜSTÜN KALİTELİ TESLİMATLAR, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-superior_quality_deliverables.png, Açıklama: Doğrudan 3B modelden hızlı ve doğru bir şekilde planlar, çizimler ve raporlar oluşturun ve yüksek kaliteli belgeler için bilgi alışverişini kontrol edin.
+
+12. BIM 2FIELD, Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-bim2field.png, Açıklama: Bulut tabanlı platform Bimplus'ı kullanarak inşaat ekipleriyle ayrıntılı tasarım amacını görsel olarak kolayca koordine edin ve iletin.
+
+PERFORMANS ARTIRMASI SECTIONS:
+
+ÖZELLEŞTİRİLEBİLİR OTOMASYON:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/03/1-low-angle-shot-creative-modern-building-with-outstanding-architectural-twists.jpg
+Link URL: https://www.allplan.com/us_en/workflows/customized-automation/
+
+İLERİ BİRLİKTE ÇALIŞABİLİRLİK:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/03/2-low-angle-shot-creative-modern-building-with-outstanding-architectural-twists.jpg
+Link URL: https://www.allplan.com/us_en/workflows/interoperability/
+
+ALLPLAN ORTAK YAZILIM ÇÖZÜMLERİ:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/03/2-low-angle-shot-creative-modern-building-with-outstanding-architectural-twists.jpg
+Link URL: https://www.allplan.com/allplan-partner-solutions/
+
+YOUTUBE VİDEO SECTION:
+=====================
+BAŞLIK: Eğitim Youtube Videoları
+YOUTUBE VİDEO URL: https://youtu.be/B3hXx3LL-q4
+YOUTUBE EMBED URL: https://www.youtube.com/embed/B3hXx3LL-q4
+BUTON: "Videoyu İzle"
+BUTON URL: https://youtu.be/B3hXx3LL-q4
+
+FOOTER SECTION:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2021/10/allplan-2021-demodownload_600x600-300x300.png
+BUTON: Allplan'ı ücretsiz deneyin
+Özellikler:
+- Tek platformda disiplinlerarası AEC ekip çalışması
+- Malzemelerin ve inşaat yöntemlerinin üstün koordinasyonu
+- Gelişmiş BIM iş akışları ve gerçek zamanlı işbirliği
+Açıklama: Bugün bir demo planlayın ve Allplan'ın benzersiz 2B'den 3B'ye iş akışıyla üretimi nasıl hızlandırabileceğinizi ve tasarımdan inşaata kadar bilgi bütünlüğünü nasıl koruyabileceğinizi öğrenin.

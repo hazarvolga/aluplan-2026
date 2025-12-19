@@ -1,0 +1,73 @@
+HERO SECTION:
+Görsel URL: https://cdn-ildjmdd.nitrocdn.com/tcdVFlIBFQtnSTNLgsIOcKKpRMOOdqtW/assets/images/optimized/rev-0504ba4/addon.aluplan.com.tr/wp-content/uploads/elementor/thumbs/allplantools-allto-software-qfg20o34baii92mg6ydmnoserix5kjzcftxpjut1qy.png
+Açıklama: Allplan Ortak Çözümü olarak ALLTO, ALLPLAN yazılımıyla uyumlu profesyonel eklentiler geliştirir. Kullanıcılar ayrıca uzmanlığımızı ve bireysel ihtiyaçlarını karşılamak için onlarla yakın çalışma isteğimizi takdir ediyor. ALLTO Bina PythonPartları şunları içerir:
+
+MAIN TITLE:
+ALLTO PYTHONPARTS Sürüm 4.1 – Yeni Sürüm Daha kolay. Daha hızlı ve hataları azaltın.
+
+PAID PYTHONPARTS:
+
+1. Wall Reinforcement:
+Açıklama: Wall Reinforcement is a feature of our PythonParts in ALLPLAN that lets you create, update and modify reinforcement for wall reinforcement from simple to complicated one in ALLPLAN, even the slope Wall. It recognizes the shape of the wall panel and distributes the main reinforcement and additional reinforcement for wall openings
+
+2. Wall Opening Reinforcement:
+Açıklama: Inevitably, openings of various sizes and shapes for doors, windows, conduit, piping, and ductwork will need to be made in structural walls. Correct placement of the rebar helps prevent the concrete around openings from cracking from structural loads or shrinkage.
+
+3. Wall Edge Reinforcement:
+Açıklama: The Edge Reinforcement python part is used for detailing walls by connecting two walls to each other in ALLPLAN. Wall to wall connection – Edge shape included: Joining Collinear Walls; Joining L-shaped Walls; Joining T-shaped Walls; Joining intersect-shaped Walls.
+
+4. Slab Reinforcement:
+Açıklama: Reinforcement detailing of a slab is done based on its support conditions. Slab may be supported on walls or beams or columns.
+
+5. Slab Opening Reinforcement:
+Açıklama: Every engineer is familiar with the openings in a slab. Openings in slabs are usually required for many different applications such as aeration ducts and air conditioning. Now, structural engineers can easily get it done by ALLPLAN PythonParts developed by ALLTO
+
+6. Single Footings Reinforcement:
+Açıklama: Individual footings are one of the most simple and common types of foundations. These are used when the load of the building is carried by columns. Usually, each column will have its own footing. The footing is just a square or rectangular pad of concrete on which the column sits. Now, engineers can easily get it done by ALLPLAN PythonParts developed by ALLTO
+
+7. Beam Reinforcement:
+Açıklama: Reinforcement are essential part of a concrete beam. It resists tension forces, increase the compression capacity, enhance ductility and reduce long-term deflections in the concrete. Additionally, reinforcement prevent cracking of concrete due to shear stresses, shrinkage and temperature stresses.
+
+8. T-Beam Reinforcement:
+Açıklama: T-beam (tee beam), used in construction, is a load-bearing structure of reinforced concrete, wood or metal, with a T-shaped cross section. The top of the T-shaped cross section serves as a flange or compression member in resisting compressive stresses
+
+9. Strip Footings Reinforcement:
+Açıklama: Strip foundations (or strip footings) are a type of shallow foundation that are used to provide a continuous, level (or sometimes stepped) strip of support to a linear structure such as a wall or closely-spaced rows of columns built centrally above them. ALLTO set up a friendly interface and all you need to do is input the data to create the strip foundation.
+
+10. Column Reinforcement:
+Açıklama: We've released ALLPLAN Pythonparts that automate the modeling of reinforcement in opening walls in #ALLPLAN.In this initial release, you can use it to place main rebar, stirrups, and more. See the workflow for reinforcing columns in ALLPLAN.
+
+11. Column Dowels:
+Açıklama: Dowels are commonly used as interface reinforcement between columns or walls and footings. The dowels are set in the footing prior to casting the footing concrete and are subsequently spliced to the longitudinal bars in the column or wall.
+
+12. Column Coupler:
+Açıklama: Developing ALLPLAN PYTHONPARTS to manage the workflow of engineers which we believe will help them complete their tasks much easier, faster and reduce errors.
+
+FREE PYTHONPARTS SECTION:
+Başlık: ALLTO Ücretsiz PythonParts
+Açıklama: ALLTO tarafından mühendislerin görevleri daha kolay, daha hızlı tamamlamalarına ve hataları azaltmalarına yardımcı olmak için geliştirilen ücretsiz Allplan python parçaları.
+
+FREE PYTHONPARTS:
+
+1. ALLPLAN Backup Files - Drawing Recovery:
+Açıklama: Have ever lost a drawing file just because you forgot to save it or you couldn't save it (due to software crash)? ALLTO has developed Backup files in ALLPLAN help ensure the safety of your drawing data. By saving your work frequently, you can ensure a minimum of lost data.
+
+2. Detect IFC Model Changes:
+Açıklama: This python part in Allplan Software detects the geometric differences between two IFC files and merges only the modifications (new, deleted and modified elements) into the currently drawing file (that project can also be an empty one). Modifications can be viewed and managed in both 2D and 3D views.
+
+3. Converting from 2D lines/polylines to architecture components:
+Açıklama: ALLPLAN has been an innovative pioneer in the area of 3D design, from 3D modeling to component-oriented, digital building models as the basis for the BIM design method. With ALLTO PythonParts, it can be – see how easy it is to convert from 2D lines/polylines to architecture components in just some steps with the right tool.
+
+4. Exporting IFC files in ALLPLAN faster with ALLTO PythonParts:
+Açıklama: This tool can export multiple drawing files at once. You can choose IFC version, drawing files, file path. And you can also export all drawings into 1 IFC files.
+
+5. Add custom attribute in ALLPLAN:
+Açıklama: ALLTO PythonParts developed the tools to help you define or modify a new custom attribute easily. You can add up to 5 attributes per time use.
+
+TURKISH SPECIFIC TOOLS:
+
+Allto Kiriş PythonPart Eklentisi:
+Açıklama: Allto Kiriş PythonPart Eklentisi ile Türkiye Deprem Yönetmeliği'ne uygun betonarme kiriş donatılarınızı parametrik olarak hızlı ve kolay bir şekilde modelleyebilirsiniz. Mesnet ve açıklık bindirme şartlarından, etriye sarılma bölgesi ayarlarına kadar tüm düzenlemelerinizi yapabilir, ilave donatılar ekleyebilirsiniz. Kiriş boy ve en kesitlerini otomatik alarak tek tuşla metraj tablosu oluşturabilirsiniz. Allto Kiriş PythonPart Eklentisi size daha az zamanda daha çok iş yapma imkanının yanında güvenilir kiriş donatı metrajı almanızı da sağlar.
+
+Otomatik Kolon-Kiriş-Duvar Modelleme:
+Açıklama: Ücretsiz olan Otomatik Kolon-Kiriş-Duvar Modelleme eklentisini kullanarak daha önce CAD ortamında yapılmış olan iki boyutlu çizimlerinizi sadece birkaç tıklama ile üç boyutlu BIM modeline dönüştürebilirsiniz. Ürettiğiniz BIM modelinizin güvenilir Kalıp ve Donatı metrajını alabilirisiniz.

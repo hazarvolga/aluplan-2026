@@ -1,0 +1,183 @@
+SAYFA: https://aluplan.com.tr/
+BAŞLIK: Aluplan Program Sistemleri | Allplan Türkiye Distribütörü
+
+=== HERO SECTION ===
+BAŞLIK: / ALLPLAN 2026
+ALT BAŞLIK: DAHA İYİ BİR GELECEK İNŞA ETMEK İÇİN TASARLANDI
+AÇIKLAMA: Yenilikçi AEC iş akışları, otomasyon ve bulut tabanlı iş birliği ile daha başarılı projeler.
+HERO GÖRSELI: -
+BUTON: ALLPLAN 2026 ÇIKTI
+BUTON URL: -
+
+=== ÜST MENÜ BAR ===
+BUTON 1: ALLPLAN FAQ
+BUTON URL: https://www.allplan.com/all-faqs/
+
+BUTON 2: LEARN NOW
+BUTON URL: https://learnnow.allplan.com/course/search.php
+
+BUTON 3: Duyurular
+BUTON URL: https://aluplan.com.tr/onemli-bilgiler-baglantilar/
+
+BUTON 4: Product Lifecycle
+BUTON URL: https://www.allplan.com/product-lifecycle/
+
+=== İKİNCİ MENÜ BAR ===
+BUTON 1: Allplan Connect: Giriş / Parola Sıfırlama
+BUTON URL: https://aluplan.com.tr/24907-2/
+
+BUTON 2: GoTo Meeting
+BUTON URL: https://meet.goto.com/allplan_turkiye
+
+BUTON 3: Allplan Connect Lisans Yönetim Paneli
+BUTON URL: https://aluplan.com.tr/10-duke-yeni-lisanslama/
+
+BUTON 4: ALLPLAN Teknik Destek
+BUTON URL: https://teams.microsoft.com/meet/39783115346098?p=wIo7WWYLZwqoHtjq3Y
+
+=== LOGO SECTION ===
+LOGO 1: Aluplan Logo
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2023/08/logo-29.png
+LINK URL: https://aluplan.com.tr
+
+LOGO 2: Building Smart Türkiye
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2021/10/builsmart.png
+
+LOGO 3: Partner Logo
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2019/10/partner.png
+
+=== SUBSCRIPTION 2026 SECTION ===
+BAŞLIK: Subscription 2026
+AÇIKLAMA: Şimdi Aboneliğe Geçmek Uzun Vadeli Akıllı Bir Yatırımdır
+İKON: icon-subscribe
+BUTON: Ayrıntıları İncele
+BUTON URL: https://www.allplan.com/subscription-2025
+
+=== ALLPLAN CLOUD 2026 SECTION ===
+BAŞLIK: ALLPLAN CLOUD 2026
+ALT BAŞLIK: HİZMETLERİ NELERİ İÇERİR
+
+=== ALLPLAN PAKETLER SECTION ===
+BAŞLIK: Üretkenlik Üst Seviyede
+
+PAKET 1:
+BAŞLIK: ALLPLAN Basic
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2024/10/csm_Basic_EN_1cc4616630-499x1024.jpg
+LINK URL: https://aluplan.com.tr/allplan-basic-2025/
+
+PAKET 2:
+BAŞLIK: ALLPLAN Concept
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2024/10/csm_Concept_EN_a42eb6bb96-2-499x1024.jpg
+LINK URL: https://aluplan.com.tr/allplan-concept-2025/
+
+PAKET 3:
+BAŞLIK: ALLPLAN Professional
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2024/10/csm_Professional_EN_10fc10f757-499x1024.jpg
+LINK URL: https://aluplan.com.tr/allplan-professional-2025/
+
+PAKET 4:
+BAŞLIK: ALLPLAN Ultimate
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2024/10/csm_Ultimate_EN_469ef0d00c-499x1024.jpg
+LINK URL: https://aluplan.com.tr/allplan-ultimate-2025/
+
+PAKET 5:
+BAŞLIK: ALLPLAN Civil
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2024/10/csm_Civil_EN_01_f6057ef634-499x1024.jpg
+LINK URL: https://aluplan.com.tr/product-allplan-civil/
+
+PAKET 6:
+BAŞLIK: ALLPLAN Precast
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2024/10/csm_Precast_EN_01_7399933092-499x1024.jpg
+LINK URL: https://aluplan.com.tr/2024-allplan-precast-software-for-precast/
+
+=== ÇELİK DETAYLANDIRMA SECTION ===
+BAŞLIK: / Çelik detaylandırma yazılımı
+ALT BAŞLIK: SDS2 ile projeleri daha hızlı teslim edin
+AÇIKLAMA: Çelik detaylayıcılar, imalatçılar ve mühendisler projeleri daha hızlı sunmak, riski azaltmak ve YG'yi en üst düzeye çıkarmak için SDS2 kullanır.
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2023/11/Copy-of-Q4-Kampanya-Web-Header.png
+LINK URL: https://aluplan.com.tr/q4-kampanya-allto-2023-kasim/
+
+=== BARBİE SECTION ===
+BAŞLIK: Barbie'nin Rüya Evi
+ALT BAŞLIK: Scratch'ten video ve proje indirme
+AÇIKLAMA: Barbie'nin rüya evinden ilham alın. Sıfırdan Başlayan videomuz, oluşturma sürecinde size adım adım yol gösterecektir. kaydırak havuzu, mobilyalar, çevresi ve B desenli duvarlar dahil. Proje dosyasını kuruyoruz ve tasarımı kendi isteklerimize göre değiştiriyoruz.
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2023/11/Startbildschirm_Barbie_555X300.jpg
+
+=== HELLO ALLPLAN SECTION ===
+BAŞLIK: Hello Allplan!
+AÇIKLAMA: Eğitim Videoları: Allplan 2024 versiyonun öne çıkan özelliklerini sizler için bir dizi videoda özetledik. İzlemek için yandaki butonu tıklayın.
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2021/12/01-Look-and-Feel_555x300.png
+LINK URL: https://aluplan.com.tr/hello-allplan-2022/
+
+=== ALLPLAN ÇÖZÜMLERİ SECTION ===
+BAŞLIK: Allplan Çözümlerİ
+
+ÇÖZÜM 1:
+BAŞLIK: BİNA TASARIMI
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2022/09/2023-solutions-building-Design-allplan-turkey-370x275.png
+AÇIKLAMA: © Harfa Design Residence, Visualisierung| Central Group
+BUTON: ALLPLAN ÜRÜNLERİNİ KEŞFEDİN
+
+ÇÖZÜM 2:
+BAŞLIK: ALTYAPI TASARIMI
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2022/09/solutions-Infrastructure-Design-370x275.png
+AÇIKLAMA: iStock-1308514772
+BUTON: ALLPLAN ÜRÜNLERİNİ KEŞFEDİN
+
+ÇÖZÜM 3:
+BAŞLIK: İNŞAAT PLANLAMASI
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2022/09/2023-prefabrication-product-allplan-turkey-370x270.png
+AÇIKLAMA: © SK Rapid Wien
+BUTON: ALLPLAN ÜRÜNLERİNİ KEŞFEDİN
+
+=== E-BÜLTEN SECTION ===
+BAŞLIK: E-bültenimize üye olun
+ALT BAŞLIK: ALLPLAN HAKKINDAKİ YENİLİKLERİ İLK ÖĞRENEN OL
+AÇIKLAMA: Şimdi kaydolun ve ALLPLAN ile güncel kalın: Allplan'ın en son sürümü için yayın bilgileri Etkinliklere, eğitim kurslarına ve web seminerlerine davetiyeler En son sektör, şirket ve ürün haberleri
+
+=== DEMO İNDİRME SECTION ===
+BAŞLIK: ALLPLAN'I 14 GÜN ÜCRETSİZ DENEYİN VEYA YEREL SATIŞ ORTAĞIMIZLA İLETİŞİME GEÇİN
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2021/10/allplan-2021-demodownload_600x600-300x300.png
+
+=== MEGA MENÜ İÇERİĞİ ===
+
+BİNA TASARIMI:
+- Mimari (https://aluplan.com.tr/2024-architecture/)
+- Strüktürel Mühendislik (https://aluplan.com.tr/2024-structural-engineering/)
+- MEP (https://aluplan.com.tr/2023-mep-engineering/)
+
+ALTYAPI TASARIMI:
+- Altyapı Mühendisliği (https://aluplan.com.tr/2024-civil-engineering-endustri-cozumleri/)
+- Yol ve Demiryolu Tasarımı (https://aluplan.com.tr/2024-road-and-rail-design/)
+- Köprü Tasarımı (https://aluplan.com.tr/2024-bridge-design/)
+
+İŞ BİRLİĞİ:
+- Proje & Ekipler (https://www.bimplus.net/)
+
+İNŞAAT PLANLAMASI:
+- Prekast Üretimi (https://aluplan.com.tr/2024-precast-fabrication/)
+- Çelik Detaylandırma & İmalat (https://aluplan.com.tr/2024-steel-detailing-fabrication/)
+- Şantiye Planlaması (https://aluplan.com.tr/2024-site-planning/)
+
+EK MODÜLLER:
+- Allplan Exchange (https://aluplan.com.tr/allplan-exchange/)
+- Allplan Workgroup (https://aluplan.com.tr/allplan-workgroup/)
+- Allplan Share (https://aluplan.com.tr/allplan-share-2/)
+- Allplan Lisans Server (https://aluplan.com.tr/allplan-lisans-server/)
+
+EKLENTİLER:
+- CDS Add-On (https://addon.aluplan.com.tr/)
+- Allto PytonPart Generator (https://allplantools.com/)
+- Allto PytonPart (https://addon.aluplan.com.tr/allto-add-on-s/)
+
+=== YOUTUBE VİDEOLARI ===
+VİDEO BULUNAMADI
+
+=== MODAL POPUP VİDEOLARI ===
+MODAL POPUP VİDEO BULUNAMADI
+
+=== İSTATİSTİKLER ===
+İSTATİSTİK BULUNAMADI
+
+=== FOOTER ===
+FOOTER BİLGİSİ BULUNAMADI

@@ -1,0 +1,595 @@
+SAYFA BAŞLIĞI: ALLPLAN 2026'nın Özellikleri
+
+URL: https://aluplan.com.tr/allplan-2026nin-ozellikleri/
+
+META AÇIKLAMA: ALLPLAN 2026 ürün sürümleri, modernizasyon, otomasyon ve entegrasyon odaklı yaklaşımıyla, AEC (Mimarlık, Mühendislik ve İnşaat) sektörünün değişen ihtiyaçlarına güçlü yanıtlar veriyor.
+
+SAYFA İÇERİĞİ:
+
+=== HEADER MENÜ YAPISI ===
+<nav class="ekit-wid-con ekit_menu_responsive_tablet">
+  <ul class="elementskit-navbar-nav">
+    <li class="menu-item-has-children">
+      <a href="#">Çözümler</a>
+      <ul class="elementskit-dropdown">
+        <li><a href="https://aluplan.com.tr/allplan-architecture-2022/">Architecture</a></li>
+        <li class="menu-item-has-children">
+          <a href="https://aluplan.com.tr/engineering/">Engineering</a>
+          <ul>
+            <li><a href="https://aluplan.com.tr/allplan-civil-engineering-2022/">Engineering Civil</a></li>
+            <li><a href="https://aluplan.com.tr/allplan-structural-engineering-2022/">Structural Engineering</a></li>
+            <li><a href="https://aluplan.com.tr/allplan-mep-engineering-2022/">MEP Engineering</a></li>
+            <li><a href="https://aluplan.com.tr/bridge-engineering-software/">Bridge Engineering</a></li>
+          </ul>
+        </li>
+        <li><a href="https://aluplan.com.tr/allplan-bimplus-collaborate-coordinate-and-manage-your-project/">Allplan BIMPLUS Proje İşbirliği</a></li>
+        <li><a href="https://aluplan.com.tr/bridge-engineering-software/">Prekast Üretimi</a></li>
+        <li><a href="https://aluplan.com.tr/allplan-2021-debar-detailing-software/">Donatı Mühendisliği</a></li>
+        <li><a href="https://ax3000.aluplan.com.tr/">AX3000 MEP</a></li>
+      </ul>
+    </li>
+    <li class="menu-item-has-children">
+      <a href="#">Ürünler</a>
+    </li>
+    <li class="menu-item-has-children">
+      <a href="#">Eğitim - Destek</a>
+    </li>
+    <li class="menu-item-has-children">
+      <a href="#">Kaynaklar</a>
+    </li>
+    <li><a href="https://aluplanbim.com/">Mağaza</a></li>
+    <li class="menu-item-has-children">
+      <a href="#">Allplan Hakkında</a>
+    </li>
+  </ul>
+</nav>
+
+=== ÜST BANNER BUTONLARI ===
+<section class="elementor-section">
+  <div class="elementor-container">
+    <div class="elementor-column">
+      <a class="elementor-button" href="https://www.allplan.com/all-faqs/" target="_blank">ALLPLAN FAQ</a>
+    </div>
+    <div class="elementor-column">
+      <a class="elementor-button" href="https://learnnow.allplan.com/course/search.php" target="_blank">LEARN NOW</a>
+    </div>
+    <div class="elementor-column">
+      <a class="elementor-button" href="https://aluplan.com.tr/onemli-bilgiler-baglantilar/" target="_blank">Duyurular</a>
+    </div>
+    <div class="elementor-column">
+      <a class="elementor-button" href="https://www.allplan.com/product-lifecycle/" target="_blank">Product Lifecycle</a>
+    </div>
+  </div>
+</section>
+
+<section class="elementor-section">
+  <div class="elementor-container">
+    <div class="elementor-column">
+      <a class="elementor-button" href="https://aluplan.com.tr/24907-2/" target="_blank">Allplan Connect: Giriş / Parola Sıfırlama</a>
+    </div>
+    <div class="elementor-column">
+      <a class="elementor-button" href="https://meet.goto.com/allplan_turkiye" target="_blank">GoTo Meeting</a>
+    </div>
+    <div class="elementor-column">
+      <a class="elementor-button" href="https://aluplan.com.tr/10-duke-yeni-lisanslama/" target="_blank">Allplan Connect Lisans Yönetim Paneli</a>
+    </div>
+    <div class="elementor-column">
+      <a class="elementor-button" href="https://teams.microsoft.com/meet/39783115346098?p=wIo7WWYLZwqoHtjq3Y" target="_blank">ALLPLAN Teknik Destek</a>
+    </div>
+  </div>
+</section>
+
+=== SUBSCRIPTION 2026 CALL-TO-ACTION ===
+<div class="eael-call-to-action cta-icon-flex bg-lite cta-preset-1">
+  <div class="icon">
+    <i class="icon icon-subscribe"></i>
+  </div>
+  <div class="content">
+    <h2 class="title eael-cta-heading">Subscription 2026</h2>
+    <p>Şimdi Aboneliğe Geçmek<br />Uzun Vadeli Akıllı Bir Yatırımdır</p>
+  </div>
+  <div class="action">
+    <a href="https://www.allplan.com/subscription-2025" target="_blank" class="cta-button cta-preset-1">Ayrıntıları İncele</a>
+  </div>
+</div>
+
+=== LOGO BÖLÜMÜ ===
+<section class="elementor-section">
+  <div class="elementor-container">
+    <div class="elementor-column">
+      <a href="https://aluplan.com.tr">
+        <img src="https://aluplan.com.tr/wp-content/uploads/2023/08/logo-29.png" alt="Aluplan Logo" />
+      </a>
+    </div>
+    <div class="elementor-column">
+      <img src="https://aluplan.com.tr/wp-content/uploads/2021/10/builsmart.png" alt="Building Smart Türkiye" />
+    </div>
+    <div class="elementor-column">
+      <img src="https://aluplan.com.tr/wp-content/uploads/2019/10/partner.png" alt="Partner Logo" />
+    </div>
+  </div>
+</section>
+
+=== ANA İÇERİK BAŞLIĞI ===
+<section class="elementor-section" data-settings='{"background_background":"classic"}'>
+  <div class="elementor-container">
+    <div class="elementor-column" data-settings='{"background_background":"classic"}'>
+      <div class="elementor-background-overlay"></div>
+      
+      <section class="elementor-inner-section">
+        <div class="elementor-container">
+          <div class="elementor-column">
+            <div class="elementskit-heading">
+              <h2 class="elementskit-section-title">ALLPLAN 2026</h2>
+              <div class="elementskit-border-divider"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="elementor-inner-section">
+        <div class="elementor-container">
+          <div class="elementor-column">
+            <div class="elementskit-heading">
+              <h2 class="elementskit-section-title">DAHA İYİ BİR GELECEK İNŞA ETMEK İÇİN TASARLANDI</h2>
+              <h3 class="elementskit-section-subtitle">Yenilikçi AEC iş akışları, otomasyon ve bulut tabanlı iş birliği ile daha başarılı projeler.</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="elementor-inner-section">
+        <div class="elementor-container">
+          <div class="elementor-column">
+            <div class="elementor-button-wrapper">
+              <a class="elementor-button" href="https://infos.allplan.com/us-allplan-demo.html">Kişisel Demo Talebi</a>
+            </div>
+          </div>
+          <div class="elementor-column">
+            <div class="elementor-button-wrapper">
+              <a class="elementor-button" href="https://www.allplan.com/demo-download-allplan/">Ücretsiz Deneme</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+
+=== ANA AÇIKLAMA BÖLÜMÜ ===
+<section class="elementor-section">
+  <div class="elementor-container">
+    <div class="elementor-column">
+      <div class="elementor-text-editor">
+        <p><strong>Mimarlar, mühendisler, üreticiler ve inşaat profesyonelleri için verimlilik ve iş birliğini yeniden tanımlıyor</strong></p>
+        
+        <p>ALLPLAN 2026 ürün sürümleri, <strong>modernizasyon, otomasyon ve entegrasyon</strong> odaklı yaklaşımıyla, AEC (Mimarlık, Mühendislik ve İnşaat) sektörünün değişen ihtiyaçlarına güçlü yanıtlar veriyor. Bu yeni sürümler; <strong>gelişmiş araçlar</strong>, <strong>kesintisiz süreçler</strong> ve <strong>ileri düzey birlikte çalışabilirlik</strong> sunarak üretkenliği yeni bir seviyeye taşıyor.</p>
+        
+        <p>ALLPLAN çözümleri, <strong>bina ve altyapı modelleme, tasarım, detaylandırma ve üretimden inşaata kadar</strong> uçtan uca iş birliğine dayalı bir çalışma akışı sağlıyor. Yeni geliştirmeler; projelerinizi <strong>hızlandırır</strong>, <strong>doğruluğu artırır</strong>, <strong>yenilik ve sürdürülebilirliği teşvik eder</strong> ve ekiplerin tüm proje yaşam döngüsü boyunca <strong>çevik ve uyumlu</strong> çalışmasını güvence altına alır.</p>
+      </div>
+    </div>
+    
+    <div class="elementor-column">
+      <h4 class="elementor-heading-title">ANA FAYDALAR</h4>
+      <ul class="elementor-icon-list-items">
+        <li class="elementor-icon-list-item">
+          <span class="elementor-icon-list-icon"><i class="fas fa-check"></i></span>
+          <span class="elementor-icon-list-text">Akıllı bulut tabanlı iş birliği ile tüm proje yaşam döngüsü boyunca koordinasyon</span>
+        </li>
+        <li class="elementor-icon-list-item">
+          <span class="elementor-icon-list-icon"><i class="fas fa-check"></i></span>
+          <span class="elementor-icon-list-text">Disiplinler arası üstün birlikte çalışabilirlik, tasarımdan mühendislik iş akışlarına kesintisiz entegrasyon</span>
+        </li>
+        <li class="elementor-icon-list-item">
+          <span class="elementor-icon-list-icon"><i class="fas fa-check"></i></span>
+          <span class="elementor-icon-list-text">Gelişmiş otomasyon ve doğruluk ile sağlam modelleme süreçleri</span>
+        </li>
+        <li class="elementor-icon-list-item">
+          <span class="elementor-icon-list-icon"><i class="fas fa-check"></i></span>
+          <span class="elementor-icon-list-text">Yenilikçi ve sürdürülebilir projeler, daha düşük çevresel etki</span>
+        </li>
+        <li class="elementor-icon-list-item">
+          <span class="elementor-icon-list-icon"><i class="fas fa-check"></i></span>
+          <span class="elementor-icon-list-text">Ölçeklenebilirlik ve esneklik, ekiplerin çevik ve hızlı yanıt verebilmesini garanti eder</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+=== ANA ÖZELLİKLER BAŞLIĞI ===
+<section class="elementor-section">
+  <div class="elementor-container">
+    <div class="elementor-column">
+      <h2 class="elementor-heading-title">ALLPLAN 2026 – ANA ÖZELLİKLER VE GELİŞTİRMELER</h2>
+    </div>
+  </div>
+</section>
+
+=== ADVANCED TABS WİDGETİ ===
+<div id="eael-advance-tabs-51b6f2f" class="eael-advance-tabs eael-tabs-horizontal eael-tab-auto-active">
+  <div class="eael-tabs-nav">
+    <ul class="eael-tab-inline-icon" role="tablist">
+      <li id="architecture" class="active-default eael-tab-item-trigger" data-tab="1">
+        <span class="eael-tab-title">Architecture</span>
+      </li>
+      <li id="engineering" class="inactive eael-tab-item-trigger" data-tab="2">
+        <span class="eael-tab-title">Engineering</span>
+      </li>
+      <li id="infrastructure" class="inactive eael-tab-item-trigger" data-tab="3">
+        <span class="eael-tab-title">Infrastructure</span>
+      </li>
+      <li id="-prefabrication-construction" class="inactive eael-tab-item-trigger" data-tab="4">
+        <span class="eael-tab-title">Prefabrication & Construction</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="eael-tabs-content">
+    
+    <!-- ARCHITECTURE TAB İÇERİĞİ -->
+    <div id="architecture-tab" class="eael-tab-content-item active-default">
+      
+      <!-- Geliştirilmiş Serbest Şekilli Merdiven Modelleyicisi -->
+      <section class="elementor-section">
+        <div class="elementor-container">
+          <div class="elementor-column">
+            <div class="elementskit-heading">
+              <h3 class="elementskit-section-subtitle">Dahil Olduğu Paket: #Concept</h3>
+              <h2 class="elementskit-section-title">Geliştirilmiş Serbest Şekilli Merdiven Modelleyicisi <span>Eşsiz, standartlara uygun merdivenleri benzersiz esneklik ve kolaylıkla tasarlayın</span></h2>
+              <div class="ekit-heading__description">
+                <p>Öne çıkan tasarımlara artan talep ile birlikte, mimar ve planlamacıların özgün ve işlevsel merdivenler yaratmak için esnek araçlara ihtiyacı var. Serbest form merdivenler, sıradışı mekanlara mükemmel uyum sağlar ve her projeye daha fazla yaratıcı olasılık sunar. ALLPLAN 2026, özel ve alışılmışın dışında merdivenleri tasarlamayı kolaylaştıran esnek bir merdiven modelleyici sunar. Serbest Form Merdiven Modelleyici, ülke bazlı standartlara uygun olarak benzersiz veya karmaşık şekiller oluşturmanıza olanak tanır. Ayrıca merdivenin üst veya alt kısmında referans düzlemleri tanımlayarak, merdiven altına duvar veya oda eklemeyi daha hızlı hale getirebilirsiniz. Tek bir sezgisel araç içinde eşsiz esneklik ve verimlilikle, standartlara uygun ve dikkat çekici merdivenler tasarlayın.</p>
+              </div>
+            </div>
+          </div>
+          <div class="elementor-column">
+            <img src="https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_Enhanced_Freefom_Stair_Modeler-min_814fd21fef.jpg" alt="Geliştirilmiş Serbest Şekilli Merdiven Modelleyicisi" />
+            <div class="elementskit-video">
+              <a class="glow-ripple ekit-video-popup-btn" href="https://www.youtube.com/embed/HqhDQELnHms?feature=oembed">
+                <span class="ekit-video-popup-title">Videoyu Görüntüle</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="elementor-divider">
+        <span class="elementor-divider-separator"></span>
+      </div>
+      
+      <!-- Gelişmiş Çok Katmanlı Döşeme Yönetimi -->
+      <section class="elementor-section">
+        <div class="elementor-container">
+          <div class="elementor-column">
+            <img src="https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_Slab_Foundationslab-min_9a23bc0d5b-1.jpg" alt="Gelişmiş Çok Katmanlı Döşeme Yönetimi" />
+            <div class="elementskit-video">
+              <a class="glow-ripple ekit-video-popup-btn" href="https://www.youtube.com/embed/WK8rojFmuiY?feature=oembed">
+                <span class="ekit-video-popup-title">Videoyu Görüntüle</span>
+              </a>
+            </div>
+          </div>
+          <div class="elementor-column">
+            <div class="elementskit-heading">
+              <h3 class="elementskit-section-subtitle">Dahil Olduğu Paket: #Concept</h3>
+              <h2 class="elementskit-section-title">Gelişmiş Çok Katmanlı Döşeme Yönetimi<span> Modern ve sürdürülebilir yapı tasarımı için daha fazla esneklik ve hassasiyet</span></h2>
+              <div class="ekit-heading__description">
+                <p>AEC (Mimarlık-Mühendislik-İnşaat) sektörü, modern ve sürdürülebilir binalar için çok katmanlı bileşenleri tasarlayıp yönetmenin verimli yollarına ihtiyaç duyar ve proje standartlarını her aşamada karşılamalıdır. ALLPLAN 2025, döşemeler için çok katmanlı destek ve detaylandırma ile uygulama planlama araçlarını tanıttı. ALLPLAN 2026 ile çok katmanlı döşeme ve temel döşemelerini tasarlamak artık her zamankinden daha sezgisel ve verimli. Son güncellemeler, mimar ve mühendislerin döşeme katmanlarının uzatma yönünü hassas şekilde kontrol etmesini ve yeni etkileşimli önizleme ile değişiklikleri anında görmesini sağlar. Temel döşemeler, zemin katmanları veya alt tabaka katmanları gibi karmaşık bileşenlerin modellenmesi artık kolay ve son derece hassastır. Bu geliştirmeler, proje iş akışlarını hızlandırır, hata olasılığını azaltır ve planlamadan inşa aşamasına kadar tutarlı, detaylı sonuçlar elde edilmesini sağlar.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="elementor-divider">
+        <span class="elementor-divider-separator"></span>
+      </div>
+      
+      <!-- BIM'e Uyumlu Oda ve Kaplama Detaylandırması -->
+      <section class="elementor-section">
+        <div class="elementor-container">
+          <div class="elementor-column">
+            <div class="elementskit-heading">
+              <h3 class="elementskit-section-subtitle">Dahil Olduğu Paket: #Concept</h3>
+              <h2 class="elementskit-section-title">BIM'e Uyumlu Oda ve Kaplama Detaylandırması<span>Daha doğru, hızlı ve kolay</span></h2>
+              <div class="ekit-heading__description">
+                <p>ALLPLAN 2026, kaplama modelleme için esnek, doğru ve verimli bir iş akışı sunarak BIM planlamasını önemli ölçüde geliştirir. Öne çıkan özellikler şunlardır: kural tabanlı dağıtımla birlikte gerçekçi geometriye sahip çok katmanlı dikey kaplamalar, ilişkili oda kaplamalarını organize etmek veya alternatif tasarımları desteklemek için yeni oda filtreleri, duvar gibi dikey kaplamaların plan görünümü, 3B süpürgelik modelleme ve katman yönetimi için geliştirilmiş bir arayüz. Bu iyileştirmeler, mimarların doğru 2D ve 3D planlar oluşturmasına, kaplamaları yönetmenin basitleşmesine, hata oranının azalmasına ve çeşitli proje tiplerine uyum sağlamasına yardımcı olur. Ayrıca optimize edilmiş hesaplama süreci, tasarım değişiklikleri yaparken ve karmaşık projeleri güncellerken zamandan tasarruf sağlar.</p>
+              </div>
+            </div>
+          </div>
+          <div class="elementor-column">
+            <img src="https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_BIM-Compliant_Room_and_Finish_Detailing-min_b518cd0bd2.jpg" alt="BIM'e Uyumlu Oda ve Kaplama Detaylandırması" />
+          </div>
+        </div>
+      </section>
+      
+      <div class="elementor-divider">
+        <span class="elementor-divider-separator"></span>
+      </div>
+      
+      <!-- Özel Bileşenler: Hakimiyete Bağlı -->
+      <section class="elementor-section">
+        <div class="elementor-container">
+          <div class="elementor-column">
+            <img src="https://aluplan.com.tr/wp-content/uploads/2025/10/tabanlibaglantilar.jpg" alt="Özel Bileşenler: Hakimiyete Bağlı" />
+            <div class="elementskit-video">
+              <a class="glow-ripple ekit-video-popup-btn" href="https://www.youtube.com/embed/pNlxIzyGVKc?feature=oembed">
+                <span class="ekit-video-popup-title">Videoyu Görüntüle</span>
+              </a>
+            </div>
+          </div>
+          <div class="elementor-column">
+            <div class="elementskit-heading">
+              <h3 class="elementskit-section-subtitle">Dahil Olduğu Paket: #Concept</h3>
+              <h2 class="elementskit-section-title">Özel Bileşenler: Hakimiyete Bağlı <span>Daha akıllı ve kaliteli BIM modelleri için kesintisiz etkileşim ve otomasyon</span></h2>
+              <div class="ekit-heading__description">
+                <p>ALLPLAN 2026, BIM modelinde öncelik tabanlı bağlantılara (PBC) sahip geliştirilmiş Özel Bileşen özelliğini tanıtır. Bu geliştirme, özel model öğeleri ile duvar, kolon, döşeme gibi yerel yapı bileşenleri veya diğer özel objeler arasında kesintisiz etkileşim sağlar. Planlamacılar artık karmaşık şekilleri daha doğru modelleyebilir, otomatik etkileşimler manuel çalışmayı azaltır ve hata riskini minimize eder. Bu geliştirmeler, iş akışlarını hızlandırır, daha kaliteli BIM modelleri sunar ve zorlu projelerde bile başarılı proje teslimini destekler.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="elementor-divider">
+        <span class="elementor-divider-separator"></span>
+      </div>
+      
+      <!-- Geliştirilmiş Strüktürel Çerçeveleme -->
+      <section class="elementor-section">
+        <div class="elementor-container">
+          <div class="elementor-column">
+            <div class="elementskit-heading">
+              <h3 class="elementskit-section-subtitle">Dahil Olduğu Paket: #Professional</h3>
+              <h2 class="elementskit-section-title">Geliştirilmiş Strüktürel Çerçeveleme <span>Çerçeve paftalarını hızla modelleyin ve güncelleyin</span></h2>
+              <div class="ekit-heading__description">
+                <p>Yeni kiriş ve kiriş sistemlerini yerleştirme araçları, binaları daha hızlı modellemenizi ve çatı geometrisi değiştikçe çerçeve paftalarını uyarlamanızı sağlar. Geliştirilmiş yakalama seçenekleri, çelik elemanların ilk seferde doğru yerleştirilmesini sağlar ve bağlantı hatalarını azaltır.</p>
+              </div>
+            </div>
+          </div>
+          <div class="elementor-column">
+            <img src="https://aluplan.com.tr/wp-content/uploads/2025/10/yapisal.jpg" alt="Geliştirilmiş Strüktürel Çerçeveleme" />
+            <div class="elementskit-video">
+              <a class="glow-ripple ekit-video-popup-btn" href="https://www.youtube.com/embed/aCsFFSNbFWc?feature=oembed">
+                <span class="ekit-video-popup-title">Videoyu Görüntüle</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="elementor-divider">
+        <span class="elementor-divider-separator"></span>
+      </div>
+      
+      <!-- Strüktürel Çerçeveleme Bağlantıları -->
+      <section class="elementor-section">
+        <div class="elementor-container">
+          <div class="elementor-column">
+            <img src="https://aluplan.com.tr/wp-content/uploads/2025/10/duvartasasirimi.jpg" alt="Strüktürel Çerçeveleme Bağlantıları" />
+          </div>
+          <div class="elementor-column">
+            <div class="elementskit-heading">
+              <h3 class="elementskit-section-subtitle">Dahil Olduğu Paket: #Professional</h3>
+              <h2 class="elementskit-section-title">Strüktürel Çerçeveleme Bağlantıları <span> Bağlantıları doğru şekilde koruyun, otomatik olarak</span></h2>
+              <div class="ekit-heading__description">
+                <p>Bağlantı hatalarını düzeltmek için zaman kaybetmeyin—ALLPLAN 2026'daki yeni işlevsellikle, bağlantılar otomatik olarak uygulanır ve güncellenir, böylece çelik montajlar tasarım değişikliklerinde bile doğru ve geçerli kalır.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="elementor-divider">
+        <span class="elementor-divider-separator"></span>
+      </div>
+      
+      <!-- Optimizasyonlu Duvar İş Akışları -->
+      <section class="elementor-section">
+        <div class="elementor-container">
+          <div class="elementor-column">
+            <div class="elementskit-heading">
+              <h3 class="elementskit-section-subtitle">Dahil Olduğu Paket: #Concept</h3>
+              <h2 class="elementskit-section-title">Optimizasyonlu Duvar İş Akışları <span>Modern, birleşik arayüz ile duvar tasarımını basitleştirin</span></h2>
+              <div class="ekit-heading__description">
+                <p>ALLPLAN 2026, geometrik özellikler de dahil olmak üzere duvar oluşturma ve düzenleme için modern ve birleşik bir özellik paleti sunar. Bu tutarlı ve sezgisel arayüz, yeni kullanıcıların başlamasını kolaylaştırırken, deneyimli kullanıcılar farklı nesne türlerinde verimliliği artırır ve sorunsuz iş akışları sağlar. Sonuç, her proje için üretkenliği ve kullanıcı memnuniyetini artıran, düzenli bir duvar tasarım sürecidir.</p>
+              </div>
+            </div>
+          </div>
+          <div class="elementor-column">
+            <img src="https://aluplan.com.tr/wp-content/uploads/2025/10/wall.jpg" alt="Optimizasyonlu Duvar İş Akışları" />
+          </div>
+        </div>
+      </section>
+      
+      <!-- Demo Butonları -->
+      <section class="elementor-section">
+        <div class="elementor-container">
+          <div class="elementor-column">
+            <div class="elementor-button-wrapper">
+              <a class="elementor-button" href="https://aluplan.com.tr/basvuru-formlari/">Kişisel Demo Talebi</a>
+            </div>
+          </div>
+          <div class="elementor-column">
+            <div class="elementor-button-wrapper">
+              <a class="elementor-button" href="https://www.allplan.com/demo-download-allplan/">Ücretsiz Deneme</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <!-- ENGINEERING TAB İÇERİĞİ -->
+    <div id="engineering-tab" class="eael-tab-content-item inactive">
+      
+      <!-- Geliştirilmiş Donatı Detaylandırması -->
+      <section class="elementor-section">
+        <div class="elementor-container">
+          <div class="elementor-column">
+            <div class="elementskit-heading">
+              <h3 class="elementskit-section-subtitle">Dahil Olduğu Paket: #Professional</h3>
+              <h2 class="elementskit-section-title">Geliştirilmiş Donatı Detaylandırması <span>Otomatik Kolon Donatısı Tasarımı</span></h2>
+              <div class="ekit-heading__description">
+                <p>Donatı detaylandırmasında, farklı kolon yüzeylerine farklı donatı çapları atayabilmek veya donatıyı kolon köşelerinde yoğunlaştırabilmek kritik öneme sahiptir. ALLPLAN 2026 ile kullanıcılar artık tasarım kriterlerine çok daha yakın sonuçlar elde edebiliyor: kare veya dikdörtgen kolonlarda boyuna donatılara farklı çaplar atanabiliyor ve eksenel aralıklar tanımlanabiliyor — ister köşelerde yoğunlaştırılmış, ister kullanıcı tanımlı aralıklarla. Bu sayede otomatik kolon donatı tasarımından sonra manuel düzeltme ihtiyacı büyük ölçüde azalıyor, tasarım süreci hızlanıyor ve güvenilirliği artıyor.</p>
+                <p>Ayrıca FRILO gibi analiz ve tasarım yazılımlarından donatı yerleşimlerinin aktarımı artık daha sorunsuz ve güvenilir. Bu da hatasız, kesintisiz iş akışlarını mümkün kılar.</p>
+                <p><strong>Sonuç:</strong> daha hızlı proje teslimi, daha az hata ve analizden uygulamaya kadar tutarlı, yüksek kaliteli yapısal detaylandırma.</p>
+              </div>
+            </div>
+          </div>
+          <div class="elementor-column">
+            <img src="https://aluplan.com.tr/wp-content/uploads/2025/10/Muhendislik-csm_ALLPLAN_2026_Enhanced_rebar_detailing_-_Automated_Column_reinforcement_design_1-min_00dfccf664.jpg" alt="Geliştirilmiş Donatı Detaylandırması" />
+            <div class="elementskit-video">
+              <a class="glow-ripple ekit-video-popup-btn" href="https://www.youtube.com/embed/Lxg1Zej3tZc?feature=oembed">
+                <span class="ekit-video-popup-title">Videoyu Görüntüle</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="elementor-divider">
+        <span class="elementor-divider-separator"></span>
+      </div>
+      
+      <!-- Otomatik Donatı Detaylandırması -->
+      <section class="elementor-section">
+        <div class="elementor-container">
+          <div class="elementor-column">
+            <img src="https://aluplan.com.tr/wp-content/uploads/2025/10/Muhendislik-ALLPLAN_2026_Automated_Reinforcement_Detailing_-_Improvements_to_speed_up_Wall_Reinforcement_Workflows.gif" alt="Otomatik Donatı Detaylandırması" />
+            <div class="elementskit-video">
+              <a class="glow-ripple ekit-video-popup-btn" href="https://www.youtube.com/embed/NZkei8GpQwA?feature=oembed">
+                <span class="ekit-video-popup-title">Videoyu Görüntüle</span>
+              </a>
+            </div>
+          </div>
+          <div class="elementor-column">
+            <div class="elementskit-heading">
+              <h3 class="elementskit-section-subtitle">Dahil Olduğu Paket: #Professional</h3>
+              <h2 class="elementskit-section-title">Otomatik Donatı Detaylandırması <span>Duvar Donatısı İş Akışlarını Hızlandıran İyileştirmeler</span></h2>
+              <div class="ekit-heading__description">
+                <p>Donatı detaylandırmasının otomatikleştirilmesi, kullanıcıların zamandan tasarruf etmesini, iş akışlarını hızlandırmasını ve daha güvenilir şekilde çalışmasını sağlar. ALLPLAN 2026, otomatik duvar donatı iş akışını daha akıcı, hatasız ve kullanıcı dostu hale getirir. Artık yatay veya dikey donatı önceliği tek tıkla belirlenebilir; her donatı tipi gerektiğinde kolayca aktif veya pasif hale getirilebilir.</p>
+                <p>Bu sayede otomasyon, hem pratik hem de sezgisel bir deneyime dönüşür. Kullanıcılar ALLPLAN'ın sunduğu hız, güvenilirlik ve kontrol avantajlarından tam anlamıyla faydalanabilir.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="elementor-divider">
+        <span class="elementor-divider-separator"></span>
+      </div>
+      
+      <!-- Donatıdan Şantiyeye (Reinforcement to Field) -->
+      <section class="elementor-section">
+        <div class="elementor-container">
+          <div class="elementor-column">
+            <div class="elementskit-heading">
+              <h3 class="elementskit-section-subtitle">Dahil Olduğu Paket: #Professional</h3>
+              <h2 class="elementskit-section-title">Donatıdan Şantiyeye (Reinforcement to Field) <span>Dijital Odaklı İnşaat Süreçleri</span></h2>
+              <div class="ekit-heading__description">
+                <p>ALLPLAN 2026, donatının modellenmesi ve yönetilmesinde devrim yaratan bir <strong>"Reinforcement to Field"</strong> (Donatıdan Şantiyeye) iş akışı sunar. Bu yeni sistem, donatılı beton yapıların tamamen dijital, çizimsiz iş akışlarıyla yönetilmesini sağlar.</p>
+                <p>Detaylandırıcılar ve yükleniciler artık donatıyı izometrik görünümler üzerinde doğrudan yerleştirebilir, geliştirilmiş nitelik yönetiminden yararlanabilir ve yoğun donatı bulunan projelerde çakışmaları etkin şekilde yönetebilir.</p>
+                <p>Bu yenilikler, detaylandırmadan sahaya kadar bilgi akışını sorunsuz hale getirir, hataları azaltır ve üretkenliği artırarak dijital inşaata geçişi hızlandırır.</p>
+              </div>
+            </div>
+          </div>
+          <div class="elementor-column">
+            <img src="https://aluplan.com.tr/wp-content/uploads/2025/10/Muhendislik-csm_ALLPLAN_2026_Reinforcement_to_Field_1-min_30ea5fcf19.jpg" alt="Donatıdan Şantiyeye" />
+            <div class="elementskit-video">
+              <a class="glow-ripple ekit-video-popup-btn" href="https://www.youtube.com/embed/_3lo2jJ6xGM?feature=oembed">
+                <span class="ekit-video-popup-title">Videoyu Görüntüle</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <!-- INFRASTRUCTURE TAB İÇERİĞİ -->
+    <div id="infrastructure-tab" class="eael-tab-content-item inactive">
+      <!-- Infrastructure içeriği burada olacak -->
+    </div>
+    
+    <!-- PREFABRICATION & CONSTRUCTION TAB İÇERİĞİ -->
+    <div id="-prefabrication-construction-tab" class="eael-tab-content-item inactive">
+      <!-- Prefabrication & Construction içeriği burada olacak -->
+    </div>
+  </div>
+</div>
+
+=== KULLANILAN GÖRSELLER ===
+1. https://aluplan.com.tr/wp-content/uploads/2023/08/logo-29.png (Aluplan Logo)
+2. https://aluplan.com.tr/wp-content/uploads/2021/10/builsmart.png (Building Smart Türkiye Logo)
+3. https://aluplan.com.tr/wp-content/uploads/2019/10/partner.png (Partner Logo)
+4. https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_Enhanced_Freefom_Stair_Modeler-min_814fd21fef.jpg (Serbest Şekilli Merdiven)
+5. https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_Slab_Foundationslab-min_9a23bc0d5b-1.jpg (Çok Katmanlı Döşeme)
+6. https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_BIM-Compliant_Room_and_Finish_Detailing-min_b518cd0bd2.jpg (BIM Uyumlu Oda Detaylandırması)
+7. https://aluplan.com.tr/wp-content/uploads/2025/10/tabanlibaglantilar.jpg (Özel Bileşenler)
+8. https://aluplan.com.tr/wp-content/uploads/2025/10/yapisal.jpg (Strüktürel Çerçeveleme)
+9. https://aluplan.com.tr/wp-content/uploads/2025/10/duvartasasirimi.jpg (Çerçeveleme Bağlantıları)
+10. https://aluplan.com.tr/wp-content/uploads/2025/10/wall.jpg (Duvar İş Akışları)
+11. https://aluplan.com.tr/wp-content/uploads/2025/10/Muhendislik-csm_ALLPLAN_2026_Enhanced_rebar_detailing_-_Automated_Column_reinforcement_design_1-min_00dfccf664.jpg (Donatı Detaylandırması)
+12. https://aluplan.com.tr/wp-content/uploads/2025/10/Muhendislik-ALLPLAN_2026_Automated_Reinforcement_Detailing_-_Improvements_to_speed_up_Wall_Reinforcement_Workflows.gif (Otomatik Donatı - GIF)
+13. https://aluplan.com.tr/wp-content/uploads/2025/10/Muhendislik-csm_ALLPLAN_2026_Reinforcement_to_Field_1-min_30ea5fcf19.jpg (Donatıdan Şantiyeye)
+
+=== KULLANILAN VİDEOLAR ===
+1. https://www.youtube.com/embed/HqhDQELnHms (Serbest Şekilli Merdiven Modelleyicisi)
+2. https://www.youtube.com/embed/WK8rojFmuiY (Çok Katmanlı Döşeme Yönetimi)
+3. https://www.youtube.com/embed/pNlxIzyGVKc (Özel Bileşenler)
+4. https://www.youtube.com/embed/aCsFFSNbFWc (Strüktürel Çerçeveleme)
+5. https://www.youtube.com/embed/Lxg1Zej3tZc (Donatı Detaylandırması)
+6. https://www.youtube.com/embed/NZkei8GpQwA (Otomatik Donatı)
+7. https://www.youtube.com/embed/_3lo2jJ6xGM (Donatıdan Şantiyeye)
+
+=== KULLANILAN WİDGETLER ===
+1. Elementor Heading Widget (Başlıklar için)
+2. Elementor Text Editor Widget (Metin içerikleri için)
+3. Elementor Image Widget (Görseller için)
+4. Elementor Button Widget (Butonlar için)
+5. Elementor Icon List Widget (Liste öğeleri için)
+6. Elementor Divider Widget (Ayırıcı çizgiler için)
+7. Essential Addons Advanced Tabs Widget (Tab yapısı için)
+8. Essential Addons Call to Action Widget (CTA kutusu için)
+9. ElementsKit Heading Widget (Gelişmiş başlıklar için)
+10. ElementsKit Video Widget (Video popup'ları için)
+11. ElementsKit Navigation Menu Widget (Ana menü için)
+
+=== SAYFA YAPISI ===
+- Header (Logo ve menü alanı)
+- Top Banner (Hızlı erişim butonları)
+- Subscription CTA (Abonelik çağrısı)
+- Hero Section (Ana başlık ve açıklama)
+- Features Section (Ana özellikler ve faydalar)
+- Advanced Tabs (Architecture, Engineering, Infrastructure, Prefabrication & Construction)
+- Footer (Alt bilgiler)
+
+=== RESPONSIVE TASARIM ===
+Sayfa responsive tasarıma sahip ve mobil, tablet ve masaüstü cihazlarda uyumlu şekilde görüntüleniyor. CSS media query'leri kullanılarak farklı ekran boyutları için optimizasyonlar yapılmış.
+
+=== SEO VE META BİLGİLER ===
+- Title: ALLPLAN 2026'nın Özellikleri – Aluplan Program Sistemleri | Allplan Türkiye Distribütörü
+- Meta Description: ALLPLAN 2026 ürün sürümleri, modernizasyon, otomasyon ve entegrasyon odaklı yaklaşımıyla, AEC sektörünün değişen ihtiyaçlarına güçlü yanıtlar veriyor.
+- Canonical URL: https://aluplan.com.tr/allplan-2026nin-ozellikleri/
+- Open Graph ve Twitter Card meta etiketleri mevcut
+- Structured data (JSON-LD) kullanımı
+
+=== ANALYTICS VE TRACKING ===
+- Google Analytics (GT-5TQ6VQ4) entegrasyonu
+- Google Tag Manager (GTM-W35LQCZ) kullanımı
+- LinkedIn Insight Tag (Partner ID: 5003497) entegrasyonu
+- Site Kit by Google eklentisi aktif
+
+=== PERFORMANS ÖPTİMİZASYONU ===
+- Lazy loading görseller için aktif
+- CSS ve JavaScript dosyaları minify edilmiş
+- Font preloading kullanımı
+- Image srcset ve sizes attribute'ları ile responsive görseller
+
+=== KULLANILAN EKLENTILER ===
+1. Elementor Pro (Sayfa oluşturucu)
+2. Essential Addons for Elementor (Ek widget'lar)
+3. ElementsKit (Menü ve ek özellikler)
+4. Video Popup (Video modal'ları)
+5. TablePress (Tablo yönetimi)
+6. Prime Slider (Slider widget'ları)
+7. Site Kit by Google (Analytics entegrasyonu)
+
+Bu sayfa, ALLPLAN 2026'nın tüm yeni özelliklerini detaylı şekilde tanıtan, interaktif tab yapısı ile organize edilmiş, video ve görsel içeriklerle desteklenmiş profesyonel bir ürün tanıtım sayfasıdır.

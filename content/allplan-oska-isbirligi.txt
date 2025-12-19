@@ -1,0 +1,17 @@
+SAYFA: https://aluplan.com.tr/allplan-oska-isbirligi/
+
+HERO SECTION:
+- Başlık: Yaklaşık Maliyet, Hakediş ve Kesin Hesap işlemlerinde
+- Alt Başlık: ALLPLAN'da modelinizi tamamlayın. OSKA ile
+
+POST HERO SECTION:
+- İçerik: 
+  • ister Yaklaşık Maliyetlerinizi,
+  • ister Resmi Hakedişlerinizi (Fiyat farkı hesaplarıyla),
+  • ister Kaba ve İnce Metraj Sayfalarınızı,
+  • Excel Formatında ve Türkiye Standartlarında (Devlet Kurumlarının istediği formatta) alın.
+
+AÇIKLAMA:
+ALLPLAN ve OSKA işbirliği ile maliyet hesaplama, hakediş ve metraj işlemlerini Türkiye standartlarında gerçekleştirin.
+
+YOUTUBE VİDEOLARI: Yok

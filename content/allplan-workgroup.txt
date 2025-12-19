@@ -1,0 +1,2 @@
+CONTENT:
+Allplan Workgroup Manager, CAD iş istasyonlarının yerel ağlarda (LAN) ve internet üzerinde işbirliğini düzenler. Orta ve büyük ölçekli inşaat şirketlerinde etkin bir bir arada çalışma ortamı sunar. Bir ağ ortamındaki iş istasyonları ile çalışmak tek başına çalışan bir iş istasyonu ile çalışmak kadar kolaydır. Workgroup Manager ile çalışmanın avantajlarından biri, prove verisi ve kullanıcıların, erişim hakları ile birlikte merkezi bir şekilde yönetilebiliyor olmasıdır. Veriye erişim tüm ağda gerçekleşebilir.

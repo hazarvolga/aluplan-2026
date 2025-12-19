@@ -1,0 +1,309 @@
+SAYFA: https://aluplan.com.tr/allplan-ultimate-2025/
+
+HERO SECTION:
+- Başlık: ALLPLAN Ultimate
+- Alt Başlık: Tasarımdan inşaata kadar tam iş akışı için kapsamlı BIM çözümü.
+
+POST HERO SECTION:
+- Başlık: ALLPLAN Ultimate Nedir?
+- İçerik: Allplan Ultimate, mimarlık, mühendislik ve inşaat şirketlerinde tasarımdan inşaata kadar tüm süreçleri destekleyen kapsamlı iş akışı için Allplan'ın nihai BIM çözümüdür.
+
+Allplan Professional'ın tüm özelliklerine ek olarak:
+• Gelişmiş parametrik modelleme ve ön gerilme
+• Prefabrikasyon iş akışları
+• İnşaat iş akışları, hafriyat ve kazı araçları
+• SCIA Concept ile yapısal analiz*
+
+ALLPLAN ULTIMATE'IN FAYDALARI:
+
+KART 1 / İSTEDİĞİNİZ GİBİ ÇALIŞIN:
+- Başlık: İstediğiniz Gibi Çalışın
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/work_way_want.png
+- Açıklama: 2D, 2.5D ve 3D'de esnek iş akışları.
+
+KART 2 / GÜÇLÜ & SEZGİSEL MODELLEME:
+- Başlık: Güçlü & Sezgisel modelleme.
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/powerful_modeling.png
+- Açıklama: Herhangi bir formu kolayca modelleme özgürlüğü, yapı bileşenlerini hızlıca geliştirmek için güçlü araçlarla desteklenir.
+
+KART 3 / VERİMLİ İŞ BİRLİĞİ:
+- Başlık: Verimli İş Birliği
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/productive_collab.png
+- Açıklama: Optimized bulut tabanlı iş birliği, proje ve ofis ekip çalışması ile çizim ve plan dağıtımı için entegre ALLPLAN Cloud hizmetleri.
+
+KART 4 / GERÇEK DİSİPLİNLERARASI AEC TASARIMI:
+- Başlık: Gerçek Disiplinlerarası AEC Tasarımı
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/interdisciplinary_aec_design.png
+- Açıklama: Mimari tasarım, yapısal mühendislik, MEP hizmetleri ve inşaat mühendisliği tasarımı ve detaylandırması için tek bir yazılım çözümü.
+
+KART 5 / BİRDEN FAZLA MALZEME İLE PLANLAMA:
+- Başlık: Birden Fazla Malzeme ile Planlama
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/planable_multi_materials.png
+- Açıklama: Malzemeleri ve inşaat yaklaşımlarını optimize edin; dökme yerinde/prekast beton, çelik ve ahşap dahil olmak üzere, yapım kolaylığını ve sürdürülebilirliği artırmak için.
+
+KART 6 / PARAMETRİK YOL MODELLEME:
+- Başlık: Parametrik Yol Modelleme
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/powerful_modeling-1.png
+- Açıklama: Bina ve altyapı projelerinize yol tasarımlarını entegre etmek için güçlü ve kullanımı kolay modelleme işlevleri.
+
+KART 7 / KESİN 3D DONATI:
+- Başlık: Kesin 3D Donatı
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/precise_3d_reinforcement.png
+- Açıklama: Donatı gereksinimlerinin hızlı tasarımı ve detaylandırılması için otomatik çözümler, önemli ölçüde zaman tasarrufu sağlar ve kaliteyi garanti eder.
+
+KART 8 / ANALİZ ÇÖZÜMLERİ İLE SORUNSUZ ENTEGRASYON:
+- Başlık: Analiz Çözümleri ile Sorunsuz Entegrasyon
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/seamless_integration_analysis_solutions-1.png
+- Açıklama: Yapısal modellerin SAF üzerinden yapısal analiz çözümleriyle verimli bir şekilde değişimini sağlamak için AutoConverter ile gelişmiş iş akışları.
+
+KART 9 / GÜÇLÜ ALAN MODELLEME VE ZEMİN ÇALIŞMALARI ARAÇLARI:
+- Başlık: Güçlü Alan Modelleme ve Zemin Çalışmaları Araçları
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/powerful_site_modelling_tools-1.png
+- Açıklama: Alan arazi gereksinimlerini kolayca entegre edin, erişim yollarını tasarlayın, hizmetleri modelleyin ve inşaat ekipmanlarının yerleşimini planlayın. Ayrıca, kazı modelleme ve destekleme dahil olmak üzere zemin çalışmaları.
+
+KART 10 / PREFABRİK İÇİN DETAYLANDIRMA:
+- Başlık: Prefabrik İçin Detaylandırma
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/detail_precast.png
+- Açıklama: Üretim ve inşaat için prefabrik bileşenleri hızlı bir şekilde planlamak ve detaylandırmak için etkili araçlar.
+
+KART 11 / KESİN GÖRSEL PLANLAMA:
+- Başlık: Kesin Görsel Planlama
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/accurate_visual_scheduling.png
+- Açıklama: Model verilerini inşaat planlama araçlarıyla bağlayarak, proje görevleri veya kilometre taşları aracılığıyla inşaatı görsel olarak simüle edin ve planlayın.
+
+KART 12 / BIM 2FIELD:
+- Başlık: BIM 2Field
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/import_bim_models.png
+- Açıklama: Bimplus bulut tabanlı platformu kullanarak, detaylı tasarım niyetini inşaat ekipleriyle görsel olarak kolayca koordine edin ve iletişim kurun.
+
+ALLPLAN CONNECT ÖZELLİKLERİ - FONKSİYONELLİK HIZLI BAKIŞ:
+
+ARAYÜZLER:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/01_Interfaces_2-1.jpg
+- Açıklama: Sorunsuz veri alışverişi için tüm ilgili dosya arayüzleri, ifc, bcf, pdf, rvt, 3dm, skp, obj, LandXML, dwg, dgn, c4d, stl, wrl, saf ve daha fazlasını içerir. Yazılım arayüzleri (örn. Python API ve Görsel Betikleme) otomatik iş akışlarını sağlar.
+
+HARİCİ VERİ KAYNAKLARI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/02_EXTERNAL_DATA_SOURCES_3.jpg
+- Açıklama: GIS bilgilerini, 3D içerik ve dokuları içe aktarmak için GIS Bağlayıcı ve İçerik Bağlayıcı.
+- MODAL POPUP VİDEO: https://youtu.be/LF6p7dQASR8
+- VİDEO EMBED URL: https://www.youtube.com/embed/LF6p7dQASR8
+
+3D MODELLEME:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/03_3D_Modeling_2.jpg
+- Açıklama: Son derece karmaşık ve zorlu geometriler için yüksek performanslı 3D modelleme. Modelleme işlevselliği, Siemens Parasolid modelleme çekirdeği ile desteklenmektedir.
+
+2D ÇİZİM:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/04_2D_DRAFTING_2-1.jpg
+- Açıklama: Çekici, özlü ve detaylı çizimler için hassas 2D çizim için kapsamlı işlevsellik.
+
+ÇARPIŞMA TESPİTİ:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/06_CLASH_DETECTION_2-1.jpg
+- Açıklama: Yumuşak ve sert çarpışmaları tanımlamak için araç.
+
+İÇERİK PAKETİ BIMEASY:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/07_CONTENT_PACKAGE_BIM_EASY_Klein_2-1.jpg
+- Açıklama: Önceden tanımlanmış ancak özelleştirilebilir şirket standardı. Modellerin ve çizimlerin oluşturulmasında tutarlı bir çalışma şekli sağlar. Başlangıçta kolaylık sağlar, verimliliği artırır ve özellikle openBIM projelerinde iyi yapılandırılmış veri alışverişini garanti eder.
+
+YAPI BİLEŞENLERİ:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/08_BUILDING_COMPONENTS_2-1.jpg
+- Açıklama: Duvarlar, döşemeler, kirişler, kolonlar, temeller, merdivenler, çatılar, pencereler, kapılar ve cepheler gibi esnek yapı bileşenleri.
+
+ARAZİ MODELİ:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/09_Terrain_Model_2-1.jpg
+- Açıklama: Ölçüm noktaları veya nokta bulutlarına dayanan güçlü arazi modelleme.
+
+KENTSEL VE PEYZAJ TASARIMI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/10_Urban_and_Landscape_Design_2-1.jpg
+- Açıklama: Kütle modelleri, kentsel ve yer tasarımı ile birlikte bitkilendirme planları için işlevler.
+
+KANALİZASYON VE ALTYAPI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/11_Sewerage_and_Utilities_2.jpg
+- Açıklama: Su, atık su, elektrik, internet, doğalgaz veya merkezi ısıtma gibi hizmetlerin rotalanması.
+
+MİKTAR HESAPLAMASI VE MALİYETLENDİRME:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/12_QUANTITY_TAKE-OFF_AND_COSTING_3-1.jpg
+- Açıklama: Modelleme yapılmış ve yapılmamış nesnelerin kesin, doğrulanabilir miktar hesaplaması ve maliyetlendirilmesi.
+
+DONATI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/13_REINFORCEMENT_4.jpg
+- Açıklama: Son derece güçlü donatı işlevselliği, çubuk donatısı, ağ donatısı ve BAMTEC halılarını içerir.
+
+ÇELİK BAĞLANTILAR:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/14_STEEL_CONNECTIONS_2.jpg
+- Açıklama: Civatalı ve kaynaklı çelik bağlantılar için araçlar.
+
+YOLLAR:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/15_ROADS_2.jpg
+- Açıklama: Tam parametrik yol tasarımı, kesişmeler, trafik daireleri ve araç dönme yolu analizi dahil.
+
+ŞANTİYE HAZIRLIĞI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/16_CONSTRUCTION_SITE_PREPARATION_2.jpg
+- Açıklama: Cranes, konteynerler, şantiye çitleri ve inşaat sahası yerleşimini planlamak için diğer ekipmanlar.
+
+ZEMİN ÇALIŞMALARI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/17_Groundworks_2.jpg
+- Açıklama: Akıllı kazı destekleme sistemleri, bored pile (delikli kazık), soldier pile duvarları ve zemin ankrajları gibi çözümleri içerir.
+
+KAZI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/17_EXCAVATION_2.jpg
+- Açıklama: Kazı alanlarını modellemek ve kazı çizimleri oluşturmak için kullanılan araçlar.
+
+PREFABRİK TASARIM VE DETAYLANDIRMA:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/18_Precast_Design_and_Detailing_2.jpg
+- Açıklama: Akıllı prefabrik beton bileşenleri, örneğin kirişler, kolonlar, merdivenler vb.
+
+ELEMAN PLANI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/19_Element_Plan_2.jpg
+- Açıklama: Tekil elemanların detaylı çizimlerinin otomatik, şablon bazlı olarak üretilmesi.
+
+GÖRSELLEŞTİRME:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/Visualization__basic__Conc___Prof___Ulti_-1.jpg
+- Açıklama: Vulkan gibi en son teknolojilere dayanan geniş bir görselleştirme yelpazesi. Gerçek zamanlı Render ve CineWare'ı içerir, Lumion ve Twinmotion'a canlı bağlantılar.
+
+GELİŞMİŞ GÖRSELLEŞTİRME:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/ALLPLAN_Advanced_Visualization_Redshift_Renderer_700x400.jpg
+- Açıklama: MAXON'dan yüksek performanslı GPU hızlandırmalı Redshift render.
+
+AI TABANLI GÖRSELLEŞTİRME:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/AI_Based_Viz-1.jpg
+- Açıklama: İlham verici, ayrıntılı AI destekli görselleştirmeler oluşturmak için bağlantılar. Nemetschek AI Visualizer ve EvolveLab'ın Veras AI Visualizer ile entegrasyonu içerir.
+
+PARAMETRİK MODELLEME:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/Parametric_Modeling.jpg
+- Açıklama: Köprüler, tüneller, istinat duvarları, gürültü bariyerleri gibi sivil yapıların dört boyutlu parametrik modelleme ve detaylandırması için özel bir çözüm; ayrıca prefabrik kiriş köprüleri gibi özel köprü türlerini de içerir.
+
+PARAMETRİK ÖN GERME:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/Parametric_Prestresing.jpg
+- Açıklama: Ön germe tendonlarının modellenmesi.
+
+ALLPLAN ULTIMATE ABONELİĞİNE DAHİL OLARAK: SCIA CONCEPT
+
+YAPISAL ANALİZ VE TASARIM – SCIA ENGINEER:
+SCIA Engineer: Tüm projeleriniz için yüksek performanslı, güvenilir çok malzemeli yapısal analiz ve tasarım yazılımı.
+
+SCIA ENGINEER – CONCEPT SÜRÜMÜ:
+Bu sürüm, esas olarak beton ve ahşaptan yapılmış yaygın yapıları modelleyen ve tasarlayan mühendisler için tasarlanmıştır. Ancak, temel çelik kontrolleri de desteklenmektedir. Temel doğrusal olmayan hesaplamalar, stabilite ve dinamik analiz ile birlikte gerçekleştirilebilir. Bu sürüm, konut binalarını tasarlayan mühendisler için özellikle uygundur.
+
+SCIA Engineer karşılaştırmasına buradan erişin.
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/SCIA_Concept.jpg
+
+ALLPLAN BULUT HİZMETLERİ:
+
+BULUT TABANLI İŞBİRLİĞİ:
+Bimplus Pro, bulut tabanlı BIM işbirliği platformu.
+
+PROJE TAKIM ÇALIŞMASI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/15_PROJECT_TEAMWORKING_2_01.jpg
+- Açıklama: ALLPLAN Share, bir şirket ağı üzerinden ekip çalışmasını sağlar; uzaktan çalışan ekip üyeleri için de idealdir.
+
+ÇİZİM VE PLAN DAĞITIMI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/16_DRAWING_AND_PLAN_DISTRIBUTION_2.jpg
+- Açıklama: Çeşitli plan formatlarının oluşturulmasını ve dağıtımını yönetmek için özel olarak tasarlanmış web tabanlı plan dağıtım aracı ALLPLAN Exchange, ayrıca e-posta grupları aracılığıyla otomatik değişiklik bildirimleri sağlar.
+
+ANALİTİK MODEL ÜRETİMİ:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/17_ANALYTICAL_MODEL_GENERATION_2.jpg
+- Açıklama: AutoConverter aracılığıyla geometrik modellerin, Frilo Statics, Scia Engineer gibi yapısal analiz çözümleri tarafından doğrudan kullanılabilen analitik modellere akıllı bir şekilde dönüştürülmesi.
+
+TASARIM KONTROLÜ:
+Solibri Inside, kullanıcı istediği zaman ALLPLAN modellerinde kontroller gerçekleştirebilir; bu, ALLPLAN içindeki BIM Explorer'dan palet benzeri bir işlevsellik kullanarak yapılır. (ALLPLAN Abonelik lisansı ile birlikte 12 aylık Solibri Inside aboneliği dahildir.)
+
+OFİS EKİP ÇALIŞMASI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/Allplan-WorkgroupManager.jpg
+- Açıklama: ALLPLAN Çalışma Grubu Yöneticisi aracılığıyla yerel bir şirket ağı içinde verimli ekip çalışmasını kolaylaştırın.
+
+BULUT DESTEKLİ PROJE KAYNAKLARI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/CLOUD-ENABLED_PROJECT_RESOURCES_Filter_01.jpg
+- Açıklama: Bulut ofis kaynakları, ALLPLAN proje kaynaklarının tamamen bulut tabanlı dağıtımını sağlar.
+
+ALLPLAN MODEL VIEWER:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/ALLPLAN_Model_Viewer_700x400.jpg
+- Açıklama: Yeni bir dosyayı hızlıca önizlemek, IFC modellerini görsel olarak görüntülemek ve tam olarak yüklemeden önce kontrol etmek için kullanılır. (Sadece ALLPLAN Aboneliği veya Bimplus Professional satın alımı ile kullanılabilir.)
+
+ALLPLAN - BLUEBEAM BAĞLANTISI:
+Geliştirilmiş iş akışları – dijital teslim sürecine yardımcı olmak için Bluebeam ile bağlantı kuracağız. Kullanıcılar, Bluebeam Studio Proje ortamından ALLPLAN iş akışlarına 2D belgeleri kolayca aktarabilecekler.
+
+BAĞLANTI TASARIM ARACI - CONNEXIS:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/CONNEXIS_700x400_01.jpg
+- Açıklama: Çelik bağlantılar için bulut tabanlı görüntüleme ve iş birliği aracı.
+
+DAHA FAZLA BİLGİ EDİNİN:
+İşbirliğinizi bir üst seviyeye taşıyan araçlara anında erişim imkanı sağlayın.
+
+SATIN ALINABİLİR SEÇENEKLERİ:
+
+BIM²FORM EKLENTİSİ - KALIP:
+Kalıp yerleştirmek için araçlar.
+
+LİSANS SERVER:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/License_Server_Filter_01.jpg
+- Açıklama: Mevcut lisansların birden fazla kullanıcı tarafından optimal şekilde kullanılmasını sağlar. Ofis dışında lisans kullanımı mümkündür.
+
+BIMPLUS PRO:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/23_BIMPLUS_PRO_2.jpg
+- Açıklama: Bulut iş birliği kapasitenizi artırmak için ek Bimplus Pro lisansları.
+
+ALLPLAN BULUT DEPOLAMA:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/ALLPLAN_CLOUD_STORAGE_Filter_01.jpg
+- Açıklama: Projelerinizin kesintisiz devam etmesini sağlamak için ek depolama alanı.
+
+SSS ALLPLAN PROFESSIONAL:
+
+Evet, ALLPLAN 2025 sürümünün piyasaya sürülmesiyle birlikte, ALLPLAN Ultimate edisyonu, abonelikli ALLPLAN AEC yapılandırmasını değiştirmiştir.
+
+ALLPLAN AEC ve ALLPLAN Ultimate abonelikleri arasında iki ana fark bulunmaktadır. ALLPLAN AEC'nin tüm işlevselliğine ek olarak, ALLPLAN Ultimate parametrik ve pre-stressing iş akışlarını, ayrıca SCIA Engineer Concept*'i de içermektedir.
+
+Evet, ALLPLAN Ultimate, mimarlık, mühendislik ve inşaat şirketleri için bir BIM çözümüdür. Tam tasarımdan inşaata iş akışlarını destekleyen, bina ve altyapı projelerinin çok malzemeli modellemesi, prefabrike ve inşaat iş akışları için araçlar içeren bir BIM çözümüdür.
+
+ALLPLAN ÇÖZÜMLERİNİ KEŞFEDİN:
+
+BİNA TASARIMI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/2023-solutions-building-Design-allplan-turkey-370x275.png
+- Açıklama: © Harfa Design Residence, Visualisierung| Central Group
+
+ALTYAPI TASARIMI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/solutions-Infrastructure-Design-370x275.png
+- Açıklama: iStock-1308514772
+
+İNŞAAT PLANLAMASI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/09/2023-prefabrication-product-allplan-turkey-370x270.png
+- Açıklama: © SK Rapid Wien
+
+BUTON: SCIA Engineer karşılaştırmasına buradan erişin
+BUTON URL: https://www.scia.net/en/scia-engineer/editions-comparison
+
+YOUTUBE VİDEOLARI: 
+1. Modal Popup Video - Harici Veri Kaynakları kartında: https://youtu.be/LF6p7dQASR8
+
+MODAL POPUP VİDEOLAR:
+- Harici Veri Kaynakları kartı görseli içinde modal popup video linki bulunuyor
+- Video URL: https://youtu.be/LF6p7dQASR8
+- Embed URL: https://www.youtube.com/embed/LF6p7dQASR8
+
+DİĞER KARTLARDA MODAL POPUP VİDEO KONTROLÜ:
+- ARAYÜZLER kartı: Kontrol edildi - modal popup video tespit edilmedi
+- 3D MODELLEME kartı: Kontrol edildi - modal popup video tespit edilmedi
+- 2D ÇİZİM kartı: Kontrol edildi - modal popup video tespit edilmedi
+- ÇARPIŞMA TESPİTİ kartı: Kontrol edildi - modal popup video tespit edilmedi
+- İÇERİK PAKETİ BIMEASY kartı: Kontrol edildi - modal popup video tespit edilmedi
+- YAPI BİLEŞENLERİ kartı: Kontrol edildi - modal popup video tespit edilmedi
+- ARAZİ MODELİ kartı: Kontrol edildi - modal popup video tespit edilmedi
+- KENTSEL VE PEYZAJ TASARIMI kartı: Kontrol edildi - modal popup video tespit edilmedi
+- KANALİZASYON VE ALTYAPI kartı: Kontrol edildi - modal popup video tespit edilmedi
+- MİKTAR HESAPLAMASI VE MALİYETLENDİRME kartı: Kontrol edildi - modal popup video tespit edilmedi
+- DONATI kartı: Kontrol edildi - modal popup video tespit edilmedi
+- ÇELİK BAĞLANTILAR kartı: Kontrol edildi - modal popup video tespit edilmedi
+- YOLLAR kartı: Kontrol edildi - modal popup video tespit edilmedi
+- ŞANTİYE HAZIRLIĞI kartı: Kontrol edildi - modal popup video tespit edilmedi
+- ZEMİN ÇALIŞMALARI kartı: Kontrol edildi - modal popup video tespit edilmedi
+- KAZI kartı: Kontrol edildi - modal popup video tespit edilmedi
+- PREFABRİK TASARIM VE DETAYLANDIRMA kartı: Kontrol edildi - modal popup video tespit edilmedi
+- ELEMAN PLANI kartı: Kontrol edildi - modal popup video tespit edilmedi
+- GÖRSELLEŞTİRME kartı: Kontrol edildi - modal popup video tespit edilmedi
+- GELİŞMİŞ GÖRSELLEŞTİRME kartı: Kontrol edildi - modal popup video tespit edilmedi
+- AI TABANLI GÖRSELLEŞTİRME kartı: Kontrol edildi - modal popup video tespit edilmedi
+- PARAMETRİK MODELLEME kartı: Kontrol edildi - modal popup video tespit edilmedi
+- PARAMETRİK ÖN GERME kartı: Kontrol edildi - modal popup video tespit edilmedi
+
+SONUÇ: ALLPLAN Ultimate sayfasında sadece "Harici Veri Kaynakları" kartında 1 adet modal popup video tespit edildi.
+
+NOT: Sayfa yapısı düzeltildi - "ALLPLAN Ultimate'in Faydaları" bölümü tabslı yapı değil, ayrı kartlar halinde düzenlenmiş içerik olarak güncellendi. Modal popup video tespit edildi ve eklendi. Tüm kartlar modal popup video açısından sistematik olarak kontrol edildi.

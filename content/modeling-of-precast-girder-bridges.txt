@@ -1,0 +1,112 @@
+SAYFA: https://aluplan.com.tr/modeling-of-precast-girder-bridges/
+
+HERO SECTION:
+- Başlık: Allplan Bridge
+- Alt Başlık: MODELING OF PRECAST GIRDER BRIDGES
+- Açıklama: The geometry of precast girders is governed by the geometry of the substructure and their position along the axis. Thus, a further modeling approach is available in Allplan Bridge that enables users to create an exact geometry of precast girder bridges easily and quickly.
+- BUTON: "Şimdi İzle"
+- BUTON URL: # (sayfa içi bağlantı)
+- Arkaplan Video: https://aluplan.com.tr/wp-content/uploads/2023/10/2024-header.mp4
+
+POST HERO SECTION:
+- Başlık: A DEDICATED WORKFLOW FOR PRECAST GIRDER BRIDGES
+- Açıklama: The modeling process is optimized even further by using parametric 3D templates. In this way repetitive bridge elements, such as straight precast girders, have to be defined only once and then placed parametrically as many times as necessary.
+
+İŞ AKIŞI ADIMLARI (STEP BY STEP WORKFLOW):
+
+ADIM 1 / CREATING AXES:
+- Başlık: 1. CREATING AXES
+- Açıklama: Every bridge construction project starts with one or more axes – with Allplan Bridge, you can adopt the data from an existing design (using LandXML data format) or define it manually. In both cases, the alignment is parametrically saved.
+- YOUTUBE VİDEO URL: https://youtu.be/2uFnK6J2GsU
+- YOUTUBE EMBED URL: https://www.youtube.com/embed/2uFnK6J2GsU
+
+ADIM 2 / DEFINING A CROSS-SECTION:
+- Başlık: 2. DEFINING A CROSS-SECTION
+- Açıklama: You can define any cross-section and determine the geometry with its dependencies and variables. These parametric cross-sections can be adapted at any time and can be saved as a template and reused.
+- YOUTUBE VİDEO URL: https://youtu.be/dwnGswjBZBg
+- YOUTUBE EMBED URL: https://www.youtube.com/embed/dwnGswjBZBg
+
+ADIM 3 / DESIGNING A TEMPLATE:
+- Başlık: 3. DESIGNING A TEMPLATE
+- Açıklama: Any geometry of a pier, foundation and precast girder can be defined as a template. In the previous step defined cross-section(s) including constant and variable parameters are used for the design of the template. If the geometry is variable, tables or formulas can be assigned as usually. Furthermore, you can set which parts of the template should be fixed and which should adjust when using it in the 3D Model.
+- YOUTUBE VİDEO URL: https://youtu.be/ZRqoMOCb11U
+- YOUTUBE EMBED URL: https://www.youtube.com/embed/ZRqoMOCb11U
+
+ADIM 4 / BUILDING A SUBSTRUCTURE:
+- Başlık: 4. BUILDING A SUBSTRUCTURE
+- Açıklama: The substructure, with or without foundations, can be defined relative to one axis or relative to two axes – for example terrain axis at the bottom and road axis at the top. It can be defined directly or by usage of templates.
+- YOUTUBE VİDEO URL: https://youtu.be/LBIEi0bhOeQ
+- YOUTUBE EMBED URL: https://www.youtube.com/embed/LBIEi0bhOeQ
+ADIM 5 / ASSEMBLING GIRDERS:
+- Başlık: 5. ASSEMBLING GIRDERS
+- Açıklama: For generating the plate geometry, the original workflow of Allplan Bridge is used – extruding the geometry along the axis. Also, here any variations can be used and the cross-section, and with this also the 3D model, can be equipped with all the details, either by using boundaries or by placing python parts.
+- YOUTUBE VİDEO URL: https://youtu.be/LFTDg95kvH4
+- YOUTUBE EMBED URL: https://www.youtube.com/embed/LFTDg95kvH4
+
+ADIM 6 / CONSTRUCTING A PLATE:
+- Başlık: 6. CONSTRUCTING A PLATE
+- Açıklama: Every bridge construction project starts with one or more axes – with Allplan Bridge, you can adopt the data from an existing design (using LandXML data format) or define it manually. In both cases, the alignment is parametrically saved.
+- YOUTUBE VİDEO URL: https://youtu.be/rqv66ghmUpk
+- YOUTUBE EMBED URL: https://www.youtube.com/embed/rqv66ghmUpk
+
+ADIM 7 / COMPOSING THE HAUNCH:
+- Başlık: 7. COMPOSING THE HAUNCH
+- Açıklama: In precast girder bridges the shape of the girders is governed by the geometry of the substructure, whereas on the other side, the geometry of the plate is governed by the axis. This is why the shape of the haunch has an arbitrary 3D geometry and varies along the girder. Allplan Bridge 3D Boolean operations are used to automatically fill the space between the girder and plate, using the shape of the haunch defined in the girder cross-section.
+- YOUTUBE VİDEO URL: https://youtu.be/oqLafh87vYI
+- YOUTUBE EMBED URL: https://www.youtube.com/embed/oqLafh87vYI
+
+ADIM 8 / COMPLETING THE BRIDGE STRUCTURE:
+- Başlık: 8. COMPLETING THE BRIDGE STRUCTURE
+- Açıklama: Once the main bridge elements are finished, further elements and details, like tendons, diaphragms, bearings and many more, can be generated. This can be done by modeling them or by placing parametric elements – python parts.
+- YOUTUBE VİDEO URL: https://www.youtube.com/watch?v=XHOmBV4js_E
+- YOUTUBE EMBED URL: https://www.youtube.com/embed/XHOmBV4js_E
+
+FOOTER SECTION:
+===============
+
+İLETİŞİM BİLGİLERİ:
+- Adres: Quick Tower – Workinton İçerenköy Mah. Topçu İbrahim Sok. 8/10D No: 5 Posta Kodu: 34752 Ataşehir / İstanbul
+- Website: www.aluplan.com.tr
+- Santral: (+90) 216 225 84 41
+- Satış: (+90) 549 499 73 79
+- Mali İşler: (+90) 532 423 68 68
+- Email: info@aluplan.com.tr
+- Mersis No: 016 800 577 090 0014
+
+FAYDALI LİNKLER:
+- Mağaza & Download: https://aluplanbim.com/
+- Başvuru Formları: https://aluplan.com.tr/basvuru-formlari/
+- Allplan: https://www.allplan.com/us_en/
+
+SERVİS & DESTEK:
+- Hakkımızda: https://aluplan.com.tr/hakkimizda/
+- Kişisel Verilerin Korunması: https://aluplan.com.tr/kisisel-verilerin-islenmesine-iliskin-aydinlatma-metni/
+- Gizlilik Politikası: https://aluplan.com.tr/gizlilik-politikasi/
+
+SOSYAL MEDYA LİNKLERİ:
+- Facebook: https://www.facebook.com/Allplan.Turkey
+- Twitter: https://twitter.com/Allplan_Turkey
+- Instagram: https://www.instagram.com/allplan_turkey/
+- YouTube: https://www.youtube.com/c/AllplanTurkey
+- LinkedIn: https://www.linkedin.com/company/allplan-turkey/
+
+YOUTUBE VİDEOLARI:
+==================
+1. Creating Axes: https://youtu.be/2uFnK6J2GsU
+2. Defining Cross-Section: https://youtu.be/dwnGswjBZBg
+3. Designing Template: https://youtu.be/ZRqoMOCb11U
+4. Building Substructure: https://youtu.be/LBIEi0bhOeQ
+5. Assembling Girders: https://youtu.be/LFTDg95kvH4
+6. Constructing Plate: https://youtu.be/rqv66ghmUpk
+7. Composing Haunch: https://youtu.be/oqLafh87vYI
+8. Completing Bridge Structure: https://www.youtube.com/watch?v=XHOmBV4js_E
+
+MODAL POPUP VİDEO KONTROLÜ:
+===========================
+- Video popup plugin mevcut: video-popup/assets/css/videoPopup.css
+- Tüm görseller kontrol edildi - modal popup video tespit edilmedi
+- Sayfada sadece normal YouTube embed videoları bulunuyor
+
+TOPLAM VİDEO SAYISI: 8 adet YouTube videosu tespit edildi
+
+NOT: Bu sayfa Allplan Bridge'in prekast kiriş köprü modelleme iş akışını 8 adımda anlatan detaylı bir eğitim sayfasıdır. Her adım için ayrı YouTube videosu bulunmaktadır. Modal popup video tespit edilmemiştir.

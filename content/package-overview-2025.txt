@@ -1,0 +1,97 @@
+SAYFA: https://aluplan.com.tr/package-overview-2025/
+BAŞLIK: Package Overview 2025
+
+=== HERO SECTION ===
+BAŞLIK: Üretkenlik Üst Seviyede
+ALT BAŞLIK: / ALLPLAN 2025
+AÇIKLAMA: -
+HERO GÖRSELI: -
+BUTON: -
+BUTON URL: -
+
+=== POST HERO SECTION ===
+
+=== ALLPLAN ABONELİK TEKLİFİ SECTION ===
+BAŞLIK: ALLPLAN ABONELİK TEKLİFİMİZİ KEŞFEDİN
+
+PAKET 1:
+BAŞLIK: ALLPLAN Basic
+GÖRSEL URL: -
+AÇIKLAMA: -
+
+PAKET 2:
+BAŞLIK: ALLPLAN Concept
+GÖRSEL URL: -
+AÇIKLAMA: -
+
+PAKET 3:
+BAŞLIK: ALLPLAN Professional
+GÖRSEL URL: -
+AÇIKLAMA: -
+
+PAKET 4:
+BAŞLIK: ALLPLAN Ultimate
+GÖRSEL URL: -
+AÇIKLAMA: -
+
+PAKET 5:
+BAŞLIK: ALLPLAN Civil
+GÖRSEL URL: -
+AÇIKLAMA: -
+
+=== ALLPLAN SÜRÜM YAPILANDIRMASI SECTION ===
+BAŞLIK: / ALLPLAN Sürümleri nasıl yapılandırılmıştır?
+AÇIKLAMA: -
+
+=== İLETİŞİM SECTION ===
+BAŞLIK: Hangi ALLPLAN Sürümünün sizin için doğru olduğundan emin değil misiniz?
+AÇIKLAMA: Bizi arayın veya iletişime geçin!
+İLETİŞİM BİLGİLERİ:
+- Mail: info@aluplan.com.tr
+- Ara: 0 549 499 73 49
+
+=== UZMANLAŞMIŞ ÇÖZÜMLER SECTION ===
+BAŞLIK: / Uzmanlaşmış çözümler
+ALT BAŞLIK: Sektöre odaklı ürünler
+
+ÇÖZÜM 1:
+BAŞLIK: / ALLPLAN Civil
+ALT BAŞLIK: Köprüler için güçlü parametreli BIM çözümü
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2024/10/software-for-bridge-allplan.png
+
+ÇÖZÜM 2:
+BAŞLIK: / ALLPLAN Precast
+ALT BAŞLIK: Prefabrik tasarımı için benzersiz BIM çözümü
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2024/10/software-for-precast-allplan.png
+
+=== HİZMETLER SECTION ===
+BAŞLIK: / Hizmetler
+ALT BAŞLIK: Ürünlerimiz İçin Daha Fazla Destek ve Yardım
+
+HİZMET 1:
+BAŞLIK: / Kurulumunuz
+ALT BAŞLIK: Sistem Gereksinimleri
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2024/10/system_requirements.jpg
+
+HİZMET 2:
+BAŞLIK: / ALLPLAN Connect
+ALT BAŞLIK: Sıkça sorulan sorular
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2024/10/csm_connect_2_01_945fae3e5e.jpg
+
+HİZMET 3:
+BAŞLIK: / Eğitim & Hizmetler
+ALT BAŞLIK: ALLPLAN Becerilerinizi artırın
+GÖRSEL URL: https://aluplan.com.tr/wp-content/uploads/2024/10/training.png
+
+=== FOOTER SECTION ===
+BAŞLIK: BAŞLAMAYA HAZIR MISINIZ?
+AÇIKLAMA: Projelerinizi inşa etmek, tasarlamak ve oluşturmak için güçlü yazılım çözümleri.
+
+=== YOUTUBE VİDEOLARI ===
+VİDEO BULUNAMADI
+
+=== MODAL POPUP VİDEOLARI ===
+MODAL POPUP VİDEO BULUNAMADI
+
+=== İSTATİSTİKLER ===
+İSTATİSTİK BULUNAMADI

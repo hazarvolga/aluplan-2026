@@ -1,0 +1,106 @@
+HERO SECTION:
+Başlık: ALLPLAN Professional
+Alt Başlık: Detaylandırma ve ileri düzey otomasyon için BIM çözümü.
+
+ALLPLAN PROFESSIONAL NEDİR:
+Başlık: ALLPLAN Professional Nedir?
+Açıklama: ALLPLAN Professional, mimari ofislerde, çok disiplinli danışmanlıklarda, yapı mühendisliği/detaylandırma ofislerinde ve inşaat mühendisliği danışmanlıklarında tasarım sürecini destekleyen güçlü bir detaylandırma ve ileri düzey otomasyon için BIM çözümüdür.
+
+ALLPLAN Concept plus'in tüm özellikleri:
+- Çoklu malzeme modelleme, detaylandırma ve raporlama
+- Donatı modellemede olağanüstü performans
+- Yol ve şantiye hazırlığı iş akışları
+- Gelişmiş kontrol ve entegrasyonlar
+- Gelişmiş render ve görselleştirme
+- Çelik bağlantıların otomatik tasarımı
+- Parametrik yol modelleme
+- İnşaat Alanı Hazırlığı
+
+ALLPLAN CONNECT FAYDALARI:
+
+1. İstediğiniz Gibi Çalışın:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/work_way_want.png
+Açıklama: 2D, 2.5D ve 3D'de esnek iş akışları.
+
+2. Güçlü & Sezgisel modelleme:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/powerful_modeling.png
+Açıklama: Herhangi bir formu kolayca modelleme özgürlüğü, yapı bileşenlerini hızlıca geliştirmek için güçlü araçlarla desteklenir.
+
+3. Verimli İş Birliği:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/productive_collab.png
+Açıklama: Optimized bulut tabanlı iş birliği, proje ve ofis ekip çalışması ile çizim ve plan dağıtımı için entegre ALLPLAN Cloud hizmetleri.
+
+4. Kolayca Gereksinimleri Değiştirin:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/easyliy_modify_requirements.png
+Açıklama: Planları yeniden modelleme yapmadan uyarlayıp değişiklikler yapın, böylece zaman kazanın ve değişikliklere daha hızlı ve kolay bir şekilde yanıt verin.
+
+5. Parametrik Yol Modelleme:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/powerful_modeling-1.png
+Açıklama: Bina ve altyapı projelerinize yol tasarımlarını entegre etmek için güçlü ve kullanımı kolay modelleme işlevleri.
+
+6. Birden Fazla Malzeme ile Planlama:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/planable_multi_materials.png
+Açıklama: Malzemeleri ve inşaat yaklaşımlarını optimize edin; dökme yerinde/prekast beton, çelik ve ahşap dahil olmak üzere, yapım kolaylığını ve sürdürülebilirliği artırmak için.
+
+7. Hassas 3D Donatı:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/precise_3d_reinforcement.png
+Açıklama: Donatı gereksinimlerinin hızlı tasarımı ve detaylandırılması için otomatik çözümler, önemli ölçüde zaman tasarrufu sağlar ve kaliteyi garanti eder.
+
+8. Analiz Çözümleri ile Sorunsuz Entegrasyon:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/powerful_site_modelling_tools.png
+Açıklama: Yapısal modellerin SAF üzerinden yapısal analiz çözümleriyle verimli bir şekilde değişimini sağlamak için AutoConverter ile gelişmiş iş akışları.
+
+9. Güçlü Şantiye Modelleme Araçları:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/superior_quality_deliverables.png
+Açıklama: Arazi gereksinimlerini kolayca dahil edin, erişim yolları tasarlayın, altyapıyı modelleyin ve inşaat ekipmanlarının yerleşimini planlayın.
+
+ALLPLAN CONNECT ÖZELLİKLERİ:
+Başlık: Fonksiyonellik Hızlı Bakış
+
+Donatı:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/13_REINFORCEMENT_4.jpg
+Açıklama: Son derece güçlü donatı işlevselliği, çubuk donatısı, ağ donatısı ve BAMTEC halılarını içerir.
+
+Çelik Bağlantılar:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/14_STEEL_CONNECTIONS_2.jpg
+Açıklama: Civatalı ve kaynaklı çelik bağlantılar için araçlar.
+
+Yollar:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/15_ROADS_2.jpg
+Açıklama: Tam parametrik yol tasarımı, kesişmeler, trafik daireleri ve araç dönme yolu analizi dahil.
+
+Şantiye Hazırlığı:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/16_CONSTRUCTION_SITE_PREPARATION_2.jpg
+Açıklama: Cranes, konteynerler, şantiye çitleri ve inşaat sahası yerleşimini planlamak için diğer ekipmanlar.
+
+Arayüzler:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/01_Interfaces_2-1.jpg
+Açıklama: Sorunsuz veri alışverişi için tüm ilgili dosya arayüzleri, ifc, bcf, pdf, rvt, 3dm, skp, obj, LandXML, dwg, dgn, c4d, stl, wrl, saf ve daha fazlasını içerir.
+
+Harici Veri Kaynakları:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/02_EXTERNAL_DATA_SOURCES_3.jpg
+Açıklama: GIS bilgilerini, 3D içerik ve dokuları içe aktarmak için GIS Bağlayıcı ve İçerik Bağlayıcı.
+MODAL POPUP VİDEO: https://youtu.be/LF6p7dQASR8
+VİDEO EMBED URL: https://www.youtube.com/embed/LF6p7dQASR8
+
+3D Modelleme:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/03_3D_Modeling_4.jpg
+Açıklama: Son derece karmaşık ve zorlu geometriler için yüksek performanslı 3D modelleme. Modelleme işlevselliği, Siemens Parasolid modelleme çekirdeği ile desteklenmektedir.
+
+2D Çizim:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/04_2D_DRAFTING_2-1.jpg
+Açıklama: Çekici, özlü ve detaylı çizimler için hassas 2D çizim için kapsamlı işlevsellik.
+
+Çarpışma Tespiti:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/06_CLASH_DETECTION_2-1.jpg
+Açıklama: Yumuşak ve sert çarpışmaları tanımlamak için araç.
+
+YOUTUBE VİDEOLARI: 
+1. Modal Popup Video - Harici Veri Kaynakları kartında: https://youtu.be/LF6p7dQASR8
+
+MODAL POPUP VİDEOLAR:
+- Harici Veri Kaynakları kartı görseli içinde modal popup video linki bulunuyor
+- Video URL: https://youtu.be/LF6p7dQASR8
+- Embed URL: https://www.youtube.com/embed/LF6p7dQASR8
+
+NOT: ALLPLAN Professional sayfasında "Harici Veri Kaynakları" kartında 1 adet modal popup video tespit edildi.

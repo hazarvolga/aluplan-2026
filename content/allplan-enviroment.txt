@@ -1,0 +1,68 @@
+HERO SECTION:
+Başlık: Allplan Environment
+Görsel URL (Sol): https://aluplan.com.tr/wp-content/uploads/2019/10/Gregor_left_t2.png
+Görsel URL (Sağ): https://aluplan.com.tr/wp-content/uploads/2019/10/Gregor_right_t2.png
+
+POST HERO SECTION:
+Açıklama: Allplan Environment is directed at architects, city planners and landscape architects as well as civil engineers. In combination with Allplan Architecture or Allplan Engineering, building construction and civil engineering works can be efficiently planned while taking into account the real terrain, the urban development environment and the surrounding road network.
+
+PERFORMANCE HIGHLIGHTS:
+
+Digital terrain model:
+Açıklama: Allplan Environment enables you to create digital terrain models easily and map them realistically. A digital terrain model is the basis for designs, layouts, earthworks quantities and their visualization. Point coordinates, which you can import and export in a variety of formats (e.g. REB, ASCII, LandXML), form the basis for this. The use of UTM- and Gauss-Krüger coordinates is also possible. The digital terrain model also takes account of exterior boundaries, break lines and recesses.
+
+Slopes can be generated with constant or variable inclines. Mapping is carried out using either triangular meshing or contours, whereby elevations and contours are automatically labeled. You can generate longitudinal and transverse profiles along any routes. Verifiable embankment and excavation calculations are also possible – including against horizons.
+
+ALLPLAN ENVIRONMENT AVANTAJLARI:
+
+1. Attractive site plans: You can use Allplan's powerful layout and design tools to create layouts for civil and structural engineering, urban planning, and landscaping and road construction. As a result, you can create plans with hatching, pattern lines, color gradients and transparencies incorporating bitmaps and persuasive visualizations. You can even store scanned documents and aerial photos and adapt these perfectly via three-point realignment.
+
+2. Urban planning and room planning: You can use Allplan's powerful layout and design tools to create layouts for civil and structural engineering, urban planning, and landscaping and road construction. As a result, you can create plans with hatching, pattern lines, color gradients and transparencies incorporating bitmaps and persuasive visualizations. You can even store scanned documents and aerial photos and adapt these perfectly via three-point realignment.
+
+3. Landscaping: To design public spaces, green areas and gardens, you create plant keys placing plants in many different ways and using route und tree plans. Plant legends and quantities can be derived from these.
+
+4. Traffic circle design: Allplan Environment also helps you to manage traffic circles easily. The basic geometry of the traffic circle is generated from just a few parameters such as type, roadway width, radiuses and position of the arms.
+
+5. Road design: Clothoids and functions for efficient stationing and labeling are available for route mappings in road construction. Layouts with gradients, as well as torsion traces and transverse slope traces can be derived from the digital terrain model.
+
+6. Realistik Yol Simülasyonları: Trafik kavşakların, yol açıklıklarının ve dağıtım bölgelerinin fizibilitesini test edebilmek için özel bir tractrix eğrisi aracı mevcuttur. Bu, kritik durumlarda farklı otomobiller, kamyonlar ve otobüsler için gerçekçi rota simülasyonları yapmanızı sağlar.
+
+7. Bridge and civil engineering: A special bridge and civil engineering module is available for the design of bridges, tunnels, supporting structures, ramps, dams and channels. A three-dimensional curve is first generated from the site plan, which can be assigned any cross-sections, taking account of the transverse slope. This produces a complex three-dimensional model, which can be used as the reliable basis for the design and of reinforced concrete.
+
+SERVICES SECTION:
+
+Son 5 yıldaki tüm geliştirmelere göz atın:
+Başlık: Allplan 2015-2020 – Allplan Architecture tüm yenilikler bir arada.
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/10/mimari-390.jpg
+
+Allplan Destek:
+Açıklama: Allplan Destek: Allplan Serviceplus ağımızın bir üyesi olarak, daima en güncel versiyonu kullanır ve yazılımınızın tüm opsiyonlarından istifade edersiniz. İster yönetici, mimar, ofis müdürü veya yönetici direktör olun: Destek ekiplerimiz sorularınızı hızla ve güvenilir şekilde yanıtlayacaklardır.
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/10/muhendis-390.jpg
+
+Allplan Forum:
+Açıklama: Allplan Forum: Uluslararası servis portalımız Allplan Connect ile, dünya çapındaki Allplan topluluğunun deneyimlerini paylaşabilirsiniz.
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/10/karsilastirma-1.jpg
+
+FEATURES 2016 - 2020:
+Link URL: https://www.allplan.com/features-2016-2020/
+Açıklama: Yeni etkileşimli sürüm karşılaştırmamız size, sadece birkaç tıklamayla, her Allplan sürümüne hangi heyecan verici yeni özelliklerin eklendiğini ve size hangi avantajları sunduğunu söyleyecektir.
+
+FOOTER SECTION:
+Başlık: ALLPLAN 2020 - DENEME SÜRÜMÜ İNDİR
+Alt Başlık: Allplan ürünlerini, 30 gün boyunca, herhangi bir alım zorunluluğu olmadan kullanın.
+Açıklama: Yazılımı indirin ve avantajları gözlerinizle görün.
+
+Allplan Architecture mimarlara tasarım serbestliği ve proje üzerinde tam hakimiyet sağlayan, üst düzey BIM yazılımıdır. Yazılım, detaylı uygulama projelerini benzersiz bilgi içeriği ile oluşturmak için özel olarak tasarlanmıştır.
+
+Başarınızı yükseltin:
+- Fiziksel ve fonksiyonel özellikler tanımlayın
+- Profesyonel çizim ve görseller oluşturun
+- Güvenilir ve takip edilebilir metraj ve maliyetleri hesaplayın.
+
+SUPPORT SECTION:
+Başlık: ALLPLAN SIZE UZMAN DESTEĞI SUNMAKTADIR
+Açıklama: Allplan'a geçiş desteği; Allplan yerinde destek: Eğer Allplan'a geçmek isterseniz, bölgenizde bulunan bir iş ortağımız size yazılım uyarlanması ile ilgili uzman destek sağlayacaktır;
+
+İster bir tanıtım, eğitim, geçiş için destek, veri takası, veya yardım ihtiyacınız söz konusu olsun, iş ortağınızla temasa geçiniz.
+
+Herhangi bir sorunuz var mı, veya bağlayıcılığı olmayan bir teklif ister misiniz?

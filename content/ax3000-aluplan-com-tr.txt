@@ -1,0 +1,88 @@
+HERO SECTION:
+Logo URL: https://ax3000.aluplan.com.tr/wp-content/uploads/2019/12/alplan-logo-2020-beyaz.png
+Partner Görsel URL: https://ax3000.aluplan.com.tr/wp-content/uploads/2019/10/partner.png
+
+MAIN TITLE:
+ALLPLAN, AX3000 tüm modülleriyle Türkçe'dir ve Türk Standartlarına göre düzenlenmiştir.
+
+TURKISH STANDARDS:
+- TS 825 Bileşen Arayüzü
+- Isıtma Modülünde Kat, Yön ve İşletme Zamlarının Otomatik Hesabı
+- Türkiye İklim Verileri
+- EKB yazılımı BEP Yönetmeliğine göre
+- Soğutma Hesabı Türkiye İklim Verilerine göre
+
+MAIN FEATURES:
+
+Deneyİm Kazandırır:
+Görsel URL: https://ax3000.aluplan.com.tr/wp-content/uploads/2020/03/ax-bg-1.jpg
+Açıklama: AX3000'in Bina Tesisatı çözümünde lider konuma gelmesi CAD pazarındaki 25 yıllık deneyimin sonucudur. AX-3000 Mekanik ve Tesisat ile ilgili ihtiyaçlarınız için geliştirilmiş ilk CAD yazılımıdır ve işinizde projelendirmeden konstrüksiyona ve uygulamaya kadar tüm ihtiyaçlarınızı karşılar.
+
+Tümleşİk Kullanım:
+Görsel URL: https://ax3000.aluplan.com.tr/wp-content/uploads/2020/01/simulason.jpg
+Açıklama: AX3000'deki modüler yapı sayesinde Sıhhi Tesisat , Isıtma, Havalandırma, Soğutma, EKB ve Elektrik tesisatı için çok seçenekli özel çözümler üretebilirsiniz. Siz bir kere yazılımda çalışmaya başlayın, tümleşik kullanım sayesinde ileri safhalara kolayca geleceksiniz.
+
+SPECIFIC FUNCTIONS:
+
+1. Çizim ve Bina Verisi:
+Görsel URL: https://ax3000.aluplan.com.tr/wp-content/uploads/2020/03/1470399662_Marketing.png
+Açıklama: Çizim ve Bina verisi almak için gelişmiş çok seçenekli fonksiyonlar
+
+2. İlişkili Pencereler:
+Görsel URL: https://ax3000.aluplan.com.tr/wp-content/uploads/2020/03/1470399671_SEO-1.png
+Açıklama: İlişkili pencere görünümlerinde rahat çalışma imkanı
+
+3. Belirli Fonksiyonlar:
+Görsel URL: https://ax3000.aluplan.com.tr/wp-content/uploads/2020/03/1470399715_E-Commerce-1.png
+Açıklama: Sıhhi Tesisat , Isıtma, Havalandırma ve Elektrik tesisatı için rahat planlama ve konstrüksiyon
+
+4. Planlama ve Konstrüksiyon:
+Görsel URL: https://ax3000.aluplan.com.tr/wp-content/uploads/2020/03/1470399674_App_Development.png
+Açıklama: Sıhhi Tesisat , Isıtma, Havalandırma ve Elektrik tesisatı için rahat planlama ve konstrüksiyon
+
+5. Görünümler:
+Görsel URL: https://ax3000.aluplan.com.tr/wp-content/uploads/2020/03/1470399667_Newsletter.png
+Açıklama: Kesit ve Perspektif Görünümler
+
+6. Gelişmiş Konstrüksiyon Araçları:
+Görsel URL: https://ax3000.aluplan.com.tr/wp-content/uploads/2020/03/1470399656_Branding.png
+Açıklama: Gelişmiş Konstrüksiyon Araçları: ör. Gelişmiş ürün kütüphanesi, akıllı semboller, otomatik tesisat algılama, vb.
+
+ADDITIONAL FUNCTIONS:
+
+1. Plan Öngörünümü:
+Görsel URL: https://ax3000.aluplan.com.tr/wp-content/uploads/2020/03/1470399662_Marketing.png
+
+2. Veri Alışverişi:
+Görsel URL: https://ax3000.aluplan.com.tr/wp-content/uploads/2020/03/1470399614_Social_Media.png
+Açıklama: Değişik CAD sistemleri arasında veri alışverişi
+
+3. Tesisat Düzeni:
+Görsel URL: https://ax3000.aluplan.com.tr/wp-content/uploads/2020/03/1470399674_App_Development.png
+Açıklama: Rahat Tesisat düzeni ve İşletme yönetimi
+
+4. Tutarlı Veri Bilgisi:
+Görsel URL: https://ax3000.aluplan.com.tr/wp-content/uploads/2020/03/1470399667_Newsletter.png
+Açıklama: Tutarlı Veri bilgisi ve sabit strüktür sayesinde tesisat çakışmasının ve çift iş yapılmasının önlenmesi
+
+SPECIAL MODULES:
+
+AX3000 Virtual Reality:
+Görsel URL: https://ax3000.aluplan.com.tr/wp-content/uploads/2020/03/slide-vr-1-1024x683.jpg
+Açıklama: Şimdi hazır! Müşterileriniz çok daha memnun kalacaklar çünkü isteklerine daha iyi cevap verebilirsiniz.
+
+AX3000 Yapı Fiziği:
+Görsel URL: https://ax3000.aluplan.com.tr/wp-content/uploads/2020/03/sanitation-1024x683.jpg
+Açıklama: Saatlik hava durumu verilerine dayanan dinamik simülasyonlar - dünya çapında!
+
+AX3000 Mekanik Tesisat:
+Görsel URL: https://ax3000.aluplan.com.tr/wp-content/uploads/2020/03/ventilation-1024x683.jpg
+Açıklama: Tümleşik kullanım, akıllı çizim elemanları ve çok seçenekli otomatik hesaplama sayesinde planlama zamanınızı en verimli şekilde kullanmanızı sağlar
+
+FOOTER NOTE:
+Virtual Reality: Tek bir tıklama ile sınırsız 3B-Gerçeği yaşayın
+It has never been easier to create pages and websites on WordPress
+
+OPTIMUM DATA MANAGEMENT:
+AX-3000 yerleşim plan içindeki verileri en uygun ve anlaşılır şekilde sıralayarak projenizi yönetmenizi kolaylaştırır.
+Görsel URL: https://ax3000.aluplan.com.tr/wp-content/uploads/2020/03/Untitled-3.png

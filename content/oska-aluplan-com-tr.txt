@@ -1,0 +1,30 @@
+HERO SECTION:
+Görsel URL: /sites/default/files/styles/responsive_image_2000/public/media/image/duzeltme.jpg?itok=2gU0ERS8
+
+MAIN SECTION:
+Başlık: Allplan Bimplus ve OskaBulut
+Alt Başlık: Allplan ve e-Hakediş arasında metraj ve hakediş analizi entegrasyonu
+
+Açıklama: Allplan ve e-Hakediş arasında metraj ve hakediş analizi entegrasyonunu gerçekleştiren 'çözüm ortağımız Oska Yazılım ile yeni başladığımız çalışmada Allplan Bimplus ve OskaBulut ile farklı bir entegrasyon süreci de başlamıştır. Bu konudaki gelişmeleri duyurmaya devam edeceğiz.
+
+INTEGRATION IMAGE:
+Görsel URL: /sites/default/files/styles/responsive_image_2000/public/media/image/duzeltme-2.jpg?itok=VV47WIf8
+
+BIMX5 LOGO:
+Görsel URL: /sites/default/files/media/image/bimx5-logo.png
+
+SERVICES SECTION:
+Başlık: İhale, Metraj, Hakediş
+Alt Başlık: Allplan'le BIM Modellemesi ve metraj…
+
+Açıklama: Oska e-HakedişPro ve Kurum Rapor Eklentisi ile resmi İdarelerin kabul ettiği formatlarda Metraj ve Hakediş sayfalarınızı Excel, Word veya PDF formatında oluşturma…
+2B dwg Converter ile dwg projenizin kolaylıkla 3B objeye dönüşümü…
+İmar Yönetmeliği Akıllı BIM eklentisiyle kolay ruhsat…
+Kurum Rapor Eklentisi sadece Allplan 2020 ve Oska e-HakedişPro ile birlikte ve entegre çalışır.
+
+ALLPLAN SECTION:
+Görsel URL: /sites/default/files/styles/responsive_image_2000/public/media/image/allplan.jpg?itok=qkdlAjYI
+Başlık: ALLPLAN
+Alt Başlık: Performansın gücünün kilidi açılıyor
+
+Açıklama: Allplan 2021, inşaat sektörünün zorluklarının üstesinden gelmek ve dijital dönüşümden yararlanmak için nihai BIM çözümüdür. BIM yazılımı ve ALLPLAN'in endüstri lideri işbirliği ve entegrasyon araçları ideal kombinasyonu oluşturur. Allplan 2021, optimum performans için çığır açan bir teknoloji sunar: Zorlu geometri, yüksek detay seviyeleri ve çok sayıda ilişkilendirme ile daha büyük ve daha karmaşık projeler üzerinde her zamankinden daha kolay, daha hızlı ve daha eğlenceli çalışabilirsiniz. ALLPLAN'ın bulut teknolojisi, tüm inşaat sektörüyle bağlantı kurmanıza, verimli iş akışlarını kullanmanıza ve BIM'den tam anlamıyla yararlanmanıza olanak tanır.

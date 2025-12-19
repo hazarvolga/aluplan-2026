@@ -1,0 +1,215 @@
+ALLPLAN STRÜKTÜREL MÜHENDİSLİK SAYFASI İÇERİĞİ
+=================================================
+
+HERO SECTION:
+============
+STRÜKTÜREL MÜHENDİSLİK
+DAHA FAZLASINI İSTEYEN MÜHENDİSLER VE TEKNİKERLER İÇİN.
+
+ALLPLAN'in strüktürel mühendisliğe yönelik BIM çözümleri, tasarımdan inşa sürecine kadar tüm süreci kapsar. Allplan'in sağladığı gelişmiş hassasiyet ve işbirliğine dayalı iş akışları, proje tasarımı ve teslimi için yeni verimlilik seviyeleri ve daha fazla üretkenlik sağlar. Strüktürel mühendislik ve detaylandırma yazılımınızdan daha fazlasını bekleyin!
+
+HERO GÖRSEL:
+URL: https://aluplan.com.tr/wp-content/uploads/2022/09/allplan_turkey_Architecture.jpg
+Açıklama: DB Tower Frankfurt, Schmidt Plöcker Architekten; © Lars Gruber
+
+POST HERO SECTION:
+==================
+STRÜKTÜREL MÜHENDİSLİK İÇİN ALLPLAN - BIM ÇÖZÜMLERİ
+
+Konut geliştirmelerinden büyük ticari binalara kadar, inşaat ve imalat için doğru yapısal detaylandırma bilgi, esneklik ve hassas araçlar gerektirir.
+
+Allplan ile, tasarımları kolayca oluşturabilir ve tasarımlara veri ekleyebilir, otomatikleştirilmiş araçları kullanarak değişkenleri hızla detaylandırabilir, değişiklikleri hızlı bir şekilde yönetebilir, ekip üyeleriyle zahmetsizce işbirliği yapabilir ve projelerin daha başarılı bir şekilde teslim edilmesini sağlamak için hızlı bir şekilde doğru paftalar oluşturabilirsiniz.
+
+İSTATİSTİKLER SECTION:
+=====================
+
+DAHA KESİN - 50%
+Kırmızı bir paragraf. daha hızlı ve daha kesin tasarım çıktıları, görselleştirmeler ve ayrıntılı paftalar.
+* 3B olarak 2B ile karşılaştırıldığında
+
+DAHA VERİMLİ - 70%
+Güvenilir otomatik malzeme çıktısı ve metrajlar ile erken aşamalarda daha verimli ve hassas proje maliyeti.
+* Elden metrajla karşılaştırıldığında
+
+DAHA ÜRETKEN - 30%
+İşbirliğine dayalı planlamayı ve geliştirilmiş inşa edilebilirliği destekleyen verimli iş akışları ile tasarım üretkenliğinde artış.
+* 3B tasarım kullanarak
+
+ZORLU DURUMLAR SECTION:
+======================
+AŞAĞIDAKİ ZORLUKLARLA SÜREKLİ MÜCADELE EDİYOR MUSUNUZ?
+
+• Tasarım, planlama ve inşaat için artan karmaşıklık ve işbirliği gereksinimleri.
+• Çok fazla zaman alan, kaliteyi etkileyen ve risk oluşturan sürekli proje değişiklikleri.
+• Proje maliyetleriniz hakkında devam eden endişeler ve kontrolden çıkan zaman gecikmeleri.
+
+12 GEREKÇE - NEDEN ALLPLAN SECTION:
+===================================
+
+1. ALLPLAN'LE DAHA HIZLI BAŞLANGIÇ
+GÖRSEL: enhanced_project_comm.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-enhanced_project_comm.png
+Allplan araç ipuçları ile fonksiyonlara daha hızlı alışabilir ve Allplan'ın gücünden daha erken yararlanmaya başlayabilirsiniz.
+
+2. GÜÇLÜ ve SEZGİSEL MODELLEME
+GÖRSEL: powerful_modeling.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/09/powerful_modeling.png
+Bina bileşenlerini hızla geliştirmek ve daha kısa sürede inşaat belgeleri oluşturmak için güçlü araçlarla desteklenen, herhangi bir şekli kolayca modelleme özgürlüğü.
+
+3. ÇOKLU MALZEMEYLE PLANLAMA
+GÖRSEL: planable_multi_materials.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/09/structural-engineering-allplan-turkey-planable_multi_materials.png
+Geliştirilmiş inşa edilebilirlik ve sürdürülebilirlik için yerinde dökme/prekast beton, çelik ve ahşap dahil malzemeleri ve inşaat yaklaşımlarını optimize edin.
+
+4. ANALİZ ÇÖZÜMLERİYLE KUSURSUZ ENTEGRASYON
+GÖRSEL: seamless_integration_analysis_solutions.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-seamless_integration_analysis_solutions.png
+SAF aracılığıyla yapısal modelleri yapısal analiz çözümleriyle verimli bir şekilde değiştirmek için SCIA AutoConverter ile gelişmiş iş akışları.
+
+5. HASSAS 3D DONATILANDIRMA
+GÖRSEL: precise_3d_reinforcement.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-precise_3d_reinforcement.png
+Donatı gereksinimlerinin hızlı tasarımı ve detaylandırılması, önemli ölçüde zaman tasarrufu ve kalitenin sağlanması için otomatik çözümler.
+
+6. GELİŞTİRİLMİŞ DEĞİŞİM YÖNETİMİ
+GÖRSEL: improved_change_management.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-improved_change_management.png
+Çizimlerde veya modelde yalnızca bir kez düzenleyerek çıktılar arasında otomatik olarak yapılan değişikliklerle zamandan tasarruf edin.
+
+7. ÜSTÜN KALİTELİ TESLİMATLAR
+GÖRSEL: superior_quality_deliverables.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-superior_quality_deliverables.png
+Doğrudan 3B modelden hızlı ve doğru bir şekilde planlar, çizimler ve raporlar oluşturun ve yüksek kaliteli belgeler için bilgi alışverişini kontrol edin.
+
+8. İSTEDİĞİNİZ GİBİ ÇALIŞIN
+GÖRSEL: work_way_want.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-work_way_want.png
+2B, 2.5B ve 3B'de esnek iş akışlarının yanı sıra tam obje yönelimli BIM çalışma metodolojisi.
+
+9. ETKİN OPEN BIM
+GÖRSEL: bim2field.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-bim2field.png
+Çoklu değişim formatları, IFC4 RV içe/dışa aktarma ve işbirliğine dayalı OPEN BIM veri platformu Bimplus ile kolayca veri alışverişi yapın.
+
+10. ÜRETKEN İŞBİRLİĞİ
+GÖRSEL: productive_collab.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-productive_collab.png
+Çok kullanıcılı gerçek zamanlı çalışma için entegre bulut teknolojisinin yanı sıra iş ortaklarıyla model ve proje işbirliği.
+
+11. GERÇEK DİSİPLİNLER ARASI AEC TASARIMI
+GÖRSEL: interdisciplinary_aec_design.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-interdisciplinary_aec_design.png
+Mimari tasarım, yapı mühendisliği ve MEP hizmetleri tasarımı ve detaylandırması için tek bir yazılım çözümü.
+
+12. GÜVENİLİR ERKEN MALİYET TAHMİNLERİ
+GÖRSEL: realiable_earlier_cost_estimates.png
+URL: https://aluplan.com.tr/wp-content/uploads/2022/10/structural-engineering-allplan-turkey-realiable_earlier_cost_estimates.png
+Doğru teklifler için ayrıntılı listeleri kullanarak metrajları ve malzemeleri daha erken bir aşamada hızlı ve hassas bir şekilde hesaplayın.
+
+İNŞAAT MÜHENDİSLİĞİ İŞ AKIŞLARI SECTION (TABLI YAPI):
+======================================================
+Başlık: İnşaat Mühendİslİğİ İş akışları
+Alt Başlık: Insert a meaningful line to evaluate the headline.
+
+TAB 1 / ŞANTIYE ANALIZI:
+- Veri Değişimi
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_01_Datenastausch_Dateiformate_8b2b0a6796.jpg
+  Açıklama: Allplan ile, hangi yazılım çözümünü kullanırlarsa kullansınlar, proje ortakları tarafından sağlanan çeşitli formatlardaki verileri içe aktararak tasarım aşamasında önemli ölçüde zaman kazanacaksınız. Bu veri sorunlarını azaltır. Model, IFC formatında ana model olarak sunulacak. Elbette modeller bağımsız olarak da oluşturulabilir, tamamlanabilir veya değiştirilebilir. Allplan 50'den fazla dosya formatını destekler, böylece Revit, Rhino, SketchUp vb.'den proje verileri kullanılabilir. Otomatik iş akışları, malzemeler, donatı spesifikasyonları veya yerleşik bina bileşenleri gibi prefabrik tasarım için gerekli olan nitelikleri ekler.
+
+- Arazi Araştırması
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_02_Gelaendeaufnahme_1_7e1e2d02cd.jpg
+  Açıklama: Herhangi bir proje planlamasına başlamadan önce kesin bir envanter önemlidir. Kat planları veya kadastral planlar gibi nihai belgeler, PDF veya görüntü dosyaları olarak Allplan içerisinde dönüşümlerin veya yeni binaların planlanması için bir temel olarak kullanılabilir. Hızlı değerlendirme sürelerini mümkün kılmak için Scalypso, saha nokta bulutu araştırmaları için bir dizi araç sağlar ve yeniden oluşturulan 3B elemanların gerçek zamanlı bir arayüz aracılığıyla Allplan'a aktarılmasına olanak tanır.
+
+- BIM Koordinasyonu
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_03_BIM-coordination_4f13870bf1.jpg
+  Açıklama: Görevlerin senkronize Allplan ve Bimplus Konu Yönetimi ile koordinasyonu gerçek bir avantajdır. Allplan'ın yerel arayüzünde veri aktarımı verimli bir şekilde çalışır. Bimplus Konu Yönetimi açıktır ve IFC ve BCF'yi (her ikisi de OPEN BIM standardı) yönetebilir. – İlgili tüm taraflar aynı düzeyde bilgiye erişir. – Önemli kararlar daha erken alınabilir. -İnşaat süreci daha hızlı ve sorunsuz ilerler.
+
+TAB 2 / MODELLEME:
+- Serbest Biçimli Modelleme
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_04_Free-form_Modeling_1_275656f453.jpg
+  Açıklama: Proje ne kadar karmaşık olursa olsun, Allplan ile her türlü 3D eleman oluşturulabilir. Herhangi bir serbest biçimli geometri, Allplan'ın bunları bileşen olarak tanıyacağı ve örneğin metraj alımında dikkate alacağı şekilde modellenebilir ve dönüştürülebilir. Serbest biçimli modelleyici, çok çeşitli karmaşık şekiller oluşturmayı kolaylaştırır. En karmaşık şekiller için bile hassas uygulama planlaması mümkündür.
+
+- Parametrik Modelleme
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_05_Parametrische-Modellierung-1_12204ea2c4.jpg
+  Açıklama: Rögarlar, kanalizasyon ve servis hatları gibi yol gövdesinin yardımcı unsurları duruma tamamen parametrik olarak yerleştirilebilir ve yolun gidişatına göre uyarlanabilir. Hat ve rögar profilleri bir kütüphaneden seçilir ve daha sonra kolayca uyarlanabilir.
+
+- Görselleştirme
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_06_Visualisierung_6559fb4138.jpg
+  Açıklama: Görselleştirme, proje katılımcıları arasındaki işbirliğini ve iletişimi kolaylaştırır. Ayrıntılar, iyileştirmeler vb. için tüm disiplinler modeli birlikte analiz edebilir. Yapısal elemanların görsel temsili aynı zamanda geri bildirimi de kolaylaştırır. Allplan'ın mükemmel görselleştirme kalitesi sayesinde, donatı detay seviyesi gibi yapısal özellikler gerçek zamanlı olarak kontrol edilebilir ve farklılıklar hızlı bir şekilde çözülebilir.
+
+TAB 3 / MODEL ANALİZİ:
+- Varyant Çalışmaları
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_07_Variantenvergleich_6c9ebd5289.jpg
+  Açıklama: Çizim dosyası sistemi sayesinde farklı model varyasyonlarının incelenmesi özellikle kolaydır. Bireysel model alanlarını düzenlerken programdaki performansın yanı sıra kullanıcı performansı da çizim dosyası sistemi tarafından büyük ölçüde iyileştirilir. Allplan, verilerin anlaşılır şekilde yapılandırılması nedeniyle özellikle büyük, karmaşık projeler için uygundur.
+
+- Şantiye ekipmanları
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_08_Baustelleneinrichtung_1_48956dc5d5.jpg
+  Açıklama: Allplan ile şantiye yerleşimini de planlayabilirsiniz. Her şantiye farklıdır ve bu nedenle bireysel, hassas planlama gerektirir. Bu zorlu mücadelede sizi desteklemek için Allplan, çakışma algılamalı ve basit kaldırma değerlendirmeli kule vinci gibi objeler sunar. Bunların özelleştirilmesi özellikle kolaydır ve ayrıca belirli üretici verilerine de bağlanabilir. İşbirliği işlevselliği ve güçlü araçlar, varyantların hızlı bir şekilde detaylandırılmasına olanak tanıyarak değişikliklerin etkili bir şekilde yönetilmesine ve doğru saha ve bina gereksinimlerinin hızlı bir şekilde oluşturulmasına olanak tanır.
+
+- Değişim Yönetimi
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_09_Change-Management_1_68ae733347.jpg
+  Açıklama: Varyant çalışması ve yapısal analiz sonrasında modelde değişikliklerin olması oldukça normaldir. Bimplus sayesinde bu değişiklikler rahatlıkla belgelenebilir, bu da inşaat projesinin baştan sona sorunsuz ilerlemesini kolaylaştırır. Bimplus ile modelleri kolaylıkla karşılaştırılabilen, ayarlanabilen ve yönetilebilen varyantlar ve revizyonlar olarak temsil edebilirsiniz. Oluşturulması kolay slayt gösterilerinin yardımıyla sunumlar ve inşaat toplantılarında karar verme için mükemmel bir temele sahip olursunuz.
+
+TAB 4 / DETAYLANDIRMA / TESLİMATLAR:
+- Genel Düzenleme Çizimleri
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_10_UEbersichtsplan_3f22aaf3ea.jpg
+  Açıklama: Genel düzenleme çizimleri yapının tek bir planda tam bir temsilini sağlar. İlk adım, 3B modeli ve içerdiği bilgileri uygun araçları kullanarak analiz etmektir. Allplan'ın kullanımı kolay ilişkili görünümleri ve kesitleri ile böyle bir planı hızlı bir şekilde oluşturabilir ve böylece tüm yapıyı kapsamlı bir şekilde görselleştirebilirsiniz. Daha sonra modelde yapılan değişiklikler kolaylıkla anlaşılabilecek ve müteakip proje aşamalarında bireysel elemanların konumu daha net bir şekilde tanınabilecektir.
+
+- Yapısal Çizimler
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_11_Schalplan_1_085c372967.jpg
+  Açıklama: İlk adımda, yapısal çizimler beton elemanların veya yapısal çelik elemanların tam geometrisi ve boyutları hakkında genel bir bakış sağlamalıdır. Bu temelde, bireysel elemanların şekli belirlenecek şekilde yapısal çizim gerçekleştirilir. İnşaat aşamasında her şeyin sorunsuz ilerlemesi için burada en yüksek hassasiyet gereklidir. Allplan ile betonarme yapılar için detaylı yapısal çizimler oluşturabilirsiniz. Kesitler ve görünümler gösterimlerine hızlı ve kolay bir şekilde uyarlanabilir. Bu, çizim oluşturma işlemini büyük ölçüde hızlandırır.
+
+- Donatı Çizimleri
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_12_Bewehrungsplan_1_c07e0a762b.jpg
+  Açıklama: Allplan'da donatı 3 boyutlu model olarak oluşturulur. Sonuç olarak zamandan tasarruf edersiniz ve tasarım dökümanları için güvenilir bir temel oluşturursunuz. Konumlandırma yalnızca bir kez oluşturulur ve ondan türetilen tüm kesitlere otomatik olarak uyarlanır. Bu, çakışmaların görsel olarak tespit edilmesini veya çakışma kontrolü yoluyla otomatik olarak tanımlanmasını özellikle kolaylaştırır. Son olarak, akıllı Allplan raporları aracılığıyla tek bir düğmeye basılarak hassas çelik listeleri elde edilir. Allplan'daki kesitler aynı zamanda donatı yerleştirmede özellikle yararlı bir araçtır.
+
+- Şantiye Çizimleri
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_14_Baustelleneinrichtung_2_1c7178ce4f.jpg
+  Açıklama: Şantiye yerleşim planı Allplan ile çok kolay bir şekilde görüntülenebilmektedir. 3B elemanlar ve kesitlerin ve kat planlarının birbirine bağlanması sayesinde değişiklikler otomatik olarak benimsendiği için artık önemli bir çaba gerektirmiyor.
+
+- Çelik Listeleri
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_13_Stahllisten_f977b5cf54.jpg
+  Açıklama: Allplan mümkün olan en kısa sürede hassas donatı planlamasına olanak sağlar. 3B donatılandırma sayesinde planlama sürecindeki hatalar en aza indirilebilir. Yalnızca birkaç tıklamayla modelinizde çakışma olup olmadığını kontrol edebilir ve ardından belirli prefabrik elemanlarla ilgili üretim günleri için bile çelik listeleri oluşturabilirsiniz.
+
+- Değişim Yönetimi
+  Görsel URL: https://aluplan.com.tr/wp-content/uploads/2023/10/csm_16_Change-Management_98c1d06316.jpg
+  Açıklama: Bimplus sayesinde şantiyede meydana gelen öngörülemeyen değişiklikler çok kısa sürede Allplan modeline uyarlanıp dahil edilebilmektedir.
+
+FOOTER SECTION:
+===============
+ALUPLAN - ALLPLAN TÜRKİYE DİSTRİBÜTÖRÜ
+
+Allplan Çözümlerİ:
+• BİNA TASARIMI
+• ALTYAPI TASARIMI
+• İNŞAAT PLANLAMASI
+
+GÖRSEL: Building Design
+URL: https://aluplan.com.tr/wp-content/uploads/2022/09/2023-solutions-building-Design-allplan-turkey-370x275.png
+© Harfa Design Residence, Visualisierung| Central Group
+
+GÖRSEL: Infrastructure Design
+URL: https://aluplan.com.tr/wp-content/uploads/2022/09/solutions-Infrastructure-Design-370x275.png
+iStock-1308514772
+
+GÖRSEL: Prefabrication Product
+URL: https://aluplan.com.tr/wp-content/uploads/2022/09/2023-prefabrication-product-allplan-turkey-370x270.png
+© SK Rapid Wien
+
+BLOG SECTION:
+=============
+BAŞLIK: Endüstriyel İnşaatta İleri Mühendislik
+ALT BAŞLIK: Türkiye'de Bir Çelik Fabrikası
+
+GÖRSEL: Çelik Fabrikası Blog Post
+URL: https://aluplan.com.tr/wp-content/uploads/2023/10/2_1200x630-800x445-1.webp
+
+BUTON: "Devamını Oku" 
+BUTON URL: https://allplanblogturkiye.aluplan.com.tr/endustriyel-insaatta-ileri-muhendislik-turkiyede-bir-celik-fabrikasi/
+
+İÇERİK ÖZETİ:
+Son teknolojiye sahip bir çelik üretim tesisinin inşasına başlamak, yenilikçi çözümler, hassas planlama ve ileri mühendislik araçları gerektirir. Beton binalar ve endüstriyel çelik yapılar konusunda uzmanlaşmış bir Türk şirketi olan Lun Engineering LLC, yakın zamanda son teknolojiye sahip bir çelik üretim tesisi oluşturmak gibi olağanüstü bir görevi üstlendi. ALLPLAN'in donatı detaylandırma ve betonarme modelleme yazılımının gücünden yararlanan Lun Engineering, mühendislik yeniliğinin sınırlarını zorlarken vizyonunu gerçeğe dönüştürdü.
+
+================================
+SAYFA SONU
+================================

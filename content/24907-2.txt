@@ -1,0 +1,37 @@
+SAYFA: https://aluplan.com.tr/24907-2/
+
+HERO SECTION:
+- Başlık: Allplan Connect: Giriş Problemleri veya Parola Sıfırlama Soru
+
+POST HERO SECTION:
+- Soru: Allplan Connect'e kaydolmaya çalıştınız ancak başarılı bir şekilde giriş yapamıyor veya parolanızı unuttunuz?
+- Alt Soru: Başarılı bir şekilde tekrar nasıl giriş yapabilirsiniz?
+
+ÇÖZÜM BÖLÜMÜ:
+- Cevap: Parolanızı değiştirmek için aşağıdaki Connect sayfasını kullanmayı deneyin:
+
+PAROLA SIFIRLAMA ADIMLARı:
+1. Parola Sıfırlama Connect'i başlatın: https://connect.allplan.com/pwd
+2. Fonksiyonun kendini açıklayan adımlarını takip edin (görselde kısaltılmış haliyle gösterilmiştir)
+3. Öncelikle sağ üst köşeden doğru ülkenizi seçtiğinizden emin olun
+
+GÖRSEL ADIMLAR:
+- Adım 1 Görseli: https://aluplan.com.tr/wp-content/uploads/2025/05/sifre-1-1024x570.jpg
+- Açıklama: Şifre sıfırlama talebinizden sonra size gelen maile yanıt vermeniz gerekiyor.
+
+- E-posta Görseli: https://aluplan.com.tr/wp-content/uploads/2025/05/gelenmail-1024x642.jpg
+- Adım 2 Görseli: https://aluplan.com.tr/wp-content/uploads/2025/05/sifre-2-1024x666.jpg
+
+YENİ PAROLA GEREKSİNİMLERİ:
+E-postadaki bağlantıyı aldıktan ve tıkladıktan sonra, yeni bir parola belirleyebilmeniz gerekir. Lütfen aşağıdaki noktalara dikkat edin:
+
+• En az 8 karakter olmalı
+• Büyük harf ve küçük harf içermeli
+• En az bir rakam içermeli
+• En az bir özel karakter (!, ?, @, # vb.) içermeli
+• Daha önce kullandığınız bir şifre olmamalı
+
+BUTON: Parola Sıfırlama Connect
+BUTON URL: https://connect.allplan.com/pwd
+
+YOUTUBE VİDEOLARI: Yok

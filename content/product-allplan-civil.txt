@@ -1,0 +1,292 @@
+SAYFA: https://aluplan.com.tr/product-allplan-civil/
+
+HERO SECTION:
+- Başlık: ALLPLAN Civil
+- Alt Başlık: İleri Düzey Altyapı Tasarımından İnşa Akışlarına yönelik Çözüm
+
+POST HERO SECTION:
+- Başlık: ALLPLAN Civil Nedir?
+- İçerik: ALLPLAN Civil, çok disiplinli ve inşaat mühendisliği danışmanlıkları, bina ve inşaat mühendisliği yüklenici firmalarında tasarım ve inşaat süreçlerinin tamamını destekleyen, gelişmiş altyapı tasarımından inşa süreçlerine yönelik ALLPLAN'ın sunduğu nihai çözümdür.
+
+ALLPLAN Ultimate'ın tüm özellikleri artı:
+• Entegre köprü yapısal analizi
+• Donatı tasarımı ve kod kontrolü
+• SCIA Ultimate ile yapısal analiz ve tasarım
+
+ZORLUKLAR BÖLÜMÜ:
+Aşağıdaki zorluklarla sürekli mi mücadele ediyorsunuz?
+
+• Proje maliyetlerinizin ve zaman gecikmelerinin kontrolden çıkmasıyla ilgili sürekli endişeler.
+• Paydaşlardan proje aşamalarını kabul etmek için onayların gecikmesi, bu da gecikmelere yol açıyor.
+• Sürekli proje değişiklikleri çok fazla zaman alıyor, bu da kaliteyi etkiliyor ve risk oluşturuyor.
+• Mevcut proje teslimatları çok uzun sürüyor, bu nedenle potansiyel yeni projelere taahhüt veremiyorsunuz.
+
+İSTATİSTİKLER:
+
+TUTARLI VERİ - 100%:
+Her şey tek bir yazılım çözümü ile gerçekleştirildiği için ortak veri ortamı, farklı çözümler arasında gereksiz veri alışverişini ve yeniden veri girişini en aza indirir.
+
+DAHA FAZLA ZAMAN - 63%:
+Proje şablonlarının adapte edilmesi ve tasarım aşaması boyunca hızlı, kolay ve güvenilir bir şekilde gerçekleştirilen model değişiklikleri sayesinde zaman tasarrufu.
+
+DAHA KESİN - 100%:
+Özellikle köprüler için uyarlanmış modelleme teknikleri ve prefabrik kiriş köprüleri gibi farklı köprü türlerine yönelik iş akışları sayesinde hassas modelleme.
+
+DAHA VERİMLİ - 100%:
+Parametrik model tanımının bir sonucu olarak verilerin yeniden kullanılması; örneğin, bir ayak gibi modellenmiş köprü elemanları, şablon olarak kaydedilip sonraki projelerde tekrar kullanılabilir.
+
+ALLPLAN ULTIMATE'IN FAYDALARI:
+
+TAB 1 / PARAMETRİK YOL MODELLEME:
+- Başlık: Parametrik Yol Modelleme
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/powerful_modeling-1.png
+- Açıklama: Bina ve altyapı projelerinize yol tasarımlarını entegre etmek için güçlü ve kullanımı kolay modelleme işlevleri.
+
+TAB 2 / KESİN 3D DONATI:
+- Başlık: Kesin 3D Donatı
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/precise_3d_reinforcement.png
+- Açıklama: Donatı gereksinimlerinin hızlı tasarımı ve detaylandırılması için otomatik çözümler, önemli ölçüde zaman tasarrufu sağlar ve kaliteyi garanti eder.
+
+TAB 3 / TEK YAZILIM ÇÖZÜMü:
+- Başlık: Tek Yazılım Çözümü
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/interdisciplinary_aec_design.png
+- Açıklama: Tüm inşaat türleri için uygun, küçükten büyük ve karmaşık modellere kadar geniş model verilerini hızlı ve güvenli bir şekilde kayıpsız işleyebilen tek yazılım çözümü.
+
+TAB 4 / VARYANTLAR VE ŞABLONLAR HIZLA OLUŞTURUN:
+- Başlık: Varyantlar ve Şablonlar Hızla Oluşturun
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/convincing_visualizations.png
+- Açıklama: Yol planını, köprü hizalamasını ve gerekli en kesitleri dikkate alan 3D parametrik model tanımı, model yapılandırmasını ve varyasyonlarını hızlı ve kolay hale getirir. Bu işlem, doğrudan yazılım üzerinden veya betiklerle de gerçekleştirilebilir.
+
+TAB 5 / ENTEGRE YAPISAL ANALİZ:
+- Başlık: Entegre Yapısal Analiz
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/easyliy_modify_requirements.png
+- Açıklama: ALLPLAN, geometrik modelden analiz modelini ve tanımlı inşaat sırasına göre tüm hesaplama adımlarını otomatik olarak oluşturur. Bu, iş yükünü büyük ölçüde azaltır ve hata olasılığını minimuma indirir.
+
+TAB 6 / KOD TABANLI TASARIM:
+- Başlık: Kod Tabanlı Tasarım
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2022/10/more_accurate_deliverables.png
+- Açıklama: Tüm kalıcı ve değişken yükler birbiriyle birleştirilerek nihai bir zarf oluşturulur. Bu zarf, donatı tasarımı ve yönetmelik kontrollerinin gerçekleştirilmesinde kullanılır.
+
+TAB 7 / DEĞİŞİKLİKLERİ KOLAYCA UYGUYAYIN:
+- Başlık: Değişiklikleri Kolayca Uygulayın
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/convincing_visualizations.png
+- Açıklama: Herhangi bir değişiklik durumunda, örneğin hizalamayla ilgili, tüm 4D model otomatik olarak uyarlanır. Dolayısıyla, eksen geometrisi değişirse köprü modeli de otomatik olarak güncellenir.
+
+TAB 8 / DAHA DOĞRU TESLİMATLAR:
+- Başlık: Daha Doğru Teslimatlar
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/easyliy_modify_requirements.png
+- Açıklama: İlk planlardan malzeme ve miktarlara, genel yerleşim ve donatı çizimlerine kadar her aşamada güvenilir kalite ve doğruluk sağlar.
+
+ALLPLAN'IN NELER YAPABİLECEĞİNİ GÖRÜN:
+
+ALTYAPI MODELLEME İÇİN ALLPLAN ULTIMATE:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/csm_Strahlenklinik_e7a7c6fcd7.jpg
+- Özellikler:
+  • Öngerilmeli tendonları içeren parametrik modelleme
+  • Parametrik yol tasarımı
+  • Hafriyat ve kazı araçları
+  • Parametrik donatı tasarımı
+
+KÖPRÜ ANALİZİ VE TASARIMI İÇİN İŞ AKIŞLARI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/csm_Elephant_House_9098bbc165.jpg
+- Özellikler:
+  • Köprü Analizi ve Tasarımı
+  • Donatı tasarımı ve yönetmelik kontrolleri ile entegre köprü yapısal analizi
+
+YAPISAL ANALİZ İÇİN İŞ AKIŞLARI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/csm_Cetin_Dam_d566210f2a.jpg
+- Özellikler:
+  • Tüm bina, endüstriyel ve inşaat yapıları için SCIA Engineer Ultimate.
+  • Her türlü yapı için çok malzemeli yapısal analiz yazılımı ve tasarım aracı.
+
+ALLPLAN CONNECT ÖZELLİKLERİ - FONKSİYONELLİK HIZLI BAKIŞ:
+
+PARAMETRİK MODELLEME:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/Parametric_Modeling.jpg
+- Açıklama: Köprüler, tüneller, istinat duvarları, gürültü bariyerleri gibi sivil yapıların dört boyutlu parametrik modelleme ve detaylandırması için özel bir çözüm; ayrıca prefabrik kiriş köprüleri gibi özel köprü türlerini de içerir.
+
+PARAMETRİK ÖN GERME:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/Parametric_Prestresing.jpg
+- Açıklama: Ön germe tendonlarının modellenmesi.
+
+KÖPRÜ YAPISAL ANALİZİ:
+- Görsel URL: https://www.allplan.com/fileadmin/user_upload/shared-files/campaigns/Launch_2025/Productpages_2025/Bridge_Structural_Analysis.jpg
+- Açıklama: Köprülerin yapısal analizi için özel bir çözüm.
+
+KÖPRÜ KOD TABANLI TASARIM:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/04_2D_DRAFTING_2-1.jpg
+- Açıklama: Eurocode'a ve ulusal eklerine, ayrıca AASHTO LRFD'ye göre tasarım ve kontroller.
+
+ARAYÜZLER:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/01_Interfaces_2-1.jpg
+- Açıklama: Sorunsuz veri alışverişi için tüm ilgili dosya arayüzleri, ifc, bcf, pdf, rvt, 3dm, skp, obj, LandXML, dwg, dgn, c4d, stl, wrl, saf ve daha fazlasını içerir. Yazılım arayüzleri (örn. Python API ve Görsel Betikleme) otomatik iş akışlarını sağlar.
+
+HARİCİ VERİ KAYNAKLARI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/02_EXTERNAL_DATA_SOURCES_Graphic_2-1.jpg
+- Açıklama: GIS bilgilerini, 3D içerik ve dokuları içe aktarmak için GIS Bağlayıcı ve İçerik Bağlayıcı.
+
+3D MODELLEME:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/03_3D_Modeling_2.jpg
+- Açıklama: Son derece karmaşık ve zorlu geometriler için yüksek performanslı 3D modelleme. Modelleme işlevselliği, Siemens Parasolid modelleme çekirdeği ile desteklenmektedir.
+
+2D ÇİZİM:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/04_2D_DRAFTING_2-1.jpg
+- Açıklama: Çekici, özlü ve detaylı çizimler için hassas 2D çizim için kapsamlı işlevsellik.
+
+GÖRSELLEŞTİRME:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/Visualization__basic__Conc___Prof___Ulti_-1.jpg
+- Açıklama: Vulkan gibi en son teknolojilere dayanan geniş bir görselleştirme yelpazesi. Gerçek zamanlı Render ve CineWare'ı içerir, Lumion ve Twinmotion'a canlı bağlantılar.
+
+GELİŞMİŞ GÖRSELLEŞTİRME:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/ALLPLAN_Advanced_Visualization_Redshift_Renderer_700x400.jpg
+- Açıklama: MAXON'dan yüksek performanslı GPU hızlandırmalı Redshift render.
+
+AI TABANLI GÖRSELLEŞTİRME:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/AI_Based_Viz-1.jpg
+- Açıklama: İlham verici, ayrıntılı AI destekli görselleştirmeler oluşturmak için bağlantılar. Nemetschek AI Visualizer ve EvolveLab'ın Veras AI Visualizer ile entegrasyonu içerir.
+
+ÇARPIŞMA TESPİTİ:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/06_CLASH_DETECTION_2-1.jpg
+- Açıklama: Yumuşak ve sert çarpışmaları tanımlamak için araç.
+
+İÇERİK PAKETİ BIMEASY:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/07_CONTENT_PACKAGE_BIM_EASY_Klein_2-1.jpg
+- Açıklama: Önceden tanımlanmış ancak özelleştirilebilir şirket standardı. Modellerin ve çizimlerin oluşturulmasında tutarlı bir çalışma şekli sağlar. Başlangıçta kolaylık sağlar, verimliliği artırır ve özellikle openBIM projelerinde iyi yapılandırılmış veri alışverişini garanti eder.
+
+YAPI BİLEŞENLERİ:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/08_BUILDING_COMPONENTS_2-1.jpg
+- Açıklama: Duvarlar, döşemeler, kirişler, kolonlar, temeller, merdivenler, çatılar, pencereler, kapılar ve cepheler gibi esnek yapı bileşenleri.
+
+ARAZİ MODELİ:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/09_Terrain_Model_2-1.jpg
+- Açıklama: Ölçüm noktaları veya nokta bulutlarına dayanan güçlü arazi modelleme.
+
+KENTSEL VE PEYZAJ TASARIMI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/10_Urban_and_Landscape_Design_2-1.jpg
+- Açıklama: Kütle modelleri, kentsel ve yer tasarımı ile birlikte bitkilendirme planları için işlevler.
+
+KANALİZASYON VE ALTYAPI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/11_Sewerage_and_Utilities_2.jpg
+- Açıklama: Su, atık su, elektrik, internet, doğalgaz veya merkezi ısıtma gibi hizmetlerin rotalanması.
+
+MİKTAR HESAPLAMASI VE MALİYETLENDİRME:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/12_QUANTITY_TAKE-OFF_AND_COSTING_3-1.jpg
+- Açıklama: Modelleme yapılmış ve yapılmamış nesnelerin kesin, doğrulanabilir miktar hesaplaması ve maliyetlendirilmesi.
+
+DONATI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/13_REINFORCEMENT_4.jpg
+- Açıklama: Son derece güçlü donatı işlevselliği, çubuk donatısı, ağ donatısı ve BAMTEC halılarını içerir.
+
+ÇELİK BAĞLANTILAR:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/14_STEEL_CONNECTIONS_2.jpg
+- Açıklama: Civatalı ve kaynaklı çelik bağlantılar için araçlar.
+
+YOLLAR:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/15_ROADS_2.jpg
+- Açıklama: Tam parametrik yol tasarımı, kesişmeler, trafik daireleri ve araç dönme yolu analizi dahil.
+
+ŞANTİYE HAZIRLIĞI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/16_CONSTRUCTION_SITE_PREPARATION_2.jpg
+- Açıklama: Cranes, konteynerler, şantiye çitleri ve inşaat sahası yerleşimini planlamak için diğer ekipmanlar.
+
+ZEMİN ÇALIŞMALARI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/17_Groundworks_2.jpg
+- Açıklama: Akıllı kazı destekleme sistemleri, bored pile (delikli kazık), soldier pile duvarları ve zemin ankrajları gibi çözümleri içerir.
+
+KAZI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/17_EXCAVATION_2.jpg
+- Açıklama: Kazı alanlarını modellemek ve kazı çizimleri oluşturmak için kullanılan araçlar.
+
+PREFABRİK TASARIM VE DETAYLANDIRMA:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/18_Precast_Design_and_Detailing_2.jpg
+- Açıklama: Akıllı prefabrik beton bileşenleri, örneğin kirişler, kolonlar, merdivenler vb.
+
+ELEMAN PLANI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/19_Element_Plan_2.jpg
+- Açıklama: Tekil elemanların detaylı çizimlerinin otomatik, şablon bazlı olarak üretilmesi.
+
+ALLPLAN ULTIMATE ABONELİĞİNE DAHİL OLARAK: SCIA ULTIMATE
+
+YAPISAL ANALİZ VE TASARIM – SCIA ENGINEER:
+SCIA Engineer: Tüm projeleriniz için yüksek performanslı, güvenilir çok malzemeli yapısal analiz ve tasarım yazılımı.
+
+SCIA ENGINEER – ULTIMATE SÜRÜMÜ:
+Ultimate Sürüm, yüksek katlı veya karmaşık binalar, köprüler ve altyapı yapıları gibi en zorlu yapıları tasarlayan yapı mühendisleri için uygundur. Zemin-yapı etkileşimi, beton için malzeme doğrusal olmayan analizi, inşaat aşamaları analizi ve öngerilmeli beton tasarımı gibi ileri düzey analiz türlerini içerir.
+
+SCIA Engineer karşılaştırmasına buradan erişin.
+- Görsel URL: https://www.allplan.com/fileadmin/user_upload/shared-files/campaigns/Launch_2025/Productpages_2025/SCIA_Ultimate.jpg
+
+ALLPLAN BULUT HİZMETLERİ:
+
+BULUT TABANLI İŞBİRLİĞİ:
+Bimplus Pro, bulut tabanlı BIM işbirliği platformu.
+
+PROJE TAKIM ÇALIŞMASI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/15_PROJECT_TEAMWORKING_2_01.jpg
+- Açıklama: ALLPLAN Share, bir şirket ağı üzerinden ekip çalışmasını sağlar; uzaktan çalışan ekip üyeleri için de idealdir.
+
+ÇİZİM VE PLAN DAĞITIMI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/16_DRAWING_AND_PLAN_DISTRIBUTION_2.jpg
+- Açıklama: Çeşitli plan formatlarının oluşturulmasını ve dağıtımını yönetmek için özel olarak tasarlanmış web tabanlı plan dağıtım aracı ALLPLAN Exchange, ayrıca e-posta grupları aracılığıyla otomatik değişiklik bildirimleri sağlar.
+
+ANALİTİK MODEL ÜRETİMİ:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/17_ANALYTICAL_MODEL_GENERATION_2.jpg
+- Açıklama: AutoConverter aracılığıyla geometrik modellerin, Frilo Statics, Scia Engineer gibi yapısal analiz çözümleri tarafından doğrudan kullanılabilen analitik modellere akıllı bir şekilde dönüştürülmesi.
+
+TASARIM KONTROLÜ:
+Solibri Inside, kullanıcı istediği zaman ALLPLAN modellerinde kontroller gerçekleştirebilir; bu, ALLPLAN içindeki BIM Explorer'dan palet benzeri bir işlevsellik kullanarak yapılır. (ALLPLAN Abonelik lisansı ile birlikte 12 aylık Solibri Inside aboneliği dahildir.)
+
+OFİS EKİP ÇALIŞMASI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/Allplan-WorkgroupManager.jpg
+- Açıklama: ALLPLAN Çalışma Grubu Yöneticisi aracılığıyla yerel bir şirket ağı içinde verimli ekip çalışmasını kolaylaştırın.
+
+BULUT DESTEKLİ PROJE KAYNAKLARI:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/CLOUD-ENABLED_PROJECT_RESOURCES_Filter_01.jpg
+- Açıklama: Bulut ofis kaynakları, ALLPLAN proje kaynaklarının tamamen bulut tabanlı dağıtımını sağlar.
+
+ALLPLAN MODEL VIEWER:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/ALLPLAN_Model_Viewer_700x400.jpg
+- Açıklama: Yeni bir dosyayı hızlıca önizlemek, IFC modellerini görsel olarak görüntülemek ve tam olarak yüklemeden önce kontrol etmek için kullanılır. (Sadece ALLPLAN Aboneliği veya Bimplus Professional satın alımı ile kullanılabilir.)
+
+ALLPLAN - BLUEBEAM BAĞLANTISI:
+Geliştirilmiş iş akışları – dijital teslim sürecine yardımcı olmak için Bluebeam ile bağlantı kuracağız. Kullanıcılar, Bluebeam Studio Proje ortamından ALLPLAN iş akışlarına 2D belgeleri kolayca aktarabilecekler.
+
+BAĞLANTI TASARIM ARACI - CONNEXIS:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/CONNEXIS_700x400_01.jpg
+- Açıklama: Çelik bağlantılar için bulut tabanlı görüntüleme ve iş birliği aracı.
+
+DAHA FAZLA BİLGİ EDİNİN:
+İşbirliğinizi bir üst seviyeye taşıyan araçlara anında erişim imkanı sağlayın.
+
+SATIN ALINABİLİR SEÇENEKLERİ:
+
+BIM²FORM EKLENTİSİ - KALIP:
+Kalıp yerleştirmek için araçlar.
+
+LİSANS SERVER:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/License_Server_Filter_01.jpg
+- Açıklama: Mevcut lisansların birden fazla kullanıcı tarafından optimal şekilde kullanılmasını sağlar. Ofis dışında lisans kullanımı mümkündür.
+
+BIMPLUS PRO:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/23_BIMPLUS_PRO_2.jpg
+- Açıklama: Bulut iş birliği kapasitenizi artırmak için ek Bimplus Pro lisansları.
+
+ALLPLAN BULUT DEPOLAMA:
+- Görsel URL: https://aluplan.com.tr/wp-content/uploads/2024/10/ALLPLAN_CLOUD_STORAGE_Filter_01.jpg
+- Açıklama: Projelerinizin kesintisiz devam etmesini sağlamak için ek depolama alanı.
+
+SSS ALLPLAN PROFESSIONAL:
+
+Evet, ALLPLAN 2025 sürümünün yayımlanmasıyla birlikte, ALLPLAN Civil sürümü abonelik tabanlı ALLPLAN Bridge yapılandırmasını değiştirmektedir.
+
+ALLPLAN Bridge ve ALLPLAN Civil abonelikleri arasındaki temel fark, ALLPLAN Civil'in ALLPLAN Ultimate'ın tüm işlevselliğinin yanı sıra SCIA Engineer Ultimate'ı da içermesidir.
+
+Evet, ALLPLAN Civil, altyapı tasarımı ve inşaat şirketleri için en iyi çözümümüzdür. Tasarım ve inşaat sürecinin tamamını destekleyen gelişmiş altyapı tasarımı için bir çözümdür ve köprüler ile altyapı yapıları, prefabrikasyon ve inşaat iş akışları için özel araçlar içerir.
+
+BUTON: SCIA Engineer karşılaştırmasına buradan erişin
+BUTON URL: https://www.scia.net/en/scia-engineer/editions-comparison
+
+BUTON: Daha Fazla Bilgi Edinin (SCIA Web Sitesi)
+BUTON URL: [URL belirtilmemiş]
+
+YOUTUBE VİDEOLARI: Yok

@@ -1,0 +1,102 @@
+HERO SECTION:
+Başlık: Allplan Add On KANAL
+Alt Başlık: Add-On Kanal V2 Yenilikler
+
+POST HERO SECTION:
+Başlık: KANAL ALLPLAN
+Açıklama: Her proje için kanal, planlamanın zorunlu bir parçasıdır ve geleneksel CAD düzenlemesi hataya açıktır. Biz bu konuyu ele aldık ve daha verimli bir çözüm için faydalı bir yazılım ürettik.
+
+FAYDALARI:
+Açıklama: Add-On Allplan Kanal ile kolayca standartlara uygun bir kanal planlaması yapabilirsiniz. Allplan Kanal ile kısa sürede ilk tasarımdan uygulama planlamasına kadar ihtiyaçlarınıza çözüm bulacaksınız.
+
+YENİLİKLER:
+
+1. Benzer Borular / Eşit Tipli Borular:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/gleichartig-300x198.jpg
+
+2. Kulplar / İç Kenardaki Şaftların Kulpları:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/griffe-300x198.jpg
+
+3. Sınırlama / Şaft ve Borulardaki Sınırlama Gösterimi:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/limitierung-300x198.jpg
+
+4. İtalik Yazı / İtalik Yazı: Borularda-Şaftlarda ve Yüksekliklerde:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/text-300x198.jpg
+
+5. Yeni Raporlar / Raporlar: Boru-Şaft-Koordinatları için:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/reports-1-300x198.jpg
+
+6. Lisans Birleştirme / Bir veya daha fazla lisansın birleştirilmesi:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/lizenz-300x202.jpg
+
+7. Ofset / Ofset Koordinat Ataması X/Y/Z:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/offset-300x187.jpg
+
+8. Boru Tabanı / Herhangi bir konumda Boru Tabanı Etiketlemesi:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/rohrsohle-300x198.jpg
+
+9. Gösterim / Şaft Etiketleme Gösterimi:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/zeiger-300x198.jpg
+
+10. Nitelikler / Şaft-Boru-Hatları için Yeni Nitelikler:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/attribute-300x198.jpg
+
+MOTİVASYON:
+
+Yol Kanalizasyonu: Büyük projelerde ve altyapı planlamalarında kanal doğal bir parçadır ve geleneksel CAD yazılımlarında karmaşıklığa ve hataya açıktır. Bu işi verimli, güvenli ve rahat bir şekilde çözmek mümkündür.
+
+Bina Kanalizasyonu: Büyük projelerde ve altyapı planlamalarında kanal doğal bir parçadır ve geleneksel CAD yazılımlarında karmaşıklığa ve hataya açıktır. Bu işi verimli, güvenli ve rahat bir şekilde çözmek mümkündür.
+
+AVANTAJLAR:
+
+- Entegre: Allplan-Platform ile entegrasyon kolaylığı.
+- Kontrol: Model ve planlar birbirleriyle ilintilidir, kolayca kontrol edin.
+- Pratik: Doğrudan modifikasyon ile Allplan Kanal pratik bir araçtır.
+- Erişebilirlik: Kolay kullanım özelliği ve anlaşılır paletler sayesinde Allplan Kanal ile hemen çalışmaya başlayabilirsiniz.
+- Parça Listesi - Raporlar: Otomatik Parça Listeleri; Şaft, Kalıp Parçaları ve Borular. Kalıp Parçaları ve Borular grafiksel veya tablo şeklinde gösterilir.
+- Üretgenlik: Uzun planlama aşamasında taban yüksekliklerinin hesaplanması, hat meyillerinin farklı olması ve farklı bağlantılar proje üretimini kolaylaştırır.
+
+İŞLEVLER:
+
+1. Etiket / Hatların ve Şaftların doğrudan etiketleme imkanı:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/beschriftung-300x217.jpg
+
+2. Hesaplama:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/berechnung-300x217.jpg
+
+3. 3B / 3B-Model: Şaft ve Borular:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/3d-300x217.jpg
+
+4. Gösterim / Çizgi, Çizgi Tipi ve Boyamaların Uyarlanması:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/darstellung-300x217.jpg
+
+5. Ölçek / Hatların Ölçeğe Uygun Gösterimi:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/massstab-300x217.jpg
+
+6. Düğüm Noktası / Mevcut ağlarda düğüm noktalarının taşınması:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/knotenpunkt-1-300x217.jpg
+
+7. Basınçlı Hatlar / Serbest boru meyil engelsiz ve ara şaftsız:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/druckleitung-300x217.png
+
+8. Karışık Su / Bir ağda birkaç kullanımın yönetimi:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/mischwasser-300x217.png
+
+9. Profil Kesit / İlişkilli profil kesit oluşturma. Doğrudan ölçü ve etiket gösterimli:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/profilschnitt-1-300x218.png
+
+10. Şaft Etiketleme / Farklı Şaft ve Kapaklar:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/schachtdarstellung-300x217.png
+
+11. Dalış Yayı / Dalış Yaylı Hat Oluşturma:
+Görsel URL: https://aluplan.com.tr/wp-content/uploads/2019/12/tauchbogen-300x217.png
+
+VIDEO SECTIONS:
+- Add-On Kanal: Konstrüksiyon
+- Add-On Kanal: Modifikasyon
+- Add-On Kanal: Otomatik Metraj/Rapor
+- Add-On Kanal
+- Add-On Kanal: Basis
+- Add-On Werkleitung
+- Add-On Kanal - Neues in V2.1
+- Allplan Add-On Werkleitung
