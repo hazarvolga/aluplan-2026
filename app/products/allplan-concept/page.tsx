@@ -55,36 +55,36 @@ const benefits = [
 ];
 
 const coreFeatures: FeatureItem[] = [
-  { title: "Arayüzler", description: "IFC, BCF, PDF, RVT, 3DM, SKP, OBJ, LandXML, DWG, DGN, C4D, STL, WRL, SAF ve daha fazlası.", image: interfacesRemote },
-  { title: "Dış Veri Kaynakları", description: "GIS Bağlayıcı ve İçerik Bağlayıcı.", youtubeId: "LF6p7dQASR8", image: externalDataSourcesRemote },
-  { title: "3D Modelleme", description: "Parasolid çekirdeği ile yüksek performanslı 3D modelleme.", youtubeId: "kxDkWW01hRY", image: threeDModelingRemote },
-  { title: "2D Çizim", description: "Hassas 2D çizim işlevleri.", youtubeId: "_b6Z-1U8Ri4", image: twoDDraftingRemote },
-  { title: "Çarpışma Tespiti", description: "Yumuşak/sert çakışmalar için araçlar.", image: clashDetectionRemote },
-  { title: "BIM EASY", description: "Ön tanımlı, özelleştirilebilir şirket standardı.", youtubeId: "RyUl97kMQ88", image: bimEasyRemote },
-  { title: "Yapı Bileşenleri", description: "Duvar, döşeme, kiriş, kolon, temel, merdiven, çatı, pencere, kapı, cephe.", youtubeId: "DX7oODCOgeI", image: buildingComponentsRemote },
-  { title: "Arazi Modeli", description: "Anket veya nokta bulutlarına dayalı arazi.", image: terrainModelRemote },
-  { title: "Kentsel/Peyzaj", description: "Kütle modelleri ve bitkilendirme planları.", image: urbanLandscapeRemote },
-  { title: "Kanalizasyon/Altyapı", description: "Su, atık su, elektrik, internet, doğalgaz, merkezi ısıtma.", image: sewerageUtilitiesRemote },
-  { title: "Miktar/Maliyet", description: "Doğrulanabilir metraj ve maliyetlendirme.", youtubeId: "toZosw6NtMQ", image: quantityTakeoffRemote },
-  { title: "Görselleştirme", description: "Gerçek zamanlı Render, CineWare, Lumion/Twinmotion.", youtubeId: "IqNuiMaveas", image: visualizationRemote },
+  { title: "Arayüzler", description: "Veri alışverişinin sorunsuz bir şekilde gerçekleşmesi için tüm ilgili dosya arayüzleri, bunlar arasında IFC, BCF, PDF, RVT, 3DM, SKP, OBJ, LandXML, DWG, DGN, C4D, STL, WRL, SAF ve daha birçok format bulunmaktadır. Yazılım arayüzleri (örn. Python API ve Görsel Script) otomatik iş akışlarını mümkün kılar.", image: interfacesRemote },
+  { title: "Dış Veri Kaynakları", description: "GIS bilgilerini, 3D içerikleri ve dokuları içe aktarmak için GIS Bağlayıcı ve İçerik Bağlayıcı.", youtubeId: "LF6p7dQASR8", image: externalDataSourcesRemote },
+  { title: "3D Modelleme", description: "En karmaşık ve zor geometriler için bile yüksek performanslı 3D modelleme. Modelleme işlevselliği, Siemens Parasolid modelleme çekirdeği ile desteklenmektedir.", youtubeId: "kxDkWW01hRY", image: threeDModelingRemote },
+  { title: "2D Çizim", description: "Çekici, özlü ve detaylı çizimler için hassas 2D çizim için kapsamlı işlevsellik.", youtubeId: "_b6Z-1U8Ri4", image: twoDDraftingRemote },
+  { title: "Çarpışma Tespiti", description: "Yumuşak ve sert çarpışmaları tanımlamak için kullanılan araç.", image: clashDetectionRemote },
+  { title: "Content Package BIM Easy", description: "Önceden tanımlanmış ancak özelleştirilebilir şirket standartları. Kapsamlı sihirbazlar aracılığıyla modeller ve çizimler oluştururken tutarlı bir çalışma biçimi sağlar. Başlangıcı kolaylaştırır, verimliliği artırır ve özellikle açık BIM projelerinde iyi yapılandırılmış veri alışverişini garanti eder.", youtubeId: "RyUl97kMQ88", image: bimEasyRemote },
+  { title: "Yapı Bileşenleri", description: "Duvarlar, döşemeler, kirişler, kolonlar, temeller, merdivenler, çatılar, pencereler, kapılar ve cepheler gibi esnek yapı bileşenleri.", youtubeId: "DX7oODCOgeI", image: buildingComponentsRemote },
+  { title: "Arazi Modeli", description: "Anket noktaları veya nokta bulutlarına dayalı güçlü arazi modelleme.", image: terrainModelRemote },
+  { title: "Kentsel ve Peyzaj Tasarımı", description: "Kütle modelleri, kentsel ve alan tasarımı ile bitkilendirme planları için fonksiyonlar.", image: urbanLandscapeRemote },
+  { title: "Kanalizasyon ve Altyapı", description: "Su, atık su, elektrik, internet, doğalgaz veya merkezi ısıtma gibi hizmetlerin yönlendirilmesi.", image: sewerageUtilitiesRemote },
+  { title: "Miktar Hesaplama ve Maliyetlendirme", description: "Modelleme yapılmış ve yapılmamış nesnelerin hassas ve doğrulanabilir miktar hesaplaması ile maliyetlendirilmesi.", youtubeId: "toZosw6NtMQ", image: quantityTakeoffRemote },
+  { title: "Görselleştirme", description: "Vulkan gibi en son teknolojilere dayanan geniş bir görselleştirme yetenekleri yelpazesi. Gerçek zamanlı render ve CineWare'ı içerir, ayrıca Lumion ve Twinmotion ile canlı bağlantılar sunar.", youtubeId: "IqNuiMaveas", image: visualizationRemote },
 ];
 
 const cloudServices: FeatureItem[] = [
-  { title: "Bulut Tabanlı İşbirliği", description: "Bimplus Pro.", youtubeId: "7xzpEhLQhEI", image: cloudBasedCollaborationOverlay },
-  { title: "Proje Takım Çalışması", description: "ALLPLAN Share.", image: projectTeamworkingRemote },
-  { title: "Çizim/Plan Dağıtımı", description: "ALLPLAN Exchange.", image: drawingPlanDistributionRemote },
-  { title: "Analitik Model", description: "AutoConverter.", image: analyticalModelGenerationRemote },
-  { title: "Tasarım Kontrolü", description: "Solibri Inside.", youtubeId: "t4axrE0TWO4", image: designCheckingOverlay },
-  { title: "Ofis Ekip Çalışması", description: "Çalışma Grubu Yöneticisi.", image: workgroupManagerRemote },
-  { title: "Bulut Proje Kaynakları", description: "Tam bulut kaynak dağıtımı.", image: cloudEnabledProjectResourcesRemote },
-  { title: "Model Viewer", description: "IFC önizleme.", image: allplanModelViewerRemote },
-  { title: "Bluebeam Bağlantısı", description: "Dijital teslim entegrasyonu.", youtubeId: "u4GZUL7WdQU", image: bluebeamConnectionOverlay },
+  { title: "Bulut Tabanlı İşbirliği", description: "Bimplus Pro, bulut tabanlı BIM işbirliği platformu.", youtubeId: "7xzpEhLQhEI", image: cloudBasedCollaborationOverlay },
+  { title: "Proje Takım Çalışması", description: "ALLPLAN Share, bir şirket ağı üzerinden ekip çalışmasını sağlar; uzaktan çalışan ekip üyeleri için de idealdir.", image: projectTeamworkingRemote },
+  { title: "Çizim ve Plan Dağıtımı", description: "Çeşitli plan formatlarının oluşturulmasını ve dağıtımını yönetmek için özel olarak tasarlanmış web tabanlı plan dağıtım aracı ALLPLAN Exchange, ayrıca e-posta grupları aracılığıyla otomatik değişiklik bildirimleri sağlar.", image: drawingPlanDistributionRemote },
+  { title: "Analitik Model Üretimi", description: "AutoConverter aracılığıyla geometrik modellerin, Frilo Statics, Scia Engineer gibi yapısal analiz çözümleri tarafından doğrudan kullanılabilen analitik modellere akıllı bir şekilde dönüştürülmesi.", image: analyticalModelGenerationRemote },
+  { title: "Tasarım Kontrolü", description: "Solibri Inside, kullanıcı istediği zaman ALLPLAN modellerinde kontroller gerçekleştirebilir; bu, ALLPLAN içindeki BIM Explorer'dan palet benzeri bir işlevsellik kullanarak yapılır. (ALLPLAN Abonelik lisansı ile birlikte 12 aylık Solibri Inside aboneliği dahildir.)", youtubeId: "t4axrE0TWO4", image: designCheckingOverlay },
+  { title: "Ofis Ekip Çalışması", description: "ALLPLAN Çalışma Grubu Yöneticisi aracılığıyla yerel bir şirket ağı içinde verimli ekip çalışmasını kolaylaştırın.", image: workgroupManagerRemote },
+  { title: "Bulut Destekli Proje Kaynakları", description: "Bulut ofis kaynakları, ALLPLAN proje kaynaklarının tamamen bulut tabanlı dağıtımını sağlar.", image: cloudEnabledProjectResourcesRemote },
+  { title: "ALLPLAN Model Viewer", description: "Yeni bir dosyayı hızlıca önizlemek, IFC modellerini görsel olarak görüntülemek ve tam olarak yüklemeden önce kontrol etmek için kullanılır. (Sadece ALLPLAN Aboneliği veya Bimplus Professional satın alımı ile kullanılabilir.)", image: allplanModelViewerRemote },
+  { title: "ALLPLAN - Bluebeam Bağlantısı", description: "Geliştirilmiş iş akışları – dijital teslim sürecine yardımcı olmak için Bluebeam ile bağlantı kuracağız. Kullanıcılar, Bluebeam Studio Proje ortamından ALLPLAN iş akışlarına 2D belgeleri kolayca aktarabilecekler.", youtubeId: "u4GZUL7WdQU", image: bluebeamConnectionOverlay },
 ];
 
 const purchaseOptions: FeatureItem[] = [
-  { title: "Lisans Server", description: "Çok kullanıcı optimal lisans kullanımı.", image: licenseServerImg },
-  { title: "BIMPLUS Pro", description: "Ek Bimplus Pro lisansları.", image: bimplusProImg },
-  { title: "ALLPLAN Bulut Depolama", description: "Ek depolama alanı.", image: cloudStorageImg },
+  { title: "Lisans Server", description: "Mevcut lisansların birden fazla kullanıcı tarafından optimal şekilde kullanılmasını sağlar. Ofis dışında lisans kullanımı mümkündür.", image: licenseServerImg },
+  { title: "BIMPLUS Pro", description: "Bulut iş birliği kapasitenizi artırmak için ek Bimplus Pro lisansları.", image: bimplusProImg },
+  { title: "ALLPLAN Bulut Depolama", description: "Projelerinizin kesintisiz devam etmesini sağlamak için ek depolama alanı.", image: cloudStorageImg },
 ];
 
 const FeatureCard = ({ feature }: { feature: FeatureItem }) => (
@@ -124,21 +124,34 @@ export default function Page() {
       </section>
 
       <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl">
-            <span className="text-accent font-medium text-sm tracking-wider uppercase mb-4 block">/ ALLPLAN Concept Nedir?</span>
-            <p className="text-lg text-muted-foreground mb-8">Modelleme ve tasarım dokümantasyonu için BIM çözümüdür. Mimarlık ofisleri, çok disiplinli danışmanlık firmaları, konut geliştiricileri ve kamu kurumları tarafından kullanılır. Bina modelleme, görselleştirme, değerlendirme ve dokümantasyon hazırlığı için gerekli tüm araçları içerir. ALLPLAN Concept, her türlü mimari gereksinim için evrensel bir BIM çözümüdür.</p>
-            <ul className="space-y-4 mb-8">
-              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-accent mt-1 flex-shrink-0" /><span className="text-foreground">BIM modelleme için verimli araçlar</span></li>
-              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-accent mt-1 flex-shrink-0" /><span className="text-foreground">Tasarım ve çıktı üretiminde otomasyon</span></li>
-              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-accent mt-1 flex-shrink-0" /><span className="text-foreground">Miktar hesaplamalarında güvenilirlik</span></li>
-              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-accent mt-1 flex-shrink-0" /><span className="text-foreground">Render ve görselleştirme iş akışları</span></li>
-              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-accent mt-1 flex-shrink-0" /><span className="text-foreground">Veri alışverişi için sorunsuz arayüzler</span></li>
-              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-accent mt-1 flex-shrink-0" /><span className="text-foreground">Bulut tabanlı model koordinasyonu ve iş birliği</span></li>
-            </ul>
-            <div className="flex flex-wrap gap-4">
-              <Button variant="outline" asChild><Link href="/products/allplan">Sürümleri Görüntüle</Link></Button>
-              <Button asChild><Link href="/solutions/architecture">Tasarım İş Akışlarını İncele</Link></Button>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="text-accent font-medium text-sm tracking-wider uppercase mb-4 block">/ ALLPLAN Concept Nedir?</span>
+              <p className="text-lg text-muted-foreground mb-8">Modelleme ve tasarım dokümantasyonu için BIM çözümüdür. Mimarlık ofisleri, çok disiplinli danışmanlık firmaları, konut geliştiricileri ve kamu kurumları tarafından kullanılır. Bina modelleme, görselleştirme, değerlendirme ve dokümantasyon hazırlığı için gerekli tüm araçları içerir.</p>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start gap-3"><Check className="w-5 h-5 text-accent mt-1 flex-shrink-0" /><span className="text-foreground">BIM modelleme için verimli araçlar</span></li>
+                <li className="flex items-start gap-3"><Check className="w-5 h-5 text-accent mt-1 flex-shrink-0" /><span className="text-foreground">Tasarım ve çıktı üretiminde otomasyon</span></li>
+                <li className="flex items-start gap-3"><Check className="w-5 h-5 text-accent mt-1 flex-shrink-0" /><span className="text-foreground">Miktar hesaplamalarında güvenilirlik</span></li>
+                <li className="flex items-start gap-3"><Check className="w-5 h-5 text-accent mt-1 flex-shrink-0" /><span className="text-foreground">Render ve görselleştirme iş akışları</span></li>
+                <li className="flex items-start gap-3"><Check className="w-5 h-5 text-accent mt-1 flex-shrink-0" /><span className="text-foreground">Veri alışverişi için sorunsuz arayüzler</span></li>
+                <li className="flex items-start gap-3"><Check className="w-5 h-5 text-accent mt-1 flex-shrink-0" /><span className="text-foreground">Bulut tabanlı model koordinasyonu ve iş birliği</span></li>
+              </ul>
+              <div className="flex flex-wrap gap-4">
+                <Button variant="outline" asChild><Link href="/products/allplan">Sürümleri Görüntüle</Link></Button>
+                <Button asChild><Link href="/solutions/architecture">Tasarım İş Akışlarını İncele</Link></Button>
+              </div>
+            </div>
+            <div className="aspect-video rounded-2xl overflow-hidden shadow-xl">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/SnuaHSL18e8"
+                title="ALLPLAN Concept"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>
@@ -149,13 +162,18 @@ export default function Page() {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">ALLPLAN Concept&apos;in Faydaları</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
-              <Card key={index} className="bg-card border-border hover:shadow-lg transition-shadow">
-                <CardContent className="p-8">
-                  <div className="flex-shrink-0 mb-4"><Image src={benefit.icon} alt={benefit.title} width={64} height={64} className="w-16 h-16 object-contain" /></div>
-                  <span className="text-accent font-medium text-sm tracking-wider uppercase mb-4 block">/ {benefit.title}</span>
-                  <p className="text-muted-foreground">{benefit.description}</p>
-                </CardContent>
-              </Card>
+              <div key={index} className="group relative bg-card p-6 pr-20 pb-10 rounded-2xl border border-border shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-accent/10 to-transparent rounded-bl-full -mr-4 -mt-4 transition-all group-hover:from-accent/20" />
+                <div className="absolute top-4 right-4 z-10 w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                  <Image src={benefit.icon} alt={benefit.title} width={28} height={28} className="w-7 h-7 object-contain" />
+                </div>
+                <h3 className="font-display text-lg font-bold text-foreground mb-3 group-hover:text-accent transition-colors">
+                  {benefit.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {benefit.description}
+                </p>
+              </div>
             ))}
           </div>
           <div className="flex flex-wrap justify-center gap-4 mt-12">
