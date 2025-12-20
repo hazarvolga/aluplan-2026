@@ -6,18 +6,13 @@ import Image, { StaticImageData } from "next/image";
 import { Check } from "lucide-react";
 import VideoModal from "@/components/VideoModal";
 import ReasonsSection from "@/components/ReasonsSection";
+import CloudServicesSection from "@/components/CloudServicesSection";
 import PostHeroSection from "@/components/PostHeroSection";
 
 // Statik görseller
 import interfacesImg from "@/assets/products/allplan-basic/interfaces.jpg";
 import clashDetectionImg from "@/assets/products/allplan-basic/clash-detection.jpg";
 import layoutingImg from "@/assets/products/allplan-basic/layouting.png";
-import projectTeamworkImg from "@/assets/products/allplan-basic/project-teamwork.jpg";
-import planDistributionImg from "@/assets/products/allplan-basic/plan-distribution.jpg";
-import analyticalModelImg from "@/assets/products/allplan-basic/analytical-model.jpg";
-import workgroupManagerImg from "@/assets/products/allplan-basic/workgroup-manager.jpg";
-import cloudResourcesImg from "@/assets/products/allplan-basic/cloud-resources.jpg";
-import modelViewerImg from "@/assets/products/allplan-basic/model-viewer.jpg";
 import licenseServerImg from "@/assets/products/allplan-basic/license-server.jpg";
 import bimplusProPurchaseImg from "@/assets/products/allplan-basic/bimplus-pro-purchase.jpg";
 import cloudStorageImg from "@/assets/products/allplan-basic/cloud-storage.jpg";
@@ -25,9 +20,6 @@ import cloudStorageImg from "@/assets/products/allplan-basic/cloud-storage.jpg";
 // Video thumbnail görselleri
 import modeling3dImg from "@/assets/products/allplan-basic/3d-modeling.jpg";
 import drafting2dImg from "@/assets/products/allplan-basic/2d-drafting.jpg";
-import bimplusProImg from "@/assets/products/allplan-basic/bimplus-pro.jpg";
-import designCheckingImg from "@/assets/products/allplan-basic/design-checking.jpg";
-import bluebeamConnectionImg from "@/assets/products/allplan-basic/bluebeam-connection.jpg";
 
 // Faydalar ikonları
 import workWayWantIcon from "@/assets/products/allplan-basic/benefits/work-way-want.png";
@@ -57,22 +49,10 @@ const coreFeatures: FeatureItem[] = [
   { title: "Düzenleme", description: "Güçlü düzenleme araçları ile profesyonel plan üretimi.", image: layoutingImg },
 ];
 
-const cloudServices: FeatureItem[] = [
-  { title: "Bulut Tabanlı İşbirliği", description: "Bimplus Pro, bulut tabanlı BIM işbirliği platformu.", youtubeId: "7xzpEhLQhEI", thumbnailUrl: bimplusProImg },
-  { title: "Proje Takım Çalışması", description: "ALLPLAN Share ile ekip çalışması.", image: projectTeamworkImg },
-  { title: "Çizim ve Plan Dağıtımı", description: "ALLPLAN Exchange ile plan dağıtımı ve otomatik bildirimler.", image: planDistributionImg },
-  { title: "Analitik Model Üretimi", description: "AutoConverter ile yapısal analize hazır modeller.", image: analyticalModelImg },
-  { title: "Tasarım Kontrolü", description: "Solibri Inside ile model kontrolleri.", youtubeId: "t4axrE0TWO4", thumbnailUrl: designCheckingImg },
-  { title: "Ofis Ekip Çalışması", description: "Çalışma Grubu Yöneticisi ile verimli ekip çalışması.", image: workgroupManagerImg },
-  { title: "Bulut Destekli Proje Kaynakları", description: "Tamamen bulut tabanlı kaynak dağıtımı.", image: cloudResourcesImg },
-  { title: "ALLPLAN Model Viewer", description: "IFC ve dosya önizlemeleri.", image: modelViewerImg },
-  { title: "Bluebeam Bağlantısı", description: "Dijital teslim süreçleri için entegrasyon.", youtubeId: "u4GZUL7WdQU", thumbnailUrl: bluebeamConnectionImg },
-];
-
 const purchaseOptions: FeatureItem[] = [
-  { title: "Lisans Server", description: "Lisansların çok kullanıcıyla optimal kullanımı.", image: licenseServerImg },
-  { title: "BIMPLUS Pro", description: "Ek Bimplus Pro lisansları.", image: bimplusProPurchaseImg },
-  { title: "ALLPLAN Bulut Depolama", description: "Ek depolama alanı.", image: cloudStorageImg },
+  { title: "Lisans Server", description: "Mevcut lisansların birden fazla kullanıcı tarafından optimal şekilde kullanılmasını sağlar. Ofis dışında lisans kullanımı mümkündür.", image: licenseServerImg },
+  { title: "BIMPLUS Pro", description: "Bulut iş birliği kapasitenizi artırmak için ek Bimplus Pro lisansları.", image: bimplusProPurchaseImg },
+  { title: "ALLPLAN Bulut Depolama", description: "Projelerinizin kesintisiz devam etmesini sağlamak için ek depolama alanı.", image: cloudStorageImg },
 ];
 
 const FeatureCard = ({ feature }: { feature: FeatureItem }) => (
@@ -150,25 +130,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">ALLPLAN Bulut Hizmetleri</h2>
-            <p className="text-xl text-muted-foreground">Bulut Tabanlı İşbirliği</p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {cloudServices.map((service, index) => (
-              <FeatureCard key={index} feature={service} />
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <p className="text-muted-foreground mb-6">İşbirliğinizi bir üst seviyeye taşıyan araçlara anında erişim imkanı sağlayın.</p>
-            <Button asChild>
-              <Link href="/solutions/bimplus">ALLPLAN Bulut Hizmetleri</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      <CloudServicesSection />
 
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">

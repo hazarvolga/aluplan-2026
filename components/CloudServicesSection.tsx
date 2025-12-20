@@ -12,6 +12,7 @@ import clashDetectionImg from "@/assets/products/allplan-professional/clash-dete
 import workgroupManagerImg from "@/assets/products/allplan-professional/workgroup-manager.jpg";
 import modelViewerImg from "@/assets/products/allplan-professional/model-viewer.jpg";
 import bimplusProImg from "@/assets/products/allplan-professional/bimplus-pro.jpg";
+import cloudBasedCollabImg from "@/assets/products/allplan-concept/remote/cloud/cloud_based_collaboration.jpg";
 
 interface CloudServiceItem {
     title: string;
@@ -25,7 +26,7 @@ interface CloudServicesSectionProps {
 }
 
 const baseCloudServices: CloudServiceItem[] = [
-    { title: "Bulut Tabanlı İşbirliği", description: "Bimplus Pro, bulut tabanlı BIM işbirliği platformu.", youtubeId: "7xzpEhLQhEI", image: cloudResourcesImg },
+    { title: "Bulut Tabanlı İşbirliği", description: "Bimplus Pro, bulut tabanlı BIM işbirliği platformu.", youtubeId: "7xzpEhLQhEI", image: cloudBasedCollabImg },
     { title: "Proje Takım Çalışması", description: "ALLPLAN Share, bir şirket ağı üzerinden ekip çalışmasını sağlar; uzaktan çalışan ekip üyeleri için de idealdir.", image: projectTeamworkImg },
     { title: "Çizim ve Plan Dağıtımı", description: "Çeşitli plan formatlarının oluşturulmasını ve dağıtımını yönetmek için özel olarak tasarlanmış web tabanlı plan dağıtım aracı ALLPLAN Exchange, ayrıca e-posta grupları aracılığıyla otomatik değişiklik bildirimleri sağlar.", image: planDistributionImg },
     { title: "Analitik Model Üretimi", description: "AutoConverter aracılığıyla geometrik modellerin, Frilo Statics, Scia Engineer gibi yapısal analiz çözümleri tarafından doğrudan kullanılabilen analitik modellere akıllı bir şekilde dönüştürülmesi.", image: analyticalModelImg },

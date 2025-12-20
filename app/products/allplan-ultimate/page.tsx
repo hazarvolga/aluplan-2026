@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import VideoModal from "@/components/VideoModal";
+import CloudServicesSection from "@/components/CloudServicesSection";
 
 import workWayWantIcon from "@/assets/products/allplan-ultimate/work-way-want.png";
 import powerfulModelingIcon from "@/assets/products/allplan-ultimate/powerful-modeling.png";
@@ -37,16 +38,7 @@ import visualizationImg from "@/assets/products/allplan-ultimate/visualization.j
 import advancedVisualizationImg from "@/assets/products/allplan-ultimate/advanced-visualization.jpg";
 import aiVisualizationImg from "@/assets/products/allplan-ultimate/ai-visualization.jpg";
 
-import projectTeamworkImg from "@/assets/products/allplan-ultimate/project-teamwork.jpg";
-import planDistributionImg from "@/assets/products/allplan-ultimate/plan-distribution.jpg";
-import analyticalModelImg from "@/assets/products/allplan-ultimate/analytical-model.jpg";
-import workgroupManagerImg from "@/assets/products/allplan-ultimate/workgroup-manager.jpg";
-import cloudResourcesImg from "@/assets/products/allplan-ultimate/cloud-resources.jpg";
-import modelViewerImg from "@/assets/products/allplan-ultimate/model-viewer.jpg";
 import connexisImg from "@/assets/products/allplan-ultimate/connexis.jpg";
-import cloudBasedCollabOverlay from "@/assets/products/allplan-concept/remote/cloud/cloud_based_collaboration.jpg";
-import designCheckingOverlay from "@/assets/products/allplan-concept/remote/cloud/design_checking.jpg";
-import bluebeamConnectionOverlay from "@/assets/products/allplan-concept/remote/cloud/bluebeam_connection.jpg";
 
 import licenseServerImg from "@/assets/products/allplan-ultimate/license-server.jpg";
 import bimplusProImg from "@/assets/products/allplan-ultimate/bimplus-pro.jpg";
@@ -70,43 +62,35 @@ export default function Page() {
   ];
 
   const coreFeatures = [
-    { title: "Arayüzler", description: "IFC, BCF, PDF, RVT, 3DM, SKP, OBJ, LandXML, DWG, DGN, C4D, STL, WRL, SAF ve daha fazlası.", image: interfacesImg },
-    { title: "Harici Veri Kaynakları", description: "GIS Bağlayıcı ve İçerik Bağlayıcı.", youtubeId: "LF6p7dQASR8", thumbnailUrl: "/assets/allplan-ultimate/core/external-data-sources.jpg" },
-    { title: "3D Modelleme", description: "Parasolid çekirdeğiyle yüksek performanslı 3D.", youtubeId: "kxDkWW01hRY", thumbnailUrl: "/assets/allplan-ultimate/core/3d-modeling.jpg" },
-    { title: "2D Çizim", description: "Hassas 2D çizim işlevleri.", youtubeId: "_b6Z-1U8Ri4", thumbnailUrl: "/assets/allplan-ultimate/core/2d-drafting.jpg" },
-    { title: "Çarpışma Tespiti", description: "Yumuşak/sert çakışmalar için araçlar.", youtubeId: "gZuNqBEX4GA", thumbnailUrl: "/assets/allplan-ultimate/core/clash-detection.jpg" },
-    { title: "BIM EASY", description: "Özelleştirilebilir şirket standardı.", youtubeId: "RyUl97kMQ88", thumbnailUrl: "/assets/allplan-ultimate/core/content-package-bim-easy.jpg" },
-    { title: "Yapı Bileşenleri", description: "Duvar, döşeme, kiriş, kolon, temel, merdiven, çatı, pencere, kapı, cephe.", youtubeId: "9lPGIYswwgE", thumbnailUrl: "/assets/allplan-ultimate/core/building-components.jpg" },
-    { title: "Arazi Modeli", description: "Ölçüm veya nokta bulutuna dayalı arazi.", image: terrainModelImg },
-    { title: "Kentsel/Peyzaj", description: "Kütle modelleri ve bitkilendirme planları.", image: urbanLandscapeImg },
-    { title: "Kanalizasyon/Altyapı", description: "Su, atık su, elektrik, internet, doğalgaz, merkezi ısıtma.", image: sewerageUtilitiesImg },
-    { title: "Miktar/Maliyet", description: "Doğrulanabilir metraj ve maliyetlendirme.", image: quantityCostingImg },
-    { title: "Donatı", description: "Çubuk, ağ, BAMTEC halıları.", youtubeId: "SB-ULI92gKY", thumbnailUrl: "/assets/allplan-ultimate/core/reinforcement.jpg" },
-    { title: "Çelik Bağlantılar", description: "Cıvatalı ve kaynaklı bağlantılar.", youtubeId: "JnxPHPvNG_M", thumbnailUrl: "/assets/allplan-ultimate/core/steel-connections.jpg" },
-    { title: "Yollar", description: "Parametrik yol, kavşak ve dönüş yolu analizi.", youtubeId: "PGTnLKV0OPE", thumbnailUrl: "/assets/allplan-ultimate/core/roads.jpg" },
-    { title: "Şantiye Hazırlığı", description: "Vinç, konteyner, çit ve ekipman yerleşimi.", image: constructionSiteImg },
-    { title: "Zemin Çalışmaları", description: "Kazık ve ankraj çözümleri.", image: groundworksImg },
-    { title: "Kazı", description: "Kazı modelleme ve çizimleri.", image: excavationImg },
-    { title: "Prefabrik Tasarım", description: "Akıllı prefabrik bileşenler.", image: precastDesignImg },
-    { title: "Eleman Planı", description: "Tekil eleman çizimleri – şablon bazlı.", image: elementPlanImg },
-    { title: "Görselleştirme", description: "Vulkan tabanlı görselleştirme; Lumion/Twinmotion.", youtubeId: "IqNuiMaveas", thumbnailUrl: "/assets/allplan-ultimate/core/visualization.jpg" },
-    { title: "Gelişmiş Görselleştirme", description: "Redshift GPU hızlandırma.", image: advancedVisualizationImg },
-    { title: "AI Görselleştirme", description: "Nemetschek ve Veras AI Visualizer entegrasyonu.", image: aiVisualizationImg },
-    { title: "Parametrik Modelleme", description: "Köprü, tünel, istinat, bariyer ve prekast kiriş köprüleri.", image: parametricModelingImg },
-    { title: "Parametrik Ön Germe", description: "Tendon modelleme.", image: parametricPrestressingImg },
+    { title: "Arayüzler", description: "Sorunsuz veri alışverişi için tüm ilgili dosya arayüzleri, IFC, BCF, PDF, RVT, 3DM, SKP, OBJ, LandXML, DWG, DGN, C4D, STL, WRL, SAF ve daha fazlasını içerir. Yazılım arayüzleri (örn. Python API ve Görsel Betikleme) otomatik iş akışlarını sağlar.", image: interfacesImg },
+    { title: "Harici Veri Kaynakları", description: "GIS bilgilerini, 3D içerik ve dokuları içe aktarmak için GIS Bağlayıcı ve İçerik Bağlayıcı.", youtubeId: "LF6p7dQASR8", thumbnailUrl: "/assets/allplan-ultimate/core/external-data-sources.jpg" },
+    { title: "3D Modelleme", description: "Son derece karmaşık ve zorlu geometriler için yüksek performanslı 3D modelleme. Modelleme işlevselliği, Siemens Parasolid modelleme çekirdeği ile desteklenmektedir.", youtubeId: "kxDkWW01hRY", thumbnailUrl: "/assets/allplan-ultimate/core/3d-modeling.jpg" },
+    { title: "2D Çizim", description: "Çekici, özlü ve detaylı çizimler için hassas 2D çizim için kapsamlı işlevsellik.", youtubeId: "_b6Z-1U8Ri4", thumbnailUrl: "/assets/allplan-ultimate/core/2d-drafting.jpg" },
+    { title: "Çarpışma Tespiti", description: "Yumuşak ve sert çarpışmaları tanımlamak için araç.", youtubeId: "gZuNqBEX4GA", thumbnailUrl: "/assets/allplan-ultimate/core/clash-detection.jpg" },
+    { title: "İçerik Paketi BIM EASY", description: "Önceden tanımlanmış ancak özelleştirilebilir şirket standardı. Modellerin ve çizimlerin oluşturulmasında tutarlı bir çalışma şekli sağlar. Başlangıçta kolaylık sağlar, verimliliği artırır ve özellikle openBIM projelerinde iyi yapılandırılmış veri alışverişini garanti eder.", youtubeId: "RyUl97kMQ88", thumbnailUrl: "/assets/allplan-ultimate/core/content-package-bim-easy.jpg" },
+    { title: "Yapı Bileşenleri", description: "Duvarlar, döşemeler, kirişler, kolonlar, temeller, merdivenler, çatılar, pencereler, kapılar ve cepheler gibi esnek yapı bileşenleri.", youtubeId: "9lPGIYswwgE", thumbnailUrl: "/assets/allplan-ultimate/core/building-components.jpg" },
+    { title: "Arazi Modeli", description: "Ölçüm noktaları veya nokta bulutlarına dayanan güçlü arazi modelleme.", image: terrainModelImg },
+    { title: "Kentsel ve Peyzaj Tasarımı", description: "Kütle modelleri, kentsel ve yer tasarımı ile birlikte bitkilendirme planları için işlevler.", image: urbanLandscapeImg },
+    { title: "Kanalizasyon ve Altyapı", description: "Su, atık su, elektrik, internet, doğalgaz veya merkezi ısıtma gibi hizmetlerin rotalanması.", image: sewerageUtilitiesImg },
+    { title: "Miktar Hesaplaması ve Maliyetlendirme", description: "Modelleme yapılmış ve yapılmamış nesnelerin kesin, doğrulanabilir miktar hesaplaması ve maliyetlendirilmesi.", image: quantityCostingImg },
+    { title: "Donatı", description: "Son derece güçlü donatı işlevselliği, çubuk donatısı, ağ donatısı ve BAMTEC halılarını içerir.", youtubeId: "SB-ULI92gKY", thumbnailUrl: "/assets/allplan-ultimate/core/reinforcement.jpg" },
+    { title: "Çelik Bağlantılar", description: "Cıvatalı ve kaynaklı çelik bağlantılar için araçlar.", youtubeId: "JnxPHPvNG_M", thumbnailUrl: "/assets/allplan-ultimate/core/steel-connections.jpg" },
+    { title: "Yollar", description: "Tam parametrik yol tasarımı, kesişmeler, trafik daireleri ve araç dönme yolu analizi dahil.", youtubeId: "PGTnLKV0OPE", thumbnailUrl: "/assets/allplan-ultimate/core/roads.jpg" },
+    { title: "Şantiye Hazırlığı", description: "Vinçler, konteynerler, şantiye çitleri ve inşaat sahası yerleşimini planlamak için diğer ekipmanlar.", image: constructionSiteImg },
+    { title: "Zemin Çalışmaları", description: "Akıllı kazı destekleme sistemleri, bored pile (delikli kazık), soldier pile duvarları ve zemin ankrajları gibi çözümleri içerir.", image: groundworksImg },
+    { title: "Kazı", description: "Kazı alanlarını modellemek ve kazı çizimleri oluşturmak için kullanılan araçlar.", image: excavationImg },
+    { title: "Prefabrik Tasarım ve Detaylandırma", description: "Akıllı prefabrik beton bileşenleri, örneğin kirişler, kolonlar, merdivenler vb.", image: precastDesignImg },
+    { title: "Eleman Planı", description: "Tekil elemanların detaylı çizimlerinin otomatik, şablon bazlı olarak üretilmesi.", image: elementPlanImg },
+    { title: "Görselleştirme", description: "Vulkan gibi en son teknolojilere dayanan geniş bir görselleştirme yelpazesi. Gerçek zamanlı Render ve CineWare'ı içerir, Lumion ve Twinmotion'a canlı bağlantılar.", youtubeId: "IqNuiMaveas", thumbnailUrl: "/assets/allplan-ultimate/core/visualization.jpg" },
+    { title: "Gelişmiş Görselleştirme", description: "MAXON'dan yüksek performanslı GPU hızlandırmalı Redshift render.", image: advancedVisualizationImg },
+    { title: "AI Tabanlı Görselleştirme", description: "İlham verici, ayrıntılı AI destekli görselleştirmeler oluşturmak için bağlantılar. Nemetschek AI Visualizer ve EvolveLab'ın Veras AI Visualizer ile entegrasyonu içerir.", image: aiVisualizationImg },
+    { title: "Parametrik Modelleme", description: "Köprüler, tüneller, istinat duvarları, gürültü bariyerleri gibi sivil yapıların dört boyutlu parametrik modelleme ve detaylandırması için özel bir çözüm; ayrıca prefabrik kiriş köprüleri gibi özel köprü türlerini de içerir.", image: parametricModelingImg },
+    { title: "Parametrik Ön Germe", description: "Ön germe tendonlarının modellenmesi.", image: parametricPrestressingImg },
   ];
 
-  const cloudServices = [
-    { title: "Bulut Tabanlı İşbirliği", description: "Bimplus Pro.", youtubeId: "7xzpEhLQhEI", thumbnailUrl: cloudBasedCollabOverlay },
-    { title: "Proje Takım Çalışması", description: "ALLPLAN Share.", image: projectTeamworkImg },
-    { title: "Çizim/Plan Dağıtımı", description: "ALLPLAN Exchange.", image: planDistributionImg },
-    { title: "Analitik Model Üretimi", description: "AutoConverter.", image: analyticalModelImg },
-    { title: "Tasarım Kontrolü", description: "Solibri Inside.", youtubeId: "t4axrE0TWO4", thumbnailUrl: designCheckingOverlay },
-    { title: "Ofis Ekip Çalışması", description: "Çalışma Grubu Yöneticisi.", image: workgroupManagerImg },
-    { title: "Bulut Proje Kaynakları", description: "Tam bulut kaynak dağıtımı.", image: cloudResourcesImg },
-    { title: "Model Viewer", description: "IFC önizleme.", image: modelViewerImg },
-    { title: "Bluebeam Bağlantısı", description: "Dijital teslim entegrasyonu.", youtubeId: "u4GZUL7WdQU", thumbnailUrl: bluebeamConnectionOverlay },
-    { title: "Connexis", description: "Çelik bağlantılar için bulut görüntüleme/işbirliği.", image: connexisImg },
+  // Connexis - Ultimate'a özel ek hizmet
+  const additionalCloudServices = [
+    { title: "Bağlantı Tasarım Aracı - Connexis", description: "Çelik bağlantılar için bulut tabanlı görüntüleme ve iş birliği aracı.", image: connexisImg },
   ];
 
   const purchaseOptions = [
@@ -171,7 +155,15 @@ export default function Page() {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-16">ALLPLAN Ultimate&apos;in Faydaları</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
-              <Card key={index} className="overflow-hidden"><CardContent className="p-6 flex gap-4 items-start"><div className="flex-shrink-0"><Image src={benefit.icon} alt={benefit.title} width={48} height={48} className="w-12 h-12 object-contain" /></div><div><span className="text-accent text-sm font-medium">/ {benefit.subtitle}</span>{benefit.title && <h3 className="text-xl font-bold text-foreground">{benefit.title}</h3>}<p className="text-muted-foreground text-sm mt-2">{benefit.description}</p></div></CardContent></Card>
+              <div key={index} className="group relative bg-card p-6 pr-20 pb-10 rounded-2xl border border-border shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-accent/10 to-transparent rounded-bl-full -mr-4 -mt-4 transition-all group-hover:from-accent/20" />
+                <div className="absolute top-4 right-4 z-10 w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                  <Image src={benefit.icon} alt={benefit.title || benefit.subtitle} width={28} height={28} className="w-7 h-7 object-contain" />
+                </div>
+                <span className="text-accent text-sm font-medium block mb-1">/ {benefit.subtitle}</span>
+                {benefit.title && <h3 className="font-display text-lg font-bold text-foreground mb-3 group-hover:text-accent transition-colors">{benefit.title}</h3>}
+                <p className="text-muted-foreground text-sm leading-relaxed">{benefit.description}</p>
+              </div>
             ))}
           </div>
           <div className="flex flex-wrap gap-4 justify-center mt-12">
@@ -202,17 +194,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-16">ALLPLAN Bulut Hizmetleri</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {cloudServices.map((service, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow"><div className="aspect-video relative">{service.youtubeId ? (<VideoModal youtubeId={service.youtubeId} title={service.title} thumbnailUrl={service.thumbnailUrl} className="w-full h-full" />) : (<Image src={service.image!} alt={service.title} fill className="object-cover" />)}</div><CardContent className="p-6"><h3 className="text-xl font-semibold text-foreground mb-3">{service.title}</h3><p className="text-muted-foreground text-sm">{service.description}</p></CardContent></Card>
-            ))}
-          </div>
-          <div className="mt-12 text-center"><h3 className="text-xl font-semibold text-foreground mb-4">Daha fazla bilgi edin</h3><p className="text-muted-foreground mb-6">İşbirliğinizi bir üst seviyeye taşıyan araçlara anında erişim imkanı sağlayın.</p><Button asChild><a href="https://aluplan.com.tr/allplan-bulut-hizmetleri-sunlari-icerir/">ALLPLAN Bulut Hizmetleri</a></Button></div>
-        </div>
-      </section>
+      <CloudServicesSection additionalServices={additionalCloudServices} />
 
       <section className="py-20 bg-background"><div className="container mx-auto px-4"><div className="text-center mb-12"><h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">SSS - ALLPLAN Ultimate</h2></div><div className="max-w-3xl mx-auto"><Accordion type="single" collapsible className="w-full">{faqs.map((faq, index) => (<AccordionItem key={index} value={`faq-${index}`}><AccordionTrigger className="text-foreground text-base">{faq.question}</AccordionTrigger><AccordionContent className="text-muted-foreground">{faq.answer}</AccordionContent></AccordionItem>))}</Accordion></div></div></section>
     </div>
