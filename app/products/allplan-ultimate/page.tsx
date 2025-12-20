@@ -94,16 +94,16 @@ export default function Page() {
   ];
 
   const purchaseOptions = [
-    { title: "BIM²form – Kalıp", description: "Kalıp yerleştirme araçları.", youtubeId: "Ug-CNBbqIu4" },
-    { title: "Lisans Server", description: "Lisansların çok kullanıcıyla optimal kullanımı.", image: licenseServerImg },
-    { title: "BIMPLUS Pro", description: "Ek Bimplus Pro lisansları.", image: bimplusProImg },
-    { title: "ALLPLAN Bulut Depolama", description: "Ek depolama alanı.", image: cloudStorageImg },
+    { title: "BIM²form Eklentisi - Kalıp", description: "Kalıp yerleştirmek için araçlar.", youtubeId: "Ug-CNBbqIu4" },
+    { title: "Lisans Server", description: "Mevcut lisansların birden fazla kullanıcı tarafından optimal şekilde kullanılmasını sağlar. Ofis dışında lisans kullanımı mümkündür.", image: licenseServerImg },
+    { title: "BIMPLUS Pro", description: "Bulut iş birliği kapasitenizi artırmak için ek Bimplus Pro lisansları.", image: bimplusProImg },
+    { title: "ALLPLAN Bulut Depolama", description: "Projelerinizin kesintisiz devam etmesini sağlamak için ek depolama alanı.", image: cloudStorageImg },
   ];
 
   const faqs = [
-    { question: "ALLPLAN ULTIMATE, ALLPLAN AEC'Yİ Mİ DEĞİŞTİRİR?", answer: "Evet, ALLPLAN 2025 sürümünün piyasaya sürülmesiyle birlikte, ALLPLAN Ultimate edisyonu, abonelikli ALLPLAN AEC yapılandırmasını değiştirmiştir." },
-    { question: "ALLPLAN AEC VE ALLPLAN ULTIMATE ARASINDAKİ FARKLAR NELERDİR?", answer: "ALLPLAN AEC ve ALLPLAN Ultimate arasında iki ana fark vardır: parametrik ve ön germe iş akışları ve SCIA Engineer Concept." },
-    { question: "ALLPLAN ULTIMATE TASARIM, MÜHENDİSLİK VE İNŞAAT İŞİ İÇİN MİDİR?", answer: "Evet, ALLPLAN Ultimate, AEC şirketleri için tam tasarımdan inşaata iş akışlarını kapsayan bir BIM çözümüdür." },
+    { question: "ALLPLAN ULTIMATE, ALLPLAN AEC'YI MI DEĞİŞTİRİR?", answer: "Evet, ALLPLAN 2025 sürümünün piyasaya sürülmesiyle birlikte, ALLPLAN Ultimate edisyonu, abonelikli ALLPLAN AEC yapılandırmasını değiştirmiştir." },
+    { question: "ALLPLAN AEC VE ALLPLAN ULTIMATE ARASINDAKİ FARKLAR NELERDİR?", answer: "ALLPLAN AEC ve ALLPLAN Ultimate abonelikleri arasında iki ana fark bulunmaktadır. ALLPLAN AEC'nin tüm işlevselliğine ek olarak, ALLPLAN Ultimate parametrik ve pre-stressing iş akışlarını, ayrıca SCIA Engineer Concept*'i de içermektedir." },
+    { question: "ALLPLAN ULTIMATE TASARIM, MÜHENDİSLİK VE İNŞAAT İŞİ İÇİN MİDİR?", answer: "Evet, ALLPLAN Ultimate, mimarlık, mühendislik ve inşaat şirketleri için bir BIM çözümüdür. Tam tasarımdan inşaata iş akışlarını destekleyen, bina ve altyapı projelerinin çok malzemeli modellemesi, prefabrike ve inşaat iş akışları için araçlar içeren bir BIM çözümüdür." },
   ];
 
   return (
@@ -196,7 +196,32 @@ export default function Page() {
 
       <CloudServicesSection additionalServices={additionalCloudServices} />
 
-      <section className="py-20 bg-background"><div className="container mx-auto px-4"><div className="text-center mb-12"><h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">SSS - ALLPLAN Ultimate</h2></div><div className="max-w-3xl mx-auto"><Accordion type="single" collapsible className="w-full">{faqs.map((faq, index) => (<AccordionItem key={index} value={`faq-${index}`}><AccordionTrigger className="text-foreground text-base">{faq.question}</AccordionTrigger><AccordionContent className="text-muted-foreground">{faq.answer}</AccordionContent></AccordionItem>))}</Accordion></div></div></section>
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Satın Alınabilir Seçenekler</h2>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {purchaseOptions.map((option, index) => (
+              <Card key={index} className="overflow-hidden group border border-white/10 hover:border-white/20 bg-graphite-950">
+                <div className="aspect-video overflow-hidden relative">
+                  {option.youtubeId ? (
+                    <VideoModal youtubeId={option.youtubeId} title={option.title} className="w-full h-full" />
+                  ) : (
+                    <Image src={option.image!} alt={option.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
+                  )}
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-white mb-3">{option.title}</h3>
+                  <p className="text-white/80 text-sm">{option.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-muted/30"><div className="container mx-auto px-4"><div className="text-center mb-12"><h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">SSS - ALLPLAN Ultimate</h2></div><div className="max-w-3xl mx-auto"><Accordion type="single" collapsible className="w-full">{faqs.map((faq, index) => (<AccordionItem key={index} value={`faq-${index}`}><AccordionTrigger className="text-foreground text-base">{faq.question}</AccordionTrigger><AccordionContent className="text-muted-foreground">{faq.answer}</AccordionContent></AccordionItem>))}</Accordion></div></div></section>
     </div>
   );
 }
