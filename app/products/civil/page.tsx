@@ -31,6 +31,8 @@ import workflowBridgeAnalysisImg from "@/assets/products/civil/workflow-bridge-a
 import workflowSciaCivilImg from "@/assets/products/civil/workflow-scia-civil.jpg";
 import connexisImg from "@/assets/products/civil/connexis.jpg";
 import civilExternalDataImg from "@/assets/products/civil/external-data-sources.jpg";
+import civil3dModelingImg from "@/assets/products/civil/3d-modeling.jpg";
+import bridgeCodeDesignImg from "@/assets/products/civil/bridge-code-based-design.jpg";
 
 // Ultimate/Professional'dan ortak görseller
 import interfacesImg from "@/assets/products/allplan-ultimate/interfaces.jpg";
@@ -124,28 +126,27 @@ export default function Page() {
     { title: "Parametrik Modelleme", description: "Köprüler, tüneller, istinat duvarları, gürültü bariyerleri gibi sivil yapıların dört boyutlu parametrik modelleme ve detaylandırması için özel bir çözüm; ayrıca prefabrik kiriş köprüleri gibi özel köprü türlerini de içerir.", image: civilParametricModelingImg },
     { title: "Parametrik Ön Germe", description: "Ön germe tendonlarının modellenmesi.", image: civilParametricPrestressingImg },
     { title: "Köprü Yapısal Analizi", description: "Köprülerin yapısal analizi için özel bir çözüm.", image: bridgeStructuralAnalysisImg },
-    { title: "Köprü Kod Tabanlı Tasarım", description: "Eurocode'a ve ulusal eklerine, ayrıca AASHTO LRFD'ye göre tasarım ve kontroller.", image: drafting2dImg },
+    { title: "Köprü Kod Tabanlı Tasarım", description: "Eurocode'a ve ulusal eklerine, ayrıca AASHTO LRFD'ye göre tasarım ve kontroller.", image: bridgeCodeDesignImg },
     { title: "Arayüzler", description: "Sorunsuz veri alışverişi için tüm ilgili dosya arayüzleri, IFC, BCF, PDF, RVT, 3DM, SKP, OBJ, LandXML, DWG, DGN, C4D, STL, WRL, SAF ve daha fazlasını içerir. Yazılım arayüzleri (örn. Python API ve Görsel Betikleme) otomatik iş akışlarını sağlar.", image: interfacesImg },
     { title: "Harici Veri Kaynakları", description: "GIS bilgilerini, 3D içerik ve dokuları içe aktarmak için GIS Bağlayıcı ve İçerik Bağlayıcı.", youtubeId: "LF6p7dQASR8", thumbnailUrl: civilExternalDataImg },
-    { title: "3D Modelleme", description: "Son derece karmaşık ve zorlu geometriler için yüksek performanslı 3D modelleme. Modelleme işlevselliği, Siemens Parasolid modelleme çekirdeği ile desteklenmektedir.", youtubeId: "_b6Z-1U8Ri4", thumbnailUrl: modeling3dImg },
-    { title: "2D Çizim", description: "Çekici, özlü ve detaylı çizimler için hassas 2D çizim için kapsamlı işlevsellik.", youtubeId: "IqNuiMaveas", thumbnailUrl: drafting2dImg },
-    { title: "Görselleştirme", description: "Vulkan gibi en son teknolojilere dayanan geniş bir görselleştirme yelpazesi. Gerçek zamanlı Render ve CineWare'ı içerir, Lumion ve Twinmotion'a canlı bağlantılar.", image: visualizationImg },
+    { title: "3D Modelleme", description: "Son derece karmaşık ve zorlu geometriler için yüksek performanslı 3D modelleme. Modelleme işlevselliği, Siemens Parasolid modelleme çekirdeği ile desteklenmektedir.", youtubeId: "kxDkWW01hRY", thumbnailUrl: civil3dModelingImg },
+    { title: "2D Çizim", description: "Çekici, özlü ve detaylı çizimler için hassas 2D çizim için kapsamlı işlevsellik.", youtubeId: "_b6Z-1U8Ri4", thumbnailUrl: drafting2dImg },
+    { title: "Görselleştirme", description: "Vulkan gibi en son teknolojilere dayanan geniş bir görselleştirme yelpazesi. Gerçek zamanlı Render ve CineWare'ı içerir, Lumion ve Twinmotion'a canlı bağlantılar.", youtubeId: "IqNuiMaveas", thumbnailUrl: visualizationImg },
     { title: "Gelişmiş Görselleştirme", description: "MAXON'dan yüksek performanslı GPU hızlandırmalı Redshift render.", image: advancedVisualizationImg },
-    { title: "AI Tabanlı Görselleştirme", description: "İlham verici, ayrıntılı AI destekli görselleştirmeler oluşturmak için bağlantılar. Nemetschek AI Visualizer ve EvolveLab'ın Veras AI Visualizer ile entegrasyonu içerir.", image: aiVisualizationImg },
     { title: "Çarpışma Tespiti", description: "Yumuşak ve sert çarpışmaları tanımlamak için araç.", youtubeId: "gZuNqBEX4GA", thumbnailUrl: clashDetectionImg },
     { title: "İçerik Paketi BIM EASY", description: "Önceden tanımlanmış ancak özelleştirilebilir şirket standardı. Modellerin ve çizimlerin oluşturulmasında tutarlı bir çalışma şekli sağlar. Başlangıçta kolaylık sağlar, verimliliği artırır ve özellikle openBIM projelerinde iyi yapılandırılmış veri alışverişini garanti eder.", youtubeId: "RyUl97kMQ88", thumbnailUrl: bimEasyImg },
     { title: "Yapı Bileşenleri", description: "Duvarlar, döşemeler, kirişler, kolonlar, temeller, merdivenler, çatılar, pencereler, kapılar ve cepheler gibi esnek yapı bileşenleri.", youtubeId: "DX7oODCOgeI", thumbnailUrl: buildingComponentsImg },
     { title: "Arazi Modeli", description: "Ölçüm noktaları veya nokta bulutlarına dayanan güçlü arazi modelleme.", image: terrainModelImg },
     { title: "Kentsel ve Peyzaj Tasarımı", description: "Kütle modelleri, kentsel ve yer tasarımı ile birlikte bitkilendirme planları için işlevler.", image: urbanLandscapeImg },
-    { title: "Kanalizasyon ve Altyapı", description: "Su, atık su, elektrik, internet, doğalgaz veya merkezi ısıtma gibi hizmetlerin rotalanması.", youtubeId: "toZosw6NtMQ", thumbnailUrl: sewerageUtilitiesImg },
-    { title: "Miktar Hesaplaması ve Maliyetlendirme", description: "Modelleme yapılmış ve yapılmamış nesnelerin kesin, doğrulanabilir miktar hesaplaması ve maliyetlendirilmesi.", youtubeId: "SB-ULI92gKY", thumbnailUrl: quantityCostingImg },
-    { title: "Donatı", description: "Son derece güçlü donatı işlevselliği, çubuk donatısı, ağ donatısı ve BAMTEC halılarını içerir.", youtubeId: "JnxPHPvNG_M", thumbnailUrl: reinforcementImg },
-    { title: "Çelik Bağlantılar", description: "Cıvatalı ve kaynaklı çelik bağlantılar için araçlar.", youtubeId: "PGTnLKV0OPE", thumbnailUrl: steelConnectionsImg },
-    { title: "Yollar", description: "Tam parametrik yol tasarımı, kesişmeler, trafik daireleri ve araç dönme yolu analizi dahil.", image: roadsImg },
-    { title: "Şantiye Hazırlığı", description: "Vinçler, konteynerler, şantiye çitleri ve inşaat sahası yerleşimini planlamak için diğer ekipmanlar.", youtubeId: "pAKk-3RHhXo", thumbnailUrl: constructionSiteImg },
-    { title: "Zemin Çalışmaları", description: "Akıllı kazı destekleme sistemleri, bored pile (delikli kazık), soldier pile duvarları ve zemin ankrajları gibi çözümleri içerir.", youtubeId: "YYC94jU_pvg", thumbnailUrl: groundworksImg },
-    { title: "Kazı", description: "Kazı alanlarını modellemek ve kazı çizimleri oluşturmak için kullanılan araçlar.", youtubeId: "jECn0KjKgmY", thumbnailUrl: excavationImg },
-    { title: "Prefabrik Tasarım ve Detaylandırma", description: "Akıllı prefabrik beton bileşenleri, örneğin kirişler, kolonlar, merdivenler vb.", image: precastDesignImg },
+    { title: "Kanalizasyon ve Altyapı", description: "Su, atık su, elektrik, internet, doğalgaz veya merkezi ısıtma gibi hizmetlerin rotalanması.", image: sewerageUtilitiesImg },
+    { title: "Miktar Hesaplaması ve Maliyetlendirme", description: "Modelleme yapılmış ve yapılmamış nesnelerin kesin, doğrulanabilir miktar hesaplaması ve maliyetlendirilmesi.", youtubeId: "toZosw6NtMQ", thumbnailUrl: quantityCostingImg },
+    { title: "Donatı", description: "Son derece güçlü donatı işlevselliği, çubuk donatısı, ağ donatısı ve BAMTEC halılarını içerir.", youtubeId: "SB-ULI92gKY", thumbnailUrl: reinforcementImg },
+    { title: "Çelik Bağlantılar", description: "Cıvatalı ve kaynaklı çelik bağlantılar için araçlar.", youtubeId: "JnxPHPvNG_M", thumbnailUrl: steelConnectionsImg },
+    { title: "Yollar", description: "Tam parametrik yol tasarımı, kesişmeler, trafik daireleri ve araç dönme yolu analizi dahil.", youtubeId: "PGTnLKV0OPE", thumbnailUrl: roadsImg },
+    { title: "Şantiye Hazırlığı", description: "Vinçler, konteynerler, şantiye çitleri ve inşaat sahası yerleşimini planlamak için diğer ekipmanlar.", image: constructionSiteImg },
+    { title: "Zemin Çalışmaları", description: "Akıllı kazı destekleme sistemleri, bored pile (delikli kazık), soldier pile duvarları ve zemin ankrajları gibi çözümleri içerir.", image: groundworksImg },
+    { title: "Kazı", description: "Kazı alanlarını modellemek ve kazı çizimleri oluşturmak için kullanılan araçlar.", youtubeId: "YYC94jU_pvg", thumbnailUrl: excavationImg },
+    { title: "Prefabrik Tasarım ve Detaylandırma", description: "Akıllı prefabrik beton bileşenleri, örneğin kirişler, kolonlar, merdivenler vb.", youtubeId: "jECn0KjKgmY", thumbnailUrl: precastDesignImg },
     { title: "Eleman Planı", description: "Tekil elemanların detaylı çizimlerinin otomatik, şablon bazlı olarak üretilmesi.", image: elementPlanImg },
   ];
 
@@ -315,7 +316,7 @@ export default function Page() {
       </section>
 
       {/* ALLPLAN Bulut Hizmetleri */}
-      <CloudServicesSection additionalServices={additionalCloudServices} />
+      <CloudServicesSection variant="civil" additionalServices={additionalCloudServices} />
 
       {/* Satın Alınabilir Seçenekler */}
       <section className="py-20 bg-background">
