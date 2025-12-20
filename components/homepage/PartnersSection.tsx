@@ -1,18 +1,18 @@
 "use client"
 import { motion } from "framer-motion";
+import Image from "next/image";
 
-// Partner/integration logos - placeholders
+// Partner/integration logos
 const partners = [
-    { name: "Autodesk", category: "CAD" },
-    { name: "Tekla", category: "Structural" },
-    { name: "SCIA", category: "Analysis" },
-    { name: "Frilo", category: "Calculation" },
-    { name: "Solibri", category: "Quality" },
-    { name: "Lumion", category: "Render" },
-    { name: "Enscape", category: "Visualization" },
-    { name: "Twinmotion", category: "Visualization" },
-    { name: "Bluebeam", category: "PDF" },
-    { name: "Trimble", category: "Construction" },
+    { name: "Tekla", logo: "/images/partners/tekla.svg", hasLogo: true },
+    { name: "SCIA", logo: null, hasLogo: false },
+    { name: "Frilo", logo: "/images/partners/frilo.png", hasLogo: true },
+    { name: "Solibri", logo: "/images/partners/solibri.png", hasLogo: true },
+    { name: "Lumion", logo: null, hasLogo: false },
+    { name: "Enscape", logo: "/images/partners/enscape.png", hasLogo: true },
+    { name: "Twinmotion", logo: null, hasLogo: false },
+    { name: "Bluebeam", logo: null, hasLogo: false },
+    { name: "Trimble", logo: null, hasLogo: false },
 ];
 
 const PartnersSection = () => {
@@ -30,7 +30,7 @@ const PartnersSection = () => {
                 </div>
 
                 {/* Logo Grid */}
-                <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+                <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
                     {partners.map((partner, index) => (
                         <motion.div
                             key={partner.name}
@@ -40,10 +40,21 @@ const PartnersSection = () => {
                             transition={{ delay: index * 0.05 }}
                             className="group"
                         >
-                            <div className="h-12 px-6 flex items-center justify-center border border-white/10 rounded-lg bg-white/5 hover:bg-white/10 hover:border-white/20 transition-all duration-300 cursor-default">
-                                <span className="text-white/40 group-hover:text-white/80 text-sm font-medium transition-colors">
-                                    {partner.name}
-                                </span>
+                            <div className="h-14 px-6 flex items-center justify-center border border-white/10 rounded-xl bg-white/5 hover:bg-white/10 hover:border-white/20 transition-all duration-300 cursor-default min-w-[120px]">
+                                {partner.hasLogo && partner.logo ? (
+                                    <Image
+                                        src={partner.logo}
+                                        alt={partner.name}
+                                        width={100}
+                                        height={32}
+                                        className="h-6 w-auto object-contain opacity-60 group-hover:opacity-100 transition-opacity filter grayscale group-hover:grayscale-0"
+                                        unoptimized
+                                    />
+                                ) : (
+                                    <span className="text-white/50 group-hover:text-white/90 text-sm font-semibold tracking-wide transition-colors">
+                                        {partner.name}
+                                    </span>
+                                )}
                             </div>
                         </motion.div>
                     ))}
