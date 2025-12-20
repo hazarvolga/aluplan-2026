@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle2, ArrowRight } from "lucide-react";
@@ -10,6 +11,7 @@ interface Path {
     color: string;
     description: string;
     features: string[];
+    href: string;
 }
 
 const paths: Path[] = [
@@ -20,6 +22,7 @@ const paths: Path[] = [
         color: "#3B82F6", // Blue
         description: "Sınırsız modelleme yetenekleri ve entegre görselleştirme ile tasarım vizyonunuzu kısıtlamadan gerçeğe dönüştürün.",
         features: ["Parametrik Modelleme", "Entegre Rendering", "AI Görselleştirme", "Konsept Tasarım"],
+        href: "/products/architecture"
     },
     {
         id: "engineer",
@@ -28,6 +31,7 @@ const paths: Path[] = [
         color: "#10B981", // Emerald
         description: "Tek model üzerinden yapısal analiz, donatı detaylandırma ve metraj. Hatasız projeler, optimize edilmiş maliyetler.",
         features: ["Otomatik Donatı", "FEM Analizi", "Çakışma Kontrolü", "Maliyet Hesabı"],
+        href: "/products/allplan-aec"
     },
     {
         id: "fabricator",
@@ -36,6 +40,7 @@ const paths: Path[] = [
         color: "#F59E0B", // Amber
         description: "Modelden doğrudan fabrikaya veri aktarımı. Prekast ve çelik üretiminde maksimum verimlilik ve sıfır hata.",
         features: ["CAM Veri Çıktısı", "Lojistik Planlama", "Stok Yönetimi", "Montaj Planları"],
+        href: "/products/precast"
     },
 ];
 
@@ -92,10 +97,10 @@ const PathwaySelector = () => {
                                 <p className="text-xl text-gray-300 leading-relaxed mb-8">
                                     {activePath.description}
                                 </p>
-                                <button className="group flex items-center gap-2 text-white font-medium hover:text-gray-300 transition-colors">
+                                <Link href={activePath.href} className="group flex items-center gap-2 text-white font-medium hover:text-gray-300 transition-colors">
                                     Bu Akışı İncele
                                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                                </button>
+                                </Link>
                             </div>
 
                             {/* Features Side */}

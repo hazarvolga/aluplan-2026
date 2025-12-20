@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 
 const DeepFooter = () => {
@@ -20,7 +21,7 @@ const DeepFooter = () => {
                         Projeniz ne kadar karmaşık olursa olsun, ALLPLAN ile bir çözümü var. Mühendislerimizle konuşun.
                     </p>
 
-                    <form className="space-y-6">
+                    <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="group relative">
                                 <input
@@ -95,19 +96,19 @@ const DeepFooter = () => {
                         <div>
                             <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-6">Ürünler</h3>
                             <ul className="space-y-3">
-                                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">ALLPLAN Architecture</a></li>
-                                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">ALLPLAN Engineering</a></li>
-                                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">ALLPLAN Precast</a></li>
-                                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Bimplus</a></li>
+                                <li><Link href="/products/architecture" className="text-gray-400 hover:text-white transition-colors">ALLPLAN Architecture</Link></li>
+                                <li><Link href="/products/allplan-aec" className="text-gray-400 hover:text-white transition-colors">ALLPLAN Engineering</Link></li>
+                                <li><Link href="/products/precast" className="text-gray-400 hover:text-white transition-colors">ALLPLAN Precast</Link></li>
+                                <li><Link href="/products/allplan-bimplus" className="text-gray-400 hover:text-white transition-colors">Bimplus</Link></li>
                             </ul>
                         </div>
                         <div>
                             <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-6">Şirket</h3>
                             <ul className="space-y-3">
-                                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Hakkımızda</a></li>
-                                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Kariyer</a></li>
-                                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-                                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">İletişim</a></li>
+                                <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Hakkımızda</Link></li>
+                                <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Kariyer</Link></li>
+                                <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
+                                <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">İletişim</Link></li>
                             </ul>
                         </div>
                     </div>

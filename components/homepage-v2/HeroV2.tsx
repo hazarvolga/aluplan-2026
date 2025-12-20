@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Play, ChevronDown } from "lucide-react";
 import { useRef } from "react";
@@ -61,18 +62,18 @@ const HeroV2 = () => {
                         </p>
 
                         <div className="flex gap-4">
-                            <button className="group relative overflow-hidden rounded-full bg-white px-8 py-4 text-black transition-transform hover:scale-105">
+                            <Link href="/contact" className="group relative overflow-hidden rounded-full bg-white px-8 py-4 text-black transition-transform hover:scale-105">
                                 <span className="relative z-10 flex items-center gap-2 font-bold tracking-tight">
                                     Ücretsiz Başla
                                     <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                                 </span>
                                 <div className="absolute inset-0 -z-10 translate-y-full bg-[#3B82F6] transition-transform duration-300 group-hover:translate-y-0" />
-                            </button>
+                            </Link>
 
-                            <button className="flex items-center gap-3 rounded-full border border-white/20 bg-white/5 px-8 py-4 backdrop-blur-md transition-colors hover:bg-white/10">
+                            <Link href="/products/allplan" className="flex items-center gap-3 rounded-full border border-white/20 bg-white/5 px-8 py-4 backdrop-blur-md transition-colors hover:bg-white/10">
                                 <Play className="h-5 w-5 fill-current" />
                                 <span className="font-medium">Filmi İzle</span>
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </motion.div>
