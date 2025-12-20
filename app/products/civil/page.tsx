@@ -30,6 +30,7 @@ import workflowParametricModelingImg from "@/assets/products/civil/workflow-para
 import workflowBridgeAnalysisImg from "@/assets/products/civil/workflow-bridge-analysis.png";
 import workflowSciaCivilImg from "@/assets/products/civil/workflow-scia-civil.jpg";
 import connexisImg from "@/assets/products/civil/connexis.jpg";
+import civilExternalDataImg from "@/assets/products/civil/external-data-sources.jpg";
 
 // Ultimate/Professional'dan ortak görseller
 import interfacesImg from "@/assets/products/allplan-ultimate/interfaces.jpg";
@@ -124,8 +125,8 @@ export default function Page() {
     { title: "Parametrik Ön Germe", description: "Ön germe tendonlarının modellenmesi.", image: civilParametricPrestressingImg },
     { title: "Köprü Yapısal Analizi", description: "Köprülerin yapısal analizi için özel bir çözüm.", image: bridgeStructuralAnalysisImg },
     { title: "Köprü Kod Tabanlı Tasarım", description: "Eurocode'a ve ulusal eklerine, ayrıca AASHTO LRFD'ye göre tasarım ve kontroller.", image: drafting2dImg },
-    { title: "Arayüzler", description: "Sorunsuz veri alışverişi için tüm ilgili dosya arayüzleri, IFC, BCF, PDF, RVT, 3DM, SKP, OBJ, LandXML, DWG, DGN, C4D, STL, WRL, SAF ve daha fazlasını içerir. Yazılım arayüzleri (örn. Python API ve Görsel Betikleme) otomatik iş akışlarını sağlar.", youtubeId: "LF6p7dQASR8", thumbnailUrl: interfacesImg },
-    { title: "Harici Veri Kaynakları", description: "GIS bilgilerini, 3D içerik ve dokuları içe aktarmak için GIS Bağlayıcı ve İçerik Bağlayıcı.", youtubeId: "kxDkWW01hRY", thumbnailUrl: externalDataImg },
+    { title: "Arayüzler", description: "Sorunsuz veri alışverişi için tüm ilgili dosya arayüzleri, IFC, BCF, PDF, RVT, 3DM, SKP, OBJ, LandXML, DWG, DGN, C4D, STL, WRL, SAF ve daha fazlasını içerir. Yazılım arayüzleri (örn. Python API ve Görsel Betikleme) otomatik iş akışlarını sağlar.", image: interfacesImg },
+    { title: "Harici Veri Kaynakları", description: "GIS bilgilerini, 3D içerik ve dokuları içe aktarmak için GIS Bağlayıcı ve İçerik Bağlayıcı.", youtubeId: "LF6p7dQASR8", thumbnailUrl: civilExternalDataImg },
     { title: "3D Modelleme", description: "Son derece karmaşık ve zorlu geometriler için yüksek performanslı 3D modelleme. Modelleme işlevselliği, Siemens Parasolid modelleme çekirdeği ile desteklenmektedir.", youtubeId: "_b6Z-1U8Ri4", thumbnailUrl: modeling3dImg },
     { title: "2D Çizim", description: "Çekici, özlü ve detaylı çizimler için hassas 2D çizim için kapsamlı işlevsellik.", youtubeId: "IqNuiMaveas", thumbnailUrl: drafting2dImg },
     { title: "Görselleştirme", description: "Vulkan gibi en son teknolojilere dayanan geniş bir görselleştirme yelpazesi. Gerçek zamanlı Render ve CineWare'ı içerir, Lumion ve Twinmotion'a canlı bağlantılar.", image: visualizationImg },
