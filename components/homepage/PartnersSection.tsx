@@ -5,14 +5,14 @@ import Image from "next/image";
 // Partner/integration logos
 const partners = [
     { name: "Tekla", logo: "/images/partners/tekla.svg", hasLogo: true },
-    { name: "SCIA", logo: null, hasLogo: false },
+    { name: "SCIA", logo: "/images/partners/scia.png", hasLogo: true },
     { name: "Frilo", logo: "/images/partners/frilo.png", hasLogo: true },
     { name: "Solibri", logo: "/images/partners/solibri.png", hasLogo: true },
-    { name: "Lumion", logo: null, hasLogo: false },
+    { name: "Lumion", logo: "/images/partners/lumion.png", hasLogo: true },
     { name: "Enscape", logo: "/images/partners/enscape.png", hasLogo: true },
-    { name: "Twinmotion", logo: null, hasLogo: false },
-    { name: "Bluebeam", logo: null, hasLogo: false },
-    { name: "Trimble", logo: null, hasLogo: false },
+    { name: "Twinmotion", logo: "/images/partners/twinmotion.png", hasLogo: true },
+    { name: "Bluebeam", logo: "/images/partners/bluebeam.jpg", hasLogo: true },
+    { name: "Trimble", logo: "/images/partners/trimble.png", hasLogo: true },
 ];
 
 const PartnersSection = () => {
