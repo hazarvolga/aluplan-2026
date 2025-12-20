@@ -47,27 +47,27 @@ export default function Page() {
   ];
 
   const structuralFeatures = [
-    { title: "Otomatik Prefabrik Tasarım", description: "Her geometride yapısal prefabrik elemanları hızlı tasarlayın.", image: automatedPrecastImg },
-    { title: "Otomatik Üretim Paftaları", description: "Donatı, fikstür ve ölçülendirme dahil paftaları hızla oluşturun.", image: automatedShopDrawingsImg },
-    { title: "BIM Modellerinin Kolay İçe Aktarılması", description: "Mimari ve MEP objelerini içe aktarın ve yeniden kullanın.", image: easyImportBimImg },
-    { title: "Parametrik veya Serbest Modelleme", description: "Parametrik girdi veya serbest modelleme ile oluşturun.", image: parametricModelingImg },
-    { title: "Yüksek Otomasyon Araçları", description: "Duvar ve döşemeler için yüksek otomasyon düzeyinde detaylandırma.", image: highlyAutomatedFabImg },
+    { title: "Otomatik Prefabrik Tasarım", description: "Her türlü karmaşıklık ve geometrideki yapısal prefabrik elemanları hızlı ve kolay bir şekilde tasarlayın ve detaylandırın.", image: automatedPrecastImg },
+    { title: "Otomatik Üretim Paftaları", description: "Donatı, fikstür ve ölçülendirme dahil olmak üzere yüksek düzeyde otomatikleştirilmiş üretim paftalarını hızlı bir şekilde oluşturun.", image: automatedShopDrawingsImg },
+    { title: "BIM Modellerinin Kolay İçe Aktarılması", description: "Mimari modellerin yanı sıra MEP objelerini de hızla içe aktarın ve bunları prefabrik tasarımınız için yeniden kullanın.", image: easyImportBimImg },
+    { title: "Parametrik veya Serbest Modelleme", description: "Prefabrik elemanları parametrik girdiyle oluşturun veya bunları tamamen özgürce modelleyin.", image: parametricModelingImg },
+    { title: "Yüksek Düzeyde Otomatik Üretime Yönelik Araçlar", description: "Özel Allplan Prekast çözümümüz, duvarların ve döşemelerin yüksek düzeyde otomatik tasarım ve detaylandırılmasını sağlar.", image: highlyAutomatedFabImg },
   ];
 
   const wallFeatures = [
-    { title: "Otomatik Duvar Tasarımı", description: "Katı, çift, sandviç, tuğla ve termal duvarları hızlı ve doğru modelleyin.", image: wallDesignImg },
-    { title: "Otomatik Duvar Bölmeleri", description: "Duvarları üretilebilir elemanlara akıllıca ayırın.", image: wallDivisionImg },
-    { title: "Üreticiye Özel Donatı", description: "Üretim yeteneklerinize uygun donatıyı otomatik üretin.", image: wallReinforcementImg },
-    { title: "Fikstürler Kolaylaştı", description: "Stok ve ağırlığa göre kaldırma ankrajlarını hesaplayın.", image: wallFixturesImg },
-    { title: "Güvenilir Üretim Verileri", description: "Ticari ve üretim verilerinde yüksek hassasiyet.", image: wallProductionDataImg },
+    { title: "Yüksek Düzeyde Otomatik Duvar Tasarımı", description: "Katı, çift, sandviç, tuğla ve termal duvarları her zamankinden daha hızlı ve daha doğru bir şekilde modelleyin.", image: wallDesignImg },
+    { title: "Otomatik Duvar Bölmeleri", description: "Allplan Prefabrik Duvarlar, bireysel üretim tesislerinize göre duvarları akıllıca üretilebilir ve teslim edilebilir duvar elemanlarına ayırır.", image: wallDivisionImg },
+    { title: "Üreticiye Özel Donatı", description: "Allplan Prefabrik Duvarlar, özel üretim yeteneklerinize mükemmel şekilde uyum sağlayan donatı verilerini otomatik olarak üretir.", image: wallReinforcementImg },
+    { title: "Fikstürler Kolaylaştı", description: "Stok durumuna ve ağırlığa bağlı olarak eğimli destekler için kaldırma ankrajları veya manşonlar gibi fikstürleri otomatik olarak hesaplayın.", image: wallFixturesImg },
+    { title: "Güvenilir Üretim Verileri", description: "Ticari ve üretimle ilgili verilerin sağlanmasında mutlak hassasiyete güvenin.", image: wallProductionDataImg },
   ];
 
   const slabFeatures = [
-    { title: "Otomatik Döşeme Tasarımı", description: "Eleman, masif ve boşluklu döşemelerde büyük zaman tasarrufu.", image: slabDesignImg },
-    { title: "Otomatik Döşeme Bölmeleri", description: "Döşemeleri üretilebilir elemanlara ayırın.", image: slabDivisionImg },
-    { title: "Üretime Özel Donatı", description: "Üretim yeteneklerinize uygun donatıyı otomatik üretin.", image: slabReinforcementImg },
-    { title: "Otomatik İş Akışları", description: "Kompozit girintileri otomatik yerleştirme ve esnek sistemler.", image: slabFixturesImg },
-    { title: "Güvenilir Üretim Verileri", description: "Güvenilir üretim verileri oluşturun.", image: slabProductionDataImg },
+    { title: "Yüksek Düzeyde Otomatik Döşeme Tasarımı", description: "Allplan Prekast Döşemeler, eleman döşemeleri, masif döşemeler ve boşluklu döşemeler tasarlarken büyük miktarda zaman tasarrufu yapmanızı sağlar.", image: slabDesignImg },
+    { title: "Otomatik Döşeme Bölmeleri", description: "Allplan Prefabrik Döşemeler, bireysel üretim tesislerinize göre döşemeleri akıllı bir şekilde üretilebilir ve teslim edilebilir döşeme elemanlarına ayırır.", image: slabDivisionImg },
+    { title: "Üretime Özel Donatı", description: "Allplan Prefabrik Döşemeler, özel üretim yeteneklerinize mükemmel şekilde uyum sağlayan donatı verilerini otomatik olarak üretir.", image: slabReinforcementImg },
+    { title: "Otomatik İş Akışları", description: "Allplan Prefabrik Döşemeler kompozit girintileri otomatik olarak yerleştirir ve birleşimli sistemler için maksimum esneklik sunar. Yazılım, filigran döşemeler için kesme kuvveti ve bağ kontrolü gerçekleştirir ve gerekirse gerekli kafes kirişlerini kurar.", image: slabFixturesImg },
+    { title: "Güvenilir Üretim Verileri", description: "Ticari ve üretimle ilgili verilerin sağlanmasında mutlak hassasiyete güvenin.", image: slabProductionDataImg },
   ];
 
   const challenges = [
@@ -124,6 +124,22 @@ export default function Page() {
               </ul>
             </div>
             <div className="aspect-video rounded-lg overflow-hidden"><iframe className="w-full h-full" src="https://www.youtube.com/embed/AaFWnMNTgVs" title="Accelerated Precast Design with Allplan" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /></div>
+          </div>
+        </div>
+      </section>
+
+      <ChallengesSection items={challenges} />
+      <StatsSection items={stats} variant="animated" />
+
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-16">Allplan Precast&apos;ın Faydaları</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {benefits.map((benefit, index) => {
+              const IconComponent = benefit.icon as any; return (
+                <Card key={index} className="overflow-hidden"><CardContent className="p-6 flex gap-4 items-start"><div className="flex-shrink-0"><div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center"><IconComponent className="w-6 h-6 text-accent" /></div></div><div><span className="text-accent text-sm font-medium">/ {benefit.title}</span><p className="text-muted-foreground text-sm mt-2">{benefit.description}</p></div></CardContent></Card>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -198,20 +214,6 @@ export default function Page() {
       </section>
 
       <Dialog open={!!lightboxImage} onOpenChange={() => setLightboxImage(null)}><DialogContent className="max-w-5xl p-0 bg-transparent border-none">{lightboxImage && (<div className="relative"><Image src={lightboxImage.src} alt={lightboxImage.title} width={1200} height={800} className="w-full h-auto rounded-lg shadow-2xl" /><button onClick={() => setLightboxImage(null)} className="absolute -top-12 right-0 text-white hover:text-accent transition-colors"><X className="h-8 w-8" /></button></div>)}</DialogContent></Dialog>
-
-      <ChallengesSection items={challenges} />
-      <StatsSection items={stats} variant="animated" />
-
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-16">Allplan Precast&apos;ın Faydaları</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {benefits.map((benefit, index) => { const IconComponent = benefit.icon as any; return (
-              <Card key={index} className="overflow-hidden"><CardContent className="p-6 flex gap-4 items-start"><div className="flex-shrink-0"><div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center"><IconComponent className="w-6 h-6 text-accent" /></div></div><div><span className="text-accent text-sm font-medium">/ {benefit.title}</span><p className="text-muted-foreground text-sm mt-2">{benefit.description}</p></div></CardContent></Card>
-            ); })}
-          </div>
-        </div>
-      </section>
 
       <section className="py-20 bg-background"><div className="container mx-auto px-4"><h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">Kaynaklar</h2><div className="grid md:grid-cols-3 gap-6">{resources.map((resource, index) => (<Card key={index} className="overflow-hidden group"><a href={resource.link} target="_blank" rel="noopener noreferrer"><div className="aspect-[4/3] overflow-hidden relative"><Image src={resource.image} alt={resource.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" /></div><CardContent className="p-5"><h3 className="text-lg font-semibold text-foreground mb-2">{resource.title}</h3><p className="text-muted-foreground text-sm">{resource.subtitle}</p></CardContent></a></Card>))}</div></div></section>
 
