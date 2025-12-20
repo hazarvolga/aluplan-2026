@@ -33,6 +33,7 @@ import connexisImg from "@/assets/products/civil/connexis.jpg";
 import civilExternalDataImg from "@/assets/products/civil/external-data-sources.jpg";
 import civil3dModelingImg from "@/assets/products/civil/3d-modeling.jpg";
 import bridgeCodeDesignImg from "@/assets/products/civil/bridge-code-based-design.jpg";
+import bim2formFormworkImg from "@/assets/products/civil/bim2form-formwork.jpg";
 
 // Ultimate/Professional'dan ortak görseller
 import interfacesImg from "@/assets/products/allplan-ultimate/interfaces.jpg";
@@ -150,13 +151,11 @@ export default function Page() {
     { title: "Eleman Planı", description: "Tekil elemanların detaylı çizimlerinin otomatik, şablon bazlı olarak üretilmesi.", image: elementPlanImg },
   ];
 
-  // Connexis - Civil'e özel ek hizmet
-  const additionalCloudServices = [
-    { title: "Bağlantı Tasarım Aracı - Connexis", description: "Çelik bağlantılar için bulut tabanlı görüntüleme ve iş birliği aracı.", image: connexisImg },
-  ];
+  // Civil için ek bulut hizmetleri (şu an boş)
+  const additionalCloudServices: { title: string; description: string; image?: unknown; youtubeId?: string }[] = [];
 
   const purchaseOptions = [
-    { title: "BIM²form Eklentisi - Kalıp", description: "Kalıp yerleştirmek için araçlar.", youtubeId: "Ug-CNBbqIu4" },
+    { title: "BIM²form Eklentisi - Kalıp", description: "Kalıp yerleştirmek için araçlar.", youtubeId: "s-NKwOU0XAw", thumbnailUrl: bim2formFormworkImg },
     { title: "Lisans Server", description: "Mevcut lisansların birden fazla kullanıcı tarafından optimal şekilde kullanılmasını sağlar. Ofis dışında lisans kullanımı mümkündür.", image: licenseServerImg },
     { title: "BIMPLUS Pro", description: "Bulut iş birliği kapasitenizi artırmak için ek Bimplus Pro lisansları.", image: bimplusProImg },
     { title: "ALLPLAN Bulut Depolama", description: "Projelerinizin kesintisiz devam etmesini sağlamak için ek depolama alanı.", image: cloudStorageImg },
@@ -329,7 +328,7 @@ export default function Page() {
               <Card key={index} className="overflow-hidden group border border-white/10 hover:border-white/20 bg-graphite-950">
                 <div className="aspect-video overflow-hidden relative">
                   {option.youtubeId ? (
-                    <VideoModal youtubeId={option.youtubeId} title={option.title} className="w-full h-full" />
+                    <VideoModal youtubeId={option.youtubeId} title={option.title} thumbnailUrl={option.thumbnailUrl} className="w-full h-full" />
                   ) : (
                     <Image src={option.image!} alt={option.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
                   )}
