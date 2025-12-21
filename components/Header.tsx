@@ -113,10 +113,10 @@ const Header = () => {
       <div className="h-px bg-white/5 w-full" />
 
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Image src={logoWhite} alt="Aluplan" height={40} className="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity" priority />
+            <Image src={logoWhite} alt="Aluplan" height={56} className="h-14 w-auto opacity-90 hover:opacity-100 transition-opacity" priority />
           </Link>
 
           {/* Desktop Navigation */}
@@ -124,7 +124,7 @@ const Header = () => {
             {navigation.map((item) => (
               <div
                 key={item.name}
-                className="relative h-16 flex items-center"
+                className="relative h-20 flex items-center"
                 onMouseEnter={() => item.megaMenu && handleMouseEnter(item.megaMenu)}
               >
                 {item.href ? (

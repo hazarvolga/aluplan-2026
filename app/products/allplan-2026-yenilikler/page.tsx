@@ -96,6 +96,7 @@ const ArchitectureContent = () => (
       imagePosition="right"
       className="bg-background"
     />
+
   </div>
 );
 
@@ -680,7 +681,7 @@ export default function Allplan2026YeniliklerPage() {
         description:
           "ALLPLAN çözümleri, bina ve altyapı modelleme, tasarım, detaylandırma ve üretimden inşaata kadar uçtan uca iş birliğine dayalı bir çalışma akışı sağlıyor. Yeni geliştirmeler; projelerinizi hızlandırır, doğruluğu artırır, yenilik ve sürdürülebilirliği teşvik eder ve ekiplerin tüm proje yaşam döngüsü boyunca çevik ve uyumlu çalışmasını güvence altına alır.",
         // Using one of the videos as the main intro video, or placeholder
-        videoUrl: "https://www.youtube.com/embed/HqhDQELnHms", 
+        videoUrl: "https://www.youtube.com/embed/HqhDQELnHms",
       }}
       afterInfoChildren={
         <RegulaTabs

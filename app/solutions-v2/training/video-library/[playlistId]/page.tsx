@@ -84,7 +84,7 @@ export default function PlaylistPage({ params }: { params: { playlistId: string 
                                     </h1>
                                     <p className="text-gray-400 leading-relaxed">
                                         Bu eğitim videosunda {currentVideo.title} konusu detaylı olarak incelenmektedir.
-                                        Allplan 2024'ün sunduğu yenilikleri keşfedin.
+                                        Allplan 2024&apos;ün sunduğu yenilikleri keşfedin.
                                     </p>
                                 </div>
                             </div>

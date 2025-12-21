@@ -1,0 +1,251 @@
+================================================================================
+ALLPLAN TRAINING OPTIONS
+Source: https://www.allplan.com/events/training-options/
+Fetched: December 21, 2025
+================================================================================
+
+HEADER IMAGE:
+https://www.allplan.com/fileadmin/_processed_/c/d/csm_Header_Training-1440x580_d74d7147b7.jpg
+
+================================================================================
+MAIN TITLE
+================================================================================
+
+ALLPLAN Training
+
+DISCOVER OUR EXTENDED TRAINING AND WEBINAR OFFERING
+
+our offer for your professional development
+
+See here how you can benefit from our expertise and take your professional 
+knowledge and skills to the next level!
+
+================================================================================
+TRAINING CATEGORIES (TABBED STRUCTURE)
+================================================================================
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ TAB 1: INTEREST                                                          │
+├──────────────────────────────────────────────────────────────────────────┤
+│ Icon: https://www.allplan.com/fileadmin/user_upload/shared-files/       │
+│       icons/trainings/Interest_new.png                                   │
+│                                                                          │
+│ Image: https://www.allplan.com/fileadmin/user_upload/shared-files/      │
+│        teaser/trainings/Schnupper_555x350.jpg                           │
+│                                                                          │
+│ INSIGHTS FOR ANYONE INTERESTED!                                         │
+│                                                                          │
+│ In our introductory training courses, each of which is geared towards   │
+│ a specific discipline, you will receive a general overview of the CAD   │
+│ programme ALLPLAN, the underlying concept of the software and the       │
+│ various tools and functions that we offer specifically for your field   │
+│ of work.                                                                │
+│                                                                          │
+│ Link: find your appointment now >                                       │
+│       https://www.allplan.com/events/events/?                           │
+└──────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ TAB 2: BASIC                                                             │
+├──────────────────────────────────────────────────────────────────────────┤
+│ Icon: https://www.allplan.com/fileadmin/user_upload/shared-files/       │
+│       icons/trainings/Basic_new.png                                      │
+│                                                                          │
+│ Image: https://www.allplan.com/fileadmin/user_upload/shared-files/      │
+│        teaser/trainings/Basic_555x350.jpg                               │
+│                                                                          │
+│ THE ENTRY INTO THE ALLPLAN WORLD!                                       │
+│                                                                          │
+│ In our basic training sessions of several days, we provide you,         │
+│ regardless of your professional field, with all the necessary knowledge │
+│ and skills to work effectively with ALLPLAN right from the start and to │
+│ exploit the full potential of the program.                              │
+│                                                                          │
+│ Link: find your appointment now >                                       │
+│       https://www.allplan.com/events/events/?                           │
+└──────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ TAB 3: ADVANCED                                                          │
+├──────────────────────────────────────────────────────────────────────────┤
+│ Icon: https://www.allplan.com/fileadmin/user_upload/shared-files/       │
+│       icons/trainings/Advanced_new.png                                   │
+│                                                                          │
+│ Image: https://www.allplan.com/fileadmin/user_upload/shared-files/      │
+│        teaser/trainings/Advanced_555x350.jpg                            │
+│                                                                          │
+│ YOUR STEP TO BECOMING AN ALLPLAN EXPERT!                                │
+│                                                                          │
+│ On the basis of our Basic CAD Beginner Training, we provide you with    │
+│ additional knowledge in the associated modules in the advanced          │
+│ seminars, which also last several days and are specially tailored to    │
+│ your field of activity, so that you can also make full use of the       │
+│ software's functions here.                                              │
+│                                                                          │
+│ Link: find your appointment now >>                                      │
+│       https://www.allplan.com/events/events/?                           │
+└──────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ TAB 4: SPECIAL                                                           │
+├──────────────────────────────────────────────────────────────────────────┤
+│ Icon: https://www.allplan.com/fileadmin/user_upload/shared-files/       │
+│       icons/trainings/Special_new.png                                    │
+│                                                                          │
+│ Image: https://www.allplan.com/fileadmin/user_upload/shared-files/      │
+│        teaser/trainings/Special_555x350.jpg                             │
+│                                                                          │
+│ IN-DEPTH KNOWLEDGE ON SPECIAL TOPICS!                                   │
+│                                                                          │
+│ On top of your existing extensive ALLPLAN knowledge, our special        │
+│ training courses provide you with a deeper insight into a specific      │
+│ program area or deepen your knowledge of a special topic and its        │
+│ implementation in and with ALLPLAN.                                     │
+│                                                                          │
+│ Link: find your appointment now >                                       │
+│       https://www.allplan.com/events/events/?                           │
+└──────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ TAB 5: BIM                                                               │
+├──────────────────────────────────────────────────────────────────────────┤
+│ Icon: https://www.allplan.com/fileadmin/user_upload/shared-files/       │
+│       icons/trainings/BIM_new.png                                        │
+│                                                                          │
+│ Image: https://www.allplan.com/fileadmin/user_upload/shared-files/      │
+│        teaser/trainings/BIM_555x350.jpg                                 │
+│                                                                          │
+│ DEDICATED EXPERTISE ON BIM                                              │
+│                                                                          │
+│ In our BIM-focused training courses, you will learn cross-software      │
+│ theory or practical ALLPLAN specifically on the topic of Building       │
+│ Information Modeling.                                                   │
+│                                                                          │
+│ Depending on the training, you have the opportunity to put your         │
+│ knowledge to the test and prove your BIM expertise with a corresponding │
+│ certificate of completion.                                              │
+│                                                                          │
+│ Link: find your appointment now                                         │
+│       https://www.allplan.com/events/events/?                           │
+└──────────────────────────────────────────────────────────────────────────┘
+
+================================================================================
+CLIENT TESTIMONIALS
+================================================================================
+
+WHAT OUR ALLPLAN CLIENTS SAY:
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ "You have the ability to communicate very complex abstract issues in a   │
+│ practical and simple way. The training has given me and my team a huge   │
+│ boost in knowledge."                                                     │
+│                                                                          │
+│ — BIM Manager                                                            │
+└──────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ "The training was very interesting, helpful and fun."                    │
+│                                                                          │
+│ — Project Manager CAD                                                    │
+└──────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ "At ALLPLAN you always get support even for special problems."           │
+│                                                                          │
+│ — BIM Manager                                                            │
+└──────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ "The expertise is untouchable for me when it comes to the topic of BIM.  │
+│ I am amazed at how much has happened at ALLPLAN in terms of attributes." │
+│                                                                          │
+│ — Managing Director                                                      │
+└──────────────────────────────────────────────────────────────────────────┘
+
+================================================================================
+TRAINING FORMATS
+================================================================================
+
+Our training formats:
+
+┌─────────────────────────┬─────────────────────────┬─────────────────────────┐
+│       ONLINE            │       WEBINAR           │       PRESENCE          │
+├─────────────────────────┼─────────────────────────┼─────────────────────────┤
+│ Icon:                   │ Icon:                   │ Icon:                   │
+│ Online.png              │ Webinar.png             │ Praesenz.png            │
+│                         │                         │                         │
+│ Location independent    │ Web-based presentation, │ Training on-site,       │
+│ Training, web-based,    │ with multiple           │ interactive and with    │
+│ interactive and with    │ participants in         │ multiple participants.  │
+│ multiple participants.  │ listener mode and chat  │                         │
+│                         │ function.               │                         │
+│                         │                         │                         │
+│ Link: [Filter Online]   │ Link: [Filter Webinar]  │ Link: [Filter Presence] │
+└─────────────────────────┴─────────────────────────┴─────────────────────────┘
+
+┌─────────────────────────┬─────────────────────────┬─────────────────────────┐
+│      EVENT/FAIR         │      INDIVIDUAL         │      E-LEARNING         │
+├─────────────────────────┼─────────────────────────┼─────────────────────────┤
+│ Icon:                   │ Icon:                   │ Icon:                   │
+│ Event.png               │ Individual.png          │ E-learning.png          │
+│                         │                         │                         │
+│ On-site event in        │ Flexibly plannable      │ Location-independent    │
+│ various formats with    │ units. You determined   │ training, web-based,    │
+│ the possibility of      │ the content, location,  │ interactive and         │
+│ personal contact with   │ time and scope of your  │ individual.             │
+│ the ALLPLAN team.       │ training.               │                         │
+│                         │                         │                         │
+│ Link: [Filter Event]    │ (No direct link)        │ Link: [E-Learning Page] │
+└─────────────────────────┴─────────────────────────┴─────────────────────────┘
+
+ICON URLS:
+- Online: https://www.allplan.com/fileadmin/user_upload/shared-files/icons/trainings/Online.png
+- Webinar: https://www.allplan.com/fileadmin/user_upload/shared-files/icons/trainings/Webinar.png
+- Presence: https://www.allplan.com/fileadmin/user_upload/shared-files/icons/trainings/Praesenz.png
+- Event: https://www.allplan.com/fileadmin/user_upload/shared-files/icons/trainings/Event.png
+- Individual: https://www.allplan.com/fileadmin/user_upload/shared-files/icons/trainings/Individual.png
+- E-Learning: https://www.allplan.com/fileadmin/user_upload/shared-files/icons/trainings/E-learning.png
+
+LINK URLS:
+- Online Filter: https://www.allplan.com/de/termine/alle-termine/?&tx_jvevents_events[eventsFilter][categories]=84,
+- Webinar Filter: https://www.allplan.com/de/termine/alle-termine/?&tx_jvevents_events[eventsFilter][categories]=1,
+- Presence Filter: https://www.allplan.com/de/termine/alle-termine/?&tx_jvevents_events[eventsFilter][categories]=7,
+- Event Filter: https://www.allplan.com/de/termine/alle-termine/?&tx_jvevents_events[eventsFilter][categories]=6,
+- E-Learning: https://connect.allplan.com/de/training/e-learning.html
+
+================================================================================
+EDUCATION SECTION
+================================================================================
+
+OUR OFFER FOR SCHOOL, TEACHING AND STUDIES
+
+We offer both general basics for upcoming school or study projects as well as 
+focused offers for special situations in studies such as applying for a job as 
+working student.
+
+Link: find your appointment now >
+      https://www.allplan.com/events/events/?
+
+Image: https://www.allplan.com/fileadmin/user_upload/shared-files/teaser/trainings/Campus_555x350.jpg
+
+================================================================================
+ADDITIONAL RESOURCES
+================================================================================
+
+FAVICON & ICONS:
+- Main Favicon: https://www.allplan.com/_assets/9685e7d353db6d02460419a5f921e5a3/Images/Favicon/favicon.ico
+- Apple Touch Icon: https://www.allplan.com/_assets/9685e7d353db6d02460419a5f921e5a3/Images/Favicon/apple-touch-icon.png
+- Apple Touch Icon 76x76: https://www.allplan.com/_assets/9685e7d353db6d02460419a5f921e5a3/Images/Favicon/apple-touch-icon-76x76.png
+- Apple Touch Icon 120x120: https://www.allplan.com/_assets/9685e7d353db6d02460419a5f921e5a3/Images/Favicon/apple-touch-icon-120x120.png
+- Apple Touch Icon 152x152: https://www.allplan.com/_assets/9685e7d353db6d02460419a5f921e5a3/Images/Favicon/apple-touch-icon-152x152.png
+
+LOGO:
+- ALLPLAN Logo: https://www.allplan.com/_assets/9685e7d353db6d02460419a5f921e5a3/Images/Logos/allplan-logo.svg
+
+RSS FEEDS:
+- News and Press Reports: https://www.allplan.com/rss-press.xml
+- Webinars: https://www.allplan.com/rss-webinars.xml
+
+================================================================================
+END OF DOCUMENT
+================================================================================

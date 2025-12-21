@@ -120,18 +120,17 @@ const HeroV2 = () => {
                             Yenilikçi AEC iş akışları, otomasyon ve bulut tabanlı iş birliği ile daha başarılı projeler.
                         </p>
 
-                        <div className="flex gap-4">
-                            <Link href="/contact" className="group relative overflow-hidden rounded-full bg-white px-8 py-4 text-black transition-transform hover:scale-105">
-                                <span className="relative z-10 flex items-center gap-2 font-bold tracking-tight">
-                                    ALLPLAN 2026 ÇIKTI
-                                    <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+                        <div className="flex flex-col sm:flex-row gap-4 mt-8 animate-fade-in-up delay-300">
+                            <Link href="/products/allplan-2026-yenilikler" className="group flex items-center justify-center gap-3 rounded-full bg-white px-8 py-4 text-black transition-transform hover:scale-105">
+                                <span className="font-bold tracking-tight">
+                                    Yenilikleri İncele
                                 </span>
-                                <div className="absolute inset-0 -z-10 translate-y-full bg-[#3B82F6] transition-transform duration-300 group-hover:translate-y-0" />
+                                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                             </Link>
 
-                            <Link href="/products/allplan" className="flex items-center gap-3 rounded-full border border-white/20 bg-white/5 px-8 py-4 backdrop-blur-md transition-colors hover:bg-white/10">
+                            <Link href="/products/allplan-2026" className="group flex items-center justify-center gap-3 rounded-full border border-white/20 bg-white/5 px-8 py-4 backdrop-blur-md transition-all hover:bg-white/10 hover:scale-105">
                                 <Play className="h-5 w-5 fill-current" />
-                                <span className="font-medium">Filmi İzle</span>
+                                <span className="font-bold tracking-tight">ALLPLAN 2026 İncele</span>
                             </Link>
                         </div>
                     </div>

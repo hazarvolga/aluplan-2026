@@ -1,0 +1,372 @@
+================================================================================
+ALUPLAN TÜRKİYE - KAYDEDİLMİŞ WEBİNARLAR
+Title: Kaydedilmiş Webinarlar
+URL: https://aluplan.com.tr/kaydedilmis-webinarlar/
+================================================================================
+
+SAYFA BAŞLIĞI:
+Kaydedilmiş Webinarlar – Aluplan Program Sistemleri | Allplan Türkiye Distribütörü
+
+================================================================================
+ÜST MENÜ BUTONLARI (İlk Satır)
+================================================================================
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ [ALLPLAN FAQ] [LEARN NOW] [Duyurular] [Product Lifecycle]               │
+└──────────────────────────────────────────────────────────────────────────┘
+
+BUTON 1: ALLPLAN FAQ
+URL: https://www.allplan.com/all-faqs/
+Target: _blank
+
+BUTON 2: LEARN NOW
+URL: https://learnnow.allplan.com/course/search.php
+Target: _blank
+
+BUTON 3: Duyurular
+URL: https://aluplan.com.tr/onemli-bilgiler-baglantilar/
+Target: _blank
+
+BUTON 4: Product Lifecycle
+URL: https://www.allplan.com/product-lifecycle/
+Target: _blank
+
+================================================================================
+ÜST MENÜ BUTONLARI (İkinci Satır)
+================================================================================
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ [Allplan Connect: Giriş / Parola Sıfırlama] [GoTo Meeting]              │
+│ [Allplan Connect Lisans Yönetim Paneli] [ALLPLAN Teknik Destek]         │
+└──────────────────────────────────────────────────────────────────────────┘
+
+BUTON 1: Allplan Connect: Giriş / Parola Sıfırlama
+URL: https://aluplan.com.tr/24907-2/
+Target: _blank
+
+BUTON 2: GoTo Meeting
+URL: https://meet.goto.com/allplan_turkiye
+Target: _blank
+
+BUTON 3: Allplan Connect Lisans Yönetim Paneli
+URL: https://aluplan.com.tr/10-duke-yeni-lisanslama/
+Target: _blank
+
+BUTON 4: ALLPLAN Teknik Destek
+URL: https://teams.microsoft.com/meet/39783115346098?p=wIo7WWYLZwqoHtjq3Y
+Target: _blank
+
+================================================================================
+SUBSCRIPTION 2026 BANNER
+================================================================================
+
+İKON: icon-subscribe
+
+BAŞLIK: Subscription 2026
+
+AÇIKLAMA: Şimdi Aboneliğe Geçmek
+Uzun Vadeli Akıllı Bir Yatırımdır
+
+BUTON: "Ayrıntıları İncele"
+URL: https://www.allplan.com/subscription-2025
+Target: _blank
+
+================================================================================
+LOGO VE PARTNER GÖRSELLER
+================================================================================
+
+LOGO 1: Aluplan Logo
+URL: https://aluplan.com.tr/wp-content/uploads/2023/08/logo-29.png
+Boyut: 325x78
+Link: https://aluplan.com.tr
+
+LOGO 2: BuildingSmart Türkiye
+URL: https://aluplan.com.tr/wp-content/uploads/2021/10/builsmart.png
+Boyut: 228x74
+Alt Text: Building Smart Türkiye
+
+LOGO 3: Partner Logo
+URL: https://aluplan.com.tr/wp-content/uploads/2019/10/partner.png
+Boyut: 69x55
+
+================================================================================
+YOUTUBE KANALI ÇAĞRISI
+================================================================================
+
+GÖRSEL: https://aluplan.com.tr/wp-content/uploads/2021/12/maxresdefault-1024x576.jpg
+Boyut: 1024x576
+Link: https://www.youtube.com/c/AllplanTurkey
+
+BAŞLIK: Youtube Kanalımıza Üye Olun
+
+ALT BAŞLIK 1: Bildirimlerinizi açmayı unutmayın.
+ALT BAŞLIK 2: Allplan ile ilgili en son videolarımızı kaçırmayın…
+
+================================================================================
+WEBİNAR 1: IMO / ALLPLAN BRIDGE 2022
+================================================================================
+
+GÖRSEL: https://aluplan.com.tr/wp-content/uploads/2021/12/ALLPLAN-1024x576.png
+Boyut: 1024x576
+
+BAŞLIK: IMO / ALLPLAN BRIDGE 2022 WEBİNAR
+
+TARİH: 23 Kasım 2021 20:00
+
+AÇIKLAMA:
+Allplan Bridge eğitmeni Şaman Bayyurt yazılımın hangi ihtiyaçlara cevap verdiği, 
+kimler için kullanışlı olduğu, kullanım alanları, çalışma yöntemleri hakkında 
+bilgiler verecektir.
+
+================================================================================
+WEBİNAR 2: IMO / ALLPLAN ENGINEERING 2022
+================================================================================
+
+GÖRSEL: https://aluplan.com.tr/wp-content/uploads/2021/12/allplan1-1024x576.png
+Boyut: 1024x576
+
+BAŞLIK: IMO / ALLPLAN ENGINEERING 2022 WEBINAR
+
+TARİH: 16 Kasım 2021 20:00
+
+AÇIKLAMA:
+Allplan Engineering seminerinde, Allplan eğitmeni Deniz Doğan, Allplan ile her 
+türlü gerçek 3B yapınızı modelleyip, donatıyı 3B olarak nasıl döşeyebileceğinizi 
+ve bu çalışma yönteminin modifikasyon veya görsel kontrol için ne gibi avantajlar 
+sunduğunu, betonarme paftalarını nasıl üretildiğini gösteriyor.
+
+DETAYLI AÇIKLAMA:
+Bu ücretsiz web seminerinde, Allplan eğitmeni Deniz Doğan, Allplan her türlü 
+gerçek 3B yapınızı modelleyip, donatıyı 3B olarak nasıl döşeyebileceğinizi ve 
+bu çalışma yönteminin modifikasyon veya görsel kontrol için ne gibi avantajlar 
+sunduğunu, betonarme paftalarını nasıl üretildiğini gösteriyor.
+
+BIM Modelleme ve Metraj:
+Yapmak istediğimiz yapının gerçek boyutları ve görüntüsü ile 3 boyutlu olarak 
+modelleyebilir, bu modellerde planlarınızı alabilirsiniz. Kesitlerini ve 
+görünüşlerinizi düzenleyebilirsiniz. Kalıp, beton ve ince yapı malzeme 
+metrajlarını istediğiniz şablonda raporlayabilirsiniz.
+
+Donatı:
+Gerçek 3 boyulu modelinizin içerisine yine gerçek boyutları ile 3 boyutlu 
+donatılarınızı, tasarım ve uygulama aşamalarına göre modelleyerek 
+yerleştirebilirsiniz. Bu donatı modellerinizden donatı plan, kesit ve detaylarını 
+üretebilir, kesin ve doğru, güvenilir donatı metrajlarını alabilirsiniz. 
+Paftalarınızı kendi standartlarınızla birlikte sunumlarınızı yapabilirsiniz.
+
+================================================================================
+WEBİNAR 3: ALLPLAN BRIDGE 2021
+================================================================================
+
+GÖRSEL: https://aluplan.com.tr/wp-content/uploads/2021/12/Kac%CC%A7iranlar-ic%CC%A7in-Allplan-Brigde-online-webinar--1024x1024.jpg
+Boyut: 1024x1024
+
+BAŞLIK: Allplan Bridge 2021
+
+TARİH: 6 Ağustos 2021 15:00
+
+================================================================================
+WEBİNAR 4: BIMX5 ONLINE WEBINAR - İMAR YÖNETMELİĞİ
+================================================================================
+
+GÖRSEL: https://aluplan.com.tr/wp-content/uploads/2021/12/bimfili-bimx5-1024x1024.jpg
+Boyut: 1024x1024
+
+BAŞLIK: BIMX5 Online Webinar
+
+ALT BAŞLIK: İmar Yönetmeliği
+
+TARİH: 13 Temmuz 2021 14:00
+
+================================================================================
+WEBİNAR 5: BIMX5 ONLINE WEBINAR (Tarihsiz)
+================================================================================
+
+GÖRSEL: https://aluplan.com.tr/wp-content/uploads/2021/12/bimfili-bimx5-1024x1024.jpg
+Boyut: 1024x1024
+
+TARİH: 9 Temmuz 2021 14:00
+
+================================================================================
+WEBİNAR 6: BIMX5 ONLINE WEBINAR - 2B DWG CONVERTER
+================================================================================
+
+GÖRSEL: https://aluplan.com.tr/wp-content/uploads/2021/12/bimfili-bimx5-1024x1024.jpg
+Boyut: 1024x1024
+
+BAŞLIK: BIMX5 Online Webinar
+
+ALT BAŞLIK: 2B dwg converter
+
+TARİH: 6 Temmuz 2021 14:00
+
+================================================================================
+WEBİNAR 7: BIMPLUS ONLINE WEBINAR
+================================================================================
+
+TARİH: 2 Temmuz 2021 11:00
+
+BAŞLIK: Bimplus Online Webİnar
+
+ALT BAŞLIK: BIM işbirliği
+Günlük openBIM iş akışınız için özel yenilikler
+
+İÇERİK:
+- Webinar Tanıtım Vİdeosu
+- WebİnarI İzle
+
+================================================================================
+WEBİNAR 8: BIMFILI YOUTUBE KANALI - BIMX5 NEDİR?
+================================================================================
+
+GÖRSEL: https://aluplan.com.tr/wp-content/uploads/2021/12/1623090584242.jpeg
+
+BAŞLIK: Bimfili Youtube Kanalı BIMX5 Nedir?
+
+AÇIKLAMA: Ahmet Melih Dinekli ve Ferdi Dinekli'nin anlatımı ile "BIMX5 Nedir?"
+
+TARİH: 10 Haziran 2021 21:45
+
+================================================================================
+WEBİNAR 9: ALLPLAN PRECAST SEVİYENİZİ YÜKSELTİN
+================================================================================
+
+GÖRSEL: https://aluplan.com.tr/wp-content/uploads/2021/12/Prekast-c%CC%A7o%CC%88zu%CC%88mlerinde-BIM-uygulamasi-kaciranlaricin-R1-1024x1024.jpg
+Boyut: 1024x1024
+
+BAŞLIK: ALLPLAN PRECAST SEVİYENİZİ YÜKSELTİN
+
+TARİH: 8 Haziran 2021 15:00
+
+AÇIKLAMA:
+Allplan PRECAST, yapı ve inşaat mühendisleri için, yapısal detaycılar ve 
+yükleniciler için, tüm süreçleri destekleyen üst düzey BIM yazılımıdır.
+
+Yazılım, en açık ve anlaşılır iş akışları ve veri alışverişini destekler.
+
+Zamandan tasarruf edin:
+• Optimize edilen BIM iş akışları
+• Donatılı beton için kuvvetli fonksiyonlar
+• Detay veya kaliteden taviz vermeden teknik çizim oluşturma
+
+Konuşmacılar: @Yousef Mesri @Anton Haller @Sirun Hongyot
+
+================================================================================
+WEBİNAR 10: SORU CEVAP SEMİNERİ
+================================================================================
+
+GÖRSEL: https://aluplan.com.tr/wp-content/uploads/2021/12/03-Soru-Cevap-Semineri-teaser_1-1024x656.jpg
+Boyut: 1024x656
+
+BAŞLIK: Soru Cevap Semineri
+
+TARİH: 15 Ocak 2021 14:00 - 15:00
+
+AÇIKLAMA:
+Allplan Architecture ve Engineering ile ilgili teknik ve kullanımla ilgili sorular
+
+HASHTAG'LER:
+#Allplan #Engineering #allplanengineering #Allplan_Architecture #Allplan_Engineering
+
+================================================================================
+WEBİNAR 11: ALLPLAN ENGINEERING 2021 VE YENİLİKLER
+================================================================================
+
+GÖRSEL: https://aluplan.com.tr/wp-content/uploads/2021/12/03-Soru-Cevap-Semineri-teaser_1-1024x656.jpg
+Boyut: 1024x656
+
+BAŞLIK: Allplan Engineering 2021 ve Yenilikler
+
+TARİH: 7 Ocak 2021 14:00 - 15:30
+
+İÇERİK:
+• Bir BIM yazılımı olarak Allplan Engineering
+• Allplan Engineering Building 2021
+• Allplan Engineering Civil 2021
+• Parametrik tasarım ve modelleme
+• Kolay, güvenilir ve hızlı modelleme
+• Gerçek 3 boyutlu donatı tasarımı
+• Doğru ve hızlı metraj
+• Değişken kesitlerle çalışabilme
+• Disiplinler arası eksiksiz veri alışverişi ve işbirliği
+• Allplan Engineering 2021 yenilikler
+
+================================================================================
+WEBİNAR 12: ALLPLAN 2018-2021
+================================================================================
+
+GÖRSEL: https://aluplan.com.tr/wp-content/uploads/2021/12/03-Soru-Cevap-Semineri-teaser_1-1024x656.jpg
+Boyut: 1024x656
+
+BAŞLIK: Allplan 2018-2021
+
+ALT BAŞLIK: Ayarlar, seçenekler ve verimlilik için ipuçları
+
+TARİH: 30 Aralık 2020 14:00 - 15:30
+
+================================================================================
+WEBİNAR 13: GÖRSEL KOMUT DOSYALARINA GİRİŞ
+================================================================================
+
+GÖRSEL: https://aluplan.com.tr/wp-content/uploads/2021/12/logas-teaser-1024x656.jpg
+Boyut: 1024x656
+
+BAŞLIK: Görsel Komut Dosyalarına Giriş
+
+KONUŞMACILAR: Anja Neumann ve Xinling Xu
+
+TARİH: 19 Şubat 2020 10:25
+
+================================================================================
+FAVICON VE İKONLAR
+================================================================================
+
+FAVICON:
+- 32x32: https://aluplan.com.tr/wp-content/uploads/2019/10/Burkhard_Ruetzel_Eng_Startpage_t-2-150x150.jpg
+- 192x192: https://aluplan.com.tr/wp-content/uploads/2019/10/Burkhard_Ruetzel_Eng_Startpage_t-2-370x370.jpg
+
+APPLE TOUCH ICON:
+https://aluplan.com.tr/wp-content/uploads/2019/10/Burkhard_Ruetzel_Eng_Startpage_t-2-370x370.jpg
+
+MS APPLICATION TILE:
+https://aluplan.com.tr/wp-content/uploads/2019/10/Burkhard_Ruetzel_Eng_Startpage_t-2-370x370.jpg
+
+================================================================================
+SOSYAL MEDYA BUTONLARI (CSS Stilleri)
+================================================================================
+
+Sayfa sosyal medya butonları için özel CSS stilleri içeriyor:
+- Font Awesome 4.3.0 kullanımı
+- 40x28 boyutunda butonlar
+- Siyah kenarlık, beyaz arka plan
+- Hover durumunda: beyaz metin, siyah arka plan
+- 22px border-radius (yuvarlak köşeler)
+
+================================================================================
+GOOGLE ANALYTICS VE TAKİP
+================================================================================
+
+Google Tag Manager ID: GTM-W35LQCZ
+Google Analytics ID: GT-5TQ6VQ4
+LinkedIn Partner ID: 5003497
+
+================================================================================
+SAYFA YAPISI ÖZETİ
+================================================================================
+
+1. ÜST MENÜ BUTONLARI (2 satır, toplam 8 buton)
+2. SUBSCRIPTION 2026 BANNER (CTA)
+3. LOGO VE PARTNER GÖRSELLER (3 logo)
+4. YOUTUBE KANALI ÇAĞRISI (1 büyük görsel + link)
+5. WEBİNAR LİSTESİ (13 webinar)
+   - Her webinar için: Görsel, Başlık, Tarih, Açıklama
+   - Görseller genellikle 1024x576 veya 1024x1024 boyutunda
+   - Tarihler kronolojik sırada (en yeni en üstte)
+
+TOPLAM GÖRSEL SAYISI: 20+ (logolar, webinar görselleri, banner görselleri)
+
+BUTON SAYISI: 8 (üst menüde) + 1 (subscription banner) = 9 ana buton
+
+================================================================================
+END OF DOCUMENT
+================================================================================
