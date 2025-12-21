@@ -7,6 +7,7 @@ import MegaMenu from "./MegaMenu";
 import { solutionsMenu } from "@/data/solutionsMenu";
 import Image from "next/image";
 import logoWhite from "@/assets/logo-white.png";
+import { AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,8 +17,6 @@ const Header = () => {
   const toggleLanguage = () => {
     setLanguage(language === "tr" ? "en" : "tr");
   };
-
-
 
   const productsMenu = [
     {
@@ -93,63 +92,56 @@ const Header = () => {
 
   return (
     <header
-      className="sticky top-0 z-[100] w-full border-b border-white/10 bg-graphite-950 text-white relative"
+      className="sticky top-0 z-[100] w-full border-b border-white/5 bg-[#050505]/80 backdrop-blur-md text-white transition-all duration-300"
       onMouseLeave={handleMouseLeave}
     >
-      <div className="absolute inset-0 opacity-[0.015] bg-technical-grid" />
+      <div className="absolute inset-0 opacity-[0.03] bg-technical-grid pointer-events-none" />
 
       {/* Top Bar */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
         <div className="flex h-10 items-center justify-between">
           <div className="flex items-center space-x-2">
-            <a href="#" className="h-7 w-7 rounded-sm bg-white/5 border border-white/10 hover:bg-accent/10 hover:border-accent/30 transition-all flex items-center justify-center">
-              <Facebook className="h-3.5 w-3.5" />
-            </a>
-            <a href="#" className="h-7 w-7 rounded-sm bg-white/5 border border-white/10 hover:bg-accent/10 hover:border-accent/30 transition-all flex items-center justify-center">
-              <Twitter className="h-3.5 w-3.5" />
-            </a>
-            <a href="#" className="h-7 w-7 rounded-sm bg-white/5 border border-white/10 hover:bg-accent/10 hover:border-accent/30 transition-all flex items-center justify-center">
-              <Linkedin className="h-3.5 w-3.5" />
-            </a>
-            <a href="#" className="h-7 w-7 rounded-sm bg-white/5 border border-white/10 hover:bg-accent/10 hover:border-accent/30 transition-all flex items-center justify-center">
-              <Youtube className="h-3.5 w-3.5" />
-            </a>
+            {[Facebook, Twitter, Linkedin, Youtube].map((Icon, i) => (
+              <a key={i} href="#" className="h-7 w-7 rounded-sm bg-white/5 border border-white/10 hover:bg-[#3B82F6]/20 hover:border-[#3B82F6]/50 hover:text-[#3B82F6] transition-all flex items-center justify-center text-gray-400">
+                <Icon className="h-3.5 w-3.5" />
+              </a>
+            ))}
           </div>
-          <a href="mailto:info@aluplan.com.tr" className="text-xs text-steel-300 hover:text-accent transition-colors">info@aluplan.com.tr</a>
+          <a href="mailto:info@aluplan.com.tr" className="text-xs font-mono text-gray-500 hover:text-[#3B82F6] transition-colors">info@aluplan.com.tr</a>
         </div>
       </div>
-      <div className="h-px bg-white/10" />
+      <div className="h-px bg-white/5 w-full" />
 
-      <nav className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <nav className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Image src={logoWhite} alt="Aluplan" height={40} className="h-10 w-auto" priority />
+            <Image src={logoWhite} alt="Aluplan" height={40} className="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity" priority />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex md:items-center md:space-x-6">
+          <div className="hidden md:flex md:items-center md:space-x-8">
             {navigation.map((item) => (
               <div
                 key={item.name}
-                className="relative"
+                className="relative h-16 flex items-center"
                 onMouseEnter={() => item.megaMenu && handleMouseEnter(item.megaMenu)}
               >
                 {item.href ? (
                   <Link
                     href={item.href}
-                    className="text-sm font-medium text-white/80 hover:text-accent transition-colors flex items-center gap-1"
+                    className="text-sm font-medium text-gray-300 hover:text-white transition-colors flex items-center gap-1 relative group"
                   >
                     {item.name}
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3B82F6] transition-all duration-300 group-hover:w-full" />
                   </Link>
                 ) : (
                   <button
-                    className="text-sm font-medium text-white/80 hover:text-accent transition-colors flex items-center gap-1 group"
+                    className={`text-sm font-medium transition-colors flex items-center gap-1 group ${activeMegaMenu === item.megaMenu ? "text-white" : "text-gray-300 hover:text-white"}`}
                   >
                     {item.name}
                     {item.megaMenu && (
-                      <ChevronDown className={`h-4 w-4 opacity-70 group-hover:opacity-100 transition-all ${activeMegaMenu === item.megaMenu ? 'rotate-180' : ''
-                        }`} />
+                      <ChevronDown className={`h-3 w-3 transition-transform duration-300 ${activeMegaMenu === item.megaMenu ? 'rotate-180 text-[#3B82F6]' : 'text-gray-500 group-hover:text-white'}`} />
                     )}
                   </button>
                 )}
@@ -163,24 +155,24 @@ const Header = () => {
               variant="ghost"
               size="sm"
               onClick={toggleLanguage}
-              className="hidden sm:flex items-center gap-2"
+              className="hidden sm:flex items-center gap-2 text-gray-400 hover:text-white hover:bg-white/5"
             >
               <Globe className="h-4 w-4" />
               {language.toUpperCase()}
             </Button>
 
-            <Button variant="outline" size="sm" className="hidden sm:inline-flex">
+            <Button variant="outline" size="sm" className="hidden sm:inline-flex border-white/10 bg-white/5 text-white hover:bg-white/10 hover:border-white/20">
               {language === "tr" ? "Ücretsiz Deneme" : "Free Trial"}
             </Button>
 
-            <Button variant="accent" size="sm" className="hidden sm:inline-flex">
+            <Button className="hidden sm:inline-flex bg-[#3B82F6] hover:bg-[#2563eb] text-white border-0" size="sm">
               {language === "tr" ? "Teklif Al" : "Get Quote"}
             </Button>
 
             {/* Mobile menu button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 text-white/80 hover:text-accent"
+              className="md:hidden p-2 text-gray-300 hover:text-white"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -188,39 +180,43 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-white/10 animate-fade-in">
-            <div className="flex flex-col space-y-3">
-              {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href || "#"}
-                  className="text-sm font-medium text-white/80 hover:text-accent transition-colors py-2"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </a>
-              ))}
-              <div className="pt-3 border-t border-white/10 flex flex-col space-y-2">
-                <Button variant="outline" size="sm" className="w-full">
-                  {language === "tr" ? "Ücretsiz Deneme" : "Free Trial"}
-                </Button>
-                <Button variant="accent" size="sm" className="w-full">
-                  {language === "tr" ? "Teklif Al" : "Get Quote"}
-                </Button>
+        <AnimatePresence>
+          {isMenuOpen && (
+            <div className="md:hidden py-4 border-t border-white/10 animate-fade-in bg-[#050505]">
+              <div className="flex flex-col space-y-3 px-2">
+                {navigation.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href || "#"}
+                    className="text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 px-4 py-3 rounded-lg transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                ))}
+                <div className="pt-3 border-t border-white/10 flex flex-col space-y-3 px-2">
+                  <Button variant="outline" size="sm" className="w-full border-white/10 bg-white/5 text-white">
+                    {language === "tr" ? "Ücretsiz Deneme" : "Free Trial"}
+                  </Button>
+                  <Button className="w-full bg-[#3B82F6] hover:bg-[#2563eb] text-white">
+                    {language === "tr" ? "Teklif Al" : "Get Quote"}
+                  </Button>
+                </div>
               </div>
             </div>
-          </div>
-        )}
+          )}
+        </AnimatePresence>
       </nav>
 
-      {/* Mega Menus */}
-      {activeMegaMenu === "solutions" && (
-        <MegaMenu sections={solutionsMenu} onClose={closeMegaMenu} />
-      )}
-      {activeMegaMenu === "products" && (
-        <MegaMenu sections={productsMenu} onClose={closeMegaMenu} />
-      )}
+      {/* Mega Menus with AnimatePresence */}
+      <AnimatePresence>
+        {activeMegaMenu === "solutions" && (
+          <MegaMenu key="solutions" sections={solutionsMenu} onClose={closeMegaMenu} />
+        )}
+        {activeMegaMenu === "products" && (
+          <MegaMenu key="products" sections={productsMenu} onClose={closeMegaMenu} />
+        )}
+      </AnimatePresence>
     </header>
   );
 };
