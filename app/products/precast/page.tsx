@@ -95,7 +95,14 @@ export default function Page() {
     <div className="dark min-h-screen bg-graphite-950">
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <Image src={heroImage} alt="" fill className="object-cover" priority />
+          <Image
+            src={heroImage}
+            alt="Allplan Precast Hero"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
           <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60" />
           <div className="absolute inset-0 opacity-[0.02] bg-technical-grid" />
         </div>
@@ -167,7 +174,21 @@ export default function Page() {
                 <div className="flex-1 min-w-0">
                   {structuralFeatures.map((feature, index) => (
                     <TabsContent key={index} value={`structural-${index}`} className="mt-0 animate-fade-in">
-                      <Card className="bg-card border border-border overflow-hidden rounded-xl"><div className="relative overflow-hidden aspect-video"><Image src={feature.image} alt={feature.title} fill className="object-cover" /></div><CardContent className="p-5"><h3 className="text-lg font-semibold text-foreground mb-2">{feature.title}</h3><p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p></CardContent></Card>
+                      <Card className="bg-card border border-border overflow-hidden rounded-xl">
+                        <div className="relative overflow-hidden aspect-video">
+                          <Image
+                            src={feature.image}
+                            alt={feature.title}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 1024px) 100vw, 50vw"
+                          />
+                        </div>
+                        <CardContent className="p-5">
+                          <h3 className="text-lg font-semibold text-foreground mb-2">{feature.title}</h3>
+                          <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
+                        </CardContent>
+                      </Card>
                     </TabsContent>
                   ))}
                 </div>
@@ -185,7 +206,21 @@ export default function Page() {
                 <div className="flex-1 min-w-0">
                   {wallFeatures.map((feature, index) => (
                     <TabsContent key={index} value={`walls-${index}`} className="mt-0 animate-fade-in">
-                      <Card className="bg-card border border-border overflow-hidden rounded-xl"><div className="relative overflow-hidden aspect-video"><Image src={feature.image} alt={feature.title} fill className="object-cover" /></div><CardContent className="p-5"><h3 className="text-lg font-semibold text-foreground mb-2">{feature.title}</h3><p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p></CardContent></Card>
+                      <Card className="bg-card border border-border overflow-hidden rounded-xl">
+                        <div className="relative overflow-hidden aspect-video">
+                          <Image
+                            src={feature.image}
+                            alt={feature.title}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 1024px) 100vw, 50vw"
+                          />
+                        </div>
+                        <CardContent className="p-5">
+                          <h3 className="text-lg font-semibold text-foreground mb-2">{feature.title}</h3>
+                          <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
+                        </CardContent>
+                      </Card>
                     </TabsContent>
                   ))}
                 </div>
@@ -203,7 +238,26 @@ export default function Page() {
                 <div className="flex-1 min-w-0">
                   {slabFeatures.map((feature, index) => (
                     <TabsContent key={index} value={`slabs-${index}`} className="mt-0 animate-fade-in">
-                      <Card className="bg-card/80 backdrop-blur-sm border-border/50 overflow-hidden rounded-2xl shadow-xl"><div className="relative overflow-hidden cursor-pointer group aspect-video" onClick={() => setLightboxImage({ src: feature.image, title: feature.title })}><Image src={feature.image} alt={feature.title} fill className="object-cover transition-transform duration-500 group-hover:scale-105" /><div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center"><div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-75 group-hover:scale-100"><ZoomIn className="w-5 h-5 text-foreground" /></div></div></div><CardContent className="p-5"><h3 className="text-lg font-semibold text-foreground mb-2">{feature.title}</h3><p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p></CardContent></Card>
+                      <Card className="bg-card/80 backdrop-blur-sm border-border/50 overflow-hidden rounded-2xl shadow-xl">
+                        <div className="relative overflow-hidden cursor-pointer group aspect-video" onClick={() => setLightboxImage({ src: feature.image, title: feature.title })}>
+                          <Image
+                            src={feature.image}
+                            alt={feature.title}
+                            fill
+                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            sizes="(max-width: 1024px) 100vw, 50vw"
+                          />
+                          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
+                            <div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-75 group-hover:scale-100">
+                              <ZoomIn className="w-5 h-5 text-foreground" />
+                            </div>
+                          </div>
+                        </div>
+                        <CardContent className="p-5">
+                          <h3 className="text-lg font-semibold text-foreground mb-2">{feature.title}</h3>
+                          <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
+                        </CardContent>
+                      </Card>
                     </TabsContent>
                   ))}
                 </div>

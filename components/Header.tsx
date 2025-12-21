@@ -102,7 +102,12 @@ const Header = () => {
         <div className="flex h-10 items-center justify-between">
           <div className="flex items-center space-x-2">
             {[Facebook, Twitter, Linkedin, Youtube].map((Icon, i) => (
-              <a key={i} href="#" className="h-7 w-7 rounded-sm bg-white/5 border border-white/10 hover:bg-[#3B82F6]/20 hover:border-[#3B82F6]/50 hover:text-[#3B82F6] transition-all flex items-center justify-center text-gray-400">
+              <a
+                key={i}
+                href="#"
+                aria-label={["Facebook", "Twitter", "LinkedIn", "YouTube"][i]}
+                className="h-7 w-7 rounded-sm bg-white/5 border border-white/10 hover:bg-[#3B82F6]/20 hover:border-[#3B82F6]/50 hover:text-[#3B82F6] transition-all flex items-center justify-center text-gray-400"
+              >
                 <Icon className="h-3.5 w-3.5" />
               </a>
             ))}
@@ -171,6 +176,8 @@ const Header = () => {
 
             {/* Mobile menu button */}
             <button
+              type="button"
+              aria-label={isMenuOpen ? "Menüyü kapat" : "Menüyü aç"}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="md:hidden p-2 text-gray-300 hover:text-white"
             >
