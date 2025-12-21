@@ -4,7 +4,7 @@ import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 
 const DeepFooter = () => {
     return (
-        <footer className="bg-[#020202] text-white pt-24 pb-12 px-6 md:px-12 lg:px-24 border-t border-white/5 relative overflow-hidden">
+        <section className="bg-[#020202] text-white pt-24 pb-24 px-6 md:px-12 lg:px-24 border-t border-white/5 relative overflow-hidden">
             {/* Background decoration */}
             <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[800px] h-[800px] bg-[#3B82F6] rounded-full blur-[200px] opacity-[0.05] pointer-events-none" />
 
@@ -68,62 +68,45 @@ const DeepFooter = () => {
                     </form>
                 </div>
 
-                {/* Right Side: Info & Links */}
-                <div className="flex flex-col justify-between gap-12">
+                {/* Right Side: Info Only (Links Removed) */}
+                <div className="flex flex-col justify-center gap-12">
                     {/* Contact Info */}
-                    <div className="space-y-6">
-                        <h3 className="text-sm font-bold uppercase tracking-widest text-[#3B82F6] mb-6">İletişim</h3>
-                        <div className="flex items-start gap-4 text-gray-300 hover:text-white transition-colors">
-                            <MapPin className="h-6 w-6 shrink-0 mt-1" />
-                            <p className="leading-relaxed">
-                                Küçükbakkalköy Mah. Dereboyu Cad.<br />
-                                Brandium AVM R5 Blok No:3A<br />
-                                Ataşehir / İstanbul
-                            </p>
-                        </div>
-                        <div className="flex items-center gap-4 text-gray-300 hover:text-white transition-colors">
-                            <Phone className="h-6 w-6 shrink-0" />
-                            <p>+90 212 444 00 00</p>
-                        </div>
-                        <div className="flex items-center gap-4 text-gray-300 hover:text-white transition-colors">
-                            <Mail className="h-6 w-6 shrink-0" />
-                            <p>info@aluplan.com.tr</p>
-                        </div>
-                    </div>
-
-                    {/* Quick Links */}
-                    <div className="grid grid-cols-2 gap-8">
+                    <div className="space-y-8">
                         <div>
-                            <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-6">Ürünler</h3>
-                            <ul className="space-y-3">
-                                <li><Link href="/products/architecture" className="text-gray-400 hover:text-white transition-colors">ALLPLAN Architecture</Link></li>
-                                <li><Link href="/products/allplan-aec" className="text-gray-400 hover:text-white transition-colors">ALLPLAN Engineering</Link></li>
-                                <li><Link href="/products/precast" className="text-gray-400 hover:text-white transition-colors">ALLPLAN Precast</Link></li>
-                                <li><Link href="/products/allplan-bimplus" className="text-gray-400 hover:text-white transition-colors">Bimplus</Link></li>
-                            </ul>
+                            <h3 className="text-sm font-bold uppercase tracking-widest text-[#3B82F6] mb-6">Merkez Ofis</h3>
+                            <div className="flex items-start gap-4 text-gray-300 hover:text-white transition-colors group">
+                                <div className="p-3 rounded-lg bg-white/5 border border-white/10 group-hover:border-[#3B82F6]/50 transition-colors">
+                                    <MapPin className="h-6 w-6 shrink-0 text-white" />
+                                </div>
+                                <p className="leading-relaxed text-lg">
+                                    Küçükbakkalköy Mah. Dereboyu Cad.<br />
+                                    Brandium AVM R5 Blok No:3A<br />
+                                    Ataşehir / İstanbul
+                                </p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-6">Şirket</h3>
-                            <ul className="space-y-3">
-                                <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Hakkımızda</Link></li>
-                                <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Kariyer</Link></li>
-                                <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
-                                <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">İletişim</Link></li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    {/* Copyright */}
-                    <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600">
-                        <p>© 2024 ALUPLAN. All rights reserved.</p>
-                        <div className="flex gap-6">
-                            <a href="#" className="hover:text-gray-400">Privacy Policy</a>
-                            <a href="#" className="hover:text-gray-400">Terms of Service</a>
+                        <div>
+                            <h3 className="text-sm font-bold uppercase tracking-widest text-[#3B82F6] mb-6">Bize Ulaşın</h3>
+                            <div className="space-y-4">
+                                <div className="flex items-center gap-4 text-gray-300 hover:text-white transition-colors group">
+                                    <div className="p-3 rounded-lg bg-white/5 border border-white/10 group-hover:border-[#3B82F6]/50 transition-colors">
+                                        <Phone className="h-6 w-6 shrink-0 text-white" />
+                                    </div>
+                                    <p className="text-lg">+90 216 123 45 67</p>
+                                </div>
+                                <div className="flex items-center gap-4 text-gray-300 hover:text-white transition-colors group">
+                                    <div className="p-3 rounded-lg bg-white/5 border border-white/10 group-hover:border-[#3B82F6]/50 transition-colors">
+                                        <Mail className="h-6 w-6 shrink-0 text-white" />
+                                    </div>
+                                    <p className="text-lg">info@aluplan.com.tr</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </section>
     );
 };
 
