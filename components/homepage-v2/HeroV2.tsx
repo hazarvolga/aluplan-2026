@@ -6,20 +6,20 @@ import { useRef } from "react";
 
 // Data Particles Configuration
 const floatingTags = [
-    { word: "CLOUD NATIVE", top: "15%", left: "10%", size: "text-4xl", delay: 0, duration: 8, maxOpacity: 0.15 },
-    { word: "BIM LEVEL 3", top: "25%", left: "85%", size: "text-2xl", delay: 2, duration: 10, maxOpacity: 0.1 },
-    { word: "PARAMETRIC", top: "60%", left: "5%", size: "text-6xl", delay: 1, duration: 12, maxOpacity: 0.05 },
-    { word: "AUTOMATION", top: "75%", left: "70%", size: "text-3xl", delay: 4, duration: 9, maxOpacity: 0.12 },
-    { word: "INTEROPERABILITY", top: "10%", left: "60%", size: "text-sm", delay: 3, duration: 11, maxOpacity: 0.2 },
-    { word: "AX3000", top: "85%", left: "15%", size: "text-5xl", delay: 5, duration: 7, maxOpacity: 0.08 },
-    { word: "PYTHONPARTS", top: "40%", left: "90%", size: "text-xs", delay: 1.5, duration: 8, maxOpacity: 0.3 },
-    { word: "OPENBIM", top: "50%", left: "50%", size: "text-9xl", delay: 0.5, duration: 15, maxOpacity: 0.03 }, // Big subtle one in center
-    { word: "REAL-TIME", top: "30%", left: "20%", size: "text-lg", delay: 6, duration: 10, maxOpacity: 0.15 },
-    { word: "PRECAST", top: "70%", left: "40%", size: "text-xl", delay: 2.5, duration: 9, maxOpacity: 0.1 },
-    { word: "CIVIL", top: "5%", left: "40%", size: "text-2xl", delay: 3.5, duration: 11, maxOpacity: 0.1 },
-    { word: "BRIDGE", top: "90%", left: "80%", size: "text-3xl", delay: 4.5, duration: 8, maxOpacity: 0.1 },
-    { word: "@CONNECTION", top: "45%", left: "5%", size: "text-xs", delay: 0, duration: 5, maxOpacity: 0.4 },
-    { word: "DATA_NODE", top: "15%", left: "95%", size: "text-xs", delay: 2, duration: 6, maxOpacity: 0.4 },
+    { word: "CLOUD NATIVE", top: "15%", left: "10%", size: "text-4xl", delay: 0, duration: 8, maxOpacity: 0.5 },
+    { word: "BIM LEVEL 3", top: "25%", left: "85%", size: "text-2xl", delay: 2, duration: 10, maxOpacity: 0.4 },
+    { word: "PARAMETRIC", top: "60%", left: "5%", size: "text-6xl", delay: 1, duration: 12, maxOpacity: 0.2 },
+    { word: "AUTOMATION", top: "75%", left: "70%", size: "text-3xl", delay: 4, duration: 9, maxOpacity: 0.5 },
+    { word: "INTEROPERABILITY", top: "10%", left: "60%", size: "text-sm", delay: 3, duration: 11, maxOpacity: 0.7 },
+    { word: "AX3000", top: "85%", left: "15%", size: "text-5xl", delay: 5, duration: 7, maxOpacity: 0.3 },
+    { word: "PYTHONPARTS", top: "40%", left: "90%", size: "text-xs", delay: 1.5, duration: 8, maxOpacity: 0.8 },
+    { word: "OPENBIM", top: "50%", left: "50%", size: "text-9xl", delay: 0.5, duration: 15, maxOpacity: 0.15 }, // Big subtle one in center
+    { word: "REAL-TIME", top: "30%", left: "20%", size: "text-lg", delay: 6, duration: 10, maxOpacity: 0.6 },
+    { word: "PRECAST", top: "70%", left: "40%", size: "text-xl", delay: 2.5, duration: 9, maxOpacity: 0.4 },
+    { word: "CIVIL", top: "5%", left: "40%", size: "text-2xl", delay: 3.5, duration: 11, maxOpacity: 0.4 },
+    { word: "BRIDGE", top: "90%", left: "80%", size: "text-3xl", delay: 4.5, duration: 8, maxOpacity: 0.4 },
+    { word: "@CONNECTION", top: "45%", left: "5%", size: "text-xs", delay: 0, duration: 5, maxOpacity: 0.9 },
+    { word: "DATA_NODE", top: "15%", left: "95%", size: "text-xs", delay: 2, duration: 6, maxOpacity: 0.9 },
 ];
 
 const HeroV2 = () => {
@@ -72,7 +72,7 @@ const HeroV2 = () => {
                     {floatingTags.map((tag, i) => (
                         <motion.div
                             key={i}
-                            className={`absolute font-mono text-blue-400/10 font-bold tracking-widest ${tag.size}`}
+                            className={`absolute font-mono text-blue-400/40 font-bold tracking-widest ${tag.size}`}
                             style={{
                                 top: tag.top,
                                 left: tag.left,
