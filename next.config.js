@@ -19,6 +19,12 @@ const nextConfig = {
         hostname: 'addon.aluplan.com.tr',
         port: '',
         pathname: '/wp-content/uploads/**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.youtube.com',
+        port: '',
+        pathname: '/**'
       }
     ]
   },
