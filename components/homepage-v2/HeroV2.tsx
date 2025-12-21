@@ -37,7 +37,7 @@ const HeroV2 = () => {
             {/* Background Video Layer */}
             <motion.div
                 style={{ y, opacity }}
-                className="absolute inset-0 z-0"
+                className="absolute inset-0 z-0 bg-graphite-950" // Added fallback bg color
             >
                 <video
                     autoPlay
@@ -46,11 +46,14 @@ const HeroV2 = () => {
                     playsInline
                     className="h-full w-full object-cover scale-105"
                     poster="/images/hero-poster.jpg"
+                    {...{ "webkit-playsinline": "true" } as any} // Explicit attribute for some WebKit/Blink browsers
                 >
                     <source src="/videos/hero-bim.mp4" type="video/mp4" />
-                    {/* Fallback color if video fails */}
-                    <div className="h-full w-full bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a]" />
                 </video>
+                {/* Fallback gradient if video doesn't load/play (visually behind video if z-index managed, but video is opaque. 
+                    If video fails to load, it might show poster. If poster fails, it shows empty. 
+                    Best to have a background on the parent container, which we added above.) 
+                */}
                 {/* Cinematic Overlay - Enhanced for Cloud/Structure feel */}
                 {/* 1. Base Dark Layer */}
                 <div className="absolute inset-0 bg-[#020617]/40" />
