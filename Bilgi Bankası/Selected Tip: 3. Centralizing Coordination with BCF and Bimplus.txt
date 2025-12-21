@@ -1,0 +1,40 @@
+Selected Tip: 3. Centralizing Coordination with BCF and Bimplus
+Scenario: Resolving a Critical MEP-Structural Clash in a Multi-Story Office Building Project
+Project: A 15-story office building to be constructed in Istanbul.
+Involved Disciplines:
+
+    Architectural Team: Designs using Allplan.
+    Structural Engineering Team: Models the load-bearing system using Allplan.
+    Mechanical, Electrical, and Plumbing (MEP) Team: Designs HVAC systems using another BIM software (e.g., Revit).
+
+The Problem Encountered: A Clash That Could Halt Construction
+During the coordination phase, when the BIM Coordinator aggregates models from all disciplines, a critical issue is detected: a main ventilation duct designed by the mechanical team, located in the ceiling of the 3rd floor corridor, clashes directly with the center of a main load-bearing beam (Beam K-305), which is 80cm deep and designed by the structural team. If this had been discovered during construction, it would have led to a major, costly problem, causing significant project delays—a classic interdisciplinary coordination error.
+Attempted Solution with Traditional (Inefficient) Methods:
+
+    The BIM Coordinator takes a screenshot of the clash in the software where it was detected.
+    An email titled "Critical Clash" is sent to the Structural Project Manager and MEP Project Manager. The email includes the screenshot and attempts to describe the clash location: "Clash between Beam K-305 and the main ventilation duct, located on the 3rd floor, between axes B and 5."
+    An email chain begins. The MEP engineer cannot precisely understand the duct's exact location. The structural engineer spends time searching their own project to identify the beam from the screenshot.
+    Phone calls are made, new screenshots are shared. Potential solutions (e.g., can a penetration be made in the beam? Can the duct be rerouted?) get lost in the email shuffle, making it impossible to track the process. This entire process could take days, even weeks, to reach a resolution.
+
+Modern and Effective Solution Scenario with Allplan Bimplus and BCF:
+Step 1: Aggregating Models on the Bimplus Platform
+All disciplines (Architectural, Structural, and MEP in IFC format) upload their models to the cloud-based Allplan Bimplus platform. The BIM Coordinator aggregates all models on the platform, creating a federated project model, and initiates a Clash Detection directly within Bimplus.
+Step 2: Creating a BCF Issue
+Bimplus automatically identifies the clash between Beam K-305 and the ventilation duct. Instead of writing an email, the BIM Coordinator selects the clashing elements and clicks the "Create Issue" button. This action generates a standardized BCF (BIM Collaboration Format) entry:
+
+    Title: "Critical Clash: HVAC Duct - K-305 Beam / 3rd Floor"
+    Assigned To: Structural Project Manager and MEP Project Manager.
+    Status: Open
+    Priority: High
+    Description: "Main supply duct clashes with Beam K-305. Duct cannot be lowered due to ceiling height restrictions. Urgent coordination required to either create a penetration in the beam or reroute the duct."
+
+Crucially, Bimplus automatically attaches the clash's 3D camera angle, precise coordinates, and the unique identifiers (GUIDs) of the clashing elements to this issue.
+Step 3: Viewing the Issue within Allplan
+The Structural Project Manager receives a notification. They open their Allplan software and see the new issue assigned to them in the integrated Issue Manager panel. The moment they click on the issue, the Allplan screen automatically zooms directly to the clash location. The structural engineer does not need to search for the problem. Within their own structural model, they see the clashing MEP duct as a reference.
+Step 4: Discussing the Solution and Updating the Model
+The structural engineer analyzes the beam and determines that a 40x30 cm penetration can be created without compromising the beam's structural integrity, provided additional reinforcement is added. They add their solution as a comment within the Allplan Issue Manager: "A 40x30 cm penetration can be created in the beam. I am updating the model with the necessary additional reinforcement. Please confirm your duct dimensions based on this opening." They change the issue status to "In Progress."
+Step 5: Feedback and Resolution
+The MEP engineer immediately sees this comment and the updated status through their BIM software's BCF add-on. They also navigate to the clash location with a single click. They respond: "Duct dimensions are suitable for the opening. I am revising my duct connections according to the new opening." The structural engineer revises the beam in Allplan and re-uploads the model to Bimplus. The MEP engineer also revises their model.
+Step 6: Verification and Closure
+The BIM Coordinator re-runs the clash test with the updated models and confirms that the issue has been resolved. They transparently review all communications and the resolution process via the BCF record and change the issue status to "Closed."
+Outcome: A problem that could have taken weeks and incurred significant costs on the construction site is fully resolved and documented within a few hours. This is achieved in an environment where all stakeholders transparently track the process, and communications and solutions are directly linked to the model. This scenario concretely demonstrates the power of a BCF-based centralized workflow.

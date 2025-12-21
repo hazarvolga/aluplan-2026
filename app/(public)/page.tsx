@@ -3,6 +3,7 @@ import HeroV2 from "@/components/homepage-v2/HeroV2";
 import BentoGrid from "@/components/homepage-v2/BentoGrid";
 import PathwaySelector from "@/components/homepage-v2/PathwaySelector";
 import TechSpecsTable from "@/components/homepage-v2/TechSpecsTable";
+import ServicesV2 from "@/components/homepage-v2/ServicesV2";
 import DeepFooter from "@/components/homepage-v2/DeepFooter";
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function Home() {
             <BentoGrid />
             <PathwaySelector />
             <TechSpecsTable />
+            <ServicesV2 />
             <DeepFooter />
         </main>
     )
