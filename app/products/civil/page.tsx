@@ -10,7 +10,7 @@ import VideoModal from "@/components/VideoModal";
 import PostHeroSection from "@/components/PostHeroSection";
 import ChallengesSection from "@/components/ChallengesSection";
 import StatsTemplate from "@/components/StatsTemplate";
-import CloudServicesSection from "@/components/CloudServicesSection";
+import CloudServicesSection, { CloudServiceItem } from "@/components/CloudServicesSection";
 
 // Fayda ikonları - Ultimate'dan
 import parametricRoadIcon from "@/assets/products/allplan-ultimate/parametric-road-modeling.png";
@@ -152,7 +152,7 @@ export default function Page() {
   ];
 
   // Civil için ek bulut hizmetleri (şu an boş)
-  const additionalCloudServices: { title: string; description: string; image?: unknown; youtubeId?: string }[] = [];
+  const additionalCloudServices: CloudServiceItem[] = [];
 
   const purchaseOptions = [
     { title: "BIM²form Eklentisi - Kalıp", description: "Kalıp yerleştirmek için araçlar.", youtubeId: "s-NKwOU0XAw", thumbnailUrl: bim2formFormworkImg },

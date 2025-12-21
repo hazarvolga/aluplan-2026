@@ -48,7 +48,7 @@ const SuccessStories = () => {
                         Müşterilerimiz <span className="text-accent">Ne Diyor?</span>
                     </h2>
                     <p className="text-xl text-white/60 max-w-2xl mx-auto">
-                        Türkiye'nin önde gelen firmalarından referanslar
+                        Türkiye&apos;nin önde gelen firmalarından referanslar
                     </p>
                 </div>
 
@@ -69,7 +69,7 @@ const SuccessStories = () => {
 
                                     {/* Quote Text */}
                                     <blockquote className="text-xl md:text-2xl text-white/90 leading-relaxed mb-8 font-light italic">
-                                        "{testimonials[currentIndex].quote}"
+                                        &quot;{testimonials[currentIndex].quote}&quot;
                                     </blockquote>
 
                                     {/* Author Info */}
@@ -115,8 +115,8 @@ const SuccessStories = () => {
                                     key={index}
                                     onClick={() => setCurrentIndex(index)}
                                     className={`w-2 h-2 rounded-full transition-all ${index === currentIndex
-                                            ? 'bg-accent w-6'
-                                            : 'bg-white/20 hover:bg-white/40'
+                                        ? 'bg-accent w-6'
+                                        : 'bg-white/20 hover:bg-white/40'
                                         }`}
                                 />
                             ))}

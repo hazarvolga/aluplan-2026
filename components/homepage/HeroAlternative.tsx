@@ -75,7 +75,7 @@ const HeroAlternative = () => {
                         variants={fadeUpVariants}
                         className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] tracking-tight text-white mb-6"
                     >
-                        30 Yıldır Türkiye'nin{" "}
+                        30 Yıldır Türkiye&apos;nin{" "}
                         <span className="text-accent">BIM Çözüm Ortağı</span>
                     </motion.h1>
 

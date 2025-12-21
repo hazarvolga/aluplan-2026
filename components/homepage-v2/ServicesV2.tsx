@@ -9,7 +9,11 @@ import {
     ShoppingCart,
     Users,
     ArrowRight,
-    Clock
+    Clock,
+    Download,
+    HelpCircle,
+    LogIn,
+    Key
 } from "lucide-react";
 
 const services = [
@@ -60,6 +64,38 @@ const services = [
         status: "active",
         href: "/contact",
         cta: "Başvuru Yap"
+    },
+    {
+        icon: Download,
+        title: "Download",
+        description: "Güncel yazılım sürümlerini ve deneme sürümlerini indirin.",
+        status: "active",
+        href: "https://connect2.allplan.com/",
+        cta: "İndir"
+    },
+    {
+        icon: HelpCircle,
+        title: "ALLPLAN FAQ",
+        description: "Sıkça sorulan sorular ve çözüm veri tabanı.",
+        status: "active",
+        href: "/solutions-v2/faq",
+        cta: "İncele"
+    },
+    {
+        icon: LogIn,
+        title: "Connect: Giriş",
+        description: "Allplan Connect portalına giriş yapın veya şifrenizi sıfırlayın.",
+        status: "active",
+        href: "/solutions-v2/connect-login",
+        cta: "Giriş Yap"
+    },
+    {
+        icon: Key,
+        title: "Connect: Lisans",
+        description: "Lisanslarınızı yönetin, transfer edin veya güncelleyin.",
+        status: "active",
+        href: "/solutions-v2/connect-license",
+        cta: "Yönet"
     }
 ];
 
@@ -93,10 +129,10 @@ const ServicesV2 = () => {
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                             >
                                 <Link
-                                    href={isActive ? service.href : "#"}
+                                    href={service.title === "Eğitim" ? "/solutions-v2/training" : (isActive ? service.href : "#")}
                                     className={`group relative block h-full p-8 rounded-2xl border transition-all duration-300 overflow-hidden ${isActive
-                                            ? "bg-[#0a0a0a] border-white/5 hover:border-[#3B82F6]/30 hover:bg-[#0f0f0f] cursor-pointer"
-                                            : "bg-[#0a0a0a]/50 border-white/5 cursor-not-allowed opacity-60"
+                                        ? "bg-[#0a0a0a] border-white/5 hover:border-[#3B82F6]/30 hover:bg-[#0f0f0f] cursor-pointer"
+                                        : "bg-[#0a0a0a]/50 border-white/5 cursor-not-allowed opacity-60"
                                         }`}
                                 >
                                     {/* Hosting Hover Effect */}
@@ -104,23 +140,28 @@ const ServicesV2 = () => {
                                         <div className="absolute inset-0 bg-gradient-to-b from-[#3B82F6]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                     )}
 
-                                    <div className="relative z-10 flex flex-col h-full">
-                                        <div className="flex justify-between items-start mb-6">
-                                            <div className={`p-3 rounded-xl border ${isActive
-                                                    ? "bg-[#111] border-white/10 group-hover:text-[#3B82F6] text-gray-300"
-                                                    : "bg-[#111]/50 border-white/5 text-gray-600"
-                                                } transition-colors`}>
-                                                <Icon className="h-6 w-6" />
-                                            </div>
-
-                                            {!isActive && (
-                                                <span className="flex items-center gap-1 text-[10px] uppercase tracking-wider font-medium text-gray-500 bg-[#111] px-2 py-1 rounded border border-white/5">
-                                                    <Clock className="h-3 w-3" /> Yakında
-                                                </span>
-                                            )}
+                                    <div className="relative z-10 flex flex-col h-full pt-4">
+                                        {/* Icon - Moved to Top Right - 2px as requested */}
+                                        <div className={`absolute top-[2px] right-[2px] p-3 rounded-xl border ${isActive
+                                            ? "bg-[#111] border-white/10 group-hover:text-[#3B82F6] text-gray-300"
+                                            : "bg-[#111]/50 border-white/5 text-gray-600"
+                                            } transition-colors`}>
+                                            <Icon className="h-6 w-6" />
                                         </div>
 
-                                        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#3B82F6] transition-colors">
+                                        {/* Badge - Stays relative/left if exists */}
+                                        {!isActive && (
+                                            <div className="mb-6">
+                                                <span className="inline-flex items-center gap-1 text-[10px] uppercase tracking-wider font-medium text-gray-500 bg-[#111] px-2 py-1 rounded border border-white/5">
+                                                    <Clock className="h-3 w-3" /> Yakında
+                                                </span>
+                                            </div>
+                                        )}
+
+                                        {/* Spacer if active to aligning text consistently or just let it flow since button is gone */}
+                                        {isActive && <div className="h-4" />}
+
+                                        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#3B82F6] transition-colors pr-16">
                                             {service.title}
                                         </h3>
 
@@ -129,8 +170,8 @@ const ServicesV2 = () => {
                                         </p>
 
                                         <div className={`flex items-center gap-2 text-sm font-medium ${isActive
-                                                ? "text-white group-hover:text-[#3B82F6]"
-                                                : "text-gray-600"
+                                            ? "text-white group-hover:text-[#3B82F6]"
+                                            : "text-gray-600"
                                             } transition-colors`}>
                                             {service.cta}
                                             {isActive && <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />}
