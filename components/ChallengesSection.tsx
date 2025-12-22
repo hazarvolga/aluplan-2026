@@ -5,18 +5,25 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 type ChallengesSectionProps = {
   items: string[];
   id?: string;
+  theme?: "default" | "v2-dark";
 };
 
-const ChallengesSection = ({ items, id }: ChallengesSectionProps) => {
+const ChallengesSection = ({ items, id, theme = "default" }: ChallengesSectionProps) => {
+  const isDark = theme === "v2-dark";
+  const bgClass = isDark ? "bg-[#0B1120]" : "bg-muted/30";
+  const cardBg = isDark ? "bg-white/5 border-white/10" : "bg-card border-border";
+  const mutedText = isDark ? "text-gray-300" : "text-muted-foreground";
+  const textClass = isDark ? "text-white" : "text-foreground";
+
   if (!items || items.length === 0) return null;
   return (
-    <section id={id} className="py-16 bg-muted/30">
+    <section id={id} className={`py-16 ${bgClass}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4 bg-accent/10 text-accent border-accent/30">
             ZORLU DURUMLAR
           </Badge>
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
+          <h2 className={`font-display text-3xl md:text-4xl font-bold ${textClass}`}>
             AŞAĞIDAKİ ZORLUKLARLA SÜREKLİ MÜCADELE EDİYOR MUSUNUZ?
           </h2>
         </div>
@@ -25,9 +32,9 @@ const ChallengesSection = ({ items, id }: ChallengesSectionProps) => {
             <CarouselContent className="-ml-4">
               {items.map((text, index) => (
                 <CarouselItem key={index} className="pl-4 md:basis-1/2">
-                  <Card className="bg-card border-border h-full">
+                  <Card className={`${cardBg} h-full`}>
                     <CardContent className="p-6 flex items-center justify-center min-h-[120px]">
-                      <p className="text-muted-foreground text-center">{text}</p>
+                      <p className={`${mutedText} text-center`}>{text}</p>
                     </CardContent>
                   </Card>
                 </CarouselItem>

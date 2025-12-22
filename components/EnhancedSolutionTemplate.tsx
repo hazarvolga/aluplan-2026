@@ -54,6 +54,7 @@ interface EnhancedSolutionTemplateProps {
   statsVariant?: "default" | "animated";
   heroBackgroundVideoUrl?: string;
   showHeroButtons?: boolean;
+  theme?: "default" | "v2-dark";
 }
 
 const EnhancedSolutionTemplate = ({
@@ -80,17 +81,23 @@ const EnhancedSolutionTemplate = ({
   statsVariant = "default",
   heroBackgroundVideoUrl,
   showHeroButtons = true,
+  theme = "default",
 }: EnhancedSolutionTemplateProps) => {
+  const isDark = theme === "v2-dark";
+  const bgClass = isDark ? "bg-[#020202] text-white" : "bg-background";
+  const mutedTextClass = isDark ? "text-gray-400" : "text-muted-foreground";
+  const cardBgClass = isDark ? "bg-white/5 border-white/10" : "bg-card border-border";
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className={`min-h-screen ${bgClass}`}>
 
       {/* Hero Section */}
       {customHero ? (
         <>{customHero}</>
       ) : (
-        <section className="relative py-24 gradient-primary overflow-hidden">
+        <section className={`relative py-24 overflow-hidden ${isDark ? "bg-gradient-to-br from-[#0B1120] to-[#020202]" : "gradient-primary"}`}>
           <div className="absolute inset-0 bg-technical-grid opacity-30" />
-          
+
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -137,19 +144,23 @@ const EnhancedSolutionTemplate = ({
 
       {/* Stats Section */}
       {stats.length > 0 && (
-        <StatsSection items={stats} variant={statsVariant} />
+        <div className={isDark ? "bg-[#020202]" : ""}>
+          <StatsSection items={stats} variant={statsVariant} theme={theme} />
+        </div>
       )}
 
       {preChallengesSection}
 
       {/* Challenges Section */}
       {challenges.length > 0 && (
-        <ChallengesSection items={challenges.map(c => c.text)} />
+        <div className={isDark ? "[&_section]:bg-white/5 [&_p]:text-gray-300 [&_div.bg-card]:bg-[#0B1120] [&_div.bg-card]:border-white/10" : ""}>
+          <ChallengesSection items={challenges.map(c => c.text)} theme={theme} />
+        </div>
       )}
 
       {/* 12 Reasons Section */}
       {reasons.length > 0 && (
-        <section className="py-20 bg-background">
+        <section className={`py-20 ${bgClass}`}>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <Badge variant="outline" className="mb-4 bg-accent/10 text-accent border-accent/30">
@@ -162,7 +173,7 @@ const EnhancedSolutionTemplate = ({
             {reasonsVariant === "benefits" ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {reasons.map((reason, index) => (
-                  <div key={index} className="group relative bg-card p-6 pr-20 pb-10 rounded-2xl border border-border shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden">
+                  <div key={index} className={`group relative p-6 pr-20 pb-10 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden ${cardBgClass}`}>
                     <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-accent/10 to-transparent rounded-bl-full -mr-4 -mt-4 transition-all group-hover:from-accent/20" />
                     {reason.image && (
                       <div className="absolute top-4 right-4 z-10 w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-sm">
@@ -172,7 +183,7 @@ const EnhancedSolutionTemplate = ({
                     <h3 className="font-display text-lg font-bold text-foreground mb-3 group-hover:text-accent transition-colors">
                       {reason.title}
                     </h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
+                    <p className={`${mutedTextClass} text-sm leading-relaxed`}>
                       {reason.description}
                     </p>
                   </div>
@@ -181,7 +192,7 @@ const EnhancedSolutionTemplate = ({
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {reasons.map((reason, index) => (
-                  <Card key={index} className="relative overflow-hidden border-border hover:shadow-technical transition-shadow">
+                  <Card key={index} className={`relative overflow-hidden hover:shadow-technical transition-shadow ${cardBgClass}`}>
                     <CardContent className="p-6 pr-20 pb-10">
                       {reason.image && (
                         <div className="absolute top-4 right-4 z-10 w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center shadow-sm">
@@ -191,7 +202,7 @@ const EnhancedSolutionTemplate = ({
                       <h3 className="font-display text-lg font-bold text-foreground mb-2">
                         {reason.title}
                       </h3>
-                      <p className="text-muted-foreground text-sm">
+                      <p className={`${mutedTextClass} text-sm`}>
                         {reason.description}
                       </p>
                     </CardContent>
@@ -207,7 +218,7 @@ const EnhancedSolutionTemplate = ({
 
       {/* Workflow Section */}
       {workflowSteps.length > 0 && (
-        <section className="py-20 bg-muted/30">
+        <section className={`py-20 ${isDark ? "bg-white/5" : "bg-muted/30"}`}>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
@@ -216,7 +227,7 @@ const EnhancedSolutionTemplate = ({
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {workflowSteps.map((step, index) => (
-                <div key={index} className="bg-card rounded-xl overflow-hidden shadow-sm border border-border">
+                <div key={index} className={`rounded-xl overflow-hidden shadow-sm ${cardBgClass}`}>
                   {step.image && (
                     <div className="relative w-full h-48">
                       <Image src={step.image} alt={step.title} fill className="object-cover" />
@@ -226,7 +237,7 @@ const EnhancedSolutionTemplate = ({
                     <h3 className="font-display text-xl font-bold text-foreground mb-2">
                       {step.title}
                     </h3>
-                    <p className="text-muted-foreground">
+                    <p className={mutedTextClass}>
                       {step.description}
                     </p>
                   </div>
@@ -239,7 +250,7 @@ const EnhancedSolutionTemplate = ({
 
       {/* YouTube Video Section */}
       {youtubeVideoId && (
-        <section className="py-20 bg-background">
+        <section className={`py-20 ${bgClass}`}>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <div className="aspect-video rounded-2xl overflow-hidden shadow-xl">
@@ -277,7 +288,7 @@ const EnhancedSolutionTemplate = ({
         </section>
       )}
 
-      
+
     </div>
   );
 };

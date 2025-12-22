@@ -126,6 +126,7 @@ const preWorkflowSection = (
     title="Mimari İş Akışları"
     subtitle="Fikir aşamasından teslimata kadar kesintisiz ve verimli süreçler."
     categories={workflowCategories}
+    theme="v2-dark"
   />
 );
 
@@ -178,6 +179,7 @@ export default function Page() {
       postHeroSection={postHeroSection}
       preWorkflowSection={preWorkflowSection}
       showCta={false}
+      theme="v2-dark"
     />
   )
 }
