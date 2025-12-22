@@ -1,10 +1,18 @@
 import Link from "next/link";
-import { Facebook, Twitter, Linkedin, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Youtube, Mail, Phone, MapPin, Instagram } from "lucide-react";
 import logoWhite from "@/assets/logo-white.png";
 import Image from "next/image";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+
+  const socialLinks = [
+    { icon: Facebook, href: "https://www.facebook.com/Allplan.Turkey", label: "Facebook" },
+    { icon: Twitter, href: "https://twitter.com/Allplan_Turkey", label: "Twitter" },
+    { icon: Linkedin, href: "https://www.linkedin.com/company/allplan-turkey/", label: "LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/allplan_turkey/", label: "Instagram" },
+    { icon: Youtube, href: "https://www.youtube.com/c/AllplanTurkey", label: "YouTube" },
+  ];
 
   return (
     <footer className="bg-[#050505] text-white relative overflow-hidden border-t border-white/5">
@@ -23,11 +31,14 @@ const Footer = () => {
               Mimari ve mühendislik projeleriniz için profesyonel BIM çözümleri.
             </p>
             <div className="flex space-x-3">
-              {[Facebook, Twitter, Linkedin, Youtube].map((Icon, i) => (
-                <a key={i} href="#" className="h-9 w-9 rounded-md bg-white/5 border border-white/10 hover:bg-[#3B82F6]/20 hover:border-[#3B82F6]/50 hover:text-[#3B82F6] transition-all flex items-center justify-center text-gray-400">
-                  <Icon className="h-4 w-4" />
-                </a>
-              ))}
+              {socialLinks.map((social, i) => {
+                const Icon = social.icon;
+                return (
+                  <a key={i} href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.label} className="h-9 w-9 rounded-md bg-white/5 border border-white/10 hover:bg-[#3B82F6]/20 hover:border-[#3B82F6]/50 hover:text-[#3B82F6] transition-all flex items-center justify-center text-gray-400">
+                    <Icon className="h-4 w-4" />
+                  </a>
+                );
+              })}
             </div>
           </div>
 
@@ -35,23 +46,24 @@ const Footer = () => {
           <div>
             <h3 className="font-mono text-xs font-bold uppercase tracking-widest text-[#3B82F6] mb-6">Ürünler</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/products/allplan-aec" className="text-gray-400 hover:text-white transition-colors">Allplan Architecture</Link></li>
-              <li><Link href="/products/allplan-aec" className="text-gray-400 hover:text-white transition-colors">Allplan Engineering</Link></li>
-              <li><Link href="/solutions/bridge-design" className="text-gray-400 hover:text-white transition-colors">Allplan Bridge</Link></li>
-              <li><Link href="/products/precast" className="text-gray-400 hover:text-white transition-colors">Allplan Precast</Link></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Paket Karşılaştırma</a></li>
+              <li><Link href="/products/allplan-basic" className="text-gray-400 hover:text-white transition-colors">ALLPLAN Basic</Link></li>
+              <li><Link href="/products/allplan-concept" className="text-gray-400 hover:text-white transition-colors">ALLPLAN Concept</Link></li>
+              <li><Link href="/products/allplan-professional" className="text-gray-400 hover:text-white transition-colors">ALLPLAN Professional</Link></li>
+              <li><Link href="/products/allplan-ultimate" className="text-gray-400 hover:text-white transition-colors">ALLPLAN Ultimate</Link></li>
+              <li><Link href="/products/civil" className="text-gray-400 hover:text-white transition-colors">CIVIL</Link></li>
+              <li><Link href="/products/precast" className="text-gray-400 hover:text-white transition-colors">PRECAST</Link></li>
             </ul>
           </div>
 
           {/* Resources */}
           <div>
-            <h3 className="font-mono text-xs font-bold uppercase tracking-widest text-[#3B82F6] mb-6">Kaynaklar</h3>
+            <h3 className="font-mono text-xs font-bold uppercase tracking-widest text-[#3B82F6] mb-6">ÇÖZÜMLER</h3>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">İndirme Merkezi</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Webinarlar</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Eğitim Videoları</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Dokümantasyon</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Destek Merkezi</a></li>
+              <li><Link href="/solutions/architecture" className="text-gray-400 hover:text-white transition-colors">BİNA TASARIMI</Link></li>
+              <li><Link href="/solutions/infrastructure" className="text-gray-400 hover:text-white transition-colors">ALTYAPI TASARIMI</Link></li>
+              <li><Link href="/solutions/site-planning" className="text-gray-400 hover:text-white transition-colors">İNŞAAT PLANLAMASI</Link></li>
+              <li><Link href="/solutions/addons" className="text-gray-400 hover:text-white transition-colors">EKLENTİLER</Link></li>
+              <li><Link href="/products/partner-solutions" className="text-gray-400 hover:text-white transition-colors">DİĞER ÜRÜNLER</Link></li>
             </ul>
           </div>
 
@@ -62,14 +74,15 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0 text-gray-500" />
                 <span className="text-gray-400 leading-relaxed">
-                  Quick Tower - Workinton<br />
-                  Ataşehir, Istanbul
+                  Quick Tower – Workinton<br />
+                  İçerenköy Mah. Topçu İbrahim Sok.<br />
+                  8/10D No: 5, 34752 Ataşehir / İstanbul
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 flex-shrink-0 text-gray-500" />
-                <a href="tel:+902161234567" className="text-gray-400 hover:text-white transition-colors">
-                  +90 (216) 123 45 67
+                <a href="tel:+902162258441" className="text-gray-400 hover:text-white transition-colors">
+                  (+90) 216 225 84 41
                 </a>
               </li>
               <li className="flex items-center gap-3">

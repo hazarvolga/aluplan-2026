@@ -2,7 +2,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Target, Users, Award, TrendingUp } from "lucide-react";
-import Footer from "@/components/Footer";
+
 
 export default function ClientPage() {
   const stats = [
@@ -90,18 +90,18 @@ export default function ClientPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Adres</h3>
-                  <p className="text-muted-foreground">Quick Tower - Workinton<br />Atatürk Mahallesi<br />Ataşehir, İstanbul 34758<br />Türkiye</p>
+                  <p className="text-muted-foreground">Quick Tower – Workinton<br />İçerenköy Mah. Topçu İbrahim Sok.<br />8/10D No: 5, 34752 Ataşehir / İstanbul</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2">İletişim</h3>
-                  <p className="text-muted-foreground"><strong>Telefon:</strong> +90 (216) 123 45 67<br /><strong>Email:</strong> info@aluplan.com.tr<br /><strong>Çalışma Saatleri:</strong><br />Pazartesi - Cuma: 09:00 - 18:00</p>
+                  <p className="text-muted-foreground"><strong>Telefon:</strong> (+90) 216 225 84 41<br /><strong>Email:</strong> info@aluplan.com.tr<br /><strong>Çalışma Saatleri:</strong><br />Pazartesi - Cuma: 09:00 - 18:00</p>
                 </div>
               </div>
             </CardContent>
           </Card>
         </div>
       </section>
-      <Footer />
+
     </div>
   );
 }

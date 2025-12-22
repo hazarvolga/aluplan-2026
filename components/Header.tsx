@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown, Globe, Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
+import { Menu, X, ChevronDown, Globe, Facebook, Twitter, Linkedin, Youtube, Instagram } from "lucide-react";
 import MegaMenu from "./MegaMenu";
 import { solutionsMenu } from "@/data/solutionsMenu";
 import Image from "next/image";
@@ -14,6 +14,14 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeMegaMenu, setActiveMegaMenu] = useState<string | null>(null);
   const [language, setLanguage] = useState<"tr" | "en">("tr");
+
+  const socialLinks = [
+    { icon: Facebook, href: "https://www.facebook.com/Allplan.Turkey", label: "Facebook" },
+    { icon: Twitter, href: "https://twitter.com/Allplan_Turkey", label: "Twitter" },
+    { icon: Linkedin, href: "https://www.linkedin.com/company/allplan-turkey/", label: "LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/allplan_turkey/", label: "Instagram" },
+    { icon: Youtube, href: "https://www.youtube.com/c/AllplanTurkey", label: "YouTube" },
+  ];
 
   const toggleLanguage = () => {
     setLanguage(language === "tr" ? "en" : "tr");
@@ -142,16 +150,21 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
         <div className="flex h-10 items-center justify-between">
           <div className="flex items-center space-x-2">
-            {[Facebook, Twitter, Linkedin, Youtube].map((Icon, i) => (
-              <a
-                key={i}
-                href="#"
-                aria-label={["Facebook", "Twitter", "LinkedIn", "YouTube"][i]}
-                className="h-7 w-7 rounded-sm bg-white/5 border border-white/10 hover:bg-[#3B82F6]/20 hover:border-[#3B82F6]/50 hover:text-[#3B82F6] transition-all flex items-center justify-center text-gray-400"
-              >
-                <Icon className="h-3.5 w-3.5" />
-              </a>
-            ))}
+            {socialLinks.map((social, i) => {
+              const Icon = social.icon;
+              return (
+                <a
+                  key={i}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  className="h-7 w-7 rounded-sm bg-white/5 border border-white/10 hover:bg-[#3B82F6]/20 hover:border-[#3B82F6]/50 hover:text-[#3B82F6] transition-all flex items-center justify-center text-gray-400"
+                >
+                  <Icon className="h-3.5 w-3.5" />
+                </a>
+              );
+            })}
           </div>
           <a href="mailto:info@aluplan.com.tr" className="text-xs font-mono text-gray-500 hover:text-[#3B82F6] transition-colors">info@aluplan.com.tr</a>
         </div>

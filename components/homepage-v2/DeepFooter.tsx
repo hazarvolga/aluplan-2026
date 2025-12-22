@@ -81,9 +81,9 @@ const DeepFooter = () => {
                                     <MapPin className="h-6 w-6 shrink-0 text-white" />
                                 </div>
                                 <p className="leading-relaxed text-lg">
-                                    Küçükbakkalköy Mah. Dereboyu Cad.<br />
-                                    Brandium AVM R5 Blok No:3A<br />
-                                    Ataşehir / İstanbul
+                                    Quick Tower – Workinton<br />
+                                    İçerenköy Mah. Topçu İbrahim Sok.<br />
+                                    8/10D No: 5, 34752 Ataşehir / İstanbul
                                 </p>
                             </div>
                         </div>
@@ -95,7 +95,7 @@ const DeepFooter = () => {
                                     <div className="p-3 rounded-lg bg-white/5 border border-white/10 group-hover:border-[#3B82F6]/50 transition-colors">
                                         <Phone className="h-6 w-6 shrink-0 text-white" />
                                     </div>
-                                    <p className="text-lg">+90 216 123 45 67</p>
+                                    <p className="text-lg">(+90) 216 225 84 41</p>
                                 </div>
                                 <div className="flex items-center gap-4 text-gray-300 hover:text-white transition-colors group">
                                     <div className="p-3 rounded-lg bg-white/5 border border-white/10 group-hover:border-[#3B82F6]/50 transition-colors">

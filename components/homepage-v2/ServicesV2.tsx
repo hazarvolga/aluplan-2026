@@ -70,7 +70,7 @@ const services = [
         title: "Partner",
         description: "ALLPLAN çözüm ortağı ağımıza katılın, birlikte büyüyelim.",
         status: "active",
-        href: "/contact",
+        href: "https://www.allplan.com/allplan-partner-solutions/",
         cta: "Başvuru Yap"
     },
     {
