@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown, Globe, Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
 import MegaMenu from "./MegaMenu";
@@ -63,6 +64,46 @@ const Header = () => {
     },
   ];
 
+  const pathname = usePathname();
+
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
+    if (!href.startsWith("/#")) return;
+
+    // Check if we are on the homepage
+    if (pathname === "/") {
+      e.preventDefault();
+      const targetId = href.replace("/#", "");
+      const elem = document.getElementById(targetId);
+
+      if (elem) {
+        // Custom smooth scroll with easing
+        const targetPosition = elem.getBoundingClientRect().top + window.pageYOffset;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        const duration = 1500; // 1.5s for slower/softer scroll
+        let start: number | null = null;
+
+        const animation = (currentTime: number) => {
+          if (start === null) start = currentTime;
+          const timeElapsed = currentTime - start;
+
+          // Easing function: easeInOutCubic
+          const ease = (t: number) => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+
+          const run = ease(timeElapsed / duration) * distance + startPosition;
+          window.scrollTo(0, run);
+
+          if (timeElapsed < duration) requestAnimationFrame(animation);
+        };
+
+        requestAnimationFrame(animation);
+
+        // Also close menu if on mobile
+        setIsMenuOpen(false);
+      }
+    }
+  };
+
   const navigation = [
     {
       name: language === "tr" ? "Çözümler" : "Solutions",
@@ -72,8 +113,8 @@ const Header = () => {
       name: language === "tr" ? "Ürünler" : "Products",
       megaMenu: "products",
     },
-    { name: language === "tr" ? "Kaynaklar" : "Resources", href: "#resources" },
-    { name: language === "tr" ? "Referanslar" : "References", href: "#references" },
+    { name: language === "tr" ? "Kaynaklar" : "Resources", href: "/#professional-services" },
+    { name: language === "tr" ? "Referanslar" : "References", href: "/#references" },
     { name: language === "tr" ? "Hakkımızda" : "About", href: "/about" },
     { name: language === "tr" ? "İletişim" : "Contact", href: "/contact" },
   ];
@@ -136,6 +177,7 @@ const Header = () => {
                   <Link
                     href={item.href}
                     className="text-sm font-medium text-gray-300 hover:text-white transition-colors flex items-center gap-1 relative group"
+                    onClick={(e) => item.href && handleScroll(e, item.href)}
                   >
                     {item.name}
                     <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3B82F6] transition-all duration-300 group-hover:w-full" />
@@ -196,7 +238,10 @@ const Header = () => {
                     key={item.name}
                     href={item.href || "#"}
                     className="text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 px-4 py-3 rounded-lg transition-colors"
-                    onClick={() => setIsMenuOpen(false)}
+                    onClick={(e) => {
+                      if (item.href) handleScroll(e, item.href);
+                      setIsMenuOpen(false);
+                    }}
                   >
                     {item.name}
                   </a>

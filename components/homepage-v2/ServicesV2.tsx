@@ -13,7 +13,14 @@ import {
     Download,
     HelpCircle,
     LogIn,
-    Key
+    Key,
+    Newspaper,
+    Video,
+    Book,
+    Globe,
+    Monitor,
+    FileText,
+    List
 } from "lucide-react";
 
 const services = [
@@ -96,12 +103,68 @@ const services = [
         status: "active",
         href: "/solutions-v2/connect-license",
         cta: "Yönet"
+    },
+    {
+        icon: Newspaper,
+        title: "Blog Global",
+        description: "En son ALLPLAN haberleri, başarı hikayeleri ve sektör trendleri.",
+        status: "active",
+        href: "https://www.allplan.com/blog/",
+        cta: "Okumaya Başla"
+    },
+    {
+        icon: Video,
+        title: "Canlı Webinarlar",
+        description: "Uzmanların sunumuyla canlı eğitimler ve ürün tanıtımları.",
+        status: "active",
+        href: "https://www.allplan.com/events/events/?",
+        cta: "Kayıt Ol"
+    },
+    {
+        icon: Book,
+        title: "BIM Rehberi",
+        description: "BIM süreçleri ve uygulamaları için kapsamlı rehberler.",
+        status: "active",
+        href: "https://www.allplan.com/bim/bim-guides/",
+        cta: "İncele"
+    },
+    {
+        icon: Globe,
+        title: "OPENBIM",
+        description: "Açık standartlarla işbirliği, IFC ve veri değişimi hakkında her şey.",
+        status: "active",
+        href: "https://www.allplan.com/us_en/bim/openbim/",
+        cta: "Keşfet"
+    },
+    {
+        icon: Monitor,
+        title: "Sistem Gereksinimleri",
+        description: "ALLPLAN performansı için önerilen donanım ve yazılım özellikleri.",
+        status: "active",
+        href: "https://www.allplan.com/us_en/system/system-requirements/",
+        cta: "Kontrol Et"
+    },
+    {
+        icon: List,
+        title: "Tüm Gereksinimler",
+        description: "Geçmişten günümüze tüm sürümler için detaylı sistem bilgileri.",
+        status: "active",
+        href: "https://connect.allplan.com/support/sysinfo/2025.html",
+        cta: "Listele"
+    },
+    {
+        icon: FileText,
+        title: "Sürüm Notları",
+        description: "Her yeni güncelleme ile gelen, iyileştirmeler ve düzeltmeler.",
+        status: "active",
+        href: "https://www.allplan.com/tr/system/releasenotes/?no_cache=1",
+        cta: "Oku"
     }
 ];
 
 const ServicesV2 = () => {
     return (
-        <section className="bg-[#050505] py-24 px-6 md:px-12 lg:px-24 border-b border-white/5 relative overflow-hidden">
+        <section id="professional-services" className="bg-[#050505] py-24 px-6 md:px-12 lg:px-24 border-b border-white/5 relative overflow-hidden">
             {/* Background Glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[400px] bg-[#3B82F6] rounded-full blur-[150px] opacity-[0.03] pointer-events-none" />
 
