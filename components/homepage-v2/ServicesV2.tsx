@@ -22,6 +22,7 @@ import {
     FileText,
     List
 } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const services = [
     {
@@ -163,6 +164,81 @@ const services = [
 ];
 
 const ServicesV2 = () => {
+    // Categorize services
+    const servicesList = services.filter(s => ["Eğitim", "Teknik Destek", "Danışmanlık", "Sertifika", "E-Mağaza", "Partner"].includes(s.title));
+    const connectList = services.filter(s => ["Connect: Giriş", "Connect: Lisans", "Download", "Tüm Gereksinimler"].includes(s.title));
+    const resourcesList = services.filter(s => ["ALLPLAN FAQ", "Blog Global", "Canlı Webinarlar", "BIM Rehberi", "OPENBIM", "Sistem Gereksinimleri", "Sürüm Notları"].includes(s.title));
+
+    const renderGrid = (items: typeof services) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
+            {items.map((service, index) => {
+                const Icon = service.icon;
+                const isActive = service.status === "active";
+
+                return (
+                    <motion.div
+                        key={service.title}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                    >
+                        <Link
+                            href={service.title === "Eğitim" ? "/solutions-v2/training" : (isActive ? service.href : "#")}
+                            className={`group relative block h-full p-6 rounded-2xl border transition-all duration-300 overflow-hidden ${isActive
+                                ? "bg-[#0a0a0a] border-white/5 hover:border-[#3B82F6]/30 hover:bg-[#0f0f0f] cursor-pointer"
+                                : "bg-[#0a0a0a]/50 border-white/5 cursor-not-allowed opacity-60"
+                                }`}
+                        >
+                            {/* Hosting Hover Effect */}
+                            {isActive && (
+                                <div className="absolute inset-0 bg-gradient-to-b from-[#3B82F6]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            )}
+
+                            <div className="relative z-10 flex flex-col h-full pt-4">
+                                {/* Icon - Moved to Top Right - 2px as requested */}
+                                <div className={`absolute top-[2px] right-[2px] p-3 rounded-xl border ${isActive
+                                    ? "bg-[#111] border-white/10 group-hover:text-[#3B82F6] text-gray-300"
+                                    : "bg-[#111]/50 border-white/5 text-gray-600"
+                                    } transition-colors`}>
+                                    <Icon className="h-6 w-6" />
+                                </div>
+
+                                {/* Badge - Stays relative/left if exists */}
+                                {!isActive && (
+                                    <div className="mb-6">
+                                        <span className="inline-flex items-center gap-1 text-[10px] uppercase tracking-wider font-medium text-gray-500 bg-[#111] px-2 py-1 rounded border border-white/5">
+                                            <Clock className="h-3 w-3" /> Yakında
+                                        </span>
+                                    </div>
+                                )}
+
+                                {/* Spacer if active to aligning text consistently or just let it flow since button is gone */}
+                                {isActive && <div className="h-4" />}
+
+                                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#3B82F6] transition-colors pr-16">
+                                    {service.title}
+                                </h3>
+
+                                <p className="text-gray-400 text-sm leading-relaxed mb-4 flex-grow">
+                                    {service.description}
+                                </p>
+
+                                <div className={`flex items-center gap-2 text-sm font-medium ${isActive
+                                    ? "text-white group-hover:text-[#3B82F6]"
+                                    : "text-gray-600"
+                                    } transition-colors`}>
+                                    {service.cta}
+                                    {isActive && <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />}
+                                </div>
+                            </div>
+                        </Link>
+                    </motion.div>
+                );
+            })}
+        </div>
+    );
+
     return (
         <section id="professional-services" className="bg-[#050505] py-24 px-6 md:px-12 lg:px-24 border-b border-white/5 relative overflow-hidden">
             {/* Background Glow */}
@@ -178,73 +254,42 @@ const ServicesV2 = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {services.map((service, index) => {
-                        const Icon = service.icon;
-                        const isActive = service.status === "active";
-
-                        return (
-                            <motion.div
-                                key={service.title}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, margin: "-50px" }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                <Tabs defaultValue="services" className="w-full">
+                    <div className="flex justify-center mb-12">
+                        <TabsList className="bg-white/5 border border-white/10 p-1 h-auto rounded-xl">
+                            <TabsTrigger
+                                value="services"
+                                className="px-6 py-2 rounded-lg text-gray-400 data-[state=active]:bg-[#3B82F6] data-[state=active]:text-white transition-all"
                             >
-                                <Link
-                                    href={service.title === "Eğitim" ? "/solutions-v2/training" : (isActive ? service.href : "#")}
-                                    className={`group relative block h-full p-8 rounded-2xl border transition-all duration-300 overflow-hidden ${isActive
-                                        ? "bg-[#0a0a0a] border-white/5 hover:border-[#3B82F6]/30 hover:bg-[#0f0f0f] cursor-pointer"
-                                        : "bg-[#0a0a0a]/50 border-white/5 cursor-not-allowed opacity-60"
-                                        }`}
-                                >
-                                    {/* Hosting Hover Effect */}
-                                    {isActive && (
-                                        <div className="absolute inset-0 bg-gradient-to-b from-[#3B82F6]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                    )}
+                                Hizmetler
+                            </TabsTrigger>
+                            <TabsTrigger
+                                value="connect"
+                                className="px-6 py-2 rounded-lg text-gray-400 data-[state=active]:bg-[#3B82F6] data-[state=active]:text-white transition-all"
+                            >
+                                Allplan Connect
+                            </TabsTrigger>
+                            <TabsTrigger
+                                value="resources"
+                                className="px-6 py-2 rounded-lg text-gray-400 data-[state=active]:bg-[#3B82F6] data-[state=active]:text-white transition-all"
+                            >
+                                Bilgi Merkezi
+                            </TabsTrigger>
+                        </TabsList>
+                    </div>
 
-                                    <div className="relative z-10 flex flex-col h-full pt-4">
-                                        {/* Icon - Moved to Top Right - 2px as requested */}
-                                        <div className={`absolute top-[2px] right-[2px] p-3 rounded-xl border ${isActive
-                                            ? "bg-[#111] border-white/10 group-hover:text-[#3B82F6] text-gray-300"
-                                            : "bg-[#111]/50 border-white/5 text-gray-600"
-                                            } transition-colors`}>
-                                            <Icon className="h-6 w-6" />
-                                        </div>
+                    <TabsContent value="services" className="mt-0">
+                        {renderGrid(servicesList)}
+                    </TabsContent>
 
-                                        {/* Badge - Stays relative/left if exists */}
-                                        {!isActive && (
-                                            <div className="mb-6">
-                                                <span className="inline-flex items-center gap-1 text-[10px] uppercase tracking-wider font-medium text-gray-500 bg-[#111] px-2 py-1 rounded border border-white/5">
-                                                    <Clock className="h-3 w-3" /> Yakında
-                                                </span>
-                                            </div>
-                                        )}
+                    <TabsContent value="connect" className="mt-0">
+                        {renderGrid(connectList)}
+                    </TabsContent>
 
-                                        {/* Spacer if active to aligning text consistently or just let it flow since button is gone */}
-                                        {isActive && <div className="h-4" />}
-
-                                        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#3B82F6] transition-colors pr-16">
-                                            {service.title}
-                                        </h3>
-
-                                        <p className="text-gray-400 text-sm leading-relaxed mb-8 flex-grow">
-                                            {service.description}
-                                        </p>
-
-                                        <div className={`flex items-center gap-2 text-sm font-medium ${isActive
-                                            ? "text-white group-hover:text-[#3B82F6]"
-                                            : "text-gray-600"
-                                            } transition-colors`}>
-                                            {service.cta}
-                                            {isActive && <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />}
-                                        </div>
-                                    </div>
-                                </Link>
-                            </motion.div>
-                        );
-                    })}
-                </div>
+                    <TabsContent value="resources" className="mt-0">
+                        {renderGrid(resourcesList)}
+                    </TabsContent>
+                </Tabs>
             </div>
         </section>
     );
