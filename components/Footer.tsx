@@ -59,11 +59,11 @@ const Footer = () => {
           <div>
             <h3 className="font-mono text-xs font-bold uppercase tracking-widest text-[#3B82F6] mb-6">ÇÖZÜMLER</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/solutions/architecture" className="text-gray-400 hover:text-white transition-colors">BİNA TASARIMI</Link></li>
-              <li><Link href="/solutions/infrastructure" className="text-gray-400 hover:text-white transition-colors">ALTYAPI TASARIMI</Link></li>
-              <li><Link href="/solutions/site-planning" className="text-gray-400 hover:text-white transition-colors">İNŞAAT PLANLAMASI</Link></li>
-              <li><Link href="/solutions/addons" className="text-gray-400 hover:text-white transition-colors">EKLENTİLER</Link></li>
-              <li><Link href="/products/partner-solutions" className="text-gray-400 hover:text-white transition-colors">DİĞER ÜRÜNLER</Link></li>
+              <li><Link href="/solutions-v2/building-design" className="text-gray-400 hover:text-white transition-colors">BİNA TASARIMI</Link></li>
+              <li><Link href="/solutions-v2/infrastructure" className="text-gray-400 hover:text-white transition-colors">ALTYAPI TASARIMI</Link></li>
+              <li><Link href="/solutions-v2/construction" className="text-gray-400 hover:text-white transition-colors">İNŞAAT PLANLAMASI</Link></li>
+              <li><Link href="/solutions-v2/addons" className="text-gray-400 hover:text-white transition-colors">EKLENTİLER</Link></li>
+              <li><Link href="/solutions-v2/other" className="text-gray-400 hover:text-white transition-colors">DİĞER ÜRÜNLER</Link></li>
             </ul>
           </div>
 
