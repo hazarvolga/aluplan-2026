@@ -18,105 +18,9 @@ import iconProfilbauteileAndern from "@/assets/solutions/cds/steel-components/is
 import iconProfilbauteilPunkteModifizieren from "@/assets/solutions/cds/steel-components/islevsel-genel-bakis/2000_657c59fc465cf.webp";
 import iconLizenzAnzeigen2 from "@/assets/solutions/cds/steel-components/islevsel-genel-bakis/2000_657c5a0b2db57.webp";
 
-// Static imports for gallery
-// Models
-import mod01 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-beam-connection-3d-model-01.webp";
-import mod05 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-building-framework-3d-model-05.webp";
-import mod03 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-column-beam-junction-3d-model-03.webp";
-import mod02 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-frame-structure-3d-model-02.webp";
-import mod06 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-industrial-structure-3d-model-06.webp";
-import mod_1 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-model-1.webp";
-import mod_10 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-model-10.webp";
-import mod_11 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-model-11.webp";
-import mod_12 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-model-12.webp";
-import mod_2 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-model-2.webp";
-import mod_3 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-model-3.webp";
-import mod_4 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-model-4.webp";
-import mod_5 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-model-5.webp";
-import mod_6 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-model-6.webp";
-import mod_7 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-model-7.webp";
-import mod_8 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-model-8.webp";
-import mod_9 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-model-9.webp";
-import mod_st_01 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-structure-3d-model-01.webp";
-import mod_st_02 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-structure-3d-model-02.webp";
-import mod_st_03 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-structure-3d-model-03.webp";
-import mod_st_04 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-structure-3d-model-04.webp";
-import mod_st_05 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-structure-3d-model-05.webp";
-import mod_st_06 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-structure-3d-model-06.webp";
-import mod_st_07 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-structure-3d-model-07.webp";
-import mod_st_08 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-structure-3d-model-08.webp";
-import mod_st_09 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-structure-3d-model-09.webp";
-import mod_st_10 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-structure-3d-model-10.webp";
-import mod_st_11 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-structure-3d-model-11.webp";
-import mod_st_12 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-structure-3d-model-12.webp";
-import mod_st_13 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-structure-3d-model-13.webp";
-import mod_st_14 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-structure-3d-model-14.webp";
-import mod_st_15 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-structure-3d-model-15.webp";
-import mod_truss_04 from "@/assets/solutions/cds/steel-components/gallery/models/allplan-steel-truss-system-3d-model-04.webp";
+ 
 
-// Overview
-import ov_01 from "@/assets/solutions/cds/steel-components/gallery/overview/steel-components-overview-plan-01.webp";
-import ov_02 from "@/assets/solutions/cds/steel-components/gallery/overview/steel-components-overview-plan-02.webp";
-import ov_03 from "@/assets/solutions/cds/steel-components/gallery/overview/steel-components-overview-plan-03.webp";
-import ov_04 from "@/assets/solutions/cds/steel-components/gallery/overview/steel-components-overview-plan-04.webp";
-import ov_05 from "@/assets/solutions/cds/steel-components/gallery/overview/steel-components-overview-plan-05.webp";
-import ov_06 from "@/assets/solutions/cds/steel-components/gallery/overview/steel-components-overview-plan-06.webp";
-import ov_07 from "@/assets/solutions/cds/steel-components/gallery/overview/steel-components-overview-plan-07.webp";
-import ov_08 from "@/assets/solutions/cds/steel-components/gallery/overview/steel-components-overview-plan-08.webp";
-import ov_09 from "@/assets/solutions/cds/steel-components/gallery/overview/steel-components-overview-plan-09.webp";
-import ov_10 from "@/assets/solutions/cds/steel-components/gallery/overview/steel-components-overview-plan-10.webp";
-import ov_11 from "@/assets/solutions/cds/steel-components/gallery/overview/steel-components-overview-plan-11.webp";
-import ov_12 from "@/assets/solutions/cds/steel-components/gallery/overview/steel-components-overview-plan-12.webp";
-
-// Site
-import site_01 from "@/assets/solutions/cds/steel-components/gallery/site/steel-construction-site-photo-01.webp";
-import site_02 from "@/assets/solutions/cds/steel-components/gallery/site/steel-construction-site-photo-02.webp";
-import site_03 from "@/assets/solutions/cds/steel-components/gallery/site/steel-construction-site-photo-03.webp";
-import site_04 from "@/assets/solutions/cds/steel-components/gallery/site/steel-construction-site-photo-04.webp";
-import site_05 from "@/assets/solutions/cds/steel-components/gallery/site/steel-construction-site-photo-05.webp";
-import site_06 from "@/assets/solutions/cds/steel-components/gallery/site/steel-construction-site-photo-06.webp";
-import site_07 from "@/assets/solutions/cds/steel-components/gallery/site/steel-construction-site-photo-07.webp";
-import site_08 from "@/assets/solutions/cds/steel-components/gallery/site/steel-construction-site-photo-08.webp";
-import site_09 from "@/assets/solutions/cds/steel-components/gallery/site/steel-construction-site-photo-09.webp";
-import site_10 from "@/assets/solutions/cds/steel-components/gallery/site/steel-construction-site-photo-10.webp";
-import site_11 from "@/assets/solutions/cds/steel-components/gallery/site/steel-construction-site-photo-11.webp";
-import site_12 from "@/assets/solutions/cds/steel-components/gallery/site/steel-construction-site-photo-12.webp";
-import site_13 from "@/assets/solutions/cds/steel-components/gallery/site/steel-construction-site-photo-13.webp";
-
-// Array construction
-const modelsList = [
-  mod01, mod02, mod03, mod_truss_04, mod05, mod06,
-  mod_1, mod_2, mod_3, mod_4, mod_5, mod_6,
-  mod_7, mod_8, mod_9, mod_10, mod_11, mod_12,
-  mod_st_01, mod_st_02, mod_st_03, mod_st_04, mod_st_05,
-  mod_st_06, mod_st_07, mod_st_08, mod_st_09, mod_st_10,
-  mod_st_11, mod_st_12, mod_st_13, mod_st_14, mod_st_15
-];
-
-const overviewList = [
-  ov_01, ov_02, ov_03, ov_04, ov_05, ov_06,
-  ov_07, ov_08, ov_09, ov_10, ov_11, ov_12
-];
-
-const siteList = [
-  site_01, site_02, site_03, site_04, site_05, site_06,
-  site_07, site_08, site_09, site_10, site_11, site_12, site_13
-];
-
-const toGalleryItems = (list: any[], category: string) => list.map((src, idx) => ({
-  id: `${category}-${idx}`,
-  src,
-  alt: `${category} ${idx + 1}`,
-  title: "",
-  description: "",
-  category
-}));
-
-const modelsImages = toGalleryItems(modelsList, "modeller");
-const overviewImages = toGalleryItems(overviewList, "genel-bakis");
-const siteImages = toGalleryItems(siteList, "santiye");
-
-export default function ClientPage() {
+const SteelComponents = () => {
 
   const sections = [
     <InfoMediaTwoColumn
@@ -184,13 +88,13 @@ export default function ClientPage() {
 
     <section key="planning-header" className="py-12 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader
-          title="Allplan’da basit ve verimli çelik yapı planlaması"
-          subtitle="Basit parametrik profil bileşenleri, 3B çelik yapı planlamanızı LOD 350’ye kadar kolaylaştırır."
-          align="center"
-          className="py-0 bg-transparent"
-          compact
-          titleSize="xl"
+        <SectionHeader 
+          title="Allplan’da basit ve verimli çelik yapı planlaması" 
+          subtitle="Basit parametrik profil bileşenleri, 3B çelik yapı planlamanızı LOD 350’ye kadar kolaylaştırır." 
+          align="center" 
+          className="py-0 bg-transparent" 
+          compact 
+          titleSize="xl" 
         />
       </div>
     </section>,
@@ -281,13 +185,13 @@ export default function ClientPage() {
 
     <section key="bim-designed-info" className="py-12 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader
-          title="3B BIM planlaması için tasarlandı"
-          subtitle="Profil bileşenleri eklentisi çok şey yapabilir, ancak her şeyi yapamaz."
-          align="center"
-          className="py-0 bg-transparent"
-          compact
-          titleSize="xl"
+        <SectionHeader 
+          title="3B BIM planlaması için tasarlandı" 
+          subtitle="Profil bileşenleri eklentisi çok şey yapabilir, ancak her şeyi yapamaz." 
+          align="center" 
+          className="py-0 bg-transparent" 
+          compact 
+          titleSize="xl" 
         />
         <p className="text-gray-700 max-w-3xl mx-auto mt-4">
           Statik hesaplamalar ve çelik konstrüksiyon iş planlarının otomatik olarak oluşturulması kapsama dahil değildir.
@@ -332,60 +236,140 @@ export default function ClientPage() {
       key="image-tabs"
       title="Galeri"
       defaultValue="modeller"
-      items={[
-        {
-          value: "modeller",
-          labelTR: "Allplan modelleri",
-          content: (
-            <ImageGallery
-              images={modelsImages}
-              sectionTitle=""
-              sectionDescription=""
-              hideSectionHeader
-              hideOverlayText
-              hideCategoryBadge
-              hideModalMeta
-              hideCTA
-              hideCategoryFilter
-            />
-          ),
-        },
-        {
-          value: "genel-bakis",
-          labelTR: "Genel bakış planları",
-          content: (
-            <ImageGallery
-              images={overviewImages}
-              sectionTitle=""
-              sectionDescription=""
-              hideSectionHeader
-              hideOverlayText
-              hideCategoryBadge
-              hideModalMeta
-              hideCTA
-              hideCategoryFilter
-            />
-          ),
-        },
-        {
-          value: "santiye",
-          labelTR: "Şantiye resimleri",
-          content: (
-            <ImageGallery
-              images={siteImages}
-              sectionTitle=""
-              sectionDescription=""
-              hideSectionHeader
-              hideOverlayText
-              hideCategoryBadge
-              hideModalMeta
-              hideCTA
-              hideCategoryFilter
-            />
-          ),
-        },
-      ]}
+      items={(() => {
+        type ModuleImage = { default: string };
+        const modelsModules = import.meta.glob<ModuleImage>(
+          "@/assets/solutions/cds/steel-components/gallery/models/*.{webp,jpg,jpeg,png}",
+          { eager: true }
+        );
+        const overviewModules = import.meta.glob<ModuleImage>(
+          "@/assets/solutions/cds/steel-components/gallery/overview/*.{webp,jpg,jpeg,png}",
+          { eager: true }
+        );
+        const siteModules = import.meta.glob<ModuleImage>(
+          "@/assets/solutions/cds/steel-components/gallery/site/*.{webp,jpg,jpeg,png}",
+          { eager: true }
+        );
+        const rootModules = import.meta.glob<ModuleImage>(
+          "@/assets/solutions/cds/steel-components/gallery/*.{webp,jpg,jpeg,png}",
+          { eager: true }
+        );
+
+        const isResizedVariant = (p: string) => /-[0-9]{2,4}x[0-9]{2,4}\.(webp|jpg|jpeg|png)$/i.test(p);
+        const getPrefixIndex = (p: string) => {
+          const m = p.match(/\/(\d{1,4})_/);
+          return m ? parseInt(m[1], 10) : Number.POSITIVE_INFINITY;
+        };
+        const toItems = (entries: Record<string, { default: string }>) =>
+          (Object.entries(entries) as [string, { default: string }][])
+            .filter(([p]) => !isResizedVariant(p))
+            .sort((a, b) => getPrefixIndex(a[0]) - getPrefixIndex(b[0]))
+            .map(([, m], idx) => ({
+              id: `img-${idx}`,
+              src: m.default,
+              alt: `img ${idx + 1}`,
+              title: "",
+              description: "",
+              category: "",
+            }));
+
+        const toItemsByNamePrefix = (
+          entries: Record<string, { default: string }>,
+          namePrefix: string
+        ) =>
+          (Object.entries(entries) as [string, { default: string }][])
+            .filter(([p]) => !isResizedVariant(p))
+            .filter(([p]) => new RegExp(`/${namePrefix}-`, "i").test(p))
+            .map(([, m], idx) => ({
+              id: `img-root-${idx}`,
+              src: m.default,
+              alt: `img ${idx + 1}`,
+              title: "",
+              description: "",
+              category: "",
+            }));
+
+        const dedupeBySrc = <T extends { src: string }>(arr: T[]) => {
+          const seen = new Set<string>();
+          const out: T[] = [];
+          for (const item of arr) {
+            if (seen.has(item.src)) continue;
+            seen.add(item.src);
+            out.push(item);
+          }
+          return out;
+        };
+
+        const overviewImages = dedupeBySrc([
+          ...toItems(overviewModules),
+          ...toItemsByNamePrefix(rootModules, "overview"),
+        ]);
+        const modelsImages = dedupeBySrc([
+          ...toItems(modelsModules),
+          ...toItemsByNamePrefix(rootModules, "allplan"),
+        ]);
+        const siteImages = dedupeBySrc([
+          ...toItems(siteModules),
+          ...toItemsByNamePrefix(rootModules, "site"),
+        ]);
+
+        return [
+          {
+            value: "modeller",
+            labelTR: "Allplan modelleri",
+            content: (
+              <ImageGallery
+                images={modelsImages}
+                sectionTitle=""
+                sectionDescription=""
+                hideSectionHeader
+                hideOverlayText
+                hideCategoryBadge
+                hideModalMeta
+                hideCTA
+                hideCategoryFilter
+              />
+            ),
+          },
+          {
+            value: "genel-bakis",
+            labelTR: "Genel bakış planları",
+            content: (
+              <ImageGallery
+                images={overviewImages}
+                sectionTitle=""
+                sectionDescription=""
+                hideSectionHeader
+                hideOverlayText
+                hideCategoryBadge
+                hideModalMeta
+                hideCTA
+                hideCategoryFilter
+              />
+            ),
+          },
+          {
+            value: "santiye",
+            labelTR: "Şantiye resimleri",
+            content: (
+              <ImageGallery
+                images={siteImages}
+                sectionTitle=""
+                sectionDescription=""
+                hideSectionHeader
+                hideOverlayText
+                hideCategoryBadge
+                hideModalMeta
+                hideCTA
+                hideCategoryFilter
+              />
+            ),
+          },
+        ];
+      })()}
     />,
+
+ 
 
     <CDSLicenseInfoSection
       key="license"
@@ -400,7 +384,7 @@ export default function ClientPage() {
         { text: "Kurulum Kılavuzu", url: "https://youtu.be/BWKDmZyIUo4", variant: "link" },
         { text: "Setup İndir", url: "https://cdssieber.sharepoint.com/:f:/g/Ev_G2db5WVVBvMEN-Adhz24Bk5f3rEvFCQu77iLTTCIynw?e=qkPdri", variant: "default" },
       ]}
-      quoteFormUrl="https://forms.office.com/r/hXhnKAG912"
+      quoteFormUrl="https://forms.office.com/r/XLQm9JPTSR"
       quoteFormText="Teklif Talep Formu"
     />,
   ];
@@ -413,4 +397,6 @@ export default function ClientPage() {
       sections={sections}
     />
   );
-}
+};
+
+export default SteelComponents;

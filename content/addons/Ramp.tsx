@@ -1,7 +1,9 @@
 "use client"
 import AddonDetailTemplate from "@/components/AddonDetailTemplate";
+import Hero from "@/components/Hero";
 import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
 import CDSLicenseInfoSection from "@/components/CDSLicenseInfoSection";
+import { Card } from "@/components/ui/card";
 import MasonryVideoGrid from "@/components/MasonryVideoGrid";
 import ImageGallery from "@/components/ImageGallery";
 import SectionHeader from "@/components/SectionHeader";
@@ -9,24 +11,8 @@ import SectionHeader from "@/components/SectionHeader";
 // Importing specific image for license if available
 import imgLicense from "@/assets/solutions/cds/drive-curve/islevsel-genel-bakis/Lizenz-anzeigen.webp";
 
-// Static Imports
-import ramp1 from "@/assets/solutions/cds/ramp/ramp1.webp";
-import ramp2 from "@/assets/solutions/cds/ramp/ramp2.webp";
-import ramp3 from "@/assets/solutions/cds/ramp/ramp3.webp";
-import ramp4 from "@/assets/solutions/cds/ramp/ramp4.webp";
-import ramp5 from "@/assets/solutions/cds/ramp/ramp5.webp";
-import ramp6 from "@/assets/solutions/cds/ramp/ramp6.webp";
-
-const images = [
-  { id: "ramp-0", src: ramp1, alt: "Rampa 1", title: "Rampa", description: "", category: "rampa" },
-  { id: "ramp-1", src: ramp2, alt: "Rampa 2", title: "Rampa", description: "", category: "rampa" },
-  { id: "ramp-2", src: ramp3, alt: "Rampa 3", title: "Rampa", description: "", category: "rampa" },
-  { id: "ramp-3", src: ramp4, alt: "Rampa 4", title: "Rampa", description: "", category: "rampa" },
-  { id: "ramp-4", src: ramp5, alt: "Rampa 5", title: "Rampa", description: "", category: "rampa" },
-  { id: "ramp-5", src: ramp6, alt: "Rampa 6", title: "Rampa", description: "", category: "rampa" },
-];
-
-export default function ClientPage() {
+const Ramp = () => {
+  
 
   const sections = [
 
@@ -40,8 +26,8 @@ export default function ClientPage() {
         "Daha sonra döşeme ve duvarlar gibi mimari bileşenleri bu referans yüzeyine bağlayabilirsiniz.",
       ]}
       videoUrl="https://www.youtube.com/embed/cfGmLbqXBJo"
-      className="bg-transparent" // Updated for Dark Theme
-    />,
+      className="bg-background"
+    />, 
 
     <InfoMediaTwoColumn
       key="intro-2"
@@ -59,8 +45,10 @@ export default function ClientPage() {
         "Referans alanının eşit dağılımı",
       ]}
       videoUrl="https://www.youtube.com/embed/8PQ6jX3SrUo"
-      className="bg-transparent" // Updated for Dark Theme
+      className="bg-background"
     />,
+
+    
 
     <section key="video-masonry" className="relative">
       <MasonryVideoGrid
@@ -76,11 +64,27 @@ export default function ClientPage() {
     <section key="gallery" className="py-16 bg-background relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader title="Galeri" align="center" className="py-0 bg-transparent mb-12" compact titleSize="lg" />
-        <ImageGallery
-          images={images}
-          sectionTitle="Rampa Galerisi"
-          sectionDescription="Rampa geometrisi ve ekran görüntüleri"
-        />
+        {(() => {
+          const galleryModules = import.meta.glob<{ default: string }>(
+            "@/assets/solutions/cds/ramp/*.{webp,jpg,jpeg,png}",
+            { eager: true }
+          );
+          const images = Object.values(galleryModules).map((m, idx) => ({
+            id: `ramp-${idx}`,
+            src: m.default,
+            alt: `Rampa ${idx + 1}`,
+            title: "Rampa",
+            description: "",
+            category: "rampa",
+          }));
+          return (
+            <ImageGallery
+              images={images}
+              sectionTitle="Rampa Galerisi"
+              sectionDescription="Rampa geometrisi ve ekran görüntüleri"
+            />
+          );
+        })()}
       </div>
     </section>,
 
@@ -97,7 +101,7 @@ export default function ClientPage() {
           { text: "Kurulum Kılavuzu", url: "https://youtu.be/BWKDmZyIUo4", variant: "link" },
           { text: "Setup İndir", url: "https://cdssieber.sharepoint.com/:f:/g/Ev_G2db5WVVBvMEN-Adhz24Bk5f3rEvFCQu77iLTTCIynw?e=qkPdri", variant: "default" },
         ]}
-        quoteFormUrl="https://forms.office.com/r/hXhnKAG912"
+        quoteFormUrl="https://forms.office.com/r/XLQm9JPTSR"
         quoteFormText="Teklif Talep Formu"
       />
     </section>,
@@ -111,4 +115,6 @@ export default function ClientPage() {
       sections={sections}
     />
   );
-}
+};
+
+export default Ramp;

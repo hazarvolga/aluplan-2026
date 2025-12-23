@@ -30,7 +30,7 @@ export const solutionsMenu: MegaMenuSection[] = [
   {
     title: "EKLENTİLER",
     items: [
-
+      { name: "Ek Modüller", href: "/solutions/extra-modules" },
       { name: "CDS Add-On", href: "/solutions/cds-addon" },
       { name: "Allto PytonPart Generator", href: "/solutions/pythonpart-generator" },
       { name: "Allto PytonPart", href: "/solutions/pythonpart" },

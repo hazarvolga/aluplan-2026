@@ -7,53 +7,10 @@ import CDSLicenseInfoSection from "@/components/CDSLicenseInfoSection";
 import { Card } from "@/components/ui/card";
 import imgLicense from "@/assets/solutions/cds/drive-curve/islevsel-genel-bakis/Lizenz-anzeigen.webp";
 
-// Static Imports for Geometry Tools
-import img01 from "@/assets/solutions/cds/geometry-tools/2000_6543b9d8b381a.webp";
-import img02 from "@/assets/solutions/cds/geometry-tools/2000_6543b9e866e33.webp";
-import img03 from "@/assets/solutions/cds/geometry-tools/2000_6543b9f3aee14.webp";
-import img04 from "@/assets/solutions/cds/geometry-tools/2000_6543ba044a531.webp";
-import img05 from "@/assets/solutions/cds/geometry-tools/2000_6543ba10aa773.webp";
-import img06 from "@/assets/solutions/cds/geometry-tools/2000_6543ba1f8183a.webp";
-import img07 from "@/assets/solutions/cds/geometry-tools/2000_6543ba2c34545.webp";
-import img08 from "@/assets/solutions/cds/geometry-tools/2000_6543ba3731850.webp";
-import img09 from "@/assets/solutions/cds/geometry-tools/2000_6543ba42bb596.webp";
-import img10 from "@/assets/solutions/cds/geometry-tools/2000_6543ba4f5d57a.webp";
-import img11 from "@/assets/solutions/cds/geometry-tools/2000_6543ba5b0a119.webp";
-import img12 from "@/assets/solutions/cds/geometry-tools/2000_6543ba6759cd2.webp";
-import img13 from "@/assets/solutions/cds/geometry-tools/2000_6543ba73ef294.webp";
-import img14 from "@/assets/solutions/cds/geometry-tools/2000_6543ba82360f0.webp";
-import img15 from "@/assets/solutions/cds/geometry-tools/2000_6543ba8dbe7e5.webp";
-import img16 from "@/assets/solutions/cds/geometry-tools/2000_6543ba9a60154.webp";
-import img17 from "@/assets/solutions/cds/geometry-tools/2000_6543baa787f64.webp";
-import img18 from "@/assets/solutions/cds/geometry-tools/2000_6543bab2dc002.webp";
-import img19 from "@/assets/solutions/cds/geometry-tools/2000_6543babf086fa.webp";
-import img20 from "@/assets/solutions/cds/geometry-tools/2000_6543bac9f223f.webp";
-import img21 from "@/assets/solutions/cds/geometry-tools/2000_6543bad532aa8.webp";
-import img22 from "@/assets/solutions/cds/geometry-tools/2000_6543badf132a7.webp";
-import img23 from "@/assets/solutions/cds/geometry-tools/2000_6543bae93140c.webp";
-import img24 from "@/assets/solutions/cds/geometry-tools/2000_6543baf362338.webp";
-import img25 from "@/assets/solutions/cds/geometry-tools/2000_6543bb03b5a75.webp";
-import img26 from "@/assets/solutions/cds/geometry-tools/2000_6543bb118a297.webp";
-import img27 from "@/assets/solutions/cds/geometry-tools/2000_6543bb1c6bd33.webp";
-import img28 from "@/assets/solutions/cds/geometry-tools/2000_6543bb2bca83a.webp";
-import img29 from "@/assets/solutions/cds/geometry-tools/2000_6543bb3a3c858.webp";
-import img30 from "@/assets/solutions/cds/geometry-tools/2000_6543bb4ca1dbd.webp";
-import img31 from "@/assets/solutions/cds/geometry-tools/2000_6543bb5b08957.webp";
-import img32 from "@/assets/solutions/cds/geometry-tools/2000_6543bb69399f3.webp";
-import img33 from "@/assets/solutions/cds/geometry-tools/2000_6543bb74e18a5.webp";
-import img34 from "@/assets/solutions/cds/geometry-tools/2000_6543bb825d1b0.webp";
-import img35 from "@/assets/solutions/cds/geometry-tools/2000_6543bb95484c8.webp";
-import img36 from "@/assets/solutions/cds/geometry-tools/2000_6543bba430b98.webp";
-
-// Matches 2000_6543b*.webp
-const icons = [
-  img01, img02, img03, img04, img05, img06, img07, img08, img09, img10,
-  img11, img12, img13, img14, img15, img16, img17, img18, img19, img20,
-  img21, img22, img23, img24, img25, img26, img27, img28, img29, img30,
-  img31, img32, img33, img34, img35, img36
-];
-
-export default function ClientPage() {
+const GeometryTools = () => {
+  type ModuleImage = { default: string };
+  const iconModules = import.meta.glob<ModuleImage>("@/assets/solutions/cds/geometry-tools/2000_6543b*.webp", { eager: true });
+  const icons = Object.values(iconModules).map((m) => m.default);
 
   const features = [
     { titleTr: "Üçgen-Ağ Girişi" },
@@ -150,30 +107,30 @@ export default function ClientPage() {
       videoUrl="https://www.youtube.com/embed/WHPmmRcCdMQ"
     />,
 
-    <section key="features" className="py-16 bg-transparent">
+    <section key="features" className="py-16 bg-gradient-to-br from-slate-50 to-accent/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader
-          title="İşlevsel Genel Bakış"
-          align="center"
-          className="py-0 bg-transparent mb-12"
-          compact
-          titleSize="lg"
+        <SectionHeader 
+          title="İşlevsel Genel Bakış" 
+          align="center" 
+          className="py-0 bg-transparent mb-12" 
+          compact 
+          titleSize="lg" 
         />
-
+        
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
           {features.map((feature, idx) => (
-            <Card
-              key={idx}
-              className="p-4 flex flex-col items-center text-center bg-white/5 border-white/10 hover:bg-white/10 transition-colors hover:shadow-technical"
+            <Card 
+              key={idx} 
+              className="p-4 flex flex-col items-center text-center hover:shadow-technical transition-all"
             >
               {icons[idx] && (
-                <img
-                  src={icons[idx].src}
-                  alt={feature.titleTr}
+                <img 
+                  src={icons[idx]} 
+                  alt={feature.titleTr} 
                   className="w-20 h-20 mb-3 object-contain"
                 />
               )}
-              <h3 className="text-xs font-semibold text-gray-300 leading-tight">
+              <h3 className="text-xs font-semibold text-gray-800 leading-tight">
                 {feature.titleTr}
               </h3>
             </Card>
@@ -182,22 +139,22 @@ export default function ClientPage() {
       </div>
     </section>,
 
-    <section key="versions" className="py-16 bg-transparent">
+    <section key="versions" className="py-16 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader
-          title="Fonksiyonlara Genel Bakış"
-          align="center"
-          className="py-0 bg-transparent mb-12"
-          compact
-          titleSize="lg"
+        <SectionHeader 
+          title="Fonksiyonlara Genel Bakış" 
+          align="center" 
+          className="py-0 bg-transparent mb-12" 
+          compact 
+          titleSize="lg" 
         />
-
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          <div className="bg-white/5 border border-white/10 p-6 rounded-xl shadow-md">
-            <h3 className="font-display text-xl font-bold text-white mb-4">Versiyon 1:</h3>
+          <div className="bg-gradient-to-br from-slate-50 to-accent/10 p-6 rounded-xl shadow-md">
+            <h3 className="font-display text-xl font-bold text-gray-900 mb-4">Versiyon 1:</h3>
             <ul className="space-y-2">
               {version1Features.map((feature, idx) => (
-                <li key={idx} className="text-gray-300 flex items-start">
+                <li key={idx} className="text-gray-700 flex items-start">
                   <span className="text-accent mr-2">•</span>
                   <span>{feature}</span>
                 </li>
@@ -205,11 +162,11 @@ export default function ClientPage() {
             </ul>
           </div>
 
-          <div className="bg-white/5 border border-white/10 p-6 rounded-xl shadow-md">
-            <h3 className="font-display text-xl font-bold text-white mb-4">Versiyon 2:</h3>
+          <div className="bg-gradient-to-br from-slate-50 to-accent/10 p-6 rounded-xl shadow-md">
+            <h3 className="font-display text-xl font-bold text-gray-900 mb-4">Versiyon 2:</h3>
             <ul className="space-y-2">
               {version2Features.map((feature, idx) => (
-                <li key={idx} className="text-gray-300 flex items-start">
+                <li key={idx} className="text-gray-700 flex items-start">
                   <span className="text-accent mr-2">•</span>
                   <span>{feature}</span>
                 </li>
@@ -251,19 +208,21 @@ export default function ClientPage() {
       languages="Almanca, İngilizce ve İtalyanca"
       imageUrl={imgLicense}
       imageAlt="Lisans"
-      links={[
-        {
-          text: "Çoklu Kurulum ile Kurulum Kılavuzu",
-          url: "https://youtu.be/BWKDmZyIUo4",
-          variant: "link"
-        },
-        {
-          text: "Link zum Download Bereich (Setup)",
-          url: "https://cdssieber.sharepoint.com/:f:/g/Ev_G2db5WVVBvMEN-Adhz24Bk5f3rEvFCQu77iLTTCIynw?e=qkPdri",
-          variant: "default"
-        }
-      ]}
-      quoteFormUrl="https://forms.office.com/r/hXhnKAG912"
+      links={
+        [
+          {
+            text: "Çoklu Kurulum ile Kurulum Kılavuzu",
+            url: "https://youtu.be/BWKDmZyIUo4",
+            variant: "link"
+          },
+          {
+            text: "Link zum Download Bereich (Setup)",
+            url: "https://cdssieber.sharepoint.com/:f:/g/Ev_G2db5WVVBvMEN-Adhz24Bk5f3rEvFCQu77iLTTCIynw?e=qkPdri",
+            variant: "default"
+          }
+        ]
+      }
+      quoteFormUrl="https://forms.office.com/r/XLQm9JPTSR"
       quoteFormText="Teklif Talep Formu"
     />,
   ];
@@ -276,4 +235,6 @@ export default function ClientPage() {
       sections={sections}
     />
   );
-}
+};
+
+export default GeometryTools;

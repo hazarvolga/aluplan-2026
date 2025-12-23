@@ -6,21 +6,7 @@ import CDSLicenseInfoSection from "@/components/CDSLicenseInfoSection";
 import { Card } from "@/components/ui/card";
 import ImageGallery from "@/components/ImageGallery";
 
-// Static Import
-import imgGraphic from "@/assets/solutions/cds/graphic-text.jpeg";
-
-const images = [
-  {
-    id: "gfx-0",
-    src: imgGraphic,
-    alt: "Grafiksel Yazı 1",
-    title: "Grafiksel Yazı",
-    description: "",
-    category: "grafik",
-  }
-];
-
-export default function ClientPage() {
+const GraphicalText = () => {
   const features = [
     "Metin vektörleştirme",
     "3B metin nesneleri",
@@ -41,13 +27,13 @@ export default function ClientPage() {
       videoUrl="https://www.youtube.com/embed/CMYuaD3e3rQ"
     />,
 
-    <section key="features" className="py-16 bg-transparent">
+    <section key="features" className="py-16 bg-gradient-to-br from-slate-50 to-accent/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader title="İşlevsel Genel Bakış" align="center" className="py-0 bg-transparent mb-12" compact titleSize="lg" />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {features.map((feature, idx) => (
-            <Card key={idx} className="p-5 bg-white/5 border-white/10 hover:bg-white/10 transition-colors">
-              <h3 className="text-sm font-semibold text-gray-200">{feature}</h3>
+            <Card key={idx} className="p-5">
+              <h3 className="text-sm font-semibold text-gray-800">{feature}</h3>
             </Card>
           ))}
         </div>
@@ -57,11 +43,25 @@ export default function ClientPage() {
     <section key="gallery" className="py-16 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader title="Galeri" align="center" className="py-0 bg-transparent mb-12" compact titleSize="lg" />
-        <ImageGallery
-          images={images}
-          sectionTitle="Grafiksel Yazı Galerisi"
-          sectionDescription="Vektörleştirme ve 3B metin örnekleri"
-        />
+        {(() => {
+          type ModuleImage = { default: string };
+          const galleryModules = import.meta.glob<ModuleImage>("@/assets/solutions/cds/*graphic*.*", { eager: true });
+          const images = Object.values(galleryModules).map((m, idx: number) => ({
+            id: `gfx-${idx}`,
+            src: m.default,
+            alt: `Grafiksel Yazı ${idx + 1}`,
+            title: "Grafiksel Yazı",
+            description: "",
+            category: "grafik",
+          }));
+          return (
+            <ImageGallery 
+              images={images}
+              sectionTitle="Grafiksel Yazı Galerisi"
+              sectionDescription="Vektörleştirme ve 3B metin örnekleri"
+            />
+          );
+        })()}
       </div>
     </section>,
 
@@ -78,7 +78,7 @@ export default function ClientPage() {
         { text: "Kurulum Kılavuzu", url: "https://youtu.be/BWKDmZyIUo4", variant: "link" },
         { text: "Setup İndir", url: "https://cdssieber.sharepoint.com/:f:/g/Ev_G2db5WVVBvMEN-Adhz24Bk5f3rEvFCQu77iLTTCIynw?e=qkPdri", variant: "default" },
       ]}
-      quoteFormUrl="https://forms.office.com/r/hXhnKAG912"
+      quoteFormUrl="https://forms.office.com/r/XLQm9JPTSR"
       quoteFormText="Teklif Talep Formu"
     />,
   ];
@@ -91,4 +91,6 @@ export default function ClientPage() {
       sections={sections}
     />
   );
-}
+};
+
+export default GraphicalText;
