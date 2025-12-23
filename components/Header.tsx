@@ -122,7 +122,7 @@ const Header = () => {
       megaMenu: "products",
     },
     { name: language === "tr" ? "Kaynaklar" : "Resources", href: "/#professional-services" },
-    { name: language === "tr" ? "Referanslar" : "References", href: "/#references" },
+    { name: language === "tr" ? "Referanslar" : "References", href: "/references" },
     { name: language === "tr" ? "Hakkımızda" : "About", href: "/about" },
     { name: language === "tr" ? "İletişim" : "Contact", href: "/contact" },
   ];
