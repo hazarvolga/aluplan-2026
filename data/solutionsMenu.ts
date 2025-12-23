@@ -8,7 +8,7 @@ export const solutionsMenu: MegaMenuSection[] = [
       { name: "Mimari", href: "/solutions/architecture" },
       { name: "Strüktürel Mühendislik", href: "/solutions/structural" },
       { name: "MEP", href: "/solutions/mep" },
-      { name: "Endüstri Çözümleri", href: "/solutions/industry" },
+      { name: "ALLPLAN ENDÜSTRİ ÇÖZÜMLERİ", href: "/solutions/allplan-industry" },
     ],
   },
   {
