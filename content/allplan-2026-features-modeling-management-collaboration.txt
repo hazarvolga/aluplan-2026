@@ -1,0 +1,340 @@
+ALLPLAN 2026 ÖZELLİKLERİ - BİLGİ MODELLEME, YÖNETİM VE İŞBİRLİĞİ
+================================================================
+
+SAYFA URL: https://aluplan.com.tr/allplan-2026-features-modeling-management-collaboration/
+FETCH TARİHİ: 23 Aralık 2024 (GÜNCELLENME)
+SAYFA BAŞLIĞI: 2026 Information Modeling & Management – Aluplan Program Sistemleri | Allplan Türkiye Distribütörü
+
+ANA BAŞLIK: "DAHA İYİ BİR GELECEK İNŞA ETMEK İÇİN TASARLANDI"
+ALT BAŞLIK: "Bilgi Modelleme, Yönetim, Birlikte Çalışabilirlik ve İş Birliği İş Akışları için Yeni Özellikler"
+
+SAYFA KATEGORİLERİ:
+==================
+1. BİLGİ MODELLEME VE YÖNETİMİ
+2. BİRLİKTE ÇALIŞABİLİRLİK VE İŞ BİRLİĞİ İŞ AKIŞLARI
+
+YENİ ÖZELLİKLER VE DETAYLI AÇIKLAMALAR:
+=====================================
+
+## BİLGİ MODELLEME VE YÖNETİMİ
+
+### 1. COĞRAFİ REFERANS DESTEĞİ (GEOREFERENCING SUPPORT)
+   - **Paket**: #Basic
+   - **Başlık**: "Georeferans Noktaları ile Kesin Konumlandırma"
+   - **Görsel URL**: https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026__Georeferencing-min_c80ee08e64.jpg
+   
+   **Açıklama**: BIM'de doğru georeferanslama, projenin doğru yerleştirilmesi, gerçek kuzey yönü ve hassas konum verileri için kritik öneme sahiptir.
+
+   **ALLPLAN 2026 Yeni Georeferans Ayar Seçenekleri**:
+   * **Survey Point (Arazi Referanslı Koordinatlar)**
+   * **Base Point (Yerel orijin ve proje kaydırması için)**
+
+   **Özellikler**:
+   - IFC gibi formatlarla sorunsuz iş birliği sağlanır
+   - Veri alışverişi sırasında model dönüşümlerinin önüne geçilir
+   - Georeferans noktaları **görsel olarak temsil edilir**
+   - Kolayca yerleştirilebilir ve ayarlanabilir
+   - Gerçek kuzey yönü ayrı bir ayar olarak tanımlanabilir
+   - Projeyi **gerçek dünya koordinatlarında doğru konumlandırma**
+   - Disiplinler arası iş birliğini geliştirme
+   - Tüm BIM bileşenlerinin **doğru hizalanmasını** sağlama
+
+### 2. BUILDINGSMART DATA DICTIONARY (BSDD) İÇE AKTARMA
+   - **Paket**: #Concept
+   - **Başlık**: "Standartlaştırılmış verilerle sorunsuz BIM entegrasyonu"
+   - **Görsel URL**: https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_Import_buildingSMART_Data_Dictionary__bSDD__in_ALLPLAN-min_cb7ba60df2.jpg
+
+   **Açıklama**: ALLPLAN 2026, **300'den fazla uzman sözlüğe** entegre bSDD erişimi sunarak BIM iş akışlarını basitleştirir.
+
+   **Özellikler**:
+   - **300'den fazla uzman sözlüğe** erişim
+   - **Sürdürülebilirlik standartları** dahil
+   - **Ülkeye özel düzenlemeler** desteği
+   - **Uzman nitelik setlerini nesnelere hızlıca aktarma**
+   - Projelere daha hızlı başlama imkanı
+   - Karar alma süreçlerini iyileştirme
+   - **OpenBIM veri alışverişi** sorunsuz sağlama
+   - Manuel kurulum gerektirmez
+   - **Denetime hazır dokümantasyon**
+   - Yüksek veri kalitesi ile daha akıllı projeler
+
+### 3. IDS TABANLI NİTELİK İÇE AKTARMA (IDS-BASED ATTRIBUTE IMPORT)
+   - **Paket**: #Professional
+   - **Başlık**: "BIM uyumluluğunu otomatikleştirin ve IDS kurallarıyla veri entegrasyonunu kolaylaştırın"
+   - **Görsel URL**: https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_IDS-Based_Attribute_Import__1-min_2ac0c15b4e.jpg
+
+   **Açıklama**: BIM planlama süreçlerinde, bilgilerin **kolay ve doğru bir şekilde entegre edilmesi** kritik öneme sahiptir.
+
+   **IDS (Information Delivery Specification) Hakkında**:
+   - BuildingSMART tarafından geliştirilen standart format
+   - BIM projeleri için gerekli bilgi gereksinimlerini **net ve otomatik şekilde tanımlar**
+   - BIM modelleri tüm gerekli verileri içerir
+
+   **ALLPLAN 2026 IDS Özellikleri**:
+   - IDS dosyalarını **ekstra ve genişletilmiş destekle** sunar
+   - Model niteliklerini otomatik olarak kontrol eder
+   - BIM gereksinimlerini karşılayacak şekilde uyumlar
+   - **Veri düzeltmeye harcanan süre azalır**
+   - Tasarım, koordinasyon ve uyumlu model teslimi için daha fazla zaman kazanılır
+
+### 4. GELİŞTİRİLMİŞ BİLGİ PALETİ (ENHANCED INFORMATION PALETTE)
+   - **Paket**: #Concept
+   - **Başlık**: "Daha akıllı ve hızlı proje yönetimi için kolay organizasyon ve kontrol"
+   - **Görsel URL**: https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_Enhanced_Information_Palette-min_d8b534f69e.jpg
+
+   **Açıklama**: ALLPLAN 2026, **tamamen yenilenmiş bir Bilgi Paleti** sunar.
+
+   **Yeni Özellikler**:
+   - **Esnek gruplama**
+   - **Otomatik toplam hesaplama**
+   - **IDS doğrulama**
+   - **Katalog entegrasyonu**
+   - **İyileştirilmiş gezinme**
+   - **Gelişmiş sıralama ve filtreleme**
+   - **Daha sezgisel kullanıcı deneyimi** için yeniden tasarlanmış arayüz
+   - **Akıcı iş akışları** için performans optimizasyonları
+
+   **Sonuçlar**:
+   - Bilgileri hızlıca **organize edebilir, bulabilir ve güncelleyebilir**
+   - Arama süresini azaltır ve **verimliliği artırır**
+   - **Daha güvenilir planlama**
+   - **Daha hızlı proje teslimi**
+   - **Yaratıcı işlere daha fazla zaman**
+
+## BİRLİKTE ÇALIŞABİLİRLİK VE İŞ BİRLİĞİ İŞ AKIŞLARI
+
+### 5. GELİŞTİRİLMİŞ XREF YÖNETİCİSİ
+   - **Paket**: #Concept
+   - **Başlık**: "Gelişmiş IFC ve Bulut Referanslama - Daha fazla esneklik, bulut entegrasyonu ve kolaylaştırılmış iş birliği"
+   - **Görsel URL**: https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_Enhanced_XRef_Manager_with_Advanced_IFC_and_Cloud_Referencing_1-min_44e8f1d7d4.jpg
+
+   **Açıklama**: ALLPLAN 2026, **önemli ölçüde geliştirilmiş bir XRef Yöneticisi** sunar ve özellikle **IFC dosyaları** ile çalışırken daha sezgisel ve verimli bir iş akışı sağlar.
+
+   **Yeni Yöneticide Öne Çıkan Özellikler**:
+   - Referans verilen IFC dosyalarının **arayüz içinde 3B önizlemesi**
+   - XRef'in **ALLPLAN proje klasörlerinde mi yoksa harici bir konumda mı** saklandığını gösteren görsel simgeler
+   - **Değiştir, filtrele ve dosya seçimi** gibi gelişmiş dosya yönetimi araçları
+
+   **Bulut Referansı (Cloud Reference) Yeniliği**:
+   - BIMPLUS üzerinden IFC dosyalarını **doğrudan XRef olarak ekleyebilirsiniz**
+   - Dosyaları yerel olarak indirmenize gerek bırakmaz
+   - Depolama gereksinimlerini azaltır
+   - Ekibin her zaman **en güncel proje verisiyle çalışmasını** sağlar
+
+   **IFC Kaynak Dosyaları Bulutta Saklandığında**:
+   - Yetkili kullanıcılar **doğrudan ALLPLAN içinde önizleme** yapabilir
+   - IFC XRef yeteneklerini **model alanında tam olarak kullanabilir**
+   - XRef Yöneticisi'ndeki tüm ilgili bilgi yönetimi araçlarına erişebilir
+
+   **Ek İyileştirmeler**:
+   - **Göreli dosya yollarının otomatik korunması** - kaydetme sorunlarını önler
+   - Farklı sistemlerde referans bağlantılarının tutarlılığını sağlar
+   - Harici XRef'ler **kaynaklarıyla birlikte dışa aktarılabilir ve içe aktarılabilir**
+   - Proje klasörlerinde saklanan XRef'ler **.ZIP veya .APN dosyası** olarak paketlenip kolayca taşınabilir
+
+   **Bu Geliştirmeler Mimarlık ve Mühendislik Ekiplerine**:
+   - Tüm proje referanslarını **net ve birleşik bir görünümle** sunar
+   - Veri yönetimini **sadeleştirir**
+   - Hem yerel hem bulut tabanlı ortamda **iş birliğini güçlendirir**
+   - Proje teslimlerini **daha hızlı ve güvenilir** hale getirir
+
+### 6. GEOPACKAGE VERİ ALIŞVERİŞİ (GEOPACKAGE DATAEXCHANGE)
+   - **Paket**: #Concept
+   - **Başlık**: "Kentsel planlama için kolay ve standartlara uygun CBS veri entegrasyonu"
+   - **Görsel URL**: https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_Geopackage_DataExchange___1-min_ecc867edde.jpg
+
+   **Açıklama**: Mimarlık, mühendislik ve kentsel planlama süreçlerinde **coğrafi veriler**, bilinçli kararlar alabilmek için kritik öneme sahiptir.
+
+   **ALLPLAN Kentsel Planlama Modülleri**:
+   - Kentsel planlama ve peyzaj tasarımı için özel modüller sunar
+   - XPlan desteği şu anda yalnızca Almanya için geçerli
+
+   **ALLPLAN 2026 GeoPackage Entegrasyonu**:
+   - CBS verileri artık **tüm AB ülkeleri ve ötesinde** kullanılabilir
+
+   **GeoPackage Özellikleri**:
+   - Coğrafi verilerin (geometri, nitelikler ve .xls dosyaları dahil) **kolayca içe ve dışa aktarımı**
+   - Ulusal standartlara esnek biçimde uyum sağlar
+   - Mimarlara, planlamacılara ve yetkililere **alan bağlamını hızlı ve doğru şekilde** görme olanağı sunar
+   - **İmar, altyapı ve çevresel etki** kararlarını destekler ve iyileştirir
+
+### 7. PREOPTIMA İLE ENTEGRASYON
+   - **Paket**: #Basic
+   - **Başlık**: "Daha akıllı ve sürdürülebilir tasarım kararları için erken aşama karbon değerlendirmesi"
+   - **Görsel URL**: https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_Preoptima_1-min_ff62fa6687.jpg
+
+   **Açıklama**: Sürdürülebilir tasarımlar oluşturmak için, **mimarlar ve mühendislerin karbon etkilerini tasarım sürecinin erken aşamalarında değerlendirmesi** gerekir.
+
+   **ALLPLAN 2026 Preoptima CONCEPT İş Akışı**:
+   - **Preoptima CONCEPT ile sorunsuz bir iş akışı** sunarak erken aşama sürdürülebilirlik desteği sağlar
+   - Kullanıcılar **detaylı bir BIM modeline gerek duymadan** konsept kütle modellerini ALLPLAN'dan Preoptima CONCEPT'e aktarabilir
+   - **Erken karbon değerlendirmesi ve doğrulama** amacıyla kullanılır
+
+   **Preoptima CONCEPT Analiz Yetenekleri**:
+   - **Gömülü karbon (embodied carbon)** hesaplamaları
+   - **İşletme kaynaklı karbon (operational carbon)**
+   - **Tüm yaşam döngüsü karbonu (Whole Life Cycle Carbon – WLC)**
+   - **Tasarım seçeneklerini karşılaştırma (optioneering)**
+
+   **Kullanıcı Avantajları**:
+   - **Farklı tasarım varyantlarını karbon optimizasyonu açısından karşılaştırabilir**
+   - Preoptima'nın çeşitli kural setlerinden yararlanarak **otomatik geometri kontrolleri ve uyumluluk desteği** alır
+   - **Tasarım esnekliğini korur**
+   - **Ekonomik ve çevresel faktörleri dengeleyerek bilinçli, bütünsel kararlar alır**
+   - İlerleyen aşamalarda maliyetli değişiklik riskini azaltır
+
+   **Sonuç**:
+   - ALLPLAN 2026 ve Preoptima CONCEPT'in entegre yetenekleri
+   - Proje ekiplerinin **en iyi sürdürülebilir seçimleri yapmasını** garanti eder
+   - **En başından itibaren daha akıllı ve çevre dostu yapılar** ortaya çıkarır
+
+SAYFA SONU ÇAĞRI-TO-ACTION:
+=========================
+
+BAŞLIK: "ALLPLAN'ı Ücretsiz Deneyin"
+ÖZELLİKLER:
+- Tek bir platformda disiplinler arası AEC ekip çalışması
+- Malzeme ve inşaat yöntemlerinin üstün koordinasyonu
+- Gelişmiş BIM iş akışları ve gerçek zamanlı iş birliği
+
+DENEME SÜRESİ: 14 gün ücretsiz ve taahhütsüz
+
+LOGO VE GÖRSEL DETAYLARI:
+========================
+
+1. ALUPLAN LOGO:
+   - URL: https://aluplan.com.tr/wp-content/uploads/2023/08/logo-29.png
+   - Boyutlar: 325x78 piksel
+   - Responsive boyutlar: 300x72 piksel
+
+2. BUILDING SMART TÜRKİYE LOGO:
+   - URL: https://aluplan.com.tr/wp-content/uploads/2021/10/builsmart.png
+   - Boyutlar: 228x74 piksel
+   - Alt metin: "Building Smart Türkiye"
+
+3. PARTNER LOGO:
+   - URL: https://aluplan.com.tr/wp-content/uploads/2019/10/partner.png
+   - Boyutlar: 69x55 piksel
+
+SUBSCRIPTION 2026 BANNER:
+========================
+
+BAŞLIK: "Subscription 2026"
+MESAJ: "Şimdi Aboneliğe Geçmek Uzun Vadeli Akıllı Bir Yatırımdır"
+BUTON: "Ayrıntıları İncele"
+LINK: https://www.allplan.com/subscription-2025
+
+ÖNEMLİ LİNKLER VE BUTONLAR:
+=========================
+
+ÜST MENÜ BUTONLARI:
+1. ALLPLAN FAQ: https://www.allplan.com/all-faqs/
+2. LEARN NOW: https://learnnow.allplan.com/course/search.php
+3. Duyurular: https://aluplan.com.tr/onemli-bilgiler-baglantilar/
+4. Product Lifecycle: https://www.allplan.com/product-lifecycle/
+
+İKİNCİ SIRA BUTONLAR:
+1. Allplan Connect Giriş/Parola Sıfırlama: https://aluplan.com.tr/24907-2/
+2. GoTo Meeting: https://meet.goto.com/allplan_turkiye
+3. Allplan Connect Lisans Yönetim Paneli: https://aluplan.com.tr/10-duke-yeni-lisanslama/
+4. ALLPLAN Teknik Destek: https://teams.microsoft.com/meet/39783115346098?p=wIo7WWYLZwqoHtjq3Y
+
+YOUTUBE VİDEO LİNKLERİ:
+======================
+
+ÖZELLIK VİDEOLARI (POPUP VİDEOLAR):
+1. Coğrafi Referans Desteği (Georeferencing Support):
+   - YouTube URL: https://www.youtube.com/embed/L84OwVTOQFE
+   - Video ID: L84OwVTOQFE
+   - Buton Metni: "Videoyu Görüntüle"
+
+2. buildingSMART Data Dictionary (bSDD) İçe Aktarma:
+   - YouTube URL: https://www.youtube.com/embed/Rn_dGLfVLf4
+   - Video ID: Rn_dGLfVLf4
+   - Buton Metni: "Videoyu Görüntüle"
+
+3. IDS Tabanlı Nitelik İçe Aktarma:
+   - YouTube URL: https://www.youtube.com/embed/cv3BngfF0_o
+   - Video ID: cv3BngfF0_o
+   - Buton Metni: "Videoyu Görüntüle"
+
+4. Geliştirilmiş XRef Yöneticisi:
+   - YouTube URL: https://www.youtube.com/embed/4dalyviypDk
+   - Video ID: 4dalyviypDk
+   - Buton Metni: "Videoyu Görüntüle"
+
+5. Geopackage Veri Alışverişi:
+   - YouTube URL: https://www.youtube.com/embed/REjtplFsT10
+   - Video ID: REjtplFsT10
+   - Buton Metni: "Videoyu Görüntüle"
+
+6. Preoptima ile Entegrasyon:
+   - YouTube URL: https://www.youtube.com/embed/QDaM_0OYpUY
+   - Video ID: QDaM_0OYpUY
+   - Buton Metni: "Videoyu Görüntüle"
+
+MENÜDE BULUNAN YOUTUBE LİNKLERİ:
+1. Allplan Campus Tutorials 2019 Almanca: https://www.youtube.com/playlist?list=PLGJkIxDdr-QhxDofTIbwIBtvCv2iXmbDV
+2. Allplan Campus Tutorials 2019 İngilizce: https://www.youtube.com/playlist?list=PLdOdniujLua17v1S3VSfnHqGTKqgNMgtM
+
+EĞİTİM VE DESTEK LİNKLERİ:
+=========================
+
+BIM KAYNAKLARI:
+- 10 Reasons for BIM: https://www.allplan.com/en/bim/10-reasons-for-bim/
+- BIM Compendium: https://info.allplan.com/en/bim-guides/bim-compendium
+- BIM Consulting Package: https://www.allplan.com/en/allplan-bim-consulting/
+- BIM Integration Framework: https://www.allplan.com/en/bim/bim-integration-framework/
+- BIM Collaboration: https://www.allplan.com/en/bim/collaboration-and-integrated-planning-as-recipe-for-success/
+- Blog: https://blog.allplan.com/en
+
+ALLPLAN EĞİTİM VİDEOLARI:
+- Hello Allplan: https://www.allplan.com/hello-allplan/
+- Allplan 2020 Tutorials: https://www.allplan.com/en/cad-tutorials/allplan-2020-tutorials/
+- Allplan 2019 Engineering: https://www.allplan.com/en/cad-tutorials/allplan-2019-engineering-tutorials/
+- Allplan 2019 Architecture: https://www.allplan.com/en/cad-tutorials/allplan-2019-architecture-tutorials/
+- Allplan 2018 Engineering: https://www.allplan.com/en/cad-tutorials/allplan-2018-engineering-tutorials/
+- Allplan 2018 Architecture: https://www.allplan.com/en/cad-tutorials/allplan-2018-architecture-tutorials/
+- Allplan 2017 Tutorials: https://www.allplan.com/en/cad-tutorials/allplan-2017-tutorials/
+- Allplan 2016 Tutorials: https://www.allplan.com/cad-tutorials/allplan-2016-tutorials/
+- Allplan 2015 Tutorials: https://www.allplan.com/cad-tutorials/allplan-2015-tutorials/
+- Allplan Eğitim Videolar: https://aluplan.com.tr/cad-egitimleri
+
+ETKİNLİKLER:
+- Canlı Webinarlar: https://www.allplan.com/en/events/events/
+- Etkinlikler-Webinarlar: https://www.allplan.com/events/events/
+- Eğitim Genel: https://www.allplan.com/en/events/learning-overview/
+- Tüm Webinarlar: https://www.allplan.com/recorded-webinars/all-recorded-webinars/
+- Kaydedilmiş Webinarlar Türkçe: https://aluplan.com.tr/kaydedilmis-webinarlar/
+
+SOSYAL MEDYA LİNKLERİ:
+====================
+
+- Facebook: https://www.facebook.com/Allplan.Turkey
+- Twitter: https://twitter.com/Allplan_Turkey
+- Instagram: https://www.instagram.com/allplan_turkey/
+- YouTube: https://www.youtube.com/c/AllplanTurkey
+- LinkedIn: https://www.linkedin.com/company/allplan-turkey/
+
+SAYFA YAPISI ÖZET:
+================
+
+Bu sayfa ALLPLAN 2026'nın yeni özelliklerini tanıtan bir ürün sayfasıdır. Sayfa 7 ana yeni özelliği detaylı olarak açıklamaktadır:
+
+1. Coğrafi Referans Desteği (#Basic)
+2. buildingSMART Data Dictionary İçe Aktarma (#Concept)
+3. IDS Tabanlı Nitelik İçe Aktarma (#Professional)
+4. Geliştirilmiş Bilgi Paleti (#Concept)
+5. Geliştirilmiş XRef Yöneticisi (#Concept)
+6. Geopackage Veri Alışverişi (#Concept)
+7. Preoptima ile Entegrasyon (#Basic)
+
+Her özellik için:
+- Dahil olduğu paket seviyesi belirtilmiş
+- Detaylı açıklama yapılmış
+- Görsel URL'si eklenmiş
+- Teknik özellikler listelenmiş
+
+Sayfa ayrıca kapsamlı navigasyon menüleri, sosyal medya linkleri ve eğitim kaynaklarına erişim sağlamaktadır.
+
+NOT: Bu sayfada doğrudan gömülü YouTube videoları tespit edilmemiştir, ancak menü sisteminde çok sayıda YouTube playlist ve eğitim video linkine erişim bulunmaktadır.
