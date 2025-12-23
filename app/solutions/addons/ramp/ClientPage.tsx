@@ -75,11 +75,11 @@ export default function ClientPage() {
 
     <section key="gallery" className="py-16 bg-background relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader title="Galeri" align="center" className="py-0 bg-transparent mb-12" compact titleSize="lg" />
         <ImageGallery
           images={images}
           sectionTitle="Rampa Galerisi"
           sectionDescription="Rampa geometrisi ve ekran görüntüleri"
+          hideCategoryFilter
         />
       </div>
     </section>,

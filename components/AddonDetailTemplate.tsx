@@ -4,7 +4,7 @@ import React from "react";
 type AddonDetailTemplateProps = {
   title: string;
   subtitle?: string;
-  description?: string;
+  description?: React.ReactNode;
   sections: React.ReactNode[];
   customHero?: React.ReactNode;
 
@@ -35,9 +35,9 @@ const AddonDetailTemplate: React.FC<AddonDetailTemplateProps> = ({
                 </h2>
               )}
               {description && (
-                <p className="text-lg text-white/80 leading-relaxed">
+                <div className="text-lg text-white/80 leading-relaxed">
                   {description}
-                </p>
+                </div>
               )}
             </div>
           </div>

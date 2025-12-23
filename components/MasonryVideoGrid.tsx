@@ -23,7 +23,10 @@ export default function MasonryVideoGrid({ title, items }: { title: string; item
                   className="w-full h-full"
                 />
               </div>
-              <h3 className="text-sm font-medium text-gray-200">{v.titleTR || v.titleDE}</h3>
+              <h3 className="text-sm font-medium text-gray-200">{v.titleTR}</h3>
+              {v.titleDE && (
+                <p className="text-xs text-gray-500 mt-1">{v.titleDE}</p>
+              )}
             </div>
           ))}
         </div>
