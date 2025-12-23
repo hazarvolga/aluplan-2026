@@ -56,7 +56,7 @@ export default function ClientPage() {
             </ul>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button asChild className="bg-accent hover:bg-accent/90 text-graphite-950 font-semibold">
-                <a href="https://aluplan.com.tr/basvuru-formlari/" target="_blank" rel="noopener noreferrer">Teklif Talep Formu<ExternalLink className="ml-2 h-4 w-4" /></a>
+                <a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">Teklif Talep Formu<ExternalLink className="ml-2 h-4 w-4" /></a>
               </Button>
               <Button asChild variant="outline">
                 <a href="https://www.youtube.com/watch?v=EXVlk83zcIs&list=PL5ma0JNNoskbikv2hCg83KVa1pvQ4fvZW" target="_blank" rel="noopener noreferrer">Youtube Kanalımız<ExternalLink className="ml-2 h-4 w-4" /></a>

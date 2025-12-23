@@ -311,7 +311,7 @@ const ProductPageTemplate = ({
                       className={pkg.highlighted ? "w-full bg-accent hover:bg-accent/90 text-accent-foreground" : "w-full"}
                       asChild
                     >
-                      <a href="/contact">Teklif Al</a>
+                      <a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">Teklif Talep Formu</a>
                     </Button>
                   </CardContent>
                 </Card>

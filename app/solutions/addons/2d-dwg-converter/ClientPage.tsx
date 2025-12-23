@@ -6,7 +6,7 @@ import SectionHeader from "@/components/SectionHeader";
 import CDSLicenseInfoSection from "@/components/CDSLicenseInfoSection";
 import { Card } from "@/components/ui/card";
 import MasonryVideoGrid from "@/components/MasonryVideoGrid";
-import imgLicense from "@/assets/solutions/cds/drive-curve/islevsel-genel-bakis/Lizenz-anzeigen.webp";
+
 
 // Static Imports for Gallery
 import img01 from "@/assets/solutions/cds/dwg-converter/elementor-convert221d4ae9.webp";
@@ -90,22 +90,13 @@ export default function ClientPage() {
       descriptions={[
         "2B DWG/DXF içeriklerini Allplan standartlarına uyumlu hale getirin.",
         "Katman ve stil eşleme, çizgi/metin tipleri uyarlama ve toplu dönüşüm olanakları ile hız kazanın.",
+        "2B ve 3B elemanların hız kazandıran dönüşümü.",
+        "Bu eklenti, farklı sayıda değerli fonksiyon sayesinde çok zaman kazandırır. Örneğin, basit bir içe aktarma işlemi için, tüm evleri ve sokakları sadece birkaç tıklama ile yüzey öğeleriyle doldurabilirsiniz. 5 saniyede 500 yüzey? Sorun değil! Ve ilk kullanımdan sonra diğer işlevlerden de vazgeçmek istemeyeceksiniz."
       ]}
       videoUrl="https://www.youtube.com/embed/JZI8p0aX7Kg"
     />,
 
-    <section key="posthero" className="py-16 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto">
-          <p className="text-lg text-gray-300">
-            2B ve 3B elemanların hız kazandıran dönüşümü
-          </p>
-          <p className="mt-4 text-gray-400">
-            Bu eklenti, farklı sayıda değerli fonksiyon sayesinde çok zaman kazandırır. Örneğin, basit bir içe aktarma işlemi için, tüm evleri ve sokakları sadece birkaç tıklama ile yüzey öğeleriyle doldurabilirsiniz. 5 saniyede 500 yüzey? Sorun değil! Ve ilk kullanımdan sonra diğer işlevlerden de vazgeçmek istemeyeceksiniz.
-          </p>
-        </div>
-      </div>
-    </section>,
+
 
     <section key="features" className="py-16 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -127,12 +118,12 @@ export default function ClientPage() {
       key="video-grid"
       title="Video Galerisi"
       items={[
-        { titleTR: "Video 1", videoUrl: "https://www.youtube.com/embed/JZI8p0aX7Kg" },
-        { titleTR: "Video 2", videoUrl: "https://www.youtube.com/embed/M83xHLG27og" },
-        { titleTR: "Video 3", videoUrl: "https://www.youtube.com/embed/SPEzRSiqUh4" },
-        { titleTR: "Video 4", videoUrl: "https://www.youtube.com/embed/BNMnaQ3dnxM" },
-        { titleTR: "Video 5", videoUrl: "https://www.youtube.com/embed/PPoCPiL8cB4" },
-        { titleTR: "Video 6", videoUrl: "https://www.youtube.com/embed/lSiSphI7I3o" },
+        { titleTR: "ALLPLAN Add-On ElementConverter - 2B Veriler", titleDE: "ALLPLAN Add-On ElementConverter - 2D Daten", videoUrl: "https://www.youtube.com/embed/JZI8p0aX7Kg" },
+        { titleTR: "ALLPLAN Add-On ElementConverter - 3B Gövdeden Duvar veya Döşeme Boşluğuna", titleDE: "ALLPLAN Add-On ElementConverter - 3D Körper in Wand- oder Deckenöffnung", videoUrl: "https://www.youtube.com/embed/M83xHLG27og" },
+        { titleTR: "ALLPLAN Add-On ElementConverter - 3B Gövde ve Bileşenler", titleDE: "ALLPLAN Add-On ElementConverter - 3D Körper und Bauteile", videoUrl: "https://www.youtube.com/embed/SPEzRSiqUh4" },
+        { titleTR: "ALLPLAN Add-On ElementConverter - İnce Yapı Alanlarından Metraj Objesine", titleDE: "ALLPLAN Add-On ElementConverter - Ausbauflächen in Mengenkörper", videoUrl: "https://www.youtube.com/embed/BNMnaQ3dnxM" },
+        { titleTR: "ALLPLAN Add-On ElementConverter - Eşit Elemanlardan Makrolara", titleDE: "ALLPLAN Add-On ElementConverter - Gleiche Elemente in Makros", videoUrl: "https://www.youtube.com/embed/PPoCPiL8cB4" },
+        { titleTR: "ALLPLAN Add-On ElementConverter - Sembol Noktalarını Makrolara Dönüştürme", titleDE: "ALLPLAN Add-On ElementConverter - Symbolpunkte in Makros wandeln", videoUrl: "https://www.youtube.com/embed/lSiSphI7I3o" },
       ]}
     />,
 
@@ -143,7 +134,7 @@ export default function ClientPage() {
       description="Eklentiyi yükledikten sonra deneme sürümünü 14 gün ücretsiz olarak kullanabilirsiniz."
       systemRequirements="Allplan 2020 – 2024"
       languages="Almanca, İngilizce"
-      imageUrl={imgLicense}
+      imageUrl="https://cdn-ildjmdd.nitrocdn.com/tcdVFlIBFQtnSTNLgsIOcKKpRMOOdqtW/assets/images/optimized/rev-0504ba4/addon.aluplan.com.tr/wp-content/uploads/2023/02/Lisans.jpg"
       imageAlt="Lisans"
       links={[
         { text: "Kurulum Kılavuzu", url: "https://youtu.be/BWKDmZyIUo4", variant: "link" },

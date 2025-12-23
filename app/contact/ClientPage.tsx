@@ -92,9 +92,9 @@ export default function ClientPage() {
                 </Card>
                 <Card>
                   <CardContent className="p-8">
-                    <h3 className="font-display text-2xl font-bold mb-4">Fiyat Teklifi Alın</h3>
+                    <h3 className="font-display text-2xl font-bold mb-4">Teklif Talep Formu</h3>
                     <p className="text-muted-foreground mb-6">İhtiyaçlarınıza özel fiyat teklifi için satış ekibimizle görüşün.</p>
-                    <Button variant="outline" className="w-full">Teklif İste</Button>
+                    <Button variant="outline" className="w-full" asChild><a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">Teklif Talep Formu</a></Button>
                   </CardContent>
                 </Card>
                 <div className="mt-8 p-6 bg-accent/10 rounded-lg">

@@ -116,7 +116,7 @@ export default function Page() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Tasarımdan inşaata kadar tam iş akışı için kapsamlı <span className="text-accent">BIM</span> çözümü.</h1>
             <div className="flex flex-wrap gap-4">
               <Button size="lg" asChild className="bg-accent hover:bg-accent/90"><a href="https://www.allplan.com/trial-or-subscription/" target="_blank" rel="noopener noreferrer">Ücretsiz Dene<ArrowRight className="ml-2 h-5 w-5" /></a></Button>
-              <Button variant="outline" size="lg" asChild><Link href="/contact">Teklif Alın</Link></Button>
+              <Button variant="outline" size="lg" asChild><a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">Teklif Talep Formu</a></Button>
               <Button variant="outline" size="lg" asChild><a href="https://www.allplan.com/subscription-faq/" target="_blank" rel="noopener noreferrer"><ExternalLink className="mr-2 h-4 w-4" />Abonelik SSS</a></Button>
             </div>
           </div>
@@ -168,7 +168,7 @@ export default function Page() {
           </div>
           <div className="flex flex-wrap gap-4 justify-center mt-12">
             <Button variant="outline" asChild><a href="https://www.allplan.com/subscription-faq/" target="_blank" rel="noopener noreferrer">Abonelik avantajlarını görün</a></Button>
-            <Button asChild><a href="https://aluplan.com.tr/basvuru-formlari/" target="_blank" rel="noopener noreferrer">Teklif alın</a></Button>
+            <Button asChild><a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">Teklif Talep Formu</a></Button>
           </div>
         </div>
       </section>
@@ -181,7 +181,7 @@ export default function Page() {
               <Card key={index} className="overflow-hidden group"><div className="aspect-video overflow-hidden relative">{feature.youtubeId ? (<VideoModal youtubeId={feature.youtubeId} title={feature.title} thumbnailUrl={feature.thumbnailUrl} className="w-full h-full" />) : (<Image src={feature.image!} alt={feature.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />)}</div><CardContent className="p-6"><h3 className="text-xl font-semibold text-foreground mb-3">{feature.title}</h3><p className="text-muted-foreground text-sm">{feature.description}</p></CardContent></Card>
             ))}
           </div>
-          <div className="flex flex-wrap gap-4 justify-center mt-12"><Button variant="outline" asChild><a href="https://www.allplan.com/consulting-sale/consulting-sale-overview/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">Sorularınız mı var? İletişime Geçin<ExternalLink className="w-4 h-4" /></a></Button><Button asChild><a href="https://aluplan.com.tr/basvuru-formlari/" target="_blank" rel="noopener noreferrer">Teklif alın</a></Button></div>
+          <div className="flex flex-wrap gap-4 justify-center mt-12"><Button variant="outline" asChild><a href="https://www.allplan.com/consulting-sale/consulting-sale-overview/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">Sorularınız mı var? İletişime Geçin<ExternalLink className="w-4 h-4" /></a></Button><Button asChild><a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">Teklif Talep Formu</a></Button></div>
         </div>
       </section>
 

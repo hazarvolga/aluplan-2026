@@ -25,6 +25,12 @@ const nextConfig = {
         hostname: 'img.youtube.com',
         port: '',
         pathname: '/**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn-ildjmdd.nitrocdn.com',
+        port: '',
+        pathname: '/**'
       }
     ]
   },

@@ -63,7 +63,7 @@ export default function ClientPage() {
       heroImage={axBg1}
       ctaTitle="Teklif Talep Formu"
       ctaDescription="AX3000 için teklif talep edin"
-      ctaHref="https://aluplan.com.tr/basvuru-formlari/"
+      ctaHref="https://forms.office.com/r/hXhnKAG912"
       ctaExternal
       showDemoButton={false}
       additionalButtons={[

@@ -52,9 +52,9 @@ const FinalCTA = () => {
                             className="border-white/20 bg-white/5 text-white hover:bg-white/10 hover:border-white/30 transition-all duration-300 px-8 py-6 text-lg font-semibold"
                             asChild
                         >
-                            <Link href="/contact">
-                                Teklif Al
-                            </Link>
+                            <a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">
+                                Teklif Talep Formu
+                            </a>
                         </Button>
                     </div>
 
