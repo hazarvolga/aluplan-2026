@@ -1,13 +1,37 @@
 "use client";
 
 import ProductPageTemplate from "@/components/ProductPageTemplate";
+import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
 import RegulaTabs from "@/components/RegulaTabs";
 import SideImageSection from "@/components/SideImageSection";
 import heroImage from "@/assets/solutions/steel-hero.jpg"; // Using existing hero as placeholder
-import freeformStair from "@/assets/products/allplan-2026/freeform-stair.jpg";
-import slabFoundation from "@/assets/products/allplan-2026/slab-foundation.jpg";
-import roomFinish from "@/assets/products/allplan-2026/room-finish.jpg";
-import customComponents from "@/assets/products/allplan-2026/custom-components.jpg";
+import freeformStairNew from "@/assets/products/allplan-2026/freeform-stair-new.jpg";
+import slabFoundationNew from "@/assets/products/allplan-2026/slab-foundation-new.jpg";
+import roomFinishNew from "@/assets/products/allplan-2026/room-finish-new.jpg";
+import customComponentsNew from "@/assets/products/allplan-2026/custom-components-new.jpg";
+import structuralFraming from "@/assets/products/allplan-2026/structural-framing.jpg";
+import framingConnections from "@/assets/products/allplan-2026/framing-connections.jpg";
+import wallWorkflows from "@/assets/products/allplan-2026/wall-workflows.jpg";
+import rebarDetailingNew from "@/assets/products/allplan-2026/rebar-detailing-new.jpg";
+import automatedRebar from "@/assets/products/allplan-2026/automated-rebar.gif";
+import rebarToField from "@/assets/products/allplan-2026/rebar-to-field.jpg";
+import infraUnifiedDtm from "@/assets/products/allplan-2026/infra-unified-dtm.jpg";
+import infraRoadIntersection from "@/assets/products/allplan-2026/infra-road-intersection.jpg";
+import infraTunnelModeling from "@/assets/products/allplan-2026/infra-tunnel-modeling.jpg";
+import infraBuildingStructure from "@/assets/products/allplan-2026/infra-building-structure.jpg";
+import infraBimplus from "@/assets/products/allplan-2026/infra-bimplus.jpg";
+import infra3dLayers from "@/assets/products/allplan-2026/infra-3d-layers.jpg";
+import infraParametricSections from "@/assets/products/allplan-2026/infra-parametric-sections.jpg";
+import infraFem from "@/assets/products/allplan-2026/infra-fem.jpg";
+import infraPrecastBridge from "@/assets/products/allplan-2026/infra-precast-bridge.jpg";
+import prefabGroundworks from "@/assets/products/allplan-2026/prefab-groundworks.jpg";
+import prefabRuleDimensioning from "@/assets/products/allplan-2026/prefab-rule-dimensioning.jpg";
+import prefabLocalViews from "@/assets/products/allplan-2026/prefab-local-views.jpg";
+import prefabConnectionPalette from "@/assets/products/allplan-2026/prefab-connection-palette.jpg";
+import prefabFiligree from "@/assets/products/allplan-2026/prefab-filigree.jpg";
+import prefabHiddenRebar from "@/assets/products/allplan-2026/prefab-hidden-rebar.jpg";
+import prefabQuantity from "@/assets/products/allplan-2026/prefab-quantity.jpg";
+import prefabNumbering from "@/assets/products/allplan-2026/prefab-numbering.jpg";
 
 const ArchitectureContent = () => (
   <div className="space-y-0">
@@ -16,7 +40,7 @@ const ArchitectureContent = () => (
       subtitle="Dahil Olduğu Paket: #Concept"
       description="Eşsiz, standartlara uygun merdivenleri benzersiz esneklik ve kolaylıkla tasarlayın"
       content="Öne çıkan tasarımlara artan talep ile birlikte, mimar ve planlamacıların özgün ve işlevsel merdivenler yaratmak için esnek araçlara ihtiyacı var. Serbest form merdivenler, sıradışı mekanlara mükemmel uyum sağlar ve her projeye daha fazla yaratıcı olasılık sunar. ALLPLAN 2026, özel ve alışılmışın dışında merdivenleri tasarlamayı kolaylaştıran esnek bir merdiven modelleyici sunar. Serbest Form Merdiven Modelleyici, ülke bazlı standartlara uygun olarak benzersiz veya karmaşık şekiller oluşturmanıza olanak tanır. Ayrıca merdivenin üst veya alt kısmında referans düzlemleri tanımlayarak, merdiven altına duvar veya oda eklemeyi daha hızlı hale getirebilirsiniz. Tek bir sezgisel araç içinde eşsiz esneklik ve verimlilikle, standartlara uygun ve dikkat çekici merdivenler tasarlayın."
-      imageSrc={freeformStair}
+      imageSrc={freeformStairNew}
       imageAlt="Geliştirilmiş Serbest Şekilli Merdiven Modelleyicisi"
       ctaButton={{
         text: "Videoyu İzle",
@@ -31,7 +55,7 @@ const ArchitectureContent = () => (
       subtitle="Dahil Olduğu Paket: #Concept"
       description="Modern ve sürdürülebilir yapı tasarımı için daha fazla esneklik ve hassasiyet"
       content="AEC (Mimarlık-Mühendislik-İnşaat) sektörü, modern ve sürdürülebilir binalar için çok katmanlı bileşenleri tasarlayıp yönetmenin verimli yollarına ihtiyaç duyar ve proje standartlarını her aşamada karşılamalıdır. ALLPLAN 2025, döşemeler için çok katmanlı destek ve detaylandırma ile uygulama planlama araçlarını tanıttı. ALLPLAN 2026 ile çok katmanlı döşeme ve temel döşemelerini tasarlamak artık her zamankinden daha sezgisel ve verimli. Son güncellemeler, mimar ve mühendislerin döşeme katmanlarının uzatma yönünü hassas şekilde kontrol etmesini ve yeni etkileşimli önizleme ile değişiklikleri anında görmesini sağlar. Temel döşemeler, zemin katmanları veya alt tabaka katmanları gibi karmaşık bileşenlerin modellenmesi artık kolay ve son derece hassastır. Bu geliştirmeler, proje iş akışlarını hızlandırır, hata olasılığını azaltır ve planlamadan inşa aşamasına kadar tutarlı, detaylı sonuçlar elde edilmesini sağlar."
-      imageSrc={slabFoundation}
+      imageSrc={slabFoundationNew}
       imageAlt="Gelişmiş Çok Katmanlı Döşeme Yönetimi"
       ctaButton={{
         text: "Videoyu İzle",
@@ -46,8 +70,13 @@ const ArchitectureContent = () => (
       subtitle="Dahil Olduğu Paket: #Concept"
       description="Daha doğru, hızlı ve kolay"
       content="ALLPLAN 2026, kaplama modelleme için esnek, doğru ve verimli bir iş akışı sunarak BIM planlamasını önemli ölçüde geliştirir. Öne çıkan özellikler şunlardır: kural tabanlı dağıtımla birlikte gerçekçi geometriye sahip çok katmanlı dikey kaplamalar, ilişkili oda kaplamalarını organize etmek veya alternatif tasarımları desteklemek için yeni oda filtreleri, duvar gibi dikey kaplamaların plan görünümü, 3B süpürgelik modelleme ve katman yönetimi için geliştirilmiş bir arayüz. Bu iyileştirmeler, mimarların doğru 2D ve 3D planlar oluşturmasına, kaplamaları yönetmenin basitleşmesine, hata oranının azalmasına ve çeşitli proje tiplerine uyum sağlamasına yardımcı olur. Ayrıca optimize edilmiş hesaplama süreci, tasarım değişiklikleri yaparken ve karmaşık projeleri güncellerken zamandan tasarruf sağlar."
-      imageSrc={roomFinish}
+      imageSrc={roomFinishNew}
       imageAlt="BIM'e Uyumlu Oda ve Kaplama Detaylandırması"
+      ctaButton={{
+        text: "Videoyu İzle",
+        href: "https://www.youtube.com/watch?v=pNlxIzyGVKc",
+        external: true,
+      }}
       imagePosition="right"
       className="bg-background"
     />
@@ -56,13 +85,8 @@ const ArchitectureContent = () => (
       subtitle="Dahil Olduğu Paket: #Concept"
       description="Daha akıllı ve kaliteli BIM modelleri için kesintisiz etkileşim ve otomasyon"
       content="ALLPLAN 2026, BIM modelinde öncelik tabanlı bağlantılara (PBC) sahip geliştirilmiş Özel Bileşen özelliğini tanıtır. Bu geliştirme, özel model öğeleri ile duvar, kolon, döşeme gibi yerel yapı bileşenleri veya diğer özel objeler arasında kesintisiz etkileşim sağlar. Planlamacılar artık karmaşık şekilleri daha doğru modelleyebilir, otomatik etkileşimler manuel çalışmayı azaltır ve hata riskini minimize eder. Bu geliştirmeler, iş akışlarını hızlandırır, daha kaliteli BIM modelleri sunar ve zorlu projelerde bile başarılı proje teslimini destekler."
-      imageSrc={customComponents}
+      imageSrc={customComponentsNew}
       imageAlt="Özel Bileşenler: Hakimiyete Bağlı"
-      ctaButton={{
-        text: "Videoyu İzle",
-        href: "https://www.youtube.com/watch?v=pNlxIzyGVKc",
-        external: true,
-      }}
       imagePosition="left"
       className="bg-muted"
     />
@@ -71,8 +95,13 @@ const ArchitectureContent = () => (
       subtitle="Dahil Olduğu Paket: #Professional"
       description="Çerçeve paftalarını hızla modelleyin ve güncelleyin"
       content="Yeni kiriş ve kiriş sistemlerini yerleştirme araçları, binaları daha hızlı modellemenizi ve çatı geometrisi değiştikçe çerçeve paftalarını uyarlamanızı sağlar. Geliştirilmiş yakalama seçenekleri, çelik elemanların ilk seferde doğru yerleştirilmesini sağlar ve bağlantı hatalarını azaltır."
-      imageSrc={freeformStair} // Placeholder reusing an image as one is missing
+      imageSrc={structuralFraming}
       imageAlt="Geliştirilmiş Strüktürel Çerçeveleme"
+      ctaButton={{
+        text: "Videoyu İzle",
+        href: "https://www.youtube.com/watch?v=aCsFFSNbFWc",
+        external: true,
+      }}
       imagePosition="right"
       className="bg-background"
     />
@@ -81,7 +110,7 @@ const ArchitectureContent = () => (
       subtitle="Dahil Olduğu Paket: #Professional"
       description="Bağlantıları doğru şekilde koruyun, otomatik olarak"
       content="Bağlantı hatalarını düzeltmek için zaman kaybetmeyin—ALLPLAN 2026'daki yeni işlevsellikle, bağlantılar otomatik olarak uygulanır ve güncellenir, böylece çelik montajlar tasarım değişikliklerinde bile doğru ve geçerli kalır."
-      imageSrc={slabFoundation} // Placeholder
+      imageSrc={framingConnections}
       imageAlt="Strüktürel Çerçeveleme Bağlantıları"
       imagePosition="left"
       className="bg-muted"
@@ -91,7 +120,7 @@ const ArchitectureContent = () => (
       subtitle="Dahil Olduğu Paket: #Concept"
       description="Modern, birleşik arayüz ile duvar tasarımını basitleştirin"
       content="ALLPLAN 2026, geometrik özellikler de dahil olmak üzere duvar oluşturma ve düzenleme için modern ve birleşik bir özellik paleti sunar. Bu tutarlı ve sezgisel arayüz, yeni kullanıcıların başlamasını kolaylaştırırken, deneyimli kullanıcılar farklı nesne türlerinde verimliliği artırır ve sorunsuz iş akışları sağlar. Sonuç, her proje için üretkenliği ve kullanıcı memnuniyetini artıran, düzenli bir duvar tasarım sürecidir."
-      imageSrc={roomFinish} // Placeholder
+      imageSrc={wallWorkflows}
       imageAlt="Optimizasyonlu Duvar İş Akışları"
       imagePosition="right"
       className="bg-background"
@@ -119,7 +148,7 @@ const EngineeringContent = () => (
           </p>
         </div>
       }
-      imageSrc={customComponents} // Placeholder
+      imageSrc={rebarDetailingNew}
       imageAlt="Geliştirilmiş Donatı Detaylandırması"
       ctaButton={{
         text: "Videoyu İzle",
@@ -143,7 +172,7 @@ const EngineeringContent = () => (
           </p>
         </div>
       }
-      imageSrc={freeformStair} // Placeholder
+      imageSrc={automatedRebar}
       imageAlt="Otomatik Donatı Detaylandırması"
       ctaButton={{
         text: "Videoyu İzle",
@@ -170,7 +199,7 @@ const EngineeringContent = () => (
           </p>
         </div>
       }
-      imageSrc={slabFoundation} // Placeholder
+      imageSrc={rebarToField}
       imageAlt="Donatıdan Şantiyeye (Reinforcement to Field)"
       ctaButton={{
         text: "Videoyu İzle",
@@ -205,11 +234,11 @@ const InfrastructureContent = () => (
           </p>
         </div>
       }
-      imageSrc={slabFoundation} // Placeholder
+      imageSrc={infraUnifiedDtm}
       imageAlt="Birleşik DAM"
       ctaButton={{
         text: "Videoyu İzle",
-        href: "#", // Placeholder
+        href: "https://www.youtube.com/watch?v=rF3o_o8YEz0",
         external: true,
       }}
       verticalAlign="start"
@@ -232,7 +261,7 @@ const InfrastructureContent = () => (
           </p>
         </div>
       }
-      imageSrc={freeformStair} // Placeholder
+      imageSrc={infraRoadIntersection}
       imageAlt="Gelişmiş 3B Yol Kavşağı Detaylandırması"
       imagePosition="left"
       verticalAlign="start"
@@ -258,11 +287,11 @@ const InfrastructureContent = () => (
           </p>
         </div>
       }
-      imageSrc={roomFinish} // Placeholder
+      imageSrc={infraTunnelModeling}
       imageAlt="Tünel Modellemesi"
       ctaButton={{
         text: "Videoyu İzle",
-        href: "#", // Placeholder
+        href: "https://www.youtube.com/watch?v=jfSwLA6o-VY",
         external: true,
       }}
       verticalAlign="start"
@@ -285,7 +314,7 @@ const InfrastructureContent = () => (
           </p>
         </div>
       }
-      imageSrc={customComponents} // Placeholder
+      imageSrc={infraBuildingStructure}
       imageAlt="Altyapı Projeleri için Yapı Strüktürü"
       imagePosition="left"
       verticalAlign="start"
@@ -311,11 +340,11 @@ const InfrastructureContent = () => (
           </p>
         </div>
       }
-      imageSrc={slabFoundation} // Placeholder
+      imageSrc={infraBimplus}
       imageAlt="BIMPLUS’a Model Aktarımı"
       ctaButton={{
         text: "Videoyu İzle",
-        href: "#", // Placeholder
+        href: "https://www.youtube.com/watch?v=69CgNyPCs-g",
         external: true,
       }}
       verticalAlign="start"
@@ -341,7 +370,7 @@ const InfrastructureContent = () => (
           </p>
         </div>
       }
-      imageSrc={roomFinish} // Placeholder
+      imageSrc={infra3dLayers}
       imageAlt="3B Katman Yönetimi"
       imagePosition="left"
       verticalAlign="start"
@@ -364,11 +393,11 @@ const InfrastructureContent = () => (
           </p>
         </div>
       }
-      imageSrc={customComponents} // Placeholder
+      imageSrc={infraParametricSections}
       imageAlt="Gelişmiş Parametrik Kesit Modellemesi"
       ctaButton={{
         text: "Videoyu İzle",
-        href: "#", // Placeholder
+        href: "https://www.youtube.com/watch?v=qkcI9FXBOBs",
         external: true,
       }}
       verticalAlign="start"
@@ -394,7 +423,7 @@ const InfrastructureContent = () => (
           </p>
         </div>
       }
-      imageSrc={slabFoundation} // Placeholder
+      imageSrc={infraFem}
       imageAlt="FEM – Hacim Elemanları"
       imagePosition="left"
       verticalAlign="start"
@@ -425,7 +454,7 @@ const InfrastructureContent = () => (
           </p>
         </div>
       }
-      imageSrc={freeformStair} // Placeholder
+      imageSrc={infraPrecastBridge}
       imageAlt="Prefabrik Kirişli Köprü"
       verticalAlign="start"
       className="bg-background"
@@ -455,11 +484,11 @@ const PrefabricationContent = () => (
           </p>
         </div>
       }
-      imageSrc={customComponents} // Placeholder
+      imageSrc={prefabGroundworks}
       imageAlt="Temel İşleri İyileştirmeleri"
       ctaButton={{
         text: "Videoyu İzle",
-        href: "#", // Placeholder
+        href: "https://www.youtube.com/watch?v=p-vHmE4XyLU",
         external: true,
       }}
       verticalAlign="start"
@@ -483,11 +512,11 @@ const PrefabricationContent = () => (
           </p>
         </div>
       }
-      imageSrc={slabFoundation} // Placeholder
+      imageSrc={prefabRuleDimensioning}
       imageAlt="Kural Tabanlı Ölçülendirme"
       ctaButton={{
         text: "Videoyu İzle",
-        href: "#", // Placeholder
+        href: "https://www.youtube.com/watch?v=GuamQuQuBts",
         external: true,
       }}
       imagePosition="left"
@@ -509,11 +538,11 @@ const PrefabricationContent = () => (
           </p>
         </div>
       }
-      imageSrc={freeformStair} // Placeholder
+      imageSrc={prefabLocalViews}
       imageAlt="Yerel Görünümler için Otomatik Ölçülendirme"
       ctaButton={{
         text: "Videoyu İzle",
-        href: "#", // Placeholder
+        href: "https://www.youtube.com/watch?v=5ABAuwVzJUQ",
         external: true,
       }}
       verticalAlign="start"
@@ -540,7 +569,7 @@ const PrefabricationContent = () => (
           </p>
         </div>
       }
-      imageSrc={roomFinish} // Placeholder
+      imageSrc={prefabConnectionPalette}
       imageAlt="Yeni Bağlantı Paleti Güncellemesi"
       imagePosition="left"
       verticalAlign="start"
@@ -560,11 +589,11 @@ const PrefabricationContent = () => (
           </p>
         </div>
       }
-      imageSrc={customComponents} // Placeholder
+      imageSrc={prefabFiligree}
       imageAlt="Filigran Döşemeler için Ortak Çözüm"
       ctaButton={{
         text: "Videoyu İzle",
-        href: "#", // Placeholder
+        href: "https://www.youtube.com/watch?v=7-uCXC4WD6g",
         external: true,
       }}
       verticalAlign="start"
@@ -587,7 +616,7 @@ const PrefabricationContent = () => (
           </p>
         </div>
       }
-      imageSrc={slabFoundation} // Placeholder
+      imageSrc={prefabHiddenRebar}
       imageAlt="Gizli Donatıda Görselleştirme"
       imagePosition="left"
       verticalAlign="start"
@@ -604,11 +633,11 @@ const PrefabricationContent = () => (
           </p>
         </div>
       }
-      imageSrc={roomFinish} // Placeholder
+      imageSrc={prefabQuantity}
       imageAlt="Özelleştirilebilir Metraj"
       ctaButton={{
         text: "Videoyu İzle",
-        href: "#", // Placeholder
+        href: "https://www.youtube.com/watch?v=dWyhYD97VYo",
         external: true,
       }}
       verticalAlign="start"
@@ -625,7 +654,7 @@ const PrefabricationContent = () => (
           </p>
         </div>
       }
-      imageSrc={freeformStair} // Placeholder
+      imageSrc={prefabNumbering}
       imageAlt="Parça Numaralandırma"
       imagePosition="left"
       verticalAlign="start"
@@ -666,23 +695,23 @@ export default function Allplan2026YeniliklerPage() {
     },
   ];
 
+  const whatIsInfoMedia = {
+    title: "/ GENEL BAKIŞ",
+    subtitle: "NEDEN ALLPLAN 2026?",
+    description:
+      "ALLPLAN çözümleri, bina ve altyapı modelleme, tasarım, detaylandırma ve üretimden inşaata kadar uçtan uca iş birliğine dayalı bir çalışma akışı sağlıyor. Yeni geliştirmeler; projelerinizi hızlandırır, doğruluğu artırır, yenilik ve sürdürülebilirliği teşvik eder ve ekiplerin tüm proje yaşam döngüsü boyunca çevik ve uyumlu çalışmasını güvence altına alır.",
+    videoUrl: "https://www.youtube.com/embed/60vUWS-MEdw",
+  };
+
   return (
     <ProductPageTemplate
       badge="/ ALLPLAN 2026"
       title="DAHA İYİ BİR GELECEK İNŞA ETMEK İÇİN TASARLANDI"
       description="Mimarlar, mühendisler, üreticiler ve inşaat profesyonelleri için verimlilik ve iş birliğini yeniden tanımlıyor. ALLPLAN 2026 ürün sürümleri, modernizasyon, otomasyon ve entegrasyon odaklı yaklaşımıyla, AEC (Mimarlık, Mühendislik ve İnşaat) sektörünün değişen ihtiyaçlarına güçlü yanıtlar veriyor."
       heroImage={heroImage}
-      features={features}
+      // features={features} // Removed as per request to replace with custom section
       showCtaButton={false}
       showDemoButton={false}
-      whatIsInfoMedia={{
-        title: "/ GENEL BAKIŞ",
-        subtitle: "NEDEN ALLPLAN 2026?",
-        description:
-          "ALLPLAN çözümleri, bina ve altyapı modelleme, tasarım, detaylandırma ve üretimden inşaata kadar uçtan uca iş birliğine dayalı bir çalışma akışı sağlıyor. Yeni geliştirmeler; projelerinizi hızlandırır, doğruluğu artırır, yenilik ve sürdürülebilirliği teşvik eder ve ekiplerin tüm proje yaşam döngüsü boyunca çevik ve uyumlu çalışmasını güvence altına alır.",
-        // Using one of the videos as the main intro video, or placeholder
-        videoUrl: "https://www.youtube.com/embed/HqhDQELnHms",
-      }}
       afterInfoChildren={
         <RegulaTabs
           title="ALLPLAN 2026 – ANA ÖZELLİKLER VE GELİŞTİRMELER"
@@ -690,6 +719,51 @@ export default function Allplan2026YeniliklerPage() {
           items={tabs}
         />
       }
-    />
+    >
+      {/* Overview Section (Moved Up) */}
+      <InfoMediaTwoColumn {...whatIsInfoMedia} />
+
+      {/* Post Hero Section */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            {/* Left Column */}
+            <div>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8 text-left">
+                Mimarlar, mühendisler, üreticiler ve inşaat profesyonelleri için verimlilik ve iş birliğini yeniden tanımlıyor
+              </h2>
+              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed text-left">
+                <p>
+                  ALLPLAN 2026 ürün sürümleri, modernizasyon, otomasyon ve entegrasyon odaklı yaklaşımıyla, AEC (Mimarlık, Mühendislik ve İnşaat) sektörünün değişen ihtiyaçlarına güçlü yanıtlar veriyor. Bu yeni sürümler; gelişmiş araçlar, kesintisiz süreçler ve ileri düzey birlikte çalışabilirlik sunarak üretkenliği yeni bir seviyeye taşıyor.
+                </p>
+                <p>
+                  ALLPLAN çözümleri, bina ve altyapı modelleme, tasarım, detaylandırma ve üretimden inşaata kadar uçtan uca iş birliğine dayalı bir çalışma akışı sağlıyor. Yeni geliştirmeler; projelerinizi hızlandırır, doğruluğu artırır, yenilik ve sürdürülebilirliği teşvik eder ve ekiplerin tüm proje yaşam döngüsü boyunca çevik ve uyumlu çalışmasını güvence altına alır.
+                </p>
+              </div>
+            </div>
+
+            {/* Right Column */}
+            <div className="bg-muted/50 p-10 rounded-3xl border border-border/50">
+              <h3 className="font-display text-2xl font-bold text-foreground mb-8 flex items-center gap-3">
+                <span className="w-2 h-8 bg-accent rounded-full" />
+                ANA FAYDALAR
+              </h3>
+              <ul className="space-y-6">
+                {features.map((feature, index) => (
+                  <li key={index} className="flex items-start gap-4">
+                    <div className="w-8 h-8 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <div className="w-3 h-3 rounded-full bg-accent" />
+                    </div>
+                    <span className="text-lg text-foreground/90 font-medium leading-relaxed">
+                      {feature}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </ProductPageTemplate>
   );
 }

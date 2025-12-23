@@ -121,7 +121,7 @@ const SideImageSection = ({
               </p>
             )}
 
-            <h2 className={`font-display text-3xl md:text-4xl lg:text-5xl font-bold ${textColorClass}`}>
+            <h2 className={`font-display text-2xl md:text-3xl lg:text-4xl font-bold ${textColorClass}`}>
               {title}
             </h2>
 
