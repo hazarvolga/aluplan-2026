@@ -358,6 +358,127 @@ export default function TrainingPage() {
                 </div>
             </section>
 
+            {/* Partners Section */}
+            <section className="py-24 px-6 md:px-12 lg:px-24 bg-[#050505] border-t border-white/5">
+                <div className="max-w-[1400px] mx-auto">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Eğitim İş Ortaklarımız</h2>
+                        <p className="text-gray-400 max-w-2xl mx-auto">
+                            Akademik iş birliklerimiz ve yetkili eğitim merkezlerimiz.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        {/* Universities Card */}
+                        <div className="bg-[#0a0a0a] rounded-3xl p-8 md:p-12 border border-white/5 relative overflow-hidden group hover:border-[#3B82F6]/30 transition-colors duration-300">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#3B82F6] rounded-full blur-[100px] opacity-[0.03] pointer-events-none group-hover:opacity-[0.06] transition-opacity" />
+
+                            <div className="relative z-10">
+                                <div className="inline-flex items-center gap-2 text-[#3B82F6] font-bold text-sm uppercase tracking-widest mb-8 px-3 py-1 bg-[#3B82F6]/10 rounded-full">
+                                    <GraduationCap className="h-4 w-4" />
+                                    Üniversiteler
+                                </div>
+
+                                <div className="space-y-8">
+                                    <div>
+                                        <h4 className="text-xl font-bold text-white mb-2">Yıldız Teknik Üniversitesi</h4>
+                                        <ul className="space-y-1 text-gray-400 pl-4 border-l-2 border-white/10">
+                                            <li>İnşaat Mühendisliği</li>
+                                            <li>Mimarlık</li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h4 className="text-xl font-bold text-white mb-2">İstanbul Aydın Üniversitesi</h4>
+                                        <ul className="space-y-1 text-gray-400 pl-4 border-l-2 border-white/10">
+                                            <li>İnşaat Mühendisliği</li>
+                                            <li>Mimarlık</li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h4 className="text-xl font-bold text-white mb-2">Kastamonu MYO</h4>
+                                    </div>
+
+                                    <div>
+                                        <h4 className="text-xl font-bold text-white mb-2">İstanbul Gelişim Üniversitesi</h4>
+                                        <ul className="space-y-1 text-gray-400 pl-4 border-l-2 border-white/10">
+                                            <li>İnşaat Teknolojisi</li>
+                                            <li>Mimarlık</li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h4 className="text-xl font-bold text-white mb-2">Orta Doğu Teknik Üniversitesi</h4>
+                                        <ul className="space-y-1 text-gray-400 pl-4 border-l-2 border-white/10">
+                                            <li>İnşaat Mühendisliği</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Education Centers Card */}
+                        <div className="bg-[#0a0a0a] rounded-3xl p-8 md:p-12 border border-white/5 relative overflow-hidden group hover:border-[#3B82F6]/30 transition-colors duration-300">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#3B82F6] rounded-full blur-[100px] opacity-[0.03] pointer-events-none group-hover:opacity-[0.06] transition-opacity" />
+
+                            <div className="relative z-10">
+                                <div className="inline-flex items-center gap-2 text-[#3B82F6] font-bold text-sm uppercase tracking-widest mb-8 px-3 py-1 bg-[#3B82F6]/10 rounded-full">
+                                    <MapPin className="h-4 w-4" />
+                                    Eğitim Merkezlerimiz
+                                </div>
+
+                                <div className="space-y-10">
+                                    {/* IMO Ankara */}
+                                    <div>
+                                        <h3 className="text-2xl font-bold text-white mb-4">IMO Ankara</h3>
+                                        <div className="space-y-4 text-gray-400">
+                                            <div>
+                                                <p className="font-medium text-white">Mizgin Bektaş</p>
+                                                <p className="text-sm">Araştırma Görevlisi</p>
+                                            </div>
+                                            <div>
+                                                <p>TMMOB İnşaat Mühendisleri Odası</p>
+                                                <p>Ankara Şubesi</p>
+                                            </div>
+                                            <a href="tel:03122943060" className="inline-flex items-center gap-2 text-[#3B82F6] hover:text-[#2563eb] transition-colors">
+                                                0 312 294 3060
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    {/* LGN Proje Akademi */}
+                                    <div>
+                                        <div className="flex items-center gap-3 mb-4">
+                                            {/* Fallback for LGN Logo if needed, user mentioned 'lgn-logo' but file not found. Using text/icon. */}
+                                            <div className="h-10 w-10 flex items-center justify-center bg-white rounded-lg">
+                                                <span className="text-black font-extrabold text-xs">LGN</span>
+                                            </div>
+                                            <h3 className="text-2xl font-bold text-white">LGN Proje Akademi</h3>
+                                        </div>
+
+                                        <div className="space-y-4 text-gray-400">
+                                            <div className="leading-relaxed">
+                                                <p>Sahrayıcedit Mah. Ferit Bey Sok. No:24 / 12</p>
+                                                <p>34734 Kadıköy / İstanbul</p>
+                                            </div>
+                                            <div className="flex flex-col gap-2">
+                                                <a href="mailto:info@lgnprojeakademi.com" className="hover:text-white transition-colors">
+                                                    info@lgnprojeakademi.com
+                                                </a>
+                                                <a href="tel:05332189066" className="inline-flex items-center gap-2 text-[#3B82F6] hover:text-[#2563eb] transition-colors">
+                                                    0 533 218 90 66
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <ContactModal
                 isOpen={isContactModalOpen}
                 onClose={() => setIsContactModalOpen(false)}
