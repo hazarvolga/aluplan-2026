@@ -7,7 +7,8 @@ import ImageGallery from "@/components/ImageGallery";
 import SectionHeader from "@/components/SectionHeader";
 
 // Importing specific image for license if available
-import imgLicense from "@/assets/solutions/cds/drive-curve/islevsel-genel-bakis/Lizenz-anzeigen.webp";
+// Importing specific image for license if available
+import imgLicense from "@/assets/solutions/cds/ramp/license.jpg";
 
 // Static Imports
 import ramp1 from "@/assets/solutions/cds/ramp/ramp1.webp";

@@ -4,10 +4,13 @@ import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
 import SectionHeader from "@/components/SectionHeader";
 import CDSLicenseInfoSection from "@/components/CDSLicenseInfoSection";
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import RegulaTabs from "@/components/RegulaTabs";
 import ImageGallery from "@/components/ImageGallery";
 
 // Importing specific image for license if available
-import imgLicense from "@/assets/solutions/cds/drive-curve/islevsel-genel-bakis/Lizenz-anzeigen.webp";
+import imgLicense from "@/assets/solutions/cds/parametrik-arazi/license.jpg";
+import imgUserReport from "@/assets/solutions/cds/parametrik-arazi/user-report.jpg";
 
 // Static Imports - Planlar
 import plan01 from "@/assets/solutions/cds/parametrik-arazi/planlar/2000_5beef35dd5854.webp";
@@ -130,153 +133,182 @@ export default function ClientPage() {
   const sections = [
     <InfoMediaTwoColumn
       key="hero"
-      title="Parametrik Arazi"
-      subtitle="Kazıdan fazlası"
+      title="Bu parametrik Allplan eklentisinin işlevi, arazi kazısı oluşturmanın çok ötesine geçer."
+      subtitle=""
       descriptions={[
-        "Parametrik arazi modeli ile platformlar, eğimler ve kesitleri esnek şekilde üretin.",
-        "Kazı/dolgu hacimlerini hesaplayın ve saha düzenini güvenle tasarlayın.",
+        "Kazı planı, arazi modeli ve sunum için etkileyici katman modellerine hızla ulaşın. Değişikliklerin basitçe tamamlanmasına büyük önem veriyoruz.",
+        "Tüm bunlar sorunsuz ve sezgisel kullanımla birleştiğinde eklentinin gücü ortaya çıkıyor.",
       ]}
       videoUrl="https://www.youtube.com/embed/WHPmmRcCdMQ"
     />,
 
-    <section key="intro" className="py-16 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto space-y-4 text-gray-300">
-          <p>
-            Bu parametrik Allplan eklentisinin işlevi, arazi kazısı oluşturmanın çok ötesine geçer. Kazı planı, arazi modeli ve sunum için etkileyici katman modellerine hızla ulaşın. Değişikliklerin basitçe tamamlanmasına büyük önem veriyoruz.
-          </p>
-          <p>
-            Tüm bunlar sorunsuz ve sezgisel kullanımla birleştiğinde eklentinin gücü ortaya çıkıyor.
-          </p>
-        </div>
-      </div>
-    </section>,
-
-    <section key="features" className="py-16 bg-transparent">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader title="İşlevsel Genel Bakış" align="center" className="py-0 bg-transparent mb-12" compact titleSize="lg" />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {features.map((feature, idx) => (
-            <Card key={idx} className="p-5 bg-white/5 border-white/10 hover:bg-white/10 transition-colors">
-              <h3 className="text-sm font-semibold text-gray-200">{feature}</h3>
-            </Card>
+    <InfoMediaTwoColumn
+      key="version-3-info"
+      title="Versiyon 3 | Allplan 2021 – 2024"
+      subtitle="Kazı – Dolgu – Şantiye Planlaması"
+      descriptions={[]}
+      videoUrl="https://www.youtube.com/embed/bTB43HH45uU"
+      leftContent={
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mt-4 text-sm text-gray-300">
+          {[
+            "Allplan 2023 onayı",
+            "Yeni işlem kesme katmanı",
+            "Mimari bileşenler için referans yüzeyi",
+            "Yeni dolgu işlemi",
+            "Küresel Sınır",
+            "Optimizasyon alanı değiştirici",
+            "Üçgen ağları kapat",
+            "Aynı anda birden çok değiştiricinin sıralamasını özelleştirin",
+            "Desenler ve taramalar için iyileştirilmiş 2B renk gösterimi",
+            "Yüzeyler için renk ataması / kaydet ve yükle",
+            "Eğimli ve yatay yüzeyler için efsaneler",
+            "Eğimli ve yatay yüzeyler için özellikler",
+            "Kenarlık çokgenlerini sil",
+            "Kenarlık çoklu çizgisini çıkar",
+            "Yan ve alt yüzeyleri ekleyin",
+            "Tarama ile kesit görünüm"
+          ].map((item, i) => (
+            <li key={i} className="flex items-start gap-2">
+              <span className="text-emerald-500 mt-1">•</span>
+              <span>{item}</span>
+            </li>
           ))}
-        </div>
-      </div>
-    </section>,
+        </ul>
+      }
+    />,
 
-    <section key="versions" className="py-16 bg-transparent">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader title="Versiyonlar" align="center" className="py-0 bg-transparent mb-12" compact titleSize="lg" />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <div className="bg-white/5 border border-white/10 p-6 rounded-xl shadow-sm">
-            <h3 className="font-display text-xl font-bold text-white mb-4">Versiyon 3 (Allplan 2021–2024)</h3>
-            <ul className="space-y-2 text-gray-300">
-              {[
-                "Allplan 2023 onayı",
-                "Yeni işlem kesme katmanı",
-                "Mimari bileşenler için referans yüzeyi",
-                "Yeni dolgu işlemi",
-                "Küresel Sınır",
-                "Optimizasyon alanı değiştirici",
-                "Üçgen ağları kapat",
-                "Çoklu değiştirici sıralama özelleştirme",
-                "Desen/tarama için iyileştirilmiş 2B renk gösterimi",
-                "Yüzeyler için renk ataması / kaydet ve yükle",
-                "Eğimli ve yatay yüzeyler için efsaneler ve özellikler",
-                "Kenarlık çokgenlerini sil / çoklu çizgiyi çıkar",
-                "Yan ve alt yüzeyleri ekleyin",
-                "Tarama ile kesit görünüm",
-              ].map((f, i) => (
-                <li key={i} className="flex items-start"><span className="mr-2">•</span><span>{f}</span></li>
-              ))}
-            </ul>
-          </div>
-          <div className="bg-white/5 border border-white/10 p-6 rounded-xl shadow-sm">
-            <h3 className="font-display text-xl font-bold text-white mb-4">Versiyon 2</h3>
-            <ul className="space-y-2 text-gray-300">
-              {[
-                "Noktaları araziye yansıtın",
-                "Katı model olmadan 3B kazı verisi aktarımı",
-                "GPS tarama sistemleri için üçgen kazı çukurları",
-                "Değişiklikleri sıralama (tamamen yukarı/tamamen aşağı)",
-                "Boru çukuru için eğimli çoklu çizgi girişi",
-                "Alan değiştirici ile daha fazla esneklik",
-                "Alt yüzeyleri çıkarma imkanı",
-                "Kontur çizgileri arası mesafe ≥ 0.01m",
-                "Arazi modeli için kesit rengi",
-                "Çoklu düzenlemede iyileştirme",
-                "Sınıra kadar serbest eğim (V2.0.0.5)",
-                "Allplan 2020-1’de kesitlerde/görünümlerde optimize edilmiş görünüm",
-              ].map((f, i) => (
-                <li key={i} className="flex items-start"><span className="mr-2">•</span><span>{f}</span></li>
-              ))}
-            </ul>
-          </div>
-          <div className="bg-white/5 border border-white/10 p-6 rounded-xl shadow-sm">
-            <h3 className="font-display text-xl font-bold text-white mb-4">Versiyon 1</h3>
-            <ul className="space-y-2 text-gray-300">
-              {[
-                "Sezgisel kullanım; 4+ saat eğitim videoları",
-                "Dinamik yükseklik, uygulama/kaldırma, hacim ve değerlendirmeler",
-                "Erken planlama aşamalarında basit maliyet analizi",
-                "Eğimli kazı zeminleri, banketler, hendekler, barajlar",
-                "Görselleştirme için vardiya (katman) modelleri",
-                "Çok katmanlı arazi (yüzey, buzultaşı, kaya, …)",
-                "Biçim özellikleri ve yüzey renkleri ayarları",
-                "Bina altı kazılmış zemin kabulü",
-                "Etkileşimli hacimler, alanlar ve nitelikler",
-                "Allplan Raporları ve Excel ile kullanılabilir",
-                "Lisans, Allplan lisans aktarımıyla birlikte aktarılır",
-              ].map((f, i) => (
-                <li key={i} className="flex items-start"><span className="mr-2">•</span><span>{f}</span></li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>,
+    <InfoMediaTwoColumn
+      key="version-2-info"
+      title="VERSİYON 2"
+      subtitle="İkinci versiyonu on dakikada keşfedin…"
+      descriptions={[]}
+      videoUrl="https://www.youtube.com/embed/UvORTOvHy-g"
+      leftContent={
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mt-4 text-sm text-gray-300">
+          {[
+            "Noktaları araziye yansıtın",
+            "Katı model olmadan 3B kazı verisi aktarımı",
+            "GPS tarama sistemleri için üçgen kazı çukurları",
+            "Değişiklikleri sıralama (tamamen yukarı / tamamen aşağı)",
+            "Boru çukuru için eğimli bir çoklu çizginin girişi",
+            "Alan değiştirici ile daha fazla esneklik",
+            "Alt yüzeyleri çıkarma imkanı",
+            "Kontur çizgileri arasındaki mesafe en az 0.01m",
+            "Arazi modeli için kesit rengi",
+            "Çoklu düzenlemede iyileştirme",
+            "Sınıra kadar serbest eğim (V 2.0.0.5’te yeni)",
+            "Allplan 2020-1’de kesitlerde ve görünümlerde optimize edilmiş görünüm"
+          ].map((item, i) => (
+            <li key={i} className="flex items-start gap-2">
+              <span className="text-emerald-500 mt-1">•</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      }
+    />,
 
-    <section key="user-report" className="py-16 bg-transparent">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader title="Kullanıcı Raporu" align="center" className="py-0 bg-transparent mb-6" compact titleSize="lg" />
-        <p className="text-gray-300 max-w-3xl mx-auto">
-          Rivage Bottighofen projesinde (TG) 9 blok ve yeraltı otoparkı içeren kapsamlı çalışma, makine verilerinin işlenmesinde yüksek verimlilik sağlamıştır. Şantiyede kontrol, kolay ve verimli şekilde gerçekleştirildi.
-        </p>
-      </div>
-    </section>,
+    <InfoMediaTwoColumn
+      key="version-1-info"
+      title="VERSİYON 1"
+      subtitle="Birinci versiyonu on dakikada keşfedin…"
+      descriptions={[]}
+      videoUrl="https://www.youtube.com/embed/t59MHn23Eic"
+      leftContent={
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mt-4 text-sm text-gray-300">
+          {[
+            "Sezgisel kullanım ve 4 saatten fazla video ile öğrenmesi kolay",
+            "Dinamik yükseklik, uygulama ve kaldırma, hacim ve değerlendirmeler oluşturma",
+            "Erken planlama aşamalarında bile basit maliyet analizi",
+            "Eğimli kazı zeminleri, banketler, boru hattı hendekleri, barajlar vb.",
+            "Görselleştirmeler için vardiya modellerinin oluşturulması",
+            "Çok katmanlı arazi (yüzey katmanı, buzultaşı, kaya, …)",
+            "Biçim özellikleri, yüzey renkleri vb. ayarlar.",
+            "Bina altı kazılmış zemin kabulü",
+            "Etkileşimli hacimler, alanlar ve nitelikler (katmanlar dahil)",
+            "Allplan Raporları ve Excel ile kullanılabilir",
+            "Allplan lisansı bir bilgisayardan diğerine aktarılınca eklenti lisansı da aktarılır"
+          ].map((item, i) => (
+            <li key={i} className="flex items-start gap-2">
+              <span className="text-emerald-500 mt-1">•</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      }
+    />,
 
-    <section key="gallery-plan" className="py-16 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader title="Plan Örnekleri" align="center" className="py-0 bg-transparent mb-12" compact titleSize="lg" />
-        <ImageGallery images={planImages} sectionTitle="Planlar" sectionDescription="Parametrik arazi plan örnekleri" hideCategoryFilter />
-      </div>
-    </section>,
 
-    <section key="gallery-ekran" className="py-16 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader title="Ekran Görüntüleri" align="center" className="py-0 bg-transparent mb-12" compact titleSize="lg" />
-        <ImageGallery images={ekranImages} sectionTitle="Ekran Görüntüleri" sectionDescription="Ara yüz ve fonksiyon ekranları" hideCategoryFilter />
-      </div>
-    </section>,
 
-    <section key="gallery-model" className="py-16 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader title="Model Örnekleri" align="center" className="py-0 bg-transparent mb-12" compact titleSize="lg" />
-        <ImageGallery images={modelImages} sectionTitle="Modeller" sectionDescription="3B modeller ve yüzeyler" hideCategoryFilter />
-      </div>
-    </section>,
 
-    <section key="gallery-photo" className="py-16 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <ImageGallery
-          images={fotoImages}
-          sectionTitle="Fotolar"
-          sectionDescription="Saha ve referans görselleri"
-          hideCategoryFilter
-        />
-      </div>
-    </section>,
+
+    <InfoMediaTwoColumn
+      key="user-report"
+      title="Kullanıcı Raporu"
+      description="Rivage Bottighofen projesinde (TG) 9 blok ve yeraltı otoparkı içeren kapsamlı çalışma, makine verilerinin işlenmesinde yüksek verimlilik sağlamıştır. Şantiyede kontrol, kolay ve verimli şekilde gerçekleştirildi."
+      imageSrc={imgUserReport}
+      reverse
+    />,
+
+    <RegulaTabs
+      key="galleries"
+      title="Galeri"
+      defaultValue="modeller"
+      items={[
+        {
+          value: "modeller",
+          labelTR: "Modeller",
+          content: (
+            <ImageGallery
+              images={modelImages}
+              sectionTitle=""
+              sectionDescription="3B modeller ve yüzeyler"
+              hideSectionHeader
+              hideCategoryFilter
+            />
+          ),
+        },
+        {
+          value: "fotolar",
+          labelTR: "Fotolar",
+          content: (
+            <ImageGallery
+              images={fotoImages}
+              sectionTitle=""
+              sectionDescription="Saha ve referans görselleri"
+              hideSectionHeader
+              hideCategoryFilter
+            />
+          ),
+        },
+        {
+          value: "ekran-goruntuleri",
+          labelTR: "Ekran Görüntüleri",
+          content: (
+            <ImageGallery
+              images={ekranImages}
+              sectionTitle=""
+              sectionDescription="Ara yüz ve fonksiyon ekranları"
+              hideSectionHeader
+              hideCategoryFilter
+            />
+          ),
+        },
+        {
+          value: "planlar",
+          labelTR: "Planlar",
+          content: (
+            <ImageGallery
+              images={planImages}
+              sectionTitle=""
+              sectionDescription="Parametrik arazi plan örnekleri"
+              hideSectionHeader
+              hideCategoryFilter
+            />
+          ),
+        },
+      ]}
+    />,
 
     <CDSLicenseInfoSection
       key="license"
@@ -300,7 +332,31 @@ export default function ClientPage() {
     <AddonDetailTemplate
       title="Parametrik Arazi"
       subtitle="Kazıdan fazlası"
-      description="Parametrik arazi modeli ile platform, eğim ve hacim hesapları"
+      description={
+        <div className="flex flex-col gap-6">
+          <p className="text-lg text-white/80 leading-relaxed">
+            Parametrik arazi modeli ile platform, eğim ve hacim hesapları
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <Button asChild size="lg" className="bg-white text-black hover:bg-white/90 font-semibold">
+              <a href="https://www.youtube.com/playlist?list=PLZeQ6A4Fw6kDT_0iSHSocEo9eBkoZwD_B" target="_blank" rel="noopener noreferrer">
+                Mühendislik Film Oynatma Listesi
+              </a>
+            </Button>
+            <Button asChild size="lg" className="bg-white text-black hover:bg-white/90 font-semibold">
+              <a href="https://www.youtube.com/playlist?list=PLZeQ6A4Fw6kBI4CnRNhG50rrGhUDGfDHw" target="_blank" rel="noopener noreferrer">
+                Mimari Film Oynatma Listesi
+              </a>
+            </Button>
+          </div>
+          <div>
+            <p className="text-sm font-semibold text-white/90">55 çalışma ve demo filmi</p>
+            <p className="text-sm text-gray-400 mt-1 max-w-lg">
+              4 saatin üzerinde film malzemesi, inovatif arazi kazı planlama dönemine mümkün olan en hızlı girişi sağlar.
+            </p>
+          </div>
+        </div>
+      }
       sections={sections}
     />
   );

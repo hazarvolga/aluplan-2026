@@ -2,10 +2,11 @@
 import AddonDetailTemplate from "@/components/AddonDetailTemplate";
 import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
 import SectionHeader from "@/components/SectionHeader";
-import VideoGrid from "@/components/VideoGrid";
+import MasonryVideoGrid from "@/components/MasonryVideoGrid";
 import CDSLicenseInfoSection from "@/components/CDSLicenseInfoSection";
 import { Card } from "@/components/ui/card";
-import imgLicense from "@/assets/solutions/cds/drive-curve/islevsel-genel-bakis/Lizenz-anzeigen.webp";
+// Importing specific image for license if available
+import imgLicense from "@/assets/solutions/cds/geometry-tools/license.jpg";
 
 // Static Imports for Geometry Tools
 import img01 from "@/assets/solutions/cds/geometry-tools/2000_6543b9d8b381a.webp";
@@ -220,26 +221,28 @@ export default function ClientPage() {
       </div>
     </section>,
 
-    <VideoGrid
+    <MasonryVideoGrid
       key="demo-videos"
-      videos={[
-        { url: "https://www.youtube.com/embed/QOz-08Ujjno" },
-        { url: "https://www.youtube.com/embed/UJ8pb5Mp72I" },
-        { url: "https://www.youtube.com/embed/CMYuaD3e3rQ" },
-        { url: "https://www.youtube.com/embed/SIFKuSZTdtc" },
-        { url: "https://www.youtube.com/embed/IDvIZk1uGr4" },
-        { url: "https://www.youtube.com/embed/_o-xyt2mDZU" },
-        { url: "https://www.youtube.com/embed/WHPmmRcCdMQ" },
-        { url: "https://www.youtube.com/embed/krrdOMuHAPo" },
-        { url: "https://www.youtube.com/embed/S8XcI23U5_o" },
-        { url: "https://www.youtube.com/embed/6XWh3npkMf0" },
-        { url: "https://www.youtube.com/embed/n3XKpExBhMA" },
-        { url: "https://www.youtube.com/embed/BS-GxwK5PMA" },
-        { url: "https://www.youtube.com/embed/Fa9lAEVZo14" },
-        { url: "https://www.youtube.com/embed/C0jVimKJvRQ" },
-        { url: "https://www.youtube.com/embed/57E8rPcynUQ" },
+      title="Video Galerisi"
+      items={[
+        { titleTR: "Eğim Planlama", titleDE: "Gefälle Planen", videoUrl: "https://www.youtube.com/embed/WHPmmRcCdMQ" },
+        { titleTR: "Yeraltı Otoparkı", titleDE: "Tiefgarage", videoUrl: "https://www.youtube.com/embed/QOz-08Ujjno" },
+        { titleTR: "3B Noktaları Yansıtma", titleDE: "3D Punkte projizieren", videoUrl: "https://www.youtube.com/embed/UJ8pb5Mp72I" },
+        { titleTR: "3B Çizgileri Basitleştirme", titleDE: "3D Linien vereinfachen", videoUrl: "https://www.youtube.com/embed/CMYuaD3e3rQ" },
+        { titleTR: "Üçgen Ağı Basitleştirme", titleDE: "Dreiecks-Netz vereinfachen", videoUrl: "https://www.youtube.com/embed/SIFKuSZTdtc" },
+        { titleTR: "Poligon Azaltma Galerisi", titleDE: "Polygon Reduktion Galerie", videoUrl: "https://www.youtube.com/embed/IDvIZk1uGr4" },
+        { titleTR: "OBJ İçe Aktarma - İlk Adımlar", titleDE: "OBJ Import erste Schritte", videoUrl: "https://www.youtube.com/embed/_o-xyt2mDZU" },
+        { titleTR: "OBJ İçe Aktarma - Drone Uçuşu", titleDE: "OBJ Import Drohnenflug", videoUrl: "https://www.youtube.com/embed/krrdOMuHAPo" },
+        { titleTR: "3B Gövde Değiştirme", titleDE: "3D-Körper modifizieren", videoUrl: "https://www.youtube.com/embed/S8XcI23U5_o" },
+        { titleTR: "LandXML İçe / Dışa Aktarma", titleDE: "LandXML Import / Export", videoUrl: "https://www.youtube.com/embed/6XWh3npkMf0" },
+        { titleTR: "XYZ Noktaları İçe Aktarma", titleDE: "XYZ-Punkte Import", videoUrl: "https://www.youtube.com/embed/n3XKpExBhMA" },
+        { titleTR: "Yüzeyleri Kesme", titleDE: "Flächen zerschneiden", videoUrl: "https://www.youtube.com/embed/BS-GxwK5PMA" },
+        { titleTR: "Voronoi Diyagramı Oluşturma", titleDE: "Voronoi Diagramm erzeugen", videoUrl: "https://www.youtube.com/embed/Fa9lAEVZo14" },
+        { titleTR: "Delaunay Üçgenlemesi", titleDE: "Delaunay Triangulierung", videoUrl: "https://www.youtube.com/embed/C0jVimKJvRQ" },
+        { titleTR: "Düz İskelet (Straight Skeleton)", titleDE: "Straight Skeleton", videoUrl: "https://www.youtube.com/embed/57E8rPcynUQ" },
+        { titleTR: "Ara Gövde Oluşturma", titleDE: "Zwischen-Körper erzeugen", videoUrl: "https://www.youtube.com/embed/omnrciLvkLg" },
+        { titleTR: "Çoklu Kurulum ile Kurulum Kılavuzu", videoUrl: "https://www.youtube.com/embed/BWKDmZyIUo4" },
       ]}
-      columns={{ mobile: 1, tablet: 2, desktop: 2 }}
     />,
 
     <CDSLicenseInfoSection

@@ -13,6 +13,8 @@ type InfoMediaTwoColumnProps = {
   secondVideoSrc?: string;
   className?: string;
   children?: ReactNode;
+  leftContent?: ReactNode;
+  reverse?: boolean;
 };
 
 const InfoMediaTwoColumn = ({
@@ -27,12 +29,14 @@ const InfoMediaTwoColumn = ({
   secondVideoSrc,
   className,
   children,
+  leftContent,
+  reverse,
 }: InfoMediaTwoColumnProps) => {
   return (
     <section className={`py-16 ${className ?? 'bg-background'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-          <div>
+          <div className={`${reverse ? 'md:order-2' : ''}`}>
             <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-2 whitespace-pre-line">{title}</h2>
             {subtitle && (
               <h3 className="text-lg md:text-xl text-foreground font-semibold mb-3">{subtitle}</h3>
@@ -46,8 +50,9 @@ const InfoMediaTwoColumn = ({
             ) : description ? (
               <p className="text-muted-foreground text-base md:text-lg whitespace-pre-line">{description}</p>
             ) : null}
+            {leftContent}
           </div>
-          <div className="space-y-4">
+          <div className={`space-y-4 ${reverse ? 'md:order-1' : ''}`}>
             {videoUrl ? (
               <div className="aspect-video w-full">
                 <iframe
@@ -66,15 +71,15 @@ const InfoMediaTwoColumn = ({
                 <video src={videoSrc} controls className="w-full h-full object-cover rounded-xl shadow-xl" />
               </div>
             ) : imageSrc ? (
-               <div className="rounded-xl shadow-lg w-full relative h-auto">
-                  {typeof imageSrc === 'string' ? (
-                     <div className="relative aspect-video">
-                        <Image src={imageSrc.startsWith('http') ? '/placeholder.svg' : imageSrc} alt={title} fill className="object-cover rounded-xl" />
-                     </div>
-                  ) : (
-                     <Image src={imageSrc} alt={title} className="w-full h-auto rounded-xl" />
-                  )}
-               </div>
+              <div className="rounded-xl shadow-lg w-full relative h-auto">
+                {typeof imageSrc === 'string' ? (
+                  <div className="relative aspect-video">
+                    <Image src={imageSrc.startsWith('http') ? '/placeholder.svg' : imageSrc} alt={title} fill className="object-cover rounded-xl" />
+                  </div>
+                ) : (
+                  <Image src={imageSrc} alt={title} className="w-full h-auto rounded-xl" />
+                )}
+              </div>
             ) : null}
             {secondVideoUrl && (
               <div className="aspect-video w-full">
