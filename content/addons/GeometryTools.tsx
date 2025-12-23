@@ -6,11 +6,9 @@ import VideoGrid from "@/components/VideoGrid";
 import CDSLicenseInfoSection from "@/components/CDSLicenseInfoSection";
 import { Card } from "@/components/ui/card";
 import imgLicense from "@/assets/solutions/cds/drive-curve/islevsel-genel-bakis/Lizenz-anzeigen.webp";
+import { icons } from "@/assets/solutions/cds/geometry-tools/images";
 
 const GeometryTools = () => {
-  type ModuleImage = { default: string };
-  const iconModules = import.meta.glob<ModuleImage>("@/assets/solutions/cds/geometry-tools/2000_6543b*.webp", { eager: true });
-  const icons = Object.values(iconModules).map((m) => m.default);
 
   const features = [
     { titleTr: "Üçgen-Ağ Girişi" },
@@ -109,24 +107,24 @@ const GeometryTools = () => {
 
     <section key="features" className="py-16 bg-gradient-to-br from-slate-50 to-accent/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader 
-          title="İşlevsel Genel Bakış" 
-          align="center" 
-          className="py-0 bg-transparent mb-12" 
-          compact 
-          titleSize="lg" 
+        <SectionHeader
+          title="İşlevsel Genel Bakış"
+          align="center"
+          className="py-0 bg-transparent mb-12"
+          compact
+          titleSize="lg"
         />
-        
+
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
           {features.map((feature, idx) => (
-            <Card 
-              key={idx} 
+            <Card
+              key={idx}
               className="p-4 flex flex-col items-center text-center hover:shadow-technical transition-all"
             >
               {icons[idx] && (
-                <img 
-                  src={icons[idx]} 
-                  alt={feature.titleTr} 
+                <img
+                  src={icons[idx].src}
+                  alt={feature.titleTr}
                   className="w-20 h-20 mb-3 object-contain"
                 />
               )}
@@ -141,14 +139,14 @@ const GeometryTools = () => {
 
     <section key="versions" className="py-16 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader 
-          title="Fonksiyonlara Genel Bakış" 
-          align="center" 
-          className="py-0 bg-transparent mb-12" 
-          compact 
-          titleSize="lg" 
+        <SectionHeader
+          title="Fonksiyonlara Genel Bakış"
+          align="center"
+          className="py-0 bg-transparent mb-12"
+          compact
+          titleSize="lg"
         />
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <div className="bg-gradient-to-br from-slate-50 to-accent/10 p-6 rounded-xl shadow-md">
             <h3 className="font-display text-xl font-bold text-gray-900 mb-4">Versiyon 1:</h3>

@@ -17,8 +17,9 @@ import iconLizenzAnzeigen1 from "@/assets/solutions/cds/steel-components/islevse
 import iconProfilbauteileAndern from "@/assets/solutions/cds/steel-components/islevsel-genel-bakis/2000_657c59ec29c54.webp";
 import iconProfilbauteilPunkteModifizieren from "@/assets/solutions/cds/steel-components/islevsel-genel-bakis/2000_657c59fc465cf.webp";
 import iconLizenzAnzeigen2 from "@/assets/solutions/cds/steel-components/islevsel-genel-bakis/2000_657c5a0b2db57.webp";
+import { modelsImages, overviewImages, siteImages } from "@/assets/solutions/cds/steel-components/gallery/images";
 
- 
+
 
 const SteelComponents = () => {
 
@@ -68,7 +69,7 @@ const SteelComponents = () => {
             { icon: iconLizenzAnzeigen2, title: "Lizenz anzeigen" },
           ].map((item, idx) => (
             <Card key={idx} className="p-4 flex flex-col items-center text-center">
-              <img src={item.icon} alt={item.title} className="w-20 h-20 mb-3 object-contain" />
+              <img src={item.icon.src} alt={item.title} className="w-20 h-20 mb-3 object-contain" />
               <h3 className="text-sm font-semibold text-gray-800 leading-tight">{item.title}</h3>
             </Card>
           ))}
@@ -88,13 +89,13 @@ const SteelComponents = () => {
 
     <section key="planning-header" className="py-12 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader 
-          title="Allplan’da basit ve verimli çelik yapı planlaması" 
-          subtitle="Basit parametrik profil bileşenleri, 3B çelik yapı planlamanızı LOD 350’ye kadar kolaylaştırır." 
-          align="center" 
-          className="py-0 bg-transparent" 
-          compact 
-          titleSize="xl" 
+        <SectionHeader
+          title="Allplan’da basit ve verimli çelik yapı planlaması"
+          subtitle="Basit parametrik profil bileşenleri, 3B çelik yapı planlamanızı LOD 350’ye kadar kolaylaştırır."
+          align="center"
+          className="py-0 bg-transparent"
+          compact
+          titleSize="xl"
         />
       </div>
     </section>,
@@ -185,13 +186,13 @@ const SteelComponents = () => {
 
     <section key="bim-designed-info" className="py-12 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader 
-          title="3B BIM planlaması için tasarlandı" 
-          subtitle="Profil bileşenleri eklentisi çok şey yapabilir, ancak her şeyi yapamaz." 
-          align="center" 
-          className="py-0 bg-transparent" 
-          compact 
-          titleSize="xl" 
+        <SectionHeader
+          title="3B BIM planlaması için tasarlandı"
+          subtitle="Profil bileşenleri eklentisi çok şey yapabilir, ancak her şeyi yapamaz."
+          align="center"
+          className="py-0 bg-transparent"
+          compact
+          titleSize="xl"
         />
         <p className="text-gray-700 max-w-3xl mx-auto mt-4">
           Statik hesaplamalar ve çelik konstrüksiyon iş planlarının otomatik olarak oluşturulması kapsama dahil değildir.
@@ -237,81 +238,19 @@ const SteelComponents = () => {
       title="Galeri"
       defaultValue="modeller"
       items={(() => {
-        type ModuleImage = { default: string };
-        const modelsModules = import.meta.glob<ModuleImage>(
-          "@/assets/solutions/cds/steel-components/gallery/models/*.{webp,jpg,jpeg,png}",
-          { eager: true }
-        );
-        const overviewModules = import.meta.glob<ModuleImage>(
-          "@/assets/solutions/cds/steel-components/gallery/overview/*.{webp,jpg,jpeg,png}",
-          { eager: true }
-        );
-        const siteModules = import.meta.glob<ModuleImage>(
-          "@/assets/solutions/cds/steel-components/gallery/site/*.{webp,jpg,jpeg,png}",
-          { eager: true }
-        );
-        const rootModules = import.meta.glob<ModuleImage>(
-          "@/assets/solutions/cds/steel-components/gallery/*.{webp,jpg,jpeg,png}",
-          { eager: true }
-        );
+        const toItems = (images: { src: string }[]) =>
+          images.map((m, idx) => ({
+            id: `img-${idx}`,
+            src: m.src,
+            alt: `img ${idx + 1}`,
+            title: "",
+            description: "",
+            category: "",
+          }));
 
-        const isResizedVariant = (p: string) => /-[0-9]{2,4}x[0-9]{2,4}\.(webp|jpg|jpeg|png)$/i.test(p);
-        const getPrefixIndex = (p: string) => {
-          const m = p.match(/\/(\d{1,4})_/);
-          return m ? parseInt(m[1], 10) : Number.POSITIVE_INFINITY;
-        };
-        const toItems = (entries: Record<string, { default: string }>) =>
-          (Object.entries(entries) as [string, { default: string }][])
-            .filter(([p]) => !isResizedVariant(p))
-            .sort((a, b) => getPrefixIndex(a[0]) - getPrefixIndex(b[0]))
-            .map(([, m], idx) => ({
-              id: `img-${idx}`,
-              src: m.default,
-              alt: `img ${idx + 1}`,
-              title: "",
-              description: "",
-              category: "",
-            }));
-
-        const toItemsByNamePrefix = (
-          entries: Record<string, { default: string }>,
-          namePrefix: string
-        ) =>
-          (Object.entries(entries) as [string, { default: string }][])
-            .filter(([p]) => !isResizedVariant(p))
-            .filter(([p]) => new RegExp(`/${namePrefix}-`, "i").test(p))
-            .map(([, m], idx) => ({
-              id: `img-root-${idx}`,
-              src: m.default,
-              alt: `img ${idx + 1}`,
-              title: "",
-              description: "",
-              category: "",
-            }));
-
-        const dedupeBySrc = <T extends { src: string }>(arr: T[]) => {
-          const seen = new Set<string>();
-          const out: T[] = [];
-          for (const item of arr) {
-            if (seen.has(item.src)) continue;
-            seen.add(item.src);
-            out.push(item);
-          }
-          return out;
-        };
-
-        const overviewImages = dedupeBySrc([
-          ...toItems(overviewModules),
-          ...toItemsByNamePrefix(rootModules, "overview"),
-        ]);
-        const modelsImages = dedupeBySrc([
-          ...toItems(modelsModules),
-          ...toItemsByNamePrefix(rootModules, "allplan"),
-        ]);
-        const siteImages = dedupeBySrc([
-          ...toItems(siteModules),
-          ...toItemsByNamePrefix(rootModules, "site"),
-        ]);
+        const overviewImagesMapped = toItems(overviewImages);
+        const modelsImagesMapped = toItems(modelsImages);
+        const siteImagesMapped = toItems(siteImages);
 
         return [
           {
@@ -319,7 +258,7 @@ const SteelComponents = () => {
             labelTR: "Allplan modelleri",
             content: (
               <ImageGallery
-                images={modelsImages}
+                images={modelsImagesMapped}
                 sectionTitle=""
                 sectionDescription=""
                 hideSectionHeader
@@ -336,7 +275,7 @@ const SteelComponents = () => {
             labelTR: "Genel bakış planları",
             content: (
               <ImageGallery
-                images={overviewImages}
+                images={overviewImagesMapped}
                 sectionTitle=""
                 sectionDescription=""
                 hideSectionHeader
@@ -353,7 +292,7 @@ const SteelComponents = () => {
             labelTR: "Şantiye resimleri",
             content: (
               <ImageGallery
-                images={siteImages}
+                images={siteImagesMapped}
                 sectionTitle=""
                 sectionDescription=""
                 hideSectionHeader
@@ -369,7 +308,7 @@ const SteelComponents = () => {
       })()}
     />,
 
- 
+
 
     <CDSLicenseInfoSection
       key="license"

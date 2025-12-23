@@ -5,6 +5,7 @@ import SectionHeader from "@/components/SectionHeader";
 import CDSLicenseInfoSection from "@/components/CDSLicenseInfoSection";
 import { Card } from "@/components/ui/card";
 import ImageGallery from "@/components/ImageGallery";
+import imgGraphic from "@/assets/solutions/cds/graphic-text.jpeg";
 
 const GraphicalText = () => {
   const features = [
@@ -43,25 +44,18 @@ const GraphicalText = () => {
     <section key="gallery" className="py-16 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader title="Galeri" align="center" className="py-0 bg-transparent mb-12" compact titleSize="lg" />
-        {(() => {
-          type ModuleImage = { default: string };
-          const galleryModules = import.meta.glob<ModuleImage>("@/assets/solutions/cds/*graphic*.*", { eager: true });
-          const images = Object.values(galleryModules).map((m, idx: number) => ({
-            id: `gfx-${idx}`,
-            src: m.default,
-            alt: `Grafiksel Yazı ${idx + 1}`,
+        <ImageGallery
+          images={[{
+            id: "gfx-1",
+            src: imgGraphic.src,
+            alt: "Grafiksel Yazı",
             title: "Grafiksel Yazı",
             description: "",
             category: "grafik",
-          }));
-          return (
-            <ImageGallery 
-              images={images}
-              sectionTitle="Grafiksel Yazı Galerisi"
-              sectionDescription="Vektörleştirme ve 3B metin örnekleri"
-            />
-          );
-        })()}
+          }]}
+          sectionTitle="Grafiksel Yazı Galerisi"
+          sectionDescription="Vektörleştirme ve 3B metin örnekleri"
+        />
       </div>
     </section>,
 

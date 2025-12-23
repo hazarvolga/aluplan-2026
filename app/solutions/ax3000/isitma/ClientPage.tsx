@@ -151,7 +151,6 @@ export default function ClientPage() {
       subtitle="Tüm Tesisat için Tek Yazılım"
       description="AX-3000’ deki Isıtma ve Sıhhi Tesisat modüleriyle çok karmaşık ve büyük projelerin tesisat hesap ve planlamasını kolaylıkla yapabilirsiniz. AX-3000’ deki planlamanın temeli otomatik borulama hesabına dayanır ve şartnameye bağlı olarak otomatik gerçekleşir. Planlama sırasında AX-3000 bir çok farklı otomatik teknik özellikleri de kullanır."
       sections={sections}
-      showExploreButton={false}
     />
   );
 }

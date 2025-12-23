@@ -21,10 +21,33 @@ import imgFgsv283 from "@/assets/solutions/cds/drive-curve/gallery/FGSV-283-2005
 import imgVss40198 from "@/assets/solutions/cds/drive-curve/gallery/VSS-40198a-2019.jpg";
 import imgVssSn640271a from "@/assets/solutions/cds/drive-curve/gallery/VSS-SN-640271a-1990.jpg";
 
-const galleryModules = import.meta.glob("@/assets/solutions/cds/drive-curve/gallery/*.{webp,jpg,jpeg,png}", { eager: true });
-const galleryImages = (Object.values(galleryModules) as { default: string }[]).map((m, idx) => ({
+import img1 from "@/assets/solutions/cds/drive-curve/gallery/1-1024x576.webp";
+import img2 from "@/assets/solutions/cds/drive-curve/gallery/2-1024x576.webp";
+import img3 from "@/assets/solutions/cds/drive-curve/gallery/3-1024x576.webp";
+import img4 from "@/assets/solutions/cds/drive-curve/gallery/4-1024x576.webp";
+import img5 from "@/assets/solutions/cds/drive-curve/gallery/5-1024x576.webp";
+import img7 from "@/assets/solutions/cds/drive-curve/gallery/7-1024x576.webp";
+import img8 from "@/assets/solutions/cds/drive-curve/gallery/8-1024x576.webp";
+import img9 from "@/assets/solutions/cds/drive-curve/gallery/9-1024x576.webp";
+import img10 from "@/assets/solutions/cds/drive-curve/gallery/10-1024x576.webp";
+import img11 from "@/assets/solutions/cds/drive-curve/gallery/11-1024x576.webp";
+import img12 from "@/assets/solutions/cds/drive-curve/gallery/12-1024x576.webp";
+import img13 from "@/assets/solutions/cds/drive-curve/gallery/13-1024x576.webp";
+import img14 from "@/assets/solutions/cds/drive-curve/gallery/14-1024x576.webp";
+import img15 from "@/assets/solutions/cds/drive-curve/gallery/15-1024x576.webp";
+import img16 from "@/assets/solutions/cds/drive-curve/gallery/16-1024x576.webp";
+import img17 from "@/assets/solutions/cds/drive-curve/gallery/17-1024x576.webp";
+import img19 from "@/assets/solutions/cds/drive-curve/gallery/19-1024x576.webp";
+import img20 from "@/assets/solutions/cds/drive-curve/gallery/20-1024x576.webp";
+
+const galleryImagesRaw = [
+  img1, img2, img3, img4, img5, img7, img8, img9, img10,
+  img11, img12, img13, img14, img15, img16, img17, img19, img20
+];
+
+const galleryImages = galleryImagesRaw.map((src, idx) => ({
   id: `dc-${idx}`,
-  src: m.default,
+  src: src,
   alt: `Sürüş Eğrisi ${idx + 1}`,
   title: "Sürüş Eğrisi",
   description: "",
@@ -113,26 +136,30 @@ const DriveCurve = () => {
       key="spec-tables"
       title="Öne Çıkan Özellikler"
       tables={[
-        { rows: [
-          { keyTR: "Araç kütüphane" },
-          { keyTR: "Araç türleri: araba, kamyon, yarı römork ve körüklü otobüs" },
-          { keyTR: "Çift körüklü tren ve çift körüklü otobüs" },
-          { keyTR: "Römorklu mafsallı kamyon ve dolly ve yarı römorklu kamyon" },
-          { keyTR: "Direksiyon arabalı ve yarı römorklu kamyon" },
-          { keyTR: "İnşaat araçları: Çimento karıştırıcıları ve damperli kamyonlar" },
-          { keyTR: "Düzenlenebilir kulplu dinamik araba yolu" },
-          { keyTR: "Etkileşimli önizleme ile rota hesaplama" },
-        ]},
-        { rows: [
-          { keyTR: "Önceden tanımlanmış bir eksen/yol boyunca sürüş" },
-          { keyTR: "Direksiyon kontrolü dahil ileri ve geri sürüş" },
-          { keyTR: "Araç ana hatları, lastikler ve zarflar" },
-          { keyTR: "Araç önü ve araç arkası için eğriler" },
-          { keyTR: "Ön ve arka aks için eğriler" },
-          { keyTR: "Araca olan mesafe için eğriler" },
-          { keyTR: "Dingil mesafesi eğrileri" },
-          { keyTR: "Özel araçlar için araç editörü" },
-        ]},
+        {
+          rows: [
+            { keyTR: "Araç kütüphane" },
+            { keyTR: "Araç türleri: araba, kamyon, yarı römork ve körüklü otobüs" },
+            { keyTR: "Çift körüklü tren ve çift körüklü otobüs" },
+            { keyTR: "Römorklu mafsallı kamyon ve dolly ve yarı römorklu kamyon" },
+            { keyTR: "Direksiyon arabalı ve yarı römorklu kamyon" },
+            { keyTR: "İnşaat araçları: Çimento karıştırıcıları ve damperli kamyonlar" },
+            { keyTR: "Düzenlenebilir kulplu dinamik araba yolu" },
+            { keyTR: "Etkileşimli önizleme ile rota hesaplama" },
+          ]
+        },
+        {
+          rows: [
+            { keyTR: "Önceden tanımlanmış bir eksen/yol boyunca sürüş" },
+            { keyTR: "Direksiyon kontrolü dahil ileri ve geri sürüş" },
+            { keyTR: "Araç ana hatları, lastikler ve zarflar" },
+            { keyTR: "Araç önü ve araç arkası için eğriler" },
+            { keyTR: "Ön ve arka aks için eğriler" },
+            { keyTR: "Araca olan mesafe için eğriler" },
+            { keyTR: "Dingil mesafesi eğrileri" },
+            { keyTR: "Özel araçlar için araç editörü" },
+          ]
+        },
       ]}
     />,
     <RegulaTabs
@@ -144,42 +171,42 @@ const DriveCurve = () => {
           value: "arac-editoru",
           labelTR: "Araç Editörü",
           content: (
-            <img src={imgAracEditoru} alt="Araç Editörü" className="w-full rounded-xl shadow" />
+            <img src={imgAracEditoru.src} alt="Araç Editörü" className="w-full rounded-xl shadow" />
           ),
         },
         {
           value: "arac-ornegi",
           labelTR: "Araç Örneği",
           content: (
-            <img src={imgAracOrnegi} alt="Araç Örneği" className="w-full rounded-xl shadow" />
+            <img src={imgAracOrnegi.src} alt="Araç Örneği" className="w-full rounded-xl shadow" />
           ),
         },
         {
           value: "fgsv-287-2020",
           labelTR: "FGSV 287 2020",
           content: (
-            <img src={imgFgsv287} alt="FGSV 287 2020" className="w-full rounded-xl shadow" />
+            <img src={imgFgsv287.src} alt="FGSV 287 2020" className="w-full rounded-xl shadow" />
           ),
         },
         {
           value: "fgsv-283-2005",
           labelTR: "FGSV 283 2005",
           content: (
-            <img src={imgFgsv283} alt="FGSV 283 2005" className="w-full rounded-xl shadow" />
+            <img src={imgFgsv283.src} alt="FGSV 283 2005" className="w-full rounded-xl shadow" />
           ),
         },
         {
           value: "vss-40198a-2019",
           labelTR: "VSS 40198a 2019",
           content: (
-            <img src={imgVss40198} alt="VSS 40198a 2019" className="w-full rounded-xl shadow" />
+            <img src={imgVss40198.src} alt="VSS 40198a 2019" className="w-full rounded-xl shadow" />
           ),
         },
         {
           value: "vss-sn-640271a-1990",
           labelTR: "VSS SN 640271a 1990",
           content: (
-            <img src={imgVssSn640271a} alt="VSS SN 640271a 1990" className="w-full rounded-xl shadow" />
+            <img src={imgVssSn640271a.src} alt="VSS SN 640271a 1990" className="w-full rounded-xl shadow" />
           ),
         },
       ]}

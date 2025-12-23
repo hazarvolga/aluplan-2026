@@ -5,6 +5,7 @@ import SectionHeader from "@/components/SectionHeader";
 import CDSLicenseInfoSection from "@/components/CDSLicenseInfoSection";
 import { Card } from "@/components/ui/card";
 import ImageGallery from "@/components/ImageGallery";
+import imgSketchUp from "@/assets/solutions/cds/sketchup-converter.jpg";
 
 const SketchUpConverter = () => {
   const features = [
@@ -43,25 +44,18 @@ const SketchUpConverter = () => {
     <section key="gallery" className="py-16 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader title="Galeri" align="center" className="py-0 bg-transparent mb-12" compact titleSize="lg" />
-        {(() => {
-          type ModuleImage = { default: string };
-          const galleryModules = import.meta.glob<ModuleImage>("@/assets/solutions/cds/sketchup*.*", { eager: true });
-          const images = Object.values(galleryModules).map((m, idx: number) => ({
-            id: `sku-${idx}`,
-            src: m.default,
-            alt: `SketchUp Dönüştürücü ${idx + 1}`,
+        <ImageGallery
+          images={[{
+            id: "sku-1",
+            src: imgSketchUp.src,
+            alt: "SketchUp Dönüştürücü",
             title: "SketchUp Dönüştürücü",
             description: "",
             category: "sketchup",
-          }));
-          return (
-            <ImageGallery 
-              images={images}
-              sectionTitle="SketchUp Galerisi"
-              sectionDescription="Import/export ve dokularla görselleştirme örnekleri"
-            />
-          );
-        })()}
+          }]}
+          sectionTitle="SketchUp Galerisi"
+          sectionDescription="Import/export ve dokularla görselleştirme örnekleri"
+        />
       </div>
     </section>,
 

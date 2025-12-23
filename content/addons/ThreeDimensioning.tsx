@@ -7,18 +7,12 @@ import CDSLicenseInfoSection from "@/components/CDSLicenseInfoSection";
 import ImageGallery from "@/components/ImageGallery";
 import { Card } from "@/components/ui/card";
 import imgLicense from "@/assets/solutions/cds/drive-curve/islevsel-genel-bakis/Lizenz-anzeigen.webp";
+import { icons, galleryImages as galleryImagesRaw } from "@/assets/solutions/cds/3d-dimensioning/images";
 
 const ThreeDimensioning = () => {
-  type ModuleImage = { default: string };
-  const iconModules = import.meta.glob<ModuleImage>("@/assets/solutions/cds/3d-dimensioning/2000_657fe*.webp", { eager: true });
-  const icons = Object.values(iconModules).map((m) => m.default);
-
-  // Gallery images for customer examples - using local files
-  const galleryModules = import.meta.glob<ModuleImage>("@/assets/solutions/cds/3d-dimensioning/gallery/*.{jpg,jpeg}", { eager: true });
-  const galleryImagesRaw = Object.values(galleryModules).map((m) => m.default);
-  const galleryImages = galleryImagesRaw.map((src: string, idx: number) => ({
+  const galleryImages = galleryImagesRaw.map((src, idx: number) => ({
     id: `ex-${idx}`,
-    src,
+    src: src.src,
     alt: `Müşteri örneği ${idx + 1}`,
     title: "Müşteri örneği",
     description: "",
@@ -61,24 +55,24 @@ const ThreeDimensioning = () => {
 
     <section key="features" className="py-16 bg-gradient-to-br from-slate-50 to-accent/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader 
-          title="Fonksiyona genel bakış:" 
-          align="center" 
-          className="py-0 bg-transparent mb-12" 
-          compact 
-          titleSize="lg" 
+        <SectionHeader
+          title="Fonksiyona genel bakış:"
+          align="center"
+          className="py-0 bg-transparent mb-12"
+          compact
+          titleSize="lg"
         />
-        
+
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
           {features.map((feature, idx) => (
-            <Card 
-              key={idx} 
+            <Card
+              key={idx}
               className="p-4 flex flex-col items-center text-center hover:shadow-technical transition-all"
             >
               {icons[idx] && (
-                <img 
-                  src={icons[idx]} 
-                  alt={feature.titleTr} 
+                <img
+                  src={icons[idx].src}
+                  alt={feature.titleTr}
                   className="w-24 h-24 mb-3 object-contain"
                 />
               )}
@@ -155,12 +149,12 @@ const ThreeDimensioning = () => {
 
     <section key="customer-examples" className="py-16 bg-gradient-to-br from-slate-50 to-accent/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader 
-          title="Müşteri örnekleri" 
-          align="center" 
-          className="py-0 bg-transparent mb-12" 
-          compact 
-          titleSize="lg" 
+        <SectionHeader
+          title="Müşteri örnekleri"
+          align="center"
+          className="py-0 bg-transparent mb-12"
+          compact
+          titleSize="lg"
         />
         <InfoMediaTwoColumn
           title=""
@@ -170,8 +164,8 @@ const ThreeDimensioning = () => {
           ]}
           videoUrl="https://www.youtube.com/embed/Z8-aMd_TGBY"
         />
-        
-        <ImageGallery 
+
+        <ImageGallery
           images={galleryImages}
           sectionTitle="Müşteri örnekleri"
           sectionDescription="Gerçek projelerden 3B ölçülendirme örnekleri"

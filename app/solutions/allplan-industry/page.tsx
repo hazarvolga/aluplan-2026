@@ -97,7 +97,7 @@ export default function AllplanIndustryPage() {
             <section className="py-24 px-6 md:px-12 lg:px-24 bg-[#0a0a0a] border-t border-white/5">
                 <div className="max-w-[1400px] mx-auto">
                     <div className="text-center mb-16 max-w-4xl mx-auto">
-                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">ALLPLAN'I KEŞFEDİN</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">ALLPLAN&apos;I KEŞFEDİN</h2>
                         <p className="text-gray-400 text-lg leading-relaxed">
                             Yapısal analiz iş akışları, gelişmiş detaylandırma yetenekleri ve yerleşik şantiye planlama araçları ile donatılmış, tasarımdan inşaata süreçlerini sunan tek BIM çözümüdür. AEC firmalarının konseptten detaylı tasarıma ve projenin sahada tam olarak nasıl inşa edileceğinin planlanmasına kadar tüm süreci tek bir model üzerinden kesintisiz yönetmesini sağlar.
                         </p>
@@ -270,7 +270,7 @@ export default function AllplanIndustryPage() {
                         <span className="text-gray-500">AEC PROFESYONELLERİ İÇİN</span>
                     </h2>
                     <p className="text-gray-400 text-lg md:text-xl leading-relaxed mb-12">
-                        ALLPLAN, mimarlar, inşaat ve altyapı mühendisleri, imalatçılar ve inşaat profesyonelleri için üretkenliği artıran ve yüksek kaliteli projeler sunmalarını sağlayan yenilikçi "Tasarımdan İnşaata" (Design to Build) iş akışları ve gerçek zamanlı işbirliği sunar. Yapay zeka tabanlı görselleştirme, bina ve altyapı modelleme gereksinimleri için hızlandırılmış ve otomatikleştirilmiş tasarım fonksiyonları sayesinde önemli ölçüde zaman tasarrufu sağlanır. Bağlantılı yapısal analiz süreçleri, üstün birlikte çalışabilirlik (interoperability), farklı malzemeler ve inşaat yöntemleri için gelişmiş detaylandırma yetenekleri ve güçlü bulut teknolojisi ile ekipler güçlenir ve performans artar.
+                        ALLPLAN, mimarlar, inşaat ve altyapı mühendisleri, imalatçılar ve inşaat profesyonelleri için üretkenliği artıran ve yüksek kaliteli projeler sunmalarını sağlayan yenilikçi &quot;Tasarımdan İnşaata&quot; (Design to Build) iş akışları ve gerçek zamanlı işbirliği sunar. Yapay zeka tabanlı görselleştirme, bina ve altyapı modelleme gereksinimleri için hızlandırılmış ve otomatikleştirilmiş tasarım fonksiyonları sayesinde önemli ölçüde zaman tasarrufu sağlanır. Bağlantılı yapısal analiz süreçleri, üstün birlikte çalışabilirlik (interoperability), farklı malzemeler ve inşaat yöntemleri için gelişmiş detaylandırma yetenekleri ve güçlü bulut teknolojisi ile ekipler güçlenir ve performans artar.
                     </p>
 
                     <div className="bg-[#0a0a0a] rounded-2xl border border-white/10 p-8 md:p-12 mb-12">

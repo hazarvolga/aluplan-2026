@@ -4,7 +4,7 @@ import { Inter, Space_Grotesk, IBM_Plex_Mono } from "next/font/google";
 import SkipLink from "@/components/a11y/SkipLink";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Breadcrumb from "@/components/ui/Breadcrumb";
+import Breadcrumb from "@/components/ui/breadcrumb";
 
 const inter = Inter({
   subsets: ["latin"],

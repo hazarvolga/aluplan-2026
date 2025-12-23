@@ -10,28 +10,24 @@ import ImageGallery from "@/components/ImageGallery";
 import imgLicense from "@/assets/solutions/cds/drive-curve/islevsel-genel-bakis/Lizenz-anzeigen.webp";
 
 // Galleries from assets (typed)
-type ModuleImage = { default: string };
+import { planImages as planImagesRaw, ekranImages as ekranImagesRaw, modelImages as modelImagesRaw, fotoImages as fotoImagesRaw } from "@/assets/solutions/cds/parametrik-arazi/images";
+
 type GalleryItem = { id: string; src: string; alt: string; title: string; description: string; category: string };
 
-const planModules = import.meta.glob<ModuleImage>("@/assets/solutions/cds/parametrik-arazi/planlar/*.{webp,jpg,jpeg,png}", { eager: true });
-const ekranModules = import.meta.glob<ModuleImage>("@/assets/solutions/cds/parametrik-arazi/ekran-goruntuleri/*.{webp,jpg,jpeg,png}", { eager: true });
-const modelModules = import.meta.glob<ModuleImage>("@/assets/solutions/cds/parametrik-arazi/modeller/*.{webp,jpg,jpeg,png}", { eager: true });
-const fotoModules = import.meta.glob<ModuleImage>("@/assets/solutions/cds/parametrik-arazi/fotolar/*.{webp,jpg,jpeg,png}", { eager: true });
-
-const toItems = (entries: Record<string, ModuleImage>, prefix: string): GalleryItem[] =>
-  Object.values(entries).map((m, idx) => ({
+const toItems = (entries: { src: string }[], prefix: string): GalleryItem[] =>
+  entries.map((m, idx) => ({
     id: `${prefix}-${idx}`,
-    src: m.default,
+    src: m.src,
     alt: `${prefix} ${idx + 1}`,
     title: prefix,
     description: "",
     category: prefix,
   }));
 
-const planImages: GalleryItem[] = toItems(planModules, "planlar");
-const ekranImages: GalleryItem[] = toItems(ekranModules, "ekran");
-const modelImages: GalleryItem[] = toItems(modelModules, "modeller");
-const fotoImages: GalleryItem[] = toItems(fotoModules, "fotolar");
+const planImages: GalleryItem[] = toItems(planImagesRaw, "planlar");
+const ekranImages: GalleryItem[] = toItems(ekranImagesRaw, "ekran");
+const modelImages: GalleryItem[] = toItems(modelImagesRaw, "modeller");
+const fotoImages: GalleryItem[] = toItems(fotoImagesRaw, "fotolar");
 
 const ParametricTerrain = () => {
   const features = [
@@ -184,10 +180,10 @@ const ParametricTerrain = () => {
 
     <section key="gallery-photo" className="py-16 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <ImageGallery 
-          images={fotoImages} 
-          sectionTitle="Fotolar" 
-          sectionDescription="Saha ve referans görselleri" 
+        <ImageGallery
+          images={fotoImages}
+          sectionTitle="Fotolar"
+          sectionDescription="Saha ve referans görselleri"
         />
       </div>
     </section>,

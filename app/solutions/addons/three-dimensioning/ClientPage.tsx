@@ -170,7 +170,7 @@ export default function ClientPage() {
             </li>
             <li className="flex items-start">
               <span className="mr-2">•</span>
-              <span>3B PDF / IFC / BIMPLUS'u ölçülerle dışa aktarın</span>
+              <span>3B PDF / IFC / BIMPLUS&apos;u ölçülerle dışa aktarın</span>
             </li>
           </ul>
         </div>

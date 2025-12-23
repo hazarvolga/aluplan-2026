@@ -1,6 +1,6 @@
 "use client"
 import AddonDetailTemplate from "@/components/AddonDetailTemplate";
-import Hero from "@/components/Hero";
+
 import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
 import CDSLicenseInfoSection from "@/components/CDSLicenseInfoSection";
 import { Card } from "@/components/ui/card";
@@ -10,9 +10,10 @@ import SectionHeader from "@/components/SectionHeader";
 
 // Importing specific image for license if available
 import imgLicense from "@/assets/solutions/cds/drive-curve/islevsel-genel-bakis/Lizenz-anzeigen.webp";
+import { galleryImages as rampImages } from "@/assets/solutions/cds/ramp/images";
 
 const Ramp = () => {
-  
+
 
   const sections = [
 
@@ -27,7 +28,7 @@ const Ramp = () => {
       ]}
       videoUrl="https://www.youtube.com/embed/cfGmLbqXBJo"
       className="bg-background"
-    />, 
+    />,
 
     <InfoMediaTwoColumn
       key="intro-2"
@@ -48,7 +49,7 @@ const Ramp = () => {
       className="bg-background"
     />,
 
-    
+
 
     <section key="video-masonry" className="relative">
       <MasonryVideoGrid
@@ -64,27 +65,18 @@ const Ramp = () => {
     <section key="gallery" className="py-16 bg-background relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader title="Galeri" align="center" className="py-0 bg-transparent mb-12" compact titleSize="lg" />
-        {(() => {
-          const galleryModules = import.meta.glob<{ default: string }>(
-            "@/assets/solutions/cds/ramp/*.{webp,jpg,jpeg,png}",
-            { eager: true }
-          );
-          const images = Object.values(galleryModules).map((m, idx) => ({
+        <ImageGallery
+          images={rampImages.map((img, idx) => ({
             id: `ramp-${idx}`,
-            src: m.default,
+            src: img.src,
             alt: `Rampa ${idx + 1}`,
             title: "Rampa",
             description: "",
             category: "rampa",
-          }));
-          return (
-            <ImageGallery
-              images={images}
-              sectionTitle="Rampa Galerisi"
-              sectionDescription="Rampa geometrisi ve ekran görüntüleri"
-            />
-          );
-        })()}
+          }))}
+          sectionTitle="Rampa Galerisi"
+          sectionDescription="Rampa geometrisi ve ekran görüntüleri"
+        />
       </div>
     </section>,
 

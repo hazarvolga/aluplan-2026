@@ -7,8 +7,7 @@ import { Card } from "@/components/ui/card";
 import MasonryVideoGrid from "@/components/MasonryVideoGrid";
 import imgLicense from "@/assets/solutions/cds/drive-curve/islevsel-genel-bakis/Lizenz-anzeigen.webp";
 
-const galleryModules = import.meta.glob<{ default: string }>("@/assets/solutions/cds/dwg-converter/*.{webp,jpg,jpeg,png}", { eager: true });
-const icons = Object.values(galleryModules).map((m) => m.default);
+import { icons } from "@/assets/solutions/cds/dwg-converter/images";
 
 const DWG2DConverter = () => {
   const features = [
@@ -69,7 +68,7 @@ const DWG2DConverter = () => {
       </div>
     </section>,
 
-    
+
 
     <section key="features" className="py-16 bg-gradient-to-br from-slate-50 to-accent/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -78,7 +77,7 @@ const DWG2DConverter = () => {
           {features.map((feature, idx) => (
             <Card key={idx} className="p-5 flex flex-col items-center text-center">
               {icons[idx] && (
-                <img src={icons[idx]} alt={feature} className="w-20 h-20 mb-3 object-contain" />
+                <img src={icons[idx].src} alt={feature} className="w-20 h-20 mb-3 object-contain" />
               )}
               <h3 className="text-sm font-semibold text-gray-800 leading-tight">{feature}</h3>
             </Card>
@@ -98,9 +97,9 @@ const DWG2DConverter = () => {
         { titleTR: "Video 5", videoUrl: "https://www.youtube.com/embed/PPoCPiL8cB4" },
         { titleTR: "Video 6", videoUrl: "https://www.youtube.com/embed/lSiSphI7I3o" },
       ]}
-    />, 
+    />,
 
-    
+
 
     <CDSLicenseInfoSection
       key="license"
