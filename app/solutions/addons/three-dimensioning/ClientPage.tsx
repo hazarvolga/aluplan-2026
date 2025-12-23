@@ -2,21 +2,50 @@
 import AddonDetailTemplate from "@/components/AddonDetailTemplate";
 import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
 import SectionHeader from "@/components/SectionHeader";
-import VideoGrid from "@/components/VideoGrid";
+import MasonryVideoGrid from "@/components/MasonryVideoGrid";
 import CDSLicenseInfoSection from "@/components/CDSLicenseInfoSection";
 import ImageGallery from "@/components/ImageGallery";
 import { Card } from "@/components/ui/card";
-import imgLicense from "@/assets/solutions/cds/drive-curve/islevsel-genel-bakis/Lizenz-anzeigen.webp";
 
-// Move glob import to top level
-type ModuleImage = { default: string };
-const iconModules = import.meta.glob<ModuleImage>("@/assets/solutions/cds/3d-dimensioning/2000_657fe*.webp", { eager: true });
-const icons = Object.values(iconModules).map((m) => m.default);
 
-// Gallery images for customer examples - using local files
-const galleryModules = import.meta.glob<ModuleImage>("@/assets/solutions/cds/3d-dimensioning/gallery/*.{jpg,jpeg}", { eager: true });
-const galleryImagesRaw = Object.values(galleryModules).map((m) => m.default);
-const galleryImages = galleryImagesRaw.map((src: string, idx: number) => ({
+// Feature Icons
+import icon01 from "@/assets/solutions/cds/3d-dimensioning/2000_657fe45eef64a.webp";
+import icon02 from "@/assets/solutions/cds/3d-dimensioning/2000_657fe469ce9c8.webp";
+import icon03 from "@/assets/solutions/cds/3d-dimensioning/2000_657fe47aac073.webp";
+import icon04 from "@/assets/solutions/cds/3d-dimensioning/2000_657fe4877d960.webp";
+import icon05 from "@/assets/solutions/cds/3d-dimensioning/2000_657fe4927f31b.webp";
+import icon06 from "@/assets/solutions/cds/3d-dimensioning/2000_657fe49e2393a.webp";
+import icon07 from "@/assets/solutions/cds/3d-dimensioning/2000_657fe4a901f53.webp";
+import icon08 from "@/assets/solutions/cds/3d-dimensioning/2000_657fe4b334de6.webp";
+import icon09 from "@/assets/solutions/cds/3d-dimensioning/2000_657fe4bd36cf3.webp";
+import icon10 from "@/assets/solutions/cds/3d-dimensioning/2000_657fe4d4f1bbd.webp";
+import icon11 from "@/assets/solutions/cds/3d-dimensioning/2000_657fe4e04d054.webp";
+import icon12 from "@/assets/solutions/cds/3d-dimensioning/2000_657fe4ebeb9e4.webp";
+import icon13 from "@/assets/solutions/cds/3d-dimensioning/2000_657fe4f91f064.webp";
+import icon14 from "@/assets/solutions/cds/3d-dimensioning/2000_657fe5038f02b.webp";
+import icon15 from "@/assets/solutions/cds/3d-dimensioning/2000_657fe50e5014f.webp";
+import icon16 from "@/assets/solutions/cds/3d-dimensioning/2000_657fe52022a45.webp";
+import icon17 from "@/assets/solutions/cds/3d-dimensioning/2000_657fe52a9766b.webp";
+import icon18 from "@/assets/solutions/cds/3d-dimensioning/2000_657fe5349e15b.webp";
+
+const icons = [
+  icon01, icon02, icon03, icon04, icon05, icon06,
+  icon07, icon08, icon09, icon10, icon11, icon12,
+  icon13, icon14, icon15, icon16, icon17, icon18
+];
+
+// Gallery Images
+import gal01 from "@/assets/solutions/cds/3d-dimensioning/gallery/2000_5be1a5b8e7638.jpeg";
+import gal02 from "@/assets/solutions/cds/3d-dimensioning/gallery/2000_5be1a5cbd6d53.jpeg";
+import gal03 from "@/assets/solutions/cds/3d-dimensioning/gallery/3.jpg";
+import gal04 from "@/assets/solutions/cds/3d-dimensioning/gallery/4-jpg.jpg";
+import gal05 from "@/assets/solutions/cds/3d-dimensioning/gallery/5.jpg";
+import gal06 from "@/assets/solutions/cds/3d-dimensioning/gallery/ezgif.com-webp-to-2.jpg";
+import gal07 from "@/assets/solutions/cds/3d-dimensioning/gallery/ezgif.com-webp-to-jpg.jpg";
+
+const galleryImagesRaw = [gal01, gal02, gal03, gal04, gal05, gal06, gal07];
+
+const galleryImages = galleryImagesRaw.map((src, idx) => ({
   id: `ex-${idx}`,
   src,
   alt: `Müşteri örneği ${idx + 1}`,
@@ -28,24 +57,24 @@ const galleryImages = galleryImagesRaw.map((src: string, idx: number) => ({
 export default function ClientPage() {
 
   const features = [
-    { titleTr: "Masslinie erzeugen" },
-    { titleTr: "Kotenbemassung erzeugen" },
-    { titleTr: "Winkelbemassung erzeugen" },
-    { titleTr: "Gefällebemassung erzeugen" },
-    { titleTr: "Höhenkote erzeugen" },
-    { titleTr: "Kreisbemassung erzeugen" },
-    { titleTr: "Textzeiger erzeugen" },
-    { titleTr: "Referenz-Punkt hinzufügen" },
-    { titleTr: "Referenz-Punkt löschen" },
-    { titleTr: "Referenz-Punkt verschieben" },
-    { titleTr: "Masslinie verschieben" },
-    { titleTr: "Text verschieben" },
-    { titleTr: "Textposition zurücksetzen" },
-    { titleTr: "Symbol modifizieren" },
-    { titleTr: "Masslinie aktualisieren" },
-    { titleTr: "Eigenschaften übertragen" },
-    { titleTr: "Masslinie modifizieren" },
-    { titleTr: "Bemassung löschen" },
+    { titleTr: "Ölçü Çizgisi Oluştur", titleDe: "Masslinie erzeugen" },
+    { titleTr: "Kot Ölçülendirme Oluştur", titleDe: "Kotenbemassung erzeugen" },
+    { titleTr: "Açı Ölçülendirme Oluştur", titleDe: "Winkelbemassung erzeugen" },
+    { titleTr: "Eğim Ölçülendirme Oluştur", titleDe: "Gefällebemassung erzeugen" },
+    { titleTr: "Yükseklik Kotu Oluştur", titleDe: "Höhenkote erzeugen" },
+    { titleTr: "Daire Ölçülendirme Oluştur", titleDe: "Kreisbemassung erzeugen" },
+    { titleTr: "Metin Göstergesi Oluştur", titleDe: "Textzeiger erzeugen" },
+    { titleTr: "Referans Noktası Ekle", titleDe: "Referenz-Punkt hinzufügen" },
+    { titleTr: "Referans Noktası Sil", titleDe: "Referenz-Punkt löschen" },
+    { titleTr: "Referans Noktası Taşı", titleDe: "Referenz-Punkt verschieben" },
+    { titleTr: "Ölçü Çizgisi Taşı", titleDe: "Masslinie verschieben" },
+    { titleTr: "Metni Taşı", titleDe: "Text verschieben" },
+    { titleTr: "Metin Konumunu Sıfırla", titleDe: "Textposition zurücksetzen" },
+    { titleTr: "Sembolü Düzenle", titleDe: "Symbol modifizieren" },
+    { titleTr: "Ölçü Çizgisini Güncelle", titleDe: "Masslinie aktualisieren" },
+    { titleTr: "Özellikleri Aktar", titleDe: "Eigenschaften übertragen" },
+    { titleTr: "Ölçü Çizgisini Düzenle", titleDe: "Masslinie modifizieren" },
+    { titleTr: "Ölçülendirmeyi Sil", titleDe: "Bemassung löschen" },
   ];
 
   const sections = [
@@ -61,7 +90,7 @@ export default function ClientPage() {
       videoUrl="https://www.youtube.com/embed/GlkCJ9hmqho"
     />,
 
-    <section key="features" className="py-16 bg-gradient-to-br from-slate-50 to-accent/10">
+    <section key="features" className="py-16 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           title="Fonksiyona genel bakış:"
@@ -75,18 +104,21 @@ export default function ClientPage() {
           {features.map((feature, idx) => (
             <Card
               key={idx}
-              className="p-4 flex flex-col items-center text-center hover:shadow-technical transition-all"
+              className="p-4 flex flex-col items-center text-center bg-white/5 border-white/10 hover:bg-white/10 transition-colors hover:shadow-technical"
             >
               {icons[idx] && (
                 <img
-                  src={icons[idx]}
+                  src={icons[idx].src}
                   alt={feature.titleTr}
                   className="w-24 h-24 mb-3 object-contain"
                 />
               )}
-              <h3 className="text-xs font-semibold text-gray-800 leading-tight">
+              <h3 className="text-sm font-semibold text-gray-200 leading-tight">
                 {feature.titleTr}
               </h3>
+              <p className="text-xs text-gray-500 mt-1">
+                {feature.titleDe}
+              </p>
             </Card>
           ))}
         </div>
@@ -145,17 +177,17 @@ export default function ClientPage() {
       </div>
     </section>,
 
-    <VideoGrid
+    <MasonryVideoGrid
       key="demo-videos"
-      videos={[
-        { url: "https://www.youtube.com/embed/GlkCJ9hmqho" },
-        { url: "https://www.youtube.com/embed/IR6TsiCpPJI" },
-        { url: "https://www.youtube.com/embed/Z8-aMd_TGBY" },
+      title="Video Galerisi"
+      items={[
+        { titleTR: "Video 1", videoUrl: "https://www.youtube.com/embed/GlkCJ9hmqho" },
+        { titleTR: "Video 2", videoUrl: "https://www.youtube.com/embed/IR6TsiCpPJI" },
+        { titleTR: "Video 3", videoUrl: "https://www.youtube.com/embed/Z8-aMd_TGBY" },
       ]}
-      columns={{ mobile: 1, tablet: 2, desktop: 2 }}
     />,
 
-    <section key="customer-examples" className="py-16 bg-gradient-to-br from-slate-50 to-accent/10">
+    <section key="customer-examples" className="py-16 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           title="Müşteri örnekleri"
@@ -177,6 +209,7 @@ export default function ClientPage() {
           images={galleryImages}
           sectionTitle="Müşteri örnekleri"
           sectionDescription="Gerçek projelerden 3B ölçülendirme örnekleri"
+          hideCategoryFilter={true}
         />
       </div>
     </section>,
@@ -188,7 +221,7 @@ export default function ClientPage() {
       description="Eklentiyi yükledikten sonra deneme sürümünü 14 gün ücretsiz olarak kullanabilirsiniz."
       systemRequirements="Allplan 2020 – 2023"
       languages="Almanca, İngilizce ve İtalyanca"
-      imageUrl={imgLicense}
+      imageUrl="https://cdn-ildjmdd.nitrocdn.com/tcdVFlIBFQtnSTNLgsIOcKKpRMOOdqtW/assets/images/optimized/rev-0504ba4/addon.aluplan.com.tr/wp-content/uploads/2023/02/Lisans.jpg"
       imageAlt="Lisans"
       links={[
         {
@@ -203,7 +236,7 @@ export default function ClientPage() {
         }
       ]}
       quoteFormUrl="https://forms.office.com/r/hXhnKAG912"
-      quoteFormText="Başvuru Formu İçin Tıklayın"
+      quoteFormText="Teklif Talep Formu"
     />,
   ];
 

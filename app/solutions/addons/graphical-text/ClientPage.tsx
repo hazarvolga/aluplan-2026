@@ -3,67 +3,37 @@ import AddonDetailTemplate from "@/components/AddonDetailTemplate";
 import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
 import SectionHeader from "@/components/SectionHeader";
 import CDSLicenseInfoSection from "@/components/CDSLicenseInfoSection";
-import { Card } from "@/components/ui/card";
-import ImageGallery from "@/components/ImageGallery";
+import MasonryVideoGrid from "@/components/MasonryVideoGrid";
+
 
 // Static Import
-import imgGraphic from "@/assets/solutions/cds/graphic-text.jpeg";
 
-const images = [
-  {
-    id: "gfx-0",
-    src: imgGraphic,
-    alt: "Grafiksel Yazı 1",
-    title: "Grafiksel Yazı",
-    description: "",
-    category: "grafik",
-  }
-];
 
 export default function ClientPage() {
-  const features = [
-    "Metin vektörleştirme",
-    "3B metin nesneleri",
-    "Font ve stil eşleme",
-    "Etiket ve işaretleme araçları",
-    "Görselleştirme ile uyumlu çıktı",
-  ];
+
 
   const sections = [
     <InfoMediaTwoColumn
       key="hero"
-      title="Grafiksel Yazı"
-      subtitle="Vektörleştirilmiş ve 3B metinler"
+      title="Vektörleştirilmiş metinlerin, 3 boyutlu metinlerin ve blok setlerinin oluşturulması."
+      subtitle=""
       descriptions={[
-        "Metinleri vektörleyin ve 3B metin nesneleri ile projelerinize modern etiketleme ekleyin.",
-        "Görselleştirme için dokular ve font eşlemeleriyle tutarlı çıktılar alın.",
+        "Tüm metinleri gerekçelendirilmiş cümleler olarak ayarlayın ve akıllı cümle ve hece ayrımı da dahil olmak üzere istediğiniz gibi çarpıtın. Veya vektör öğeleri (çizgiler, daireler, alanlar) olarak kenarlıklar, dolgular ve gölgeler içeren metinler oluşturabilir ve hatta bunları 3B olarak oluşturabilirsiniz.",
       ]}
       videoUrl="https://www.youtube.com/embed/CMYuaD3e3rQ"
     />,
 
-    <section key="features" className="py-16 bg-transparent">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader title="İşlevsel Genel Bakış" align="center" className="py-0 bg-transparent mb-12" compact titleSize="lg" />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {features.map((feature, idx) => (
-            <Card key={idx} className="p-5 bg-white/5 border-white/10 hover:bg-white/10 transition-colors">
-              <h3 className="text-sm font-semibold text-gray-200">{feature}</h3>
-            </Card>
-          ))}
-        </div>
-      </div>
-    </section>,
+    <MasonryVideoGrid
+      key="videos"
+      title="Tanıtım Videoları"
+      items={[
+        { titleTR: "ALLPLAN Add-On GraphicText - Vektorisierte 2D/3D Texte", videoUrl: "https://www.youtube.com/embed/fs7Lfx9odB4" },
+        { titleTR: "ALLPLAN Add-On Graphic Text | Text an Kurve ausrichten", videoUrl: "https://www.youtube.com/embed/0rpJEH-JCvE" },
+      ]}
+      columns={2}
+    />,
 
-    <section key="gallery" className="py-16 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader title="Galeri" align="center" className="py-0 bg-transparent mb-12" compact titleSize="lg" />
-        <ImageGallery
-          images={images}
-          sectionTitle="Grafiksel Yazı Galerisi"
-          sectionDescription="Vektörleştirme ve 3B metin örnekleri"
-        />
-      </div>
-    </section>,
+
 
     <CDSLicenseInfoSection
       key="license"
