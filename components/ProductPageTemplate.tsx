@@ -159,62 +159,6 @@ const ProductPageTemplate = ({
               <p className="text-xl text-white/90 mb-8 leading-relaxed">
                 {description}
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                {showCtaButton && (
-                  <Button
-                    variant="hero"
-                    size="xl"
-                    className="bg-white text-accent hover:bg-white/90"
-                    asChild={Boolean(ctaHref) && Boolean(ctaExternal)}
-                  >
-                    {ctaHref ? (
-                      ctaExternal ? (
-                        <a href={ctaHref} target="_blank" rel="noopener noreferrer">
-                          {ctaTitle}
-                          <ArrowRight className="ml-2 h-5 w-5" />
-                        </a>
-                      ) : (
-                        <a href={ctaHref}>
-                          {ctaTitle}
-                          <ArrowRight className="ml-2 h-5 w-5" />
-                        </a>
-                      )
-                    ) : (
-                      <>
-                        {ctaTitle}
-                        <ArrowRight className="ml-2 h-5 w-5" />
-                      </>
-                    )}
-                  </Button>
-                )}
-                {showDemoButton && (
-                  <Button variant="outline" size="xl" className="bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white hover:text-accent">
-                    <Play className="mr-2 h-5 w-5" />
-                    Demo İzle
-                  </Button>
-                )}
-              </div>
-              {additionalButtons && additionalButtons.length > 0 && (
-                <div className="flex flex-col sm:flex-row gap-4 mt-4">
-                  {additionalButtons.map((button, index) => (
-                    <Button
-                      key={index}
-                      variant="outline"
-                      size="lg"
-                      className="bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white hover:text-accent"
-                      asChild={button.external}
-                    >
-                      {button.external ? (
-                        <a href={button.href} target="_blank" rel="noopener noreferrer">
-                          {button.text}
-                        </a>
-                      ) : (
-                        <a href={button.href}>{button.text}</a>
-                      )}
-                    </Button>
-                  ))}
-                </div>
-              )}
             </div>
             {heroImage && (
               <div className="relative">
