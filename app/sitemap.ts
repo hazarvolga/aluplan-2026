@@ -36,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Çözüm sayfaları
   const solutionPages = [
+    "/solutions",
     "/solutions/architecture",
     "/solutions/structural",
     "/solutions/mep",
