@@ -1,12 +1,15 @@
 "use client"
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import { Check } from "lucide-react";
 import VideoModal from "@/components/VideoModal";
 import CloudServicesSection from "@/components/CloudServicesSection";
 
+import heroImg from "@/assets/products/allplan-concept/hero.jpg";
 import workWayWantIcon from "@/assets/products/allplan-concept/work-way-want.png";
 import powerfulModelingIcon from "@/assets/products/allplan-concept/powerful-modeling.png";
 import productiveCollabIcon from "@/assets/products/allplan-concept/productive-collab.png";
@@ -92,12 +95,27 @@ export default function Page() {
 
   return (
     <div className="dark min-h-screen bg-graphite-950">
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-primary/10 via-background to-background">
-        <div className="absolute inset-0 opacity-[0.02] bg-technical-grid" />
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl">
-            <span className="text-accent font-medium text-sm tracking-wider uppercase mb-4 block">/ ALLPLAN CONCEPT</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">Modelleme ve tasarım dokümantasyonu için BIM çözümü</h1>
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src={heroImg}
+            alt="Allplan Concept Hero"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60" />
+          <div className="absolute inset-0 opacity-[0.02] bg-technical-grid" />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-3xl">
+            <Badge className="mb-6 bg-accent/20 text-accent border-accent/30">allplan concept</Badge>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">MODELLEME VE TASARIM DOKÜMANTASYONU İÇİN <span className="text-accent">BIM ÇÖZÜMÜ</span></h1>
+            <div className="flex flex-wrap gap-4">
+              <Button size="lg" className="bg-accent hover:bg-accent/90" asChild><a href="https://www.allplan.com/trial-or-subscription/" target="_blank" rel="noopener noreferrer">Ücretsiz Dene<ArrowRight className="ml-2 h-5 w-5" /></a></Button>
+              <Button size="lg" variant="outline" asChild><a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">Teklif Talep Formu</a></Button>
+            </div>
           </div>
         </div>
       </section>
