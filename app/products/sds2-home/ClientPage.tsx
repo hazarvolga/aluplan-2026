@@ -186,7 +186,22 @@ export default function ClientPage() {
               </div>
             </div>
           </section>
-          <ReasonsSection items={reasonsItems} variant="benefits" badgeText="SDS2 hızlı erişim" titleText="SDS2 hızlı erişim" />
+          <section className="py-16 bg-background">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">SDS2 Hızlı Erişim</h2>
+              </div>
+              <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+                {reasonsItems.slice(0, 7).map((item, index) => (
+                  <Button key={index} variant="outline" size="lg" asChild>
+                    <a href={item.href} target="_blank" rel="noopener noreferrer">
+                      {item.title}
+                    </a>
+                  </Button>
+                ))}
+              </div>
+            </div>
+          </section>
         </>
       }
     />
