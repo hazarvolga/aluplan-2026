@@ -107,8 +107,6 @@ export default function Page() {
       reasonsVariant="benefits"
       statsVariant="animated"
       postHeroSection={postHeroSection}
-      ctaTitle="Allplan'ı ücretsiz deneyin"
-      ctaDescription="Allplan Bridge 2024’ü 14 gün boyunca ücretsiz deneyin."
     />
   );
 }
