@@ -129,7 +129,7 @@ export default function Page() {
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <Badge className="mb-6 bg-accent/20 text-accent border-accent/30">allplan professional</Badge>
+            <span className="text-accent font-medium text-sm tracking-wider uppercase mb-4 block">/ ALLPLAN PROFESSIONAL</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">DETAYLANDIRMA VE İLERİ DÜZEY OTOMASYON İÇİN <span className="text-accent">BIM ÇÖZÜMÜ</span></h1>
             <div className="flex flex-wrap gap-4">
               <Button size="lg" className="bg-accent hover:bg-accent/90" asChild><a href="https://www.allplan.com/trial-or-subscription/" target="_blank" rel="noopener noreferrer">Ücretsiz Dene<ArrowRight className="ml-2 h-5 w-5" /></a></Button>
