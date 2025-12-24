@@ -12,6 +12,8 @@ import ChallengesSection from "@/components/ChallengesSection";
 import StatsTemplate from "@/components/StatsTemplate";
 import CloudServicesSection, { CloudServiceItem } from "@/components/CloudServicesSection";
 
+import heroImg from "@/assets/products/civil/hero.jpg";
+
 // Fayda ikonları - Ultimate'dan
 import parametricRoadIcon from "@/assets/products/allplan-ultimate/parametric-road-modeling.png";
 import precise3dReinforcementIcon from "@/assets/products/allplan-ultimate/precise-3d-reinforcement.png";
@@ -170,8 +172,19 @@ export default function Page() {
   return (
     <div className="dark min-h-screen bg-graphite-950">
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-r from-black/80 to-black/40">
-        <div className="absolute inset-0 opacity-[0.02] bg-technical-grid" />
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src={heroImg}
+            alt="Allplan Civil Hero"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60" />
+          <div className="absolute inset-0 opacity-[0.02] bg-technical-grid" />
+        </div>
         <div className="container mx-auto px-4 py-20">
           <div className="max-w-3xl">
             <span className="inline-block px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-medium mb-6">/ ALLPLAN Civil</span>
