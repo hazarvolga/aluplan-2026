@@ -20,10 +20,10 @@ import iconEnhancedComm from "@/assets/solutions/bridge/reasons/technical_suppor
 import iconQualityDeliverables from "@/assets/solutions/bridge/reasons/more_accurate_deliverables-2.png";
 
 const stats = [
-  { value: "100%", label: "CONSISTENT DATA", description: "common data environment minimizes re-entry across solutions." },
-  { value: "63%", label: "MORE TIME", description: "templates and easy parametric modifications save time." },
-  { value: "100%", label: "MORE PRICISE", description: "bridge-tailored modeling techniques and workflows." },
-  { value: "100%", label: "MORE EFFICIENCY", description: "reuse of parametric elements via templates." },
+  { value: "100%", label: "TUTARLI VERİ", description: "Ortak veri ortamı, çözümler arasında yeniden veri girişini en aza indirir." },
+  { value: "63%", label: "DAHA FAZLA ZAMAN", description: "Şablonlar ve kolay parametrik değişiklikler zamandan tasarruf sağlar." },
+  { value: "100%", label: "DAHA HASSAS", description: "Köprüye özel modelleme teknikleri ve iş akışları." },
+  { value: "100%", label: "DAHA VERİMLİ", description: "Şablonlar aracılığıyla parametrik elemanların yeniden kullanımı." },
 ];
 
 const challenges = [
@@ -49,8 +49,8 @@ const reasons = [
 
 const quickLinks = [
   { label: "Demo", href: "#" },
-  { label: "MODELING OF PRECAST GIRDER BRIDGES", href: "/solutions/modeling-of-precast-girder-bridges" },
-  { label: "Features Allplan Bridge 2024", href: "/solutions/features-allplan-bridge" },
+  { label: "ÖNÜMLÜ KİRİŞLİ KÖPRÜ MODELLEMESİ", href: "/solutions/modeling-of-precast-girder-bridges" },
+  { label: "Allplan Bridge 2024 Özellikleri", href: "/solutions/features-allplan-bridge" },
   { label: "Deneme Sürümü", href: "#" },
   { label: "Eğitim Videoları", href: "#" },
   { label: "Paket Karşılaştırma", href: "#" },
@@ -76,10 +76,10 @@ const postHeroSection = (
       </div>
     </section>
     <PostHeroSection
-      title="ALLPLAN – BIM SOLUTIONS FOR BRIDGE ENGINEERING"
+      title="ALLPLAN – KÖPRÜ MÜHENDİSLİĞİ İÇİN BIM ÇÖZÜMLERİ"
       paragraphs={[
-        "Attractive and safe bridges require powerful tools, transparency and clear coordination.",
-        "Allplan Bridge ile köprüleri modelleyin, analiz edin, tasarlayın ve detaylandırın; prestress ve inşa süreci dahil.",
+        "Çekici ve güvenli köprüler, güçlü araçlar, şeffaflık ve net koordinasyon gerektirir.",
+        "Allplan Bridge ile köprüleri modelleyin, analiz edin, tasarlayın ve detaylandırın; ön germe ve inşa süreci dahil.",
       ]}
       videoUrl="https://www.youtube.com/embed/SeA6ncaqUhY"
     />
@@ -89,16 +89,16 @@ const postHeroSection = (
 export default function Page() {
   return (
     <EnhancedSolutionTemplate
-      badge="BRIDGE ENGINEERING"
-      title="Bridge Engineering"
-      subtitle="FOR BRIDGE ENGINEERS WHO DEMAND MORE."
-      description="ALLPLAN’in köprü mühendisliğine yönelik BIM çözümü ile herhangi bir köprü tipinin disiplinler arası 4D modelini üretin; aynı modelden çizim ve analiz için yararlanın."
+      badge="KÖPRÜ MÜHENDİSLİĞİ"
+      title="Köprü Mühendisliği"
+      subtitle="DAHA FAZLASINI TALEP EDEN KÖPRÜ MÜHENDİSLERİ İÇİN."
+      description="ALLPLAN'ın köprü mühendisliğine yönelik BIM çözümü ile herhangi bir köprü tipinin disiplinler arası 4D modelini üretin; aynı modelden çizim ve analiz için yararlanın."
       customHero={(
         <SolutionHero
-          badge="BRIDGE ENGINEERING"
-          title="Bridge Engineering"
-          subtitle="FOR BRIDGE ENGINEERS WHO DEMAND MORE."
-          description="ALLPLAN’in köprü mühendisliğine yönelik BIM çözümü ile herhangi bir köprü tipinin disiplinler arası 4D modelini üretin; aynı modelden çizim ve analiz için yararlanın."
+          badge="KÖPRÜ MÜHENDİSLİĞİ"
+          title="Köprü Mühendisliği"
+          subtitle="DAHA FAZLASINI TALEP EDEN KÖPRÜ MÜHENDİSLERİ İÇİN."
+          description="ALLPLAN'ın köprü mühendisliğine yönelik BIM çözümü ile herhangi bir köprü tipinin disiplinler arası 4D modelini üretin; aynı modelden çizim ve analiz için yararlanın."
         />
       )}
       stats={stats}
