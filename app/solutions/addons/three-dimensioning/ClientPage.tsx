@@ -128,10 +128,10 @@ export default function ClientPage() {
     <section key="properties" className="py-16 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
+          <h2 className="text-3xl font-bold text-foreground mb-8">
             <span>Özellikler</span>
           </h2>
-          <ul className="space-y-3 text-gray-700">
+          <ul className="space-y-3 text-muted-foreground">
             <li className="flex items-start">
               <span className="mr-2">•</span>
               <span>Sezgisel olarak öğrenilebilir</span>
