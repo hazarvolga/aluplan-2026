@@ -1,4 +1,5 @@
 "use client"
+import Image, { StaticImageData } from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play, Sparkles } from "lucide-react";
 import { ReactNode, useEffect, useMemo, useState } from "react";
@@ -9,6 +10,7 @@ type SolutionHeroProps = {
   title: string | ReactNode;
   subtitle?: string;
   description: string | ReactNode;
+  backgroundImage?: string | StaticImageData;
   primaryButton?: {
     text: string;
     href: string;
@@ -93,6 +95,7 @@ const SolutionHero = ({
   title,
   subtitle,
   description,
+  backgroundImage,
   primaryButton,
   secondaryButton,
   stats,
@@ -119,7 +122,19 @@ const SolutionHero = ({
   }, []);
 
   return (
-    <section className="relative min-h-[75vh] flex items-center overflow-hidden bg-gradient-to-br from-midnight-950 via-midnight-800 to-midnight-900 pt-16 md:pt-20">
+    <section className="relative min-h-[60vh] flex items-center overflow-hidden bg-gradient-to-br from-midnight-950 via-midnight-800 to-midnight-900 pt-16 md:pt-20">
+      {backgroundImage && (
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={backgroundImage}
+            alt={typeof title === 'string' ? title : 'Solutions Hero'}
+            fill
+            className="object-cover opacity-60 mix-blend-overlay"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-midnight-950/95 via-midnight-900/90 to-midnight-900/80" />
+        </div>
+      )}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute inset-0 opacity-[0.015] mix-blend-overlay">
           <svg className="w-full h-full">

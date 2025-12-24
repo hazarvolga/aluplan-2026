@@ -16,6 +16,7 @@ import iconProductiveCollab from "@/assets/solutions/architecture/reasons/struct
 import iconInterdisciplinaryAEC from "@/assets/solutions/architecture/reasons/structural-engineering-allplan-turkey-interdisciplinary_aec_design.png";
 import iconReliableEarlierCost from "@/assets/solutions/architecture/reasons/realiable_earlier_cost_estimates.png";
 import heroImage from "@/assets/solutions/mep-hero.jpg";
+import heroBg from "@/assets/solutions/mep-hero-bg.jpg";
 import imgProjeKoordinasyonu from "@/assets/solutions/mep/workflows/mep-proje-koordinasyonu.jpg";
 import imgSihhiTesisat from "@/assets/solutions/mep/workflows/mep-sihhi-tesisat.jpg";
 import imgSprinkler from "@/assets/solutions/mep/workflows/mep-sprinkler.jpg";
@@ -109,6 +110,7 @@ export default function Page() {
           title="MEP ENGINEERING"
           subtitle="DAHA FAZLASINI İSTEYEN MÜHENDİSLER İÇİN."
           description="ALLPLAN'ın MEP ve bina hizmetleri mühendisliği için BIM çözümleri, tasarımdan inşaata kadar tüm süreci kapsar. Allplan, mimari ve yapı mühendisliği disiplinleriyle entegre çalışmayı ve proje tasarımı ve teslimatı için daha fazla üretkenliği destekleyen işbirlikçi iş akışlarını mümkün kılar. Allplan ve AX3000 ile MEP tasarım yazılımınızdan daha fazlasını bekleyin!"
+          backgroundImage={heroBg}
         />
       )}
       postHeroSection={postHeroSection}
