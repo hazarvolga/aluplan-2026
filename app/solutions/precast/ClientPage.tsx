@@ -28,18 +28,18 @@ export default function ClientPage() {
     { text: "Proje maliyetleriniz hakkında devam eden endişeler ve kontrolden çıkan zaman gecikmeleri." },
   ];
   const reasons = [
-    { title: "CONSISTENT TIME AND COST PLANNING", description: "Powerful tools to create and accurately design objects of any shape for even the most complex of project requirements.", image: iconAutomatedWorkflows },
-    { title: "EASILY DESIGN & DETAIL COMPLEX REINFORCEMENT", description: "Automated solutions for the rapid reinforcement design and detailing of complex geometry, such as curved structures or freeform objects.", image: iconHighDesignQuality },
-    { title: "CONSISTENT TIME AND COST PLANNING", description: "Quickly integrate all common terrain formats, displaying and conveniently editing them as digital terrain models.", image: iconTerrainIntegration },
-    { title: "INDIVIDUAL WAYS OF WORKING", description: "Flexible workflows in 2D, 2.5D and 3D as well as the full object-orientated BIM working methodology", image: iconWorkWayWant },
-    { title: "SEAMLESS COLLABORATION", description: "Optimize materials and construction approaches including cast insitu/precast concrete, steel and timber for enhanced buildability and sustainability.", image: iconProductiveCollab },
-    { title: "SMART CONVERTER", description: "A single software solution for architectural design, structural engineering, MEP services, and civil engineering design and detailing.", image: iconSmartConverter },
-    { title: "CONVINCING VISUALIZATION", description: "Integrated cloud technology for multi-user working in real-time, plus model and project collaboration with partners", image: iconConvincing },
-    { title: "COMPLETE OVERVIEW", description: "Easily exchange data with multiple exchange formats, IFC4 RV import/export, and the collaborative OPEN BIM data platform, Bimplus.", image: iconKeepOverview },
-    { title: "QUALITY-ASSURED DATA FOR ERP AND MES", description: "Quickly and precisely calculate quantities and materials from an earlier stage using detailed lists for accurate tenders.", image: iconQualityAssured },
-    { title: "DIGITALIZATION OF THE PRECAST PLANT", description: "Save time, with changes made automatically across deliverables, simply by editing once in either drawings or model.", image: iconDigitalizationPlant },
-    { title: "OPTIMIZED DECISION MAKING", description: "Swiftly and accurately generate plans, drawings, and reports directly from the 3D model and control information exchange for high-quality documentation.", image: iconOptimizedDecisions },
-    { title: "MOBILE SOLUTIONS", description: "Coordinate detailed designs with construction teams using cloud-based platform – Bimplus for clear and transparent communication", image: iconMobileSolutions },
+    { title: "TUTARLI ZAMAN VE MALİYET PLANLAMASI", description: "En karmaşık proje gereksinimlerinde bile her şekilde nesne oluşturmak ve doğru tasarlamak için güçlü araçlar.", image: iconAutomatedWorkflows },
+    { title: "KARMAŞIK DONATIYI KOLAYCA TASARLAYIN VE DETAYLANDIRIN", description: "Kavisli yapılar veya serbest biçimli nesneler gibi karmaşık geometrilerin hızlı donatı tasarımı ve detaylandırması için otomatik çözümler.", image: iconHighDesignQuality },
+    { title: "SEZGISEL ARAZİ ENTEGRASYONU", description: "Tüm yaygın arazi formatlarını hızla entegre edin, dijital arazi modelleri olarak görüntüleyin ve kolayca düzenleyin.", image: iconTerrainIntegration },
+    { title: "BİREYSEL ÇALIŞMA YÖNTEMLERİ", description: "2D, 2.5D ve 3D'de esnek iş akışları ve tam nesne yönelimli BIM çalışma metodolojisi", image: iconWorkWayWant },
+    { title: "KUSURSUZ İŞBİRLİĞİ", description: "Gelişmiş inşa edilebilirlik ve sürdürülebilirlik için yerinde dökme/prekast beton, çelik ve ahşap dahil malzeme ve inşaat yaklaşımlarını optimize edin.", image: iconProductiveCollab },
+    { title: "AKILLI DÖNÜŞTÜRÜCÜ", description: "Mimari tasarım, yapı mühendisliği, MEP hizmetleri ve inşaat mühendisliği tasarımı ve detaylandırması için tek yazılım çözümü.", image: iconSmartConverter },
+    { title: "İKNA EDICI GÖRSELLEŞTİRME", description: "Gerçek zamanlı çok kullanıcılı çalışma için entegre bulut teknolojisi ve ortaklarla model ve proje işbirliği", image: iconConvincing },
+    { title: "EKSIKSIZ GENEL BAKIŞ", description: "Birden fazla değişim formatı, IFC4 RV içe/dışa aktarma ve işbirlikçi OPEN BIM veri platformu Bimplus ile kolayca veri alışverişi.", image: iconKeepOverview },
+    { title: "ERP VE MES İÇİN KALİTE GÜVENCELİ VERİ", description: "Doğru teklifler için detaylı listeler kullanarak erken aşamadan itibaren miktarları ve malzemeleri hızlı ve hassas hesaplayın.", image: iconQualityAssured },
+    { title: "PREKAST TESİSİNİN DİJİTALLEŞMESİ", description: "Çizimlerde veya modelde bir kez düzenleyerek değişikliklerin teslimatlar arasında otomatik yapılmasıyla zaman kazanın.", image: iconDigitalizationPlant },
+    { title: "OPTİMİZE KARAR VERME", description: "3D modelden doğrudan planları, çizimleri ve raporları hızlı ve doğru şekilde oluşturun ve yüksek kaliteli dokümantasyon için bilgi alışverişini kontrol edin.", image: iconOptimizedDecisions },
+    { title: "MOBİL ÇÖZÜMLER", description: "Net ve şeffaf iletişim için bulut tabanlı platform Bimplus kullanarak inşaat ekipleriyle detaylı tasarımları koordine edin", image: iconMobileSolutions },
   ];
 
   return (
@@ -71,8 +71,8 @@ export default function ClientPage() {
       statsVariant="animated"
       challenges={challenges}
       reasons={reasons}
-      reasonsBadgeText="12 REASONS"
-      reasonsTitleText="TO CHOOSE ALLPLAN"
+      reasonsBadgeText="12 NEDEN"
+      reasonsTitleText="ALLPLAN'I SEÇMELİSİNİZ"
       reasonsVariant="benefits"
       showCta={false}
     />
