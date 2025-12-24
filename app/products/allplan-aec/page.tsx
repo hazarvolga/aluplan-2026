@@ -34,6 +34,7 @@ import collIssueMgmt from "@/assets/products/allplan-aec/features/collaboration/
 import collDocMgmt from "@/assets/products/allplan-aec/features/collaboration/csm_22_Document_a57ec305e5.png";
 import collCoordination from "@/assets/products/allplan-aec/features/collaboration/csm_23_Coord_555eebf94b.png";
 import collWorkAnywhere from "@/assets/products/allplan-aec/features/collaboration/csm_25_Together_5a2c578657.png";
+import heroImg from "@/assets/products/allplan-aec/hero-new.jpg";
 
 const whatIsInfoMedia = {
   title: "ALLPLAN NEDİR?",
@@ -43,6 +44,7 @@ const whatIsInfoMedia = {
     "Konseptten ayrıntılı inşaat paftalarına kadar tüm disiplinlerde verimli iş akışlarını desteklemek için güçlü araçlar",
     "Verimli işbirliği ve daha başarılı teslimler için entegre bulut teknolojisi.",
   ],
+  videoUrl: "https://www.youtube.com/embed/tFnwOyX7ncI",
 };
 
 const benefitsItems = [
@@ -130,8 +132,14 @@ export default function Page() {
       title="ALLPLAN 2025"
       subtitle="THE ULTIMATE BIM SOLUTION FOR AEC PROFESSIONALS FROM DESIGN TO BUILD"
       description="ALLPLAN'in mimariye yönelik BIM çözümleri, verimli tasarım ve sorunsuz proje yönetimi için tüm tasarımı inşa sürecine de taşır. İşbirliğine dayalı iş akışları, tüm proje yaşam döngüsü boyunca artan hassasiyet ve daha fazla üretkenlik sağlar. Mimari tasarım yazılımınızdan daha fazlasını bekleyin!"
-      ctaTitle="Allplan AEC ile projelerinizi güçlendirin"
-      ctaDescription="Profesyonel BIM çözümleriyle üretkenliği ve kaliteyi artırın"
+      heroImage={heroImg}
+      ctaTitle="Ücretsiz Dene"
+      ctaHref="https://www.allplan.com/trial-or-subscription/"
+      ctaExternal={true}
+      additionalButtons={[
+        { text: "Teklif Talep Formu", href: "https://forms.office.com/r/hXhnKAG912", external: true, variant: "outline" },
+        { text: "Abonelik SSS", href: "/solutions-v2/faq", external: false, variant: "outline" }
+      ]}
       whatIsInfoMedia={whatIsInfoMedia}
       benefitsItems={benefitsItems}
       workflowCategories={workflowCategories}
@@ -147,7 +155,6 @@ export default function Page() {
         "Proje maliyetleriniz hakkında devam eden endişeler ve kontrolden çıkan zaman gecikmeleri.",
       ]}
       tabFeatures={tabFeatures}
-      additionalButtons={additionalButtons}
     />
   );
 }
