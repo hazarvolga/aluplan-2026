@@ -62,7 +62,7 @@ const Header = () => {
     {
       title: "ORTAK ÇÖZÜMLER",
       items: [
-        { name: "Allplan Ortak Çözümleri", href: "/products/partner-solutions" },
+        { name: "Allplan Ortak Çözümleri", href: "https://www.allplan.com/allplan-partner-solutions/", external: true },
       ],
     },
     {
