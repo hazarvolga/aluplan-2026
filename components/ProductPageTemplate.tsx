@@ -227,6 +227,10 @@ const ProductPageTemplate = ({
           </div>
         </div>
       </section>
+      {/* What Is Info Media Section - Right after Quick Actions */}
+      {whatIsInfoMedia && (
+        <InfoMediaTwoColumn {...whatIsInfoMedia} />
+      )}
       {children}
       {features && features.length > 0 && (
         <section className="py-16 bg-background" aria-label="Özellikler">
@@ -311,9 +315,7 @@ const ProductPageTemplate = ({
           </div>
         </section>
       )}
-      {whatIsInfoMedia ? (
-        <InfoMediaTwoColumn {...whatIsInfoMedia} />
-      ) : whatIsSection ? (
+      {whatIsSection ? (
         <section className="py-24 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className={whatIsVideoSection ? "grid grid-cols-1 md:grid-cols-2 gap-12 items-start" : "max-w-4xl mx-auto"}>
