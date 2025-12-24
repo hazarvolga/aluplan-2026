@@ -5,6 +5,7 @@ import Image, { StaticImageData } from "next/image";
 interface AreaItem {
   icon?: React.ReactNode | string | StaticImageData;
   title: string;
+  titleDE?: string;
   description?: string;
 }
 
@@ -20,19 +21,22 @@ export default function ApplicationAreas({ title, items }: { title?: string; ite
             <Card key={idx} className="p-6 flex items-start gap-4">
               {item.icon ? (
                 (typeof item.icon === "string" || (typeof item.icon === "object" && "src" in item.icon)) ? (
-                   <Image 
-                     src={item.icon as string | StaticImageData} 
-                     alt={item.title} 
-                     className="w-12 h-12 object-contain" 
-                     width={48} 
-                     height={48} 
-                   />
+                  <Image
+                    src={item.icon as string | StaticImageData}
+                    alt={item.title}
+                    className="w-12 h-12 object-contain"
+                    width={48}
+                    height={48}
+                  />
                 ) : (
-                   <div className="w-12 h-12 flex items-center justify-center">{item.icon as React.ReactNode}</div>
+                  <div className="w-12 h-12 flex items-center justify-center">{item.icon as React.ReactNode}</div>
                 )
               ) : null}
               <div>
-                <h3 className="text-lg font-semibold text-foreground">{item.title}</h3>
+                <h3 className="text-lg font-semibold text-foreground">
+                  {item.title}
+                  {item.titleDE && <span className="block text-xs text-muted-foreground font-normal mt-0.5">{item.titleDE}</span>}
+                </h3>
                 {item.description && <p className="text-sm text-muted-foreground mt-1">{item.description}</p>}
               </div>
             </Card>

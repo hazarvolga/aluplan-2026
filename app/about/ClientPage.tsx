@@ -85,7 +85,17 @@ export default function ClientPage() {
             <p className="text-xl text-muted-foreground">İstanbul Ataşehir&apos;deki modern ofisimizden Türkiye geneline hizmet veriyoruz</p>
           </div>
           <Card className="max-w-4xl mx-auto overflow-hidden">
-            <div className="aspect-video bg-muted flex items-center justify-center"><p className="text-muted-foreground">Google Maps Entegrasyonu</p></div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.349796050269!2d29.100535700000005!3d40.973820700000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7f702b9b7cf%3A0x8c2c752cb2c61168!2sAluplan%20Program%20Sistemleri!5e0!3m2!1sen!2str!4v1766601003812!5m2!1sen!2str"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Aluplan Office Location - Quick Tower Workinton, İçerenköy, Ataşehir"
+              className="aspect-video"
+            />
             <CardContent className="p-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
