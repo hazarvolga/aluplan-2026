@@ -155,7 +155,7 @@ export default function Page() {
             </div>
           </div>
           <div className="flex flex-wrap gap-4 justify-center mt-12">
-            <Button variant="outline" asChild><Link href="/package-overview-2025" target="_blank">Sürümleri Görüntüle</Link></Button>
+            <Button variant="outline" asChild><Link href="/package-overview" target="_blank">Sürümleri Görüntüle</Link></Button>
             <Button variant="outline" asChild><Link href="/2024-architecture" target="_blank">Tasarım için İş Akışları</Link></Button>
             <Button variant="outline" asChild><Link href="/2024-structural-engineering" target="_blank">İnşaat Mühendisliği için İş Akışları</Link></Button>
             <Button variant="outline" asChild><Link href="/2024-civil-engineering" target="_blank">Yapı Mühendisliği için İş Akışları</Link></Button>
