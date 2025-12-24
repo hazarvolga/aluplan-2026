@@ -19,7 +19,7 @@ export function WorkflowLinksSection({ links, title }: WorkflowLinksSectionProps
         <section className="py-12 bg-background relative overflow-hidden group/section">
             {/* Animated Top Line - Left to Right */}
             <motion.div
-                className="absolute top-0 left-0 w-full h-[1px] bg-accent/50 origin-left"
+                className="absolute top-0 left-0 w-full h-[1px] bg-border/50 origin-left"
                 initial={{ scaleX: 0 }}
                 whileInView={{ scaleX: 1 }} // Initial draw
                 viewport={{ once: true }}
@@ -30,7 +30,7 @@ export function WorkflowLinksSection({ links, title }: WorkflowLinksSectionProps
 
             {/* Animated Bottom Line - Right to Left */}
             <motion.div
-                className="absolute bottom-0 right-0 w-full h-[1px] bg-accent/50 origin-right"
+                className="absolute bottom-0 right-0 w-full h-[1px] bg-border/50 origin-right"
                 initial={{ scaleX: 0 }}
                 whileInView={{ scaleX: 1 }} // Initial draw
                 viewport={{ once: true }}
