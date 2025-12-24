@@ -1,10 +1,12 @@
 import "@/styles/globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk, IBM_Plex_Mono } from "next/font/google";
 import SkipLink from "@/components/a11y/SkipLink";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/ui/breadcrumb";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -65,13 +67,20 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="tr" className={`dark ${inter.variable} ${spaceGrotesk.variable} ${ibmPlexMono.variable}`} suppressHydrationWarning>
+    <html lang="tr" className={`${inter.variable} ${spaceGrotesk.variable} ${ibmPlexMono.variable}`} suppressHydrationWarning>
       <body suppressHydrationWarning>
-        <SkipLink />
-        <Header />
-        <Breadcrumb />
-        <main id="main" aria-label="Ana içerik">{children}</main>
-        <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <SkipLink />
+          <Header />
+          <Breadcrumb />
+          <main id="main" aria-label="Ana içerik">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

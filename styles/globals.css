@@ -6,6 +6,7 @@
   html {
     scroll-behavior: smooth;
   }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 220 20% 12%;
@@ -45,25 +46,25 @@
   }
 
   .dark {
-    --background: 215 25% 10%;
+    --background: 0 0% 2%;
     --foreground: 0 0% 98%;
-    --card: 215 25% 12%;
+    --card: 0 0% 4%;
     --card-foreground: 0 0% 98%;
-    --popover: 215 25% 12%;
+    --popover: 0 0% 4%;
     --popover-foreground: 0 0% 98%;
-    --primary: 180 65% 50%;
-    --primary-foreground: 215 25% 10%;
-    --secondary: 215 20% 18%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 10%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 215 20% 18%;
-    --muted-foreground: 215 10% 65%;
-    --accent: 210 100% 45%;
-    --accent-foreground: 0 0% 100%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 215 20% 20%;
-    --input: 215 20% 20%;
-    --ring: 180 65% 50%;
+    --border: 0 0% 12%;
+    --input: 0 0% 12%;
+    --ring: 0 0% 80%;
     --graphite-950: 220 20% 8%;
     --graphite-900: 220 18% 12%;
     --graphite-800: 220 16% 16%;
@@ -71,28 +72,25 @@
     --steel-400: 220 8% 60%;
     --steel-600: 220 10% 32%;
     --steel-800: 220 14% 20%;
-    --midnight-950: 232 59% 10%;
-    --midnight-900: 223 46% 11%;
-    --midnight-800: 231 38% 16%;
+    --midnight-950: 0 0% 2%;
+    --midnight-900: 0 0% 4%;
+    --midnight-800: 0 0% 6%;
   }
 }
 
 @layer utilities {
   .gradient-hero {
-    background-image: linear-gradient(
-      180deg,
-      hsl(var(--graphite-900)) 0%,
-      hsl(var(--graphite-800)) 40%,
-      hsl(var(--background)) 100%
-    );
+    background-image: linear-gradient(180deg,
+        hsl(var(--graphite-900)) 0%,
+        hsl(var(--graphite-800)) 40%,
+        hsl(var(--background)) 100%);
   }
+
   .gradient-primary {
-    background-image: linear-gradient(
-      135deg,
-      hsl(var(--midnight-950)) 0%,
-      hsl(var(--midnight-800)) 50%,
-      hsl(var(--midnight-900)) 100%
-    );
+    background-image: linear-gradient(135deg,
+        hsl(var(--midnight-950)) 0%,
+        hsl(var(--midnight-800)) 50%,
+        hsl(var(--midnight-900)) 100%);
   }
 
   .card {
@@ -105,10 +103,32 @@
 }
 
 @layer base {
-  * { @apply border-border; }
-  body { @apply bg-background text-foreground antialiased; }
-  h1, h2, h3, h4, h5, h6 { @apply font-bold tracking-tight; }
-  h1 { @apply text-5xl md:text-6xl lg:text-7xl; }
-  h2 { @apply text-4xl md:text-5xl; }
-  h3 { @apply text-3xl md:text-4xl; }
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold tracking-tight;
+  }
+
+  h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl;
+  }
+
+  h3 {
+    @apply text-3xl md:text-4xl;
+  }
 }

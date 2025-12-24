@@ -83,10 +83,9 @@ const EnhancedSolutionTemplate = ({
   showHeroButtons = true,
   theme = "default",
 }: EnhancedSolutionTemplateProps) => {
-  const isDark = theme === "v2-dark";
-  const bgClass = isDark ? "bg-[#020202] text-white" : "bg-background";
-  const mutedTextClass = isDark ? "text-gray-400" : "text-muted-foreground";
-  const cardBgClass = isDark ? "bg-white/5 border-white/10" : "bg-card border-border";
+  const bgClass = "bg-background text-foreground";
+  const mutedTextClass = "text-muted-foreground";
+  const cardBgClass = "bg-card border-border";
 
   return (
     <div className={`min-h-screen ${bgClass}`}>
@@ -95,8 +94,10 @@ const EnhancedSolutionTemplate = ({
       {customHero ? (
         <>{customHero}</>
       ) : (
-        <section className={`relative py-24 overflow-hidden ${isDark ? "bg-gradient-to-br from-[#0a0a0a] to-[#020202]" : "gradient-primary"}`}>
+        <section className="relative py-24 overflow-hidden bg-background">
           <div className="absolute inset-0 bg-technical-grid opacity-30" />
+          {/* Optional: Add a subtle gradient overlay if needed, or rely on bg-background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-muted/50 to-background/50 pointer-events-none" />
 
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -146,7 +147,7 @@ const EnhancedSolutionTemplate = ({
 
       {/* Stats Section */}
       {stats.length > 0 && (
-        <div className={isDark ? "bg-[#020202]" : ""}>
+        <div className="bg-background">
           <StatsSection items={stats} variant={statsVariant} theme={theme} />
         </div>
       )}
@@ -155,7 +156,7 @@ const EnhancedSolutionTemplate = ({
 
       {/* Challenges Section */}
       {challenges.length > 0 && (
-        <div className={isDark ? "[&_section]:bg-white/5 [&_p]:text-gray-300 [&_div.bg-card]:bg-[#0B1120] [&_div.bg-card]:border-white/10" : ""}>
+        <div className="bg-background">
           <ChallengesSection items={challenges.map(c => c.text)} theme={theme} />
         </div>
       )}
@@ -220,7 +221,7 @@ const EnhancedSolutionTemplate = ({
 
       {/* Workflow Section */}
       {workflowSteps.length > 0 && (
-        <section className={`py-20 ${isDark ? "bg-white/5" : "bg-muted/30"}`}>
+        <section className={`py-20 bg-muted/30`}>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">

@@ -14,11 +14,10 @@ type StatsSectionProps = {
 };
 
 const StatsSection = ({ items, variant = "default", theme = "default" }: StatsSectionProps) => {
-  const isDark = theme === "v2-dark";
-  const bgClass = isDark ? "bg-[#020202] text-white" : "bg-background";
-  const cardBg = isDark ? "bg-white/5 border-white/10" : "bg-card border-border";
-  const mutedText = isDark ? "text-gray-400" : "text-muted-foreground";
-  const textClass = isDark ? "text-white" : "text-foreground";
+  const bgClass = "bg-background text-foreground";
+  const cardBg = "bg-card border-border shadow-sm";
+  const mutedText = "text-muted-foreground";
+  const textClass = "text-foreground";
 
   if (!items || items.length === 0) return null;
   if (variant === "animated") {

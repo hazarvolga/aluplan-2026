@@ -40,30 +40,19 @@ const WorkflowTabsTemplate = ({
   const [videoUrl, setVideoUrl] = useState<string | null>(null);
   const defaultCategory = categories[0]?.key ?? "cat-0";
 
-  const isDark = theme === "v2-dark";
-  const bgClass = isDark ? "bg-[#020202]" : "bg-gradient-to-b from-muted/20 to-background";
-  const textClass = isDark ? "text-white" : "text-foreground";
-  const mutedText = isDark ? "text-gray-400" : "text-muted-foreground";
+  const bgClass = "bg-gradient-to-b from-muted/20 to-background";
+  const textClass = "text-foreground";
+  const mutedText = "text-muted-foreground";
 
-  const tabsListClass = isDark
-    ? "bg-white/5 border-white/10"
-    : "bg-muted/30 border-border/50";
+  const tabsListClass = "bg-muted/30 border-border/50 border";
 
-  const tabTriggerClass = isDark
-    ? "data-[state=active]:bg-accent data-[state=active]:text-white data-[state=inactive]:hover:bg-white/5 data-[state=inactive]:text-gray-400"
-    : "data-[state=active]:bg-accent data-[state=active]:text-accent-foreground data-[state=inactive]:hover:bg-muted/50 data-[state=inactive]:text-muted-foreground";
+  const tabTriggerClass = "data-[state=active]:bg-accent data-[state=active]:text-accent-foreground data-[state=inactive]:hover:bg-muted/50 data-[state=inactive]:text-muted-foreground";
 
-  const subTabListClass = isDark
-    ? "bg-white/5 border-white/10"
-    : "bg-card/30 border-border/50";
+  const subTabListClass = "bg-card/30 border-border/50 border";
 
-  const subTabTriggerClass = isDark
-    ? "data-[state=active]:bg-accent/10 data-[state=active]:text-accent data-[state=active]:border-accent/20 data-[state=inactive]:hover:bg-white/5 data-[state=inactive]:text-gray-400"
-    : "data-[state=active]:bg-accent/10 data-[state=active]:text-accent data-[state=active]:border-accent/20 data-[state=inactive]:hover:bg-muted/30 data-[state=inactive]:text-muted-foreground";
+  const subTabTriggerClass = "data-[state=active]:bg-accent/10 data-[state=active]:text-accent data-[state=active]:border-accent/20 data-[state=inactive]:hover:bg-muted/30 data-[state=inactive]:text-muted-foreground";
 
-  const cardClass = isDark
-    ? "bg-white/5 border-white/10 text-white"
-    : "bg-card/50 border-border/50 text-foreground";
+  const cardClass = "bg-card/50 border-border/50 text-foreground";
 
   return (
     <section className={`py-20 ${bgClass}`}>
@@ -141,7 +130,7 @@ const WorkflowTabsTemplate = ({
                           <p className={`${mutedText} leading-relaxed`}>{item.description}</p>
                           {item.videoUrl && (
                             <div className="mt-6">
-                              <Button variant="outline" className={`gap-2 ${isDark ? "border-white/20 text-white hover:bg-white/10" : ""}`} onClick={() => setVideoUrl(item.videoUrl!)}>
+                              <Button variant="outline" className="gap-2 border-border hover:bg-muted/50" onClick={() => setVideoUrl(item.videoUrl!)}>
                                 <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
                                 Videoyu İzle
                               </Button>

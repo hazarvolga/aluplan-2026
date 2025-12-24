@@ -9,11 +9,10 @@ type ChallengesSectionProps = {
 };
 
 const ChallengesSection = ({ items, id, theme = "default" }: ChallengesSectionProps) => {
-  const isDark = theme === "v2-dark";
-  const bgClass = isDark ? "bg-[#020202]" : "bg-muted/30";
-  const cardBg = isDark ? "bg-white/5 border-white/10" : "bg-card border-border";
-  const mutedText = isDark ? "text-gray-300" : "text-muted-foreground";
-  const textClass = isDark ? "text-white" : "text-foreground";
+  const bgClass = "bg-muted/30";
+  const cardBg = "bg-card border-border";
+  const mutedText = "text-muted-foreground";
+  const textClass = "text-foreground";
 
   if (!items || items.length === 0) return null;
   return (
