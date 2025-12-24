@@ -114,11 +114,7 @@ test("pythonpart renders", async ({ page }) => {
   await expect(page.locator("h1, h2, [role=heading]").first()).toBeVisible({ timeout: 10000 });
 });
 
-test("pythonpart generator renders", async ({ page }) => {
-  await page.goto("/solutions/pythonpart-generator", { waitUntil: "domcontentloaded" });
-  await page.waitForLoadState("networkidle");
-  await expect(page.locator("h1, h2, [role=heading]").first()).toBeVisible({ timeout: 10000 });
-});
+
 
 test("bimplus renders", async ({ page }) => {
   await page.goto("/solutions/bimplus", { waitUntil: "domcontentloaded" });

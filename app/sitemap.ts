@@ -47,7 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/solutions/site-planning",
     "/solutions/cds-addon",
     "/solutions/pythonpart",
-    "/solutions/pythonpart-generator",
+
     "/solutions/bimplus",
     "/solutions/addon-channel",
     "/solutions/oska",

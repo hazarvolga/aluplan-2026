@@ -30,7 +30,7 @@ const CDSLicenseInfoSection = ({
   imageUrl = licenseImg,
   imageAlt = "Lisans",
   links = [],
-  quoteFormUrl = "https://forms.office.com/r/XLQm9JPTSR",
+  quoteFormUrl = "https://forms.office.com/r/hXhnKAG912",
   quoteFormText = "Teklif Talep Formu",
 }: CDSLicenseInfoSectionProps) => {
   return (
@@ -76,15 +76,15 @@ const CDSLicenseInfoSection = ({
                   </p>
                   <div className="flex flex-col gap-2">
                     {links.map((link, idx) => (
-                      <Button 
-                        key={idx} 
-                        asChild 
-                        variant={link.variant || "link"} 
+                      <Button
+                        key={idx}
+                        asChild
+                        variant={link.variant || "link"}
                         className={link.variant === "link" ? "p-0 h-auto justify-start" : "w-full sm:w-auto"}
                       >
-                        <a 
-                          href={link.url} 
-                          target="_blank" 
+                        <a
+                          href={link.url}
+                          target="_blank"
                           rel="noopener noreferrer"
                           className={link.variant === "link" ? "text-accent hover:opacity-80" : ""}
                         >
@@ -99,9 +99,9 @@ const CDSLicenseInfoSection = ({
               {quoteFormUrl && (
                 <div className="border-t border-border pt-6">
                   <Button asChild variant="default" className="w-full sm:w-auto bg-accent hover:bg-accent/90 text-graphite-950 font-semibold">
-                    <a 
-                      href={quoteFormUrl} 
-                      target="_blank" 
+                    <a
+                      href={quoteFormUrl}
+                      target="_blank"
                       rel="noopener noreferrer"
                     >
                       {quoteFormText}
@@ -114,8 +114,8 @@ const CDSLicenseInfoSection = ({
             {/* Right Column - Image */}
             {imageUrl && (
               <div className="flex items-center justify-center lg:justify-end">
-                <Image 
-                  src={imageUrl} 
+                <Image
+                  src={imageUrl}
                   alt={imageAlt}
                   {...(typeof imageUrl === 'string' ? { width: 512, height: 384 } : {})}
                   className="w-full max-w-lg rounded-lg shadow-lg h-auto"

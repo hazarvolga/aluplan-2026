@@ -116,9 +116,11 @@ const EnhancedSolutionTemplate = ({
                       <Play className="mr-2 h-5 w-5" />
                       İŞ AKIŞINI KEŞFEDİN
                     </Button>
-                    <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
-                      Teklif Al
-                      <ArrowRight className="ml-2 h-5 w-5" />
+                    <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10" asChild>
+                      <a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">
+                        Teklif Talep Formu
+                        <ArrowRight className="ml-2 h-5 w-5" />
+                      </a>
                     </Button>
                   </div>
                 )}

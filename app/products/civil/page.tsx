@@ -178,7 +178,7 @@ export default function Page() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">İleri Düzey Altyapı Tasarımından <span className="text-accent">İnşa Akışlarına</span> yönelik Çözüm.</h1>
             <div className="flex flex-wrap gap-4">
               <Button size="lg" asChild className="bg-accent hover:bg-accent/90"><a href="https://www.allplan.com/trial-or-subscription/" target="_blank" rel="noopener noreferrer">Ücretsiz Dene<ArrowRight className="ml-2 h-5 w-5" /></a></Button>
-              <Button variant="outline" size="lg" asChild><Link href="/contact">Teklif Alın</Link></Button>
+              <Button variant="outline" size="lg" asChild><a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">Teklif Talep Formu</a></Button>
               <Button variant="outline" size="lg" asChild><a href="https://www.allplan.com/subscription-faq/" target="_blank" rel="noopener noreferrer"><ExternalLink className="mr-2 h-4 w-4" />Abonelik SSS</a></Button>
             </div>
           </div>

@@ -30,9 +30,9 @@ export const solutionsMenu: MegaMenuSection[] = [
   {
     title: "EKLENTİLER",
     items: [
-      { name: "Ek Modüller", href: "/solutions/extra-modules" },
+
       { name: "CDS Add-On", href: "/solutions/cds-addon" },
-      { name: "Allto PytonPart Generator", href: "/solutions/pythonpart-generator" },
+      { name: "Allto PytonPart Generator", href: "https://allplantools.com/" },
       { name: "Allto PytonPart", href: "/solutions/pythonpart" },
       { name: "AX3000 MEP", href: "/solutions/ax3000" },
       { name: "Scalypso", href: "/solutions/scalypso" },

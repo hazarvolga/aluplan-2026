@@ -1,14 +1,13 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+
 
 type AddonDetailTemplateProps = {
   title: string;
   subtitle?: string;
-  description?: string;
+  description?: React.ReactNode;
   sections: React.ReactNode[];
   customHero?: React.ReactNode;
-  showExploreButton?: boolean;
+
 };
 
 const AddonDetailTemplate: React.FC<AddonDetailTemplateProps> = ({
@@ -17,10 +16,9 @@ const AddonDetailTemplate: React.FC<AddonDetailTemplateProps> = ({
   description,
   sections,
   customHero,
-  showExploreButton = true,
 }) => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-[#020202] text-white dark">
       {customHero ? (
         <>{customHero}</>
       ) : (
@@ -37,16 +35,8 @@ const AddonDetailTemplate: React.FC<AddonDetailTemplateProps> = ({
                 </h2>
               )}
               {description && (
-                <p className="text-lg text-white/80 leading-relaxed">
+                <div className="text-lg text-white/80 leading-relaxed">
                   {description}
-                </p>
-              )}
-              {showExploreButton && (
-                <div className="mt-6">
-                  <Button size="lg" className="bg-white text-foreground hover:bg-white/90">
-                    Keşfet
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
                 </div>
               )}
             </div>

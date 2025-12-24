@@ -29,8 +29,6 @@ export default function ClientPage() {
         badge="ALLPLAN ADD-ON"
         title="CDS Eklentiler"
         description="Allplan CDS ek eklenti ailesi: üretkenliği artıran pratik araçlar ve dönüştürücüler."
-        primaryButton={{ text: "İletişime Geçin", href: "/contact" }}
-        secondaryButton={{ text: "Çözümler", href: "/solutions" }}
       />
       <section className="py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

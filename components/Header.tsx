@@ -225,8 +225,10 @@ const Header = () => {
               {language === "tr" ? "Ücretsiz Deneme" : "Free Trial"}
             </Button>
 
-            <Button className="hidden sm:inline-flex bg-[#3B82F6] hover:bg-[#2563eb] text-white border-0" size="sm">
-              {language === "tr" ? "Teklif Al" : "Get Quote"}
+            <Button asChild className="hidden sm:inline-flex bg-[#3B82F6] hover:bg-[#2563eb] text-white border-0" size="sm">
+              <a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">
+                {language === "tr" ? "Teklif Talep Formu" : "Get Quote"}
+              </a>
             </Button>
 
             {/* Mobile menu button */}
@@ -263,8 +265,10 @@ const Header = () => {
                   <Button variant="outline" size="sm" className="w-full border-white/10 bg-white/5 text-white">
                     {language === "tr" ? "Ücretsiz Deneme" : "Free Trial"}
                   </Button>
-                  <Button className="w-full bg-[#3B82F6] hover:bg-[#2563eb] text-white">
-                    {language === "tr" ? "Teklif Al" : "Get Quote"}
+                  <Button asChild className="w-full bg-[#3B82F6] hover:bg-[#2563eb] text-white">
+                    <a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">
+                      {language === "tr" ? "Teklif Talep Formu" : "Get Quote"}
+                    </a>
                   </Button>
                 </div>
               </div>
