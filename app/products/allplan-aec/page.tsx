@@ -49,7 +49,7 @@ const benefitsItems = [
   { title: "TEK YAZILIMLA TAM ÇÖZÜM", description: "Küçükten son derece karmaşık olana kadar her tür inşaat için uygundur, büyük model verilerini hızlı ve güvenli bir şekilde kayıp olmadan kolayca işler.", image: reasonWorkWayWant },
   { title: "İSTEDİĞİNİZ GİBİ ÇALIŞIN", description: "2B, 2.5B ve 3B'de esnek iş akışlarının yanı sıra tam obje yönelimli BIM çalışma metodolojisi.", image: reasonPowerfulModeling },
   { title: "ÜRETKEN İŞBİRLİĞİ", description: "Çok kullanıcılı gerçek zamanlı çalışma için entegre bulut teknolojisinin yanı sıra iş ortaklarıyla model ve proje işbirliği.", image: reasonProductiveCollab },
-  { title: "İKNA EDİCİ GÖRSELLEŞTİRMELER", description: "Tools included to enable rapid high-quality presentation of projects, bringing clients and stakeholders instantly up to speed with designs.", image: reasonConvincingVisualizations },
+  { title: "İKNA EDİCİ GÖRSELLEŞTİRMELER", description: "Projelerin hızlı ve kaliteli sunumunu sağlayan araçlar; müşterileri ve paydaşları tasarıma anında ikna eder.", image: reasonConvincingVisualizations },
   { title: "GEREKSİNİMLERİ KOLAYCA DEĞİŞTİRİN", description: "Planları sıfırdan yeniden modellemek zorunda kalmadan uyarlayın ve değiştirin, zamandan tasarruf edin ve değişikliklere daha kolay ve hızlı yanıt verin.", image: reasonEasyModifyRequirements },
   { title: "ÜSTÜN KALİTELİ TESLİMATLAR", description: "Doğrudan 3B modelden hızlı ve doğru bir şekilde planlar, çizimler ve raporlar oluşturun ve yüksek kaliteli belgeler için bilgi alışverişini kontrol edin.", image: reasonAccurateDeliverables },
 ];
@@ -58,52 +58,64 @@ const tabFeatures = {
   title: "Allplan AEC'nin Özellikleri",
   subtitle: "Mimari ve Yapısal Mühendislik için güçlü araçlar",
   tabs: [
-    { id: "mimari", title: "Mimari", subtabs: [
-      { id: "gelismis-yapi-bilesenleri", title: "Gelişmiş Yapı Bileşenleri", content: "Kullanıma hazır sihirbazlar aracılığıyla, 2.5D’de bile bileşenleri kullanarak projenizi hızla oluşturun.", image: archAdvancedComponents },
-      { id: "serbest-bicim-modelleme", title: "Sınırsız 3B Serbest Biçim Modellemesi", content: "Kolayca herhangi bir şekle sahip objeler oluşturun ve yaratıcılığınızı ve hayal gücünüzü özgürce ifade edin.", image: archFreeform },
-      { id: "metraj-raporlar", title: "Hassas Metrajlar ve Raporlar", content: "Modelinizi güvenilir bir şekilde hesaplayın, proje gelişiminizi belgeleyin, satış sunumları oluşturun ve ayrıntılı listeleri kullanarak ihaleye hazırlanın.", image: archQTO },
-      { id: "gorsellestirme-araclari", title: "Entegre Görselleştirme Araçları", content: "Gerçek Zamanlı Render, 3B PDF’ler, Lumion Live-Sync ve eskizler ile planlanan projeyi daha iyi anlamak için görselleştirin.", image: archRenderer },
-      { id: "mukemmel-paftalar", title: "Mükemmel Paftalar", content: "Müşteriler ve yükleniciler için hızlı ve kolay bir şekilde planlar, çizimler ve sunumlar oluşturun.", image: archLayouts },
-    ]},
-    { id: "yapisal", title: "Yapısal Mühendislik", subtabs: [
-      { id: "kapsamli-3b-modelleme", title: "Kapsamlı 3B Modelleme", content: "Duvarlar, döşemeler ve kolonlar gibi parametrik standart elemanlarla zahmetsizce modelleyin.", image: str3DModeling },
-      { id: "gorunumler-kesitler", title: "Ölçülü Görünümler ve Kesitler", content: "Tüm teslimatlar genelinde otomatik değişikliklerle zamandan tasarruf edin; modelde veya teknik resimlerde düzenleyin.", image: strViewsSections },
-      { id: "hassas-3b-donatilandirma", title: "Hassas 3B Donatılandırma", content: "Yapı elemanlarına yönelik otomatik çözümlerle donatılandırma gereksinimlerini kolay ve hızlı şekilde detaylandırın.", image: strReinforcement },
-      { id: "hizli-prekast-detaylandirma", title: "Hızlı Prekast Detaylandırma", content: "Prekast elemanlar için üretime hazır detaylandırmayı hızla oluşturun.", image: strPrecastDetailing },
-      { id: "str-celik-araclari", title: "Strüktürel Çelik Araçları", content: "Merdivenler, korkuluklar ve karmaşık geometri dahil olmak üzere çeşitli çelik elemanları hızlı ve doğru bir şekilde modellemek için otomatik araçlar.", image: strSteel },
-    ]},
+    {
+      id: "mimari", title: "Mimari", subtabs: [
+        { id: "gelismis-yapi-bilesenleri", title: "Gelişmiş Yapı Bileşenleri", content: "Kullanıma hazır sihirbazlar aracılığıyla, 2.5D’de bile bileşenleri kullanarak projenizi hızla oluşturun.", image: archAdvancedComponents },
+        { id: "serbest-bicim-modelleme", title: "Sınırsız 3B Serbest Biçim Modellemesi", content: "Kolayca herhangi bir şekle sahip objeler oluşturun ve yaratıcılığınızı ve hayal gücünüzü özgürce ifade edin.", image: archFreeform },
+        { id: "metraj-raporlar", title: "Hassas Metrajlar ve Raporlar", content: "Modelinizi güvenilir bir şekilde hesaplayın, proje gelişiminizi belgeleyin, satış sunumları oluşturun ve ayrıntılı listeleri kullanarak ihaleye hazırlanın.", image: archQTO },
+        { id: "gorsellestirme-araclari", title: "Entegre Görselleştirme Araçları", content: "Gerçek Zamanlı Render, 3B PDF’ler, Lumion Live-Sync ve eskizler ile planlanan projeyi daha iyi anlamak için görselleştirin.", image: archRenderer },
+        { id: "mukemmel-paftalar", title: "Mükemmel Paftalar", content: "Müşteriler ve yükleniciler için hızlı ve kolay bir şekilde planlar, çizimler ve sunumlar oluşturun.", image: archLayouts },
+      ]
+    },
+    {
+      id: "yapisal", title: "Yapısal Mühendislik", subtabs: [
+        { id: "kapsamli-3b-modelleme", title: "Kapsamlı 3B Modelleme", content: "Duvarlar, döşemeler ve kolonlar gibi parametrik standart elemanlarla zahmetsizce modelleyin.", image: str3DModeling },
+        { id: "gorunumler-kesitler", title: "Ölçülü Görünümler ve Kesitler", content: "Tüm teslimatlar genelinde otomatik değişikliklerle zamandan tasarruf edin; modelde veya teknik resimlerde düzenleyin.", image: strViewsSections },
+        { id: "hassas-3b-donatilandirma", title: "Hassas 3B Donatılandırma", content: "Yapı elemanlarına yönelik otomatik çözümlerle donatılandırma gereksinimlerini kolay ve hızlı şekilde detaylandırın.", image: strReinforcement },
+        { id: "hizli-prekast-detaylandirma", title: "Hızlı Prekast Detaylandırma", content: "Prekast elemanlar için üretime hazır detaylandırmayı hızla oluşturun.", image: strPrecastDetailing },
+        { id: "str-celik-araclari", title: "Strüktürel Çelik Araçları", content: "Merdivenler, korkuluklar ve karmaşık geometri dahil olmak üzere çeşitli çelik elemanları hızlı ve doğru bir şekilde modellemek için otomatik araçlar.", image: strSteel },
+      ]
+    },
   ],
 };
 
 const workflowCategories = [
   { key: "mimari", label: "Mimari", items: tabFeatures.tabs[0].subtabs.map((s) => ({ title: s.title, description: s.content, image: s.image })) },
   { key: "str", label: "Strüktürel Mühendislik", items: tabFeatures.tabs[1].subtabs.map((s) => ({ title: s.title, description: s.content, image: s.image })) },
-  { key: "alt-yapi", label: "Altyapı Mühendisliği", items: [
-    { title: "Sınırsız 3B Serbest Biçim Modellemesi", description: "Her tür karmaşık obje için güçlü serbest biçimli modelleme araçları.", image: infraFreeform },
-    { title: "Güçlü Arazi Modellemesi", description: "Arazileri doğru ve hızlı şekilde modelleyin, sahayı güvenilir şekilde tasarlayın.", image: infraTerrain },
-    { title: "Parametrik Yol Modellemesi", description: "Yol elemanlarını tamamen parametrik yerleştirin ve uyarlayın.", image: infraParamRoad },
-    { title: "Gelişmiş Yardımcı Araçlar", description: "Şantiye ve altyapı planlamasını destekleyen kapsamlı yardımcı araçlar.", image: infraSiteTools },
-    { title: "Karmaşık Donatı Detaylandırma", description: "Zor geometri ve değişken kesitlerde donatı detaylandırmayı hassas ve hızlı yapın.", image: infraComplexRebar },
-  ]},
-  { key: "prekast", label: "Prefabrik Üretim", items: [
-    { title: "Otomatik Prefabrik Tasarım", description: "Prekast elemanları otomatik ve doğru şekilde tasarlayın.", image: precastAutomated },
-    { title: "BIM Modellerini İçe Aktar", description: "Harici BIM modellerini kolayca içe aktarın ve entegre edin.", image: precastImportBIM },
-    { title: "Parametrik Giriş ve Serbest Biçimli Modelleme", description: "Parametrik tanımlar ve serbest biçimli modellemeyi birlikte kullanın.", image: precastParamModel },
-    { title: "Yüksek Düzeyde Otomatik Üretime Yönelik Araçlar", description: "Üretim için yüksek otomasyon düzeyine sahip araçlarla verimi arttırın.", image: precastAutomatedFab },
-  ]},
-  { key: "santiye", label: "Şantiye Planlaması", items: [
-    { title: "Hızla 2B’den 3B’ye", description: "2B’den 3B’ye hızlı geçiş ile planları model tabanına taşıyın.", image: siteFast3D },
-    { title: "İhale Modellerinin Hazırlanması", description: "İhale süreçleri için model tabanlı hazırlık ve planlama.", image: siteTenderModels },
-    { title: "Şantiye Araçları", description: "Şantiye yerleşimi ve ekipman planlaması için araçlar.", image: siteTools },
-    { title: "Model Tabanlı Planlama", description: "Model tabanlı zaman planlama ve görsel akış.", image: siteModelPlanning },
-    { title: "BIM2Site", description: "Sahada modelle bağlantılı çalışma.", image: siteBIM2Site },
-  ]},
-  { key: "isbirligi", label: "İşbirliği", items: [
-    { title: "Üstün Konu (Sorun) Yönetimi", description: "Projelerde görev ve konu yönetimiyle koordinasyon sağlayın.", image: collIssueMgmt },
-    { title: "Düzgün Belge Yönetimi", description: "Plan dağıtımı ve belge yönetimini merkezileştirin.", image: collDocMgmt },
-    { title: "Modellerin Koordinasyonu", description: "Seamless entegrasyon ile model koordinasyonu gerçekleştirin.", image: collCoordination },
-    { title: "Birlikte Çalışın – Her Yerde, Her Zaman", description: "Bulut depolama ve kaynaklarla her zaman beraber çalışın.", image: collWorkAnywhere },
-  ]},
+  {
+    key: "alt-yapi", label: "Altyapı Mühendisliği", items: [
+      { title: "Sınırsız 3B Serbest Biçim Modellemesi", description: "Her tür karmaşık obje için güçlü serbest biçimli modelleme araçları.", image: infraFreeform },
+      { title: "Güçlü Arazi Modellemesi", description: "Arazileri doğru ve hızlı şekilde modelleyin, sahayı güvenilir şekilde tasarlayın.", image: infraTerrain },
+      { title: "Parametrik Yol Modellemesi", description: "Yol elemanlarını tamamen parametrik yerleştirin ve uyarlayın.", image: infraParamRoad },
+      { title: "Gelişmiş Yardımcı Araçlar", description: "Şantiye ve altyapı planlamasını destekleyen kapsamlı yardımcı araçlar.", image: infraSiteTools },
+      { title: "Karmaşık Donatı Detaylandırma", description: "Zor geometri ve değişken kesitlerde donatı detaylandırmayı hassas ve hızlı yapın.", image: infraComplexRebar },
+    ]
+  },
+  {
+    key: "prekast", label: "Prefabrik Üretim", items: [
+      { title: "Otomatik Prefabrik Tasarım", description: "Prekast elemanları otomatik ve doğru şekilde tasarlayın.", image: precastAutomated },
+      { title: "BIM Modellerini İçe Aktar", description: "Harici BIM modellerini kolayca içe aktarın ve entegre edin.", image: precastImportBIM },
+      { title: "Parametrik Giriş ve Serbest Biçimli Modelleme", description: "Parametrik tanımlar ve serbest biçimli modellemeyi birlikte kullanın.", image: precastParamModel },
+      { title: "Yüksek Düzeyde Otomatik Üretime Yönelik Araçlar", description: "Üretim için yüksek otomasyon düzeyine sahip araçlarla verimi arttırın.", image: precastAutomatedFab },
+    ]
+  },
+  {
+    key: "santiye", label: "Şantiye Planlaması", items: [
+      { title: "Hızla 2B’den 3B’ye", description: "2B’den 3B’ye hızlı geçiş ile planları model tabanına taşıyın.", image: siteFast3D },
+      { title: "İhale Modellerinin Hazırlanması", description: "İhale süreçleri için model tabanlı hazırlık ve planlama.", image: siteTenderModels },
+      { title: "Şantiye Araçları", description: "Şantiye yerleşimi ve ekipman planlaması için araçlar.", image: siteTools },
+      { title: "Model Tabanlı Planlama", description: "Model tabanlı zaman planlama ve görsel akış.", image: siteModelPlanning },
+      { title: "BIM2Site", description: "Sahada modelle bağlantılı çalışma.", image: siteBIM2Site },
+    ]
+  },
+  {
+    key: "isbirligi", label: "İşbirliği", items: [
+      { title: "Üstün Konu (Sorun) Yönetimi", description: "Projelerde görev ve konu yönetimiyle koordinasyon sağlayın.", image: collIssueMgmt },
+      { title: "Düzgün Belge Yönetimi", description: "Plan dağıtımı ve belge yönetimini merkezileştirin.", image: collDocMgmt },
+      { title: "Modellerin Koordinasyonu", description: "Seamless entegrasyon ile model koordinasyonu gerçekleştirin.", image: collCoordination },
+      { title: "Birlikte Çalışın – Her Yerde, Her Zaman", description: "Bulut depolama ve kaynaklarla her zaman beraber çalışın.", image: collWorkAnywhere },
+    ]
+  },
 ];
 
 const additionalButtons = [
