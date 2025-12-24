@@ -58,28 +58,28 @@ const reasons = [
 const workflowCategories = [
   {
     key: "site-analysis", label: "1 / Şantiye Analizi", items: [
-      { title: "Terrain Survey", description: "Büyük nokta bulutları ile yüksek çözünürlüklü arazi modelleri.", image: imgWorkflowSurvey },
-      { title: "Geodata Processing (SHP)", description: "Parsel sınırları, taşkın alanları, yol ağları ve kritik zonlar.", image: imgWorkflowGeodata },
-      { title: "Data Exchange", description: "IFC 4.3’e uygun yol elemanları ve mantıksal bölümler.", image: imgWorkflowExchange },
+      { title: "Arazi Ölçümü", description: "Büyük nokta bulutları ile yüksek çözünürlüklü arazi modelleri.", image: imgWorkflowSurvey },
+      { title: "Coğrafi Veri İşleme (SHP)", description: "Parsel sınırları, taşkın alanları, yol ağları ve kritik zonlar.", image: imgWorkflowGeodata },
+      { title: "Veri Alışverişi", description: "IFC 4.3'e uygun yol elemanları ve mantıksal bölümler.", image: imgWorkflowExchange },
     ]
   },
   {
     key: "modeling", label: "2 / Modelleme", items: [
-      { title: "Parametric Modeling", description: "Tutarlı parametrik kavramla her zaman geometrik uyarlamalar.", image: imgWorkflowParametric },
-      { title: "Free-form Modeling", description: "Serbest profillerin ekstrüzyonu ile ray, bariyer ve destekler.", image: imgWorkflowFreeform },
-      { title: "Visualisation", description: "Disiplinler arası analiz ve iletişimi kolaylaştırır.", image: imgWorkflowVisualisation },
+      { title: "Parametrik Modelleme", description: "Tutarlı parametrik kavramla her zaman geometrik uyarlamalar.", image: imgWorkflowParametric },
+      { title: "Serbest Form Modelleme", description: "Serbest profillerin ekstrüzyonu ile ray, bariyer ve destekler.", image: imgWorkflowFreeform },
+      { title: "Görselleştirme", description: "Disiplinler arası analiz ve iletişimi kolaylaştırır.", image: imgWorkflowVisualisation },
     ]
   },
   {
     key: "model-analysis", label: "3 / Model Analizi", items: [
-      { title: "Variant Comparison", description: "Farklı hizalamaları hızla kaydedin ve karşılaştırın.", image: imgWorkflowVariant },
-      { title: "Change Management", description: "Drone verisiyle saha durumunu modele karşılaştırın.", image: imgWorkflowChange },
+      { title: "Varyant Karşılaştırma", description: "Farklı hizalamaları hızla kaydedin ve karşılaştırın.", image: imgWorkflowVariant },
+      { title: "Değişim Yönetimi", description: "Drone verisiyle saha durumunu modele karşılaştırın.", image: imgWorkflowChange },
     ]
   },
   {
     key: "deliverables", label: "4 / Teslimatlar", items: [
-      { title: "Drawings", description: "Kesit, boyuna kesit ve saha planı; modelle senkron.", image: imgWorkflowDrawings },
-      { title: "Reports", description: "Kazık noktaları, mesafeler, hacimler ve veri aktarımı.", image: imgWorkflowReports },
+      { title: "Çizimler", description: "Kesit, boyuna kesit ve saha planı; modelle senkron.", image: imgWorkflowDrawings },
+      { title: "Raporlar", description: "Kazık noktaları, mesafeler, hacimler ve veri aktarımı.", image: imgWorkflowReports },
     ]
   },
 ];
