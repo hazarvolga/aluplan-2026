@@ -107,7 +107,9 @@ const structuralCategories = [
 ];
 
 const preWorkflowSection = (
-  <WorkflowTabsTemplate title="İnşaat Mühendisliği İş Akışları" categories={structuralCategories} />
+  <section id="insaat-muhendisligi-is-akislari">
+    <WorkflowTabsTemplate title="İnşaat Mühendisliği İş Akışları" categories={structuralCategories} />
+  </section>
 );
 
 const preChallengesSection = <></>;
