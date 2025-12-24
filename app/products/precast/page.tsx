@@ -6,7 +6,7 @@ import Image, { StaticImageData } from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { ArrowRight, ZoomIn, X, FileText, Layers, MousePointerClick, Box, Import, Database } from "lucide-react";
+import { ArrowRight, ZoomIn, X, FileText, Layers, MousePointerClick, Box, Import, Database, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import ChallengesSection from "@/components/ChallengesSection";
 import StatsSection from "@/components/StatsSection";
