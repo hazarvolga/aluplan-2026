@@ -110,7 +110,7 @@ export default function Page() {
     <div className="dark min-h-screen bg-graphite-950">
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-r from-black/80 to-black/40">
         <div className="absolute inset-0 opacity-[0.02] bg-technical-grid" />
-        <div className="container mx-auto px-4 py-20">
+        <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="max-w-3xl">
             <span className="inline-block px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-medium mb-6">/ ALLPLAN Ultimate</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Tasarımdan inşaata kadar tam iş akışı için kapsamlı <span className="text-accent">BIM</span> çözümü.</h1>
