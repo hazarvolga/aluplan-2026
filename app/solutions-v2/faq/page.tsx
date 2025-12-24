@@ -110,7 +110,7 @@ export default function FAQPage() {
                                 <AccordionItem value="item-4" className="border border-white/10 rounded-xl bg-[#111] px-4">
                                     <AccordionTrigger className="text-white hover:text-[#3B82F6] text-left uppercase tracking-wide">Ödemeyi nasıl yapabilirim?</AccordionTrigger>
                                     <AccordionContent className="text-gray-400 leading-relaxed">
-                                        Ödemeler 1 aylık, 1 yıllık veya 3 yıllık dönemler halinde yapılabilir. Ödeme yöntemleri ülkeye göre değişmekle birlikte genellikle Kredi Kartı veya Havale/EFT (SEPA) şeklindedir. Ödeme, tüm abonelik süresi için peşin alınır.
+                                        Ödemeler 1 yıllık veya 3 yıllık dönemler halinde yapılabilir. Ödeme yöntemleri ülkeye göre değişmekle birlikte genellikle Kredi Kartı veya Havale/EFT (SEPA) şeklindedir. Ödeme, tüm abonelik süresi için peşin alınır.
                                     </AccordionContent>
                                 </AccordionItem>
 
