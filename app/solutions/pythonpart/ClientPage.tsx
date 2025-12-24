@@ -69,15 +69,18 @@ const paidPythonParts = [
 const freePythonParts = [
   {
     title: "ALLPLAN Backup Files - Drawing Recovery",
-    description: "Have ever lost a drawing file just because you forgot to save it or you couldn't save it (due to software crash)? ALLTO has developed Backup files in ALLPLAN help ensure the safety of your drawing data. By saving your work frequently, you can ensure a minimum of lost data."
+    description: "Have ever lost a drawing file just because you forgot to save it or you couldn't save it (due to software crash)? ALLTO has developed Backup files in ALLPLAN help ensure the safety of your drawing data. By saving your work frequently, you can ensure a minimum of lost data.",
+    videoUrl: "https://www.youtube.com/embed/LXwICpjeZpo"
   },
   {
     title: "Detect IFC Model Changes",
-    description: "This python part in Allplan Software detects the geometric differences between two IFC files and merges only the modifications (new, deleted and modified elements) into the currently drawing file (that project can also be an empty one). Modifications can be viewed and managed in both 2D and 3D views."
+    description: "This python part in Allplan Software detects the geometric differences between two IFC files and merges only the modifications (new, deleted and modified elements) into the currently drawing file (that project can also be an empty one). Modifications can be viewed and managed in both 2D and 3D views.",
+    videoUrl: "https://www.youtube.com/embed/SYx4kZYsmzc"
   },
   {
     title: "Converting from 2D lines/polylines to architecture components",
-    description: "ALLPLAN has been an innovative pioneer in the area of 3D design, from 3D modeling to component-oriented, digital building models as the basis for the BIM design method. With ALLTO PythonParts, it can be – see how easy it is to convert from 2D lines/polylines to architecture components in just some steps with the right tool."
+    description: "ALLPLAN has been an innovative pioneer in the area of 3D design, from 3D modeling to component-oriented, digital building models as the basis for the BIM design method. With ALLTO PythonParts, it can be – see how easy it is to convert from 2D lines/polylines to architecture components in just some steps with the right tool.",
+    videoUrl: "https://www.youtube.com/embed/AdsiUeBRwxM"
   },
   {
     title: "Exporting IFC files in ALLPLAN faster with ALLTO PythonParts",
