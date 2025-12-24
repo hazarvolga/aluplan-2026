@@ -104,7 +104,11 @@ export default function ClientPage() {
                 <div className="mt-8 p-6 bg-accent/10 rounded-lg">
                   <h4 className="font-semibold mb-2">Acil Destek mi Gerekiyor?</h4>
                   <p className="text-sm text-muted-foreground mb-4">Mevcut müşterilerimiz için 7/24 teknik destek hattımız aktif.</p>
-                  <Button variant="outline" size="sm">Destek Merkezine Git</Button>
+                  <Button variant="outline" size="sm" asChild>
+                    <a href="https://aluplan.net.tr" target="_blank" rel="noopener noreferrer">
+                      Destek Merkezine Git
+                    </a>
+                  </Button>
                 </div>
               </div>
             </div>
