@@ -12,6 +12,7 @@ import PostHeroSection from "@/components/PostHeroSection";
 
 // Statik görseller
 import heroImg from "@/assets/products/allplan-basic/hero.jpg";
+import { WorkflowLinksSection } from "@/components/WorkflowLinksSection";
 import interfacesImg from "@/assets/products/allplan-basic/interfaces.jpg";
 import clashDetectionImg from "@/assets/products/allplan-basic/clash-detection.jpg";
 import layoutingImg from "@/assets/products/allplan-basic/layouting.png";
@@ -122,6 +123,15 @@ export default function Page() {
           "• Temel bulut işlevselliği (Bimplus)"
         ]}
         videoUrl="https://www.youtube.com/embed/SnuaHSL18e8"
+      />
+
+      <WorkflowLinksSection
+        links={[
+          { text: "Sürümleri Görüntüle", href: "/package-overview", external: true, color: "#8B5CF6" },
+          { text: "Tasarım için İş Akışları", href: "/solutions/architecture#mimari-is-akislari", external: false, color: "#3B82F6" },
+          { text: "İnşaat Mühendisliği için İş Akışları", href: "/solutions/structural#insaat-muhendisligi-is-akislari", external: false, color: "#10B981" },
+          { text: "Altyapı Mühendisliği için İş Akışları", href: "/solutions/infrastructure#altyapi-muhendisligi-is-akislari", external: false, color: "#F59E0B" },
+        ]}
       />
 
       <ReasonsSection

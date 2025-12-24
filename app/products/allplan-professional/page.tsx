@@ -10,6 +10,7 @@ import VideoModal from "@/components/VideoModal";
 import PostHeroSection from "@/components/PostHeroSection";
 import ReasonsSection from "@/components/ReasonsSection";
 import CloudServicesSection from "@/components/CloudServicesSection";
+import { WorkflowLinksSection } from "@/components/WorkflowLinksSection";
 
 import heroImg from "@/assets/products/allplan-professional/hero.jpg";
 
@@ -176,6 +177,15 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <WorkflowLinksSection
+        links={[
+          { text: "Sürümleri Görüntüle", href: "/package-overview", external: true, color: "#8B5CF6" },
+          { text: "Tasarım için İş Akışları", href: "/solutions/architecture#mimari-is-akislari", external: false, color: "#3B82F6" },
+          { text: "İnşaat Mühendisliği için İş Akışları", href: "/solutions/structural#insaat-muhendisligi-is-akislari", external: false, color: "#10B981" },
+          { text: "Altyapı Mühendisliği için İş Akışları", href: "/solutions/infrastructure#altyapi-muhendisligi-is-akislari", external: false, color: "#F59E0B" },
+        ]}
+      />
 
       {/* Faydalar Section */}
       <ReasonsSection

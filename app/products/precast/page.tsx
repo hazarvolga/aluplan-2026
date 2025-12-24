@@ -10,6 +10,7 @@ import { ArrowRight, ZoomIn, X, FileText, Layers, MousePointerClick, Box, Import
 import Link from "next/link";
 import ChallengesSection from "@/components/ChallengesSection";
 import StatsSection from "@/components/StatsSection";
+import { WorkflowLinksSection } from "@/components/WorkflowLinksSection";
 import heroImage from "@/assets/solutions/precast-hero.jpg";
 import automatedPrecastImg from "@/assets/products/precast/automated-precast-design.jpg";
 import automatedShopDrawingsImg from "@/assets/products/precast/automated-shop-drawings.jpg";
@@ -135,6 +136,15 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <WorkflowLinksSection
+        links={[
+          { text: "Sürümleri Görüntüle", href: "/package-overview", external: true, color: "#8B5CF6" },
+          { text: "Tasarım için İş Akışları", href: "/solutions/architecture#mimari-is-akislari", external: false, color: "#3B82F6" },
+          { text: "İnşaat Mühendisliği için İş Akışları", href: "/solutions/structural#insaat-muhendisligi-is-akislari", external: false, color: "#10B981" },
+          { text: "Altyapı Mühendisliği için İş Akışları", href: "/solutions/infrastructure#altyapi-muhendisligi-is-akislari", external: false, color: "#F59E0B" },
+        ]}
+      />
 
       <ChallengesSection items={challenges} />
       <StatsSection items={stats} variant="animated" />
