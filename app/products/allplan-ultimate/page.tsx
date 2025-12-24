@@ -8,6 +8,7 @@ import Image, { StaticImageData } from "next/image";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import VideoModal from "@/components/VideoModal";
 import CloudServicesSection from "@/components/CloudServicesSection";
+import { WorkflowLinksSection } from "@/components/WorkflowLinksSection";
 
 import heroImg from "@/assets/products/allplan-ultimate/hero.jpg";
 
@@ -154,14 +155,18 @@ export default function Page() {
               <iframe className="w-full h-full" src="https://www.youtube.com/embed/tFnwOyX7ncI" title="ALLPLAN Ultimate Tanıtım" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
             </div>
           </div>
-          <div className="flex flex-wrap gap-4 justify-center mt-12">
-            <Button variant="outline" asChild><Link href="/package-overview" target="_blank">Sürümleri Görüntüle</Link></Button>
-            <Button variant="outline" asChild><Link href="/2024-architecture" target="_blank">Tasarım için İş Akışları</Link></Button>
-            <Button variant="outline" asChild><Link href="/2024-structural-engineering" target="_blank">İnşaat Mühendisliği için İş Akışları</Link></Button>
-            <Button variant="outline" asChild><Link href="/2024-civil-engineering" target="_blank">Yapı Mühendisliği için İş Akışları</Link></Button>
-          </div>
         </div>
-      </section>
+    </div>
+      </section >
+
+      <WorkflowLinksSection
+        links={[
+            { text: "Sürümleri Görüntüle", href: "/package-overview", external: true },
+            { text: "Tasarım için İş Akışları", href: "/2024-architecture", external: true },
+            { text: "İnşaat Mühendisliği için İş Akışları", href: "/2024-structural-engineering", external: true },
+            { text: "Yapı Mühendisliği için İş Akışları", href: "/2024-civil-engineering", external: true },
+        ]}
+      />
 
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
@@ -235,6 +240,6 @@ export default function Page() {
       </section>
 
       <section id="faq" className="py-20 bg-muted/30"><div className="container mx-auto px-4"><div className="text-center mb-12"><h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">SSS - ALLPLAN Ultimate</h2></div><div className="max-w-3xl mx-auto"><Accordion type="single" collapsible className="w-full">{faqs.map((faq, index) => (<AccordionItem key={index} value={`faq-${index}`}><AccordionTrigger className="text-foreground text-base">{faq.question}</AccordionTrigger><AccordionContent className="text-muted-foreground">{faq.answer}</AccordionContent></AccordionItem>))}</Accordion></div></div></section>
-    </div>
+    </div >
   );
 }
