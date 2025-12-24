@@ -53,7 +53,7 @@ const Header = () => {
       title: "İNŞAAT PLANLAMASI",
       items: [
         { name: "Allplan Precast - Prekast Detaylandırma", href: "/products/precast-detail" },
-        { name: "Tim - Prekast İş Planlaması", href: "/products/tim" },
+        { name: "Tim - Prekast İş Planlaması", href: "https://www.allplan.com/products/tim/", external: true },
         { name: "SDS2 - Çelik Detaylandırma", href: "/products/sds2-detail" },
         { name: "SDS2 - Çelik Yük Planlaması", href: "/products/sds2-load" },
         { name: "SDS2 - Allplan Çelik Anasayfa", href: "/products/sds2-home" },
