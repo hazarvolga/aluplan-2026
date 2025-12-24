@@ -116,7 +116,14 @@ export default function ClientPage() {
         { name: "Precast Walls", price: "Teklif alın", description: "Duvar elemanları", features: ["Duvar tasarımı", "Bölme", "Donatı", "Üretim verisi"] },
         { name: "Precast Slabs", price: "Teklif alın", description: "Döşeme elemanları", features: ["Döşeme tasarımı", "Bölme", "Donatı", "Üretim verisi"], highlighted: true },
       ]}
-      ctaTitle="ALLPLAN PRECAST'i Deneyin"
+      ctaTitle="Ücretsiz Dene"
+      ctaHref="https://www.allplan.com/trial-or-subscription/"
+      ctaExternal={true}
+      showDemoButton={false}
+      additionalButtons={[
+        { text: "Teklif Talep Formu", href: "https://forms.office.com/r/hXhnKAG912", external: true },
+        { text: "Abonelik SSS", href: "/solutions-v2/faq", external: false },
+      ]}
       ctaDescription="Prefabrik elemanlar için tam çözüm"
     >
       <PostHeroSection title={postHeroTitle} paragraphs={postHeroParagraphs} videoUrl={postHeroVideoUrl} />
