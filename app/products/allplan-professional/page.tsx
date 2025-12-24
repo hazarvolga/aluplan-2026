@@ -95,7 +95,7 @@ const purchaseOptions: FeatureItem[] = [
 ];
 
 const FeatureCard = ({ feature }: { feature: FeatureItem }) => (
-  <Card className="overflow-hidden group border border-white/10 hover:border-white/20 bg-graphite-950">
+  <Card className="overflow-hidden group border border-border hover:border-accent/50 bg-card">
     <div className="aspect-video overflow-hidden relative">
       {feature.youtubeId ? (
         <VideoModal youtubeId={feature.youtubeId} title={feature.title} thumbnailUrl={feature.image} className="w-full h-full" />
@@ -112,7 +112,7 @@ const FeatureCard = ({ feature }: { feature: FeatureItem }) => (
 
 export default function Page() {
   return (
-    <div className="dark min-h-screen bg-graphite-950">
+    <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">

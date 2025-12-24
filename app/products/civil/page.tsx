@@ -170,7 +170,7 @@ export default function Page() {
   ];
 
   return (
-    <div className="dark min-h-screen bg-graphite-950">
+    <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -188,7 +188,7 @@ export default function Page() {
         <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="max-w-3xl">
             <span className="text-accent font-medium text-sm tracking-wider uppercase mb-4 block">/ ALLPLAN CIVIL</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">İleri Düzey Altyapı Tasarımından <span className="text-accent">İnşa Akışlarına</span> yönelik Çözüm.</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">İleri Düzey Altyapı Tasarımından <span className="text-accent">İnşa Akışlarına</span> yönelik Çözüm.</h1>
             <div className="flex flex-wrap gap-4">
               <Button size="lg" asChild className="bg-accent hover:bg-accent/90"><a href="https://www.allplan.com/trial-or-subscription/" target="_blank" rel="noopener noreferrer">Ücretsiz Dene<ArrowRight className="ml-2 h-5 w-5" /></a></Button>
               <Button variant="outline" size="lg" asChild><a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">Teklif Talep Formu</a></Button>
@@ -253,13 +253,13 @@ export default function Page() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {workflowCards.map((card, index) => (
-              <Card key={index} className="overflow-hidden group border border-white/10 hover:border-white/20 bg-graphite-950">
+              <Card key={index} className="overflow-hidden group border border-border hover:border-accent/50 bg-card">
                 <div className="aspect-video overflow-hidden relative">
                   <Image src={card.image} alt={card.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-white mb-3">{card.title}</h3>
-                  <p className="text-white/80 text-sm mb-4">{card.description}</p>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">{card.title}</h3>
+                  <p className="text-muted-foreground text-sm mb-4">{card.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {card.buttons.map((btn, btnIndex) => (
                       btn.external ? (
@@ -292,7 +292,7 @@ export default function Page() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {coreFeatures.map((feature, index) => (
-              <Card key={index} className="overflow-hidden group border border-white/10 hover:border-white/20 bg-graphite-950">
+              <Card key={index} className="overflow-hidden group border border-border hover:border-accent/50 bg-card">
                 <div className="aspect-video overflow-hidden relative">
                   {feature.youtubeId ? (
                     <VideoModal youtubeId={feature.youtubeId} title={feature.title} thumbnailUrl={feature.thumbnailUrl} className="w-full h-full" />
@@ -301,8 +301,8 @@ export default function Page() {
                   )}
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
-                  <p className="text-white/80 text-sm">{feature.description}</p>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">{feature.title}</h3>
+                  <p className="text-muted-foreground text-sm">{feature.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -338,7 +338,7 @@ export default function Page() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {purchaseOptions.map((option, index) => (
-              <Card key={index} className="overflow-hidden group border border-white/10 hover:border-white/20 bg-graphite-950">
+              <Card key={index} className="overflow-hidden group border border-border hover:border-accent/50 bg-card">
                 <div className="aspect-video overflow-hidden relative">
                   {option.youtubeId ? (
                     <VideoModal youtubeId={option.youtubeId} title={option.title} thumbnailUrl={option.thumbnailUrl} className="w-full h-full" />
@@ -347,8 +347,8 @@ export default function Page() {
                   )}
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-white mb-3">{option.title}</h3>
-                  <p className="text-white/80 text-sm">{option.description}</p>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">{option.title}</h3>
+                  <p className="text-muted-foreground text-sm">{option.description}</p>
                 </CardContent>
               </Card>
             ))}

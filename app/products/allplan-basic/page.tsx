@@ -58,7 +58,7 @@ const purchaseOptions: FeatureItem[] = [
 ];
 
 const FeatureCard = ({ feature }: { feature: FeatureItem }) => (
-  <Card className="relative group hover:shadow-technical transition-all duration-500 border border-white/10 hover:border-white/20 bg-graphite-950 overflow-hidden">
+  <Card className="relative group hover:shadow-technical transition-all duration-500 border border-border hover:border-accent/50 bg-card overflow-hidden">
     <div className="pointer-events-none absolute top-0 left-0 h-px w-0 group-hover:w-full bg-accent/60 transition-all duration-500" />
     <div className="aspect-video overflow-hidden relative">
       {feature.youtubeId ? (
@@ -73,8 +73,8 @@ const FeatureCard = ({ feature }: { feature: FeatureItem }) => (
       )}
     </div>
     <CardContent className="p-6">
-      <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
-      <p className="text-white/80 text-sm">{feature.description}</p>
+      <h3 className="text-xl font-semibold text-foreground mb-3">{feature.title}</h3>
+      <p className="text-muted-foreground text-sm">{feature.description}</p>
     </CardContent>
   </Card>
 );
@@ -87,7 +87,7 @@ export default function Page() {
   ];
 
   return (
-    <div className="dark min-h-screen bg-graphite-950">
+    <div className="min-h-screen bg-background">
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image

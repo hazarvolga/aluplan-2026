@@ -92,7 +92,7 @@ export default function Page() {
   ];
 
   return (
-    <div className="dark min-h-screen bg-graphite-950">
+    <div className="min-h-screen bg-background text-foreground">
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
