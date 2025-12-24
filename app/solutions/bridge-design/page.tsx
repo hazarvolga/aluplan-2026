@@ -48,12 +48,8 @@ const reasons = [
 ];
 
 const quickLinks = [
-  { label: "Demo", href: "#" },
   { label: "ÖNÜMLÜ KİRİŞLİ KÖPRÜ MODELLEMESİ", href: "/solutions/modeling-of-precast-girder-bridges" },
   { label: "Allplan Bridge 2024 Özellikleri", href: "/solutions/features-allplan-bridge" },
-  { label: "Deneme Sürümü", href: "#" },
-  { label: "Eğitim Videoları", href: "#" },
-  { label: "Paket Karşılaştırma", href: "#" },
 ];
 
 const postHeroSection = (
