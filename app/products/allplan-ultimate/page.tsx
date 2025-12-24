@@ -155,6 +155,7 @@ export default function Page() {
               <iframe className="w-full h-full" src="https://www.youtube.com/embed/tFnwOyX7ncI" title="ALLPLAN Ultimate Tanıtım" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
             </div>
           </div>
+        </div>
       </section>
 
       <WorkflowLinksSection
