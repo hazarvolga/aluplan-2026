@@ -1,5 +1,5 @@
-import PageWrapper from "@/components/layout-v2/PageWrapper";
-import HeroInternal from "@/components/layout-v2/HeroInternal";
+import { PageWrapper } from "@/components/layout-v2/PageWrapper";
+import { HeroInternal } from "@/components/layout-v2/HeroInternal";
 
 export default function PackageOverviewPage() {
     return (
