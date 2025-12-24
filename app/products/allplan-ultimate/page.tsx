@@ -110,7 +110,7 @@ export default function Page() {
   ];
 
   return (
-    <div className="dark min-h-screen bg-graphite-950">
+    <div className="min-h-screen bg-background text-foreground">
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
@@ -127,7 +127,7 @@ export default function Page() {
         <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="max-w-3xl">
             <span className="text-accent font-medium text-sm tracking-wider uppercase mb-4 block">/ ALLPLAN ULTIMATE</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Tasarımdan inşaata kadar tam iş akışı için kapsamlı <span className="text-accent">BIM</span> çözümü.</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">Tasarımdan inşaata kadar tam iş akışı için kapsamlı <span className="text-accent">BIM</span> çözümü.</h1>
             <div className="flex flex-wrap gap-4">
               <Button size="lg" asChild className="bg-accent hover:bg-accent/90"><a href="https://www.allplan.com/trial-or-subscription/" target="_blank" rel="noopener noreferrer">Ücretsiz Dene<ArrowRight className="ml-2 h-5 w-5" /></a></Button>
               <Button variant="outline" size="lg" asChild><a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">Teklif Talep Formu</a></Button>
@@ -195,7 +195,7 @@ export default function Page() {
           <div className="text-center mb-16"><span className="text-accent font-medium">ALLPLAN Ultimate Özellikleri</span><h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4">Fonksiyonellik Hızlı Bakış</h2></div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {coreFeatures.map((feature, index) => (
-              <Card key={index} className="overflow-hidden group"><div className="aspect-video overflow-hidden relative">{feature.youtubeId ? (<VideoModal youtubeId={feature.youtubeId} title={feature.title} thumbnailUrl={feature.thumbnailUrl} className="w-full h-full" />) : (<Image src={feature.image!} alt={feature.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />)}</div><CardContent className="p-6"><h3 className="text-xl font-semibold text-foreground mb-3">{feature.title}</h3><p className="text-muted-foreground text-sm">{feature.description}</p></CardContent></Card>
+              <Card key={index} className="overflow-hidden group bg-card border-border"><div className="aspect-video overflow-hidden relative">{feature.youtubeId ? (<VideoModal youtubeId={feature.youtubeId} title={feature.title} thumbnailUrl={feature.thumbnailUrl} className="w-full h-full" />) : (<Image src={feature.image!} alt={feature.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />)}</div><CardContent className="p-6"><h3 className="text-xl font-semibold text-foreground mb-3">{feature.title}</h3><p className="text-muted-foreground text-sm">{feature.description}</p></CardContent></Card>
             ))}
           </div>
           <div className="flex flex-wrap gap-4 justify-center mt-12"><Button variant="outline" asChild><a href="https://www.allplan.com/consulting-sale/consulting-sale-overview/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">Sorularınız mı var? İletişime Geçin<ExternalLink className="w-4 h-4" /></a></Button><Button asChild><a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">Teklif Talep Formu</a></Button></div>
@@ -220,7 +220,7 @@ export default function Page() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {purchaseOptions.map((option, index) => (
-              <Card key={index} className="overflow-hidden group border border-white/10 hover:border-white/20 bg-graphite-950">
+              <Card key={index} className="overflow-hidden group border border-border hover:border-accent/50 bg-card transition-colors">
                 <div className="aspect-video overflow-hidden relative">
                   {option.youtubeId ? (
                     <VideoModal youtubeId={option.youtubeId} title={option.title} className="w-full h-full" />
@@ -229,8 +229,8 @@ export default function Page() {
                   )}
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-white mb-3">{option.title}</h3>
-                  <p className="text-white/80 text-sm">{option.description}</p>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">{option.title}</h3>
+                  <p className="text-muted-foreground text-sm">{option.description}</p>
                 </CardContent>
               </Card>
             ))}
