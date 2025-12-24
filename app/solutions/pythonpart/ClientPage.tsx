@@ -6,100 +6,151 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const paidPythonParts = [
   {
-    title: "Wall Reinforcement",
-    description: "Wall Reinforcement is a feature of our PythonParts in ALLPLAN that lets you create, update and modify reinforcement for wall reinforcement from simple to complicated one in ALLPLAN, even the slope Wall. It recognizes the shape of the wall panel and distributes the main reinforcement and additional reinforcement for wall openings",
+    titleTr: "Duvar Donatısı",
+    titleEn: "Wall Reinforcement",
+    description: "ALLPLAN için geliştirdiğimiz PythonParts ile basit veya karmaşık duvar donatılarını, hatta eğimli duvarları bile kolayca oluşturabilir, güncelleyebilir ve düzenleyebilirsiniz. Duvar panelinin şeklini otomatik olarak tanır ve ana donatıları ile duvar boşlukları için ek donatıları dağıtır.",
     videoUrl: "https://www.youtube.com/embed/4HwnYYnZ_D0"
   },
   {
-    title: "Wall Opening Reinforcement",
-    description: "Inevitably, openings of various sizes and shapes for doors, windows, conduit, piping, and ductwork will need to be made in structural walls. Correct placement of the rebar helps prevent the concrete around openings from cracking from structural loads or shrinkage.",
+    titleTr: "Duvar Boşluğu Donatısı",
+    titleEn: "Wall Opening Reinforcement",
+    description: "Taşıyıcı duvarlarda kapı, pencere, boru ve havalandırma kanalları için çeşitli boyut ve şekillerde boşluklar açılması kaçınılmazdır. Donatının doğru yerleştirilmesi, boşluklar etrafındaki betonun yapısal yükler veya rötre nedeniyle çatlamasını önler.",
     videoUrl: "https://www.youtube.com/embed/LMjsurG742M"
   },
   {
-    title: "Wall Edge Reinforcement",
-    description: "The Edge Reinforcement python part is used for detailing walls by connecting two walls to each other in ALLPLAN. Wall to wall connection – Edge shape included: Joining Collinear Walls; Joining L-shaped Walls; Joining T-shaped Walls; Joining intersect-shaped Walls.",
+    titleTr: "Duvar Kenar Donatısı",
+    titleEn: "Wall Edge Reinforcement",
+    description: "Kenar Donatısı python parçası, ALLPLAN'da iki duvarı birbirine bağlayarak duvarların detaylandırılması için kullanılır. Duvardan duvara bağlantı şekilleri: Doğrusal duvar birleşimi, L-şeklinde duvar birleşimi, T-şeklinde duvar birleşimi, Kesişen duvar birleşimi.",
     videoUrl: "https://www.youtube.com/embed/M0Qem-GkLEI"
   },
   {
-    title: "Slab Reinforcement",
-    description: "Reinforcement detailing of a slab is done based on its support conditions. Slab may be supported on walls or beams or columns."
+    titleTr: "Döşeme Donatısı",
+    titleEn: "Slab Reinforcement",
+    description: "Döşeme donatısı detaylandırması, mesnet koşullarına göre yapılır. Döşeme duvarlar, kirişler veya kolonlar üzerinde mesnetlenebilir.",
+    videoUrl: "https://www.youtube.com/embed/IOkyu5ab23w"
   },
   {
-    title: "Slab Opening Reinforcement",
-    description: "Every engineer is familiar with the openings in a slab. Openings in slabs are usually required for many different applications such as aeration ducts and air conditioning. Now, structural engineers can easily get it done by ALLPLAN PythonParts developed by ALLTO",
+    titleTr: "Döşeme Boşluğu Donatısı",
+    titleEn: "Slab Opening Reinforcement",
+    description: "Her mühendis döşemelerdeki boşluklara aşinadır. Havalandırma kanalları ve klima gibi birçok farklı uygulama için döşemelerde boşluklar gereklidir. Artık yapı mühendisleri, ALLTO tarafından geliştirilen ALLPLAN PythonParts ile bu işi kolayca yapabilir.",
     videoUrl: "https://www.youtube.com/embed/70dz16RYs84"
   },
   {
-    title: "Single Footings Reinforcement",
-    description: "Individual footings are one of the most simple and common types of foundations. These are used when the load of the building is carried by columns. Usually, each column will have its own footing. The footing is just a square or rectangular pad of concrete on which the column sits. Now, engineers can easily get it done by ALLPLAN PythonParts developed by ALLTO",
+    titleTr: "Tekil Temel Donatısı",
+    titleEn: "Single Footings Reinforcement",
+    description: "Tekil temeller, en basit ve yaygın temel türlerinden biridir. Binanın yükünün kolonlar tarafından taşındığı durumlarda kullanılır. Genellikle her kolonun kendi temeli vardır. Temel, kolonun üzerine oturduğu kare veya dikdörtgen bir beton bloğudur. Artık mühendisler, ALLTO tarafından geliştirilen ALLPLAN PythonParts ile bu işi kolayca yapabilir.",
     videoUrl: "https://www.youtube.com/embed/EjxMvMhFKj4"
   },
   {
-    title: "Beam Reinforcement",
-    description: "Reinforcement are essential part of a concrete beam. It resists tension forces, increase the compression capacity, enhance ductility and reduce long-term deflections in the concrete. Additionally, reinforcement prevent cracking of concrete due to shear stresses, shrinkage and temperature stresses.",
+    titleTr: "Kiriş Donatısı",
+    titleEn: "Beam Reinforcement",
+    description: "Donatı, betonarme kirişin temel bir parçasıdır. Çekme kuvvetlerine karşı koyar, basınç kapasitesini artırır, sünekliği geliştirir ve betondaki uzun vadeli sehimleri azaltır. Ayrıca donatı, kesme gerilmeleri, rötre ve sıcaklık gerilmeleri nedeniyle betonun çatlamasını önler.",
     videoUrl: "https://www.youtube.com/embed/cyOw-XGQ7c0"
   },
   {
-    title: "T-Beam Reinforcement",
-    description: "T-beam (tee beam), used in construction, is a load-bearing structure of reinforced concrete, wood or metal, with a T-shaped cross section. The top of the T-shaped cross section serves as a flange or compression member in resisting compressive stresses",
+    titleTr: "T-Kiriş Donatısı",
+    titleEn: "T-Beam Reinforcement",
+    description: "İnşaatta kullanılan T-kiriş, T-şeklinde bir kesit alanına sahip betonarme, ahşap veya metal yük taşıyıcı bir yapıdır. T-şeklindeki kesit alanının üst kısmı, basınç gerilmelerine karşı koymak için başlık veya basınç elemanı görevi görür.",
     videoUrl: "https://www.youtube.com/embed/yosKNaS5jew"
   },
   {
-    title: "Strip Footings Reinforcement",
-    description: "Strip foundations (or strip footings) are a type of shallow foundation that are used to provide a continuous, level (or sometimes stepped) strip of support to a linear structure such as a wall or closely-spaced rows of columns built centrally above them. ALLTO set up a friendly interface and all you need to do is input the data to create the strip foundation.",
+    titleTr: "Şerit Temel Donatısı",
+    titleEn: "Strip Footings Reinforcement",
+    description: "Şerit temeller, duvar gibi doğrusal bir yapıya veya merkezi olarak üzerine inşa edilmiş yakın aralıklı kolon sıralarına sürekli, düz (veya bazen basamaklı) bir destek şeridi sağlamak için kullanılan bir sığ temel türüdür. ALLTO kullanıcı dostu bir arayüz oluşturmuştur ve tek yapmanız gereken şerit temeli oluşturmak için verileri girmektir.",
     videoUrl: "https://www.youtube.com/embed/15aE6UyalJ4"
   },
   {
-    title: "Column Reinforcement",
-    description: "We've released ALLPLAN Pythonparts that automate the modeling of reinforcement in opening walls in #ALLPLAN.In this initial release, you can use it to place main rebar, stirrups, and more. See the workflow for reinforcing columns in ALLPLAN.",
+    titleTr: "Kolon Donatısı",
+    titleEn: "Column Reinforcement",
+    description: "ALLPLAN'da boşluklu duvarlardaki donatı modellemesini otomatikleştiren ALLPLAN Pythonparts'ı yayınladık. Bu ilk sürümde ana donatıları, etriyeleri ve daha fazlasını yerleştirebilirsiniz. ALLPLAN'da kolonların donatılandırılması iş akışını görün.",
     videoUrl: "https://www.youtube.com/embed/k76NIUdxs6o"
   },
   {
-    title: "Column Dowels",
-    description: "Dowels are commonly used as interface reinforcement between columns or walls and footings. The dowels are set in the footing prior to casting the footing concrete and are subsequently spliced to the longitudinal bars in the column or wall.",
+    titleTr: "Kolon Bindirme Donatısı",
+    titleEn: "Column Dowels",
+    description: "Bindirme donatıları genellikle kolonlar veya duvarlar ile temeller arasında ara donatı olarak kullanılır. Bindirmeler, temel betonu dökülmeden önce temele yerleştirilir ve daha sonra kolon veya duvardaki boyuna donatılara eklenir.",
     videoUrl: "https://www.youtube.com/embed/-0mJEDyXC7k"
   },
   {
-    title: "Column Coupler",
-    description: "Developing ALLPLAN PYTHONPARTS to manage the workflow of engineers which we believe will help them complete their tasks much easier, faster and reduce errors.",
+    titleTr: "Kolon Manşon Donatısı",
+    titleEn: "Column Coupler",
+    description: "Mühendislerin iş akışını yönetmek için ALLPLAN PYTHONPARTS geliştiriyoruz. Bunun, görevlerini daha kolay, daha hızlı tamamlamalarına ve hataları azaltmalarına yardımcı olacağına inanıyoruz.",
     videoUrl: "https://www.youtube.com/embed/blho_BO-xp4"
   }
 ];
 
 const freePythonParts = [
   {
-    title: "ALLPLAN Backup Files - Drawing Recovery",
-    description: "Have ever lost a drawing file just because you forgot to save it or you couldn't save it (due to software crash)? ALLTO has developed Backup files in ALLPLAN help ensure the safety of your drawing data. By saving your work frequently, you can ensure a minimum of lost data.",
+    titleTr: "ALLPLAN Yedekleme Dosyaları - Çizim Kurtarma",
+    titleEn: "ALLPLAN Backup Files - Drawing Recovery",
+    description: "Hiç kaydetmeyi unuttuğunuz veya yazılım çökmesi nedeniyle kaydedemediğiniz bir çizim dosyasını kaybettiniz mi? ALLTO, ALLPLAN'da yedekleme dosyaları geliştirdi ve çizim verilerinizin güvenliğini sağlamaya yardımcı olur. Çalışmanızı sık sık kaydederek, sisteminiz herhangi bir nedenle arızalanursa minimum veri kaybı sağlayabilirsiniz.",
     videoUrl: "https://www.youtube.com/embed/LXwICpjeZpo"
   },
   {
-    title: "Detect IFC Model Changes",
-    description: "This python part in Allplan Software detects the geometric differences between two IFC files and merges only the modifications (new, deleted and modified elements) into the currently drawing file (that project can also be an empty one). Modifications can be viewed and managed in both 2D and 3D views.",
+    titleTr: "IFC Model Değişikliklerini Algılama",
+    titleEn: "Detect IFC Model Changes",
+    description: "Bu python parçası, Allplan Yazılımında iki IFC dosyası arasındaki geometrik farkları algılar ve yalnızca değişiklikleri (yeni, silinmiş ve değiştirilmiş elemanlar) mevcut çizim dosyasına birleştirir. Değişiklikler hem 2D hem de 3D görünümlerde görüntülenebilir ve yönetilebilir.",
     videoUrl: "https://www.youtube.com/embed/SYx4kZYsmzc"
   },
   {
-    title: "Converting from 2D lines/polylines to architecture components",
-    description: "ALLPLAN has been an innovative pioneer in the area of 3D design, from 3D modeling to component-oriented, digital building models as the basis for the BIM design method. With ALLTO PythonParts, it can be – see how easy it is to convert from 2D lines/polylines to architecture components in just some steps with the right tool.",
+    titleTr: "2D Çizgilerden Mimari Bileşenlere Dönüştürme",
+    titleEn: "Converting from 2D lines/polylines to architecture components",
+    description: "ALLPLAN, 3D tasarım alanında yenilikçi bir öncü olmuştur; 3D modellemeden bileşen odaklı, BIM tasarım yönteminin temeli olan dijital bina modellerine kadar. ALLTO PythonParts ile, doğru araçlarla sadece birkaç adımda 2D çizgilerden/poliçizgilerden mimari bileşenlere dönüştürmenin ne kadar kolay olduğunu görün.",
     videoUrl: "https://www.youtube.com/embed/AdsiUeBRwxM"
+  }
+];
+
+const otherTools = [
+  {
+    titleTr: "ALLPLAN'da IFC Dosyalarını Daha Hızlı Dışa Aktarma",
+    titleEn: "Exporting IFC files in ALLPLAN faster with ALLTO PythonParts",
+    description: "Bu araç, birden fazla çizim dosyasını aynı anda dışa aktarabilir. IFC sürümünü, çizim dosyalarını, dosya yolunu seçebilirsiniz. Ayrıca tüm çizimleri tek bir IFC dosyasına da aktarabilirsiniz.",
+    videoUrl: "https://www.youtube.com/embed/J-N5gEba5P0"
   },
   {
-    title: "Exporting IFC files in ALLPLAN faster with ALLTO PythonParts",
-    description: "This tool can export multiple drawing files at once. You can choose IFC version, drawing files, file path. And you can also export all drawings into 1 IFC files."
+    titleTr: "ALLPLAN Duvar Boşluğu Donatısı",
+    titleEn: "ALLPLAN Wall Opening Reinforcement PythonParts",
+    description: "Duvarlardaki boşluk türleri, parçaları ve duvarın stabilitesi ve mukavemeti açısından boşluklar için lento ve kemer türleri tartışılır. Boşluk başlığı ve söveleri gibi duvar boşluklarının farklı kısımları ve duvarın stabilitesini ve mukavemetini korumak için sınırlamaları... ALLPLAN'daki PythonParts'ımız duvar panelinin şeklini tanır ve duvar boşlukları için ana donatı ve ek donatıyı dağıtır.",
+    videoUrl: "https://www.youtube.com/embed/LMjsurG742M"
   },
   {
-    title: "Add custom attribute in ALLPLAN",
-    description: "ALLTO PythonParts developed the tools to help you define or modify a new custom attribute easily. You can add up to 5 attributes per time use."
+    titleTr: "ALLPLAN Yedekleme Dosyaları - Çizim Kurtarma",
+    titleEn: "ALLPLAN Backup Files - Drawing Recovery",
+    description: "Hiç kaydetmeyi unuttuğunuz veya yazılım çökmesi nedeniyle kaydedemediğiniz bir çizim dosyasını kaybettiniz mi? ALLTO, ALLPLAN'da yedekleme dosyaları geliştirdi ve çizim verilerinizin güvenliğini sağlamaya yardımcı olur. Çalışmanızı sık sık kaydederek, sisteminiz herhangi bir nedenle arızalanursa minimum veri kaybı sağlayabilirsiniz. Bir sorun oluşursa, bir çizim yedekleme dosyasını geri yükleyebilirsiniz.",
+    videoUrl: "https://www.youtube.com/embed/LXwICpjeZpo"
+  },
+  {
+    titleTr: "ALLPLAN'da Özel Öznitelik Ekleme",
+    titleEn: "Add custom attribute in ALLPLAN",
+    description: "ALLTO PythonParts, yeni bir özel özniteliği kolayca tanımlamanıza veya değiştirmenize yardımcı olacak araçlar geliştirdi. Bir seferde 5 özniteliğe kadar ekleyebilirsiniz.",
+    videoUrl: "https://www.youtube.com/embed/wEo1vleU7JM"
+  },
+  {
+    titleTr: "2D Çizgilerden Mimari Bileşenlere Dönüştürme",
+    titleEn: "Converting from 2D lines/polylines to architecture components",
+    description: "ALLPLAN, 3D tasarım alanında yenilikçi bir öncü olmuştur; 3D modellemeden bileşen odaklı, BIM tasarım yönteminin temeli olan dijital bina modellerine kadar. 3D tasarım hata riskini azaltır ve daha fazla verimlilik sağlar. ALLTO PythonParts ile, doğru araçlarla sadece birkaç adımda 2D çizgilerden/poliçizgilerden mimari bileşenlere dönüştürmenin ne kadar kolay olduğunu görün.",
+    videoUrl: "https://www.youtube.com/embed/AdsiUeBRwxM"
   }
 ];
 
 const turkishTools = [
   {
-    title: "Allto Kiriş PythonPart Eklentisi",
-    description: "Allto Kiriş PythonPart Eklentisi ile Türkiye Deprem Yönetmeliği'ne uygun betonarme kiriş donatılarınızı parametrik olarak hızlı ve kolay bir şekilde modelleyebilirsiniz. Mesnet ve açıklık bindirme şartlarından, etriye sarılma bölgesi ayarlarına kadar tüm düzenlemelerinizi yapabilir, ilave donatılar ekleyebilirsiniz. Kiriş boy ve en kesitlerini otomatik alarak tek tuşla metraj tablosu oluşturabilirsiniz. Allto Kiriş PythonPart Eklentisi size daha az zamanda daha çok iş yapma imkanının yanında güvenilir kiriş donatı metrajı almanızı da sağlar."
+    titleTr: "Allto Kiriş PythonPart Eklentisi",
+    titleEn: "Allto Beam PythonPart Plugin",
+    description: "Allto Kiriş PythonPart Eklentisi ile Türkiye Deprem Yönetmeliği'ne uygun betonarme kiriş donatılarınızı parametrik olarak hızlı ve kolay bir şekilde modelleyebilirsiniz. Mesnet ve açıklık bindirme şartlarından, etriye sarılma bölgesi ayarlarına kadar tüm düzenlemelerinizi yapabilir, ilave donatılar ekleyebilirsiniz. Kiriş boy ve en kesitlerini otomatik alarak tek tuşla metraj tablosu oluşturabilirsiniz. Allto Kiriş PythonPart Eklentisi size daha az zamanda daha çok iş yapma imkanının yanında güvenilir kiriş donatı metrajı almanızı da sağlar.",
+    videoUrl: "https://www.youtube.com/embed/hONolEqk24Y"
   },
   {
-    title: "Otomatik Kolon-Kiriş-Duvar Modelleme",
-    description: "Ücretsiz olan Otomatik Kolon-Kiriş-Duvar Modelleme eklentisini kullanarak daha önce CAD ortamında yapılmış olan iki boyutlu çizimlerinizi sadece birkaç tıklama ile üç boyutlu BIM modeline dönüştürebilirsiniz. Ürettiğiniz BIM modelinizin güvenilir Kalıp ve Donatı metrajını alabilirisiniz."
+    titleTr: "Allto Kiriş PythonPart Eklentisi - Çok Açıklıklı Kirişler",
+    titleEn: "Allto Beam PythonPart Plugin - Multi-Span Beams",
+    description: "Allto Kiriş PythonPart Eklentisi kullanarak sadece birkaç tıklama ile ister tek açıklıklı ister çok açıklıklı kirişlerinizin donatılarını hızlı bir şekilde oluşturabilir, kesitlerinizi alabilir ve metrajınızı oluşturabilirsiniz.",
+    videoUrl: "https://www.youtube.com/embed/I0wD7ksE7r4"
+  },
+  {
+    titleTr: "Otomatik Kolon-Kiriş-Duvar Modelleme",
+    titleEn: "Automatic Column-Beam-Wall Modeling",
+    description: "Ücretsiz olan Otomatik Kolon-Kiriş-Duvar Modelleme eklentisini kullanarak daha önce CAD ortamında yapılmış olan iki boyutlu çizimlerinizi sadece birkaç tıklama ile üç boyutlu BIM modeline dönüştürebilirsiniz. Ürettiğiniz BIM modelinizin güvenilir Kalıp ve Donatı metrajını alabilirisiniz.",
+    videoUrl: "https://www.youtube.com/embed/ieZb81IM8Qc"
   }
 ];
 
@@ -118,77 +169,93 @@ export default function ClientPage() {
         {/* PostHero Section */}
         <section className="py-16 bg-muted/50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Allplan Ortak Çözümü olarak ALLTO, ALLPLAN yazılımıyla uyumlu profesyonel eklentiler geliştirir.
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                Kullanıcılar ayrıca uzmanlığımızı ve bireysel ihtiyaçlarını karşılamak için onlarla yakın çalışma isteğimizi takdir ediyor.
-              </p>
-              <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Bina PythonPartları şunları içerir:</h3>
-                <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-muted-foreground">
-                  <li className="flex items-start">
-                    <span className="mr-2 text-accent">•</span>
-                    <span>Wall Reinforcement</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 text-accent">•</span>
-                    <span>Wall Opening and Wall Edge Reinforcement</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 text-accent">•</span>
-                    <span>Beam Reinforcement</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 text-accent">•</span>
-                    <span>Column Reinforcement</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 text-accent">•</span>
-                    <span>Single Footing Reinforcement</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 text-accent">•</span>
-                    <span>Strip Footing Reinforcement</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 text-accent">•</span>
-                    <span>Detecting IFC Model Changes</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 text-accent">•</span>
-                    <span>Slab With Opening</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 text-accent">•</span>
-                    <span>Slab Main Rebar</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 text-accent">•</span>
-                    <span>Column dowels</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 text-accent">•</span>
-                    <span>Layout Service</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 text-accent">•</span>
-                    <span>2D Axis Grid in ALLPLAN Engineering</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 text-accent">•</span>
-                    <span>Converting from 2D lines/polylines to architecture components</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 text-accent">•</span>
-                    <span>ALLPLAN Backup Files – Drawing Recovery</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 text-accent">•</span>
-                    <span>Add custom attribute in ALLPLAN</span>
-                  </li>
-                </ul>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+              {/* Left Column - Text Content */}
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                  Allplan Ortak Çözümü olarak ALLTO, ALLPLAN yazılımıyla uyumlu profesyonel eklentiler geliştirir.
+                </h2>
+                <p className="text-lg text-muted-foreground mb-8">
+                  Kullanıcılar ayrıca uzmanlığımızı ve bireysel ihtiyaçlarını karşılamak için onlarla yakın çalışma isteğimizi takdir ediyor.
+                </p>
+                <div className="bg-card border border-border rounded-lg p-6">
+                  <h3 className="text-xl font-semibold text-foreground mb-4">Bina PythonPartları şunları içerir:</h3>
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-muted-foreground">
+                    <li className="flex items-start">
+                      <span className="mr-2 text-accent">•</span>
+                      <span>Wall Reinforcement</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-accent">•</span>
+                      <span>Wall Opening and Wall Edge Reinforcement</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-accent">•</span>
+                      <span>Beam Reinforcement</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-accent">•</span>
+                      <span>Column Reinforcement</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-accent">•</span>
+                      <span>Single Footing Reinforcement</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-accent">•</span>
+                      <span>Strip Footing Reinforcement</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-accent">•</span>
+                      <span>Detecting IFC Model Changes</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-accent">•</span>
+                      <span>Slab With Opening</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-accent">•</span>
+                      <span>Slab Main Rebar</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-accent">•</span>
+                      <span>Column dowels</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-accent">•</span>
+                      <span>Layout Service</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-accent">•</span>
+                      <span>2D Axis Grid in ALLPLAN Engineering</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-accent">•</span>
+                      <span>Converting from 2D lines/polylines to architecture components</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-accent">•</span>
+                      <span>ALLPLAN Backup Files – Drawing Recovery</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 text-accent">•</span>
+                      <span>Add custom attribute in ALLPLAN</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Right Column - Video */}
+              <div className="lg:sticky lg:top-24">
+                <div className="aspect-video w-full rounded-lg overflow-hidden shadow-lg">
+                  <iframe
+                    src="https://www.youtube.com/embed/GaRVQHkXf4o"
+                    title="ALLTO PythonParts Overview"
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -216,22 +283,23 @@ export default function ClientPage() {
             />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
               {paidPythonParts.map((item, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow flex flex-col">
+                <Card key={index} className="hover:shadow-lg transition-shadow flex flex-col overflow-hidden">
+                  {item.videoUrl && (
+                    <div className="aspect-video w-full">
+                      <iframe
+                        src={item.videoUrl}
+                        title={item.titleTr}
+                        className="w-full h-full"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  )}
                   <CardHeader>
-                    <CardTitle className="text-lg">{item.title}</CardTitle>
+                    <CardTitle className="text-lg">{item.titleTr}</CardTitle>
+                    <p className="text-sm text-muted-foreground mt-1">{item.titleEn}</p>
                   </CardHeader>
-                  <CardContent className="flex-1 flex flex-col gap-4">
-                    {item.videoUrl && (
-                      <div className="aspect-video w-full rounded-lg overflow-hidden">
-                        <iframe
-                          src={item.videoUrl}
-                          title={item.title}
-                          className="w-full h-full"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                        />
-                      </div>
-                    )}
+                  <CardContent className="flex-1">
                     <CardDescription className="text-sm leading-relaxed">
                       {item.description}
                     </CardDescription>
@@ -252,22 +320,60 @@ export default function ClientPage() {
             />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
               {freePythonParts.map((item, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow border-accent/50 flex flex-col">
+                <Card key={index} className="hover:shadow-lg transition-shadow border-accent/50 flex flex-col overflow-hidden">
+                  {item.videoUrl && (
+                    <div className="aspect-video w-full">
+                      <iframe
+                        src={item.videoUrl}
+                        title={item.titleTr}
+                        className="w-full h-full"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  )}
                   <CardHeader>
-                    <CardTitle className="text-lg">{item.title}</CardTitle>
+                    <CardTitle className="text-lg">{item.titleTr}</CardTitle>
+                    <p className="text-sm text-muted-foreground mt-1">{item.titleEn}</p>
                   </CardHeader>
-                  <CardContent className="flex-1 flex flex-col gap-4">
-                    {item.videoUrl && (
-                      <div className="aspect-video w-full rounded-lg overflow-hidden">
-                        <iframe
-                          src={item.videoUrl}
-                          title={item.title}
-                          className="w-full h-full"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                        />
-                      </div>
-                    )}
+                  <CardContent className="flex-1">
+                    <CardDescription className="text-sm leading-relaxed">
+                      {item.description}
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Other Tools Section */}
+        <section className="py-16">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <SectionHeader
+              title="Diğer Araçlar"
+              description="ALLPLAN için ek araçlar ve özellikler"
+              align="center"
+            />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+              {otherTools.map((item, index) => (
+                <Card key={index} className="hover:shadow-lg transition-shadow flex flex-col overflow-hidden">
+                  {item.videoUrl && (
+                    <div className="aspect-video w-full">
+                      <iframe
+                        src={item.videoUrl}
+                        title={item.titleTr}
+                        className="w-full h-full"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  )}
+                  <CardHeader>
+                    <CardTitle className="text-lg">{item.titleTr}</CardTitle>
+                    <p className="text-sm text-muted-foreground mt-1">{item.titleEn}</p>
+                  </CardHeader>
+                  <CardContent className="flex-1">
                     <CardDescription className="text-sm leading-relaxed">
                       {item.description}
                     </CardDescription>
@@ -286,13 +392,25 @@ export default function ClientPage() {
               description="Türkiye Deprem Yönetmeliği ve yerel standartlara uygun çözümler"
               align="center"
             />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
               {turkishTools.map((item, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow border-primary/50">
+                <Card key={index} className="hover:shadow-lg transition-shadow border-primary/50 flex flex-col overflow-hidden">
+                  {item.videoUrl && (
+                    <div className="aspect-video w-full">
+                      <iframe
+                        src={item.videoUrl}
+                        title={item.titleTr}
+                        className="w-full h-full"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  )}
                   <CardHeader>
-                    <CardTitle className="text-lg">{item.title}</CardTitle>
+                    <CardTitle className="text-lg">{item.titleTr}</CardTitle>
+                    <p className="text-sm text-muted-foreground mt-1">{item.titleEn}</p>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="flex-1">
                     <CardDescription className="text-sm leading-relaxed">
                       {item.description}
                     </CardDescription>
@@ -312,11 +430,11 @@ export default function ClientPage() {
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <Button asChild size="lg" className="bg-accent hover:bg-accent/90">
-                <a href="/contact">İletişime Geçin</a>
+                <a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">Teklif Talep Formu</a>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <a href="https://allplantools.com/" target="_blank" rel="noopener noreferrer">
-                  ALLTO Web Sitesi
+                <a href="https://alltosoftware.com/#plugin" target="_blank" rel="noopener noreferrer">
+                  Tüm Eklentileri İncele
                 </a>
               </Button>
             </div>
