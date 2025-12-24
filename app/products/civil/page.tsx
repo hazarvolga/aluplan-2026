@@ -185,7 +185,7 @@ export default function Page() {
           <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60" />
           <div className="absolute inset-0 opacity-[0.02] bg-technical-grid" />
         </div>
-        <div className="container mx-auto px-4 py-20">
+        <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="max-w-3xl">
             <span className="inline-block px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-medium mb-6">/ ALLPLAN Civil</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">İleri Düzey Altyapı Tasarımından <span className="text-accent">İnşa Akışlarına</span> yönelik Çözüm.</h1>
