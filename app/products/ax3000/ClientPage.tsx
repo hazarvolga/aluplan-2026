@@ -61,21 +61,18 @@ export default function ClientPage() {
       subtitle="Bina Tesisatı Çözümü"
       description="ALLPLAN, AX3000 tüm modülleriyle Türkçe'dir ve Türk Standartlarına göre düzenlenmiştir."
       heroImage={axBg1}
-      ctaTitle="Teklif Talep Formu"
-      ctaDescription="AX3000 için teklif talep edin"
-      ctaHref="https://forms.office.com/r/hXhnKAG912"
-      ctaExternal
-      showDemoButton={false}
-      additionalButtons={[
+      quickActions={[
         {
           text: "Youtube Kanalımız",
           href: "https://www.youtube.com/watch?v=EXVlk83zcIs&list=PL5ma0JNNoskbikv2hCg83KVa1pvQ4fvZW",
           external: true,
+          variant: "outline"
         },
         {
           text: "AX3000 Broşür İndir",
           href: "https://ax3000.aluplan.com.tr/wp-content/uploads/2022/01/AX3000_Brosur_V2022.pdf",
           external: true,
+          variant: "outline"
         },
       ]}
     >
