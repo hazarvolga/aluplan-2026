@@ -49,7 +49,7 @@ const reasons = [
 
 const quickLinks = [
   { label: "ÖNÜMLÜ KİRİŞLİ KÖPRÜ MODELLEMESİ", href: "/solutions/modeling-of-precast-girder-bridges" },
-  { label: "Allplan Bridge 2024 Özellikleri", href: "/solutions/features-allplan-bridge" },
+  { label: "Allplan Bridge Özellikleri", href: "/solutions/features-allplan-bridge" },
 ];
 
 const postHeroSection = (
