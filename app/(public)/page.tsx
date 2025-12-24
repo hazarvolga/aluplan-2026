@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
     return (
-        <main className="min-h-screen bg-[#050505] text-white selection:bg-[#3B82F6] selection:text-white">
+        <main className="min-h-screen bg-background text-foreground selection:bg-accent selection:text-accent-foreground">
             <HeroV2 />
             <BentoGrid />
             <PathwayProductSystem />

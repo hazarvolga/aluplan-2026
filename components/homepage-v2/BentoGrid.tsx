@@ -61,16 +61,16 @@ const gridItems = [
 
 const BentoGrid = () => {
     return (
-        <section className="bg-[#050505] py-24 px-6 md:px-12 lg:px-24 text-white" id="bento">
+        <section className="bg-background py-24 px-6 md:px-12 lg:px-24 text-foreground" id="bento">
             <div className="max-w-[1400px] mx-auto">
                 <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8">
                     <div>
                         <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
                             TEK PLATFORM.
                             <br />
-                            <span className="text-gray-500">TÜM DİSİPLİNLER.</span>
+                            <span className="text-muted-foreground">TÜM DİSİPLİNLER.</span>
                         </h2>
-                        <p className="max-w-xl text-gray-400 text-lg">
+                        <p className="max-w-xl text-muted-foreground text-lg">
                             AEC endüstrisinin en kapsamlı ekosistemi. İhtiyacınız olan çözümü seçin.
                         </p>
                     </div>
@@ -85,7 +85,7 @@ const BentoGrid = () => {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true, margin: "-50px" }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className={`relative group overflow-hidden rounded-3xl bg-[#0f0f0f] border border-white/5 ${item.colSpan}`}
+                            className={`relative group overflow-hidden rounded-3xl bg-card border border-border/20 ${item.colSpan}`}
                         >
                             <Link href={item.href} className="block h-full w-full">
                                 <div className="absolute inset-0 z-0">
@@ -95,23 +95,23 @@ const BentoGrid = () => {
                                         fill
                                         className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-60 group-hover:opacity-40"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent" />
                                 </div>
 
                                 <div className="relative z-10 p-6 md:p-8 h-full flex flex-col justify-end items-start transform transition-all duration-500 translate-y-4 group-hover:translate-y-0">
-                                    <span className="text-[#3B82F6] text-xs font-bold uppercase tracking-widest mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                                    <span className="text-accent text-xs font-bold uppercase tracking-widest mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
                                         {item.subtitle}
                                     </span>
 
-                                    <h3 className="text-xl md:text-2xl font-bold mb-2 tracking-tight">
+                                    <h3 className="text-xl md:text-2xl font-bold mb-2 tracking-tight text-foreground">
                                         {item.title}
                                     </h3>
 
-                                    <p className="text-gray-300 text-sm mb-4 max-w-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200 line-clamp-2">
+                                    <p className="text-muted-foreground text-sm mb-4 max-w-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200 line-clamp-2">
                                         {item.description}
                                     </p>
 
-                                    <button className="flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm px-4 py-2 text-xs font-medium hover:bg-white hover:text-black transition-all group-hover:block">
+                                    <button className="flex items-center gap-2 rounded-full bg-foreground/10 backdrop-blur-sm px-4 py-2 text-xs font-medium hover:bg-foreground hover:text-background transition-all group-hover:block">
                                         {item.cta}
                                         <ArrowUpRight className="h-3 w-3" />
                                     </button>
