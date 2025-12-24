@@ -98,7 +98,6 @@ export default function Page() {
           <div className="max-w-4xl">
             <span className="text-accent font-medium text-sm tracking-wider uppercase mb-4 block">/ ALLPLAN CONCEPT</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">Modelleme ve tasarım dokümantasyonu için BIM çözümü</h1>
-            <Button asChild size="lg" className="mt-4"><a href="https://www.allplan.com/trial-or-subscription/" target="_blank" rel="noopener noreferrer">Ücretsiz Dene</a></Button>
           </div>
         </div>
       </section>
@@ -117,10 +116,6 @@ export default function Page() {
                 <li className="flex items-start gap-3"><Check className="w-5 h-5 text-accent mt-1 flex-shrink-0" /><span className="text-foreground">Veri alışverişi için sorunsuz arayüzler</span></li>
                 <li className="flex items-start gap-3"><Check className="w-5 h-5 text-accent mt-1 flex-shrink-0" /><span className="text-foreground">Bulut tabanlı model koordinasyonu ve iş birliği</span></li>
               </ul>
-              <div className="flex flex-wrap gap-4">
-                <Button variant="outline" asChild><Link href="/products/allplan">Sürümleri Görüntüle</Link></Button>
-                <Button asChild><Link href="/solutions/architecture">Tasarım İş Akışlarını İncele</Link></Button>
-              </div>
             </div>
             <div className="aspect-video rounded-2xl overflow-hidden shadow-xl">
               <iframe
@@ -156,9 +151,6 @@ export default function Page() {
               </div>
             ))}
           </div>
-          <div className="flex flex-wrap justify-center gap-4 mt-12">
-            <Button variant="outline" asChild><a href="https://www.allplan.com/subscription-faq/" target="_blank" rel="noopener noreferrer">Abonelik avantajlarını görün</a></Button>
-          </div>
         </div>
       </section>
 
@@ -170,10 +162,6 @@ export default function Page() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {coreFeatures.map((feature, index) => (<FeatureCard key={index} feature={feature} />))}
-          </div>
-          <div className="flex flex-wrap justify-center gap-4 mt-12">
-            <Button variant="outline" asChild><Link href="/contact">Sorularınız mı var? İletişime Geçin</Link></Button>
-            <Button asChild><Link href="/contact">Teklif alın</Link></Button>
           </div>
         </div>
       </section>
