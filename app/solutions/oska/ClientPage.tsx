@@ -9,7 +9,7 @@ import allplanSection from "@/assets/solutions/oska/allplan-section.jpg";
 
 export default function ClientPage() {
   return (
-    <div className="dark min-h-screen bg-graphite-950">
+    <div className="min-h-screen">
       <section className="relative h-[60vh] md:h-[70vh] overflow-hidden">
         <Image
           src={heroBanner}
@@ -45,7 +45,6 @@ export default function ClientPage() {
             href: "https://bimx5.aluplan.com.tr/",
             external: true,
           }}
-          backgroundColor="#ebebeb"
         />
         <SideImageSection
           imageSrc={allplanSection}
@@ -62,7 +61,6 @@ export default function ClientPage() {
             href: "https://aluplan.com.tr/allplan-2021-features/",
             external: true,
           }}
-          backgroundColor="#d7d7d7"
         />
       </div>
     </div>
