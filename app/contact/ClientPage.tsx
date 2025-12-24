@@ -117,7 +117,7 @@ export default function ClientPage() {
       </section>
       <section className="h-96 bg-muted">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.3647899999997!2d29.096231576525634!3d40.97315297135867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7f4b8f8b8b9%3A0x8e8e8e8e8e8e8e8e!2sQuick%20Tower!5e0!3m2!1sen!2str!4v1234567890123!5m2!1sen!2str"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.349796050269!2d29.100535700000005!3d40.973820700000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7f702b9b7cf%3A0x8c2c752cb2c61168!2sAluplan%20Program%20Sistemleri!5e0!3m2!1sen!2str!4v1766601003812!5m2!1sen!2str"
           width="100%"
           height="100%"
           style={{ border: 0 }}
