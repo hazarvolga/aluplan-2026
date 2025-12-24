@@ -58,8 +58,8 @@ const WorkflowTabsTemplate = ({
     <section className={`py-20 ${bgClass}`}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-accent/10 text-accent border-accent/20">ÖZELLİKLER</Badge>
-          <h2 className={`text-3xl md:text-5xl font-bold mb-4 ${textClass}`}>{title}</h2>
+          <span className="text-accent font-semibold tracking-wider uppercase mb-2 block">ÖZELLİKLER</span>
+          <h2 className={`text-4xl md:text-6xl font-bold mb-4 ${textClass}`}>{title}</h2>
           {subtitle && (
             <p className={`${mutedText} max-w-2xl mx-auto`}>{subtitle}</p>
           )}

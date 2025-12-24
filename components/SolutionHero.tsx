@@ -122,7 +122,7 @@ const SolutionHero = ({
   }, []);
 
   return (
-    <section className="relative min-h-[60vh] flex items-center overflow-hidden bg-gradient-to-br from-midnight-950 via-midnight-800 to-midnight-900 pt-16 md:pt-20">
+    <section className="relative min-h-[60vh] flex items-center overflow-hidden bg-background pt-16 md:pt-20">
       {backgroundImage && (
         <div className="absolute inset-0 z-0">
           <Image
@@ -132,7 +132,7 @@ const SolutionHero = ({
             className="object-cover opacity-60 mix-blend-overlay"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-midnight-950/95 via-midnight-900/90 to-midnight-900/80" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/90 to-background/80" />
         </div>
       )}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -192,7 +192,7 @@ const SolutionHero = ({
             <div className="lg:col-span-8 space-y-5 md:space-y-6">
               {badge && (
                 <motion.div variants={fadeUpVariants}>
-                  <span className="text-accent font-medium text-sm tracking-wider uppercase mb-4 block">
+                  <span className="text-muted-foreground font-medium text-sm tracking-wider uppercase mb-4 block">
                     / {badge}
                   </span>
                 </motion.div>

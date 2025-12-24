@@ -30,7 +30,7 @@ const StatsTemplate = ({ title = "Öne Çıkan Göstergeler", items = defaultIte
       <div className="container mx-auto px-4">
         {title && (
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">{title}</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground">{title}</h2>
           </div>
         )}
         <div className={cn("grid sm:grid-cols-2 gap-8", lgCols)}>

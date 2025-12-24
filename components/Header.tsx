@@ -8,6 +8,8 @@ import MegaMenu from "./MegaMenu";
 import { solutionsMenu } from "@/data/solutionsMenu";
 import Image from "next/image";
 import logoWhite from "@/assets/logo-white.png";
+import logoBlack from "@/assets/logo-black.png";
+import { ThemeToggle } from "./ThemeToggle";
 import { AnimatePresence } from "framer-motion";
 
 const Header = () => {
@@ -141,7 +143,7 @@ const Header = () => {
 
   return (
     <header
-      className="sticky top-0 z-[100] w-full border-b border-white/5 bg-[#050505]/80 backdrop-blur-md text-white transition-all duration-300"
+      className="sticky top-0 z-[100] w-full border-b border-border/40 bg-background/80 backdrop-blur-md text-foreground transition-all duration-300"
       onMouseLeave={handleMouseLeave}
     >
       <div className="absolute inset-0 opacity-[0.03] bg-technical-grid pointer-events-none" />
@@ -159,23 +161,24 @@ const Header = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="h-7 w-7 rounded-sm bg-white/5 border border-white/10 hover:bg-[#3B82F6]/20 hover:border-[#3B82F6]/50 hover:text-[#3B82F6] transition-all flex items-center justify-center text-gray-400"
+                  className="h-7 w-7 rounded-sm bg-muted/50 border border-border/50 hover:bg-accent/10 hover:border-accent/50 hover:text-accent transition-all flex items-center justify-center text-muted-foreground"
                 >
                   <Icon className="h-3.5 w-3.5" />
                 </a>
               );
             })}
           </div>
-          <a href="mailto:info@aluplan.com.tr" className="text-xs font-mono text-gray-500 hover:text-[#3B82F6] transition-colors">info@aluplan.com.tr</a>
+          <a href="mailto:info@aluplan.com.tr" className="text-xs font-mono text-muted-foreground hover:text-accent transition-colors">info@aluplan.com.tr</a>
         </div>
       </div>
-      <div className="h-px bg-white/5 w-full" />
+      <div className="h-px bg-border/20 w-full" />
 
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Image src={logoWhite} alt="Aluplan" height={56} className="h-14 w-auto opacity-90 hover:opacity-100 transition-opacity" priority />
+            <Image src={logoWhite} alt="Aluplan" height={56} className="h-14 w-auto opacity-90 hover:opacity-100 transition-opacity hidden dark:block" priority />
+            <Image src={logoBlack} alt="Aluplan" height={56} className="h-14 w-auto opacity-90 hover:opacity-100 transition-opacity block dark:hidden" priority />
           </Link>
 
           {/* Desktop Navigation */}
@@ -189,19 +192,19 @@ const Header = () => {
                 {item.href ? (
                   <Link
                     href={item.href}
-                    className="text-sm font-medium text-gray-300 hover:text-white transition-colors flex items-center gap-1 relative group"
+                    className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1 relative group"
                     onClick={(e) => item.href && handleScroll(e, item.href)}
                   >
                     {item.name}
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3B82F6] transition-all duration-300 group-hover:w-full" />
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
                   </Link>
                 ) : (
                   <button
-                    className={`text-sm font-medium transition-colors flex items-center gap-1 group ${activeMegaMenu === item.megaMenu ? "text-white" : "text-gray-300 hover:text-white"}`}
+                    className={`text-sm font-medium transition-colors flex items-center gap-1 group ${activeMegaMenu === item.megaMenu ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
                   >
                     {item.name}
                     {item.megaMenu && (
-                      <ChevronDown className={`h-3 w-3 transition-transform duration-300 ${activeMegaMenu === item.megaMenu ? 'rotate-180 text-[#3B82F6]' : 'text-gray-500 group-hover:text-white'}`} />
+                      <ChevronDown className={`h-3 w-3 transition-transform duration-300 ${activeMegaMenu === item.megaMenu ? 'rotate-180 text-accent' : 'text-muted-foreground group-hover:text-foreground'}`} />
                     )}
                   </button>
                 )}
@@ -211,7 +214,8 @@ const Header = () => {
 
           {/* Actions */}
           <div className="flex items-center space-x-4">
-            <Button
+            {/* Language Toggle - Temporarily disabled */}
+            {/* <Button
               variant="ghost"
               size="sm"
               onClick={toggleLanguage}
@@ -219,9 +223,11 @@ const Header = () => {
             >
               <Globe className="h-4 w-4" />
               {language.toUpperCase()}
-            </Button>
+            </Button> */}
 
-            <Button asChild variant="outline" size="sm" className="hidden sm:inline-flex border-white/10 bg-white/5 text-white hover:bg-white/10 hover:border-white/20">
+            <ThemeToggle />
+
+            <Button asChild variant="outline" size="sm" className="hidden sm:inline-flex border-border/40 bg-muted/50 text-foreground hover:bg-muted hover:border-border">
               <a href="https://www.allplan.com/trial-or-subscription/" target="_blank" rel="noopener noreferrer">
                 {language === "tr" ? "Ücretsiz Deneme" : "Free Trial"}
               </a>
@@ -238,7 +244,7 @@ const Header = () => {
               type="button"
               aria-label={isMenuOpen ? "Menüyü kapat" : "Menüyü aç"}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 text-gray-300 hover:text-white"
+              className="md:hidden p-2 text-muted-foreground hover:text-foreground"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -248,7 +254,7 @@ const Header = () => {
         {/* Mobile Navigation */}
         <AnimatePresence>
           {isMenuOpen && (
-            <div className="md:hidden py-4 border-t border-white/10 animate-fade-in bg-[#050505]">
+            <div className="md:hidden py-4 border-t border-border/10 animate-fade-in bg-background">
               <div className="flex flex-col space-y-3 px-2">
                 {navigation.map((item) => (
                   <a

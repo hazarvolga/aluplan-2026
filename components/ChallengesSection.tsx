@@ -19,10 +19,10 @@ const ChallengesSection = ({ items, id, theme = "default" }: ChallengesSectionPr
     <section id={id} className={`py-16 ${bgClass}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <Badge variant="outline" className="mb-4 bg-accent/10 text-accent border-accent/30">
+          <span className="text-accent font-semibold tracking-wider uppercase mb-2 block">
             ZORLU DURUMLAR
-          </Badge>
-          <h2 className={`font-display text-3xl md:text-4xl font-bold ${textClass}`}>
+          </span>
+          <h2 className={`font-display text-4xl md:text-5xl font-bold ${textClass}`}>
             AŞAĞIDAKİ ZORLUKLARLA SÜREKLİ MÜCADELE EDİYOR MUSUNUZ?
           </h2>
         </div>
