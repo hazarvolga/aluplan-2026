@@ -142,8 +142,6 @@ export default function ClientPage() {
       title="Sizin İçin Tasarlanmış Detaylandırma Yazılımı"
       description="Detaylandırma sürecinizi bir üst seviyeye taşıyın. SDS2 Ultimate ile bağlantı otomasyonu, CNC entegrasyonu ve güçlü 3D modelleme gibi sınıfının en iyisi özelliklere sahip olun — böylece her gün sahada çalışan detaylandırıcılar daha hızlı, daha akıllı ve daha doğru sonuçlar elde eder."
       heroImage={heroImage}
-      features={features}
-      packages={packages}
       ctaTitle="Ücretsiz Dene"
       ctaDescription="Çelik detaylandırma ve imalat için tek çözüm"
       ctaHref="https://www.allplan.com/trial-or-subscription/"
