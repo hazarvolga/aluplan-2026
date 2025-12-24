@@ -98,7 +98,7 @@ export default function Page() {
           <div className="max-w-4xl">
             <span className="text-accent font-medium text-sm tracking-wider uppercase mb-4 block">/ ALLPLAN CONCEPT</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">Modelleme ve tasarım dokümantasyonu için BIM çözümü</h1>
-            <Button asChild size="lg" className="mt-4"><Link href="/contact">Ücretsiz Dene</Link></Button>
+            <Button asChild size="lg" className="mt-4"><a href="https://www.allplan.com/trial-or-subscription/" target="_blank" rel="noopener noreferrer">Ücretsiz Dene</a></Button>
           </div>
         </div>
       </section>

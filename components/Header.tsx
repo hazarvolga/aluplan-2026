@@ -221,8 +221,10 @@ const Header = () => {
               {language.toUpperCase()}
             </Button>
 
-            <Button variant="outline" size="sm" className="hidden sm:inline-flex border-white/10 bg-white/5 text-white hover:bg-white/10 hover:border-white/20">
-              {language === "tr" ? "Ücretsiz Deneme" : "Free Trial"}
+            <Button asChild variant="outline" size="sm" className="hidden sm:inline-flex border-white/10 bg-white/5 text-white hover:bg-white/10 hover:border-white/20">
+              <a href="https://www.allplan.com/trial-or-subscription/" target="_blank" rel="noopener noreferrer">
+                {language === "tr" ? "Ücretsiz Deneme" : "Free Trial"}
+              </a>
             </Button>
 
             <Button asChild className="hidden sm:inline-flex bg-[#3B82F6] hover:bg-[#2563eb] text-white border-0" size="sm">
@@ -262,8 +264,10 @@ const Header = () => {
                   </a>
                 ))}
                 <div className="pt-3 border-t border-white/10 flex flex-col space-y-3 px-2">
-                  <Button variant="outline" size="sm" className="w-full border-white/10 bg-white/5 text-white">
-                    {language === "tr" ? "Ücretsiz Deneme" : "Free Trial"}
+                  <Button asChild variant="outline" className="w-full justify-start border-white/10 bg-white/5 text-white hover:bg-white/10">
+                    <a href="https://www.allplan.com/trial-or-subscription/" target="_blank" rel="noopener noreferrer">
+                      {language === "tr" ? "Ücretsiz Deneme" : "Free Trial"}
+                    </a>
                   </Button>
                   <Button asChild className="w-full bg-[#3B82F6] hover:bg-[#2563eb] text-white">
                     <a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">
