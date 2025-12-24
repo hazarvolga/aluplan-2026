@@ -11,20 +11,22 @@ type StatItem = {
 type StatsTemplateProps = {
   title?: string;
   items?: StatItem[];
+  className?: string;
 };
 
 const defaultItems: StatItem[] = [
+  // ... (keep items)
   { value: 52, suffix: "%", label: "Verimlilik Artışı", description: "Yüksek düzeyde otomatik iş akışlarıyla verimliliği artırın." },
   { value: 60, suffix: "%", label: "Daha Yüksek Kalite", description: "Doğrulama kuralları ve güvenlik kontrolleri ile tasarımda hata oranını en aza indirin." },
   { value: 75, suffix: "%", label: "Daha Hızlı Tasarım", description: "Prefabrik elemanlar için özelleştirilmiş modelleme teknikleri ile hassas modelleme." },
   { value: 50, suffix: "%", label: "Daha Fazla Performans", description: "İçe aktarılan IFC nesnelerini doğrudan akıllı prefabrik elemanlara dönüştürün." },
 ];
 
-const StatsTemplate = ({ title = "Öne Çıkan Göstergeler", items = defaultItems }: StatsTemplateProps) => {
+const StatsTemplate = ({ title = "Öne Çıkan Göstergeler", items = defaultItems, className }: StatsTemplateProps) => {
   const lgCols = items.length === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4";
 
   return (
-    <section className="py-20 bg-accent/10">
+    <section className={cn("py-20 bg-accent/10", className)}>
       <div className="container mx-auto px-4">
         {title && (
           <div className="text-center mb-12">

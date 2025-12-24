@@ -95,7 +95,7 @@ const EnhancedSolutionTemplate = ({
       {customHero ? (
         <>{customHero}</>
       ) : (
-        <section className={`relative py-24 overflow-hidden ${isDark ? "bg-gradient-to-br from-[#0B1120] to-[#020202]" : "gradient-primary"}`}>
+        <section className={`relative py-24 overflow-hidden ${isDark ? "bg-gradient-to-br from-[#0a0a0a] to-[#020202]" : "gradient-primary"}`}>
           <div className="absolute inset-0 bg-technical-grid opacity-30" />
 
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

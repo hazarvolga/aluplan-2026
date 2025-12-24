@@ -3,6 +3,7 @@ import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
 import SolutionHero from "@/components/SolutionHero";
 import WorkflowTabsTemplate from "@/components/WorkflowTabsTemplate";
 import PostHeroSection from "@/components/PostHeroSection";
+import heroBg from "@/assets/solutions/road-railway-hero-bg.png";
 import imgModellingTools from "@/assets/solutions/road-railway/modelling-tools.png";
 import imgReinforcement from "@/assets/solutions/road-railway/reinforcement.png";
 import imgConstructionSeq from "@/assets/solutions/road-railway/construction-sequence.png";
@@ -55,24 +56,32 @@ const reasons = [
 ];
 
 const workflowCategories = [
-  { key: "site-analysis", label: "1 / Şantiye Analizi", items: [
-    { title: "Terrain Survey", description: "Büyük nokta bulutları ile yüksek çözünürlüklü arazi modelleri.", image: imgWorkflowSurvey },
-    { title: "Geodata Processing (SHP)", description: "Parsel sınırları, taşkın alanları, yol ağları ve kritik zonlar.", image: imgWorkflowGeodata },
-    { title: "Data Exchange", description: "IFC 4.3’e uygun yol elemanları ve mantıksal bölümler.", image: imgWorkflowExchange },
-  ]},
-  { key: "modeling", label: "2 / Modelleme", items: [
-    { title: "Parametric Modeling", description: "Tutarlı parametrik kavramla her zaman geometrik uyarlamalar.", image: imgWorkflowParametric },
-    { title: "Free-form Modeling", description: "Serbest profillerin ekstrüzyonu ile ray, bariyer ve destekler.", image: imgWorkflowFreeform },
-    { title: "Visualisation", description: "Disiplinler arası analiz ve iletişimi kolaylaştırır.", image: imgWorkflowVisualisation },
-  ]},
-  { key: "model-analysis", label: "3 / Model Analizi", items: [
-    { title: "Variant Comparison", description: "Farklı hizalamaları hızla kaydedin ve karşılaştırın.", image: imgWorkflowVariant },
-    { title: "Change Management", description: "Drone verisiyle saha durumunu modele karşılaştırın.", image: imgWorkflowChange },
-  ]},
-  { key: "deliverables", label: "4 / Teslimatlar", items: [
-    { title: "Drawings", description: "Kesit, boyuna kesit ve saha planı; modelle senkron.", image: imgWorkflowDrawings },
-    { title: "Reports", description: "Kazık noktaları, mesafeler, hacimler ve veri aktarımı.", image: imgWorkflowReports },
-  ]},
+  {
+    key: "site-analysis", label: "1 / Şantiye Analizi", items: [
+      { title: "Terrain Survey", description: "Büyük nokta bulutları ile yüksek çözünürlüklü arazi modelleri.", image: imgWorkflowSurvey },
+      { title: "Geodata Processing (SHP)", description: "Parsel sınırları, taşkın alanları, yol ağları ve kritik zonlar.", image: imgWorkflowGeodata },
+      { title: "Data Exchange", description: "IFC 4.3’e uygun yol elemanları ve mantıksal bölümler.", image: imgWorkflowExchange },
+    ]
+  },
+  {
+    key: "modeling", label: "2 / Modelleme", items: [
+      { title: "Parametric Modeling", description: "Tutarlı parametrik kavramla her zaman geometrik uyarlamalar.", image: imgWorkflowParametric },
+      { title: "Free-form Modeling", description: "Serbest profillerin ekstrüzyonu ile ray, bariyer ve destekler.", image: imgWorkflowFreeform },
+      { title: "Visualisation", description: "Disiplinler arası analiz ve iletişimi kolaylaştırır.", image: imgWorkflowVisualisation },
+    ]
+  },
+  {
+    key: "model-analysis", label: "3 / Model Analizi", items: [
+      { title: "Variant Comparison", description: "Farklı hizalamaları hızla kaydedin ve karşılaştırın.", image: imgWorkflowVariant },
+      { title: "Change Management", description: "Drone verisiyle saha durumunu modele karşılaştırın.", image: imgWorkflowChange },
+    ]
+  },
+  {
+    key: "deliverables", label: "4 / Teslimatlar", items: [
+      { title: "Drawings", description: "Kesit, boyuna kesit ve saha planı; modelle senkron.", image: imgWorkflowDrawings },
+      { title: "Reports", description: "Kazık noktaları, mesafeler, hacimler ve veri aktarımı.", image: imgWorkflowReports },
+    ]
+  },
 ];
 
 const postHeroSection = (
@@ -100,7 +109,9 @@ export default function Page() {
 ÜSTÜN İNŞAAT İÇİN ÇOK MALZEMELİ ÇÖZÜM`}
       customHero={(
         <SolutionHero badge="KARAYOLU VE DEMİRYOLU ALTYAPISI" title="KARAYOLU VE DEMİRYOLU ALTYAPISI" subtitle="DAHA FAZLASINI İSTEYEN ALTYAPI TASARIMCILARI İÇİN." description={`ALLPLAN’in karayolu, demiryolu ve altyapı tasarımına yönelik BIM çözümleri, tasarımdan inşa sürecine kadar tüm süreci kapsar. Allplan, proje tasarımı ve teslimatı için daha fazla üretkenliği destekleyen işbirlikçi iş akışlarıyla köprüler dahil olmak üzere diğer inşaat mühendisliği disiplini tasarım gereksinimleriyle sorunsuz entegrasyon sağlar. Karayolu, demiryolu ve altyapı planlama yazılımınızdan daha fazlasını bekleyin!
-ÜSTÜN İNŞAAT İÇİN ÇOK MALZEMELİ ÇÖZÜM`} />
+ÜSTÜN İNŞAAT İÇİN ÇOK MALZEMELİ ÇÖZÜM`}
+          backgroundImage={heroBg}
+        />
       )}
       stats={stats}
       challenges={challenges}
@@ -109,8 +120,7 @@ export default function Page() {
       statsVariant="animated"
       postHeroSection={postHeroSection}
       preWorkflowSection={preWorkflowSection}
-      ctaTitle="Allplan'ı ücretsiz deneyin"
-      ctaDescription="Disiplinler arası AEC ekip çalışması ve gelişmiş BIM iş akışları ile verimliliği artırın."
+      showCta={false}
     />
   );
 }

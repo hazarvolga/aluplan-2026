@@ -30,7 +30,7 @@ const StatsSection = ({ items, variant = "default", theme = "default" }: StatsSe
     });
     return (
       <div className={bgClass}>
-        <StatsTemplate title="" items={mapped} />
+        <StatsTemplate title="" items={mapped} className="bg-transparent" />
       </div>
     );
   }

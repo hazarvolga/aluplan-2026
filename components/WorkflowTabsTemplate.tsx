@@ -41,7 +41,7 @@ const WorkflowTabsTemplate = ({
   const defaultCategory = categories[0]?.key ?? "cat-0";
 
   const isDark = theme === "v2-dark";
-  const bgClass = isDark ? "bg-[#0B1120]" : "bg-gradient-to-b from-muted/20 to-background";
+  const bgClass = isDark ? "bg-[#020202]" : "bg-gradient-to-b from-muted/20 to-background";
   const textClass = isDark ? "text-white" : "text-foreground";
   const mutedText = isDark ? "text-gray-400" : "text-muted-foreground";
 
