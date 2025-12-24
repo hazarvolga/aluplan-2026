@@ -160,6 +160,9 @@ export default function ClientPage() {
           "SDS2 Ultimate, ister küçük bir atölyede ister büyük bir firmada çalışın, günlük projelerinde hassasiyet ve verimlilik arayan detaylandırıcılar için geliştirilen, sektör lideri çelik detaylandırma yazılımıdır. Otomatik bağlantı tasarımı, kapsamlı 3D modelleme ve BIM ile CNC sistemleriyle sorunsuz entegrasyon gibi gelişmiş özelliklerle, detaylandırıcıların iş akışlarını optimize etmelerini, maliyetli hataları azaltmalarını ve üretime hazır, doğru çizimler sunmalarını sağlar.",
         videoUrl: "https://www.youtube.com/embed/oKqf6wjm9tg",
       }}
+      quickActions={[
+        { text: "SDS2 Ultimate'ın Faydaları Detaylı İncele", href: "https://sds2.com/sds2-ultimate/", external: true, variant: "outline" }
+      ]}
       afterInfoChildren={
         <>
           <section className="py-16 bg-muted/30">
