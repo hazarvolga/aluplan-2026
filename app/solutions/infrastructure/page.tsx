@@ -95,7 +95,9 @@ const infrastructureCategories = [
 ];
 
 const preWorkflowSection = (
-  <WorkflowTabsTemplate title="Altyapı Mühendisliği İş Akışları" categories={infrastructureCategories} />
+  <section id="altyapi-muhendisligi-is-akislari">
+    <WorkflowTabsTemplate title="Altyapı Mühendisliği İş Akışları" categories={infrastructureCategories} />
+  </section>
 );
 
 const postHeroSection = (

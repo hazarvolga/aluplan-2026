@@ -163,7 +163,7 @@ export default function Page() {
           { text: "Sürümleri Görüntüle", href: "/package-overview", external: true },
           { text: "Tasarım için İş Akışları", href: "/solutions/architecture#mimari-is-akislari", external: false },
           { text: "İnşaat Mühendisliği için İş Akışları", href: "/solutions/structural#insaat-muhendisligi-is-akislari", external: false },
-          { text: "Yapı Mühendisliği için İş Akışları", href: "/2024-civil-engineering", external: true },
+          { text: "Altyapı Mühendisliği için İş Akışları", href: "/solutions/infrastructure#altyapi-muhendisligi-is-akislari", external: false },
         ]}
       />
 
