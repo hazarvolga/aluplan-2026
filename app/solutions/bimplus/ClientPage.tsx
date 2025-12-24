@@ -50,8 +50,7 @@ export default function ClientPage() {
       challenges={challenges}
       reasons={reasons}
       workflowSteps={workflowSteps}
-      ctaTitle="Bimplus'ı ücretsiz deneyin"
-      ctaDescription="Bulut tabanlı BIM işbirliği platformunu keşfedin ve projelerinizi daha verimli yönetin."
+      showCta={false}
     />
   );
 }
