@@ -54,7 +54,7 @@ const civilCloudServices: CloudServiceItem[] = [
 ];
 
 const CloudServiceCard = ({ service }: { service: CloudServiceItem }) => (
-    <Card className="overflow-hidden group border border-white/10 hover:border-white/20 bg-graphite-950">
+    <Card className="overflow-hidden group border border-border hover:border-accent/50 bg-card">
         <div className="aspect-video overflow-hidden relative">
             {service.youtubeId ? (
                 <VideoModal youtubeId={service.youtubeId} title={service.title} thumbnailUrl={service.image} className="w-full h-full" />
