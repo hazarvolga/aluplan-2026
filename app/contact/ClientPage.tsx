@@ -87,7 +87,11 @@ export default function ClientPage() {
                   <CardContent className="p-8">
                     <h3 className="font-display text-2xl font-bold mb-4">Ücretsiz Deneme</h3>
                     <p className="text-muted-foreground mb-6">30 gün boyunca Allplan&apos;ı ücretsiz deneyin. Kredi kartı bilgisi gerekmez.</p>
-                    <Button variant="accent" className="w-full">Deneme Başlat</Button>
+                    <Button variant="accent" className="w-full" asChild>
+                      <a href="https://www.allplan.com/trial-or-subscription/" target="_blank" rel="noopener noreferrer">
+                        Deneme Başlat
+                      </a>
+                    </Button>
                   </CardContent>
                 </Card>
                 <Card>
