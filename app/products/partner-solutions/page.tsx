@@ -30,7 +30,14 @@ export default function Page() {
       heroImage={heroImage}
       features={features}
       packages={packages}
-      ctaTitle="Ortakları Keşfedin"
+      ctaTitle="Ücretsiz Dene"
+      ctaHref="https://www.allplan.com/trial-or-subscription/"
+      ctaExternal={true}
+      showDemoButton={false}
+      additionalButtons={[
+        { text: "Teklif Talep Formu", href: "https://forms.office.com/r/hXhnKAG912", external: true },
+        { text: "Abonelik SSS", href: "/solutions-v2/faq", external: false },
+      ]}
       ctaDescription="İş akışınızı güçlendiren entegre çözümler"
     />
   );
