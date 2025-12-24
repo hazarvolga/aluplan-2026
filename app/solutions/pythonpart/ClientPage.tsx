@@ -252,11 +252,22 @@ export default function ClientPage() {
             />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
               {freePythonParts.map((item, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow border-accent/50">
+                <Card key={index} className="hover:shadow-lg transition-shadow border-accent/50 flex flex-col">
                   <CardHeader>
                     <CardTitle className="text-lg">{item.title}</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="flex-1 flex flex-col gap-4">
+                    {item.videoUrl && (
+                      <div className="aspect-video w-full rounded-lg overflow-hidden">
+                        <iframe
+                          src={item.videoUrl}
+                          title={item.title}
+                          className="w-full h-full"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        />
+                      </div>
+                    )}
                     <CardDescription className="text-sm leading-relaxed">
                       {item.description}
                     </CardDescription>
