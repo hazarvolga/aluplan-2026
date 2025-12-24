@@ -54,8 +54,8 @@ const Header = () => {
       items: [
         { name: "Allplan Precast - Prekast Detaylandırma", href: "/products/precast-detail" },
         { name: "Tim - Prekast İş Planlaması", href: "https://www.allplan.com/products/tim/", external: true },
-        { name: "SDS2 - Çelik Detaylandırma", href: "/products/sds2-detail" },
-        { name: "SDS2 - Çelik Yük Planlaması", href: "/products/sds2-load" },
+        { name: "SDS2 - Çelik Detaylandırma ve İmalatı", href: "https://www.allplan.com/products/sds2-detailing-fabrication/", external: true },
+        { name: "SDS2 - Çelik Yük Planlaması", href: "https://www.allplan.com/products/sds2-load-planning/", external: true },
         { name: "SDS2 - Allplan Çelik Anasayfa", href: "/products/sds2-home" },
       ],
     },
