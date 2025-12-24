@@ -161,9 +161,9 @@ export default function Page() {
       <WorkflowLinksSection
         links={[
           { text: "Sürümleri Görüntüle", href: "/package-overview", external: true },
-          { text: "Tasarım için İş Akışları", href: "/solutions/architecture#mimari-is-akislari", external: false },
-          { text: "İnşaat Mühendisliği için İş Akışları", href: "/solutions/structural#insaat-muhendisligi-is-akislari", external: false },
-          { text: "Altyapı Mühendisliği için İş Akışları", href: "/solutions/infrastructure#altyapi-muhendisligi-is-akislari", external: false },
+          { text: "Tasarım için İş Akışları", href: "/solutions/architecture#mimari-is-akislari", external: false, color: "#3B82F6" },
+          { text: "İnşaat Mühendisliği için İş Akışları", href: "/solutions/structural#insaat-muhendisligi-is-akislari", external: false, color: "#10B981" },
+          { text: "Altyapı Mühendisliği için İş Akışları", href: "/solutions/infrastructure#altyapi-muhendisligi-is-akislari", external: false, color: "#F59E0B" },
         ]}
       />
 
