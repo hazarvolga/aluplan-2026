@@ -6,7 +6,7 @@ interface PageWrapperProps {
 
 export const PageWrapper = ({ children }: PageWrapperProps) => {
     return (
-        <main className="min-h-screen bg-[#050505] text-white selection:bg-[#3B82F6] selection:text-white font-sans antialiased">
+        <main className="min-h-screen bg-background text-foreground selection:bg-accent selection:text-accent-foreground font-sans antialiased">
             {children}
         </main>
     );

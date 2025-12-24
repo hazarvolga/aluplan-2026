@@ -19,19 +19,19 @@ export const CardV2 = ({ title, href, index }: CardV2Props) => {
         >
             <Link
                 href={href}
-                className="group relative block h-full p-8 rounded-2xl border bg-[#0a0a0a] border-white/5 hover:border-[#3B82F6]/30 hover:bg-[#0f0f0f] transition-all duration-300"
+                className="group relative block h-full p-8 rounded-2xl border bg-card border-border/10 hover:border-accent/30 hover:bg-card/80 transition-all duration-300 shadow-sm"
             >
                 <div className="flex items-start justify-between mb-6">
-                    <div className="p-3 rounded-xl bg-[#111] border border-white/10 group-hover:text-[#3B82F6] text-gray-300 transition-colors">
+                    <div className="p-3 rounded-xl bg-muted border border-border/10 group-hover:text-accent text-muted-foreground transition-colors">
                         <Box className="h-6 w-6" />
                     </div>
-                    <ArrowRight className="h-5 w-5 text-gray-600 group-hover:text-[#3B82F6] transition-colors -rotate-45 group-hover:rotate-0 transform duration-300" />
+                    <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-accent transition-colors -rotate-45 group-hover:rotate-0 transform duration-300" />
                 </div>
 
-                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#3B82F6] transition-colors">
+                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
                     {title}
                 </h3>
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-muted-foreground">
                     Profesyonel çözüm paketi.
                 </p>
             </Link>

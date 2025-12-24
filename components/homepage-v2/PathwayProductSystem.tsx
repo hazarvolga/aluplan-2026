@@ -104,7 +104,7 @@ const PathwayProductSystem = () => {
     const [activeRole, setActiveRole] = useState<Role>(roles[0]);
 
     return (
-        <section className="bg-[#050505] py-24 px-6 md:px-12 lg:px-24 border-y border-white/5 relative overflow-hidden">
+        <section className="bg-background py-24 px-6 md:px-12 lg:px-24 border-y border-border/10 relative overflow-hidden">
             {/* Dynamic Background Glow based on Active Role */}
             <motion.div
                 animate={{ backgroundColor: activeRole.color }}
@@ -114,10 +114,10 @@ const PathwayProductSystem = () => {
             <div className="max-w-[1400px] mx-auto relative z-10">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">
+                    <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 tracking-tight">
                         ROLÜNÜZÜ SEÇİN
                     </h2>
-                    <p className="text-gray-400">
+                    <p className="text-muted-foreground">
                         Size en uygun iş akışını ve ürün paketini keşfedin.
                     </p>
                 </div>
@@ -129,8 +129,8 @@ const PathwayProductSystem = () => {
                             key={role.id}
                             onClick={() => setActiveRole(role)}
                             className={`px-8 py-4 rounded-full text-sm font-bold tracking-widest transition-all duration-300 border ${activeRole.id === role.id
-                                ? `bg-white text-black border-transparent scale-105 shadow-[0_0_20px_rgba(255,255,255,0.3)]`
-                                : "bg-transparent text-gray-500 border-gray-800 hover:border-gray-600 hover:text-white"
+                                ? `bg-foreground text-background border-transparent scale-105 shadow-xl`
+                                : "bg-transparent text-muted-foreground border-border hover:border-foreground/50 hover:text-foreground"
                                 }`}
                         >
                             {role.label}
@@ -151,10 +151,10 @@ const PathwayProductSystem = () => {
                             <h3 className="text-4xl md:text-6xl font-bold mb-6" style={{ color: activeRole.color }}>
                                 {activeRole.title}
                             </h3>
-                            <p className="text-xl text-gray-300 leading-relaxed mb-8">
+                            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                                 {activeRole.description}
                             </p>
-                            <Link href={activeRole.href} className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white font-medium transition-all group">
+                            <Link href={activeRole.href} className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-foreground/10 hover:bg-foreground/20 text-foreground font-medium transition-all group">
                                 Bu Akışı Detaylı İncele
                                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                             </Link>
@@ -169,10 +169,10 @@ const PathwayProductSystem = () => {
                                     initial={{ opacity: 0, scale: 0.9 }}
                                     animate={{ opacity: 1, scale: 1 }}
                                     transition={{ delay: idx * 0.1 }}
-                                    className="flex items-center gap-3 bg-[#111] p-4 rounded-xl border border-white/5"
+                                    className="flex items-center gap-3 bg-card p-4 rounded-xl border border-border/10 shadow-sm"
                                 >
                                     <CheckCircle2 className="h-5 w-5" style={{ color: activeRole.color }} />
-                                    <span className="text-sm font-medium text-gray-200">{feature}</span>
+                                    <span className="text-sm font-medium text-foreground">{feature}</span>
                                 </motion.div>
                             ))}
                         </AnimatePresence>
@@ -198,14 +198,14 @@ const PathwayProductSystem = () => {
                                 <Link
                                     href={product.href}
                                     className={`group block h-full p-8 rounded-2xl border transition-all duration-300 ${isHighlighted
-                                            ? "bg-[#0a0a0a] border-white/10 hover:border-[#3B82F6]/50 shadow-[0_10px_40px_-20px_rgba(0,0,0,0.5)] cursor-pointer"
-                                            : "bg-[#050505] border-white/5 cursor-default grayscale"
+                                        ? "bg-card border-border/20 hover:border-accent/50 shadow-lg cursor-pointer"
+                                        : "bg-muted/20 border-border/10 cursor-default grayscale"
                                         }`}
                                 >
                                     <div className="flex items-start justify-between mb-6">
                                         <div className={`p-3 rounded-xl border transition-colors ${isHighlighted
-                                                ? "bg-[#111] border-white/10 group-hover:bg-[#3B82F6]/10 group-hover:text-[#3B82F6] text-white"
-                                                : "bg-[#0a0a0a] border-white/5 text-gray-600"
+                                            ? "bg-muted border-border/10 group-hover:bg-accent/10 group-hover:text-accent text-foreground"
+                                            : "bg-muted/50 border-border/5 text-muted-foreground"
                                             }`}>
                                             <Box className="h-6 w-6" />
                                         </div>
@@ -215,18 +215,18 @@ const PathwayProductSystem = () => {
                                         )}
                                     </div>
 
-                                    <h4 className={`text-xl font-bold mb-2 transition-colors ${isHighlighted ? "text-white group-hover:text-[#3B82F6]" : "text-gray-600"
+                                    <h4 className={`text-xl font-bold mb-2 transition-colors ${isHighlighted ? "text-foreground group-hover:text-accent" : "text-muted-foreground"
                                         }`}>
                                         {product.title}
                                     </h4>
 
-                                    <p className={`text-sm mb-6 transition-colors ${isHighlighted ? "text-gray-400 group-hover:text-gray-300" : "text-gray-700"
+                                    <p className={`text-sm mb-6 transition-colors ${isHighlighted ? "text-muted-foreground group-hover:text-foreground" : "text-muted-foreground/50"
                                         }`}>
                                         {product.description}
                                     </p>
 
                                     {isHighlighted && (
-                                        <span className="flex items-center gap-2 text-sm font-medium text-[#3B82F6] opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+                                        <span className="flex items-center gap-2 text-sm font-medium text-accent opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
                                             İncele <ArrowRight className="h-4 w-4" />
                                         </span>
                                     )}
