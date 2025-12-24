@@ -102,7 +102,7 @@ export default function Page() {
       badge="ALLPLAN"
       title="MEP ENGINEERING"
       subtitle="DAHA FAZLASINI İSTEYEN MÜHENDİSLER İÇİN."
-      description="ALLPLAN’s BIM solutions for MEP and building services engineering cover the entire design to build process. Allplan enables integrated working with architectural and structural engineering disciplines, together with collaborative workflows that support greater productivity for project design and delivery. Expect more from your MEP design software with Allplan and AX3000!"
+      description="ALLPLAN'ın MEP ve bina hizmetleri mühendisliği için BIM çözümleri, tasarımdan inşaata kadar tüm süreci kapsar. Allplan, mimari ve yapı mühendisliği disiplinleriyle entegre çalışmayı ve proje tasarımı ve teslimatı için daha fazla üretkenliği destekleyen işbirlikçi iş akışlarını mümkün kılar. Allplan ve AX3000 ile MEP tasarım yazılımınızdan daha fazlasını bekleyin!"
       customHero={(
         <SolutionHero
           badge="ALLPLAN"
