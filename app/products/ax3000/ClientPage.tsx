@@ -96,13 +96,13 @@ export default function ClientPage() {
       </section>
 
       <InfoMediaTwoColumn
-        title="Deneyİm Kazandırır"
+        title="Deneyim Kazandırır"
         description="AX3000'in Bina Tesisatı çözümünde lider konuma gelmesi CAD pazarındaki 25 yıllık deneyimin sonucudur. AX-3000 Mekanik ve Tesisat ile ilgili ihtiyaçlarınız için geliştirilmiş ilk CAD yazılımıdır ve işinizde projelendirmeden konstrüksiyona ve uygulamaya kadar tüm ihtiyaçlarınızı karşılar."
         imageSrc={axBg1}
       />
 
       <InfoMediaTwoColumn
-        title="Tümleşİk Kullanım"
+        title="Tümleşik Kullanım"
         description="AX3000'deki modüler yapı sayesinde Sıhhi Tesisat , Isıtma, Havalandırma, Soğutma, EKB ve Elektrik tesisatı için çok seçenekli özel çözümler üretebilirsiniz. Siz bir kere yazılımda çalışmaya başlayın, tümleşik kullanım sayesinde ileri safhalara kolayca geleceksiniz."
         imageSrc={simulason}
         className="bg-muted/30"
@@ -115,7 +115,7 @@ export default function ClientPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">Optİmum Verİ Yönetİmİ</h2>
+              <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">Optimum Veri Yönetimi</h2>
               <p className="text-muted-foreground text-base md:text-lg">AX-3000 yerleşim plan içindeki verileri en uygun ve anlaşılır şekilde sıralayarak projenizi yönetmenizi kolaylaştırır.</p>
             </div>
             <div>
