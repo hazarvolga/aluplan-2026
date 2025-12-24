@@ -9,6 +9,8 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 import VideoModal from "@/components/VideoModal";
 import CloudServicesSection from "@/components/CloudServicesSection";
 
+import heroImg from "@/assets/products/allplan-ultimate/hero.jpg";
+
 import workWayWantIcon from "@/assets/products/allplan-ultimate/work-way-want.png";
 import powerfulModelingIcon from "@/assets/products/allplan-ultimate/powerful-modeling.png";
 import productiveCollabIcon from "@/assets/products/allplan-ultimate/productive-collab.png";
@@ -108,8 +110,19 @@ export default function Page() {
 
   return (
     <div className="dark min-h-screen bg-graphite-950">
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-r from-black/80 to-black/40">
-        <div className="absolute inset-0 opacity-[0.02] bg-technical-grid" />
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src={heroImg}
+            alt="Allplan Ultimate Hero"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60" />
+          <div className="absolute inset-0 opacity-[0.02] bg-technical-grid" />
+        </div>
         <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="max-w-3xl">
             <span className="inline-block px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-medium mb-6">/ ALLPLAN Ultimate</span>
