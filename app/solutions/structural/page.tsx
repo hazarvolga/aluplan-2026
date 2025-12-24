@@ -3,6 +3,7 @@ import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
 import SolutionHero from "@/components/SolutionHero";
 import WorkflowTabsTemplate from "@/components/WorkflowTabsTemplate";
 import PostHeroSection from "@/components/PostHeroSection";
+import heroBg from "@/assets/solutions/structural-hero-bg.png";
 import architectureHero from "@/assets/solutions/architecture-hero.jpg";
 import imgDataExchange from "@/assets/solutions/structural/workflows/site-analysis/data-exchange.jpg";
 import imgTerrainSurvey from "@/assets/solutions/structural/workflows/site-analysis/terrain-survey.jpg";
@@ -72,29 +73,37 @@ const postHeroSection = (
 );
 
 const structuralCategories = [
-  { key: "site-analysis", label: "Şantiye Analizi", items: [
-    { title: "Veri Değişimi", description: "Proje ortaklarının verilerini içe aktararak tasarım aşamasında önemli zaman kazanın; 50+ format desteklenir.", image: imgDataExchange },
-    { title: "Arazi Araştırması", description: "PDF ve görüntü tabanlı planlar ile temel oluşturun; nokta bulutları Scalypso ile Allplan’a aktarılır.", image: imgTerrainSurvey },
-    { title: "BIM Koordinasyonu", description: "Allplan ve Bimplus Konu Yönetimi ile senkronizasyon; IFC/BCF desteği ve net karar süreçleri.", image: imgBimCoordination, videoUrl: "https://youtu.be/l66_2h40YdM" },
-  ]},
-  { key: "modeling", label: "Modelleme", items: [
-    { title: "Serbest Biçimli Modelleme", description: "Her türlü 3D eleman; obje olarak tanıma ve metraj uyumu.", image: imgFreeFormModeling },
-    { title: "Parametrik Modelleme", description: "Yol gövdesi yardımcı unsurlar parametrik yerleşim ve uyarlama.", image: imgParametricModeling },
-    { title: "Görselleştirme", description: "Disiplinler arası analiz ve geri bildirim için yüksek kalite görselleştirme.", image: imgVisualization },
-  ]},
-  { key: "model-analysis", label: "Model Analizi", items: [
-    { title: "Varyant Çalışmaları", description: "Çizim dosyası sistemi ile performans ve düzen artırımı; büyük projelere uygun yapılandırma.", image: imgVariantStudies },
-    { title: "Şantiye Ekipmanları", description: "Vinç ve ekipman objeleri ile yerleşim; çakışma algılama ve hızlı varyant detaylandırma.", image: imgBuildingSiteEquipment },
-    { title: "Değişim Yönetimi", description: "Bimplus ile varyant ve revizyon karşılaştırma; toplantılarda karar desteği.", image: imgChangeManagement, videoUrl: "https://youtu.be/b9M3-bwTR_s" },
-  ]},
-  { key: "detailing-deliverables", label: "Detaylandırma Teslimatlar", items: [
-    { title: "Genel Düzenleme Çizimleri", description: "İlişkili görünüm ve kesitlerle hızlı plan üretimi; değişikliklerin anlaşılabilirliği.", image: detOverview },
-    { title: "Yapısal Çizimler", description: "Beton/çelik elemanların hassas çizimleri; gösterimlere hızlı uyarlama.", image: detStructuralDrawings, videoUrl: "https://youtu.be/VAx83Oykijc" },
-    { title: "Donatı Çizimleri", description: "3B donatı ve otomatik kesit uyarlama; çakışma kontrolü ve çelik listeleri.", image: detReinforcementDrawings, videoUrl: "https://youtu.be/py14a-iJZws" },
-    { title: "Şantiye Çizimleri", description: "Elemanlar ve kesitlerin bağlanması ile otomatik değişiklik benimseme.", image: detSitePlans },
-    { title: "Çelik Listeleri", description: "Hataları minimize eden 3B donatılandırma ve hızlı liste üretimi.", image: detSteelLists, videoUrl: "https://youtu.be/p0ZC4YUAxfY" },
-    { title: "Değişim Yönetimi", description: "Şantiye değişikliklerinin modele hızla uyarlanması.", image: detChangeManagementDelivery },
-  ]},
+  {
+    key: "site-analysis", label: "Şantiye Analizi", items: [
+      { title: "Veri Değişimi", description: "Proje ortaklarının verilerini içe aktararak tasarım aşamasında önemli zaman kazanın; 50+ format desteklenir.", image: imgDataExchange },
+      { title: "Arazi Araştırması", description: "PDF ve görüntü tabanlı planlar ile temel oluşturun; nokta bulutları Scalypso ile Allplan’a aktarılır.", image: imgTerrainSurvey },
+      { title: "BIM Koordinasyonu", description: "Allplan ve Bimplus Konu Yönetimi ile senkronizasyon; IFC/BCF desteği ve net karar süreçleri.", image: imgBimCoordination, videoUrl: "https://youtu.be/l66_2h40YdM" },
+    ]
+  },
+  {
+    key: "modeling", label: "Modelleme", items: [
+      { title: "Serbest Biçimli Modelleme", description: "Her türlü 3D eleman; obje olarak tanıma ve metraj uyumu.", image: imgFreeFormModeling },
+      { title: "Parametrik Modelleme", description: "Yol gövdesi yardımcı unsurlar parametrik yerleşim ve uyarlama.", image: imgParametricModeling },
+      { title: "Görselleştirme", description: "Disiplinler arası analiz ve geri bildirim için yüksek kalite görselleştirme.", image: imgVisualization },
+    ]
+  },
+  {
+    key: "model-analysis", label: "Model Analizi", items: [
+      { title: "Varyant Çalışmaları", description: "Çizim dosyası sistemi ile performans ve düzen artırımı; büyük projelere uygun yapılandırma.", image: imgVariantStudies },
+      { title: "Şantiye Ekipmanları", description: "Vinç ve ekipman objeleri ile yerleşim; çakışma algılama ve hızlı varyant detaylandırma.", image: imgBuildingSiteEquipment },
+      { title: "Değişim Yönetimi", description: "Bimplus ile varyant ve revizyon karşılaştırma; toplantılarda karar desteği.", image: imgChangeManagement, videoUrl: "https://youtu.be/b9M3-bwTR_s" },
+    ]
+  },
+  {
+    key: "detailing-deliverables", label: "Detaylandırma Teslimatlar", items: [
+      { title: "Genel Düzenleme Çizimleri", description: "İlişkili görünüm ve kesitlerle hızlı plan üretimi; değişikliklerin anlaşılabilirliği.", image: detOverview },
+      { title: "Yapısal Çizimler", description: "Beton/çelik elemanların hassas çizimleri; gösterimlere hızlı uyarlama.", image: detStructuralDrawings, videoUrl: "https://youtu.be/VAx83Oykijc" },
+      { title: "Donatı Çizimleri", description: "3B donatı ve otomatik kesit uyarlama; çakışma kontrolü ve çelik listeleri.", image: detReinforcementDrawings, videoUrl: "https://youtu.be/py14a-iJZws" },
+      { title: "Şantiye Çizimleri", description: "Elemanlar ve kesitlerin bağlanması ile otomatik değişiklik benimseme.", image: detSitePlans },
+      { title: "Çelik Listeleri", description: "Hataları minimize eden 3B donatılandırma ve hızlı liste üretimi.", image: detSteelLists, videoUrl: "https://youtu.be/p0ZC4YUAxfY" },
+      { title: "Değişim Yönetimi", description: "Şantiye değişikliklerinin modele hızla uyarlanması.", image: detChangeManagementDelivery },
+    ]
+  },
 ];
 
 const preWorkflowSection = (
@@ -109,6 +118,7 @@ const customHero = (
     title="STRÜKTÜREL MÜHENDİSLİK"
     subtitle="DAHA FAZLASINI İSTEYEN MÜHENDİSLER VE TEKNİKERLER İÇİN."
     description="ALLPLAN'in strüktürel mühendisliğe yönelik BIM çözümleri, tasarımdan inşa sürecine kadar tüm süreci kapsar. Allplan'in sağladığı gelişmiş hassasiyet ve işbirliğine dayalı iş akışları, proje tasarımı ve teslimi için yeni verimlilik seviyeleri ve daha fazla üretkenlik sağlar. Strüktürel mühendislik ve detaylandırma yazılımınızdan daha fazlasını bekleyin!"
+    backgroundImage={heroBg}
   />
 );
 

@@ -2,7 +2,7 @@
 import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
 import SolutionHero from "@/components/SolutionHero";
 import WorkflowTabsTemplate from "@/components/WorkflowTabsTemplate";
-import heroImage from "@/assets/solutions/architecture-hero.jpg";
+import heroBg from "@/assets/solutions/architecture-hero-bg.png";
 
 import icon1 from "@/assets/solutions/architecture/reasons/work_way_want.png";
 import icon2 from "@/assets/solutions/architecture/reasons/structural-engineering-allplan-turkey-powerful_modeling.png";
@@ -160,6 +160,7 @@ const customHero = (
     title="MİMARİ"
     subtitle="DAHA FAZLASINI İSTEYEN MİMARLAR İÇİN."
     description="ALLPLAN'in mimariye yönelik BIM çözümleri, verimli tasarım ve sorunsuz proje yönetimi için tüm tasarımı inşa sürecine de taşır. İşbirliğine dayalı iş akışları, tüm proje yaşam döngüsü boyunca artan hassasiyet ve daha fazla üretkenlik sağlar. Mimari tasarım yazılımınızdan daha fazlasını bekleyin!"
+    backgroundImage={heroBg}
   />
 );
 
