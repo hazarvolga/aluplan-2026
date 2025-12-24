@@ -145,9 +145,9 @@ const ProductPageTemplate = ({
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge variant="outline" className="mb-4 bg-white/10 border-white/30 text-white">
+              <span className="text-white/70 font-medium text-sm tracking-wider uppercase mb-4 block">
                 {badge}
-              </Badge>
+              </span>
               <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6">
                 {title}
               </h1>
