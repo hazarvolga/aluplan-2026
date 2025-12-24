@@ -2,16 +2,16 @@
 import ProductPageTemplate from "@/components/ProductPageTemplate";
 import ReasonsSection from "@/components/ReasonsSection";
 import heroImage from "@/assets/solutions/steel-hero.jpg";
-import { 
-  Home, 
-  PlayCircle, 
-  Rocket, 
-  KeyRound, 
-  Lightbulb, 
-  Cuboid, 
-  AlignStartVertical, 
-  Download, 
-  ArrowRightLeft 
+import {
+  Home,
+  PlayCircle,
+  Rocket,
+  KeyRound,
+  Lightbulb,
+  Cuboid,
+  AlignStartVertical,
+  Download,
+  ArrowRightLeft
 } from "lucide-react";
 
 export default function ClientPage() {
@@ -71,65 +71,65 @@ export default function ClientPage() {
     },
   ];
   const reasonsItems = [
-    { 
-      title: "SDS2 Anasayfa", 
-      description: "", 
+    {
+      title: "SDS2 Anasayfa",
+      description: "",
       icon: <Home className="w-6 h-6" />,
       href: "https://sds2.com/",
       external: true
     },
-    { 
-      title: "Video Tutorial", 
-      description: "", 
+    {
+      title: "Video Tutorial",
+      description: "",
       icon: <PlayCircle className="w-6 h-6" />,
       href: "https://techsupport.sds2.com/main/video-library.htm",
       external: true
     },
-    { 
-      title: "Getting Started", 
-      description: "", 
+    {
+      title: "Getting Started",
+      description: "",
       icon: <Rocket className="w-6 h-6" />,
       href: "https://techsupport.sds2.com/main/getting-started.htm",
       external: true
     },
-    { 
-      title: "Lisanslama", 
-      description: "", 
+    {
+      title: "Lisanslama",
+      description: "",
       icon: <KeyRound className="w-6 h-6" />,
       href: "https://techsupport.sds2.com/main/Video-Library/licensing.htm",
       external: true
     },
-    { 
-      title: "Tip and Tricks", 
-      description: "", 
+    {
+      title: "Tip and Tricks",
+      description: "",
       icon: <Lightbulb className="w-6 h-6" />,
       href: "https://go.sds2.com/webinar/recorded/sds2-masterclass-expert-tips-and-tricks-for-advanced-users",
       external: true
     },
-    { 
-      title: "Çelik Profil Eklentisi", 
-      description: "", 
+    {
+      title: "Çelik Profil Eklentisi",
+      description: "",
       icon: <Cuboid className="w-6 h-6" />,
       href: "https://sds2.com/sds2-toolbox-details/allplan-profile-catalog/",
       external: true
     },
-    { 
-      title: "Aligment Tools", 
-      description: "", 
+    {
+      title: "Aligment Tools",
+      description: "",
       icon: <AlignStartVertical className="w-6 h-6" />,
       href: "https://sds2.com/sds2-toolbox-details/model-alignment-tools/",
       external: true
     },
-    { 
-      title: "Download Center", 
-      description: "", 
+    {
+      title: "Download Center",
+      description: "",
       icon: <Download className="w-6 h-6" />,
       href: "https://techsupport.sds2.com/main/download-center.htm",
       external: true
     },
-    { 
-      title: "Data Exchange", 
-      description: "", 
+    {
+      title: "Data Exchange",
+      description: "",
       icon: <ArrowRightLeft className="w-6 h-6" />,
       href: "https://aluplan.com.tr/wp-content/uploads/Data_exchange_formats_Allplan_2025_EN_GmbH.pdf",
       external: true
@@ -144,11 +144,15 @@ export default function ClientPage() {
       heroImage={heroImage}
       features={features}
       packages={packages}
-      ctaTitle="SDS2 Ultimate'ın Faydaları Detaylı İncele"
+      ctaTitle="Ücretsiz Dene"
       ctaDescription="Çelik detaylandırma ve imalat için tek çözüm"
-      ctaHref="/products/allplan-2026-yenilikler"
-      ctaExternal={false}
+      ctaHref="https://www.allplan.com/trial-or-subscription/"
+      ctaExternal={true}
       showDemoButton={false}
+      additionalButtons={[
+        { text: "Teklif Talep Formu", href: "https://forms.office.com/r/hXhnKAG912", external: true },
+        { text: "Abonelik SSS", href: "/solutions-v2/faq", external: false },
+      ]}
       whatIsInfoMedia={{
         title: "/ SDS2 ULTIMATE",
         subtitle: "SDS2 ULTIMATE NEDİR?",
