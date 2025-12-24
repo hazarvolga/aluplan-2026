@@ -156,11 +156,11 @@ export default function Allplan2026Page() {
                 }}
             />
 
-            <section className="py-24 bg-[#0a0a0a]">
+            <section className="py-24 bg-background">
                 <div className="container mx-auto px-6 max-w-[1400px]">
                     <div className="text-center mb-20">
-                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">YENİ ÖZELLİKLER</h2>
-                        <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+                        <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">YENİ ÖZELLİKLER</h2>
+                        <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
                             ALLPLAN 2026, BIM iş akışlarını optimize etmek ve disiplinler arası işbirliğini güçlendirmek için tasarlandı.
                         </p>
                     </div>
@@ -169,11 +169,11 @@ export default function Allplan2026Page() {
                         {groups.map((group, groupIdx) => (
                             <div key={groupIdx}>
                                 <div className="flex items-center gap-4 mb-16">
-                                    <div className="h-px flex-1 bg-white/10" />
-                                    <h3 className="text-2xl font-bold text-[#3B82F6] tracking-wider uppercase text-center border px-6 py-2 rounded-full border-[#3B82F6]/30 bg-[#3B82F6]/5">
+                                    <div className="h-px flex-1 bg-border/20" />
+                                    <h3 className="text-2xl font-bold text-accent tracking-wider uppercase text-center border px-6 py-2 rounded-full border-accent/30 bg-accent/5">
                                         {group.title}
                                     </h3>
-                                    <div className="h-px flex-1 bg-white/10" />
+                                    <div className="h-px flex-1 bg-border/20" />
                                 </div>
                                 <div className="space-y-32">
                                     {group.features.map((feature, idx) => (
@@ -181,34 +181,34 @@ export default function Allplan2026Page() {
                                             {/* Image Info */}
                                             <div className="flex-1 w-full group relative">
                                                 <div className="mb-4 flex items-center px-1">
-                                                    <span className={`text-xs font-bold px-3 py-1.5 rounded-full border ${feature.package === '#Basic' ? 'bg-green-500/10 text-green-400 border-green-500/20' :
-                                                        feature.package === '#Concept' ? 'bg-blue-500/10 text-blue-400 border-blue-500/20' :
-                                                            'bg-purple-500/10 text-purple-400 border-purple-500/20'
+                                                    <span className={`text-xs font-bold px-3 py-1.5 rounded-full border ${feature.package === '#Basic' ? 'bg-green-500/10 text-green-500 border-green-500/20' :
+                                                        feature.package === '#Concept' ? 'bg-blue-500/10 text-blue-500 border-blue-500/20' :
+                                                            'bg-purple-500/10 text-purple-500 border-purple-500/20'
                                                         }`}>
                                                         Dahil Olduğu Paket: {feature.package}
                                                     </span>
                                                 </div>
 
-                                                <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black/50 aspect-video">
+                                                <div className="relative rounded-2xl overflow-hidden border border-border/10 shadow-2xl bg-card aspect-video">
                                                     <Image
                                                         src={feature.img}
                                                         alt={feature.title}
                                                         fill
                                                         className="object-cover group-hover:scale-105 transition-transform duration-700"
                                                     />
-                                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                                                     {/* Video Play Button Overlay */}
                                                     {feature.videoUrl && (
                                                         <Dialog>
                                                             <DialogTrigger asChild>
                                                                 <button className="absolute inset-0 flex items-center justify-center group/play cursor-pointer z-10">
-                                                                    <div className="h-20 w-20 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20 group-hover/play:scale-110 group-hover/play:bg-[#3B82F6] transition-all duration-300">
+                                                                    <div className="h-20 w-20 rounded-full bg-background/20 backdrop-blur-md flex items-center justify-center border border-white/40 group-hover/play:scale-110 group-hover/play:bg-accent transition-all duration-300">
                                                                         <Play className="h-8 w-8 text-white fill-white ml-1" />
                                                                     </div>
                                                                 </button>
                                                             </DialogTrigger>
-                                                            <DialogContent className="max-w-[800px] border-white/10 bg-[#0a0a0a] p-0 overflow-hidden">
+                                                            <DialogContent className="max-w-[800px] border-border bg-card p-0 overflow-hidden text-foreground">
                                                                 <div className="aspect-video w-full">
                                                                     <iframe
                                                                         src={feature.videoUrl}
@@ -226,15 +226,15 @@ export default function Allplan2026Page() {
                                             {/* Text Info */}
                                             <div className="flex-1 w-full">
                                                 <div className="flex items-center gap-3 mb-6">
-                                                    <div className="p-3 rounded-lg bg-[#3B82F6]/10 text-[#3B82F6]">
+                                                    <div className="p-3 rounded-lg bg-accent/10 text-accent">
                                                         <feature.icon className="h-6 w-6" />
                                                     </div>
-                                                    <span className="text-gray-500 font-medium tracking-widest text-sm uppercase">
+                                                    <span className="text-muted-foreground font-medium tracking-widest text-sm uppercase">
                                                         {feature.desc}
                                                     </span>
                                                 </div>
 
-                                                <h3 className="text-3xl font-bold text-white mb-8 leading-tight">
+                                                <h3 className="text-3xl font-bold text-foreground mb-8 leading-tight">
                                                     {feature.title}
                                                 </h3>
 
@@ -242,12 +242,12 @@ export default function Allplan2026Page() {
                                                     <div className="mb-8">
                                                         <Dialog>
                                                             <DialogTrigger asChild>
-                                                                <Button variant="outline" className="border-[#3B82F6] text-[#3B82F6] hover:bg-[#3B82F6] hover:text-white gap-2 transition-all">
+                                                                <Button variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground gap-2 transition-all">
                                                                     <Play className="h-4 w-4" />
                                                                     Videoyu Görüntüle
                                                                 </Button>
                                                             </DialogTrigger>
-                                                            <DialogContent className="max-w-[800px] border-white/10 bg-[#0a0a0a] p-0 overflow-hidden">
+                                                            <DialogContent className="max-w-[800px] border-border bg-card p-0 overflow-hidden text-foreground">
                                                                 <div className="aspect-video w-full">
                                                                     <iframe
                                                                         src={feature.videoUrl}
@@ -264,8 +264,8 @@ export default function Allplan2026Page() {
                                                 <ul className="space-y-4">
                                                     {feature.details.map((detail, i) => (
                                                         <li key={i} className="flex items-start gap-4 group/item">
-                                                            <CheckCircle2 className="h-6 w-6 text-[#3B82F6] shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform" />
-                                                            <span className="text-gray-300 text-lg leading-relaxed">{detail}</span>
+                                                            <CheckCircle2 className="h-6 w-6 text-accent shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform" />
+                                                            <span className="text-muted-foreground text-lg leading-relaxed">{detail}</span>
                                                         </li>
                                                     ))}
                                                 </ul>
