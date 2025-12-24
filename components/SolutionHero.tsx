@@ -39,13 +39,13 @@ const containerVariants: Variants = {
 };
 
 const fadeUpVariants: Variants = {
-  hidden: { 
-    opacity: 0, 
+  hidden: {
+    opacity: 0,
     y: 30,
     filter: "blur(4px)"
   },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
     filter: "blur(0px)",
     transition: {
@@ -149,7 +149,7 @@ const SolutionHero = ({
             <motion.div
               key={i}
               initial={{ opacity: 0, scale: 0 }}
-              animate={{ 
+              animate={{
                 opacity: [0.1, 0.3, 0.1],
                 scale: [1, 1.2, 1],
                 x: particle.x,
@@ -176,31 +176,26 @@ const SolutionHero = ({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
             <div className="lg:col-span-8 space-y-5 md:space-y-6">
               {badge && (
-                <motion.div variants={fadeUpVariants} className="mb-4">
-                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 border border-accent/20">
-                    <Sparkles className="w-4 h-4 text-accent" />
-                    <span className="text-xs md:text-sm font-semibold text-accent tracking-wide uppercase">
-                      {badge}
-                    </span>
-                  </div>
+                <motion.div variants={fadeUpVariants}>
+                  <span className="text-accent font-medium text-sm tracking-wider uppercase mb-4 block">
+                    / {badge}
+                  </span>
                 </motion.div>
               )}
               {subtitle && (
-                <motion.p variants={fadeUpVariants} className="text-accent/70 text-sm md:text-base font-medium tracking-wider uppercase mb-3">
+                <motion.p variants={fadeUpVariants} className="text-accent font-medium text-sm tracking-wider uppercase mb-4 block">
                   {subtitle}
                 </motion.p>
               )}
-              <motion.h1 variants={fadeUpVariants} className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] tracking-tight">
-                <span className="bg-gradient-to-r from-white via-accent/10 to-accent/20 bg-clip-text text-transparent">
-                  {title}
-                </span>
+              <motion.h1 variants={fadeUpVariants} className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+                {title}
               </motion.h1>
               {typeof description === 'string' ? (
-                <motion.p variants={fadeUpVariants} className="text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-2xl font-light">
+                <motion.p variants={fadeUpVariants} className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
                   {description}
                 </motion.p>
               ) : (
-                <motion.div variants={fadeUpVariants} className="text-white/70 max-w-2xl space-y-2">
+                <motion.div variants={fadeUpVariants} className="text-muted-foreground max-w-2xl space-y-2">
                   {description}
                 </motion.div>
               )}
@@ -208,8 +203,8 @@ const SolutionHero = ({
                 <motion.div variants={fadeUpVariants} className="flex flex-col sm:flex-row gap-4 pt-2">
                   {primaryButton && (
                     <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                      <Button 
-                        size="lg" 
+                      <Button
+                        size="lg"
                         className="group relative bg-accent hover:bg-accent/90 text-accent-foreground shadow-lg hover:shadow-xl transition-all duration-300 px-8 py-6 text-base font-semibold"
                         asChild={primaryButton.external}
                       >
@@ -229,9 +224,9 @@ const SolutionHero = ({
                   )}
                   {secondaryButton && (
                     <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                      <Button 
-                        size="lg" 
-                        variant="outline" 
+                      <Button
+                        size="lg"
+                        variant="outline"
                         className="border-white/20 bg-white/5 backdrop-blur-xl text-white hover:bg-white/10 hover:border-white/30 transition-all duration-300 px-8 py-6 text-base font-semibold"
                         onClick={secondaryButton.onClick}
                         asChild={!!secondaryButton.href}
