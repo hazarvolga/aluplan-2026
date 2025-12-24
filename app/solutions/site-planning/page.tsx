@@ -55,26 +55,26 @@ const reasons = [
 ];
 
 const workflowCategories = [
-  { key: "analysis", label: "Şantiye Analizi", items: [
-    { title: "Arazi Etüdü", description: "Planlamadan önce kesin envanter; Scalypso ile nokta bulutu aktarımı.", image: imgTerrain },
-    { title: "Veri değişimi", description: "Basit 3B model ve çok formatlı içe aktarım; 50+ format desteği.", image: imgDataExchange },
-  ]},
-  { key: "modeling", label: "Modelleme", items: [
-    { title: "Erişim yolları", description: "Parametrik yatay/dikey aks tanımı; plan ve rapor üretimi.", image: imgAccessRoads },
-    { title: "Araçlar", description: "Rögar ve hatların parametrik yerleşimi; kolay uyarlama.", image: imgUtilities },
-    { title: "Şantiye tesisleri", description: "Vinç, çit, ofis ve konteyner objeleri esnek uyarlama.", image: imgFacilities },
-    { title: "Kazı iksası", description: "Fore kazık, palplanş ve ankraj fonksiyonları parametrik.", image: imgExcavation },
-  ]},
-  { key: "model-analysis", label: "Model Analizi", items: [
-    { title: "Vinç planlaması", description: "Çakışmaları önleyerek en uygun vinç konumu ve kapasite kontrolü.", image: imgCrane },
-    { title: "Değişim Yönetimi", description: "Bimplus ile varyant ve revizyon yönetimi; karar desteği.", image: imgChange },
-  ]},
-  { key: "planning-data", label: "Planning and data", items: [
-    { title: "Sequence planning", description: "Bimplus ile MS Project entegrasyonu; görsel faz temsili.", image: imgSequence },
-    { title: "Production planning", description: "Tim ile prekast ataması ve kapasite optimizasyonu.", image: imgProduction },
-    { title: "Accounting data", description: "Allplan Precast, Tim ve üretim sistemleri arasında güvenilir veri.", image: imgAccounting },
-    { title: "Coordination on the construction site", description: "mTim ile üretim, depo ve saha ekiplerine güncel 3D bilgi.", image: imgCoordination },
-  ]},
+  {
+    key: "analysis", label: "Şantiye Analizi", items: [
+      { title: "Arazi Etüdü", description: "Planlamadan önce kesin envanter; Scalypso ile nokta bulutu aktarımı.", image: imgTerrain },
+      { title: "Veri Değişimi", description: "Basit 3B model ve çok formatlı içe aktarım; 50+ format desteği.", image: imgDataExchange },
+    ]
+  },
+  {
+    key: "modeling", label: "Modelleme", items: [
+      { title: "Erişim Yolları", description: "Parametrik yatay/dikey aks tanımı; plan ve rapor üretimi.", image: imgAccessRoads },
+      { title: "Altyapı Tesisatı", description: "Rögar ve hatların parametrik yerleşimi; kolay uyarlama.", image: imgUtilities },
+      { title: "Şantiye Tesisleri", description: "Vinç, çit, ofis ve konteyner objeleri esnek uyarlama.", image: imgFacilities },
+      { title: "Kazı İksası", description: "Fore kazık, palplanş ve ankraj fonksiyonları parametrik.", image: imgExcavation },
+    ]
+  },
+  {
+    key: "model-analysis", label: "Model Analizi", items: [
+      { title: "Vinç Planlaması", description: "Çakışmaları önleyerek en uygun vinç konumu ve kapasite kontrolü.", image: imgCrane },
+      { title: "Değişim Yönetimi", description: "Bimplus ile varyant ve revizyon yönetimi; karar desteği.", image: imgChange },
+    ]
+  },
 ];
 
 const preWorkflowSection = (
