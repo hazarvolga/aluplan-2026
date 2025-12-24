@@ -34,7 +34,7 @@ import collIssueMgmt from "@/assets/products/allplan-aec/features/collaboration/
 import collDocMgmt from "@/assets/products/allplan-aec/features/collaboration/csm_22_Document_a57ec305e5.png";
 import collCoordination from "@/assets/products/allplan-aec/features/collaboration/csm_23_Coord_555eebf94b.png";
 import collWorkAnywhere from "@/assets/products/allplan-aec/features/collaboration/csm_25_Together_5a2c578657.png";
-import heroImg from "@/assets/products/allplan-aec/hero-new.jpg";
+import heroImg from "../../../src/assets/products/allplan-aec/hero-new.jpg";
 
 const whatIsInfoMedia = {
   title: "ALLPLAN NEDİR?",
@@ -132,6 +132,7 @@ export default function Page() {
       title="ALLPLAN 2025"
       subtitle="THE ULTIMATE BIM SOLUTION FOR AEC PROFESSIONALS FROM DESIGN TO BUILD"
       description="ALLPLAN'in mimariye yönelik BIM çözümleri, verimli tasarım ve sorunsuz proje yönetimi için tüm tasarımı inşa sürecine de taşır. İşbirliğine dayalı iş akışları, tüm proje yaşam döngüsü boyunca artan hassasiyet ve daha fazla üretkenlik sağlar. Mimari tasarım yazılımınızdan daha fazlasını bekleyin!"
+      heroVariant="full-bg"
       heroImage={heroImg}
       ctaTitle="Ücretsiz Dene"
       ctaHref="https://www.allplan.com/trial-or-subscription/"
