@@ -7,15 +7,18 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const paidPythonParts = [
   {
     title: "Wall Reinforcement",
-    description: "Wall Reinforcement is a feature of our PythonParts in ALLPLAN that lets you create, update and modify reinforcement for wall reinforcement from simple to complicated one in ALLPLAN, even the slope Wall. It recognizes the shape of the wall panel and distributes the main reinforcement and additional reinforcement for wall openings"
+    description: "Wall Reinforcement is a feature of our PythonParts in ALLPLAN that lets you create, update and modify reinforcement for wall reinforcement from simple to complicated one in ALLPLAN, even the slope Wall. It recognizes the shape of the wall panel and distributes the main reinforcement and additional reinforcement for wall openings",
+    videoUrl: "https://www.youtube.com/embed/4HwnYYnZ_D0"
   },
   {
     title: "Wall Opening Reinforcement",
-    description: "Inevitably, openings of various sizes and shapes for doors, windows, conduit, piping, and ductwork will need to be made in structural walls. Correct placement of the rebar helps prevent the concrete around openings from cracking from structural loads or shrinkage."
+    description: "Inevitably, openings of various sizes and shapes for doors, windows, conduit, piping, and ductwork will need to be made in structural walls. Correct placement of the rebar helps prevent the concrete around openings from cracking from structural loads or shrinkage.",
+    videoUrl: "https://www.youtube.com/embed/LMjsurG742M"
   },
   {
     title: "Wall Edge Reinforcement",
-    description: "The Edge Reinforcement python part is used for detailing walls by connecting two walls to each other in ALLPLAN. Wall to wall connection – Edge shape included: Joining Collinear Walls; Joining L-shaped Walls; Joining T-shaped Walls; Joining intersect-shaped Walls."
+    description: "The Edge Reinforcement python part is used for detailing walls by connecting two walls to each other in ALLPLAN. Wall to wall connection – Edge shape included: Joining Collinear Walls; Joining L-shaped Walls; Joining T-shaped Walls; Joining intersect-shaped Walls.",
+    videoUrl: "https://www.youtube.com/embed/M0Qem-GkLEI"
   },
   {
     title: "Slab Reinforcement",
@@ -23,35 +26,43 @@ const paidPythonParts = [
   },
   {
     title: "Slab Opening Reinforcement",
-    description: "Every engineer is familiar with the openings in a slab. Openings in slabs are usually required for many different applications such as aeration ducts and air conditioning. Now, structural engineers can easily get it done by ALLPLAN PythonParts developed by ALLTO"
+    description: "Every engineer is familiar with the openings in a slab. Openings in slabs are usually required for many different applications such as aeration ducts and air conditioning. Now, structural engineers can easily get it done by ALLPLAN PythonParts developed by ALLTO",
+    videoUrl: "https://www.youtube.com/embed/70dz16RYs84"
   },
   {
     title: "Single Footings Reinforcement",
-    description: "Individual footings are one of the most simple and common types of foundations. These are used when the load of the building is carried by columns. Usually, each column will have its own footing. The footing is just a square or rectangular pad of concrete on which the column sits. Now, engineers can easily get it done by ALLPLAN PythonParts developed by ALLTO"
+    description: "Individual footings are one of the most simple and common types of foundations. These are used when the load of the building is carried by columns. Usually, each column will have its own footing. The footing is just a square or rectangular pad of concrete on which the column sits. Now, engineers can easily get it done by ALLPLAN PythonParts developed by ALLTO",
+    videoUrl: "https://www.youtube.com/embed/EjxMvMhFKj4"
   },
   {
     title: "Beam Reinforcement",
-    description: "Reinforcement are essential part of a concrete beam. It resists tension forces, increase the compression capacity, enhance ductility and reduce long-term deflections in the concrete. Additionally, reinforcement prevent cracking of concrete due to shear stresses, shrinkage and temperature stresses."
+    description: "Reinforcement are essential part of a concrete beam. It resists tension forces, increase the compression capacity, enhance ductility and reduce long-term deflections in the concrete. Additionally, reinforcement prevent cracking of concrete due to shear stresses, shrinkage and temperature stresses.",
+    videoUrl: "https://www.youtube.com/embed/cyOw-XGQ7c0"
   },
   {
     title: "T-Beam Reinforcement",
-    description: "T-beam (tee beam), used in construction, is a load-bearing structure of reinforced concrete, wood or metal, with a T-shaped cross section. The top of the T-shaped cross section serves as a flange or compression member in resisting compressive stresses"
+    description: "T-beam (tee beam), used in construction, is a load-bearing structure of reinforced concrete, wood or metal, with a T-shaped cross section. The top of the T-shaped cross section serves as a flange or compression member in resisting compressive stresses",
+    videoUrl: "https://www.youtube.com/embed/yosKNaS5jew"
   },
   {
     title: "Strip Footings Reinforcement",
-    description: "Strip foundations (or strip footings) are a type of shallow foundation that are used to provide a continuous, level (or sometimes stepped) strip of support to a linear structure such as a wall or closely-spaced rows of columns built centrally above them. ALLTO set up a friendly interface and all you need to do is input the data to create the strip foundation."
+    description: "Strip foundations (or strip footings) are a type of shallow foundation that are used to provide a continuous, level (or sometimes stepped) strip of support to a linear structure such as a wall or closely-spaced rows of columns built centrally above them. ALLTO set up a friendly interface and all you need to do is input the data to create the strip foundation.",
+    videoUrl: "https://www.youtube.com/embed/15aE6UyalJ4"
   },
   {
     title: "Column Reinforcement",
-    description: "We've released ALLPLAN Pythonparts that automate the modeling of reinforcement in opening walls in #ALLPLAN.In this initial release, you can use it to place main rebar, stirrups, and more. See the workflow for reinforcing columns in ALLPLAN."
+    description: "We've released ALLPLAN Pythonparts that automate the modeling of reinforcement in opening walls in #ALLPLAN.In this initial release, you can use it to place main rebar, stirrups, and more. See the workflow for reinforcing columns in ALLPLAN.",
+    videoUrl: "https://www.youtube.com/embed/k76NIUdxs6o"
   },
   {
     title: "Column Dowels",
-    description: "Dowels are commonly used as interface reinforcement between columns or walls and footings. The dowels are set in the footing prior to casting the footing concrete and are subsequently spliced to the longitudinal bars in the column or wall."
+    description: "Dowels are commonly used as interface reinforcement between columns or walls and footings. The dowels are set in the footing prior to casting the footing concrete and are subsequently spliced to the longitudinal bars in the column or wall.",
+    videoUrl: "https://www.youtube.com/embed/-0mJEDyXC7k"
   },
   {
     title: "Column Coupler",
-    description: "Developing ALLPLAN PYTHONPARTS to manage the workflow of engineers which we believe will help them complete their tasks much easier, faster and reduce errors."
+    description: "Developing ALLPLAN PYTHONPARTS to manage the workflow of engineers which we believe will help them complete their tasks much easier, faster and reduce errors.",
+    videoUrl: "https://www.youtube.com/embed/blho_BO-xp4"
   }
 ];
 
@@ -101,6 +112,85 @@ export default function ClientPage() {
       />
 
       <div className="bg-background">
+        {/* PostHero Section */}
+        <section className="py-16 bg-muted/50">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                Allplan Ortak Çözümü olarak ALLTO, ALLPLAN yazılımıyla uyumlu profesyonel eklentiler geliştirir.
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                Kullanıcılar ayrıca uzmanlığımızı ve bireysel ihtiyaçlarını karşılamak için onlarla yakın çalışma isteğimizi takdir ediyor.
+              </p>
+              <div className="bg-card border border-border rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-foreground mb-4">Bina PythonPartları şunları içerir:</h3>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-muted-foreground">
+                  <li className="flex items-start">
+                    <span className="mr-2 text-accent">•</span>
+                    <span>Wall Reinforcement</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-accent">•</span>
+                    <span>Wall Opening and Wall Edge Reinforcement</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-accent">•</span>
+                    <span>Beam Reinforcement</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-accent">•</span>
+                    <span>Column Reinforcement</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-accent">•</span>
+                    <span>Single Footing Reinforcement</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-accent">•</span>
+                    <span>Strip Footing Reinforcement</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-accent">•</span>
+                    <span>Detecting IFC Model Changes</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-accent">•</span>
+                    <span>Slab With Opening</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-accent">•</span>
+                    <span>Slab Main Rebar</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-accent">•</span>
+                    <span>Column dowels</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-accent">•</span>
+                    <span>Layout Service</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-accent">•</span>
+                    <span>2D Axis Grid in ALLPLAN Engineering</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-accent">•</span>
+                    <span>Converting from 2D lines/polylines to architecture components</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-accent">•</span>
+                    <span>ALLPLAN Backup Files – Drawing Recovery</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 text-accent">•</span>
+                    <span>Add custom attribute in ALLPLAN</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Main Title Section */}
         <section className="py-12 bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -123,11 +213,22 @@ export default function ClientPage() {
             />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
               {paidPythonParts.map((item, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
+                <Card key={index} className="hover:shadow-lg transition-shadow flex flex-col">
                   <CardHeader>
                     <CardTitle className="text-lg">{item.title}</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="flex-1 flex flex-col gap-4">
+                    {item.videoUrl && (
+                      <div className="aspect-video w-full rounded-lg overflow-hidden">
+                        <iframe
+                          src={item.videoUrl}
+                          title={item.title}
+                          className="w-full h-full"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        />
+                      </div>
+                    )}
                     <CardDescription className="text-sm leading-relaxed">
                       {item.description}
                     </CardDescription>
