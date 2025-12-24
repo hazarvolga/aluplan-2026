@@ -155,16 +155,14 @@ export default function Page() {
               <iframe className="w-full h-full" src="https://www.youtube.com/embed/tFnwOyX7ncI" title="ALLPLAN Ultimate Tanıtım" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
             </div>
           </div>
-        </div>
-    </div>
-      </section >
+      </section>
 
       <WorkflowLinksSection
         links={[
-            { text: "Sürümleri Görüntüle", href: "/package-overview", external: true },
-            { text: "Tasarım için İş Akışları", href: "/2024-architecture", external: true },
-            { text: "İnşaat Mühendisliği için İş Akışları", href: "/2024-structural-engineering", external: true },
-            { text: "Yapı Mühendisliği için İş Akışları", href: "/2024-civil-engineering", external: true },
+          { text: "Sürümleri Görüntüle", href: "/package-overview", external: true },
+          { text: "Tasarım için İş Akışları", href: "/2024-architecture", external: true },
+          { text: "İnşaat Mühendisliği için İş Akışları", href: "/2024-structural-engineering", external: true },
+          { text: "Yapı Mühendisliği için İş Akışları", href: "/2024-civil-engineering", external: true },
         ]}
       />
 
