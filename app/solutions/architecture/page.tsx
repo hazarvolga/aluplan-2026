@@ -122,12 +122,14 @@ const workflowCategories = [
 ];
 
 const preWorkflowSection = (
-  <WorkflowTabsTemplate
-    title="Mimari İş Akışları"
-    subtitle="Fikir aşamasından teslimata kadar kesintisiz ve verimli süreçler."
-    categories={workflowCategories}
-    theme="v2-dark"
-  />
+  <section id="mimari-is-akislari">
+    <WorkflowTabsTemplate
+      title="Mimari İş Akışları"
+      subtitle="Fikir aşamasından teslimata kadar kesintisiz ve verimli süreçler."
+      categories={workflowCategories}
+      theme="v2-dark"
+    />
+  </section>
 );
 
 const postHeroSection = (
