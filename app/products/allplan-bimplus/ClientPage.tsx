@@ -106,7 +106,7 @@ export default function ClientPage() {
       tabFeatures={{ title: "Bimplus'ın Özellikleri", tabs: [] }}
       workflowCategories={workflowCategories}
       quickActions={[
-        { text: "Kayıt Ol", href: "https://portal.bimplus.net/#/auth", external: true, variant: "default" },
+        { text: "Kayıt Ol", href: "https://connect.allplan.com/en/bimplus-freemium.html", external: true, variant: "default" },
         { text: "Müşteri Girişi", href: "https://portal.bimplus.net/#/auth", external: true, variant: "default" },
       ]}
       ctaTitle="Bimplus'ı Ücretsiz Deneyin"
