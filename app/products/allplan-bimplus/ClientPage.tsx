@@ -105,6 +105,10 @@ export default function ClientPage() {
       benefitsItems={benefitsItems}
       tabFeatures={{ title: "Bimplus'ın Özellikleri", tabs: [] }}
       workflowCategories={workflowCategories}
+      quickActions={[
+        { text: "Kayıt Ol", href: "/products/bimplus-signup", variant: "default" },
+        { text: "Müşteri Girişi", href: "https://portal.bimplus.net/#/auth", external: true, variant: "default" },
+      ]}
       ctaTitle="Bimplus'ı Ücretsiz Deneyin"
       ctaDescription="Bulut tabanlı BIM işbirliği ile projelerinizi koordine edin"
     >
