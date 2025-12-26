@@ -77,12 +77,12 @@ export default function ClientPage() {
       ]
     },
   ];
-  const postHeroTitle = "What is BIMPLUS?";
+  const postHeroTitle = "BIMPLUS Nedir?";
   const postHeroParagraphs = [
-    "BIMPLUS is the open BIM model-based data and project collaboration platform for all disciplines involved in construction projects. Using cloud technology, across entire project lifecycles from design to build, into operation, connect multiple stakeholders, coordinate activity and control project information.",
-    "Access project data anywhere, at any time, efficiently communicate all your information needs to the right people and collaborate with project partners in real time.",
-    "Easily incorporate project data from any construction industry software, merge, coordinate, review and manage effectively in a centralized model.",
-    "Manage and control BIM based projects across all phases, easily tracking revisions and tasks, using effective issue management and powerful visualization tools.",
+    "BIMPLUS, inşaat projelerinde yer alan tüm disiplinler için açık BIM model tabanlı veri ve proje işbirliği platformudur. Bulut teknolojisini kullanarak, tasarımdan inşaata, operasyona kadar tüm proje yaşam döngüleri boyunca birden fazla paydaşı bağlar, faaliyetleri koordine eder ve proje bilgilerini kontrol eder.",
+    "Proje verilerine her yerden, her zaman erişin, tüm bilgi ihtiyaçlarınızı doğru kişilere verimli bir şekilde iletin ve proje ortaklarıyla gerçek zamanlı işbirliği yapın.",
+    "Herhangi bir inşaat sektörü yazılımından proje verilerini kolayca dahil edin, birleştirin, koordine edin, inceleyin ve merkezi bir modelde etkili bir şekilde yönetin.",
+    "Tüm aşamalarda BIM tabanlı projeleri yönetin ve kontrol edin, etkili sorun yönetimi ve güçlü görselleştirme araçlarını kullanarak revizyonları ve görevleri kolayca takip edin.",
   ];
   const challengeItems = [
     "Inconsistent design data from different data sources and formats from different parties involved.",
