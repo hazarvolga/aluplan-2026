@@ -85,8 +85,9 @@ export default function ClientPage() {
     "Tüm aşamalarda BIM tabanlı projeleri yönetin ve kontrol edin, etkili sorun yönetimi ve güçlü görselleştirme araçlarını kullanarak revizyonları ve görevleri kolayca takip edin.",
   ];
   const challengeItems = [
-    "Inconsistent design data from different data sources and formats from different parties involved.",
-    "Numerous time-consuming changes leading to inconsistencies and incurring increasing risks.",
+    "Farklı taraflardan gelen farklı veri kaynaklarından ve formatlarından tutarsız tasarım verileri.",
+    "Tutarsızlıklara yol açan ve artan risklere neden olan çok sayıda zaman alan değişiklik.",
+    "Hatalara, düşük kaliteye ve artan maliyetlere yol açan koordine edilmemiş bilgiler.",
   ];
   return (
     <ProductPageTemplate
@@ -97,7 +98,7 @@ export default function ClientPage() {
       features={features}
       packages={packages}
       statsItems={statsItems}
-      benefitsItems={benefitsItems}
+      statsVariant="animated"
       workflowCategories={workflowCategories}
       ctaTitle="Bimplus'ı Ücretsiz Deneyin"
       ctaDescription="Bulut tabanlı BIM işbirliği ile projelerinizi koordine edin"
@@ -126,6 +127,18 @@ export default function ClientPage() {
         </div>
       </section>
       <ChallengesSection id="bimplus-challenges" items={challengeItems} />
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {benefitsItems.map((item, idx) => (
+              <div key={idx} className="text-center p-6 rounded-lg border border-border hover:shadow-lg transition-all duration-300 animate-slide-up" style={{ animationDelay: `${idx * 0.1}s` }}>
+                <h3 className="text-xl font-semibold mb-4 whitespace-pre-line">{item.title}</h3>
+                <p className="text-muted-foreground">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </ProductPageTemplate>
   );
 }
