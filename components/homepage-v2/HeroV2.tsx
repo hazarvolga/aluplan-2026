@@ -135,6 +135,10 @@ const HeroV2 = () => {
                                 <Play className="h-5 w-5 fill-current" />
                                 <span className="font-bold tracking-tight">ALLPLAN 2026 İncele</span>
                             </Link>
+
+                            <Link href="/solutions/allplan-bulut-hizmetleri" className="group flex items-center justify-center gap-3 rounded-full border border-foreground/20 bg-foreground/5 px-8 py-4 backdrop-blur-md transition-all hover:bg-foreground/10 hover:scale-105 text-foreground">
+                                <span className="font-bold tracking-tight">ALLPLAN CLOUD</span>
+                            </Link>
                         </div>
                     </div>
                 </motion.div>
