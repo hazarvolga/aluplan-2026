@@ -32,9 +32,9 @@ export default function ClientPage() {
     { name: "Bimplus Enterprise", price: "Özel fiyat", description: "Kurumsal çözüm", features: ["Özel depolama", "SSO entegrasyonu", "API erişimi", "Premium destek"] },
   ];
   const statsItems = [
-    { label: "100% Coordinated and Consistent", value: 100, description: "Work with partners, whatever their discipline and software tool, more productively and effectively using a coordinated and consistent model data-based approach." },
-    { label: "100% Up To Date", value: 100, description: "All data is integrated, centralized, and coordinated on one platform – a single source of truth giving access and up to date status to all stakeholders at any stage." },
-    { label: "100% Transparent and Effective", value: 100, description: "Powerful visualization tools, issue management and task tracking enable effective and transparent change processes and revision control." },
+    { label: "100% Koordineli ve Tutarlı", value: 100, description: "Disiplin ve yazılım aracı ne olursa olsun, koordineli ve tutarlı model veri tabanlı bir yaklaşım kullanarak ortaklarla daha üretken ve etkili çalışın." },
+    { label: "100% Güncel", value: 100, description: "Tüm veriler tek bir platformda entegre, merkezi ve koordine edilir - tüm paydaşlara her aşamada erişim ve güncel durum sağlayan tek gerçek kaynağı." },
+    { label: "100% Şeffaf ve Etkili", value: 100, description: "Güçlü görselleştirme araçları, sorun yönetimi ve görev takibi, etkili ve şeffaf değişiklik süreçleri ve revizyon kontrolü sağlar." },
   ];
   const benefitsItems = [
     { title: "Coordinate\nProject Data", description: "Centrally aggregate models in a neutral environment and visualize in a powerful viewer. Assign attribute data and run clash checks. Avoid uncoordinated information leading to errors." },
