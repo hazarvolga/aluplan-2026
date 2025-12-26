@@ -69,7 +69,6 @@ const Header = () => {
       title: "İŞBİRLİĞİ YAZILIMI",
       items: [
         { name: "ALLPLAN BIMPLUS", href: "/products/allplan-bimplus" },
-        { name: "Bimplus Hesabı Oluştur", href: "/products/bimplus-signup" },
       ],
     },
   ];
