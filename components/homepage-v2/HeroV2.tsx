@@ -118,25 +118,25 @@ const HeroV2 = () => {
                     </h1>
 
                     {/* Subtitle & CTA */}
-                    <div className="mt-12 flex flex-col md:flex-row md:items-end md:justify-between gap-8">
-                        <p className="max-w-2xl text-xl md:text-2xl font-light text-muted-foreground leading-relaxed">
+                    <div className="mt-12 max-w-2xl">
+                        <p className="text-xl md:text-2xl font-light text-muted-foreground leading-relaxed mb-8">
                             Yenilikçi AEC iş akışları, otomasyon ve bulut tabanlı iş birliği ile daha başarılı projeler.
                         </p>
 
-                        <div className="flex flex-col sm:flex-row gap-4 mt-8 animate-fade-in-up delay-300">
-                            <Link href="/products/allplan-2026-yenilikler" className="group flex items-center justify-center gap-3 rounded-full bg-foreground text-background px-8 py-4 transition-transform hover:scale-105">
+                        <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
+                            <Link href="/products/allplan-2026-yenilikler" className="group flex items-center justify-center gap-3 bg-foreground text-background px-8 py-4 transition-transform hover:scale-105">
                                 <span className="font-bold tracking-tight">
                                     Yenilikleri İncele
                                 </span>
                                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                             </Link>
 
-                            <Link href="/products/allplan-2026" className="group flex items-center justify-center gap-3 rounded-full border border-foreground/20 bg-foreground/5 px-8 py-4 backdrop-blur-md transition-all hover:bg-foreground/10 hover:scale-105 text-foreground">
+                            <Link href="/products/allplan-2026" className="group flex items-center justify-center gap-3 border border-foreground/20 bg-foreground/5 px-8 py-4 backdrop-blur-md transition-all hover:bg-foreground/10 hover:scale-105 text-foreground">
                                 <Play className="h-5 w-5 fill-current" />
                                 <span className="font-bold tracking-tight">ALLPLAN 2026 İncele</span>
                             </Link>
 
-                            <Link href="/solutions/allplan-bulut-hizmetleri" className="group flex items-center justify-center gap-3 rounded-full border border-foreground/20 bg-foreground/5 px-8 py-4 backdrop-blur-md transition-all hover:bg-foreground/10 hover:scale-105 text-foreground">
+                            <Link href="/solutions/allplan-bulut-hizmetleri" className="group flex items-center justify-center gap-3 border border-foreground/20 bg-foreground/5 px-8 py-4 backdrop-blur-md transition-all hover:bg-foreground/10 hover:scale-105 text-foreground">
                                 <span className="font-bold tracking-tight">ALLPLAN CLOUD</span>
                             </Link>
                         </div>
