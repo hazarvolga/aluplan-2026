@@ -17,6 +17,12 @@ import imgIssueManagement from "@/assets/products/bimplus/workflows/issue-manage
 import imgCreateTasks from "@/assets/products/bimplus/workflows/create-tasks.png";
 import imgCreateSlideshows from "@/assets/products/bimplus/workflows/create-slideshows.png";
 import imgExcelIntegration from "@/assets/products/bimplus/workflows/excel-integration.png";
+import iconCoordinateProjectData from "@/assets/products/bimplus/benefits/coordinate-project-data.png";
+import iconManageInformation from "@/assets/products/bimplus/benefits/manage-information.png";
+import iconChangeManagement from "@/assets/products/bimplus/benefits/change-management.png";
+import iconOrganizeProjects from "@/assets/products/bimplus/benefits/organize-projects.png";
+import iconCommunicate from "@/assets/products/bimplus/benefits/communicate.png";
+import iconProductiveCollab from "@/assets/products/bimplus/benefits/productive-collab.png";
 
 export default function ClientPage() {
   const features = [
@@ -37,12 +43,12 @@ export default function ClientPage() {
     { label: "100% Şeffaf ve Etkili", value: 100, description: "Güçlü görselleştirme araçları, sorun yönetimi ve görev takibi ile etkili ve şeffaf değişiklik süreçleri ve revizyon kontrolü sağlar." },
   ];
   const benefitsItems = [
-    { title: "Proje Verilerini\nKoordine Edin", description: "Modelleri tarafsız ortamda merkezi olarak toplayın ve güçlü görüntüleyicide görselleştirin. Nitelik verilerini atayın ve çakışma kontrolü yapın. Koordine edilmemiş bilgilerden kaynaklanan hataları önleyin." },
-    { title: "Bilgi\nYönetimi", description: "Birden fazla kaynaktan ve formattan daha fazla bilgiyi daha kısa sürede yönetin, erişin ve paylaşın. Doküman ve model geçmişi ile anlık durum erişilebilirliği." },
-    { title: "Değişiklik\nYönetimi", description: "Herhangi bir modelin herhangi bir revizyonunu görselleştirin ve aynı modelin revizyonlarını karşılaştırın. Daha erken bilinçli kararlar alın, risk, hata ve çoklu revizyonların etkisini azaltın." },
-    { title: "Proje\nOrganizasyonu", description: "BIM projelerini tasarımdan inşaata tüm yaşam döngüsü boyunca verimli şekilde izleyin ve yönetin. Tüm alt modeller üzerinde tam kontrol sağlayın ve açık/kapalı görevleri takip edin." },
-    { title: "Kolay\nİletişim", description: "Tasarım aşamalarında uyumsuzlukları veya çakışmaları görsel olarak kolayca iletin ve tespit edin. Tasarım amacını inşaata aktarın." },
-    { title: "Bulut Tabanlı\nVeri", description: "Proje verilerine her yerden, her zaman ve her cihazdan erişin ve güncelleyin. Tüm proje aşamalarında ekipleri, iş ortaklarını, tedarikçileri ve yüklenicileri bağlayın." },
+    { title: "Proje Verilerini\nKoordine Edin", description: "Modelleri tarafsız ortamda merkezi olarak toplayın ve güçlü görüntüleyicide görselleştirin. Nitelik verilerini atayın ve çakışma kontrolü yapın. Koordine edilmemiş bilgilerden kaynaklanan hataları önleyin.", image: iconCoordinateProjectData },
+    { title: "Bilgi\nYönetimi", description: "Birden fazla kaynaktan ve formattan daha fazla bilgiyi daha kısa sürede yönetin, erişin ve paylaşın. Doküman ve model geçmişi ile anlık durum erişilebilirliği.", image: iconManageInformation },
+    { title: "Değişiklik\nYönetimi", description: "Herhangi bir modelin herhangi bir revizyonunu görselleştirin ve aynı modelin revizyonlarını karşılaştırın. Daha erken bilinçli kararlar alın, risk, hata ve çoklu revizyonların etkisini azaltın.", image: iconChangeManagement },
+    { title: "Proje\nOrganizasyonu", description: "BIM projelerini tasarımdan inşaata tüm yaşam döngüsü boyunca verimli şekilde izleyin ve yönetin. Tüm alt modeller üzerinde tam kontrol sağlayın ve açık/kapalı görevleri takip edin.", image: iconOrganizeProjects },
+    { title: "Kolay\nİletişim", description: "Tasarım aşamalarında uyumsuzlukları veya çakışmaları görsel olarak kolayca iletin ve tespit edin. Tasarım amacını inşaata aktarın.", image: iconCommunicate },
+    { title: "Bulut Tabanlı\nVeri", description: "Proje verilerine her yerden, her zaman ve her cihazdan erişin ve güncelleyin. Tüm proje aşamalarında ekipleri, iş ortaklarını, tedarikçileri ve yüklenicileri bağlayın.", image: iconProductiveCollab },
   ];
   const workflowCategories = [
     {
