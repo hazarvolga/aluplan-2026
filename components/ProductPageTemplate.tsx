@@ -359,7 +359,9 @@ const ProductPageTemplate = ({
           </div>
         </section>
       ) : null}
-
+      {statsItems && statsItems.length > 0 && (
+        <StatsSection items={statsItems} variant={statsVariant} />
+      )}
       {challenges && challenges.length > 0 && (
         <ChallengesSection items={challenges} />
       )}
