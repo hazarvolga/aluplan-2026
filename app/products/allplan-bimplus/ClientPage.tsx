@@ -125,6 +125,7 @@ export default function ClientPage() {
           </div>
         </div>
       </section>
+      <ChallengesSection id="bimplus-challenges" items={challengeItems} />
     </ProductPageTemplate>
   );
 }
