@@ -2,6 +2,7 @@
 import ProductPageTemplate from "@/components/ProductPageTemplate";
 import PostHeroSection from "@/components/PostHeroSection";
 import ChallengesSection from "@/components/ChallengesSection";
+import StatsSection from "@/components/StatsSection";
 import SectionHeader from "@/components/SectionHeader";
 import heroImage from "@/assets/products/bimplus-hero.jpg";
 import imgDisciplineGroups from "@/assets/products/bimplus/workflows/discipline-groups.png";
@@ -96,13 +97,12 @@ export default function ClientPage() {
       description="Açık BIM’e dayalı bulut işbirliği: model veri koordinasyonu, değişiklik yönetimi ve merkezi bilgi kontrolü ile tüm disiplinleri bir araya getirin."
       heroImage={heroImage}
       packages={packages}
-      statsItems={statsItems}
-      statsVariant="animated"
       workflowCategories={workflowCategories}
       ctaTitle="Bimplus'ı Ücretsiz Deneyin"
       ctaDescription="Bulut tabanlı BIM işbirliği ile projelerinizi koordine edin"
     >
       <PostHeroSection title={postHeroTitle} paragraphs={postHeroParagraphs} videoUrl={"https://www.youtube.com/embed/DTSdM7tSBlU"} />
+      <StatsSection items={statsItems} variant="animated" />
       <ChallengesSection id="bimplus-challenges" items={challengeItems} />
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

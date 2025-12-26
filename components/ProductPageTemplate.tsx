@@ -231,9 +231,6 @@ const ProductPageTemplate = ({
       {whatIsInfoMedia && (
         <InfoMediaTwoColumn {...whatIsInfoMedia} />
       )}
-      {statsItems && statsItems.length > 0 && (
-        <StatsSection items={statsItems} variant={statsVariant} />
-      )}
       {children}
       {features && features.length > 0 && (
         <section className="py-16 bg-background" aria-label="Özellikler">
