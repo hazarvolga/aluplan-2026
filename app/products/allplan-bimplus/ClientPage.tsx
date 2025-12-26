@@ -103,6 +103,7 @@ export default function ClientPage() {
       description="Açık BIM’e dayalı bulut işbirliği: model veri koordinasyonu, değişiklik yönetimi ve merkezi bilgi kontrolü ile tüm disiplinleri bir araya getirin."
       heroImage={heroImage}
       packages={packages}
+      benefitsItems={benefitsItems}
       workflowCategories={workflowCategories}
       ctaTitle="Bimplus'ı Ücretsiz Deneyin"
       ctaDescription="Bulut tabanlı BIM işbirliği ile projelerinizi koordine edin"
@@ -110,18 +111,6 @@ export default function ClientPage() {
       <PostHeroSection title={postHeroTitle} paragraphs={postHeroParagraphs} videoUrl={"https://www.youtube.com/embed/DTSdM7tSBlU"} />
       <StatsSection items={statsItems} variant="animated" />
       <ChallengesSection id="bimplus-challenges" items={challengeItems} />
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {benefitsItems.map((item, idx) => (
-              <div key={idx} className="text-center p-6 rounded-lg border border-border hover:shadow-lg transition-all duration-300 animate-slide-up" style={{ animationDelay: `${idx * 0.1}s` }}>
-                <h3 className="text-xl font-semibold mb-4 whitespace-pre-line">{item.title}</h3>
-                <p className="text-muted-foreground">{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </ProductPageTemplate>
   );
 }
