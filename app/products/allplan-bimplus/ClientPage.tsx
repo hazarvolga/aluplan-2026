@@ -102,7 +102,6 @@ export default function ClientPage() {
       title="BIMPLUS projenizi işbirliği için paylaşın, koordine edin ve yönetin"
       description="Açık BIM’e dayalı bulut işbirliği: model veri koordinasyonu, değişiklik yönetimi ve merkezi bilgi kontrolü ile tüm disiplinleri bir araya getirin."
       heroImage={heroImage}
-      packages={packages}
       benefitsItems={benefitsItems}
       workflowCategories={workflowCategories}
       ctaTitle="Bimplus'ı Ücretsiz Deneyin"
