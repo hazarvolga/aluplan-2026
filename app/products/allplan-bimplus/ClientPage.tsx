@@ -44,28 +44,38 @@ export default function ClientPage() {
     { title: "Cloud-based\nData", description: "Conveniently access and update project data anywhere, at any time and on any device. Connect teams, partners, suppliers and contractors across all project stages." },
   ];
   const workflowCategories = [
-    { key: "project-management", label: "Project Management", items: [
-      { title: "Create Discipline Groups", description: "Organize your projects logically in the cloud-based workspace, choose participants, assign rights and roles and invite to your project.", image: imgDisciplineGroups },
-      { title: "Manage Multiple Models", description: "Coordinate, view, and manage models from different disciplines, providing complete transparency.", image: imgMultipleModels },
-    ]},
-    { key: "coordination", label: "Coordination", items: [
-      { title: "BIM Explorer", description: "Aggregate models from different construction products in a neutral environment and visualize in a powerful viewer.", image: imgBimExplorer },
-      { title: "Clash reporting", description: "Assign attributes and other object information, using models to run clash checks.", image: imgClashReporting },
-      { title: "Schedule Simulation", description: "Use models to run simulations based on object information.", image: imgScheduleSimulation },
-    ]},
-    { key: "information-management", label: "Information Management", items: [
-      { title: "Easily Upload Models", description: "Manage information from multiple sources in various formats in a common exchange environment.", image: imgUploadModels },
-      { title: "Document Control", description: "Store and manage multiple revisions of documents and models.", image: imgDocumentControl },
-    ]},
-    { key: "change-management", label: "Change Management", items: [
-      { title: "Automatic Revisioning", description: "Visualize any revision of any model.", image: imgAutomaticRevisioning },
-      { title: "Issue Management", description: "Communicate tasks, manage and document changes centrally and more effectively within project teams.", image: imgIssueManagement },
-    ]},
-    { key: "collaboration", label: "Collaboration", items: [
-      { title: "Create Tasks", description: "Create, visualize, assign, view, manage and sign off tasks directly in BIMPLUS and/or in authoring tools.", image: imgCreateTasks },
-      { title: "Create Slideshow", description: "Create slide shows for project presentations, add slides to help manage tasks.", image: imgCreateSlideshows },
-      { title: "Model Data in MS Excel", description: "Synchronize BIMPLUS directly with MS Excel, edit in MS Excel and synchronize back to BIMPLUS.", image: imgExcelIntegration },
-    ]},
+    {
+      key: "project-management", label: "Proje Yönetimi", items: [
+        { title: "Disiplin Grupları Oluşturun", description: "Projelerinizi bulut tabanlı çalışma alanında mantıksal olarak düzenleyin, katılımcıları seçin, hak ve roller atayın ve projenize davet edin.", image: imgDisciplineGroups },
+        { title: "Birden Fazla Modeli Yönetin", description: "Farklı disiplinlerden modelleri koordine edin, görüntüleyin ve yönetin, tam şeffaflık sağlayın.", image: imgMultipleModels },
+      ]
+    },
+    {
+      key: "coordination", label: "Koordinasyon", items: [
+        { title: "BIM Gezgini", description: "Farklı inşaat ürünlerinden modelleri tarafsız bir ortamda toplayın ve güçlü bir görüntüleyicide görselleştirin.", image: imgBimExplorer },
+        { title: "Çakışma Raporlama", description: "Çakışma kontrolleri yapmak için modelleri kullanarak nitelikler ve diğer nesne bilgilerini atayın.", image: imgClashReporting },
+        { title: "Program Simülasyonu", description: "Nesne bilgilerine dayalı simülasyonlar çalıştırmak için modelleri kullanın.", image: imgScheduleSimulation },
+      ]
+    },
+    {
+      key: "information-management", label: "Bilgi Yönetimi", items: [
+        { title: "Modelleri Kolayca Yükleyin", description: "Ortak bir değişim ortamında çeşitli formatlardaki birden fazla kaynaktan bilgileri yönetin.", image: imgUploadModels },
+        { title: "Doküman Kontrolü", description: "Dokümanların ve modellerin birden fazla revizyonunu saklayın ve yönetin.", image: imgDocumentControl },
+      ]
+    },
+    {
+      key: "change-management", label: "Değişiklik Yönetimi", items: [
+        { title: "Otomatik Revizyon", description: "Herhangi bir modelin herhangi bir revizyonunu görselleştirin.", image: imgAutomaticRevisioning },
+        { title: "Sorun Yönetimi", description: "Görevleri iletin, değişiklikleri merkezi olarak ve proje ekipleri içinde daha etkili bir şekilde yönetin ve belgeleyin.", image: imgIssueManagement },
+      ]
+    },
+    {
+      key: "collaboration", label: "İşbirliği", items: [
+        { title: "Görev Oluşturun", description: "BIMPLUS'ta ve/veya yazma araçlarında doğrudan görevler oluşturun, görselleştirin, atayın, görüntüleyin, yönetin ve onaylayın.", image: imgCreateTasks },
+        { title: "Slayt Gösterisi Oluşturun", description: "Proje sunumları için slayt gösterileri oluşturun, görevleri yönetmeye yardımcı olmak için slaytlar ekleyin.", image: imgCreateSlideshows },
+        { title: "MS Excel'de Model Verileri", description: "BIMPLUS'ı doğrudan MS Excel ile senkronize edin, MS Excel'de düzenleyin ve BIMPLUS'a geri senkronize edin.", image: imgExcelIntegration },
+      ]
+    },
   ];
   const postHeroTitle = "What is BIMPLUS?";
   const postHeroParagraphs = [
