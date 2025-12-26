@@ -104,28 +104,6 @@ export default function ClientPage() {
       ctaDescription="Bulut tabanlı BIM işbirliği ile projelerinizi koordine edin"
     >
       <PostHeroSection title={postHeroTitle} paragraphs={postHeroParagraphs} videoUrl={"https://www.youtube.com/embed/DTSdM7tSBlU"} />
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader title="HOW BIMPLUS BENEFITS YOUR BUSINESS" align="center" compact className="mb-12 py-0 bg-transparent" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="text-center animate-slide-up" style={{ animationDelay: '0s' }}>
-              <div className="text-5xl font-bold text-accent mb-4">100%</div>
-              <h3 className="text-xl font-semibold mb-3">Coordinated and Consistent</h3>
-              <p className="text-muted-foreground">Work with partners, whatever their discipline and software tool, more productively and effectively using a coordinated and consistent model data-based approach.</p>
-            </div>
-            <div className="text-center animate-slide-up" style={{ animationDelay: '0.1s' }}>
-              <div className="text-5xl font-bold text-accent mb-4">100%</div>
-              <h3 className="text-xl font-semibold mb-3">Up To Date</h3>
-              <p className="text-muted-foreground">All data is integrated, centralized, and coordinated on one platform – a single source of truth giving access and up to date status to all stakeholders at any stage.</p>
-            </div>
-            <div className="text-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <div className="text-5xl font-bold text-accent mb-4">100%</div>
-              <h3 className="text-xl font-semibold mb-3">Transparent and Effective</h3>
-              <p className="text-muted-foreground">Powerful visualization tools, issue management and task tracking enable effective and transparent change processes and revision control.</p>
-            </div>
-          </div>
-        </div>
-      </section>
       <ChallengesSection id="bimplus-challenges" items={challengeItems} />
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
