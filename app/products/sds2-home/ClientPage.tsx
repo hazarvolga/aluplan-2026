@@ -35,40 +35,40 @@ export default function ClientPage() {
   ];
   const benefitCategories = [
     {
-      title: "/ MODELING",
+      title: "/ MODELLEME",
       items: [
-        "3D Review and Markup",
-        "Design and Engineering Calculations",
-        "3D Model Input",
-        "Automated connection design",
+        "3D İnceleme ve İşaretleme",
+        "Tasarım ve Mühendislik Hesaplamaları",
+        "3D Model Girişi",
+        "Otomatik bağlantı tasarımı",
       ],
     },
     {
-      title: "/ PLANNING",
+      title: "/ PLANLAMA",
       items: [
-        "Crane placement coordination",
-        "Model coordination and visualization",
-        "Material takeoffs",
-        "Load and delivery planning",
+        "Vinç yerleşim koordinasyonu",
+        "Model koordinasyonu ve görselleştirme",
+        "Malzeme metrajı",
+        "Yük ve teslimat planlaması",
       ],
     },
     {
-      title: "/ INTEROPERABILITY",
-      items: ["Import reference drawings and models", "SDS2 Toolbox"],
+      title: "/ BİRLİKTE ÇALIŞABİLİRLİK",
+      items: ["Referans çizim ve modelleri içe aktarma", "SDS2 Toolbox"],
     },
     {
-      title: "/ DELIVERABLES",
+      title: "/ TESLİMATLAR",
       items: [
-        "View drawings",
-        "Report Generation",
-        "MRP/CNC Integrations",
-        "Shop drawing creation",
-        "Erection drawing creation",
+        "Çizimleri görüntüleme",
+        "Rapor oluşturma",
+        "MRP/CNC Entegrasyonları",
+        "İmalat çizimi oluşturma",
+        "Montaj çizimi oluşturma",
       ],
     },
     {
-      title: "/ ADD-ONS",
-      items: ["Bimplus by ALLPLAN-"],
+      title: "/ EKLENTİLER",
+      items: ["ALLPLAN Bimplus"],
     },
   ];
   const reasonsItems = [
