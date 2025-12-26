@@ -32,17 +32,17 @@ export default function ClientPage() {
     { name: "Bimplus Enterprise", price: "Özel fiyat", description: "Kurumsal çözüm", features: ["Özel depolama", "SSO entegrasyonu", "API erişimi", "Premium destek"] },
   ];
   const statsItems = [
-    { label: "100% Koordineli ve Tutarlı", value: 100, description: "Disiplin ve yazılım aracı ne olursa olsun, koordineli ve tutarlı model veri tabanlı bir yaklaşım kullanarak ortaklarla daha üretken ve etkili çalışın." },
-    { label: "100% Güncel", value: 100, description: "Tüm veriler tek bir platformda entegre, merkezi ve koordine edilir - tüm paydaşlara her aşamada erişim ve güncel durum sağlayan tek gerçek kaynağı." },
-    { label: "100% Şeffaf ve Etkili", value: 100, description: "Güçlü görselleştirme araçları, sorun yönetimi ve görev takibi, etkili ve şeffaf değişiklik süreçleri ve revizyon kontrolü sağlar." },
+    { label: "100% Koordine ve Tutarlı", value: 100, description: "Disiplin ve yazılım ne olursa olsun, koordine edilmiş ve tutarlı model bazlı veri yaklaşımı kullanarak iş ortaklarıyla daha üretken ve etkili çalışın." },
+    { label: "100% Güncel", value: 100, description: "Tüm veriler tek platformda entegre, merkezi ve koordine edilir - tüm paydaşlara her aşamada erişim ve güncel durum sağlayan tekil doğru kaynak." },
+    { label: "100% Şeffaf ve Etkili", value: 100, description: "Güçlü görselleştirme araçları, sorun yönetimi ve görev takibi ile etkili ve şeffaf değişiklik süreçleri ve revizyon kontrolü sağlar." },
   ];
   const benefitsItems = [
-    { title: "Coordinate\nProject Data", description: "Centrally aggregate models in a neutral environment and visualize in a powerful viewer. Assign attribute data and run clash checks. Avoid uncoordinated information leading to errors." },
-    { title: "Manage\nInformation", description: "Manage, access, and exchange more information in shorter timeframes, from multiple sources in multiple formats. Instant status availability, together with documents and models history." },
-    { title: "Change\nManagement", description: "Visualize any revision of any model and compare revisions of the same model. Make informed decisions sooner, reduce risk, errors, and the impact of multiple revisions and change." },
-    { title: "Organize\nProjects", description: "Monitor and manage BIM projects efficiently over entire design to build lifecycles. Maintain full control over all sub-models and track all open and closed tasks." },
-    { title: "Easy\nCommunication", description: "Visually communicate and establish discrepancies or collisions easily in design stages. Convey design intent into construction." },
-    { title: "Cloud-based\nData", description: "Conveniently access and update project data anywhere, at any time and on any device. Connect teams, partners, suppliers and contractors across all project stages." },
+    { title: "Proje Verilerini\nKoordine Edin", description: "Modelleri tarafsız ortamda merkezi olarak toplayın ve güçlü görüntüleyicide görselleştirin. Nitelik verilerini atayın ve çakışma kontrolü yapın. Koordine edilmemiş bilgilerden kaynaklanan hataları önleyin." },
+    { title: "Bilgi\nYönetimi", description: "Birden fazla kaynaktan ve formattan daha fazla bilgiyi daha kısa sürede yönetin, erişin ve paylaşın. Doküman ve model geçmişi ile anlık durum erişilebilirliği." },
+    { title: "Değişiklik\nYönetimi", description: "Herhangi bir modelin herhangi bir revizyonunu görselleştirin ve aynı modelin revizyonlarını karşılaştırın. Daha erken bilinçli kararlar alın, risk, hata ve çoklu revizyonların etkisini azaltın." },
+    { title: "Proje\nOrganizasyonu", description: "BIM projelerini tasarımdan inşaata tüm yaşam döngüsü boyunca verimli şekilde izleyin ve yönetin. Tüm alt modeller üzerinde tam kontrol sağlayın ve açık/kapalı görevleri takip edin." },
+    { title: "Kolay\nİletişim", description: "Tasarım aşamalarında uyumsuzlukları veya çakışmaları görsel olarak kolayca iletin ve tespit edin. Tasarım amacını inşaata aktarın." },
+    { title: "Bulut Tabanlı\nVeri", description: "Proje verilerine her yerden, her zaman ve her cihazdan erişin ve güncelleyin. Tüm proje aşamalarında ekipleri, iş ortaklarını, tedarikçileri ve yüklenicileri bağlayın." },
   ];
   const workflowCategories = [
     {
@@ -80,13 +80,13 @@ export default function ClientPage() {
   ];
   const postHeroTitle = "BIMPLUS Nedir?";
   const postHeroParagraphs = [
-    "BIMPLUS, inşaat projelerinde yer alan tüm disiplinler için açık BIM model tabanlı veri ve proje işbirliği platformudur. Bulut teknolojisini kullanarak, tasarımdan inşaata, operasyona kadar tüm proje yaşam döngüleri boyunca birden fazla paydaşı bağlar, faaliyetleri koordine eder ve proje bilgilerini kontrol eder.",
+    "BIMPLUS, inşaat projelerinde yer alan tüm disiplinler için açık BIM model bazlı veri ve proje işbirliği platformudur. Bulut teknolojisini kullanarak, tasarımdan inşaata, operasyona kadar tüm proje yaşam döngüsü boyunca birden fazla paydaşı bağlar, faaliyetleri koordine eder ve proje bilgilerini kontrol eder.",
     "Proje verilerine her yerden, her zaman erişin, tüm bilgi ihtiyaçlarınızı doğru kişilere verimli bir şekilde iletin ve proje ortaklarıyla gerçek zamanlı işbirliği yapın.",
     "Herhangi bir inşaat sektörü yazılımından proje verilerini kolayca dahil edin, birleştirin, koordine edin, inceleyin ve merkezi bir modelde etkili bir şekilde yönetin.",
     "Tüm aşamalarda BIM tabanlı projeleri yönetin ve kontrol edin, etkili sorun yönetimi ve güçlü görselleştirme araçlarını kullanarak revizyonları ve görevleri kolayca takip edin.",
   ];
   const challengeItems = [
-    "Farklı taraflardan gelen farklı veri kaynaklarından ve formatlarından tutarsız tasarım verileri.",
+    "Farklı taraflardan gelen farklı veri kaynakları ve formatlarından kaynaklanan tutarsız tasarım verileri.",
     "Tutarsızlıklara yol açan ve artan risklere neden olan çok sayıda zaman alan değişiklik.",
     "Hatalara, düşük kaliteye ve artan maliyetlere yol açan koordine edilmemiş bilgiler.",
   ];
