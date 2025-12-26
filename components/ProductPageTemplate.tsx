@@ -207,6 +207,10 @@ const ProductPageTemplate = ({
                 Abonelik SSS
               </a>
             </Button>
+            {/* Separator between default and custom actions */}
+            {quickActions && quickActions.length > 0 && (
+              <div className="w-px h-10 bg-border mx-2" />
+            )}
             {/* Additional buttons if provided */}
             {quickActions && quickActions.map((action, index) => (
               <Button
