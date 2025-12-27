@@ -234,38 +234,30 @@ export default function AllplanBulutContent() {
                     </span>
                   </div>
 
-                  <div className="relative rounded-2xl overflow-hidden border border-border/10 shadow-2xl bg-card aspect-video">
-                    <Image
-                      src={feature.img}
-                      alt={feature.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-                    {/* Video Play Button Overlay */}
-                    {feature.videoUrl && (
-                      <Dialog>
-                        <DialogTrigger asChild>
-                          <button className="absolute inset-0 flex items-center justify-center group/play cursor-pointer z-10">
-                            <div className="h-20 w-20 rounded-full bg-background/20 backdrop-blur-md flex items-center justify-center border border-white/40 group-hover/play:scale-110 group-hover/play:bg-accent transition-all duration-300">
-                              <Play className="h-8 w-8 text-white fill-white ml-1" />
-                            </div>
-                          </button>
-                        </DialogTrigger>
-                        <DialogContent className="max-w-[800px] border-border bg-card p-0 overflow-hidden text-foreground">
-                          <div className="aspect-video w-full">
-                            <iframe
-                              src={feature.videoUrl}
-                              className="w-full h-full"
-                              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                              allowFullScreen
-                            />
-                          </div>
-                        </DialogContent>
-                      </Dialog>
-                    )}
-                  </div>
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <div className="relative rounded-2xl overflow-hidden border border-border/10 shadow-2xl bg-card aspect-video cursor-pointer">
+                        <Image
+                          src={feature.img}
+                          alt={feature.title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-700"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      </div>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-[90vw] max-h-[90vh] border-border bg-card p-0 overflow-hidden">
+                      <div className="relative w-full h-full">
+                        <Image
+                          src={feature.img}
+                          alt={feature.title}
+                          width={1920}
+                          height={1080}
+                          className="object-contain w-full h-full"
+                        />
+                      </div>
+                    </DialogContent>
+                  </Dialog>
                 </div>
 
                 {/* Text Side */}
@@ -352,38 +344,30 @@ export default function AllplanBulutContent() {
                     </span>
                   </div>
 
-                  <div className="relative rounded-2xl overflow-hidden border border-border/10 shadow-2xl bg-card aspect-video">
-                    <Image
-                      src={feature.img}
-                      alt={feature.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-                    {/* Video Play Button Overlay */}
-                    {feature.videoUrl && (
-                      <Dialog>
-                        <DialogTrigger asChild>
-                          <button className="absolute inset-0 flex items-center justify-center group/play cursor-pointer z-10">
-                            <div className="h-20 w-20 rounded-full bg-background/20 backdrop-blur-md flex items-center justify-center border border-white/40 group-hover/play:scale-110 group-hover/play:bg-accent transition-all duration-300">
-                              <Play className="h-8 w-8 text-white fill-white ml-1" />
-                            </div>
-                          </button>
-                        </DialogTrigger>
-                        <DialogContent className="max-w-[800px] border-border bg-card p-0 overflow-hidden text-foreground">
-                          <div className="aspect-video w-full">
-                            <iframe
-                              src={feature.videoUrl}
-                              className="w-full h-full"
-                              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                              allowFullScreen
-                            />
-                          </div>
-                        </DialogContent>
-                      </Dialog>
-                    )}
-                  </div>
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <div className="relative rounded-2xl overflow-hidden border border-border/10 shadow-2xl bg-card aspect-video cursor-pointer">
+                        <Image
+                          src={feature.img}
+                          alt={feature.title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-700"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      </div>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-[90vw] max-h-[90vh] border-border bg-card p-0 overflow-hidden">
+                      <div className="relative w-full h-full">
+                        <Image
+                          src={feature.img}
+                          alt={feature.title}
+                          width={1920}
+                          height={1080}
+                          className="object-contain w-full h-full"
+                        />
+                      </div>
+                    </DialogContent>
+                  </Dialog>
                 </div>
 
                 {/* Text Side */}
