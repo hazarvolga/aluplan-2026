@@ -164,7 +164,7 @@ export default function StructuralHeroBackground() {
     return (
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
             {/* Position: Right oriented */}
-            <div className="absolute right-0 top-0 bottom-0 w-1/2 opacity-90">
+            <div className="absolute right-0 top-0 bottom-0 w-full opacity-90">
                 <Canvas
                     camera={{ position: [5, 4, 6], fov: 45 }}
                     style={{ background: 'transparent' }}

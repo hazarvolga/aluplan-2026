@@ -240,7 +240,7 @@ function FloorConnector({ width, depth, height, opacity, isTransition, deltaGlob
 export default function ArchitecturalHeroBackground() {
     return (
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute right-0 top-0 bottom-0 w-1/2 opacity-60">
+            <div className="absolute right-0 top-0 bottom-0 w-full opacity-60">
                 <Canvas
                     // Isometric view per spec
                     orthographic
