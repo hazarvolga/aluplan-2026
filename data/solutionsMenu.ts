@@ -36,7 +36,6 @@ export const solutionsMenu: MegaMenuSection[] = [
       { name: "Allto PytonPart", href: "/solutions/pythonpart" },
       { name: "AX3000 MEP", href: "/solutions/ax3000" },
       { name: "Scalypso", href: "/solutions/scalypso" },
-      { name: "Add On Kanal", href: "/solutions/addon-channel" },
     ],
   },
   {
@@ -45,6 +44,7 @@ export const solutionsMenu: MegaMenuSection[] = [
       { name: "Allplan BIMPLUS", href: "/solutions/bimplus" },
       { name: "Donatı Mühendisliği", href: "/solutions/rebar-engineering" },
       { name: "İmar Yönetmeliği BIM Eklentisi", href: "/solutions/imar-yonetmeligi-bim-eklentisi" },
+      { name: "BIMX5", href: "/solutions/bimx5" },
       { name: "Allplan Oska İşbirliği", href: "/solutions/oska" },
       { name: "Allplan Poz Kataloğu", href: "/solutions/poz-catalog" },
     ],

@@ -4,23 +4,7 @@ import SolutionHero from "@/components/SolutionHero";
 import SectionHeader from "@/components/SectionHeader";
 import VideoGrid from "@/components/VideoGrid";
 
-const stats = [
-  { value: "3D", label: "DONATI", description: "Doğru ve hızlı donatı modelleme." },
-  { value: "%100", label: "ENTEGRE", description: "Model–çizim–metraj akışında tutarlılık." },
-  { value: "BIM", label: "AÇIK", description: "IFC tabanlı veri alışverişi." },
-];
 
-const challenges = [
-  { text: "Karmaşık geometri ve donatı detaylarında zaman kaybı." },
-  { text: "Değişikliklerle tutarlılığın bozulması." },
-  { text: "Şantiye için net ve hatasız dokümantasyon ihtiyacı." },
-];
-
-const reasons = [
-  { title: "AKILLI DETAYLANDIRMA", description: "Parametrik araçlarla hızlı donatı tasarımı." },
-  { title: "OTOMATİK METRAJ", description: "Doğru ve güncel metraj listeleri." },
-  { title: "ÇAKIŞMA KONTROLÜ", description: "Erken aşamada çakışmaları giderin." },
-];
 
 const postHeroBlock = (
   <>
@@ -68,13 +52,8 @@ export default function Page() {
           description="Üstelik kesitler ve etiketler de otomatik oluşuyor. Metraj raporları ve lejantlar da otomatik ve gerçek... Birden çok duvar, kolon döşeme de artık anınında donatılandırılabiliyor…"
         />
       )}
-      stats={stats}
-      challenges={challenges}
-      reasons={reasons}
-      statsVariant="animated"
-      ctaTitle="Çözümü Keşfedin"
-      ctaDescription="Donatı mühendisliği iş akışınızı modernize edin"
       showHeroButtons={false}
+      showCta={false}
       postHeroSection={postHeroBlock}
     />
   );

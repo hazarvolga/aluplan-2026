@@ -56,7 +56,7 @@ const ImarYonetmeligiClient = () => {
 
   return (
     <div className="dark min-h-screen bg-graphite-950">
-      
+
       <SolutionHero
         title="DENGELERİ DEĞİŞTİRİN"
         subtitle="Akıllı BIM Eklentisi ile Alanları Tanımla, Hemen Raporunu Al..."
@@ -69,6 +69,17 @@ const ImarYonetmeligiClient = () => {
           text: "Çözümler",
           href: "/solutions",
         }}
+        customBackground={(
+          <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+            <iframe
+              className="absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-h-[100vh] min-w-[177.78vh] -translate-x-1/2 -translate-y-1/2 opacity-50 mix-blend-luminosity"
+              src="https://www.youtube.com/embed/0W6k7W5KtzE?autoplay=1&mute=1&controls=0&loop=1&playlist=0W6k7W5KtzE&showinfo=0&rel=0&iv_load_policy=3&disablekb=1&modestbranding=1&playsinline=1"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              style={{ border: 'none' }}
+              allowFullScreen
+            />
+          </div>
+        )}
       />
 
       <div className="bg-background">
@@ -107,7 +118,7 @@ const ImarYonetmeligiClient = () => {
                     Zamandan Tasarruf
                   </div>
                 </div>
-                
+
                 {/* Stat 2 */}
                 <div className="text-center">
                   <div className="text-5xl md:text-6xl font-bold text-white mb-2">
@@ -117,7 +128,7 @@ const ImarYonetmeligiClient = () => {
                     Hatasız Hesaplama
                   </div>
                 </div>
-                
+
                 {/* Stat 3 */}
                 <div className="text-center">
                   <div className="text-5xl md:text-6xl font-bold text-white mb-2">
@@ -152,7 +163,7 @@ const ImarYonetmeligiClient = () => {
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
               Destekleyenler
             </h2>
-            
+
             <div className="max-w-4xl mx-auto">
               <div className="bg-card border border-border rounded-xl shadow-md p-8 flex flex-col md:flex-row items-center justify-center gap-8">
                 <div className="text-center md:text-left">
@@ -244,8 +255,10 @@ const ImarYonetmeligiClient = () => {
                 <p className="text-white/80 text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
                   Allplan ile BIM tabanlı projelerinizi imar yönetmeliğine uygun şekilde kontrol edin ve raporlayın. Detaylı bilgi için bizimle iletişime geçin.
                 </p>
-                <a 
-                  href="/contact"
+                <a
+                  href="https://forms.office.com/r/hXhnKAG912"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-8 py-4 bg-white text-graphite-950 font-semibold rounded-lg hover:bg-white/90 transition-colors duration-300 shadow-lg"
                 >
                   İletişime Geçin
