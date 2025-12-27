@@ -99,9 +99,9 @@ const Footer = () => {
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600">
           <p className="font-mono">© {currentYear} Aluplan Program Sistemleri.</p>
           <div className="flex gap-6">
-            <Link href="/gizlilik-politikasi" className="hover:text-gray-400 transition-colors">Gizlilik Politikası</Link>
-            <Link href="/kullanim-sartlari" className="hover:text-gray-400 transition-colors">Kullanım Şartları</Link>
-            <Link href="/kvkk" className="hover:text-gray-400 transition-colors">KVKK</Link>
+            <Link href="/gizlilik-politikasi" className="hover:text-gray-300 transition-colors">Gizlilik Politikası</Link>
+            <Link href="/kullanim-sartlari" className="hover:text-gray-300 transition-colors">Kullanım Şartları</Link>
+            <Link href="/kvkk" className="hover:text-gray-300 transition-colors">KVKK</Link>
           </div>
         </div>
       </div>

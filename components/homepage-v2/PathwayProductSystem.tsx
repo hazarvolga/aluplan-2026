@@ -220,7 +220,7 @@ const PathwayProductSystem = () => {
                                         {product.title}
                                     </h4>
 
-                                    <p className={`text-sm mb-6 transition-colors ${isHighlighted ? "text-muted-foreground group-hover:text-foreground" : "text-muted-foreground/50"
+                                    <p className={`text-sm mb-6 transition-colors ${isHighlighted ? "text-muted-foreground group-hover:text-foreground" : "text-muted-foreground/70"
                                         }`}>
                                         {product.description}
                                     </p>
