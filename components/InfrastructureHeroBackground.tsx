@@ -128,6 +128,7 @@ function BridgeConstruction({ progress }: { progress: number }) {
             })}
 
             {/* Deck Segments */}
+            {/* Deck Segments */}
             {segments.map((seg, i) => {
                 // Deck appears after piers (0.3 - 1.0)
                 const startT = 0.3 + (i * 0.03)
@@ -148,35 +149,65 @@ function BridgeConstruction({ progress }: { progress: number }) {
                 return (
                     <group key={`deck-${i}`} position={[seg.pos.x, seg.pos.y + yOffset, seg.pos.z]} rotation={[0, angleY, 0]}>
                         <mesh>
-                            <boxGeometry args={[1.2, 0.4, 3]} /> {/* Wide but short segment, rotated to follow curve? No, box is Width, Height, Depth. Tangent logic needs care. */}
-                            {/* If we rotate Y based on atan2(x,z), Z axis aligns with tangent? 
-                                 atan2(x, z) gives angle from Z axis. So local Z is forward.
-                                 Box depth (3) should be along Z? No, width of bridge is "Width". Length of segment is "Depth".
-                                 Let's swap: Width(Bridge Width)=2.5, Height=0.4, Depth(Segment Length)=0.8
-                             */}
                             <boxGeometry args={[2.5, 0.4, 1.2]} />
                             <meshStandardMaterial color="#cbd5e1" transparent opacity={opacity} />
                         </mesh>
-                        {/* Cable Stay (Visual flair) - Only for some segments? */}
-                        {i % 4 === 0 && localProgress > 0.8 && (
-                            <lineSegments>
-                                <bufferGeometry>
-                                    <bufferAttribute
-                                        attach="attributes-position"
-                                        count={2}
-                                        array={new Float32Array([0, 0.2, 0, 0, 6, 0])}
-                                        itemSize={3}
-                                    />
-                                </bufferGeometry>
-                                <lineBasicMaterial color="#fbbf24" opacity={0.4} transparent />
-                            </lineSegments>
-                        )}
                     </group>
                 )
             })}
 
+            {/* Continuous Road Surface (Asphalt) transforming from segments */}
+            <RoadSurface curve={curve} progress={progress} />
+
             {/* Moving Cars (Particles) */}
             <TrafficFlow curve={curve} progress={progress} />
+        </group>
+    )
+}
+
+function RoadSurface({ curve, progress }: { curve: THREE.Curve<THREE.Vector3>, progress: number }) {
+    // Generate the full road geometry once but reveal it progressively
+    // We can simulate "merging" by having a black ribbon grow closely behind the segments
+
+    // Create a tube with rectangular profile to look like a road
+    const roadScroll = Math.max(0, (progress - 0.35) / 0.6) // Starts appearing when segments start landing
+
+    // Hack: Use many small segments matching the curve resolution that fade in.
+    const segmentCount = 60
+    const points = useMemo(() => curve.getSpacedPoints(segmentCount), [curve])
+
+    return (
+        <group>
+            {points.map((pt, i) => {
+                if (i === points.length - 1) return null
+                const nextPt = points[i + 1]
+                const segmentProgress = i / segmentCount
+
+                // Reveal logic: trails the falling blocks
+                const revealThreshold = segmentProgress
+
+                // Fade in smoothly
+                const localAlpha = Math.min(1, Math.max(0, (roadScroll - revealThreshold) * 10))
+
+                if (localAlpha <= 0) return null
+
+                const midX = (pt.x + nextPt.x) / 2
+                const midY = (pt.y + nextPt.y) / 2
+                const midZ = (pt.z + nextPt.z) / 2
+
+                // Orientation
+                const tangent = new THREE.Vector3().subVectors(nextPt, pt).normalize()
+                const angleY = Math.atan2(tangent.x, tangent.z)
+                const dist = pt.distanceTo(nextPt)
+
+                return (
+                    <mesh key={`road-${i}`} position={[midX, midY + 0.21, midZ]} rotation={[0, angleY, 0]}>
+                        {/* Thin Asphalt Layer on top of concrete */}
+                        <boxGeometry args={[2.2, 0.05, dist * 1.05]} />
+                        <meshStandardMaterial color="#0f172a" transparent opacity={localAlpha} roughness={0.9} />
+                    </mesh>
+                )
+            })}
         </group>
     )
 }
