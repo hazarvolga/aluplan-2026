@@ -3,7 +3,7 @@ import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
 import SolutionHero from "@/components/SolutionHero";
 import ArchitecturalHeroBackground from "@/components/ArchitecturalHeroBackground";
 import WorkflowTabsTemplate from "@/components/WorkflowTabsTemplate";
-import heroBg from "@/assets/solutions/omniturm-bg.jpg";
+import heroBg from "@/assets/solutions/omniturm-bg.jpg"; // Keeping original imports
 
 import icon1 from "@/assets/solutions/architecture/reasons/work_way_want.png";
 import icon2 from "@/assets/solutions/architecture/reasons/structural-engineering-allplan-turkey-powerful_modeling.png";

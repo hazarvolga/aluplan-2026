@@ -120,7 +120,7 @@ const ProductPageTemplate = ({
   ctaDescription = "30 gün ücretsiz deneme ile keşfedin",
   ctaHref,
   ctaExternal,
-  showCtaButton = true,
+  showCtaButton = false,
   showDemoButton = true,
   videoSection,
   whatIsSection,

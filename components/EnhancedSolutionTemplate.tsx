@@ -55,6 +55,7 @@ interface EnhancedSolutionTemplateProps {
   heroBackgroundVideoUrl?: string;
   showHeroButtons?: boolean;
   theme?: "default" | "v2-dark";
+  bottomSection?: React.ReactNode;
 }
 
 const EnhancedSolutionTemplate = ({
@@ -71,7 +72,7 @@ const EnhancedSolutionTemplate = ({
   youtubeVideoId,
   ctaTitle = "Hemen Başlayın",
   ctaDescription = "30 gün ücretsiz deneme ile keşfedin",
-  showCta = true,
+  showCta = false,
   preWorkflowSection,
   preChallengesSection,
   reasonsVariant = "default",
@@ -82,6 +83,7 @@ const EnhancedSolutionTemplate = ({
   heroBackgroundVideoUrl,
   showHeroButtons = true,
   theme = "default",
+  bottomSection,
 }: EnhancedSolutionTemplateProps) => {
   const bgClass = "bg-background text-foreground";
   const mutedTextClass = "text-muted-foreground";
@@ -292,6 +294,7 @@ const EnhancedSolutionTemplate = ({
       )}
 
 
+      {bottomSection}
     </div>
   );
 };

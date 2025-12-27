@@ -106,16 +106,6 @@ export default function ClientPage() {
       title="ALLPLAN PRECAST – Prefabrik Elemanlar"
       description="Prefabrik duvar ve döşeme elemanları için otomatik tasarım, detaylandırma ve üretim verisi oluşturma"
       heroImage={heroImage}
-      features={[
-        "Otomatik üretim paftaları",
-        "Tek tık donatı",
-        "Parametrik modelleme",
-        "BIM import ve yeniden kullanım",
-      ]}
-      packages={[
-        { name: "Precast Walls", price: "Teklif alın", description: "Duvar elemanları", features: ["Duvar tasarımı", "Bölme", "Donatı", "Üretim verisi"] },
-        { name: "Precast Slabs", price: "Teklif alın", description: "Döşeme elemanları", features: ["Döşeme tasarımı", "Bölme", "Donatı", "Üretim verisi"], highlighted: true },
-      ]}
       ctaTitle="Ücretsiz Dene"
       ctaHref="https://www.allplan.com/trial-or-subscription/"
       ctaExternal={true}
@@ -127,22 +117,21 @@ export default function ClientPage() {
       ctaDescription="Prefabrik elemanlar için tam çözüm"
     >
       <PostHeroSection title={postHeroTitle} paragraphs={postHeroParagraphs} videoUrl={postHeroVideoUrl} />
+
+      <StatsTemplate title="" items={statsItems} className="bg-muted/30 dark:bg-muted/10 border-y border-border/50" />
+
       <ChallengesSection id="precast-challenges" items={challengeItems} />
-      <StatsTemplate title="Sonuçlar" items={statsItems} />
-      <WorkflowTabsTemplate categories={workflowCategories} />
-      <BenefitsGrid items={benefitItems} />
-      <section className="py-16 bg-background">
+
+      <section className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-card border border-border rounded-xl p-6 flex items-start gap-4">
-            <AlertCircle className="text-accent w-6 h-6 flex-shrink-0 mt-0.5" />
-            <div>
-              <h4 className="font-display text-xl font-bold text-foreground mb-2">Not</h4>
-              <p className="text-muted-foreground">Donatı modülü için ek lisans gerekebilir. Detaylar için satış ekibiyle iletişime geçin.</p>
-            </div>
-          </div>
+          <BenefitsGrid items={benefitItems} variant="modern" />
         </div>
       </section>
-      <section className="py-16">
+
+      <WorkflowTabsTemplate categories={workflowCategories} />
+
+
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <ResourceCardGrid items={resources} />
         </div>

@@ -1,7 +1,6 @@
 import { PageWrapper } from "@/components/layout-v2/PageWrapper";
 import { HeroInternal } from "@/components/layout-v2/HeroInternal";
 import { CardV2 } from "@/components/layout-v2/CardV2";
-import DeepFooter from "@/components/homepage-v2/DeepFooter";
 import { solutionsMenu } from "@/data/solutionsMenu";
 
 export default function AddonsPage() {
@@ -24,7 +23,6 @@ export default function AddonsPage() {
                 </div>
             </section>
 
-            <DeepFooter />
         </PageWrapper>
     );
 }

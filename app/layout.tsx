@@ -5,6 +5,7 @@ import { Inter, Space_Grotesk, IBM_Plex_Mono } from "next/font/google";
 import SkipLink from "@/components/a11y/SkipLink";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import GlobalTrialCTA from "@/components/GlobalTrialCTA";
 import Breadcrumb from "@/components/ui/breadcrumb";
 
 
@@ -79,6 +80,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Header />
           <Breadcrumb />
           <main id="main" aria-label="Ana içerik">{children}</main>
+          <GlobalTrialCTA />
           <Footer />
         </ThemeProvider>
       </body>
