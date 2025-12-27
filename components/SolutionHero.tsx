@@ -134,7 +134,6 @@ const SolutionHero = ({
             className="object-cover opacity-60 mix-blend-overlay"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/90 to-background/80" />
         </div>
       )}
       {customBackground && (
@@ -142,6 +141,7 @@ const SolutionHero = ({
           {customBackground}
         </div>
       )}
+      <div className="absolute inset-0 z-[2] bg-gradient-to-r from-background/95 via-background/90 to-background/20 pointer-events-none" />
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute inset-0 opacity-[0.015] mix-blend-overlay">
           <svg className="w-full h-full">
