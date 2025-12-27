@@ -61,7 +61,7 @@ export default function PrivacyPolicyPage() {
 
                         <div className="border-t border-border pt-8 mt-12">
                             <p className="text-sm text-muted-foreground">
-                                Daha detaylı bilgi ve KVKK ("Kişisel Verilerin Korunması Kanunu") kapsamındaki haklarınız için lütfen <a href="/kvkk" className="text-accent hover:underline">KVKK Aydınlatma Metni</a> sayfamızı ziyaret ediniz.
+                                Daha detaylı bilgi ve KVKK (&quot;Kişisel Verilerin Korunması Kanunu&quot;) kapsamındaki haklarınız için lütfen <a href="/kvkk" className="text-accent hover:underline">KVKK Aydınlatma Metni</a> sayfamızı ziyaret ediniz.
                             </p>
                         </div>
 

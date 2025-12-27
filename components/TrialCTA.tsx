@@ -23,7 +23,7 @@ const TrialCTA = () => {
 
                     {/* Right Column */}
                     <div className="flex flex-col pt-2">
-                        <h3 className="text-xl font-bold mb-4 text-gray-100">ALLPLAN'ı ücretsiz deneyin</h3>
+                        <h3 className="text-xl font-bold mb-4 text-gray-100">ALLPLAN&apos;ı ücretsiz deneyin</h3>
 
                         <ul className="space-y-2 mb-6 text-sm">
                             {[
@@ -39,7 +39,7 @@ const TrialCTA = () => {
                         </ul>
 
                         <p className="text-gray-500 text-xs mb-6 leading-relaxed">
-                            ALLPLAN'ın tam sürümünü 14 gün boyunca ücretsiz ve yükümlülük altına girmeden test edin.
+                            ALLPLAN&apos;ın tam sürümünü 14 gün boyunca ücretsiz ve yükümlülük altına girmeden test edin.
                             Yazılımı indirin ve tüm avantajları deneyimleyin.
                         </p>
 

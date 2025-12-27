@@ -14,7 +14,7 @@ export default function KvkkPage() {
 
                         <div>
                             <p className="font-medium text-lg">
-                                ALUPLAN BİLGİSAYAR PROGRAM SİSTEMLERİ SANAYİ VE TİCARET LTD. ŞTİ. (<span className="text-foreground font-bold">"Aluplan Bilgisayar"</span> veya <span className="text-foreground font-bold">"Şirket"</span>) olarak, Kişisel Verilerinizin İşlenmesi ile ilgili uygulamalarımız ve Kişisel Verilerin Korunması Kanunu kapsamındaki haklarınız hususunda sizleri bilgilendirmek isteriz.
+                                ALUPLAN BİLGİSAYAR PROGRAM SİSTEMLERİ SANAYİ VE TİCARET LTD. ŞTİ. (<span className="text-foreground font-bold">&quot;Aluplan Bilgisayar&quot;</span> veya <span className="text-foreground font-bold">&quot;Şirket&quot;</span>) olarak, Kişisel Verilerinizin İşlenmesi ile ilgili uygulamalarımız ve Kişisel Verilerin Korunması Kanunu kapsamındaki haklarınız hususunda sizleri bilgilendirmek isteriz.
                             </p>
                         </div>
 

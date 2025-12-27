@@ -14,14 +14,14 @@ export default function TermsOfUsePage() {
 
                         <div>
                             <p>
-                                Bu web sitesini (<strong>www.aluplan.com.tr</strong>) ziyaret ederek ve kullanarak, aşağıda belirtilen Kullanım Şartları'nı kabul etmiş sayılırsınız. Eğer bu şartları kabul etmiyorsanız, lütfen sitemizi kullanmayınız.
+                                Bu web sitesini (<strong>www.aluplan.com.tr</strong>) ziyaret ederek ve kullanarak, aşağıda belirtilen Kullanım Şartları&apos;nı kabul etmiş sayılırsınız. Eğer bu şartları kabul etmiyorsanız, lütfen sitemizi kullanmayınız.
                             </p>
                         </div>
 
                         <div>
                             <h2 className="text-2xl font-bold mb-4 text-foreground">1. Genel Hükümler</h2>
                             <p>
-                                Bu web sitesinin sahibi <strong>ALUPLAN BİLGİSAYAR PROGRAM SİSTEMLERİ SANAYİ VE TİCARET LTD. ŞTİ.</strong>'dir (bundan böyle "Şirket" olarak anılacaktır). Şirket, sitede yer alan bilgileri, formları ve içeriği dilediği zaman değiştirme hakkını saklı tutar.
+                                Bu web sitesinin sahibi <strong>ALUPLAN BİLGİSAYAR PROGRAM SİSTEMLERİ SANAYİ VE TİCARET LTD. ŞTİ.</strong>&apos;dir (bundan böyle &quot;Şirket&quot; olarak anılacaktır). Şirket, sitede yer alan bilgileri, formları ve içeriği dilediği zaman değiştirme hakkını saklı tutar.
                             </p>
                         </div>
 
