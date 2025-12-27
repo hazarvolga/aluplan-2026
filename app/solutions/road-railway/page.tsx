@@ -4,6 +4,7 @@ import SolutionHero from "@/components/SolutionHero";
 import WorkflowTabsTemplate from "@/components/WorkflowTabsTemplate";
 import PostHeroSection from "@/components/PostHeroSection";
 import heroBg from "@/assets/solutions/road-railway-hero-bg.png";
+import RoadRailwayHeroBackground from "@/components/RoadRailwayHeroBackground";
 import imgModellingTools from "@/assets/solutions/road-railway/modelling-tools.png";
 import imgReinforcement from "@/assets/solutions/road-railway/reinforcement.png";
 import imgConstructionSeq from "@/assets/solutions/road-railway/construction-sequence.png";
@@ -111,6 +112,7 @@ export default function Page() {
         <SolutionHero badge="KARAYOLU VE DEMİRYOLU ALTYAPISI" title="KARAYOLU VE DEMİRYOLU ALTYAPISI" subtitle="DAHA FAZLASINI İSTEYEN ALTYAPI TASARIMCILARI İÇİN." description={`ALLPLAN’in karayolu, demiryolu ve altyapı tasarımına yönelik BIM çözümleri, tasarımdan inşa sürecine kadar tüm süreci kapsar. Allplan, proje tasarımı ve teslimatı için daha fazla üretkenliği destekleyen işbirlikçi iş akışlarıyla köprüler dahil olmak üzere diğer inşaat mühendisliği disiplini tasarım gereksinimleriyle sorunsuz entegrasyon sağlar. Karayolu, demiryolu ve altyapı planlama yazılımınızdan daha fazlasını bekleyin!
 ÜSTÜN İNŞAAT İÇİN ÇOK MALZEMELİ ÇÖZÜM`}
           backgroundImage={heroBg}
+          customBackground={<RoadRailwayHeroBackground />}
         />
       )}
       stats={stats}
