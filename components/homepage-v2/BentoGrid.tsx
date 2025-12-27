@@ -93,6 +93,8 @@ const BentoGrid = () => {
                                         src={item.image}
                                         alt={item.title}
                                         fill
+                                        sizes={index === 0 ? "(max-width: 768px) 100vw, 66vw" : index === 1 ? "(max-width: 768px) 100vw, 33vw" : "(max-width: 768px) 100vw, 33vw"}
+                                        priority={index === 0}
                                         className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-60 group-hover:opacity-40"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent" />

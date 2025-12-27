@@ -44,11 +44,12 @@ const HeroV2 = () => {
                     muted
                     loop
                     playsInline
-                    className="h-full w-full object-cover scale-105 opacity-80 dark:opacity-100" // Slightly fade video in light mode for readability
-                    poster="/images/hero-poster.jpg"
-                    {...{ "webkit-playsinline": "true" } as any} // Explicit attribute for some WebKit/Blink browsers
+                    className="h-full w-full object-cover scale-105 opacity-80 dark:opacity-100"
+                    aria-label="ALLPLAN BIM platform background video"
+                    {...{ "webkit-playsinline": "true" } as any}
                 >
                     <source src="/videos/hero-bim.mp4" type="video/mp4" />
+                    <track kind="captions" srcLang="tr" label="Türkçe" />
                 </video>
                 {/* Fallback gradient if video doesn't load/play (visually behind video if z-index managed, but video is opaque. 
                     If video fails to load, it might show poster. If poster fails, it shows empty. 

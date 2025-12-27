@@ -66,6 +66,28 @@ const nextConfig = {
           {
             key: 'Permissions-Policy',
             value: 'camera=(), microphone=(), geolocation=()'
+          },
+          {
+            key: 'Cross-Origin-Opener-Policy',
+            value: 'same-origin-allow-popups'
+          },
+          {
+            key: 'Content-Security-Policy',
+            value: [
+              "default-src 'self'",
+              "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.youtube.com https://www.google.com https://vercel.live",
+              "style-src 'self' 'unsafe-inline'",
+              "img-src 'self' data: blob: https: http:",
+              "font-src 'self' data:",
+              "connect-src 'self' https://www.youtube.com https://vercel.live wss:",
+              "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://forms.office.com",
+              "media-src 'self' blob: https:",
+              "object-src 'none'",
+              "base-uri 'self'",
+              "form-action 'self' https://forms.office.com",
+              "frame-ancestors 'none'",
+              "upgrade-insecure-requests"
+            ].join('; ')
           }
         ]
       }

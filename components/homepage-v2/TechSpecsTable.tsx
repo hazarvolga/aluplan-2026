@@ -76,7 +76,7 @@ const TechSpecsTable = () => {
                                 className="bg-muted border border-border/20 rounded-full py-2 pl-10 pr-4 text-sm text-foreground focus:outline-none focus:border-border w-full md:w-64"
                             />
                         </div>
-                        <button className="p-2 rounded-full border border-border/20 bg-muted hover:bg-muted/80 transition-colors">
+                        <button className="p-2 rounded-full border border-border/20 bg-muted hover:bg-muted/80 transition-colors" aria-label="Filtre seçenekleri">
                             <SlidersHorizontal className="h-4 w-4 text-muted-foreground" />
                         </button>
                     </div>

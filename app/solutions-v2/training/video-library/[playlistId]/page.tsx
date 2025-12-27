@@ -6,7 +6,20 @@ import { HeroInternal } from "@/components/layout-v2/HeroInternal";
 import { Play, PlaySquare, ListVideo } from "lucide-react";
 import Image from "next/image";
 import { helloAllplan2024Data } from "../data/hello-allplan-2024";
-import { roadDesignData, bridgeWorkflowsData, campusDeData, campusEnData, addonGeometryData, ax3000Data } from "../data/additional-playlists";
+import {
+    roadDesignData,
+    bridgeWorkflowsData,
+    campusDeData,
+    campusEnData,
+    addonGeometryData,
+    ax3000Data,
+    sds2Data,
+    konutInsaatiData,
+    bridgeWorkflow2022Data,
+    otomatikDonatiData,
+    quickStartBuildingsData,
+    allplanReinforcementData
+} from "../data/additional-playlists";
 
 // This would typically be fetched based on the playlistId slug
 const playlistMap: Record<string, { title: string; subtitle: string; videos: typeof helloAllplan2024Data }> = {
@@ -44,6 +57,41 @@ const playlistMap: Record<string, { title: string; subtitle: string; videos: typ
         title: "AX3000 - MEP & Enerji",
         subtitle: "Mekanik, Elektrik, Tesisat ve Enerji Kimlik Belgesi (EKB) eğitimleri.",
         videos: ax3000Data
+    },
+    "sds2-intro": {
+        title: "SDS2 Detaylandırma",
+        subtitle: "SDS2 ürün tanıtımı ve lansman videoları.",
+        videos: sds2Data
+    },
+    "konut-insaati": {
+        title: "Konut İnşaatı İş Akışları",
+        subtitle: "Konut proje teslimi, tasarım ve şantiye planlama süreçleri.",
+        videos: konutInsaatiData
+    },
+    "bridge-workflow-2022": {
+        title: "Bridge Workflow 2022",
+        subtitle: "2022 Köprü tasarımı ve iş akışları eğitim serisi.",
+        videos: bridgeWorkflow2022Data
+    },
+    "otomatik-donati": {
+        title: "Otomatik Donatı (PythonPart)",
+        subtitle: "Otomatik donatılandırma ve PythonPart araçları kullanımı.",
+        videos: otomatikDonatiData
+    },
+    "quickstart-buildings": {
+        title: "ALLPLAN QuickStart: Buildings",
+        subtitle: "Allplan ile bina modellemeye hızlı başlangıç rehberi.",
+        videos: quickStartBuildingsData
+    },
+    "allplan-reinforcement": {
+        title: "ALLPLAN for Reinforcement",
+        subtitle: "Betonarme detaylandırma, donatı modelleme ve raporlama eğitimleri.",
+        videos: allplanReinforcementData
+    },
+    "campus-tutorials-2019-2022": {
+        title: "Allplan Campus Tutorials 2019-2022",
+        subtitle: "Öğrenciler için kapsamlı Almanca eğitim serisi (2019-2022).",
+        videos: campusDeData
     }
 };
 

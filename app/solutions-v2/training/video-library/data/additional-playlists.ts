@@ -142,3 +142,71 @@ export const ax3000Data = [
     { "id": "8kkVIEWMUSE", "title": "02_ax3000_ekb_pencere_tanimlanmasi.mp4" },
     { "id": "SqaPl9YT4Lo", "title": "01_ax3000_ekb_ana_veriler.mp4" }
 ];
+
+export const sds2Data = [
+    { "id": "ZMy00xdK_Zw", "title": "SDS2 Product Video" },
+    { "id": "65bP1bNJ04k", "title": "SDS2 Lansman" }
+];
+
+export const konutInsaatiData = [
+    { "id": "yRZUdIfqqTg", "title": "Konut İnşaatı İş Akışları | Konut Proje Teslimi | 01 - Satış Sunumlarınızı Artırın" },
+    { "id": "VLMx0PQbMYk", "title": "Konut İnşaatı İş Akışları | Konut Proje Teslimi | 02 - Tasarım Süreçlerinizi Artırın" },
+    { "id": "EjmreHW_Ji4", "title": "Konut İnşaatı İş Akışları | Konut Proje Teslimi | 03 - Maliyet Kontrolünüzü Artırın" },
+    { "id": "I5CKSpcASjs", "title": "Konut İnşaatı İş Akışları | Konut Proje Teslimi | 04 - Şantiye Planlamanızı Geliştirin" }
+];
+
+export const bridgeWorkflow2022Data = [
+    { "id": "qrWbcV0WUJI", "title": "1 - Aks Oluşturma" },
+    { "id": "xoW7IzHucw8", "title": "2 - Kesit Tanımlaması" },
+    { "id": "HrYlRWU4hZ4", "title": "3 - Şablon Tasarlama" },
+    { "id": "vuE0hK378yU", "title": "4 - Bir Alt Yapı İnşa Etmek" },
+    { "id": "pcWGG2HFzGY", "title": "5 - Kirişlerin Montajı" },
+    { "id": "d-1WPvh5vQI", "title": "6 - Tabliye Konstrüksiyonu" },
+    { "id": "DL0Ulqmh4uQ", "title": "7 - Guse Oluşturulması" },
+    { "id": "wQbv-D2nL1c", "title": "8 - Köprü Yapısının Tamamlanması" }
+];
+
+export const otomatikDonatiData = [
+    { "id": "pbrLQHEgmbE", "title": "Otomatik Donatı Kolon TRK" },
+    { "id": "EjmED4ZgU8s", "title": "Otomatik Donatı Kiriş TRK" },
+    { "id": "QRmoL3mZHTU", "title": "Otomatik Donatı Perde Duvar TRK" },
+    { "id": "B5d0xQT_Qzc", "title": "Otomatik Zımbalama Profili TRK" },
+    { "id": "DIL1xbeFgO8", "title": "V2021-1-0: Otomatik Kiriş" },
+    { "id": "zIGjAqKPrqU", "title": "V2021-1-0: Otomatik Kolon" },
+    { "id": "5fQG72LZE2Q", "title": "V2021-1-0: Otomatik Zımbalama" },
+    { "id": "0g8oo8XBcZQ", "title": "V2021-1-0: Otomatik Perde Duvar" },
+    { "id": "cJiS7eG5Z98", "title": "Allplan 2021 1 Otomatik Donatı 3" }
+];
+
+export const quickStartBuildingsData = [
+    { "id": "DnR6gPrkykw", "title": "Allplan QuickStart: Buildings Lesson 1 - Allplan User Interface" },
+    { "id": "ui1IYoixkq4", "title": "Allplan QuickStart: Buildings Lesson 2 - The Building Structure" },
+    { "id": "LZJwkmO8WDA", "title": "Allplan QuickStart: Buildings Lesson 3 - Importing and Drawing Files" },
+    { "id": "2V8nn8lIQKs", "title": "Allplan QuickStart: Buildings Lesson 4 - Modeling the foundation and framing plans" },
+    { "id": "FwGvIDezLRA", "title": "Allplan QuickStart: Buildings Lesson 5 - Openings and roof framing plan" },
+    { "id": "80OxmDheDOs", "title": "Allplan QuickStart: Buildings Lesson 6 - Wizards, views and sections" },
+    { "id": "jXjhLZmqbTs", "title": "Allplan QuickStart: Buildings Lesson 7 - Generating 3D reinforcing; Area Reinforcement" },
+    { "id": "j9bfivy4K5I", "title": "Allplan QuickStart: Buildings Lesson 8 - Generating 3D reinforcing; Bar Reinforcement" },
+    { "id": "lJlL3WehxQ8", "title": "Allplan QuickStart: Buildings Lesson 9 - Creating Layout Drawings" }
+];
+
+export const allplanReinforcementData = [
+    { "id": "qhAwHkMm2yU", "title": "Allplan Reinforcing Shorts; Retaining Wall" },
+    { "id": "bdMUT9T09f4", "title": "Allplan for Rebar Detailing - From 2D to 3D" },
+    { "id": "G1BnLk4Wuuk", "title": "Allplan for Rebar Detailing - Automate Bar Lists" },
+    { "id": "ud3IFzGt0PU", "title": "Allplan 2021 | Features | Rebar Detailing" },
+    { "id": "4BCi-tKr4v8", "title": "Allplan: Reinforce complex shapes: Circular pier reinforcement" },
+    { "id": "n2zmP81kPQU", "title": "Allplan Reinforcing Shorts; Columns and Footings" },
+    { "id": "IDM6xq_U13o", "title": "Allplan for Rebar Change Management" },
+    { "id": "p-Q2sbtjicg", "title": "Import 3rd party objects into your 3D BIM design" },
+    { "id": "-k3MaMa5hr0", "title": "Allplan Reinforcement: Post Tensioned Slab" },
+    { "id": "gz97dR5qjDg", "title": "Allplan Bridge Tendon Modeling" },
+    { "id": "rgoKkiGDWIY", "title": "Automatic Reinforcement Collision Check" },
+    { "id": "RxvVq40tzUU", "title": "Quickly sweep bars in 3D along any path to streamline your reinforced concrete project" },
+    { "id": "ntOLT2jDGnI", "title": "Review Refine Manipulate Reinforce: Modifying bar schemas" },
+    { "id": "CXXNfUhJdV4", "title": "Add an opening in a precast buried structure and rebar updates automatically" },
+    { "id": "dRBEkWhQDbQ", "title": "Soundwall post and anchor" },
+    { "id": "f9ESV74AnBM", "title": "Automatically create a legend for your rebar" },
+    { "id": "YV1KeRoUylM", "title": "Sneak Peek of Allplan's Bringing BIM to the Rebar Detailing Industry – Changing the status quo" },
+    { "id": "R6VkXa8v2Q0", "title": "Reinforce a corner automatically and control width and length parametrically" }
+];
