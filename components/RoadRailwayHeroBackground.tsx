@@ -4,60 +4,83 @@ import { useRef, useMemo, useState, useEffect } from "react"
 import * as THREE from "three"
 import { Text, PerspectiveCamera } from "@react-three/drei"
 
-// Road & Railway Variant Comparison - CAD Wireframe Style (Simplified & Robust)
-function EngineeringScene() {
-    // State: 0=Terrain, 1=VarA, 2=VarB, 3=VarC, 4=All
-    const [step, setStep] = useState(0)
+// Road & Railway - Structured Storyboard Animation
+function StoryboardScene() {
+    // State: 0=Terrain, 1=VarA, 2=VarB, 3=VarC, 4=Compare
+    const [scene, setScene] = useState(0)
 
-    // Robust Interval Loop
     useEffect(() => {
         const interval = setInterval(() => {
-            setStep((prev) => (prev + 1) % 5)
-        }, 3000) // Change every 3 seconds
+            setScene((prev) => (prev + 1) % 5)
+        }, 5000) // 5 seconds per scene
         return () => clearInterval(interval)
     }, [])
 
+    // Scene definitions for text
+    const sceneInfo = [
+        { title: "Project Corridor", subtitle: "Existing Terrain Context" },
+        { title: "Variant A", subtitle: "Shortest Alignment" },
+        { title: "Variant B", subtitle: "Reduced Earthwork" },
+        { title: "Variant C", subtitle: "Balanced Solution" },
+        { title: "Alignment Comparison", subtitle: "Overview" },
+    ]
+
     return (
         <group>
-            <TerrainWireframe />
+            {/* Terrain: Always visible, but fades out in comparison mode */}
+            <TerrainWireframe dimmed={scene === 4} />
 
-            {/* Variant A: Shortest (White) */}
-            <VariantLine
+            {/* Variant A (White) */}
+            <VariantTube
                 points={variants.A.points}
                 color="#ffffff"
-                label="Varyant A: En Kısa"
-                labelPos={new THREE.Vector3(0, 3, 0)}
-                visible={step === 1 || step === 4}
+                visible={scene === 1 || scene === 4}
             />
 
-            {/* Variant B: Low Earthwork (Blue) */}
-            <VariantLine
+            {/* Variant B (Blue) */}
+            <VariantTube
                 points={variants.B.points}
                 color="#38bdf8"
-                label="Varyant B: Min. Hafriyat"
-                labelPos={new THREE.Vector3(-4, 2, 4)}
-                visible={step === 2 || step === 4}
+                visible={scene === 2 || scene === 4}
             />
 
-            {/* Variant C: Balanced (Orange) */}
-            <VariantLine
+            {/* Variant C (Orange) */}
+            <VariantTube
                 points={variants.C.points}
                 color="#f97316"
-                label="Varyant C: Dengeli"
-                labelPos={new THREE.Vector3(4, 4, -4)}
-                visible={step === 3 || step === 4}
+                visible={scene === 3 || scene === 4}
             />
 
-            {/* Legend/Status Text */}
+            {/* HUD / Titles */}
+            <SceneTitle
+                title={sceneInfo[scene].title}
+                subtitle={sceneInfo[scene].subtitle}
+            />
+        </group>
+    )
+}
+
+function SceneTitle({ title, subtitle }: { title: string, subtitle: string }) {
+    return (
+        <group position={[0, 8, -5]}>
             <Text
-                position={[0, 8, -10]}
-                fontSize={0.8}
-                color="#cbd5e1"
+                fontSize={1.2}
+                color="#e2e8f0"
                 anchorX="center"
-                anchorY="middle"
+                anchorY="bottom"
                 font="/fonts/Inter-Bold.woff"
             >
-                {step === 4 ? "Karşılaştırma Analizi" : "Güzergah Alternatifleri"}
+                {title}
+            </Text>
+            <Text
+                position={[0, -0.8, 0]}
+                fontSize={0.6}
+                color="#94a3b8"
+                anchorX="center"
+                anchorY="top"
+                font="/fonts/Inter-Regular.woff"
+            >
+                {subtitle}
             </Text>
         </group>
     )
@@ -70,7 +93,15 @@ const variants = {
     C: { points: [new THREE.Vector3(-12, -0.5, 12), new THREE.Vector3(-4, 3, 8), new THREE.Vector3(4, 3, -8), new THREE.Vector3(12, 0.5, -12)] }
 }
 
-function TerrainWireframe() {
+function TerrainWireframe({ dimmed }: { dimmed: boolean }) {
+    const materialRef = useRef<THREE.MeshBasicMaterial>(null)
+
+    useFrame((state, delta) => {
+        if (!materialRef.current) return
+        const targetOp = dimmed ? 0.05 : 0.2 // Fade to 5% in compare mode
+        materialRef.current.opacity = THREE.MathUtils.lerp(materialRef.current.opacity, targetOp, delta * 2)
+    })
+
     const geometry = useMemo(() => {
         const geo = new THREE.PlaneGeometry(35, 35, 32, 32)
         const posAttribute = geo.attributes.position
@@ -87,54 +118,37 @@ function TerrainWireframe() {
     return (
         <group rotation={[-Math.PI / 2, 0, 0]} position={[0, -4, 0]}>
             <mesh geometry={geometry}>
-                <meshBasicMaterial color="#475569" wireframe transparent opacity={0.2} />
+                <meshBasicMaterial ref={materialRef} color="#64748b" wireframe transparent opacity={0.2} />
             </mesh>
-            <gridHelper args={[40, 40, "#334155", "#0f172a"]} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0.1]} material-opacity={0.1} material-transparent />
+            <gridHelper args={[40, 40, "#1e293b", "#0f172a"]} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0.1]} material-opacity={0.1} material-transparent />
         </group>
     )
 }
 
-function VariantLine({ points, color, label, labelPos, visible }: any) {
+function VariantTube({ points, color, visible }: { points: THREE.Vector3[], color: string, visible: boolean }) {
     const curve = useMemo(() => new THREE.CatmullRomCurve3(points), [points])
+    const materialRef = useRef<THREE.MeshStandardMaterial>(null)
 
-    // Smooth opacity transition
-    const materialRef = useRef<any>(null)
     useFrame((state, delta) => {
-        if (materialRef.current) {
-            const target = visible ? 1 : 0
-            materialRef.current.opacity = THREE.MathUtils.lerp(materialRef.current.opacity, target, delta * 3)
-            // Hide when invisible to prevent glitches
-            materialRef.current.visible = materialRef.current.opacity > 0.05
-        }
+        if (!materialRef.current) return
+        const targetOp = visible ? 1 : 0
+        materialRef.current.opacity = THREE.MathUtils.lerp(materialRef.current.opacity, targetOp, delta * 4) // Fast transition
+        materialRef.current.visible = materialRef.current.opacity > 0.01
     })
 
     return (
-        <group>
-            {/* Thick Tube instead of Line for better visibility */}
-            <mesh>
-                <tubeGeometry args={[curve, 64, 0.15, 8, false]} />
-                <meshStandardMaterial ref={materialRef} color={color} transparent opacity={0} emissive={color} emissiveIntensity={0.5} />
-            </mesh>
-
-            {/* Label */}
-            {visible && (
-                <group position={labelPos}>
-                    <Text
-                        fontSize={0.5}
-                        color={color}
-                        anchorX="center"
-                        anchorY="middle"
-                        font="/fonts/Inter-Bold.woff"
-                    >
-                        {label}
-                    </Text>
-                    <mesh position={[0, -0.5, 0]}>
-                        <sphereGeometry args={[0.1]} />
-                        <meshBasicMaterial color={color} />
-                    </mesh>
-                </group>
-            )}
-        </group>
+        <mesh>
+            <tubeGeometry args={[curve, 64, 0.3, 8, false]} /> {/* Thick tube */}
+            <meshStandardMaterial
+                ref={materialRef}
+                color={color}
+                transparent
+                opacity={0}
+                emissive={color}
+                emissiveIntensity={0.4}
+                roughness={0.4}
+            />
+        </mesh>
     )
 }
 
@@ -142,14 +156,15 @@ export default function RoadRailwayHeroBackground() {
     return (
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute right-0 top-0 bottom-0 w-full opacity-90">
-                <Canvas
-                    style={{ background: 'transparent' }}
-                >
-                    <PerspectiveCamera makeDefault position={[20, 15, 20]} fov={35} />
-                    <ambientLight intensity={0.5} />
-                    <pointLight position={[10, 10, 10]} intensity={0.8} color="#ffffff" />
+                <Canvas style={{ background: 'transparent' }}>
+                    {/* Fixed Camera - No Rotation */}
+                    <PerspectiveCamera makeDefault position={[20, 15, 20]} fov={30} onUpdate={c => c.lookAt(0, -2, 0)} />
+
+                    <ambientLight intensity={0.4} />
+                    <pointLight position={[10, 20, 10]} intensity={1} color="#ffffff" />
+
                     <group position={[0, -2, 0]}>
-                        <EngineeringScene />
+                        <StoryboardScene />
                     </group>
                 </Canvas>
             </div>
