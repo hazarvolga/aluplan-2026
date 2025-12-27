@@ -2,7 +2,7 @@
 import SolutionHero from "@/components/SolutionHero";
 import SectionHeader from "@/components/SectionHeader";
 import Image, { StaticImageData } from "next/image";
-import { CheckCircle2, Keyboard, Palette, Moon, AlertTriangle, Info, Box } from "lucide-react";
+import { CheckCircle2, Keyboard, Palette, Moon, AlertTriangle, Info, Box, Bot, Scissors, Eye, Network, Link } from "lucide-react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
@@ -113,6 +113,83 @@ export default function AllplanBulutContent() {
     }
   ];
 
+  const cloudFeatures = [
+    {
+      title: "Yapay Zeka Asistanı",
+      desc: "AI Assistant",
+      subtitle: "AEC Yenilikleri için Uzman Yol Arkadaşınız",
+      package: "#Concept",
+      icon: Bot,
+      img: placeholderImg,
+      videoUrl: null,
+      details: [
+        "Connect platformu üzerinden sunulan AI Assistant, ALLPLAN yazılım çözümleri (ALLPLAN, SCIA, FRILO, SDS2 ve BIMPLUS) ile çalışma şeklinizi dönüştürmek için tasarlanmış yenilikçi bir araçtır. Mimarlık, mühendislik, üretim ve iş birliği alanlarında uzmanlığı ile, bu akıllı asistan platformun tüm alanlarında kapsamlı destek sağlar.",
+        "ALLPLAN'a özgü konuların ötesinde, AI Assistant geniş AEC endüstri standartları ve en iyi uygulamalar hakkında da değerli bir kaynak sunar; süreçleri hızlandırmanıza ve bilinçli kararlar almanıza yardımcı olur.",
+        "İnşaat standartlarıyla ilgili rehberlik, Oda planlaması için akıllı öneriler, Projeleriniz için detaylı kod uzantıları geliştirme desteği gibi ihtiyaçlarınızda pratik çözümler sağlar.",
+        "7/24 erişilebilir ve birden fazla dilde kullanılabilir, böylece uzman desteğine her zaman ulaşabilirsiniz.",
+        "AI Assistant, abonelikli müşteriler için önizleme sürümü olarak sunulacaktır. Bu sadece bir araç değil; AEC iş akışlarınızda verimliliği artıran ve yeni olanaklar açan güvenilir bir iş ortağıdır."
+      ]
+    },
+    {
+      title: "Kaplamalar – 2D Belge Kırpma",
+      desc: "Overlays - 2D Document Clipping",
+      subtitle: "3B koordinasyon için daha net ve hızlı odaklanma – 2B düzenlerde önemli detaylara kolayca odaklanın",
+      package: "#Concept",
+      icon: Scissors,
+      img: placeholderImg,
+      videoUrl: null,
+      details: [
+        "ALLPLAN'daki yeni kırpma kutusu özelliği, kullanıcıların 2B düzenleri 3B modellerle birleştirirken yalnızca ihtiyaç duydukları içeriği izole etmesini sağlar.",
+        "2B düzen içinde görünür alanı doğrudan tanımlayıp ayarlayabilir, İlgisiz görünümler, başlıklar veya ekstra bilgiler dışlanabilir, Yalnızca temel detaylar gösterilir.",
+        "Sezgisel boyutlandırma ve Geri Al / Yinele (Undo/Redo) işlevleri sayesinde: İncelemeler hızlanır, Görsel karmaşa azalır, Netlik artar.",
+        "Bu özellik, mimarlar ve mühendisler için koordinasyonu hızlandırır, iletişimi daha açık hale getirir ve sunumları daha etkili kılar."
+      ]
+    },
+    {
+      title: "ALLPLAN Model Görüntüleyici",
+      desc: "ALLPLAN Model Viewer",
+      subtitle: "Ücretsiz, Hızlı ve Her Yerden Erişilebilir – Tarayıcınızda anında model görselleştirme",
+      package: "#Basic",
+      icon: Eye,
+      img: placeholderImg,
+      videoUrl: null,
+      details: [
+        "Ücretsiz ve bağımsız Model Viewer, herkese tarayıcı tabanlı IFC görselleştirme olanağı sunar.",
+        "modelviewer.allplan.com üzerinden erişilebilir",
+        "Modelleri hızlıca önizleyebilir ve etkileşimde bulunabilirsiniz"
+      ]
+    },
+    {
+      title: "Daha Akıllı İş Birliği – SCIA Engineer için Geliştirilmiş Model Yönetimi ve Takım Çalışması",
+      desc: "SCIA Engineer",
+      subtitle: "Mühendislik ekiplerinin tasarımları koordine etmesi ve ilerlemeyi paylaşması için daha akıllı bir yöntem",
+      package: "#SCIA Engineer",
+      icon: Network,
+      img: placeholderImg,
+      videoUrl: null,
+      details: [
+        "SCIA Engineer'daki en son geliştirmelerle, ekipler artık tek bir paylaşılan yapısal model üzerinden iş birliği yapabilir.",
+        "Mühendisler değişiklikleri izleyebilir, Disiplinler arası daha verimli koordinasyon sağlanır, Herkes en güncel tasarım verisiyle çalışır.",
+        "Bu bağlı iş akışı, hataları azaltır, proje teslimatını hızlandırır ve ekiplerin müşterilere daha iyi sonuçlar sunmaya odaklanmasını sağlar."
+      ]
+    },
+    {
+      title: "ALLPLAN-Bluebeam Bağlantı Uzantısı",
+      desc: "Extension ALLPLAN-Bluebeam Connection",
+      subtitle: "2B ve 3B belgelerin dijital aktarımı için stabil iş akışı",
+      package: "#Concept",
+      icon: Link,
+      img: placeholderImg,
+      videoUrl: null,
+      details: [
+        "Bluebeam ve ALLPLAN, kullanıcılarına iş birliğine dayalı araçlar sunar. ALLPLAN 2026 sürümü, iki araç arasında güçlü bir iş akışı sunarak, kullanıcıların Bluebeam Studio Project ortamındaki belgeleri kolayca ALLPLAN iş akışlarına dahil etmesini sağlar.",
+        "Bu özellik, kullanıcıya farklı proje aşamalarında teslimatlar için dijital bir ortam sağlar",
+        "3B ve 2B verilerin senkronizasyonu ve proje paydaşlarıyla veri değişimi mümkün olur",
+        "Artık Bluebeam EU Server için kullanılabilir."
+      ]
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SolutionHero
@@ -136,8 +213,120 @@ export default function AllplanBulutContent() {
                 <div className="flex-1 w-full group relative">
                   <div className="mb-4 flex items-center px-1">
                     <span className={`text-xs font-bold px-3 py-1.5 rounded-full border ${feature.package === '#Basic' ? 'bg-green-500/10 text-green-500 border-green-500/20' :
+                      feature.package === '#Concept' ? 'bg-blue-500/10 text-blue-500 border-blue-500/20' :
+                        'bg-purple-500/10 text-purple-500 border-purple-500/20'
+                      }`}>
+                      Dahil Olduğu Paket: {feature.package}
+                    </span>
+                  </div>
+
+                  <div className="relative rounded-2xl overflow-hidden border border-border/10 shadow-2xl bg-card aspect-video">
+                    <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-background flex items-center justify-center">
+                      <span className="text-muted-foreground text-sm">Görsel yakında eklenecek</span>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                    {/* Video Play Button Overlay */}
+                    {feature.videoUrl && (
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <button className="absolute inset-0 flex items-center justify-center group/play cursor-pointer z-10">
+                            <div className="h-20 w-20 rounded-full bg-background/20 backdrop-blur-md flex items-center justify-center border border-white/40 group-hover/play:scale-110 group-hover/play:bg-accent transition-all duration-300">
+                              <Play className="h-8 w-8 text-white fill-white ml-1" />
+                            </div>
+                          </button>
+                        </DialogTrigger>
+                        <DialogContent className="max-w-[800px] border-border bg-card p-0 overflow-hidden text-foreground">
+                          <div className="aspect-video w-full">
+                            <iframe
+                              src={feature.videoUrl}
+                              className="w-full h-full"
+                              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                              allowFullScreen
+                            />
+                          </div>
+                        </DialogContent>
+                      </Dialog>
+                    )}
+                  </div>
+                </div>
+
+                {/* Text Side */}
+                <div className="flex-1 w-full">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="p-3 rounded-lg bg-accent/10 text-accent">
+                      <feature.icon className="h-6 w-6" />
+                    </div>
+                    <span className="text-muted-foreground font-medium tracking-widest text-sm uppercase">
+                      {feature.desc}
+                    </span>
+                  </div>
+
+                  <h3 className="text-3xl font-bold text-foreground mb-4 leading-tight">
+                    {feature.title}
+                  </h3>
+
+                  {feature.subtitle && (
+                    <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+                      {feature.subtitle}
+                    </p>
+                  )}
+
+                  {feature.videoUrl && (
+                    <div className="mb-8">
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <Button variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground gap-2 transition-all">
+                            <Play className="h-4 w-4" />
+                            Videoyu Görüntüle
+                          </Button>
+                        </DialogTrigger>
+                        <DialogContent className="max-w-[800px] border-border bg-card p-0 overflow-hidden text-foreground">
+                          <div className="aspect-video w-full">
+                            <iframe
+                              src={feature.videoUrl}
+                              className="w-full h-full"
+                              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                              allowFullScreen
+                            />
+                          </div>
+                        </DialogContent>
+                      </Dialog>
+                    </div>
+                  )}
+
+                  <ul className="space-y-4">
+                    {feature.details.map((detail, i) => (
+                      <li key={i} className="flex items-start gap-4 group/item">
+                        <CheckCircle2 className="h-6 w-6 text-accent shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform" />
+                        <span className="text-muted-foreground text-lg leading-relaxed">{detail}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ALLPLAN Cloud Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6 max-w-[1400px]">
+          <SectionHeader
+            title="ALLPLAN Cloud"
+          />
+
+          <div className="mt-20 space-y-32">
+            {cloudFeatures.map((feature, idx) => (
+              <div key={idx} className={`flex flex-col ${idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 lg:gap-24 items-start`}>
+                {/* Image Side */}
+                <div className="flex-1 w-full group relative">
+                  <div className="mb-4 flex items-center px-1">
+                    <span className={`text-xs font-bold px-3 py-1.5 rounded-full border ${feature.package === '#Basic' ? 'bg-green-500/10 text-green-500 border-green-500/20' :
                         feature.package === '#Concept' ? 'bg-blue-500/10 text-blue-500 border-blue-500/20' :
-                          'bg-purple-500/10 text-purple-500 border-purple-500/20'
+                          feature.package === '#SCIA Engineer' ? 'bg-orange-500/10 text-orange-500 border-orange-500/20' :
+                            'bg-purple-500/10 text-purple-500 border-purple-500/20'
                       }`}>
                       Dahil Olduğu Paket: {feature.package}
                     </span>
