@@ -1,5 +1,6 @@
 "use client"
 import SolutionHero from "@/components/SolutionHero";
+import SectionHeader from "@/components/SectionHeader";
 
 export default function AllplanBulutContent() {
   return (
@@ -11,12 +12,17 @@ export default function AllplanBulutContent() {
         description=""
       />
 
-      {/* Content sections will be added here */}
+      {/* General Features Section */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+          <SectionHeader
+            title="Genel Ana Özellikler ve Tüm Kullanıcılar için Geliştirmeler"
+          />
+
+          {/* Content will be added here */}
+          <div className="mt-12 text-center">
             <p className="text-muted-foreground text-lg">
-              İçerik yakında eklenecek...
+              Özellikler yakında eklenecek...
             </p>
           </div>
         </div>
