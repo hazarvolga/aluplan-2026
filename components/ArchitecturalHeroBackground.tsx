@@ -85,14 +85,16 @@ function WireframeBuilding() {
 export default function ArchitecturalHeroBackground() {
     return (
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <Canvas
-                camera={{ position: [5, 3, 8], fov: 50 }}
-                style={{ background: 'transparent' }}
-            >
-                <ambientLight intensity={0.5} />
-                <pointLight position={[10, 10, 10]} intensity={0.8} />
-                <WireframeBuilding />
-            </Canvas>
+            <div className="absolute right-0 top-0 bottom-0 w-1/2 opacity-30">
+                <Canvas
+                    camera={{ position: [5, 3, 8], fov: 50 }}
+                    style={{ background: 'transparent' }}
+                >
+                    <ambientLight intensity={0.5} />
+                    <pointLight position={[10, 10, 10]} intensity={0.8} />
+                    <WireframeBuilding />
+                </Canvas>
+            </div>
         </div>
     )
 }

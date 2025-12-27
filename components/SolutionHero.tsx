@@ -284,26 +284,28 @@ const SolutionHero = ({
                 </motion.div>
               )}
             </div>
-            <motion.div variants={fadeUpVariants} className="lg:col-span-4 hidden lg:block">
-              <motion.div variants={glowPulseVariants} animate="animate" className="relative aspect-square">
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl border border-white/20 shadow-2xl p-8">
-                  <div className="relative w-full h-full flex items-center justify-center">
-                    <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-accent/10 rounded-2xl blur-2xl" />
-                    <div className="relative grid grid-cols-3 gap-4">
-                      {[...Array(9)].map((_, i) => (
-                        <motion.div
-                          key={i}
-                          initial={{ opacity: 0, scale: 0 }}
-                          animate={{ opacity: [0.3, 1, 0.3], scale: [0.8, 1.2, 0.8] }}
-                          transition={{ duration: 2, repeat: Infinity, delay: i * 0.2, ease: "easeInOut" }}
-                          className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/50 to-accent shadow-lg"
-                        />
-                      ))}
+            {!customBackground && (
+              <motion.div variants={fadeUpVariants} className="lg:col-span-4 hidden lg:block">
+                <motion.div variants={glowPulseVariants} animate="animate" className="relative aspect-square">
+                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl border border-white/20 shadow-2xl p-8">
+                    <div className="relative w-full h-full flex items-center justify-center">
+                      <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-accent/10 rounded-2xl blur-2xl" />
+                      <div className="relative grid grid-cols-3 gap-4">
+                        {[...Array(9)].map((_, i) => (
+                          <motion.div
+                            key={i}
+                            initial={{ opacity: 0, scale: 0 }}
+                            animate={{ opacity: [0.3, 1, 0.3], scale: [0.8, 1.2, 0.8] }}
+                            transition={{ duration: 2, repeat: Infinity, delay: i * 0.2, ease: "easeInOut" }}
+                            className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/50 to-accent shadow-lg"
+                          />
+                        ))}
+                      </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </motion.div>
-            </motion.div>
+            )}
           </div>
         </motion.div>
       </div>
