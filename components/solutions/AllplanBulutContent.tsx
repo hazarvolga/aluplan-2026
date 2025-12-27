@@ -448,6 +448,29 @@ export default function AllplanBulutContent() {
           </div>
         </div>
       </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-accent/5">
+        <div className="container mx-auto px-6 max-w-[1400px]">
+          <div className="flex flex-col items-center justify-center gap-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground text-center">
+              ALLPLAN 2026 Hakkında Daha Fazla Bilgi
+            </h2>
+            <div className="flex flex-col sm:flex-row gap-4 mt-4">
+              <a href="/allplan-2026nin-ozellikleri">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg">
+                  ALLPLAN 2026 Özellikleri
+                </Button>
+              </a>
+              <a href="/products/allplan-2026">
+                <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground px-8 py-6 text-lg">
+                  ALLPLAN 2026 Yenilikleri
+                </Button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
