@@ -30,201 +30,120 @@ function OmniturmBuilding() {
         return () => clearInterval(interval)
     }, [])
 
-    // OMNITURM Structure - Refined Hip Swing
+    // Parametric Skyscraper Structure
+    // Spec: 9 Modules * 5 Floors = 45 Floors
     const floors = useMemo(() => {
         const floorArray = []
-        const floorCount = 30
-        const floorHeight = 0.5
-        const baseSize = 2.2
 
-        // Hip-swing parameters based on user feedback
-        const shiftStartFloor = 8 // Starts after 8th floor
-        const shiftDuration = 7   // Lasts for 7 floors
-        const rightShiftFloors = 3 // First 3 floors shift right
+        // Parameters (Scaled down by 0.1 for Three.js scene)
+        const scale = 0.1
+        const moduleCount = 9
+        const floorsPerModule = 5
+        const floorHeight = 4.2 * scale
+        const baseWidth = 40 * scale
+        const baseDepth = 35 * scale
 
-        for (let i = 0; i < floorCount; i++) {
-            const progress = i / floorCount
-            const isVisible = buildProgress > progress
-            const baseOpacity = 0.4
-            let floorOpacity = 0
+        // Transformation Parameters per Module
+        const moduleRotation = 3 * (Math.PI / 180) // 3 degrees in radians
+        const moduleTransX = 2.5 * scale
+        const moduleTransZ = -1.5 * scale // Y in CAD maps to Z in Three.js typically for horizontal plane
 
-            if (isVisible) {
-                if (buildProgress < progress + 0.2) {
-                    floorOpacity = (buildProgress - progress) * 5 * baseOpacity
-                } else {
-                    floorOpacity = baseOpacity
-                }
-            }
+        // Total floor count for loop
+        const totalFloors = moduleCount * floorsPerModule // 45
 
-            if (isVisible && floorOpacity > 0) {
-                // Calculate shift (Hip-swing effect)
-                let offsetX = 0
-                let offsetZ = 0
+        for (let m = 0; m < moduleCount; m++) {
+            // Calculate module-level transformations (accumulative)
+            const currentRotation = m * moduleRotation
+            const currentOffsetX = m * moduleTransX
+            const currentOffsetZ = m * moduleTransZ
 
-                // Logic:
-                // Floors 0-7: Base (0,0)
-                // Floors 8-10 (3 floors): Twist Right
-                // Floors 11-14 (4 floors): Twist Left (returning to center)
-                // Floors 15+: Back to center (0,0) aligned with base
+            for (let f = 0; f < floorsPerModule; f++) {
+                const globalFloorIndex = (m * floorsPerModule) + f
+                const progress = globalFloorIndex / totalFloors
 
-                if (i >= shiftStartFloor && i < shiftStartFloor + shiftDuration) {
-                    const shiftIndex = i - shiftStartFloor
+                const isVisible = buildProgress > progress
+                const baseOpacity = 0.4
+                let floorOpacity = 0
 
-                    if (shiftIndex < rightShiftFloors) {
-                        // Right Shift Phase (Floors 8,9,10)
-                        // Progress 0 to 1 for this phase
-                        const phaseProgress = (shiftIndex + 1) / rightShiftFloors
-                        // Sinusoidal ease-out for natural movement
-                        const factor = Math.sin(phaseProgress * (Math.PI / 2))
-                        offsetX = factor * 0.6 // Shift Right
-                        offsetZ = factor * 0.3
+                if (isVisible) {
+                    if (buildProgress < progress + 0.15) {
+                        floorOpacity = (buildProgress - progress) * 6 * baseOpacity
                     } else {
-                        // Left Shift / Return Phase (Floors 11,12,13,14)
-                        // Progress 0 to 1 for this phase
-                        const phaseProgress = (shiftIndex - rightShiftFloors + 1) / (shiftDuration - rightShiftFloors)
-                        // Cosine ease-in-out to return from max shift to 0
-                        // We start from max shift (1) and go to 0
-                        const factor = Math.cos(phaseProgress * (Math.PI / 2))
-                        offsetX = factor * 0.6 // Return from Right
-                        offsetZ = factor * 0.3
+                        floorOpacity = baseOpacity
                     }
                 }
 
-                floorArray.push(
-                    <group
-                        key={i}
-                        position={[offsetX, i * floorHeight - 7, offsetZ]}
-                    >
-                        {/* Floor Slab */}
-                        <lineSegments>
-                            <edgesGeometry args={[new THREE.BoxGeometry(baseSize, 0.1, baseSize)]} />
-                            <lineBasicMaterial
-                                color="#3b82f6"
-                                transparent
-                                opacity={floorOpacity}
-                                linewidth={1}
-                            />
-                        </lineSegments>
+                if (isVisible && floorOpacity > 0) {
+                    // Floor position: Module offset + height within module
+                    // Note: The prompt says "Each module relative to the one below". 
+                    // This implies the transformation applies to the *Module*, so all 5 floors in a module share the same shift/rotation relative to base?
+                    // Or do they stack? "Stack 9 modules vertically... Each module relative to the one below: Rotate... Translate..."
+                    // Interpretation: Module 0 is base. Module 1 is transformed. Module 2 is transformed twice.
+                    // Floors *within* a module likely stack vertically without extra shift.
 
-                        {/* Vertical Columns connecting to next floor */}
-                        {i < floorCount - 1 && (
-                            <VerticalColumns
-                                currentPos={{ x: offsetX, y: 0, z: offsetZ }}
-                                nextPos={{
-                                    x: getNextFloorOffset(i + 1, shiftStartFloor, shiftDuration, rightShiftFloors).x,
-                                    y: floorHeight,
-                                    z: getNextFloorOffset(i + 1, shiftStartFloor, shiftDuration, rightShiftFloors).z
-                                }}
-                                size={baseSize}
-                                opacity={floorOpacity * 0.7}
-                            />
-                        )}
+                    const yPos = (globalFloorIndex * floorHeight) - 8 // Centered vertically
 
-                        {/* Floor Plate (Glass effect) */}
-                        <mesh scale={[baseSize, 0.05, baseSize]}>
-                            <boxGeometry />
-                            <meshBasicMaterial color="#60a5fa" transparent opacity={floorOpacity * 0.1} />
-                        </mesh>
-                    </group>
-                )
-            }
-        }
-        return floorArray
-    }, [buildProgress])
+                    floorArray.push(
+                        <group
+                            key={globalFloorIndex}
+                            position={[currentOffsetX, yPos, currentOffsetZ]}
+                            rotation={[0, currentRotation, 0]}
+                        >
+                            {/* Floor Slab */}
+                            <lineSegments>
+                                <edgesGeometry args={[new THREE.BoxGeometry(baseWidth, 0.05, baseDepth)]} />
+                                <lineBasicMaterial
+                                    color="#3b82f6"
+                                    transparent
+                                    opacity={floorOpacity}
+                                    linewidth={1}
+                                />
+                            </lineSegments>
 
-    return (
-        <group ref={groupRef}>
-            {floors}
-            <gridHelper
-                args={[15, 15, "#3b82f6", "#1e40af"]}
-                rotation={[0, 0, 0]}
-                position={[0, -7.5, 0]}
-            />
-        </group>
-    )
-}
+                            {/* Corner Details */}
+                            <points>
+                                <bufferGeometry>
+                                    <bufferAttribute
+                                        attach="attributes-position"
+                                        count={4}
+                                        array={new Float32Array([
+                                            -baseWidth / 2, 0, -baseDepth / 2,
+                                            baseWidth / 2, 0, -baseDepth / 2,
+                                            baseWidth / 2, 0, baseDepth / 2,
+                                            -baseWidth / 2, 0, baseDepth / 2,
+                                        ])}
+                                        itemSize={3}
 
-function VerticalColumns({ currentPos, nextPos, size, opacity }: {
-    currentPos: { x: number, y: number, z: number },
-    nextPos: { x: number, y: number, z: number },
-    size: number,
-    opacity: number
-}) {
-    const s = size / 2
-    // We need to calculate strictly local positions because we are inside the current floor's group
-    // currentPos is (0,0,0) relative to itself
-    // nextPos is relative to current floor
-
-    const relX = nextPos.x - currentPos.x
-    const relY = nextPos.y
-    const relZ = nextPos.z - currentPos.z
-
-    const corners = [
-        [-s, -s], [s, -s], [s, s], [-s, s]
-    ]
-
-    const positions = new Float32Array(4 * 2 * 3)
-    for (let i = 0; i < 4; i++) {
-        // Start (Current Floor Corner)
-        positions[i * 6 + 0] = corners[i][0]
-        positions[i * 6 + 1] = 0
-        positions[i * 6 + 2] = corners[i][1]
-        // End (Next Floor Corner)
-        positions[i * 6 + 3] = corners[i][0] + relX
-        positions[i * 6 + 4] = relY
-        positions[i * 6 + 5] = corners[i][1] + relZ
-    }
-
-    return (
-        <lineSegments>
-            <bufferGeometry>
-                <bufferAttribute
-                    attach="attributes-position"
-                    count={8}
-                    array={positions}
-                    itemSize={3}
-                />
-            </bufferGeometry>
-            <lineBasicMaterial color="#60a5fa" transparent opacity={opacity} linewidth={1} />
-        </lineSegments>
-    )
-}
-
-// Helper to calculate offset for any floor index (used for nextPos prediction)
-function getNextFloorOffset(index: number, start: number, duration: number, rightShiftCount: number) {
-    let x = 0
-    let z = 0
-
-    if (index >= start && index < start + duration) {
+                                        if (index >= start && index < start + duration) {
         const shiftIndex = index - start
-        if (shiftIndex < rightShiftCount) {
+                                    if (shiftIndex < rightShiftCount) {
             const phaseProgress = (shiftIndex + 1) / rightShiftCount
-            const factor = Math.sin(phaseProgress * (Math.PI / 2))
-            x = factor * 0.6
-            z = factor * 0.3
+                                    const factor = Math.sin(phaseProgress * (Math.PI / 2))
+                                    x = factor * 0.6
+                                    z = factor * 0.3
         } else {
             const phaseProgress = (shiftIndex - rightShiftCount + 1) / (duration - rightShiftCount)
-            const factor = Math.cos(phaseProgress * (Math.PI / 2))
-            x = factor * 0.6
-            z = factor * 0.3
+                                    const factor = Math.cos(phaseProgress * (Math.PI / 2))
+                                    x = factor * 0.6
+                                    z = factor * 0.3
         }
     }
-    return { x, z }
+                                    return {x, z}
 }
 
-export default function ArchitecturalHeroBackground() {
+                                    export default function ArchitecturalHeroBackground() {
     return (
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute right-0 top-0 bottom-0 w-1/2 opacity-50">
-                <Canvas
-                    camera={{ position: [8, 4, 12], fov: 45 }}
-                    style={{ background: 'transparent' }}
-                >
-                    <ambientLight intensity={0.5} />
-                    <pointLight position={[10, 10, 10]} intensity={1} />
-                    <OmniturmBuilding />
-                </Canvas>
-            </div>
-        </div>
-    )
+                                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                                        <div className="absolute right-0 top-0 bottom-0 w-1/2 opacity-50">
+                                            <Canvas
+                                                camera={{ position: [8, 4, 12], fov: 45 }}
+                                                style={{ background: 'transparent' }}
+                                            >
+                                                <ambientLight intensity={0.5} />
+                                                <pointLight position={[10, 10, 10]} intensity={1} />
+                                                <OmniturmBuilding />
+                                            </Canvas>
+                                        </div>
+                                    </div>
+                                    )
 }
