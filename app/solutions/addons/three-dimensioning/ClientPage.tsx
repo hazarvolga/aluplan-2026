@@ -104,7 +104,7 @@ export default function ClientPage() {
           {features.map((feature, idx) => (
             <Card
               key={idx}
-              className="p-4 flex flex-col items-center text-center bg-white/5 border-white/10 hover:bg-white/10 transition-colors hover:shadow-technical"
+              className="p-4 flex flex-col items-center text-center bg-slate-100 dark:bg-white/5 border-slate-200 dark:border-white/10 hover:bg-slate-200 dark:hover:bg-white/10 transition-colors hover:shadow-technical"
             >
               {icons[idx] && (
                 <img
@@ -113,10 +113,10 @@ export default function ClientPage() {
                   className="w-24 h-24 mb-3 object-contain"
                 />
               )}
-              <h3 className="text-sm font-semibold text-gray-200 leading-tight">
+              <h3 className="text-sm font-semibold text-foreground leading-tight">
                 {feature.titleTr}
               </h3>
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="text-xs text-muted-foreground mt-1">
                 {feature.titleDe}
               </p>
             </Card>

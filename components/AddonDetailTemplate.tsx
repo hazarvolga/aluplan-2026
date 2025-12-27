@@ -18,7 +18,7 @@ const AddonDetailTemplate: React.FC<AddonDetailTemplateProps> = ({
   customHero,
 }) => {
   return (
-    <div className="min-h-screen bg-[#020202] text-white dark">
+    <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
       {customHero ? (
         <>{customHero}</>
       ) : (

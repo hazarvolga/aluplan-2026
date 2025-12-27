@@ -17,7 +17,7 @@ export default function MasonryVideoGrid({ title, items, columns = 3 }: { title:
         <SectionHeader title={title} align="center" className="py-0 bg-transparent mb-12" compact titleSize="lg" />
         <div className={gridClass}>
           {items.map((v, idx) => (
-            <div key={idx} className="bg-white/5 border border-white/10 rounded-xl shadow-sm p-4 hover:bg-white/10 transition-colors">
+            <div key={idx} className="bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl shadow-sm p-4 hover:bg-slate-200 dark:hover:bg-white/10 transition-colors">
               <div className="aspect-video rounded-lg overflow-hidden mb-3">
                 <iframe
                   src={v.videoUrl}
@@ -27,9 +27,9 @@ export default function MasonryVideoGrid({ title, items, columns = 3 }: { title:
                   className="w-full h-full"
                 />
               </div>
-              <h3 className="text-sm font-medium text-gray-200">{v.titleTR}</h3>
+              <h3 className="text-sm font-medium text-foreground">{v.titleTR}</h3>
               {v.titleDE && (
-                <p className="text-xs text-gray-500 mt-1">{v.titleDE}</p>
+                <p className="text-xs text-muted-foreground mt-1">{v.titleDE}</p>
               )}
             </div>
           ))}

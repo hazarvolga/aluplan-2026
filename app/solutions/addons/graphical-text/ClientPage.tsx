@@ -21,6 +21,7 @@ export default function ClientPage() {
         "Tüm metinleri gerekçelendirilmiş cümleler olarak ayarlayın ve akıllı cümle ve hece ayrımı da dahil olmak üzere istediğiniz gibi çarpıtın. Veya vektör öğeleri (çizgiler, daireler, alanlar) olarak kenarlıklar, dolgular ve gölgeler içeren metinler oluşturabilir ve hatta bunları 3B olarak oluşturabilirsiniz.",
       ]}
       videoUrl="https://www.youtube.com/embed/CMYuaD3e3rQ"
+      className="bg-transparent"
     />,
 
     <MasonryVideoGrid

@@ -165,7 +165,7 @@ export default function ClientPage() {
           {features.map((feature, idx) => (
             <Card
               key={idx}
-              className="p-4 flex flex-col items-center text-center bg-white/5 border-white/10 hover:bg-white/10 transition-colors hover:shadow-technical"
+              className="p-4 flex flex-col items-center text-center bg-slate-100 dark:bg-white/5 border-slate-200 dark:border-white/10 hover:bg-slate-200 dark:hover:bg-white/10 transition-colors hover:shadow-technical"
             >
               {icons[idx] && (
                 <img
@@ -174,7 +174,7 @@ export default function ClientPage() {
                   className="w-20 h-20 mb-3 object-contain"
                 />
               )}
-              <h3 className="text-xs font-semibold text-gray-300 leading-tight">
+              <h3 className="text-xs font-semibold text-muted-foreground leading-tight">
                 {feature.titleTr}
               </h3>
             </Card>
@@ -194,11 +194,11 @@ export default function ClientPage() {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          <div className="bg-white/5 border border-white/10 p-6 rounded-xl shadow-md">
-            <h3 className="font-display text-xl font-bold text-white mb-4">Versiyon 1:</h3>
+          <div className="bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 p-6 rounded-xl shadow-md">
+            <h3 className="font-display text-xl font-bold text-foreground mb-4">Versiyon 1:</h3>
             <ul className="space-y-2">
               {version1Features.map((feature, idx) => (
-                <li key={idx} className="text-gray-300 flex items-start">
+                <li key={idx} className="text-muted-foreground flex items-start">
                   <span className="text-accent mr-2">•</span>
                   <span>{feature}</span>
                 </li>
@@ -206,11 +206,11 @@ export default function ClientPage() {
             </ul>
           </div>
 
-          <div className="bg-white/5 border border-white/10 p-6 rounded-xl shadow-md">
-            <h3 className="font-display text-xl font-bold text-white mb-4">Versiyon 2:</h3>
+          <div className="bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 p-6 rounded-xl shadow-md">
+            <h3 className="font-display text-xl font-bold text-foreground mb-4">Versiyon 2:</h3>
             <ul className="space-y-2">
               {version2Features.map((feature, idx) => (
-                <li key={idx} className="text-gray-300 flex items-start">
+                <li key={idx} className="text-muted-foreground flex items-start">
                   <span className="text-accent mr-2">•</span>
                   <span>{feature}</span>
                 </li>

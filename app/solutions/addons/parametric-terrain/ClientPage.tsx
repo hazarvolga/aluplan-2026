@@ -149,7 +149,7 @@ export default function ClientPage() {
       descriptions={[]}
       videoUrl="https://www.youtube.com/embed/bTB43HH45uU"
       leftContent={
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mt-4 text-sm text-gray-300">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mt-4 text-sm text-muted-foreground">
           {[
             "Allplan 2023 onayı",
             "Yeni işlem kesme katmanı",
@@ -184,7 +184,7 @@ export default function ClientPage() {
       descriptions={[]}
       videoUrl="https://www.youtube.com/embed/UvORTOvHy-g"
       leftContent={
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mt-4 text-sm text-gray-300">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mt-4 text-sm text-muted-foreground">
           {[
             "Noktaları araziye yansıtın",
             "Katı model olmadan 3B kazı verisi aktarımı",
@@ -215,7 +215,7 @@ export default function ClientPage() {
       descriptions={[]}
       videoUrl="https://www.youtube.com/embed/t59MHn23Eic"
       leftContent={
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mt-4 text-sm text-gray-300">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mt-4 text-sm text-muted-foreground">
           {[
             "Sezgisel kullanım ve 4 saatten fazla video ile öğrenmesi kolay",
             "Dinamik yükseklik, uygulama ve kaldırma, hacim ve değerlendirmeler oluşturma",
@@ -334,24 +334,24 @@ export default function ClientPage() {
       subtitle="Kazıdan fazlası"
       description={
         <div className="flex flex-col gap-6">
-          <p className="text-lg text-white/80 leading-relaxed">
+          <p className="text-lg text-foreground/80 leading-relaxed">
             Parametrik arazi modeli ile platform, eğim ve hacim hesapları
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button asChild size="lg" className="bg-white text-black hover:bg-white/90 font-semibold">
+            <Button asChild size="lg" className="bg-slate-900 text-white hover:bg-slate-800 dark:bg-white dark:text-black dark:hover:bg-white/90 font-semibold">
               <a href="https://www.youtube.com/playlist?list=PLZeQ6A4Fw6kDT_0iSHSocEo9eBkoZwD_B" target="_blank" rel="noopener noreferrer">
                 Mühendislik Film Oynatma Listesi
               </a>
             </Button>
-            <Button asChild size="lg" className="bg-white text-black hover:bg-white/90 font-semibold">
+            <Button asChild size="lg" className="bg-slate-900 text-white hover:bg-slate-800 dark:bg-white dark:text-black dark:hover:bg-white/90 font-semibold">
               <a href="https://www.youtube.com/playlist?list=PLZeQ6A4Fw6kBI4CnRNhG50rrGhUDGfDHw" target="_blank" rel="noopener noreferrer">
                 Mimari Film Oynatma Listesi
               </a>
             </Button>
           </div>
           <div>
-            <p className="text-sm font-semibold text-white/90">55 çalışma ve demo filmi</p>
-            <p className="text-sm text-gray-400 mt-1 max-w-lg">
+            <p className="text-sm font-semibold text-foreground/90">55 çalışma ve demo filmi</p>
+            <p className="text-sm text-muted-foreground mt-1 max-w-lg">
               4 saatin üzerinde film malzemesi, inovatif arazi kazı planlama dönemine mümkün olan en hızlı girişi sağlar.
             </p>
           </div>

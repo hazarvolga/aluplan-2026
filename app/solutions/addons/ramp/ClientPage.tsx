@@ -60,7 +60,7 @@ export default function ClientPage() {
         "Referans alanının eşit dağılımı",
       ]}
       videoUrl="https://www.youtube.com/embed/8PQ6jX3SrUo"
-      className="bg-transparent" // Updated for Dark Theme
+      className="bg-transparent"
     />,
 
     <section key="video-masonry" className="relative">

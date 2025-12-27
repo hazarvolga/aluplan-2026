@@ -22,6 +22,7 @@ export default function ClientPage() {
         "SketchUp Converter eklentisi ile, dokular dahil bir 3B modeli Allplan’a kolayca aktarabilirsiniz. Bu şekilde, örneğin SketchUp Deposundan tüm yüzeyleri içeren bitkileri, insanları, mobilyaları, araçları vb. Allplan’a aktarabilir ve bunları görselleştirmeniz için kullanabilirsiniz. Mevcut SketchUp sürümleri desteklenmektedir. SketchUp dışa aktarımı, Lumion görselleştirme yazılımıyla optimum bir iş akışı için uyarlanmıştır. Bu, örneğin basit Allplan makrolarını ayrıntılı Lumion nesneleriyle (ağaçlar, arabalar, ışıklar, vb.) Değiştirebileceğiniz anlamına gelir. Lumion’a nesnelerin oldukça zor yerleştirilmesi artık gerekli değildir.",
       ]}
       videoUrl="https://www.youtube.com/embed/dsFgV9-aAyI"
+      className="bg-transparent"
     />,
 
     <section key="tabs-info" className="py-16 bg-background">

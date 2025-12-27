@@ -20,7 +20,8 @@ import {
     Globe,
     Monitor,
     FileText,
-    List
+    List,
+    LifeBuoy
 } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -36,9 +37,9 @@ const services = [
     {
         icon: HeadphonesIcon,
         title: "Teknik Destek",
-        description: "Projeleriniz aksamasın. Uzman ekibimizle 7/24 teknik destek.",
+        description: "Microsoft Teams üzerinden uzaktan bağlantı ile kesintisiz teknik destek sağlıyoruz.",
         status: "active", // Changed to active for better UX structure, usually support is active
-        href: "/contact",
+        href: "https://teams.microsoft.com/meet/39783115346098?p=wIo7WWYLZwqoHtjq3Y",
         cta: "Destek Al"
     },
     {
@@ -58,12 +59,12 @@ const services = [
         cta: "Yakında"
     },
     {
-        icon: ShoppingCart,
-        title: "E-Mağaza",
-        description: "Online lisans yönetimi, shop ve abonelik işlemleri.",
-        status: "coming",
-        href: "#",
-        cta: "Yakında"
+        icon: LifeBuoy,
+        title: "Destek Platformu",
+        description: "Ticket sistemi üzerinden destek taleplerinizi oluşturun ve süreçlerinizi kolayca takip edin.",
+        status: "active",
+        href: "https://aluplan.net.tr",
+        cta: "Talep Oluştur"
     },
     {
         icon: Users,
@@ -165,7 +166,7 @@ const services = [
 
 const ServicesV2 = () => {
     // Categorize services
-    const servicesList = services.filter(s => ["Eğitim", "Teknik Destek", "Danışmanlık", "Sertifika", "E-Mağaza", "Partner"].includes(s.title));
+    const servicesList = services.filter(s => ["Eğitim", "Teknik Destek", "Danışmanlık", "Sertifika", "Destek Platformu", "Partner"].includes(s.title));
     const connectList = services.filter(s => ["Connect: Giriş", "Connect: Lisans", "Download", "Tüm Gereksinimler"].includes(s.title));
     const resourcesList = services.filter(s => ["ALLPLAN FAQ", "Blog Global", "Canlı Webinarlar", "BIM Rehberi", "OPENBIM", "Sistem Gereksinimleri", "Sürüm Notları"].includes(s.title));
 

@@ -1,5 +1,6 @@
 "use client"
 import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
+import SitePlanningHeroBackground from "@/components/SitePlanningHeroBackground";
 import SolutionHero from "@/components/SolutionHero";
 import WorkflowTabsTemplate from "@/components/WorkflowTabsTemplate";
 import PostHeroSection from "@/components/PostHeroSection";
@@ -89,7 +90,13 @@ export default function Page() {
       subtitle="DAHA FAZLASINI İSTEYEN MÜTEAHHİTLER İÇİN"
       description="ALLPLAN’in şantiye planlama ve inşaat yönetimine yönelik BIM çözümleri, verimli ve sorunsuz proje yürütme için tüm tasarımdan inşa sürecini kapsar. İşbirliğine dayalı iş akışları, daha iyi inşa edilebilirlik ve daha başarılı bina sonuçları için tüm aşamalarda artan doğruluk sağlar. Şantiye ve inşaat planlama yazılımınızdan daha fazlasını bekleyin!"
       customHero={(
-        <SolutionHero badge="İNŞAAT PLANLAMASI" title="ŞANTİYE PLANLAMASI" subtitle="DAHA FAZLASINI İSTEYEN MÜTEAHHİTLER İÇİN" description="ALLPLAN’in şantiye planlama ve inşaat yönetimine yönelik BIM çözümleri, verimli ve sorunsuz proje yürütme için tüm tasarımdan inşa sürecini kapsar. İşbirliğine dayalı iş akışları, daha iyi inşa edilebilirlik ve daha başarılı bina sonuçları için tüm aşamalarda artan doğruluk sağlar. Şantiye ve inşaat planlama yazılımınızdan daha fazlasını bekleyin!" />
+        <SolutionHero
+          badge="İNŞAAT PLANLAMASI"
+          title="ŞANTİYE PLANLAMASI"
+          subtitle="DAHA FAZLASINI İSTEYEN MÜTEAHHİTLER İÇİN"
+          description="ALLPLAN’in şantiye planlama ve inşaat yönetimine yönelik BIM çözümleri, verimli ve sorunsuz proje yürütme için tüm tasarımdan inşa sürecini kapsar. İşbirliğine dayalı iş akışları, daha iyi inşa edilebilirlik ve daha başarılı bina sonuçları için tüm aşamalarda artan doğruluk sağlar. Şantiye ve inşaat planlama yazılımınızdan daha fazlasını bekleyin!"
+          customBackground={<SitePlanningHeroBackground />}
+        />
       )}
       postHeroSection={(
         <PostHeroSection

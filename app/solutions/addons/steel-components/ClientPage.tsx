@@ -152,10 +152,10 @@ export default function ClientPage() {
             { icon: iconProfilbauteilPunkteModifizieren, titleDE: "Profilbauteil-Punkte modifizieren", titleTR: "Profil Bileşen Noktalarını Değiştir" },
             { icon: iconLizenzAnzeigen2, titleDE: "Lizenz anzeigen", titleTR: "Lisansı Göster" },
           ].map((item, idx) => (
-            <Card key={idx} className="p-4 flex flex-col items-center text-center bg-white/5 border-white/10 hover:bg-white/10 transition-colors">
+            <Card key={idx} className="p-4 flex flex-col items-center text-center bg-slate-100 dark:bg-white/5 border-slate-200 dark:border-white/10 hover:bg-slate-200 dark:hover:bg-white/10 transition-colors">
               <img src={item.icon.src} alt={item.titleTR} className="w-20 h-20 mb-3 object-contain" />
-              <h3 className="text-base font-bold text-white leading-tight mb-1">{item.titleTR}</h3>
-              <p className="text-xs text-gray-400 font-medium">{item.titleDE}</p>
+              <h3 className="text-base font-bold text-foreground leading-tight mb-1">{item.titleTR}</h3>
+              <p className="text-xs text-muted-foreground font-medium">{item.titleDE}</p>
             </Card>
           ))}
         </div>
@@ -195,7 +195,7 @@ export default function ClientPage() {
           labelTR: "Profil bileşenleri",
           content: (
             <div className="space-y-4">
-              <h3 className="font-display text-lg font-bold text-white">Profil bileşenleri</h3>
+              <h3 className="font-display text-lg font-bold text-foreground">Profil bileşenleri</h3>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
                   "Dinamik profil tiplerine sahip profil veri tabanı",
@@ -216,7 +216,7 @@ export default function ClientPage() {
                   "Hacim gövdeleri kullanılarak kat planı gösterimi (kesik kenarlar, görünür kenarlar, vb.)",
                   "Hacim, ağırlık, yüzey, profil türü, uzunluğu vb."
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3.5 text-gray-300">
+                  <li key={i} className="flex items-start gap-3.5 text-muted-foreground">
                     <Check className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
                     <span className="leading-snug">{item}</span>
                   </li>
@@ -230,7 +230,7 @@ export default function ClientPage() {
           labelTR: "Vida bağlantısı",
           content: (
             <div className="space-y-4">
-              <h3 className="font-display text-lg font-bold text-white">Vida bağlantısı</h3>
+              <h3 className="font-display text-lg font-bold text-foreground">Vida bağlantısı</h3>
               <ul className="space-y-3">
                 {[
                   "Vida seti, mil uzunluğu, pullar, kamalı pullar, sıkma uzunluğu somunu, …",
@@ -241,7 +241,7 @@ export default function ClientPage() {
                   "Vida ve somun ağ dahil taraf",
                   "Vida sayısı, vida tipi, hacim ve bağlantı plakaları dahil ağırlık değerlendirmesi"
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3.5 text-gray-300">
+                  <li key={i} className="flex items-start gap-3.5 text-muted-foreground">
                     <Check className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
                     <span className="leading-snug">{item}</span>
                   </li>
@@ -255,7 +255,7 @@ export default function ClientPage() {
           labelTR: "Sac Profil",
           content: (
             <div className="space-y-4">
-              <h3 className="font-display text-lg font-bold text-white">Sac Profil</h3>
+              <h3 className="font-display text-lg font-bold text-foreground">Sac Profil</h3>
               <ul className="space-y-3">
                 {[
                   "Trapez levhalar ve oluklu levhalar",
@@ -263,7 +263,7 @@ export default function ClientPage() {
                   "Duvarlar ve çatılar için sandviç elemanlar",
                   "Farklı LOD ekranı"
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3.5 text-gray-300">
+                  <li key={i} className="flex items-start gap-3.5 text-muted-foreground">
                     <Check className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
                     <span className="leading-snug">{item}</span>
                   </li>
@@ -277,7 +277,7 @@ export default function ClientPage() {
           labelTR: "Değişiklik",
           content: (
             <div className="space-y-4">
-              <h3 className="font-display text-lg font-bold text-white">Değişiklik</h3>
+              <h3 className="font-display text-lg font-bold text-foreground">Değişiklik</h3>
               <ul className="space-y-3">
                 {[
                   "Kulplu ayarlamalar (eksenler, açılar, mesafeler, vb.)",
@@ -285,7 +285,7 @@ export default function ClientPage() {
                   "Birkaç bileşen üzerinde nokta değişikliği",
                   "Sık kullanılanları kaydedin, yükleyin ve eşleştirin"
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3.5 text-gray-300">
+                  <li key={i} className="flex items-start gap-3.5 text-muted-foreground">
                     <Check className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
                     <span className="leading-snug">{item}</span>
                   </li>
@@ -307,7 +307,7 @@ export default function ClientPage() {
           compact
           titleSize="xl"
         />
-        <p className="text-white text-center max-w-3xl mx-auto mt-4 font-medium">
+        <p className="text-muted-foreground text-center max-w-3xl mx-auto mt-4 font-medium">
           Statik hesaplamalar ve çelik konstrüksiyon iş planlarının otomatik olarak oluşturulması kapsama dahil değildir.
         </p>
       </div>
@@ -431,9 +431,9 @@ export default function ClientPage() {
         <div className="flex flex-col items-start gap-6">
           <div>
             ALLPLAN’DE PARAMETRİK ÇELİK PLANLAMASI.
-            <h4 className="mt-2 font-semibold text-white">Allplan Eklenti Profil Bileşenleri V2, versiyon 2021 – 2024 için</h4>
+            <h4 className="mt-2 font-semibold text-foreground">Allplan Eklenti Profil Bileşenleri V2, versiyon 2021 – 2024 için</h4>
           </div>
-          <Button asChild size="lg" className="bg-white text-black hover:bg-white/90 font-semibold">
+          <Button asChild size="lg" className="bg-slate-900 text-white hover:bg-slate-800 dark:bg-white dark:text-black dark:hover:bg-white/90 font-semibold">
             <a href="https://www.youtube.com/playlist?list=PLZeQ6A4Fw6kDcDfzyU82ZzWrNOwcb_Xch" target="_blank" rel="noopener noreferrer">
               Youtube Oynatma Listesi
             </a>

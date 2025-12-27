@@ -33,6 +33,7 @@ export default function ClientPage() {
       description="Türkiye Bina Deprem Yönetmeliği'ne (TBDY 2018) uyumlu betonarme tasarım eklentisi. Yerel standartlara göre yapısal tasarım yapın ve onay süreçlerini hızlandırın."
       heroImage={heroImage}
       showHeroButtons={false}
+      showCta={false}
       ctaTitle="CDS Add-On'u deneyin"
       ctaDescription="Türkiye deprem yönetmeliğine uygun yapısal tasarım için en güçlü araç."
       postHeroSection={
