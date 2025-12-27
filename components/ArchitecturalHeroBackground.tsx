@@ -244,7 +244,7 @@ export default function ArchitecturalHeroBackground() {
                 <Canvas
                     // Isometric view per spec
                     orthographic
-                    camera={{ zoom: 60, position: [20, 20, 20] }}
+                    camera={{ zoom: 75, position: [20, 20, 20] }}
                     style={{ background: 'transparent' }}
                 >
                     <ambientLight intensity={0.5} />
