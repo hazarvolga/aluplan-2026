@@ -4,7 +4,6 @@ import SolutionHero from "@/components/SolutionHero";
 import PostHeroSection from "@/components/PostHeroSection";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import BridgeDesignHeroBackground from "@/components/BridgeDesignHeroBackground";
 import iconReinforcement from "@/assets/solutions/bridge/reasons/structural-engineering-allplan-turkey-powerful_modeling.png";
 import iconConstructionSeq from "@/assets/solutions/bridge/reasons/intelligent_construction_sequence_analysis-1.png";
 import iconAutomatedWorkflows from "@/assets/solutions/bridge/reasons/automated-workflows.png";
@@ -96,7 +95,6 @@ export default function Page() {
           title="Köprü Mühendisliği"
           subtitle="DAHA FAZLASINI TALEP EDEN KÖPRÜ MÜHENDİSLERİ İÇİN."
           description="ALLPLAN'ın köprü mühendisliğine yönelik BIM çözümü ile herhangi bir köprü tipinin disiplinler arası 4D modelini üretin; aynı modelden çizim ve analiz için yararlanın."
-          customBackground={<BridgeDesignHeroBackground />}
         />
       )}
       stats={stats}
