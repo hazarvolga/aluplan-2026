@@ -4,6 +4,7 @@ import SolutionHero from "@/components/SolutionHero";
 import WorkflowTabsTemplate from "@/components/WorkflowTabsTemplate";
 import PostHeroSection from "@/components/PostHeroSection";
 import heroBg from "@/assets/solutions/structural-hero-bg.png";
+import StructuralHeroBackground from "@/components/StructuralHeroBackground";
 import architectureHero from "@/assets/solutions/architecture-hero.jpg";
 import imgDataExchange from "@/assets/solutions/structural/workflows/site-analysis/data-exchange.jpg";
 import imgTerrainSurvey from "@/assets/solutions/structural/workflows/site-analysis/terrain-survey.jpg";
@@ -121,6 +122,7 @@ const customHero = (
     subtitle="DAHA FAZLASINI İSTEYEN MÜHENDİSLER VE TEKNİKERLER İÇİN."
     description="ALLPLAN'in strüktürel mühendisliğe yönelik BIM çözümleri, tasarımdan inşa sürecine kadar tüm süreci kapsar. Allplan'in sağladığı gelişmiş hassasiyet ve işbirliğine dayalı iş akışları, proje tasarımı ve teslimi için yeni verimlilik seviyeleri ve daha fazla üretkenlik sağlar. Strüktürel mühendislik ve detaylandırma yazılımınızdan daha fazlasını bekleyin!"
     backgroundImage={heroBg}
+    customBackground={<StructuralHeroBackground />}
   />
 );
 
