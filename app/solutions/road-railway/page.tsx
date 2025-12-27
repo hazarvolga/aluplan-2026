@@ -4,7 +4,7 @@ import SolutionHero from "@/components/SolutionHero";
 import WorkflowTabsTemplate from "@/components/WorkflowTabsTemplate";
 import PostHeroSection from "@/components/PostHeroSection";
 import heroBg from "@/assets/solutions/road-railway-hero-bg.png";
-import heroBg from "@/assets/solutions/road-railway-hero-bg.png";
+
 import imgModellingTools from "@/assets/solutions/road-railway/modelling-tools.png";
 import imgReinforcement from "@/assets/solutions/road-railway/reinforcement.png";
 import imgConstructionSeq from "@/assets/solutions/road-railway/construction-sequence.png";
