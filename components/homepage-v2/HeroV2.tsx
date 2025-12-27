@@ -46,6 +46,10 @@ const HeroV2 = () => {
                     playsInline
                     className="h-full w-full object-cover scale-105 opacity-80 dark:opacity-100"
                     aria-label="ALLPLAN BIM platform background video"
+                    onError={(e) => {
+                        // Gracefully hide video if it fails to load
+                        (e.target as HTMLVideoElement).style.display = 'none';
+                    }}
                     {...{ "webkit-playsinline": "true" } as any}
                 >
                     <source src="/videos/hero-bim.mp4" type="video/mp4" />
