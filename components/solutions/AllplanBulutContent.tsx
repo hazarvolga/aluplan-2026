@@ -52,16 +52,16 @@ export default function AllplanBulutContent() {
       ]
     },
     {
-      title: "Introducing Dark Mode",
-      desc: "Karanlık Mod",
-      subtitle: "Effortless comfort and clarity—whatever the lighting",
+      title: "Karanlık Mod",
+      desc: "Dark Mode",
+      subtitle: "Aydınlatma ne olursa olsun zahmetsiz konfor ve netlik",
       package: "#Basic",
       icon: Moon,
       img: darkModeImg,
       videoUrl: "https://www.youtube.com/embed/yP4jMsgRi-g",
       details: [
-        "With rising expectations for a modern, comfortable workspace, users need flexible interface options to stay productive—day or night. ALLPLAN 2026 introduces a brand-new dark mode and a refreshed light mode, enhancing comfort and productivity, especially during intense or prolonged modeling sessions.",
-        "Users can switch seamlessly between dark or light mode to reduce eye strain, boost accessibility, and even save battery on OLED screens, ensuring a customizable, future-ready ALLPLAN experience—all in one intuitive interface."
+        "Modern ve konforlu bir çalışma alanı için artan beklentilerle birlikte, kullanıcıların gece gündüz üretken kalabilmeleri için esnek arayüz seçeneklerine ihtiyaçları vardır. ALLPLAN 2026, yepyeni bir karanlık mod ve yenilenmiş bir aydınlık mod sunarak, özellikle yoğun veya uzun süreli modelleme oturumlarında konforu ve üretkenliği artırır.",
+        "Kullanıcılar, göz yorgunluğunu azaltmak, erişilebilirliği artırmak ve hatta OLED ekranlarda pil tasarrufu sağlamak için karanlık veya aydınlık mod arasında sorunsuz bir şekilde geçiş yapabilir, böylece özelleştirilebilir, geleceğe hazır bir ALLPLAN deneyimi sağlanır—hepsi tek bir sezgisel arayüzde."
       ]
     },
     {
@@ -227,8 +227,8 @@ export default function AllplanBulutContent() {
                 <div className="flex-1 w-full group relative">
                   <div className="mb-4 flex items-center px-1">
                     <span className={`text-xs font-bold px-3 py-1.5 rounded-full border ${feature.package === '#Basic' ? 'bg-green-500/10 text-green-500 border-green-500/20' :
-                        feature.package === '#Concept' ? 'bg-blue-500/10 text-blue-500 border-blue-500/20' :
-                          'bg-purple-500/10 text-purple-500 border-purple-500/20'
+                      feature.package === '#Concept' ? 'bg-blue-500/10 text-blue-500 border-blue-500/20' :
+                        'bg-purple-500/10 text-purple-500 border-purple-500/20'
                       }`}>
                       Dahil Olduğu Paket: {feature.package}
                     </span>
@@ -344,9 +344,9 @@ export default function AllplanBulutContent() {
                 <div className="flex-1 w-full group relative">
                   <div className="mb-4 flex items-center px-1">
                     <span className={`text-xs font-bold px-3 py-1.5 rounded-full border ${feature.package === '#Basic' ? 'bg-green-500/10 text-green-500 border-green-500/20' :
-                        feature.package === '#Concept' ? 'bg-blue-500/10 text-blue-500 border-blue-500/20' :
-                          feature.package === '#SCIA Engineer' ? 'bg-orange-500/10 text-orange-500 border-orange-500/20' :
-                            'bg-purple-500/10 text-purple-500 border-purple-500/20'
+                      feature.package === '#Concept' ? 'bg-blue-500/10 text-blue-500 border-blue-500/20' :
+                        feature.package === '#SCIA Engineer' ? 'bg-orange-500/10 text-orange-500 border-orange-500/20' :
+                          'bg-purple-500/10 text-purple-500 border-purple-500/20'
                       }`}>
                       Dahil Olduğu Paket: {feature.package}
                     </span>
