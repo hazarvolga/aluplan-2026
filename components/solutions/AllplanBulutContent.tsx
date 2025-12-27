@@ -1,11 +1,25 @@
 "use client"
 import SolutionHero from "@/components/SolutionHero";
 import SectionHeader from "@/components/SectionHeader";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { CheckCircle2, Keyboard, Palette, Moon, AlertTriangle, Info, Box, Bot, Scissors, Eye, Network, Link } from "lucide-react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
+
+// Import localized images
+import keyboardShortcutsImg from "@/assets/solutions/allplan-bulut-hizmetleri/keyboard-shortcuts.jpg";
+import graphicOverrideImg from "@/assets/solutions/allplan-bulut-hizmetleri/graphic-override.jpg";
+import darkModeImg from "@/assets/solutions/allplan-bulut-hizmetleri/dark-mode.gif";
+import clashManagementImg from "@/assets/solutions/allplan-bulut-hizmetleri/clash-management.jpg";
+import infoPaletteImg from "@/assets/solutions/allplan-bulut-hizmetleri/info-palette.jpg";
+import structuralFramingImg from "@/assets/solutions/allplan-bulut-hizmetleri/structural-framing.jpg";
+import framingAssembliesImg from "@/assets/solutions/allplan-bulut-hizmetleri/framing-assemblies.jpg";
+import aiAssistantImg from "@/assets/solutions/allplan-bulut-hizmetleri/ai-assistant.jpg";
+import overlayManagerImg from "@/assets/solutions/allplan-bulut-hizmetleri/overlay-manager.jpg";
+import modelViewerImg from "@/assets/solutions/allplan-bulut-hizmetleri/model-viewer.jpg";
+import sciaBimplusImg from "@/assets/solutions/allplan-bulut-hizmetleri/scia-bimplus.jpg";
+import bluebeamConnectionImg from "@/assets/solutions/allplan-bulut-hizmetleri/bluebeam-connection.jpg";
 
 export default function AllplanBulutContent() {
   const features = [
@@ -15,7 +29,7 @@ export default function AllplanBulutContent() {
       subtitle: "Daha hızlı komutlar ve daha akıllı iş akışları parmaklarınızın ucunda",
       package: "#Concept",
       icon: Keyboard,
-      img: "https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_Multi-letter_Keyboard_Shortcuts_Support_1-min_5fb08f9133.jpg",
+      img: keyboardShortcutsImg,
       videoUrl: "https://www.youtube.com/embed/enipvHFcRNU",
       details: [
         "ALLPLAN 2026, son derece esnek ve özelleştirilebilir bir kısayol sistemi sunar; bu sistem, sektördeki standartlarla eşleşir veya onları aşar ve kullanıcıların kısayol odaklı, ultra verimli iş akışları oluşturmasını sağlar.",
@@ -28,7 +42,7 @@ export default function AllplanBulutContent() {
       subtitle: "Daha hızlı ve yaratıcı BIM iş akışları için görsel kuralları zahmetsizce uygulayın",
       package: "#Professional",
       icon: Palette,
-      img: "https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_New_Graphic_Override_1-min_335b7e1777.jpg",
+      img: graphicOverrideImg,
       videoUrl: null,
       details: [
         "ALLPLAN 2026'daki Yeni Graphic Override özelliği, planlayıcılara çizim ve modellerin görünümünü anında kontrol etme olanağı sağlar.",
@@ -43,7 +57,7 @@ export default function AllplanBulutContent() {
       subtitle: "Effortless comfort and clarity—whatever the lighting",
       package: "#Basic",
       icon: Moon,
-      img: "https://aluplan.com.tr/wp-content/uploads/2025/10/DARKMODE_LONG.gif",
+      img: darkModeImg,
       videoUrl: "https://www.youtube.com/embed/yP4jMsgRi-g",
       details: [
         "With rising expectations for a modern, comfortable workspace, users need flexible interface options to stay productive—day or night. ALLPLAN 2026 introduces a brand-new dark mode and a refreshed light mode, enhancing comfort and productivity, especially during intense or prolonged modeling sessions.",
@@ -56,7 +70,7 @@ export default function AllplanBulutContent() {
       subtitle: "Daha iyi proje koordinasyonu için kolay çakışma tespiti ve hızlı çözüm",
       package: "#Basic",
       icon: AlertTriangle,
-      img: "https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_Enhanced_Clash_Management_1-min_5d59a44134.jpg",
+      img: clashManagementImg,
       videoUrl: "https://www.youtube.com/embed/v_PCVQxKPpg",
       details: [
         "ALLPLAN 2026, 3B modeldeki farklı elemanlar arasındaki çakışmaları tespit etme ve çözme sürecini kolaylaştırır.",
@@ -71,7 +85,7 @@ export default function AllplanBulutContent() {
       subtitle: "Daha akıllı ve hızlı proje yönetimi için kolay organizasyon ve kontrol",
       package: "#Concept",
       icon: Info,
-      img: "https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_Properties_Palette_a6c68d6e56.jpg",
+      img: infoPaletteImg,
       videoUrl: null,
       details: [
         "ALLPLAN 2026, tamamen yenilenmiş bir Bilgi Paleti sunar. Bu yeni sürüm, gelişmiş özellikler içerir:",
@@ -88,7 +102,7 @@ export default function AllplanBulutContent() {
       subtitle: "Çerçeveleme düzenlerini hızlıca modelleyin ve güncelleyin",
       package: "#Professional",
       icon: Box,
-      img: "https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_Improved_Structural_framing_1-min_9c80a7bbee.jpg",
+      img: structuralFramingImg,
       videoUrl: null,
       details: [
         "Yeni kiriş ve çıta yerleştirme araçları, önceden tasarlanmış binaları daha hızlı modellemenizi ve çerçeveleme düzenlerini çatı geometrisi değiştikçe kolayca uyarlamanızı sağlar.",
@@ -101,7 +115,7 @@ export default function AllplanBulutContent() {
       subtitle: "Bağlantıları otomatik olarak doğru tutun",
       package: "#Professional",
       icon: Box,
-      img: "https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_Structural_Framing_Assemblies_1-min_18eed77996.jpg",
+      img: framingAssembliesImg,
       videoUrl: null,
       details: [
         "ALLPLAN 2026, bağlantı hatalarını düzeltmek için harcanan zamanı ortadan kaldırır.",
@@ -117,7 +131,7 @@ export default function AllplanBulutContent() {
       subtitle: "AEC Yenilikleri için Uzman Yol Arkadaşınız",
       package: "#Concept",
       icon: Bot,
-      img: "https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_AI_ASSISTANT_1-min_2cd8a7c073.jpg",
+      img: aiAssistantImg,
       videoUrl: "https://www.youtube.com/embed/yyowbxaZeF8",
       details: [
         "Connect platformu üzerinden sunulan AI Assistant, ALLPLAN yazılım çözümleri (ALLPLAN, SCIA, FRILO, SDS2 ve BIMPLUS) ile çalışma şeklinizi dönüştürmek için tasarlanmış yenilikçi bir araçtır. Mimarlık, mühendislik, üretim ve iş birliği alanlarında uzmanlığı ile, bu akıllı asistan platformun tüm alanlarında kapsamlı destek sağlar.",
@@ -133,7 +147,7 @@ export default function AllplanBulutContent() {
       subtitle: "3B koordinasyon için daha net ve hızlı odaklanma – 2B düzenlerde önemli detaylara kolayca odaklanın",
       package: "#Concept",
       icon: Scissors,
-      img: "https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_Overlay_Manager_78b345f226.jpg",
+      img: overlayManagerImg,
       videoUrl: null,
       details: [
         "ALLPLAN'daki yeni kırpma kutusu özelliği, kullanıcıların 2B düzenleri 3B modellerle birleştirirken yalnızca ihtiyaç duydukları içeriği izole etmesini sağlar.",
@@ -148,7 +162,7 @@ export default function AllplanBulutContent() {
       subtitle: "Ücretsiz, Hızlı ve Her Yerden Erişilebilir – Tarayıcınızda anında model görselleştirme",
       package: "#Basic",
       icon: Eye,
-      img: "https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_Model_Viewer_d6e9121efa.jpg",
+      img: modelViewerImg,
       videoUrl: null,
       details: [
         "Ücretsiz ve bağımsız Model Viewer, herkese tarayıcı tabanlı IFC görselleştirme olanağı sunar.",
@@ -162,7 +176,7 @@ export default function AllplanBulutContent() {
       subtitle: "Mühendislik ekiplerinin tasarımları koordine etmesi ve ilerlemeyi paylaşması için daha akıllı bir yöntem",
       package: "#SCIA Engineer",
       icon: Network,
-      img: "https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_SCIA_BIMPLUS_1-min_50a2046e94.jpg",
+      img: sciaBimplusImg,
       videoUrl: null,
       details: [
         "SCIA Engineer'daki en son geliştirmelerle, ekipler artık tek bir paylaşılan yapısal model üzerinden iş birliği yapabilir.",
@@ -176,7 +190,7 @@ export default function AllplanBulutContent() {
       subtitle: "2B ve 3B belgelerin dijital aktarımı için stabil iş akışı",
       package: "#Concept",
       icon: Link,
-      img: "https://aluplan.com.tr/wp-content/uploads/2025/10/csm_ALLPLAN_2026_Bluebeam_Connection_1-min_79463b8f71.jpg",
+      img: bluebeamConnectionImg,
       videoUrl: null,
       details: [
         "Bluebeam ve ALLPLAN, kullanıcılarına iş birliğine dayalı araçlar sunar. ALLPLAN 2026 sürümü, iki araç arasında güçlü bir iş akışı sunarak, kullanıcıların Bluebeam Studio Project ortamındaki belgeleri kolayca ALLPLAN iş akışlarına dahil etmesini sağlar.",
@@ -221,10 +235,11 @@ export default function AllplanBulutContent() {
                   </div>
 
                   <div className="relative rounded-2xl overflow-hidden border border-border/10 shadow-2xl bg-card aspect-video">
-                    <img
+                    <Image
                       src={feature.img}
                       alt={feature.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
@@ -338,10 +353,11 @@ export default function AllplanBulutContent() {
                   </div>
 
                   <div className="relative rounded-2xl overflow-hidden border border-border/10 shadow-2xl bg-card aspect-video">
-                    <img
+                    <Image
                       src={feature.img}
                       alt={feature.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
