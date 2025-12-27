@@ -1,6 +1,7 @@
 "use client"
 import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
 import SolutionHero from "@/components/SolutionHero";
+import ArchitecturalHeroBackground from "@/components/ArchitecturalHeroBackground";
 import WorkflowTabsTemplate from "@/components/WorkflowTabsTemplate";
 import heroBg from "@/assets/solutions/architecture-hero-bg.png";
 
@@ -163,6 +164,7 @@ const customHero = (
     subtitle="DAHA FAZLASINI İSTEYEN MİMARLAR İÇİN."
     description="ALLPLAN'in mimariye yönelik BIM çözümleri, verimli tasarım ve sorunsuz proje yönetimi için tüm tasarımı inşa sürecine de taşır. İşbirliğine dayalı iş akışları, tüm proje yaşam döngüsü boyunca artan hassasiyet ve daha fazla üretkenlik sağlar. Mimari tasarım yazılımınızdan daha fazlasını bekleyin!"
     backgroundImage={heroBg}
+    customBackground={<ArchitecturalHeroBackground />}
   />
 );
 

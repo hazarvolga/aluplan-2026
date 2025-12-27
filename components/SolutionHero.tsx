@@ -11,6 +11,7 @@ type SolutionHeroProps = {
   subtitle?: string;
   description: string | ReactNode;
   backgroundImage?: string | StaticImageData;
+  customBackground?: ReactNode;
   primaryButton?: {
     text: string;
     href: string;
@@ -96,6 +97,7 @@ const SolutionHero = ({
   subtitle,
   description,
   backgroundImage,
+  customBackground,
   primaryButton,
   secondaryButton,
   stats,
@@ -133,6 +135,11 @@ const SolutionHero = ({
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/90 to-background/80" />
+        </div>
+      )}
+      {customBackground && (
+        <div className="absolute inset-0 z-[1]">
+          {customBackground}
         </div>
       )}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
