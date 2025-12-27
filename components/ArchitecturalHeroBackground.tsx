@@ -57,7 +57,7 @@ function WireframeBuilding() {
             {floors}
 
             {/* Grid Helper */}
-            <gridHelper args={[10, 10, "#3b82f6", "#1e40af"]} rotation={[0, 0, 0]} opacity={0.2} />
+            <gridHelper args={[10, 10, "#3b82f6", "#1e40af"]} rotation={[0, 0, 0]} />
 
             {/* Particles */}
             <points>
