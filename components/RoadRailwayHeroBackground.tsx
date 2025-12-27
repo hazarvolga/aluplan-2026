@@ -98,12 +98,13 @@ function TerrainWireframe({ dimmed }: { dimmed: boolean }) {
 
     useFrame((state, delta) => {
         if (!materialRef.current) return
-        const targetOp = dimmed ? 0.05 : 0.2 // Fade to 5% in compare mode
+        // Increased base opacity from 0.2 to 0.4 for better visibility
+        const targetOp = dimmed ? 0.1 : 0.4
         materialRef.current.opacity = THREE.MathUtils.lerp(materialRef.current.opacity, targetOp, delta * 2)
     })
 
     const geometry = useMemo(() => {
-        const geo = new THREE.PlaneGeometry(35, 35, 32, 32)
+        const geo = new THREE.PlaneGeometry(35, 35, 24, 24) // Reduced polys for cleaner look
         const posAttribute = geo.attributes.position
         for (let i = 0; i < posAttribute.count; i++) {
             const x = posAttribute.getX(i)
@@ -118,9 +119,9 @@ function TerrainWireframe({ dimmed }: { dimmed: boolean }) {
     return (
         <group rotation={[-Math.PI / 2, 0, 0]} position={[0, -4, 0]}>
             <mesh geometry={geometry}>
-                <meshBasicMaterial ref={materialRef} color="#64748b" wireframe transparent opacity={0.2} />
+                <meshBasicMaterial ref={materialRef} color="#94a3b8" wireframe transparent opacity={0.4} />
             </mesh>
-            <gridHelper args={[40, 40, "#1e293b", "#0f172a"]} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0.1]} material-opacity={0.1} material-transparent />
+            <gridHelper args={[40, 40, "#cbd5e1", "#475569"]} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0.1]} material-opacity={0.2} material-transparent />
         </group>
     )
 }
@@ -145,7 +146,7 @@ function VariantTube({ points, color, visible }: { points: THREE.Vector3[], colo
                 transparent
                 opacity={0}
                 emissive={color}
-                emissiveIntensity={0.4}
+                emissiveIntensity={0.6}
                 roughness={0.4}
             />
         </mesh>
@@ -157,13 +158,14 @@ export default function RoadRailwayHeroBackground() {
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute right-0 top-0 bottom-0 w-full opacity-90">
                 <Canvas style={{ background: 'transparent' }}>
-                    {/* Fixed Camera - No Rotation */}
-                    <PerspectiveCamera makeDefault position={[20, 15, 20]} fov={30} onUpdate={c => c.lookAt(0, -2, 0)} />
+                    {/* Camera adjusted to look more to the right side */}
+                    <PerspectiveCamera makeDefault position={[25, 15, 25]} fov={28} onUpdate={c => c.lookAt(8, -2, 0)} />
 
-                    <ambientLight intensity={0.4} />
-                    <pointLight position={[10, 20, 10]} intensity={1} color="#ffffff" />
+                    <ambientLight intensity={0.8} />
+                    <pointLight position={[10, 20, 10]} intensity={1.5} color="#ffffff" />
 
-                    <group position={[0, -2, 0]}>
+                    {/* Shift Scene to the RIGHT to escape the text overlay (X=8) */}
+                    <group position={[8, -2, 0]}>
                         <StoryboardScene />
                     </group>
                 </Canvas>
