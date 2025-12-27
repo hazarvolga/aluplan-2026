@@ -3,159 +3,190 @@ import { Canvas, useFrame } from "@react-three/fiber"
 import { useRef, useMemo, useState, useEffect } from "react"
 import * as THREE from "three"
 
-// Burj Khalifa inspired wireframe building with progressive construction
-function BurjKhalifaBuilding() {
+// Generali Tower (Zaha Hadid) inspired wireframe building
+// Feature: Twisted/Torsion structure
+function GeneraliTowerBuilding() {
     const groupRef = useRef<THREE.Group>(null)
     const [buildProgress, setBuildProgress] = useState(0)
 
-    // Slow rotation animation
+    // Continuous rotation of the entire building
     useFrame((state) => {
         if (groupRef.current) {
-            groupRef.current.rotation.y = state.clock.elapsedTime * 0.08
-            groupRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.05) * 0.05
+            groupRef.current.rotation.y = state.clock.elapsedTime * 0.05
         }
     })
 
-    // Progressive building construction animation
+    // Progressive construction animation loop
     useEffect(() => {
         const interval = setInterval(() => {
             setBuildProgress((prev) => {
-                if (prev >= 1) {
-                    return 0 // Reset and rebuild
+                if (prev >= 1.2) { // Allow some time after completion before reset
+                    return 0
                 }
-                return prev + 0.004 // Slow build speed
+                return prev + 0.003 // Build speed
             })
-        }, 50)
+        }, 40)
 
         return () => clearInterval(interval)
     }, [])
 
-    // Burj Khalifa structure - stepped/tapered design
-    const buildingStructure = useMemo(() => {
-        // Define sections from bottom to top with decreasing widths
-        const sections = [
-            // Base sections (wider)
-            { width: 3.5, depth: 3.5, height: 0.8, floors: 3 },
-            { width: 3.2, depth: 3.2, height: 0.8, floors: 3 },
-            { width: 2.8, depth: 2.8, height: 0.8, floors: 3 },
-            // Middle sections
-            { width: 2.4, depth: 2.4, height: 0.7, floors: 3 },
-            { width: 2.0, depth: 2.0, height: 0.7, floors: 3 },
-            { width: 1.6, depth: 1.6, height: 0.6, floors: 3 },
-            // Upper sections (narrower)
-            { width: 1.3, depth: 1.3, height: 0.6, floors: 2 },
-            { width: 1.0, depth: 1.0, height: 0.5, floors: 2 },
-            { width: 0.7, depth: 0.7, height: 0.5, floors: 2 },
-            // Spire
-            { width: 0.4, depth: 0.4, height: 0.4, floors: 2 },
-            { width: 0.2, depth: 0.2, height: 0.6, floors: 1 },
-        ]
+    // Twisted Tower Structure
+    const floors = useMemo(() => {
+        const floorArray = []
+        const floorCount = 24 // Number of floors
+        const floorHeight = 0.6
+        const baseSize = 2.5
+        const totalTwist = Math.PI / 1.5 // Total twist from bottom to top (~120 degrees)
 
-        const floors = []
-        let currentHeight = -4 // Start position
-        let totalFloors = 0
+        for (let i = 0; i < floorCount; i++) {
+            const progress = i / floorCount
 
-        sections.forEach((section, sectionIdx) => {
-            for (let i = 0; i < section.floors; i++) {
-                const floorIndex = totalFloors
-                const floorProgress = floorIndex / (sections.reduce((sum, s) => sum + s.floors, 0))
-                const isVisible = buildProgress > floorProgress
-                const floorOpacity = isVisible
-                    ? Math.min((buildProgress - floorProgress) * 8, 0.25 + (floorIndex / 25) * 0.3)
-                    : 0
+            // Animation visibility logic
+            const isVisible = buildProgress > progress
+            // Opacity calculation based on build progress
+            // When effectively built, opacity stabilizes. During build, it fades in.
+            const baseOpacity = 0.4
+            let floorOpacity = 0
 
-                if (isVisible) {
-                    floors.push(
-                        <group key={`${sectionIdx}-${i}`} position={[0, currentHeight, 0]}>
-                            {/* Wireframe box */}
-                            <lineSegments>
-                                <edgesGeometry args={[new THREE.BoxGeometry(section.width, section.height, section.depth)]} />
-                                <lineBasicMaterial
-                                    color="#3b82f6"
-                                    transparent
-                                    opacity={floorOpacity}
-                                    linewidth={2}
-                                />
-                            </lineSegments>
-
-                            {/* Corner points for detail */}
-                            <points>
-                                <bufferGeometry>
-                                    <bufferAttribute
-                                        attach="attributes-position"
-                                        count={8}
-                                        array={new Float32Array([
-                                            -section.width / 2, -section.height / 2, -section.depth / 2,
-                                            section.width / 2, -section.height / 2, -section.depth / 2,
-                                            section.width / 2, section.height / 2, -section.depth / 2,
-                                            -section.width / 2, section.height / 2, -section.depth / 2,
-                                            -section.width / 2, -section.height / 2, section.depth / 2,
-                                            section.width / 2, -section.height / 2, section.depth / 2,
-                                            section.width / 2, section.height / 2, section.depth / 2,
-                                            -section.width / 2, section.height / 2, section.depth / 2
-                                        ])}
-                                        itemSize={3}
-                                    />
-                                </bufferGeometry>
-                                <pointsMaterial size={0.06} color="#60a5fa" transparent opacity={floorOpacity * 2.5} />
-                            </points>
-                        </group>
-                    )
+            if (isVisible) {
+                if (buildProgress < progress + 0.2) {
+                    // Fading in
+                    floorOpacity = (buildProgress - progress) * 5 * baseOpacity
+                } else {
+                    // Stable
+                    floorOpacity = baseOpacity
                 }
-
-                currentHeight += section.height
-                totalFloors++
             }
-        })
 
-        return floors
-    }, [buildProgress])
+            if (isVisible && floorOpacity > 0) {
+                // Tapering factor: building gets slightly narrower at the top
+                const scale = 1 - (progress * 0.3)
+                const currentSize = baseSize * scale
 
-    // Construction particles
-    const particles = useMemo(() => {
-        const count = 60
-        const positions = new Float32Array(count * 3)
+                // Twist factor: rotation increases with height
+                const rotationY = progress * totalTwist
 
-        for (let i = 0; i < count; i++) {
-            positions[i * 3] = (Math.random() - 0.5) * 10
-            positions[i * 3 + 1] = (Math.random() - 0.5) * 12
-            positions[i * 3 + 2] = (Math.random() - 0.5) * 10
+                floorArray.push(
+                    <group
+                        key={i}
+                        position={[0, i * floorHeight - 6, 0]}
+                        rotation={[0, rotationY, 0]}
+                    >
+                        {/* Floor Slab Wireframe */}
+                        <lineSegments>
+                            <edgesGeometry args={[new THREE.BoxGeometry(currentSize, 0.1, currentSize)]} />
+                            <lineBasicMaterial
+                                color="#3b82f6"
+                                transparent
+                                opacity={floorOpacity}
+                                linewidth={1}
+                            />
+                        </lineSegments>
+
+                        {/* Vertical Columns (Corners) */}
+                        {/* We emulate columns by drawing lines to the next floor's corners if it's not the last floor */}
+                        {i < floorCount - 1 && (
+                            <VerticalColumns
+                                currentSize={currentSize}
+                                nextSize={baseSize * (1 - ((i + 1) / floorCount) * 0.3)}
+                                height={floorHeight}
+                                twistStep={totalTwist / floorCount}
+                                opacity={floorOpacity * 0.7}
+                            />
+                        )}
+
+                        {/* Corner details */}
+                        <points>
+                            <bufferGeometry>
+                                <bufferAttribute
+                                    attach="attributes-position"
+                                    count={4}
+                                    array={new Float32Array([
+                                        -currentSize / 2, 0, -currentSize / 2,
+                                        currentSize / 2, 0, -currentSize / 2,
+                                        currentSize / 2, 0, currentSize / 2,
+                                        -currentSize / 2, 0, currentSize / 2,
+                                    ])}
+                                    itemSize={3}
+                                />
+                            </bufferGeometry>
+                            <pointsMaterial size={0.06} color="#60a5fa" transparent opacity={floorOpacity * 2} />
+                        </points>
+                    </group>
+                )
+            }
         }
-
-        return positions
-    }, [])
+        return floorArray
+    }, [buildProgress])
 
     return (
         <group ref={groupRef}>
-            {/* Building Structure */}
-            {buildingStructure}
+            {floors}
 
-            {/* Grid Helper */}
+            {/* Dynamic Grid Helper */}
             <gridHelper
-                args={[12, 12, "#3b82f6", "#1e40af"]}
+                args={[15, 15, "#3b82f6", "#1e40af"]}
                 rotation={[0, 0, 0]}
-                material-opacity={buildProgress * 0.25}
-                material-transparent={true}
+                position={[0, -6.5, 0]}
             />
-
-            {/* Construction Particles */}
-            <points>
-                <bufferGeometry>
-                    <bufferAttribute
-                        attach="attributes-position"
-                        count={particles.length / 3}
-                        array={particles}
-                        itemSize={3}
-                    />
-                </bufferGeometry>
-                <pointsMaterial
-                    size={0.04}
-                    color="#60a5fa"
-                    transparent
-                    opacity={buildProgress * 0.5}
-                />
-            </points>
         </group>
+    )
+}
+
+// Helper component to draw twisted columns between floors
+function VerticalColumns({ currentSize, nextSize, height, twistStep, opacity }: {
+    currentSize: number,
+    nextSize: number,
+    height: number,
+    twistStep: number,
+    opacity: number
+}) {
+    // Calculate corners of current floor (y=0 relative to group)
+    const c = currentSize / 2
+    const currentCorners = [
+        [-c, 0, -c], [c, 0, -c], [c, 0, c], [-c, 0, c]
+    ]
+
+    // Calculate corners of next floor (y=height, rotated by twistStep)
+    // But since we are inside the current floor's rotated group, we only need to account for the *relative* twist to the next floor
+    const n = nextSize / 2
+    const cos = Math.cos(twistStep)
+    const sin = Math.sin(twistStep)
+
+    const nextCorners = [
+        [-n, -n], [n, -n], [n, n], [-n, n] // x, z before rotation
+    ].map(([x, z]) => {
+        // Rotate around Y axis
+        const rx = x * cos - z * sin
+        const rz = x * sin + z * cos
+        return [rx, height, rz]
+    })
+
+    // Create geometry for lines connecting corners
+    const positions = new Float32Array(4 * 2 * 3) // 4 lines, 2 points each, 3 coords
+    for (let i = 0; i < 4; i++) {
+        // Start point
+        positions[i * 6 + 0] = currentCorners[i][0]
+        positions[i * 6 + 1] = currentCorners[i][1]
+        positions[i * 6 + 2] = currentCorners[i][2]
+        // End point
+        positions[i * 6 + 3] = nextCorners[i][0]
+        positions[i * 6 + 4] = nextCorners[i][1]
+        positions[i * 6 + 5] = nextCorners[i][2]
+    }
+
+    return (
+        <lineSegments>
+            <bufferGeometry>
+                <bufferAttribute
+                    attach="attributes-position"
+                    count={8}
+                    array={positions}
+                    itemSize={3}
+                />
+            </bufferGeometry>
+            <lineBasicMaterial color="#60a5fa" transparent opacity={opacity} linewidth={1} />
+        </lineSegments>
     )
 }
 
@@ -163,15 +194,15 @@ function BurjKhalifaBuilding() {
 export default function ArchitecturalHeroBackground() {
     return (
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute right-0 top-0 bottom-0 w-1/2 opacity-30">
+            <div className="absolute right-0 top-0 bottom-0 w-1/2 opacity-40">
                 <Canvas
-                    camera={{ position: [6, 2, 10], fov: 45 }}
+                    camera={{ position: [8, 2, 12], fov: 40 }}
                     style={{ background: 'transparent' }}
                 >
                     <ambientLight intensity={0.5} />
-                    <pointLight position={[10, 15, 10]} intensity={1} />
-                    <pointLight position={[-10, 5, -10]} intensity={0.5} />
-                    <BurjKhalifaBuilding />
+                    <pointLight position={[10, 10, 10]} intensity={1} />
+                    <pointLight position={[-5, 0, -5]} intensity={0.5} color="#3b82f6" />
+                    <GeneraliTowerBuilding />
                 </Canvas>
             </div>
         </div>
