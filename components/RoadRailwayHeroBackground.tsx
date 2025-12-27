@@ -1,41 +1,33 @@
 "use client"
-import { Canvas, useFrame, useThree } from "@react-three/fiber"
+import { Canvas, useFrame } from "@react-three/fiber"
 import { useRef, useMemo, useState, useEffect } from "react"
 import * as THREE from "three"
 import { Text, PerspectiveCamera } from "@react-three/drei"
 
 /**
- * ROAD & RAILWAY HERO ANIMATION - FINAL CLEAN IMPLEMENTATION
+ * ROAD & RAILWAY HERO ANIMATION - VISIBILITY FIX
  * 
- * Concept: Engineering Alignment Comparison (Storyboard)
- * Sequence:
- * 1. Terrain Only (Context)
- * 2. Variant A (Shortest)
- * 3. Variant B (Earthwork)
- * 4. Variant C (Balanced)
- * 5. Comparison (All Overlay)
- * 
- * Technical: fixed camera, shifted right position, thick emissive lines.
+ * Changes:
+ * 1. Removed mix-blend-screen (Causes invisibility on light backgrounds).
+ * 2. Switched from StandardMaterial to BasicMaterial (Guarantees visibility without light).
+ * 3. Simplified camera logic: Scene at 0,0,0, Camera offset for 'Right' view.
  */
 
-// --- CONFIGURATION ---
-const SCENE_DURATION = 5000 // 5 seconds per scene
-const SCENE_OFFSET = [8, -2, 0] // Shift right to avoid text
-const CAMERA_POS = [25, 15, 25] as [number, number, number]
-const CAMERA_LOOK_AT = [8, -2, 0] as [number, number, number]
+const SCENE_DURATION = 5000
 
 export default function RoadRailwayHeroBackground() {
     return (
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            {/* Main container with slight translucency */}
-            <div className="absolute inset-0 w-full h-full opacity-100 mix-blend-screen">
-                <Canvas style={{ background: 'transparent' }}>
-                    <SceneSetup />
-                    <group position={SCENE_OFFSET}>
-                        <AnimationController />
-                    </group>
-                </Canvas>
-            </div>
+        // Removed pointer-events-none from parent to allow potential interaction if needed, 
+        // but kept it on the overlay div.
+        // Removed mix-blend modes. strictly alpha blending.
+        <div className="absolute inset-0 w-full h-full">
+            <Canvas style={{ background: 'transparent' }} gl={{ alpha: true, antialias: true }}>
+                <SceneSetup />
+                {/* Scene centering: We keep geometry effectively at 0,0,0 and just position camera to see it on the right */}
+                <group position={[6, -2, 0]}>
+                    <AnimationController />
+                </group>
+            </Canvas>
         </div>
     )
 }
@@ -43,10 +35,13 @@ export default function RoadRailwayHeroBackground() {
 function SceneSetup() {
     return (
         <>
-            <PerspectiveCamera makeDefault position={CAMERA_POS} fov={28} onUpdate={c => c.lookAt(...CAMERA_LOOK_AT)} />
-            <ambientLight intensity={1.0} />
-            <directionalLight position={[10, 20, 5]} intensity={1.5} color="#ffffff" />
-            <pointLight position={[-10, 10, -10]} intensity={0.5} />
+            {/* Camera looking slightly to the side to frame the object on the right */}
+            {/* Position X=20 pushes camera right. Looking at X=6 keeps subject centered relative to camera frame? 
+                Actually, to put object on Right of screen, Camera should point Left of object or Object moved Right.
+                We moved Object group to [6, -2, 0]. Camera at [20, 10, 20] looking at [6, -2, 0] works.
+            */}
+            <PerspectiveCamera makeDefault position={[20, 12, 20]} fov={32} onUpdate={c => c.lookAt(6, -2, 0)} />
+            <ambientLight intensity={1} />
         </>
     )
 }
@@ -95,7 +90,7 @@ function AnimationController() {
                     new THREE.Vector3(8, -3, -6),
                     new THREE.Vector3(12, 0.5, -12)
                 ]}
-                color="#38bdf8" // Light Blue
+                color="#38bdf8"
                 visible={sceneIndex === 2 || sceneIndex === 4}
             />
 
@@ -107,7 +102,7 @@ function AnimationController() {
                     new THREE.Vector3(4, 3, -8),
                     new THREE.Vector3(12, 0.5, -12)
                 ]}
-                color="#f97316" // Orange
+                color="#f97316"
                 visible={sceneIndex === 3 || sceneIndex === 4}
             />
 
@@ -117,38 +112,35 @@ function AnimationController() {
 }
 
 function Terrain({ active, dimmed }: { active: boolean, dimmed: boolean }) {
-    // A clean grid terrain
     const geometry = useMemo(() => {
-        const geo = new THREE.PlaneGeometry(35, 35, 30, 30)
+        const geo = new THREE.PlaneGeometry(40, 40, 20, 20)
         const pos = geo.attributes.position
         for (let i = 0; i < pos.count; i++) {
             const x = pos.getX(i)
             const y = pos.getY(i)
-            // Valley shape
-            const z = (Math.sin(x * 0.15) * 3) + (Math.cos(y * 0.2) * 1.5)
+            // Simpler valley
+            const z = (Math.sin(x * 0.1) * 4) + (Math.cos(y * 0.1) * 2)
             pos.setZ(i, z)
         }
-        geo.computeVertexNormals()
         return geo
     }, [])
 
-    // Fade logic
     const ref = useRef<THREE.MeshBasicMaterial>(null)
     useFrame((_, delta) => {
         if (!ref.current) return
-        const target = dimmed ? 0.1 : 0.3
-        ref.current.opacity = THREE.MathUtils.lerp(ref.current.opacity, target, delta * 2)
+        const target = dimmed ? 0.1 : 0.4 // Higher base opacity
+        ref.current.opacity = THREE.MathUtils.lerp(ref.current.opacity, target, delta * 3)
     })
 
     return (
-        <group rotation={[-Math.PI / 2, 0, 0]} position={[0, -4, 0]}>
+        <group rotation={[-Math.PI / 2, 0, 0]} position={[0, -5, 0]}>
             <mesh geometry={geometry}>
                 <meshBasicMaterial
                     ref={ref}
                     color="#94a3b8"
                     wireframe
                     transparent
-                    opacity={0.3}
+                    opacity={0.4}
                 />
             </mesh>
         </group>
@@ -157,27 +149,24 @@ function Terrain({ active, dimmed }: { active: boolean, dimmed: boolean }) {
 
 function RoadPath({ points, color, visible }: { points: THREE.Vector3[], color: string, visible: boolean }) {
     const curve = useMemo(() => new THREE.CatmullRomCurve3(points), [points])
-    const ref = useRef<THREE.MeshStandardMaterial>(null)
+    const ref = useRef<THREE.MeshBasicMaterial>(null)
 
     useFrame((_, delta) => {
         if (!ref.current) return
         const target = visible ? 1 : 0
-        ref.current.opacity = THREE.MathUtils.lerp(ref.current.opacity, target, delta * 3)
-        // Culling optimization: stop rendering if barely visible
-        ref.current.visible = ref.current.opacity > 0.01
+        ref.current.opacity = THREE.MathUtils.lerp(ref.current.opacity, target, delta * 5)
+        ref.current.visible = ref.current.opacity > 0.05
     })
 
     return (
         <mesh>
-            <tubeGeometry args={[curve, 64, 0.4, 8, false]} />
-            <meshStandardMaterial
+            <tubeGeometry args={[curve, 64, 0.5, 8, false]} /> {/* Thicker: 0.5 radius */}
+            {/* BASIC MATERIAL: Ignores light, always pure color. Best for 'nothing visible' bugs. */}
+            <meshBasicMaterial
                 ref={ref}
                 color={color}
-                emissive={color}
-                emissiveIntensity={0.8}
                 transparent
                 opacity={0}
-                roughness={0.2}
             />
         </mesh>
     )
@@ -187,23 +176,25 @@ function HUD({ title, subtitle }: { title: string, subtitle: string }) {
     return (
         <group position={[0, 8, -5]} renderOrder={999}>
             <Text
-                fontSize={1.0}
+                fontSize={1.2}
                 color="#ffffff"
                 anchorX="center"
                 anchorY="bottom"
                 font="/fonts/Inter-Bold.woff"
-                fillOpacity={0.9}
+                fillOpacity={1} // Always 1
+                outlineWidth={0.05}
+                outlineColor="#000000"
             >
                 {title}
             </Text>
             <Text
-                position={[0, -0.6, 0]}
-                fontSize={0.5}
+                position={[0, -0.7, 0]}
+                fontSize={0.6}
                 color="#cbd5e1"
                 anchorX="center"
                 anchorY="top"
                 font="/fonts/Inter-Regular.woff"
-                fillOpacity={0.7}
+                fillOpacity={0.9}
             >
                 {subtitle}
             </Text>
