@@ -1,13 +1,14 @@
 "use client"
-import { HeroInternal } from "@/components/layout-v2/HeroInternal";
+import SolutionHero from "@/components/SolutionHero";
 
 export default function AllplanBulutContent() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <HeroInternal
-        topTitle="ALLPLAN Cloud ve Genel Geliştirmeler"
+      <SolutionHero
+        badge="ALLPLAN Cloud ve Genel Geliştirmeler"
         title="DAHA İYİ BİR GELECEK İNŞA ETMEK İÇİN TASARLANDI"
         subtitle="ALLPLAN 2026 ile Yeni Özellikler – ALLPLAN Cloud ve Genel Geliştirmeler"
+        description=""
       />
 
       {/* Content sections will be added here */}
