@@ -5,9 +5,12 @@ import * as THREE from "three"
 import { PerspectiveCamera, Text } from "@react-three/drei"
 
 /**
- * BRIDGE DESIGN HERO ANIMATION
- * Concept: Suspension Bridge Genesis
- * Sequence: Foundations -> Towers -> Main Cables -> Suspenders -> Deck
+ * BRIDGE DESIGN HERO ANIMATION - VISIBILITY FIX
+ * 
+ * Changes:
+ * 1. Switched to MeshBasicMaterial (Self-illuminated, guaranteed visibility).
+ * 2. Increased line thickness (Tubes).
+ * 3. High contrast colors (White, Orange, Red).
  */
 
 const SCENE_OFFSET = [8, -4, 0] // Shift right
@@ -30,12 +33,12 @@ function SceneSetup() {
     return (
         <>
             <PerspectiveCamera makeDefault position={[25, 15, 25]} fov={30} onUpdate={c => c.lookAt(8, 0, 0)} />
-            <ambientLight intensity={0.8} />
-            <directionalLight position={[-10, 20, 10]} intensity={1.5} color="#ffffff" />
+            {/* Ambient light strictly for scene ambiance if needed, but BasicMaterial ignores it */}
+            <ambientLight intensity={1} />
 
-            {/* Water Plane / Grid */}
+            {/* Water Plane / Grid - BRIGHTER */}
             <gridHelper
-                args={[60, 20, "#334155", "#1e293b"]}
+                args={[60, 20, "#94a3b8", "#475569"]}
                 position={[8, -4, 0]}
                 rotation={[0, 0, 0]}
             />
@@ -76,12 +79,12 @@ function Foundations({ progress }: { progress: number }) {
             {/* Left Foundation */}
             <mesh position={[-10, -2 + scale, 0]}>
                 <boxGeometry args={[4, 2, 4]} />
-                <meshStandardMaterial color="#475569" transparent opacity={0.8} />
+                <meshBasicMaterial color="#64748b" transparent opacity={0.9} />
             </mesh>
             {/* Right Foundation */}
             <mesh position={[10, -2 + scale, 0]}>
                 <boxGeometry args={[4, 2, 4]} />
-                <meshStandardMaterial color="#475569" transparent opacity={0.8} />
+                <meshBasicMaterial color="#64748b" transparent opacity={0.9} />
             </mesh>
         </group>
     )
@@ -100,42 +103,29 @@ function Towers({ progress }: { progress: number }) {
 
     return (
         <group>
-            {/* Left Tower */}
+            {/* Left Tower - WHITE Basic Material */}
             <group position={[-10, 0, 0]}>
                 {/* H-Shape Legs */}
                 <mesh position={[0, currentH / 2, 1.5]}>
                     <boxGeometry args={[1.5, currentH, 1.5]} />
-                    <meshStandardMaterial color="#cbd5e1" />
+                    <meshBasicMaterial color="#ffffff" />
                 </mesh>
                 <mesh position={[0, currentH / 2, -1.5]}>
                     <boxGeometry args={[1.5, currentH, 1.5]} />
-                    <meshStandardMaterial color="#cbd5e1" />
+                    <meshBasicMaterial color="#ffffff" />
                 </mesh>
-                {/* Crossbar (appears later ideally, but simplified here) */}
-                {fill > 0.6 && (
-                    <mesh position={[0, currentH * 0.7, 0]}>
-                        <boxGeometry args={[1.2, 0.5, 4]} />
-                        <meshStandardMaterial color="#94a3b8" />
-                    </mesh>
-                )}
             </group>
 
-            {/* Right Tower */}
+            {/* Right Tower - WHITE Basic Material */}
             <group position={[10, 0, 0]}>
                 <mesh position={[0, currentH / 2, 1.5]}>
                     <boxGeometry args={[1.5, currentH, 1.5]} />
-                    <meshStandardMaterial color="#cbd5e1" />
+                    <meshBasicMaterial color="#ffffff" />
                 </mesh>
                 <mesh position={[0, currentH / 2, -1.5]}>
                     <boxGeometry args={[1.5, currentH, 1.5]} />
-                    <meshStandardMaterial color="#cbd5e1" />
+                    <meshBasicMaterial color="#ffffff" />
                 </mesh>
-                {fill > 0.6 && (
-                    <mesh position={[0, currentH * 0.7, 0]}>
-                        <boxGeometry args={[1.2, 0.5, 4]} />
-                        <meshStandardMaterial color="#94a3b8" />
-                    </mesh>
-                )}
             </group>
         </group>
     )
@@ -147,7 +137,6 @@ function MainCables({ progress }: { progress: number }) {
 
     // Catenary Curve
     const cablePoints = useMemo(() => {
-        const points = []
         // From -20 (anchor) to -10 (tower top) to 10 (tower top) to 20 (anchor)
         const leftAnchor = new THREE.Vector3(-22, 0, 0)
         const leftTower = new THREE.Vector3(-10, 12, 0)
@@ -177,15 +166,11 @@ function MainCables({ progress }: { progress: number }) {
                 <tubeGeometry args={[
                     new THREE.CatmullRomCurve3(currentPoints),
                     drawCount, // segments
-                    0.15, // radius
+                    0.25, // radius (Thicker)
                     8,
                     false
                 ]} />
-                <meshBasicMaterial color="#ef4444" /> {/* Red highlight cables */}
-            </mesh>
-
-            {/* Second cable for 3D depth */}
-            <mesh position={[0, 0, -0.2]}> {/* Slight offset? No, usually parallel. Let's do parallel cables later if needed. For now single strong line */}
+                <meshBasicMaterial color="#ef4444" /> {/* Bright RED Basic Material */}
             </mesh>
         </group>
     )
@@ -202,22 +187,18 @@ function Suspenders({ progress }: { progress: number }) {
 
     for (let i = 1; i < count; i++) {
         const x = THREE.MathUtils.lerp(-10, 10, i / count)
-        // Approximate cable height at x (Parabola: y = x^2 / k)
-        // y(-10) = 12, y(0) = 4.  y = A*x^2 + 4.  12 = 100A + 4 -> 8 = 100A -> A = 0.08
         const yTop = 0.08 * x * x + 4
         const yBottom = 2 // Deck level
 
-        // Staggered appearance based on progress p
-        // Appear left to right
         const appearThreshold = i / count
         if (p > appearThreshold) {
-            const grow = Math.min(1, (p - appearThreshold) * 5) // Fast grow
+            const grow = Math.min(1, (p - appearThreshold) * 5)
             const currentYBottom = THREE.MathUtils.lerp(yTop, yBottom, grow)
 
             suspenders.push(
                 <mesh key={i} position={[x, (yTop + currentYBottom) / 2, 0]}>
-                    <boxGeometry args={[0.1, yTop - currentYBottom, 0.1]} />
-                    <meshBasicMaterial color="#94a3b8" />
+                    <boxGeometry args={[0.15, yTop - currentYBottom, 0.15]} />
+                    <meshBasicMaterial color="#cbd5e1" />
                 </mesh>
             )
         }
@@ -236,16 +217,10 @@ function Deck({ progress }: { progress: number }) {
 
     return (
         <group>
-            {/* Center Span growing from center out? Or Left to right? Left to Right matches flow */}
-            {/* Left to right fill: -22 to 22 */}
-            <group position={[-22 + (22 * p), 2, 0]}>
-                {/* Pivot logic is tricky, simple scale X is easier if centered */}
-            </group>
-
             {/* Simple Scale approach: Grows from -22 to Right */}
             <mesh position={[-22 + (22 * p), 1.5, 0]}> {/* Moves center */}
                 <boxGeometry args={[44 * p, 1, 4]} />
-                <meshStandardMaterial color="#fcd34d" />
+                <meshBasicMaterial color="#fcd34d" /> {/* Bright Yellow/Orange Basic */}
             </mesh>
         </group>
     )
@@ -268,7 +243,9 @@ function Label({ progress }: { progress: number }) {
                 anchorX="center"
                 anchorY="bottom"
                 font="/fonts/Inter-Bold.woff"
-                fillOpacity={0.9}
+                fillOpacity={1}
+                outlineWidth={0.05}
+                outlineColor="#000000"
             >
                 {text}
             </Text>
