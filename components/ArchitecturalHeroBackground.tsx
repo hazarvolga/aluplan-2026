@@ -30,21 +30,20 @@ function OmniturmBuilding() {
         return () => clearInterval(interval)
     }, [])
 
-    // OMNITURM Structure - The "Hip Swing"
+    // OMNITURM Structure - Refined Hip Swing
     const floors = useMemo(() => {
         const floorArray = []
         const floorCount = 30
         const floorHeight = 0.5
         const baseSize = 2.2
 
-        // Hip-swing parameters (The shift happens in the middle)
-        const shiftStart = 8
-        const shiftEnd = 20
-        const maxShift = 0.8
+        // Hip-swing parameters based on user feedback
+        const shiftStartFloor = 8 // Starts after 8th floor
+        const shiftDuration = 7   // Lasts for 7 floors
+        const rightShiftFloors = 3 // First 3 floors shift right
 
         for (let i = 0; i < floorCount; i++) {
             const progress = i / floorCount
-
             const isVisible = buildProgress > progress
             const baseOpacity = 0.4
             let floorOpacity = 0
@@ -62,14 +61,33 @@ function OmniturmBuilding() {
                 let offsetX = 0
                 let offsetZ = 0
 
-                if (i >= shiftStart && i <= shiftEnd) {
-                    // Sine wave shift for smooth transition out and back
-                    const shiftProgress = (i - shiftStart) / (shiftEnd - shiftStart)
-                    const shiftFactor = Math.sin(shiftProgress * Math.PI) // 0 -> 1 -> 0
+                // Logic:
+                // Floors 0-7: Base (0,0)
+                // Floors 8-10 (3 floors): Twist Right
+                // Floors 11-14 (4 floors): Twist Left (returning to center)
+                // Floors 15+: Back to center (0,0) aligned with base
 
-                    // OMNITURM shifts spirally/diagonally
-                    offsetX = shiftFactor * maxShift
-                    offsetZ = shiftFactor * (maxShift * 0.5)
+                if (i >= shiftStartFloor && i < shiftStartFloor + shiftDuration) {
+                    const shiftIndex = i - shiftStartFloor
+
+                    if (shiftIndex < rightShiftFloors) {
+                        // Right Shift Phase (Floors 8,9,10)
+                        // Progress 0 to 1 for this phase
+                        const phaseProgress = (shiftIndex + 1) / rightShiftFloors
+                        // Sinusoidal ease-out for natural movement
+                        const factor = Math.sin(phaseProgress * (Math.PI / 2))
+                        offsetX = factor * 0.6 // Shift Right
+                        offsetZ = factor * 0.3
+                    } else {
+                        // Left Shift / Return Phase (Floors 11,12,13,14)
+                        // Progress 0 to 1 for this phase
+                        const phaseProgress = (shiftIndex - rightShiftFloors + 1) / (shiftDuration - rightShiftFloors)
+                        // Cosine ease-in-out to return from max shift to 0
+                        // We start from max shift (1) and go to 0
+                        const factor = Math.cos(phaseProgress * (Math.PI / 2))
+                        offsetX = factor * 0.6 // Return from Right
+                        offsetZ = factor * 0.3
+                    }
                 }
 
                 floorArray.push(
@@ -93,13 +111,9 @@ function OmniturmBuilding() {
                             <VerticalColumns
                                 currentPos={{ x: offsetX, y: 0, z: offsetZ }}
                                 nextPos={{
-                                    x: (i + 1 >= shiftStart && i + 1 <= shiftEnd)
-                                        ? Math.sin(((i + 1 - shiftStart) / (shiftEnd - shiftStart)) * Math.PI) * maxShift
-                                        : 0,
+                                    x: getNextFloorOffset(i + 1, shiftStartFloor, shiftDuration, rightShiftFloors).x,
                                     y: floorHeight,
-                                    z: (i + 1 >= shiftStart && i + 1 <= shiftEnd)
-                                        ? Math.sin(((i + 1 - shiftStart) / (shiftEnd - shiftStart)) * Math.PI) * (maxShift * 0.5)
-                                        : 0
+                                    z: getNextFloorOffset(i + 1, shiftStartFloor, shiftDuration, rightShiftFloors).z
                                 }}
                                 size={baseSize}
                                 opacity={floorOpacity * 0.7}
@@ -174,6 +188,28 @@ function VerticalColumns({ currentPos, nextPos, size, opacity }: {
             <lineBasicMaterial color="#60a5fa" transparent opacity={opacity} linewidth={1} />
         </lineSegments>
     )
+}
+
+// Helper to calculate offset for any floor index (used for nextPos prediction)
+function getNextFloorOffset(index: number, start: number, duration: number, rightShiftCount: number) {
+    let x = 0
+    let z = 0
+
+    if (index >= start && index < start + duration) {
+        const shiftIndex = index - start
+        if (shiftIndex < rightShiftCount) {
+            const phaseProgress = (shiftIndex + 1) / rightShiftCount
+            const factor = Math.sin(phaseProgress * (Math.PI / 2))
+            x = factor * 0.6
+            z = factor * 0.3
+        } else {
+            const phaseProgress = (shiftIndex - rightShiftCount + 1) / (duration - rightShiftCount)
+            const factor = Math.cos(phaseProgress * (Math.PI / 2))
+            x = factor * 0.6
+            z = factor * 0.3
+        }
+    }
+    return { x, z }
 }
 
 export default function ArchitecturalHeroBackground() {
