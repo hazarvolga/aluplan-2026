@@ -148,7 +148,7 @@ export default function AllplanBulutContent() {
       package: "#Concept",
       icon: Scissors,
       img: overlayManagerImg,
-      videoUrl: null,
+      videoUrl: "https://www.youtube.com/embed/yyowbxaZeF8",
       details: [
         "ALLPLAN'daki yeni kırpma kutusu özelliği, kullanıcıların 2B düzenleri 3B modellerle birleştirirken yalnızca ihtiyaç duydukları içeriği izole etmesini sağlar.",
         "2B düzen içinde görünür alanı doğrudan tanımlayıp ayarlayabilir, İlgisiz görünümler, başlıklar veya ekstra bilgiler dışlanabilir, Yalnızca temel detaylar gösterilir.",
