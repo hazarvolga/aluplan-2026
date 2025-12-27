@@ -174,7 +174,9 @@ export default function StructuralHeroBackground() {
                     <pointLight position={[10, 10, 5]} intensity={1.5} color="#ffffff" />
                     <spotLight position={[-5, 5, 2]} intensity={1} angle={0.5} penumbra={1} color="#60a5fa" />
 
-                    <ReinforcementNode />
+                    <group position={[2, 0, -2]}>
+                        <ReinforcementNode />
+                    </group>
                 </Canvas>
             </div>
         </div>
