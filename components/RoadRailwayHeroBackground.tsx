@@ -1,87 +1,140 @@
 "use client"
-import { Canvas, useFrame } from "@react-three/fiber"
+import { Canvas, useFrame, useThree } from "@react-three/fiber"
 import { useRef, useMemo, useState, useEffect } from "react"
 import * as THREE from "three"
-import { Text } from "@react-three/drei"
+import { Text, Line, PerspectiveCamera } from "@react-three/drei"
 
-// Road & Railway Variant Comparison Animation
-function VariantScene() {
-    const groupRef = useRef<THREE.Group>(null)
+// Road & Railway Variant Comparison - CAD Wireframe Style
+function EngineeringScene() {
+    const { camera } = useThree()
+    const [animationState, setAnimationState] = useState(0) // 0:Init, 1:Terrain, 2:VarA, 3:VarB, 4:VarC, 5:Final
 
-    // 0 = Bridge (Direct), 1 = Embankment (Curved/Fill)
-    const [activeVariant, setActiveVariant] = useState(0)
-
-    // Gentle rotation
+    // Timeline control
     useFrame((state) => {
-        if (groupRef.current) {
-            groupRef.current.rotation.y = -0.2 + (Math.sin(state.clock.elapsedTime * 0.1) * 0.1)
-        }
+        const t = state.clock.elapsedTime
+
+        // Sequence logic
+        if (t < 1) { /* Init */ }
+        else if (t < 3) { if (animationState !== 1) setAnimationState(1) } // Terrain Fade In
+        else if (t < 6) { if (animationState !== 2) setAnimationState(2) } // Var A Draws
+        else if (t < 9) { if (animationState !== 3) setAnimationState(3) } // Var B Draws
+        else if (t < 12) { if (animationState !== 4) setAnimationState(4) } // Var C Draws
+        else { if (animationState !== 5) setAnimationState(5) } // Final View
+
+        // Camera slow pan/rotate logic
+        // Start from isometric-ish high angle
+        const radius = 24
+        const angle = 0.5 + (t * 0.05) // Slow rotation
+        camera.position.x = Math.sin(angle) * radius
+        camera.position.z = Math.cos(angle) * radius
+        camera.lookAt(0, -2, 0)
     })
 
-    // Toggle Timer
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setActiveVariant((prev) => (prev === 0 ? 1 : 0))
-        }, 5000) // Switch every 5 seconds
-        return () => clearInterval(interval)
-    }, [])
-
     return (
-        <group ref={groupRef}>
-            <TerrainValley />
+        <group>
+            <TerrainWireframe visible={animationState >= 1} />
 
-            {/* Both variants exist, we control visibility/opacity */}
-            <BridgeVariant active={activeVariant === 0} />
-            <EmbankmentVariant active={activeVariant === 1} />
+            {/* Variant A: Shortest (Straight) - White */}
+            <VariantSpline
+                visible={animationState >= 2}
+                points={variants.A.points}
+                color="#ffffff"
+                label="Variant A"
+                subLabel="Shortest Distance"
+                labelPos={new THREE.Vector3(0, 5, 0)}
+                drawSpeed={animationState === 2 ? 1 : 0} // Active drawing phase
+                isDone={animationState > 2}
+            />
 
-            {/* Label indicating the active variant */}
-            <VariantLabel active={activeVariant === 0} text="Varyant A: Viyadük Geçişi" position={[0, 4, 0]} color="#38bdf8" />
-            <VariantLabel active={activeVariant === 1} text="Varyant B: Dolgu ve Kurp" position={[0, 4, 0]} color="#fbbf24" />
+            {/* Variant B: Low Earthwork (Contour Following) - Light Blue */}
+            <VariantSpline
+                visible={animationState >= 3}
+                points={variants.B.points}
+                color="#38bdf8"
+                label="Variant B"
+                subLabel="Lower Earthwork"
+                labelPos={new THREE.Vector3(-4, 4, 3)}
+                drawSpeed={animationState === 3 ? 1 : 0}
+                isDone={animationState > 3}
+            />
+
+            {/* Variant C: Balanced (Smooth Curve) - Orange */}
+            <VariantSpline
+                visible={animationState >= 4}
+                points={variants.C.points}
+                color="#f97316"
+                label="Variant C"
+                subLabel="Balanced Solution"
+                labelPos={new THREE.Vector3(4, 6, -3)}
+                drawSpeed={animationState === 4 ? 1 : 0}
+                isDone={animationState > 4}
+            />
+
+            {/* Final Compare Label */}
+            {animationState >= 5 && (
+                <Text
+                    position={[0, 9, -10]}
+                    fontSize={0.8}
+                    color="#94a3b8"
+                    anchorX="center"
+                    anchorY="middle"
+                    font="/fonts/Inter-Bold.woff"
+                >
+                    Road Alignment Variant Comparison
+                </Text>
+            )}
         </group>
     )
 }
 
-function VariantLabel({ active, text, position, color }: any) {
-    // Smooth fade in/out
-    const ref = useRef<any>()
-    useFrame((state, delta) => {
-        if (!ref.current) return
-        const targetOp = active ? 1 : 0
-        ref.current.fillOpacity = THREE.MathUtils.lerp(ref.current.fillOpacity, targetOp, delta * 2)
-    })
-
-    return (
-        <Text
-            ref={ref}
-            position={position}
-            fontSize={0.5}
-            color={color}
-            anchorX="center"
-            anchorY="middle"
-            fillOpacity={0} // Start invisible
-            font="/fonts/Inter-Bold.woff" // Optional, default font usually works or custom font path needed
-        >
-            {text}
-        </Text>
-    )
+// Data Definition
+const variants = {
+    A: { // Linear / Shortest
+        points: [
+            new THREE.Vector3(-12, -0.5, 12),
+            new THREE.Vector3(-4, 0, 4),
+            new THREE.Vector3(4, 0, -4),
+            new THREE.Vector3(12, 0.5, -12)
+        ]
+    },
+    B: { // Hugs contours (Low Earthwork) - Avoiding the 'hills' effectively
+        points: [
+            new THREE.Vector3(-12, -0.5, 12),
+            new THREE.Vector3(-8, -2, 6), // Dip low
+            new THREE.Vector3(0, -3, 0), // Stay in valley
+            new THREE.Vector3(8, -2, -6),
+            new THREE.Vector3(12, 0.5, -12)
+        ]
+    },
+    C: { // Balanced (Smooth S)
+        points: [
+            new THREE.Vector3(-12, -0.5, 12),
+            new THREE.Vector3(-4, 2, 8), // Bridge over part
+            new THREE.Vector3(4, 2, -8),
+            new THREE.Vector3(12, 0.5, -12)
+        ]
+    }
 }
 
-function TerrainValley() {
-    // A valley shape: High on sides (-X, +X), Low in middle (0)
+function TerrainWireframe({ visible }: { visible: boolean }) {
+    const materialRef = useRef<THREE.MeshBasicMaterial>(null)
+
+    // Animate fade-in
+    useFrame((state, delta) => {
+        if (!materialRef.current) return
+        const targetOp = visible ? 0.15 : 0
+        materialRef.current.opacity = THREE.MathUtils.lerp(materialRef.current.opacity, targetOp, delta * 2)
+    })
+
     const geometry = useMemo(() => {
-        const geo = new THREE.PlaneGeometry(30, 30, 40, 40)
+        const geo = new THREE.PlaneGeometry(35, 35, 48, 48)
         const posAttribute = geo.attributes.position
 
         for (let i = 0; i < posAttribute.count; i++) {
             const x = posAttribute.getX(i)
-            // Valley curve: z = x^2 roughly
-            // x goes from -15 to 15.
-            const normalizedX = x / 10
-            let z = (normalizedX * normalizedX) * 2 - 4 // Drop to -4 in middle
-
-            // Add some noise
-            z += Math.random() * 0.2
-
+            const y = posAttribute.getY(i)
+            // Complex terrain: hills and valleys
+            const z = (Math.sin(x * 0.2) * 3) + (Math.cos(y * 0.3) * 2) + (Math.random() * 0.2)
             posAttribute.setZ(i, z)
         }
         geo.computeVertexNormals()
@@ -89,107 +142,100 @@ function TerrainValley() {
     }, [])
 
     return (
-        <group rotation={[-Math.PI / 2, 0, 0]} position={[0, -2, 0]}>
+        <group rotation={[-Math.PI / 2, 0, 0]} position={[0, -4, 0]}>
             <mesh geometry={geometry}>
-                <meshBasicMaterial color="#1e293b" wireframe transparent opacity={0.15} />
+                <meshBasicMaterial ref={materialRef} color="#94a3b8" wireframe transparent opacity={0} />
             </mesh>
-            <gridHelper args={[30, 30, "#334155", "#0f172a"]} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0.1]} material-opacity={0.1} material-transparent />
+            {visible && (
+                <gridHelper args={[40, 40, "#334155", "#0f172a"]} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0.1]} material-opacity={0.1} material-transparent />
+            )}
         </group>
     )
 }
 
-// Variant A: Bridge (Straight)
-function BridgeVariant({ active }: { active: boolean }) {
-    const groupRef = useRef<THREE.Group>(null)
+function VariantSpline({ visible, points, color, label, subLabel, labelPos, drawSpeed, isDone }: any) {
+    const [progress, setProgress] = useState(0)
 
+    // Animation Logic
     useFrame((state, delta) => {
-        if (!groupRef.current) return
-        // Fade logic
-        const targetScale = active ? 1 : 0.95
-        const targetOp = active ? 1 : 0
+        if (!visible) return
 
-        // We can't set opacity on group directly for all children easily without custom shader or traversing materials
-        // Traverse and set opacity
-        groupRef.current.traverse((child: any) => {
-            if (child.isMesh && child.material) {
-                child.material.transparent = true
-                child.material.opacity = THREE.MathUtils.lerp(child.material.opacity, targetOp, delta * 3)
-                // Also toggle visibility to save draw calls when fully hidden
-                child.visible = child.material.opacity > 0.01
-            }
-            if (child.isLine || child.isLineSegments) {
-                child.material.transparent = true
-                child.material.opacity = THREE.MathUtils.lerp(child.material.opacity, targetOp * 0.5, delta * 3)
-                child.visible = child.material.opacity > 0.01
-            }
-        })
+        if (drawSpeed > 0 && progress < 1) {
+            setProgress(p => Math.min(1, p + delta * 0.5)) // 2 seconds to draw
+        } else if (isDone && progress < 1) {
+            setProgress(1)
+        }
     })
 
-    return (
-        <group ref={groupRef}>
-            {/* Straight Bridge Deck */}
-            <mesh position={[0, 0, 0]}>
-                <boxGeometry args={[22, 0.5, 3]} /> {/* Long x-axis */}
-                <meshStandardMaterial color="#38bdf8" />
-            </mesh>
+    const curve = useMemo(() => new THREE.CatmullRomCurve3(points), [points])
 
-            {/* Piers */}
-            {[-8, -4, 0, 4, 8].map((x, i) => (
-                <group key={i} position={[x, -3, 0]}>
-                    <mesh position={[0, 0, 0]}>
-                        <boxGeometry args={[1, 6, 2]} />
-                        <meshStandardMaterial color="#0ea5e9" />
-                    </mesh>
+    // Calculate draw curve based on progress
+    // We can't easily partially draw a CatmullRomCurve without recomputing points
+    // But for "Line", we can just slice the points array if we had dense points.
+    // Better: Get spaced points, slice them.
+
+    const fullPoints = useMemo(() => curve.getSpacedPoints(100), [curve])
+    const visiblePoints = useMemo(() => {
+        const count = Math.ceil(progress * 100)
+        return fullPoints.slice(0, count)
+    }, [fullPoints, progress])
+
+    if (!visible) return null
+
+    return (
+        <group>
+            {/* The Line */}
+            {visiblePoints.length > 1 && (
+                <Line
+                    points={visiblePoints}
+                    color={color}
+                    lineWidth={3}
+                    transparent
+                    opacity={0.8}
+                />
+            )}
+
+            {/* End Point Marker or 'Head' */}
+            {progress > 0 && progress < 1 && (
+                <mesh position={fullPoints[Math.floor(progress * 99)]}>
+                    <sphereGeometry args={[0.3]} />
+                    <meshBasicMaterial color={color} />
+                </mesh>
+            )}
+
+            {/* Label (Only appears when done) */}
+            {progress >= 0.9 && (
+                <group position={labelPos}>
+                    {/* Floating Label Line */}
+                    <Line
+                        points={[new THREE.Vector3(0, -2, 0), new THREE.Vector3(0, 0, 0)]}
+                        color={color}
+                        lineWidth={1}
+                        transparent
+                        opacity={0.4}
+                    />
+                    <Text
+                        position={[0, 0.4, 0]}
+                        fontSize={0.6}
+                        color={color}
+                        anchorX="center"
+                        anchorY="bottom"
+                        font="/fonts/Inter-Bold.woff"
+                    >
+                        {label}
+                    </Text>
+                    <Text
+                        position={[0, -0.1, 0]}
+                        fontSize={0.4}
+                        color="#cbd5e1"
+                        anchorX="center"
+                        anchorY="top"
+                        font="/fonts/Inter-Regular.woff"
+                    >
+                        {subLabel}
+                    </Text>
                 </group>
-            ))}
-        </group>
-    )
-}
-
-// Variant B: Embankment (Curved Fill)
-function EmbankmentVariant({ active }: { active: boolean }) {
-    const groupRef = useRef<THREE.Group>(null)
-
-    useFrame((state, delta) => {
-        if (!groupRef.current) return
-        const targetOp = active ? 1 : 0
-        groupRef.current.traverse((child: any) => {
-            if (child.isMesh && child.material) {
-                child.material.transparent = true
-                child.material.opacity = THREE.MathUtils.lerp(child.material.opacity, targetOp, delta * 3)
-                child.visible = child.material.opacity > 0.01
-            }
-            if (child.isLine || child.isLineSegments) {
-                child.material.transparent = true
-                child.material.opacity = THREE.MathUtils.lerp(child.material.opacity, targetOp * 0.5, delta * 3)
-                child.visible = child.material.opacity > 0.01
-            }
-        })
-    })
-
-    // S-Curve path
-    const curve = useMemo(() => new THREE.CatmullRomCurve3([
-        new THREE.Vector3(-12, -2, 8),
-        new THREE.Vector3(-5, -4, 2), // Dip down to terrain level
-        new THREE.Vector3(5, -4, -2),
-        new THREE.Vector3(12, -2, -8),
-    ]), [])
-
-    const tubeGeo = useMemo(() => new THREE.TubeGeometry(curve, 64, 1.5, 8, false), [curve])
-
-    return (
-        <group ref={groupRef}>
-            {/* The Road Surface */}
-            <mesh geometry={tubeGeo}>
-                <meshStandardMaterial color="#fbbf24" roughness={0.8} />
-            </mesh>
-
-            {/* The Fill Earthwork (Simplified as blocks under curve) */}
-            {/* This simulates the 'Embankment' volume */}
-            <mesh position={[0, -5, 0]} rotation={[0, -0.2, 0]}>
-                <boxGeometry args={[10, 2, 8]} />
-                <meshStandardMaterial color="#d97706" wireframe opacity={0.3} />
-            </mesh>
+            )}
         </group>
     )
 }
@@ -199,15 +245,14 @@ export default function RoadRailwayHeroBackground() {
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute right-0 top-0 bottom-0 w-full opacity-90">
                 <Canvas
-                    camera={{ position: [0, 8, 16], fov: 40 }} // Central view to see both sides better
                     style={{ background: 'transparent' }}
                 >
-                    <ambientLight intensity={0.6} />
-                    <pointLight position={[10, 10, 10]} intensity={1} color="#ffffff" />
-                    <directionalLight position={[-5, 5, 5]} intensity={0.5} />
+                    <PerspectiveCamera makeDefault position={[20, 15, 20]} fov={35} />
+                    <ambientLight intensity={0.5} />
+                    <pointLight position={[10, 10, 10]} intensity={0.8} color="#ffffff" />
 
-                    <group position={[0, 0, -2]}>
-                        <VariantScene />
+                    <group position={[0, -2, 0]}>
+                        <EngineeringScene />
                     </group>
                 </Canvas>
             </div>
