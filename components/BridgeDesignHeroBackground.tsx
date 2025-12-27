@@ -18,7 +18,7 @@ const ANIMATION_SPEED = 1
 
 export default function BridgeDesignHeroBackground() {
     return (
-        <div className="absolute inset-0 w-full h-full">
+        <div className="absolute inset-0 w-full h-full pointer-events-none">
             <Canvas style={{ background: 'transparent' }} gl={{ alpha: true, antialias: true }}>
                 <SceneSetup />
                 <group position={SCENE_OFFSET}>
