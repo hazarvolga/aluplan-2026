@@ -206,6 +206,7 @@ export default function AllplanBulutContent() {
             title="Genel Ana Özellikler ve Tüm Kullanıcılar için Geliştirmeler"
             titleSize="lg"
             align="center"
+            className="py-0 bg-transparent"
           />
 
           <div className="mt-20 space-y-32">
@@ -319,6 +320,7 @@ export default function AllplanBulutContent() {
             title="ALLPLAN Cloud"
             titleSize="lg"
             align="center"
+            className="py-0 bg-transparent"
           />
 
           <div className="mt-20 space-y-32">
