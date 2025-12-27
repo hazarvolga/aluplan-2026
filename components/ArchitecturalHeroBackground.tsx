@@ -1,11 +1,12 @@
 "use client"
 import { Canvas, useFrame } from "@react-three/fiber"
-import { useRef, useMemo } from "react"
+import { useRef, useMemo, useState, useEffect } from "react"
 import * as THREE from "three"
 
-// Rotating Wireframe Building Component
+// Animated Wireframe Building with Progressive Construction
 function WireframeBuilding() {
     const groupRef = useRef<THREE.Group>(null)
+    const [buildProgress, setBuildProgress] = useState(0)
 
     // Slow rotation animation
     useFrame((state) => {
@@ -15,37 +16,79 @@ function WireframeBuilding() {
         }
     })
 
-    // Create multiple building floors
+    // Progressive building construction animation
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setBuildProgress((prev) => {
+                if (prev >= 1) {
+                    // Reset and rebuild
+                    return 0
+                }
+                return prev + 0.005 // Slow build speed
+            })
+        }, 50)
+
+        return () => clearInterval(interval)
+    }, [])
+
+    // Create building floors with progressive reveal
     const floors = useMemo(() => {
         const floorArray = []
         const floorCount = 8
         const floorHeight = 0.8
 
         for (let i = 0; i < floorCount; i++) {
-            floorArray.push(
-                <mesh key={i} position={[0, i * floorHeight - 3, 0]}>
-                    <boxGeometry args={[3, 0.6, 2]} />
-                    <meshBasicMaterial
-                        color="#3b82f6"
-                        wireframe
-                        transparent
-                        opacity={0.3 + (i / floorCount) * 0.2}
-                    />
-                </mesh>
-            )
+            const floorProgress = (i / floorCount)
+            const isVisible = buildProgress > floorProgress
+            const floorOpacity = isVisible
+                ? Math.min((buildProgress - floorProgress) * 5, 0.3 + (i / floorCount) * 0.2)
+                : 0
+
+            if (isVisible) {
+                floorArray.push(
+                    <group key={i} position={[0, i * floorHeight - 3, 0]}>
+                        {/* Wireframe box */}
+                        <lineSegments>
+                            <edgesGeometry args={[new THREE.BoxGeometry(3, 0.6, 2)]} />
+                            <lineBasicMaterial
+                                color="#3b82f6"
+                                transparent
+                                opacity={floorOpacity}
+                                linewidth={2}
+                            />
+                        </lineSegments>
+
+                        {/* Corner points */}
+                        <points>
+                            <bufferGeometry>
+                                <bufferAttribute
+                                    attach="attributes-position"
+                                    count={8}
+                                    array={new Float32Array([
+                                        -1.5, -0.3, -1, 1.5, -0.3, -1, 1.5, 0.3, -1, -1.5, 0.3, -1,
+                                        -1.5, -0.3, 1, 1.5, -0.3, 1, 1.5, 0.3, 1, -1.5, 0.3, 1
+                                    ])}
+                                    itemSize={3}
+                                />
+                            </bufferGeometry>
+                            <pointsMaterial size={0.08} color="#60a5fa" transparent opacity={floorOpacity * 2} />
+                        </points>
+                    </group>
+                )
+            }
         }
         return floorArray
-    }, [])
+    }, [buildProgress])
 
-    // Particles representing construction points
+    // Construction particles
     const particles = useMemo(() => {
-        const count = 100
+        const count = 50
         const positions = new Float32Array(count * 3)
 
         for (let i = 0; i < count; i++) {
-            positions[i * 3] = (Math.random() - 0.5) * 10
-            positions[i * 3 + 1] = (Math.random() - 0.5) * 10
-            positions[i * 3 + 2] = (Math.random() - 0.5) * 10
+            positions[i * 3] = (Math.random() - 0.5) * 8
+            positions[i * 3 + 1] = (Math.random() - 0.5) * 8
+            positions[i * 3 + 2] = (Math.random() - 0.5) * 8
         }
 
         return positions
@@ -56,10 +99,15 @@ function WireframeBuilding() {
             {/* Building Floors */}
             {floors}
 
-            {/* Grid Helper */}
-            <gridHelper args={[10, 10, "#3b82f6", "#1e40af"]} rotation={[0, 0, 0]} />
+            {/* Grid Helper - fades in with building */}
+            <gridHelper
+                args={[10, 10, "#3b82f6", "#1e40af"]}
+                rotation={[0, 0, 0]}
+                material-opacity={buildProgress * 0.3}
+                material-transparent={true}
+            />
 
-            {/* Particles */}
+            {/* Construction Particles */}
             <points>
                 <bufferGeometry>
                     <bufferAttribute
@@ -69,14 +117,13 @@ function WireframeBuilding() {
                         itemSize={3}
                     />
                 </bufferGeometry>
-                <pointsMaterial size={0.05} color="#60a5fa" transparent opacity={0.6} />
+                <pointsMaterial
+                    size={0.04}
+                    color="#60a5fa"
+                    transparent
+                    opacity={buildProgress * 0.4}
+                />
             </points>
-
-            {/* Connecting Lines */}
-            <lineSegments>
-                <edgesGeometry args={[new THREE.BoxGeometry(3, 5, 2)]} />
-                <lineBasicMaterial color="#3b82f6" transparent opacity={0.2} />
-            </lineSegments>
         </group>
     )
 }
