@@ -204,6 +204,8 @@ export default function AllplanBulutContent() {
         <div className="container mx-auto px-6 max-w-[1400px]">
           <SectionHeader
             title="Genel Ana Özellikler ve Tüm Kullanıcılar için Geliştirmeler"
+            titleSize="lg"
+            align="center"
           />
 
           <div className="mt-20 space-y-32">
@@ -315,6 +317,8 @@ export default function AllplanBulutContent() {
         <div className="container mx-auto px-6 max-w-[1400px]">
           <SectionHeader
             title="ALLPLAN Cloud"
+            titleSize="lg"
+            align="center"
           />
 
           <div className="mt-20 space-y-32">
@@ -324,9 +328,9 @@ export default function AllplanBulutContent() {
                 <div className="flex-1 w-full group relative">
                   <div className="mb-4 flex items-center px-1">
                     <span className={`text-xs font-bold px-3 py-1.5 rounded-full border ${feature.package === '#Basic' ? 'bg-green-500/10 text-green-500 border-green-500/20' :
-                        feature.package === '#Concept' ? 'bg-blue-500/10 text-blue-500 border-blue-500/20' :
-                          feature.package === '#SCIA Engineer' ? 'bg-orange-500/10 text-orange-500 border-orange-500/20' :
-                            'bg-purple-500/10 text-purple-500 border-purple-500/20'
+                      feature.package === '#Concept' ? 'bg-blue-500/10 text-blue-500 border-blue-500/20' :
+                        feature.package === '#SCIA Engineer' ? 'bg-orange-500/10 text-orange-500 border-orange-500/20' :
+                          'bg-purple-500/10 text-purple-500 border-purple-500/20'
                       }`}>
                       Dahil Olduğu Paket: {feature.package}
                     </span>
