@@ -178,6 +178,10 @@ export default function AllplanBulutContent() {
       icon: Network,
       img: sciaBimplusImg,
       videoUrl: null,
+      externalLink: {
+        text: "SCIA Engineer İncele",
+        url: "https://www.scia.net/en"
+      },
       details: [
         "SCIA Engineer'daki en son geliştirmelerle, ekipler artık tek bir paylaşılan yapısal model üzerinden iş birliği yapabilir.",
         "Mühendisler değişiklikleri izleyebilir, Disiplinler arası daha verimli koordinasyon sağlanır, Herkes en güncel tasarım verisiyle çalışır.",
@@ -368,6 +372,22 @@ export default function AllplanBulutContent() {
                       </div>
                     </DialogContent>
                   </Dialog>
+
+                  {/* External Link Button */}
+                  {feature.externalLink && (
+                    <div className="mt-4">
+                      <a
+                        href={feature.externalLink.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block"
+                      >
+                        <Button variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-all">
+                          {feature.externalLink.text}
+                        </Button>
+                      </a>
+                    </div>
+                  )}
                 </div>
 
                 {/* Text Side */}
