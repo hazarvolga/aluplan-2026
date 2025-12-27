@@ -82,6 +82,9 @@ const postHeroSection = (
   </>
 );
 
+import BridgeHeroBackground from "@/components/BridgeHeroBackground";
+import heroBg from "@/assets/solutions/kopru-bg.png";
+
 export default function Page() {
   return (
     <EnhancedSolutionTemplate
@@ -95,6 +98,8 @@ export default function Page() {
           title="Köprü Mühendisliği"
           subtitle="DAHA FAZLASINI TALEP EDEN KÖPRÜ MÜHENDİSLERİ İÇİN."
           description="ALLPLAN'ın köprü mühendisliğine yönelik BIM çözümü ile herhangi bir köprü tipinin disiplinler arası 4D modelini üretin; aynı modelden çizim ve analiz için yararlanın."
+          customBackground={<BridgeHeroBackground />}
+          backgroundImage={heroBg}
         />
       )}
       stats={stats}

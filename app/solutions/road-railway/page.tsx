@@ -100,6 +100,8 @@ const preWorkflowSection = (
   <WorkflowTabsTemplate categories={workflowCategories} title="Yol ve Altyapı Tasarımı İçin Allplan İş Akışları" subtitle="Allplan ile altyapı projelerinizde verimliliği artırın" />
 );
 
+import RoadHeroBackground from "@/components/RoadHeroBackground";
+
 export default function Page() {
   return (
     <EnhancedSolutionTemplate
@@ -112,6 +114,7 @@ export default function Page() {
         <SolutionHero badge="KARAYOLU VE DEMİRYOLU ALTYAPISI" title="KARAYOLU VE DEMİRYOLU ALTYAPISI" subtitle="DAHA FAZLASINI İSTEYEN ALTYAPI TASARIMCILARI İÇİN." description={`ALLPLAN’in karayolu, demiryolu ve altyapı tasarımına yönelik BIM çözümleri, tasarımdan inşa sürecine kadar tüm süreci kapsar. Allplan, proje tasarımı ve teslimatı için daha fazla üretkenliği destekleyen işbirlikçi iş akışlarıyla köprüler dahil olmak üzere diğer inşaat mühendisliği disiplini tasarım gereksinimleriyle sorunsuz entegrasyon sağlar. Karayolu, demiryolu ve altyapı planlama yazılımınızdan daha fazlasını bekleyin!
 ÜSTÜN İNŞAAT İÇİN ÇOK MALZEMELİ ÇÖZÜM`}
           backgroundImage={heroBg}
+          customBackground={<RoadHeroBackground />}
         />
       )}
       stats={stats}

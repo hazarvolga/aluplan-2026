@@ -16,6 +16,8 @@ import iconDigitalizationPlant from "@/assets/products/precast/reasons/digitaliz
 import iconOptimizedDecisions from "@/assets/products/precast/reasons/optimized_decisions-1.png";
 import iconMobileSolutions from "@/assets/products/precast/reasons/mobile_solutions-1.png";
 
+import PrecastHeroBackground from "@/components/PrecastHeroBackground";
+
 export default function ClientPage() {
   const stats = [
     { value: "52%", label: "DAHA FAZLA ZAMAN", description: "daha hızlı ve daha doğru tasarım çıktıları, görselleştirmeler ve detaylı inşaat çizimleri. * 3B ile 2B karşılaştırıldığında" },
@@ -55,6 +57,7 @@ export default function ClientPage() {
           title="PREKAST İMALATI"
           subtitle="DAHA FAZLASINI İSTEYEN PREKAST TASARIMCILARI İÇİN"
           description="Prekast, inşaat sektörünün en hızlı büyüyen segmentlerinden biridir. Bu nedenle ALLPLAN, prekast projelerinin tasarımı, detaylandırması ve uygulanması için benzersiz iş akışları sunar. Yüksek düzeyde otomatikleştirilmiş iş akışları maksimum üretkenlik ve hassasiyet sağlar. Allplan'daki entegre prekast fonksiyonları hakkında daha fazla bilgi edinin!"
+          customBackground={<PrecastHeroBackground />}
         />
       }
       postHeroSection={

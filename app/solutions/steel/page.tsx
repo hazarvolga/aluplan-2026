@@ -38,6 +38,8 @@ const reasons = [
   { title: "OTOMATİK KARMAŞIK MODELLEME GÖREVLERİ", description: "Merdivenleri, korkulukları, karmaşık geometriyi ve daha fazlasını modellemek için otomatik araçlarla çeşitli çeliği modellemede zamandan tasarruf edin.", image: iconComplexModeling },
 ];
 
+import SteelHeroBackground from "@/components/SteelHeroBackground";
+
 export default function Page() {
   return (
     <EnhancedSolutionTemplate
@@ -51,6 +53,7 @@ export default function Page() {
           title="ÇELİK DETAYLANDIRMA & İMALAT"
           subtitle="DAHA FAZLASINI İSTEYEN ÇELİK ÜRETİCİLERİ İÇİN"
           description="ALLPLAN'deki SDS2, pazarın tek hepsi bir arada çelik detaylandırma ve bağlantı tasarımı BIM çözümünü sunar, imalattan sahaya çalışan eksiksiz tasarımlar sunar ve çelik konstrüksiyon projelerinizin doğruluğunu ve verimliliğini artırır. Çelik detaylandırma yazılımınızdan daha fazlasını bekleyin."
+          customBackground={<SteelHeroBackground />}
         />
       )}
       stats={stats}
