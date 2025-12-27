@@ -29,117 +29,132 @@ function ParametricBuilding() {
         return () => clearInterval(interval)
     }, [])
 
-    // Parametric Logic Spec:
-    // 9 Modules x 5 Floors = 45 Floors
-    // Each module: Rotate +3 deg (around Y), Translate +2.5 X, -1.5 Z (relative to below)
+    // OMNITURM Architectural Implementation
+    // Spec: 
+    // Base: Floors 0-14 (Office)
+    // Swing: Floors 15-22 (Residential / Hip-Swing) - Spiral Shift
+    // Top: Floors 23-44 (Office) - Vertical, offset
 
     const floors = useMemo(() => {
         const floorArray = []
 
-        // Scale parameters to fit scene
+        // Config
         const scale = 0.08
-        const moduleCount = 9
-        const floorsPerModule = 5
-        const totalFloors = moduleCount * floorsPerModule
-
+        const totalFloors = 45
         const floorHeight = 4.2 * scale
-        const baseWidth = 40 * scale
-        const baseDepth = 35 * scale
+        const baseWidth = 35 * scale // Reduced slightly to emphasize height
+        const baseDepth = 30 * scale
 
-        // Transform per module (Accumulative)
-        const rotStep = 3 * (Math.PI / 180)
-        const transXStep = 2.5 * scale
-        const transZStep = -1.5 * scale
+        // Hip Swing Config
+        const swingStart = 15
+        const swingEnd = 22
+        const swingLength = swingEnd - swingStart + 1
 
-        for (let m = 0; m < moduleCount; m++) {
-            const modRot = m * rotStep
-            const modX = m * transXStep
-            const modZ = m * transZStep
+        // Max offset ~5m scaled
+        const maxShiftX = 5.0 * scale
+        const maxShiftZ = 2.5 * scale
+        const maxRotation = 10 * (Math.PI / 180) // 10 degrees total twist in swing
 
-            for (let f = 0; f < floorsPerModule; f++) {
-                const globalIndex = (m * floorsPerModule) + f
-                const progress = globalIndex / totalFloors
+        // Helper to get floor transform
+        const getFloorTransform = (index: number) => {
+            let x = 0, z = 0, rot = 0
 
-                const isVisible = buildProgress > progress
+            if (index < swingStart) {
+                // Base: Stable
+                x = 0; z = 0; rot = 0;
+            } else if (index <= swingEnd) {
+                // Swing Zone: Progressive Spiral Shift
+                // Interpret "Spiral Shift": X/Z translation + Rotation
+                const progress = (index - swingStart) / (swingLength)
+                // Ease in-out for smooth structural transition? 
+                // Or linear for "Module Stacking"? User mentioned "stepped offsets". 
+                // Let's use linear steps for readability of "modules".
 
-                let floorOpacity = 0
-                const baseOpacity = 0.5
-                if (isVisible) {
-                    if (buildProgress < progress + 0.1) {
-                        floorOpacity = (buildProgress - progress) * 10 * baseOpacity
-                    } else {
-                        floorOpacity = baseOpacity
-                    }
+                x = progress * maxShiftX
+                z = progress * maxShiftZ
+                rot = progress * maxRotation
+            } else {
+                // Top: Stable at final swing position
+                // "Üst kısım alt kısıma göre farklı offset ile yer alır"
+                x = maxShiftX
+                z = maxShiftZ
+                rot = maxRotation
+            }
+            return { x, z, rot }
+        }
+
+        for (let i = 0; i < totalFloors; i++) {
+            const progress = i / totalFloors
+            const isVisible = buildProgress > progress
+
+            let floodOpacity = 0
+            const baseOpacity = 0.5
+
+            if (isVisible) {
+                if (buildProgress < progress + 0.1) {
+                    floodOpacity = (buildProgress - progress) * 8 * baseOpacity
+                } else {
+                    floodOpacity = baseOpacity
                 }
+            }
 
-                if (isVisible && floorOpacity > 0) {
-                    const yPos = (globalIndex * floorHeight) - 6 // Center vertically
+            if (isVisible && floodOpacity > 0) {
+                const trans = getFloorTransform(i)
+                const yPos = (i * floorHeight) - 8 // Center vertically
 
-                    floorArray.push(
-                        <group
-                            key={globalIndex}
-                            position={[modX, yPos, modZ]}
-                            rotation={[0, modRot, 0]}
-                        >
-                            {/* Floor Rect */}
-                            <lineSegments>
-                                <edgesGeometry args={[new THREE.BoxGeometry(baseWidth, 0.05, baseDepth)]} />
-                                <lineBasicMaterial color="#3b82f6" transparent opacity={floorOpacity} linewidth={1} />
-                            </lineSegments>
+                floorArray.push(
+                    <group
+                        key={i}
+                        position={[trans.x, yPos, trans.z]}
+                        rotation={[0, trans.rot, 0]}
+                    >
+                        {/* Floor Slab */}
+                        <lineSegments>
+                            <edgesGeometry args={[new THREE.BoxGeometry(baseWidth, 0.08, baseDepth)]} />
+                            <lineBasicMaterial color="#3b82f6" transparent opacity={floodOpacity} linewidth={1} />
+                        </lineSegments>
 
-                            {/* Corners */}
-                            <points>
-                                <bufferGeometry>
-                                    <bufferAttribute
-                                        attach="attributes-position"
-                                        count={4}
-                                        array={new Float32Array([
-                                            -baseWidth / 2, 0, -baseDepth / 2,
-                                            baseWidth / 2, 0, -baseDepth / 2,
-                                            baseWidth / 2, 0, baseDepth / 2,
-                                            -baseWidth / 2, 0, baseDepth / 2,
-                                        ])}
-                                        itemSize={3}
-                                    />
-                                </bufferGeometry>
-                                <pointsMaterial size={0.05} color="#60a5fa" transparent opacity={floorOpacity * 1.5} />
-                            </points>
-
-                            {/* Vertical Columns / Connections */}
-                            {/* Logic: Connect to next floor. 
-                  If next floor is in same module -> straight up.
-                  If next floor is new module -> rotated & shifted connection. 
+                        {/* Central Core (Betonarme Çekirdek) - Always vertical? 
+                  Actually, in hip-swing towers, core usually stays straight, floor plates shift around it.
+                  If I put core inside this group, it shifts WITH the floor.
+                  To show "Core" passing through, it should be inversely shifted? 
+                  Or simpler: The core shifts slightly or is minimal.
+                  Let's model "Core" as a smaller box inside, shifted BACK to 0,0 relative to world?
+                  No, structurally, the core might follow the center of mass or stay straight.
+                  Let's draw a local core that follows the floor to represent the "usable area" core, 
+                  but visually connecting them creates the spine.
               */}
-                            {globalIndex < totalFloors - 1 && (
-                                <FloorConnector
-                                    width={baseWidth}
-                                    depth={baseDepth}
-                                    height={floorHeight}
-                                    opacity={floorOpacity * 0.6}
-                                    // Transform to apply to "Target" relative to "Source" (Local frame)
-                                    // If same module: Identity transform
-                                    // If new module: Apply rotStep & transStep (but in Local frame?)
-                                    // Note: Our modules are positioned in World Space.
-                                    // The "Connector" is drawn inside the Current Floor Group.
-                                    // So we need Target Position relevant to Current Group.
+                        <mesh>
+                            <boxGeometry args={[baseWidth * 0.3, floorHeight, baseDepth * 0.3]} />
+                            <meshBasicMaterial color="#1e40af" transparent opacity={floodOpacity * 0.3} wireframe />
+                        </mesh>
 
-                                    // Current Global: [modX, yPos, modZ], Rot: modRot
-                                    // Next Global: 
-                                    //   Same Module: [modX, yPos+h, modZ], Rot: modRot ==> Relative: [0, h, 0], Rot: 0
-                                    //   Next Module: [modX+dx, yPos+h, modZ+dz], Rot: modRot+dr 
+                        {/* Balcony / Terrace Indication in Swing Zone */}
+                        {i >= swingStart && i <= swingEnd && (
+                            <lineSegments position={[baseWidth / 2 + 0.2 * scale, 0, 0]}>
+                                <edgesGeometry args={[new THREE.BoxGeometry(1 * scale, 0.05, baseDepth * 0.8)]} />
+                                <lineBasicMaterial color="#60a5fa" transparent opacity={floodOpacity * 0.8} />
+                            </lineSegments>
+                        )}
 
-                                    // We need (NextGlobal - CurrentGlobal) rotated by (-CurrentRot) to get Local Displacement.
+                        {/* Columns to Next Floor */}
+                        {i < totalFloors - 1 && (
+                            <FloorConnector
+                                width={baseWidth}
+                                depth={baseDepth}
+                                height={floorHeight}
+                                opacity={floodOpacity * 0.6}
 
-                                    isTransition={f === floorsPerModule - 1}
-                                    deltaGlobalX={transXStep}
-                                    deltaGlobalZ={transZStep}
-                                    deltaRot={rotStep}
-                                    currentGlobalRot={modRot}
-                                />
-                            )}
-                        </group>
-                    )
-                }
+                                // Column Logic: Connect Corners
+                                isTransition={true} // Always calculate relative position for accuracy
+                                deltaGlobalX={getFloorTransform(i + 1).x - trans.x}
+                                deltaGlobalZ={getFloorTransform(i + 1).z - trans.z}
+                                deltaRot={getFloorTransform(i + 1).rot - trans.rot}
+                                currentGlobalRot={trans.rot}
+                            />
+                        )}
+                    </group>
+                )
             }
         }
         return floorArray
@@ -148,7 +163,12 @@ function ParametricBuilding() {
     return (
         <group ref={groupRef}>
             {floors}
-            <gridHelper args={[20, 20, "#3b82f6", "#1e40af"]} position={[0, -7, 0]} />
+            {/* Structural Central Axis Helper (Optional - shows verticality reference) */}
+            <mesh position={[0, -0.5, 0]}>
+                <cylinderGeometry args={[0.05, 0.05, 15, 8]} />
+                <meshBasicMaterial color="#1e40af" opacity={0.1} transparent />
+            </mesh>
+            <gridHelper args={[20, 20, "#3b82f6", "#1e40af"]} position={[0, -8.5, 0]} />
         </group>
     )
 }
@@ -158,64 +178,46 @@ function FloorConnector({ width, depth, height, opacity, isTransition, deltaGlob
     isTransition: boolean,
     deltaGlobalX: number, deltaGlobalZ: number, deltaRot: number, currentGlobalRot: number
 }) {
-    // Corners in Local Space
     const w = width / 2
     const d = depth / 2
+
+    // Outer perimeter columns
     const corners = [
         [-w, -d], [w, -d], [w, d], [-w, d]
     ]
 
     const positions = new Float32Array(4 * 2 * 3)
 
-    // Calculate Target Transformation matrix elements (if transition)
-    // Inverse Rotation of Current Group:
-    const cosInv = Math.cos(-currentGlobalRot)
-    const sinInv = Math.sin(-currentGlobalRot)
-
-    // Rotation of Next Group (Relative to Global, but we only need Relative to Current for point calculation?)
-    // Actually simpler:
-    // Target Point Global = NextGroupPos + Rotate(NextGroupRot) * CornerLocal
-    // Source Point Global = CurrGroupPos + Rotate(CurrGroupRot) * CornerLocal
-    // We want Target Point in Current Local Space.
-    // TargetLocal = Rotate(-CurrRot) * (TargetGlobal - CurrGroupPos)
-
-    // DiffPos = NextGroupPos - CurrGroupPos
-    // If transition: DiffPos = [deltaGlobalX, height, deltaGlobalZ]
-    // If no transition: DiffPos = [0, height, 0]
-
-    const diffX = isTransition ? deltaGlobalX : 0
-    const diffY = height
-    const diffZ = isTransition ? deltaGlobalZ : 0
-
-    // Next Rotation relative to Global IS (CurrentRot + DeltaRot)
-    // We need to apply this to the corner to get the corner's offset from its center, then add DiffPos, then rotate back.
-
-    const nextRot = isTransition ? deltaRot : 0 // Relative rotation
+    // Math to connect Current(Local) to Next(Local in Current Frame)
+    // See previous implementation logic
+    const nextRot = deltaRot
     const cosNext = Math.cos(nextRot)
     const sinNext = Math.sin(nextRot)
 
+    const cosInv = Math.cos(-currentGlobalRot)
+    const sinInv = Math.sin(-currentGlobalRot)
+
+    // Rotate global displacement into local frame
+    const localDiffX = deltaGlobalX * cosInv - deltaGlobalZ * sinInv
+    const localDiffZ = deltaGlobalX * sinInv + deltaGlobalZ * cosInv
+
     for (let i = 0; i < 4; i++) {
-        // Source (Local)
+        // Start
         positions[i * 6 + 0] = corners[i][0]
         positions[i * 6 + 1] = 0
         positions[i * 6 + 2] = corners[i][1]
 
-        // Target (Local relative to current group)
-        // 1. Rotate corner by relative rotation (nextRot)
-        //    (This gives the orientation of the corner in the Next Group's frame)
+        // End
+        // 1. Next corner rotated by relative rotation
         let tx = corners[i][0] * cosNext - corners[i][1] * sinNext
         let tz = corners[i][0] * sinNext + corners[i][1] * cosNext
 
-        // 2. Add Relative Displacement (Global diff rotated into local frame)
-        //    We need to rotate vector [diffX, 0, diffZ] by [-currentGlobalRot]
-        const localDiffX = diffX * cosInv - diffZ * sinInv
-        const localDiffZ = diffX * sinInv + diffZ * cosInv
-
+        // 2. Add slant displacement
         tx += localDiffX
         tz += localDiffZ
 
         positions[i * 6 + 3] = tx
-        positions[i * 6 + 4] = diffY
+        positions[i * 6 + 4] = height
         positions[i * 6 + 5] = tz
     }
 
