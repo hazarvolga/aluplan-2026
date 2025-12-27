@@ -249,7 +249,7 @@ export default function ArchitecturalHeroBackground() {
                 >
                     <ambientLight intensity={0.5} />
                     <pointLight position={[10, 10, 10]} intensity={1} />
-                    <group position={[8, 0, -8]}>
+                    <group position={[12, 0, -12]}>
                         <ParametricBuilding />
                     </group>
                 </Canvas>
