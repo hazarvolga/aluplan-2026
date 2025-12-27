@@ -168,7 +168,7 @@ function ParametricBuilding() {
                 <cylinderGeometry args={[0.05, 0.05, 15, 8]} />
                 <meshBasicMaterial color="#1e40af" opacity={0.1} transparent />
             </mesh>
-            <gridHelper args={[20, 20, "#3b82f6", "#1e40af"]} position={[0, -8.5, 0]} />
+            {/* Grid Removed per user request */}
         </group>
     )
 }
@@ -244,12 +244,12 @@ export default function ArchitecturalHeroBackground() {
                 <Canvas
                     // Isometric view per spec
                     orthographic
-                    camera={{ zoom: 40, position: [20, 20, 20] }}
+                    camera={{ zoom: 60, position: [20, 20, 20] }}
                     style={{ background: 'transparent' }}
                 >
                     <ambientLight intensity={0.5} />
                     <pointLight position={[10, 10, 10]} intensity={1} />
-                    <group position={[12, 0, -12]}>
+                    <group position={[8, 0, -8]}>
                         <ParametricBuilding />
                     </group>
                 </Canvas>
