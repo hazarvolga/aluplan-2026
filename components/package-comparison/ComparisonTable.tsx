@@ -20,8 +20,11 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                 {/* Header */}
                 <thead className="sticky top-0 bg-background z-10">
                     <tr>
-                        <th className="text-left p-4 border-b-2 border-border font-bold text-foreground min-w-[250px]">
-                            Özellikler
+                        <th className="text-left p-4 border-b-2 border-border font-bold text-foreground w-[180px]">
+                            Özellik
+                        </th>
+                        <th className="text-left p-4 border-b-2 border-border font-bold text-foreground min-w-[300px]">
+                            Açıklama
                         </th>
                         {packages.map((pkg) => (
                             <th
@@ -53,7 +56,7 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                             {/* Category Header Row */}
                             <tr key={`cat-${category.id}`} className="bg-muted/30">
                                 <td
-                                    colSpan={packages.length + 1}
+                                    colSpan={2}
                                     className="p-4 font-bold text-foreground"
                                 >
                                     <div className="flex items-center gap-2">
@@ -61,6 +64,7 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                                         {category.name}
                                     </div>
                                 </td>
+                                <td colSpan={packages.length} className="bg-muted/30"></td>
                             </tr>
 
                             {/* Feature Rows */}
@@ -69,13 +73,11 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                                     key={feature.id}
                                     className="border-b border-border/10 hover:bg-muted/20 transition-colors"
                                 >
-                                    <td className="p-4">
-                                        <div className="font-medium text-foreground">
-                                            {feature.name}
-                                        </div>
-                                        <div className="text-xs text-muted-foreground mt-1">
-                                            {feature.description}
-                                        </div>
+                                    <td className="p-4 font-medium text-foreground">
+                                        {feature.name}
+                                    </td>
+                                    <td className="p-4 text-sm text-muted-foreground">
+                                        {feature.description}
                                     </td>
                                     {packages.map((pkg) => {
                                         const hasFeature = feature.packages.includes(pkg.id);
