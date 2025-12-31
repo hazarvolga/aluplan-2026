@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GlobalTrialCTA from "@/components/GlobalTrialCTA";
 import Breadcrumb from "@/components/ui/breadcrumb";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 
 const inter = Inter({
@@ -82,6 +83,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main id="main" aria-label="Ana içerik">{children}</main>
           <GlobalTrialCTA />
           <Footer />
+          <ScrollToTopButton />
         </ThemeProvider>
       </body>
     </html>
