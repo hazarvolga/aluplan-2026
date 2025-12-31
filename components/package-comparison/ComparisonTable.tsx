@@ -26,10 +26,21 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                         {packages.map((pkg) => (
                             <th
                                 key={pkg.id}
-                                className="p-4 border-b-2 text-center font-bold min-w-[120px]"
-                                style={{ borderColor: pkg.color, color: pkg.color }}
+                                className="p-2 border-b-2 text-center font-bold min-w-[50px] relative"
+                                style={{ borderColor: pkg.color }}
                             >
-                                <div className="text-sm">{pkg.name}</div>
+                                <div className="flex items-center justify-center h-32">
+                                    <div
+                                        className="whitespace-nowrap text-sm font-bold"
+                                        style={{
+                                            writingMode: 'vertical-rl',
+                                            transform: 'rotate(180deg)',
+                                            color: pkg.color
+                                        }}
+                                    >
+                                        {pkg.name}
+                                    </div>
+                                </div>
                             </th>
                         ))}
                     </tr>
