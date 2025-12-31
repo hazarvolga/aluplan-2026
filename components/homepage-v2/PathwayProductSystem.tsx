@@ -45,7 +45,7 @@ const roles: Role[] = [
     },
     {
         id: "fabricator",
-        label: "ÜRETİCİ",
+        label: "PREKAST",
         title: "Akıllı Üretim",
         description: "Modelden doğrudan fabrikaya veri aktarımı. Prekast ve çelik üretiminde maksimum verimlilik ve sıfır hata.",
         color: "#F59E0B", // Amber
@@ -74,14 +74,14 @@ const products: Product[] = [
         title: "ALLPLAN Professional",
         description: "Tam kapsamlı BIM modelleme ve dokümantasyon.",
         href: "/products/allplan-professional",
-        relatedRoles: ["architect", "engineer"]
+        relatedRoles: ["engineer"]
     },
     {
         id: "ultimate",
         title: "ALLPLAN Ultimate",
         description: "Tüm disiplinler için en kapsamlı paketimiz.",
         href: "/products/allplan-ultimate",
-        relatedRoles: ["architect", "engineer", "fabricator"]
+        relatedRoles: ["engineer", "fabricator"]
     },
     {
         id: "civil",
