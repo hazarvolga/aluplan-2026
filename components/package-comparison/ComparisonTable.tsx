@@ -68,10 +68,13 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                             </tr>
 
                             {/* Feature Rows */}
-                            {category.features.map((feature) => (
+                            {category.features.map((feature, index) => (
                                 <tr
                                     key={feature.id}
-                                    className="border-b border-border/10 hover:bg-muted/20 transition-colors"
+                                    className={`hover:bg-muted/20 transition-colors ${feature.id === 'visualization'
+                                            ? 'border-b-2 border-border'
+                                            : 'border-b border-border/10'
+                                        }`}
                                 >
                                     <td className="p-4 font-medium text-foreground">
                                         {feature.name}
