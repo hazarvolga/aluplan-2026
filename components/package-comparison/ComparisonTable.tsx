@@ -68,40 +68,49 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                             </tr>
 
                             {/* Feature Rows */}
-                            {category.features.map((feature, index) => (
-                                <tr
-                                    key={feature.id}
-                                    className={`hover:bg-muted/20 transition-colors ${feature.id === 'visualization'
-                                            ? 'border-b-2 border-border'
-                                            : 'border-b border-border/10'
-                                        }`}
-                                >
-                                    <td className="p-4 font-medium text-foreground">
-                                        {feature.name}
-                                    </td>
-                                    <td className="p-4 text-sm text-muted-foreground">
-                                        {feature.description}
-                                    </td>
-                                    {packages.map((pkg) => {
-                                        const hasFeature = feature.packages.includes(pkg.id);
-                                        return (
-                                            <td
-                                                key={`${feature.id}-${pkg.id}`}
-                                                className="p-4 text-center"
-                                            >
-                                                {hasFeature ? (
-                                                    <Check
-                                                        className="h-5 w-5 mx-auto"
-                                                        style={{ color: pkg.color }}
-                                                    />
-                                                ) : (
-                                                    <X className="h-5 w-5 mx-auto text-muted-foreground/30" />
-                                                )}
-                                            </td>
-                                        );
-                                    })}
-                                </tr>
-                            ))}
+                            {category.features.map((feature, index) => {
+                                // Add thick separator after these features
+                                const needsSeparator = [
+                                    'visualization',      // Görselleştirme
+                                    'quantity-cost',      // Metraj ve Maliyet
+                                    'site-planning'       // Şantiye Planlaması
+                                ].includes(feature.id);
+
+                                return (
+                                    <tr
+                                        key={feature.id}
+                                        className={`hover:bg-muted/20 transition-colors ${needsSeparator
+                                                ? 'border-b-2 border-border'
+                                                : 'border-b border-border/10'
+                                            }`}
+                                    >
+                                        <td className="p-4 font-medium text-foreground">
+                                            {feature.name}
+                                        </td>
+                                        <td className="p-4 text-sm text-muted-foreground">
+                                            {feature.description}
+                                        </td>
+                                        {packages.map((pkg) => {
+                                            const hasFeature = feature.packages.includes(pkg.id);
+                                            return (
+                                                <td
+                                                    key={`${feature.id}-${pkg.id}`}
+                                                    className="p-4 text-center"
+                                                >
+                                                    {hasFeature ? (
+                                                        <Check
+                                                            className="h-5 w-5 mx-auto"
+                                                            style={{ color: pkg.color }}
+                                                        />
+                                                    ) : (
+                                                        <X className="h-5 w-5 mx-auto text-muted-foreground/30" />
+                                                    )}
+                                                </td>
+                                            );
+                                        })}
+                                    </tr>
+                                );
+                            })}
                         </>
                     ))}
                 </tbody>
