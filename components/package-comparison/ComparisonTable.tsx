@@ -71,17 +71,20 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                             {category.features.map((feature, index) => {
                                 // Add thick separator after these features
                                 const needsSeparator = [
-                                    'visualization',      // Görselleştirme
-                                    'quantity-cost',      // Metraj ve Maliyet
-                                    'site-planning'       // Şantiye Planlaması
+                                    'visualization',           // Görselleştirme
+                                    'quantity-cost',          // Metraj ve Maliyet
+                                    'site-planning',          // Şantiye Planlaması
+                                    'prestressed-tendons',    // Parametrik Öngerilimli Tendonlar
+                                    'bridge-design',          // Kod Bazlı Köprü Tasarımı
+                                    'prefab-connectors'       // Prefabrik Konnektörler
                                 ].includes(feature.id);
 
                                 return (
                                     <tr
                                         key={feature.id}
                                         className={`hover:bg-muted/20 transition-colors ${needsSeparator
-                                                ? 'border-b-2 border-border'
-                                                : 'border-b border-border/10'
+                                            ? 'border-b-2 border-border'
+                                            : 'border-b border-border/10'
                                             }`}
                                     >
                                         <td className="p-4 font-medium text-foreground">
