@@ -451,7 +451,7 @@ export const categories: Category[] = [
                 id: "license-server",
                 name: "License Server/Yüzer Lisans",
                 description: "Lisans Server, etkin yönetim ve lisansların optimum kullanımını sağlar. Lisans Server, aşağıdakilere güvenli erişim sağlar: şirket ağındaki lisanslar, ofis dışındaki lisanslar için esnek kullanım sunar.",
-                packages: []
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "bimplus-extra",
