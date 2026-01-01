@@ -235,7 +235,8 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
+    );
 };
 
 export default ComparisonTable;
