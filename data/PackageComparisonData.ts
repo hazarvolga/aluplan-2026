@@ -330,6 +330,117 @@ export const categories: Category[] = [
                 packages: ["basic", "concept", "professional", "ultimate", "civil"]
             }
         ]
+    },
+    {
+        id: "scia",
+        name: "Yapısal Analiz ve Tasarım - SCIA Engineer",
+        icon: "Calculator",
+        features: [
+            {
+                id: "scia-concept",
+                name: "SCIA Engineer - Concept Edition",
+                description: "Bu sürüm, öncelikle beton ve keresteden yapılmış yaygın yapıları modelleyen ve tasarlayan mühendisleri hedeflemektedir. Ancak, temel çelik kontrolleri de desteklenmektedir. Temel doğrusal olmayan hesaplamalar, stabilite ve dinamik analizle birlikte gerçekleştirilebilir. Bu sürüm, öncelikle konut binaları tasarlayan mühendislere uygun olacaktır.",
+                packages: ["ultimate"]
+            },
+            {
+                id: "scia-ultimate",
+                name: "SCIA Engineer Ultimate Edition",
+                description: "Ultimate Edition, yüksek katlı veya karmaşık binalar, köprüler ve sivil yapılar gibi en zorlu yapıları tasarlayan yapı mühendislerine uygundur. Toprak-yapı etkileşimi, beton için malzeme doğrusal olmayan analizi, inşaat aşamaları analizi ve ön gerilimli beton tasarımı gibi gelişmiş analiz türlerini içerir.",
+                packages: ["professional"]
+            }
+        ]
+    },
+    {
+        id: "cloud-services",
+        name: "ALLPLAN Cloud Services",
+        icon: "Cloud",
+        features: [
+            {
+                id: "bimplus",
+                name: "Bulut tabanlı işbirliği",
+                description: "Bimplus Pro 10 GB bulut tabanlı BIM işbirliği platformu.",
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+            },
+            {
+                id: "share",
+                name: "Proje Ekip Çalışması",
+                description: "Allplan Share, uzaktan çalışan ekip üyeleri için de ideal olan bir şirket ağı üzerinden ekip çalışmasına olanak sağlar.",
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+            },
+            {
+                id: "workgroup",
+                name: "Ofis Ekip Çalışması (Workgroup)",
+                description: "Allplan Workgroup Yöneticisi aracılığıyla yerel bir şirket ağı içerisinde verimli ekip çalışmasını kolaylaştırın.",
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+            },
+            {
+                id: "exchange",
+                name: "Çizim ve Plan Dağıtımı",
+                description: "Web tabanlı plan dağıtım aracı Allplan Exchange, çeşitli plan formatlarının oluşturulmasını ve dağıtımını yönetmek ve e-posta grupları aracılığıyla otomatik değişiklik bildirimleri sağlamak için özel olarak tasarlanmıştır.",
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+            },
+            {
+                id: "cloud-resources",
+                name: "Bulut Destekli Proje Kaynakları",
+                description: "Bulut ofis kaynakları, ALLPLAN proje kaynaklarının tam bulut tabanlı dağıtımına olanak tanır.",
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+            },
+            {
+                id: "autoconverter",
+                name: "Analitik Model Oluşturma",
+                description: "AutoConverter aracılığıyla geometrik modellerin, Frilo Statics, Scia Engineer ve diğerleri gibi yapısal analiz çözümleri tarafından doğrudan kullanılabilecek analitik modellere akıllı dönüşümü.",
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+            },
+            {
+                id: "bluebeam",
+                name: "ALLPLAN - Bluebeam Bağlantısı",
+                description: "Gelişmiş iş akışları – Dijital teslimat sürecini desteklemek için Bluebeam ile bağlantı, kullanıcıların 2B dokümantasyonu Bluebeam Studio Proje ortamından ALLPLAN iş akışlarına getirmelerine olanak tanır.",
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+            },
+            {
+                id: "model-viewer",
+                name: "ALLPLAN Model Görüntüleyici",
+                description: "BIMPLUS'a gömülü IFC dosya görüntüleyicisi, kullanıcıların proje verilerini hızla görselleştirmesine olanak tanır. Yüklemek ve işlemeyi beklemek yerine, kullanıcılar artık BIMPLUS'ta bir revizyon oluşturmadan ve tam olarak yüklemeden önce modelleri görsel olarak hızlı bir şekilde önizleyebilir ve kontrol edebilir.",
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+            },
+            {
+                id: "ai-viz",
+                name: "AI-Destekli Görseleştirme (yeni)",
+                description: "İlham verici, ayrıntılı AI destekli görselleştirmeler oluşturmak için bağlantılar. Nemetschek AI Visualizer'ı ve EvolveLab'ın Veras AI Visualizer'ına entegrasyonu içerir ³.",
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+            }
+        ]
+    },
+    {
+        id: "purchasable",
+        name: "Satınalınabilir Seçenekler",
+        icon: "ShoppingCart",
+        features: [
+            {
+                id: "license-server",
+                name: "License Server/Yüzer Lisans",
+                description: "Lisans Server, etkin yönetim ve lisansların optimum kullanımını sağlar. Lisans Server, aşağıdakilere güvenli erişim sağlar: şirket ağındaki lisanslar, ofis dışındaki lisanslar için esnek kullanım sunar.",
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+            },
+            {
+                id: "bimplus-extra",
+                name: "BIMPLUS",
+                description: "Bulut işbirliği kapasitenizi genişletmek için 10 GB depolama alanına sahip ek BIMPLUS lisansı.",
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+            },
+            {
+                id: "cloud-storage",
+                name: "Allplan Cloud Storage",
+                description: "Projelerinizin kesintiye uğramadan devam edebilmesi için ek 100 GB depolama alanı.",
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+            },
+            {
+                id: "bim2form",
+                name: "BIM²form Add On - Kalıp",
+                description: "Kalıp yerleştirme, atama ve yönetme araçları.",
+                packages: ["concept", "professional", "ultimate", "civil", "precast"]
+            }
+        ]
     }
 ];
 

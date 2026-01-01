@@ -3,8 +3,6 @@ import { PageWrapper } from "@/components/layout-v2/PageWrapper";
 import { HeroInternal } from "@/components/layout-v2/HeroInternal";
 import { packages, categories } from "@/data/PackageComparisonData";
 import ComparisonTable from "@/components/package-comparison/ComparisonTable";
-import CloudServicesSection from "@/components/package-comparison/CloudServicesSection";
-import PurchasableOptionsSection from "@/components/package-comparison/PurchasableOptionsSection";
 
 export default function PaketKarsilastirmaPage() {
     return (
@@ -19,14 +17,6 @@ export default function PaketKarsilastirmaPage() {
                 {/* Main Comparison Table - PDF Style */}
                 <div className="bg-card border border-border/10 rounded-2xl p-6 mb-12">
                     <ComparisonTable packages={packages} categories={categories} />
-                </div>
-
-                {/* Cloud Services Section */}
-                <CloudServicesSection />
-
-                {/* Purchasable Options Section */}
-                <div className="mt-8">
-                    <PurchasableOptionsSection />
                 </div>
 
                 {/* Footer Note */}
