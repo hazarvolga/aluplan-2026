@@ -70,21 +70,6 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                 <tbody>
                     {categories.map((category) => (
                         <>
-                            {/* Category Header Row */}
-                            <tr key={`cat-${category.id}`} className="bg-muted/30">
-                                <td
-                                    colSpan={2}
-                                    className="p-4 font-bold text-foreground"
-                                >
-                                    <div className="flex items-center gap-2">
-                                        {getIcon(category.icon)}
-                                        {category.name}
-                                    </div>
-                                </td>
-                                <td className="bg-muted/30"></td>
-                                <td colSpan={packages.length} className="bg-muted/30"></td>
-                            </tr>
-
                             {/* Feature Rows */}
                             {category.features.map((feature, index) => {
                                 // Add thick separator after these features
