@@ -91,55 +91,55 @@ export const categories: Category[] = [
                 id: "interface",
                 name: "Arayüz",
                 description: "IFC, BCF, PDF, RVT, 3DM, SKP, OBJ, LandXML, DWG, DGN, C4D, STL, WRL, SAF ve diğerleri dahil olmak üzere sorunsuz veri alışverişi için tüm ilgili dosya arayüzleri. Yazılım arayüzleri (örn. Python API ve Visual Scripting) otomatik iş akışlarını mümkün kılar.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil"]
+                packages: []
             },
             {
                 id: "3d-modeling",
                 name: "3B Modelleme",
                 description: "En karmaşık ve zorlu geometri için bile yüksek performanslı 3B modelleme. Modelleme işlevi, Siemens Parasolid modelleme çekirdeği tarafından desteklenmektedir.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil"]
+                packages: []
             },
             {
                 id: "2d-drawing",
                 name: "2B Çizim",
                 description: "Çekici, özlü ve ayrıntılı çizimler için hassas 2B çizim için kapsamlı işlevsellik.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil"]
+                packages: []
             },
             {
                 id: "clash-detection",
                 name: "Çakışma Kontrolü",
                 description: "Yumuşak ve sert çakışmaları tespit eden araç.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil"]
+                packages: []
             },
             {
                 id: "bim-easy",
                 name: "İçerik Paketi BIM Easy",
                 description: "Önceden tanımlanmış ancak özelleştirilebilir şirket standardı. Kapsamlı sihirbazlar aracılığıyla modeller ve çizimler oluştururken tutarlı bir çalışma şekli sağlar. Başlamayı kolaylaştırır, üretkenliği artırır ve özellikle openBIM projelerinde iyi yapılandırılmış veri alışverişi sağlar.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil"]
+                packages: []
             },
             {
                 id: "visualization",
                 name: "Görselleştirme",
                 description: "Vulkan gibi en son teknolojilere dayalı geniş çeşitlilikte görselleştirme yetenekleri. Real-time Render ve CineWare, Lumion ve Twinmotion'a canlı bağlantılar içerir.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil"]
+                packages: []
             },
             {
                 id: "external-data",
                 name: "Dış Veri Kaynakları",
                 description: "GIS (Coğrafi Bilgi Sistemi) bilgilerini, 3B içeriği ve dokuları içe aktarmak için GIS Konnektörü ve İçerik Bağlayıcısı.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil"]
+                packages: []
             },
             {
                 id: "building-components",
                 name: "Yapı Bileşenleri",
                 description: "Duvarlar, döşemeler, kirişler, kolonlar, temeller, merdivenler, çatılar, pencereler, kapılar ve cepheler gibi esnek yapı bileşenleri.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil"]
+                packages: []
             },
             {
                 id: "info-management",
                 name: "Gelişmiş Bilgi Modellemesi ve Yönetimi",
                 description: "Gelişmiş araçlar, Dijitalleştirilmiş modellerin etkili bilgi modellemesi ve yönetimi için Bilgi paleti ve referanslı belgelerin yönetimi için Xref Yöneticisi.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil"]
+                packages: []
             }
         ]
     },
@@ -152,19 +152,19 @@ export const categories: Category[] = [
                 id: "terrain-model",
                 name: "Arazi Modeli",
                 description: "Koordinat noktalarına veya nokta bulutlarına dayalı güçlü arazi modellemesi.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil"]
+                packages: []
             },
             {
                 id: "urban-landscape",
                 name: "Şehir Bölge Planlaması ve Peyzaj Tasarımı",
                 description: "Kitle modelleri, kentsel ve peysaj tasarımı ve ayrıca dikim planları için işlevler.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil"]
+                packages: []
             },
             {
                 id: "utilities",
                 name: "Kanalizasyon ve Tesisler",
                 description: "Su, kanalizasyon, elektrik, internet, doğal gaz veya bölgesel ısıtma gibi hizmetlerin yönlendirilmesi.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil"]
+                packages: []
             }
         ]
     },
@@ -177,13 +177,13 @@ export const categories: Category[] = [
                 id: "quantity-cost",
                 name: "Metraj ve Maliyet",
                 description: "Modellenmiş ve modellenmemiş objelerin kesin, doğrulanabilir metrajı ve maliyeti.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil"]
+                packages: []
             },
             {
                 id: "advanced-viz",
                 name: "Gelişmiş Görseleştirme",
                 description: "MAXON'dan yüksek performanslı GPU hızlandırmalı Redshift renderer.",
-                packages: ["concept", "professional", "ultimate", "civil"]
+                packages: []
             }
         ]
     },
@@ -196,13 +196,13 @@ export const categories: Category[] = [
                 id: "reinforcement",
                 name: "Donatı",
                 description: "Çubuk donatısı, hasır donatısı ve BAMTEC hasırları dahil olmak üzere son derece güçlü donatılandırma işlevi.",
-                packages: ["professional", "ultimate", "civil"]
+                packages: []
             },
             {
                 id: "steel-connections",
                 name: "Çelik Bağlantılar",
                 description: "Kaynaklı ve Bolded çelik bağlantıları için araçlar.",
-                packages: ["professional", "ultimate", "civil"]
+                packages: []
             }
         ]
     },
@@ -215,25 +215,25 @@ export const categories: Category[] = [
                 id: "road",
                 name: "Yol (Road)",
                 description: "Yollar, Trafik ringleri ve süpürülmüş yol analizi dahil olmak üzere tamamen parametrik yol tasarımı.",
-                packages: ["professional", "ultimate", "civil"]
+                packages: []
             },
             {
                 id: "site-planning",
                 name: "Şantiye Planlaması",
                 description: "İnşaat alanı yerleşimini planlamak için vinçler, konteynerler, şantiye çitleri ve diğer ekipmanlar.",
-                packages: ["professional", "ultimate", "civil"]
+                packages: []
             },
             {
                 id: "foundation-works",
                 name: "Temel İşleri",
                 description: "Fore kazık ve palplanş duvarları ve zemin ankrajları gibi akıllı kazı iksaları.",
-                packages: ["professional", "ultimate", "civil"]
+                packages: []
             },
             {
                 id: "excavation",
                 name: "Arazi Kazılar",
                 description: "Kazıları modellemek ve kazı çizimleri oluşturmak için araçlar.",
-                packages: ["professional", "ultimate", "civil"]
+                packages: []
             }
         ]
     },
@@ -246,19 +246,19 @@ export const categories: Category[] = [
                 id: "precast-components",
                 name: "Prekast Tasarım ve Detaylandırma",
                 description: "Kirişler, kolonlar, merdivenler vb. gibi akıllı prefabrik beton bileşenler.",
-                packages: ["professional", "ultimate", "civil"]
+                packages: []
             },
             {
                 id: "production-drawings",
                 name: "Eleman Planı (Üretim Paftası)",
                 description: "Bireysel elemanların ayrıntılı üretim paftalarını otomatik, şablon tabanlı oluşturulması.",
-                packages: ["professional", "ultimate", "civil"]
+                packages: []
             },
             {
                 id: "parametric-modeling",
                 name: "Parametrik Modelleme",
                 description: "Köprüler, tüneller, istinat duvarları, ses bariyerleri ve prekast kirişli köprüler gibi özel köprü tipleri de dahil olmak üzere altyapıların dört boyutlu parametrik modellemesi ve detaylandırılması için özel çözüm.",
-                packages: ["professional", "ultimate", "civil"]
+                packages: []
             }
         ]
     },
@@ -271,19 +271,19 @@ export const categories: Category[] = [
                 id: "prestressed-tendons",
                 name: "Parametrik Öngerilimli Tendonlar",
                 description: "Öngerilme tendonlarının modellenmesi ve analizi.",
-                packages: ["professional", "ultimate", "civil"]
+                packages: []
             },
             {
                 id: "bridge-analysis",
                 name: "Yapısal Köprü Analizi",
                 description: "Köprülerin doğrusal yapısal analizi için özel çözüm.",
-                packages: ["precast"]
+                packages: []
             },
             {
                 id: "bridge-design",
                 name: "Kod Bazlı Köprü Tasarımı",
                 description: "Ulusal ekler ve AASHTO LRFD ile Eurocode'a göre tasarım ve kontroller.",
-                packages: ["precast"]
+                packages: []
             }
         ]
     },
@@ -296,19 +296,19 @@ export const categories: Category[] = [
                 id: "precast-slabs-manufacturing",
                 name: "Prekast Döşeme İmalatı",
                 description: "Prekast döşemelerin otomatik elementasyonu, bağlantısı, detaylandırılması ve imalatı için özel çözüm.",
-                packages: ["precast", "precast-slabs"]
+                packages: []
             },
             {
                 id: "precast-walls-manufacturing",
                 name: "Prekast Duvar İmalatı",
                 description: "Prekast duvarların otomatik elementasyonu, bağlantısı, detaylandırılması ve imalatı için özel çözüm.",
-                packages: ["precast", "precast-walls"]
+                packages: []
             },
             {
                 id: "prefab-connectors",
                 name: "Prefabrik Konnektörler",
                 description: "Kurumsal Kaynak Planlama (ERP), Üretim Yürütme Sistemleri (MES) ve Hasır Kaynak Sistemlerine (MWS) optimum bağlantılar, otomatik, tamamen dijital üretime olanak tanır.",
-                packages: ["precast", "precast-slabs", "precast-walls"]
+                packages: []
             }
         ]
     },
@@ -321,13 +321,13 @@ export const categories: Category[] = [
                 id: "tr-en",
                 name: "İngilizce, Türkçe Dil ve Ülke Ayarları",
                 description: "İngilizce artı aşağıdaki dillerden biri Bulgarca, Çince, Hırvatça, Çekçe, Felemenkçe, İngilizce, Fransızca, Almanca, Yunanca, Macarca, İtalyanca, Japonca, Litvanyaca, Lehçe, Portekizce, Rumence, Rusça, Sırpça, Slovakça, Slovence, İspanyolca, Türkçe, Vietnamca ve ilgili ülke ayarları.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil"]
+                packages: []
             },
             {
                 id: "all-languages",
                 name: "Diğer Tüm Diller ve Ülke Ayarları",
                 description: "23 Allplan dilinin tümü, yani Bulgarca, Çince, Hırvatça, Çekçe, Felemenkce, İngilizce, Fransızca, Almanca, Yunanca, Macarca, İtalyanca, Japonca, Litince, Lehçe, Portekizce, Romence, Rusça, Sırpça, Slovakça, Slovence, İspanyolca, Türkçe, Vietnamca ve ilgili ülke ayarları.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil"]
+                packages: []
             }
         ]
     },
@@ -340,13 +340,13 @@ export const categories: Category[] = [
                 id: "scia-concept",
                 name: "SCIA Engineer - Concept Edition",
                 description: "Bu sürüm, öncelikle beton ve keresteden yapılmış yaygın yapıları modelleyen ve tasarlayan mühendisleri hedeflemektedir. Ancak, temel çelik kontrolleri de desteklenmektedir. Temel doğrusal olmayan hesaplamalar, stabilite ve dinamik analizle birlikte gerçekleştirilebilir. Bu sürüm, öncelikle konut binaları tasarlayan mühendislere uygun olacaktır.",
-                packages: ["ultimate"]
+                packages: []
             },
             {
                 id: "scia-ultimate",
                 name: "SCIA Engineer Ultimate Edition",
                 description: "Ultimate Edition, yüksek katlı veya karmaşık binalar, köprüler ve sivil yapılar gibi en zorlu yapıları tasarlayan yapı mühendislerine uygundur. Toprak-yapı etkileşimi, beton için malzeme doğrusal olmayan analizi, inşaat aşamaları analizi ve ön gerilimli beton tasarımı gibi gelişmiş analiz türlerini içerir.",
-                packages: ["professional"]
+                packages: []
             }
         ]
     },
@@ -359,55 +359,55 @@ export const categories: Category[] = [
                 id: "bimplus",
                 name: "Bulut tabanlı işbirliği",
                 description: "Bimplus Pro 10 GB bulut tabanlı BIM işbirliği platformu.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: []
             },
             {
                 id: "share",
                 name: "Proje Ekip Çalışması",
                 description: "Allplan Share, uzaktan çalışan ekip üyeleri için de ideal olan bir şirket ağı üzerinden ekip çalışmasına olanak sağlar.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: []
             },
             {
                 id: "workgroup",
                 name: "Ofis Ekip Çalışması (Workgroup)",
                 description: "Allplan Workgroup Yöneticisi aracılığıyla yerel bir şirket ağı içerisinde verimli ekip çalışmasını kolaylaştırın.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: []
             },
             {
                 id: "exchange",
                 name: "Çizim ve Plan Dağıtımı",
                 description: "Web tabanlı plan dağıtım aracı Allplan Exchange, çeşitli plan formatlarının oluşturulmasını ve dağıtımını yönetmek ve e-posta grupları aracılığıyla otomatik değişiklik bildirimleri sağlamak için özel olarak tasarlanmıştır.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: []
             },
             {
                 id: "cloud-resources",
                 name: "Bulut Destekli Proje Kaynakları",
                 description: "Bulut ofis kaynakları, ALLPLAN proje kaynaklarının tam bulut tabanlı dağıtımına olanak tanır.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: []
             },
             {
                 id: "autoconverter",
                 name: "Analitik Model Oluşturma",
                 description: "AutoConverter aracılığıyla geometrik modellerin, Frilo Statics, Scia Engineer ve diğerleri gibi yapısal analiz çözümleri tarafından doğrudan kullanılabilecek analitik modellere akıllı dönüşümü.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: []
             },
             {
                 id: "bluebeam",
                 name: "ALLPLAN - Bluebeam Bağlantısı",
                 description: "Gelişmiş iş akışları – Dijital teslimat sürecini desteklemek için Bluebeam ile bağlantı, kullanıcıların 2B dokümantasyonu Bluebeam Studio Proje ortamından ALLPLAN iş akışlarına getirmelerine olanak tanır.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: []
             },
             {
                 id: "model-viewer",
                 name: "ALLPLAN Model Görüntüleyici",
                 description: "BIMPLUS'a gömülü IFC dosya görüntüleyicisi, kullanıcıların proje verilerini hızla görselleştirmesine olanak tanır. Yüklemek ve işlemeyi beklemek yerine, kullanıcılar artık BIMPLUS'ta bir revizyon oluşturmadan ve tam olarak yüklemeden önce modelleri görsel olarak hızlı bir şekilde önizleyebilir ve kontrol edebilir.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: []
             },
             {
                 id: "ai-viz",
                 name: "AI-Destekli Görseleştirme (yeni)",
                 description: "İlham verici, ayrıntılı AI destekli görselleştirmeler oluşturmak için bağlantılar. Nemetschek AI Visualizer'ı ve EvolveLab'ın Veras AI Visualizer'ına entegrasyonu içerir ³.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: []
             }
         ]
     },
@@ -420,25 +420,25 @@ export const categories: Category[] = [
                 id: "license-server",
                 name: "License Server/Yüzer Lisans",
                 description: "Lisans Server, etkin yönetim ve lisansların optimum kullanımını sağlar. Lisans Server, aşağıdakilere güvenli erişim sağlar: şirket ağındaki lisanslar, ofis dışındaki lisanslar için esnek kullanım sunar.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: []
             },
             {
                 id: "bimplus-extra",
                 name: "BIMPLUS",
                 description: "Bulut işbirliği kapasitenizi genişletmek için 10 GB depolama alanına sahip ek BIMPLUS lisansı.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: []
             },
             {
                 id: "cloud-storage",
                 name: "Allplan Cloud Storage",
                 description: "Projelerinizin kesintiye uğramadan devam edebilmesi için ek 100 GB depolama alanı.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: []
             },
             {
                 id: "bim2form",
                 name: "BIM²form Add On - Kalıp",
                 description: "Kalıp yerleştirme, atama ve yönetme araçları.",
-                packages: ["concept", "professional", "ultimate", "civil", "precast"]
+                packages: []
             }
         ]
     }
@@ -449,13 +449,13 @@ export const sciaEngineer = [
         id: "scia-concept",
         name: "SCIA Engineer - Concept Edition",
         description: "Beton ve keresteden yapılmış yaygın yapıları modelleyen ve tasarlayan mühendisleri hedefler. Temel çelik kontrolleri, doğrusal olmayan hesaplamalar, stabilite ve dinamik analiz. Konut binaları için ideal.",
-        packages: ["ultimate"]
+        packages: []
     },
     {
         id: "scia-ultimate",
         name: "SCIA Engineer - Ultimate Edition",
         description: "Yüksek katlı veya karmaşık binalar, köprüler ve sivil yapılar için. Toprak-yapı etkileşimi, malzeme doğrusal olmayan analizi, inşaat aşamaları analizi ve ön gerilimli beton tasarımı.",
-        packages: ["professional"]
+        packages: []
     }
 ];
 
@@ -539,6 +539,6 @@ export const purchasableOptions = [
         id: "bim2form",
         name: "BIM²form Add On - Kalıp",
         description: "Kalıp yerleştirme, atama ve yönetme araçları.",
-        packages: ["concept", "professional", "ultimate", "civil", "precast"]
+        packages: []
     }
 ];
