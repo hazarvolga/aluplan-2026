@@ -137,7 +137,7 @@ export default function AllplanBulutContent() {
         "Connect platformu üzerinden sunulan AI Assistant, ALLPLAN yazılım çözümleri (ALLPLAN, SCIA, FRILO, SDS2 ve BIMPLUS) ile çalışma şeklinizi dönüştürmek için tasarlanmış yenilikçi bir araçtır. Mimarlık, mühendislik, üretim ve iş birliği alanlarında uzmanlığı ile, bu akıllı asistan platformun tüm alanlarında kapsamlı destek sağlar.",
         "ALLPLAN'a özgü konuların ötesinde, AI Assistant geniş AEC endüstri standartları ve en iyi uygulamalar hakkında da değerli bir kaynak sunar; süreçleri hızlandırmanıza ve bilinçli kararlar almanıza yardımcı olur.",
         "İnşaat standartlarıyla ilgili rehberlik, Oda planlaması için akıllı öneriler, Projeleriniz için detaylı kod uzantıları geliştirme desteği gibi ihtiyaçlarınızda pratik çözümler sağlar.",
-        "7/24 erişilebilir ve birden fazla dilde kullanılabilir, böylece uzman desteğine her zaman ulaşabilirsiniz.",
+        "Her zaman erişilebilir ve birden fazla dilde kullanılabilir, böylece uzman desteğine her zaman ulaşabilirsiniz.",
         "AI Assistant, abonelikli müşteriler için önizleme sürümü olarak sunulacaktır. Bu sadece bir araç değil; AEC iş akışlarınızda verimliliği artıran ve yeni olanaklar açan güvenilir bir iş ortağıdır."
       ]
     },
