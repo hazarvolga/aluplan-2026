@@ -197,7 +197,8 @@ export const categories: Category[] = [
                 id: "advanced-viz",
                 name: "Gelişmiş Görseleştirme",
                 description: "MAXON'dan yüksek performanslı GPU hızlandırmalı Redshift renderer.",
-                packages: []
+                packages: ["professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["professional"]
             }
         ]
     },
@@ -210,13 +211,15 @@ export const categories: Category[] = [
                 id: "reinforcement",
                 name: "Donatı",
                 description: "Çubuk donatısı, hasır donatısı ve BAMTEC hasırları dahil olmak üzere son derece güçlü donatılandırma işlevi.",
-                packages: []
+                packages: ["professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["professional"]
             },
             {
                 id: "steel-connections",
                 name: "Çelik Bağlantılar",
                 description: "Kaynaklı ve Bolded çelik bağlantıları için araçlar.",
-                packages: []
+                packages: ["professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["professional"]
             }
         ]
     },
@@ -229,13 +232,15 @@ export const categories: Category[] = [
                 id: "road",
                 name: "Yol (Road)",
                 description: "Yollar, Trafik ringleri ve süpürülmüş yol analizi dahil olmak üzere tamamen parametrik yol tasarımı.",
-                packages: []
+                packages: ["professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["professional"]
             },
             {
                 id: "site-planning",
                 name: "Şantiye Planlaması",
                 description: "İnşaat alanı yerleşimini planlamak için vinçler, konteynerler, şantiye çitleri ve diğer ekipmanlar.",
-                packages: []
+                packages: ["professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["professional"]
             },
             {
                 id: "foundation-works",
