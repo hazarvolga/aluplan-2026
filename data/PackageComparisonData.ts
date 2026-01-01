@@ -437,8 +437,8 @@ export const categories: Category[] = [
                 id: "ai-viz",
                 name: "AI-Destekli Görseleştirme (yeni)",
                 description: "İlham verici, ayrıntılı AI destekli görselleştirmeler oluşturmak için bağlantılar. Nemetschek AI Visualizer'ı ve EvolveLab'ın Veras AI Visualizer'ına entegrasyonu içerir ³.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
-                starPackages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: ["professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             }
         ]
     },
