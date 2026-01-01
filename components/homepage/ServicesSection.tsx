@@ -26,7 +26,7 @@ const services = [
     {
         icon: HeadphonesIcon,
         title: "Teknik Destek",
-        description: "Uzman ekibimizle 7/24 teknik destek hizmeti",
+        description: "Uzman ekibimizle profesyonel teknik destek hizmeti",
         status: "coming",
         href: "#",
         cta: "Yakında"
@@ -99,8 +99,8 @@ const ServicesSection = () => {
                                 transition={{ delay: index * 0.1 }}
                             >
                                 <Card className={`group h-full transition-all duration-500 border overflow-hidden ${isActive
-                                        ? 'border-white/10 bg-graphite-900 hover:border-accent/30 cursor-pointer'
-                                        : 'border-white/5 bg-graphite-900/50'
+                                    ? 'border-white/10 bg-graphite-900 hover:border-accent/30 cursor-pointer'
+                                    : 'border-white/5 bg-graphite-900/50'
                                     }`}>
                                     <CardContent className="p-6 flex flex-col h-full">
                                         <div className="flex items-start justify-between mb-4">
