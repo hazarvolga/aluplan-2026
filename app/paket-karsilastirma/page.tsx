@@ -19,21 +19,6 @@ export default function PaketKarsilastirmaPage() {
                     <ComparisonTable packages={packages} categories={categories} />
                 </div>
 
-                {/* Footer Note */}
-                <div className="mt-8 p-6 bg-muted/30 border border-border/10 rounded-xl">
-                    <p className="text-sm text-muted-foreground">
-                        <strong>Not:</strong> SCIA Engineer entegrasyonu hakkında detaylı bilgi için{" "}
-                        <a
-                            href="https://www.scia.net/en/scia-engineer/editions-comparison"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-accent hover:underline"
-                        >
-                            SCIA Engineer karşılaştırma sayfasını
-                        </a>{" "}
-                        ziyaret edebilirsiniz.
-                    </p>
-                </div>
             </div>
         </PageWrapper>
     );
