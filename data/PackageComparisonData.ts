@@ -126,7 +126,7 @@ export const categories: Category[] = [
             {
                 id: "external-data",
                 name: "Dış Veri Kaynakları",
-                description: "GIS Konnektörü ve İçerik Bağlayıcısı ile GIS bilgileri, 3B içerik ve dokuları içe aktarma.",
+                description: "GIS (Coğrafi Bilgi Sistemi) bilgilerini, 3B içeriği ve dokuları içe aktarmak için GIS Konnektörü ve İçerik Bağlayıcısı.",
                 packages: ["basic", "concept", "professional", "ultimate", "civil"]
             },
             {
@@ -138,7 +138,7 @@ export const categories: Category[] = [
             {
                 id: "info-management",
                 name: "Gelişmiş Bilgi Modellemesi ve Yönetimi",
-                description: "Bilgi paleti ve Xref Yöneticisi ile etkili bilgi modellemesi.",
+                description: "Gelişmiş araçlar, Dijitalleştirilmiş modellerin etkili bilgi modellemesi ve yönetimi için Bilgi paleti ve referanslı belgelerin yönetimi için Xref Yöneticisi.",
                 packages: ["basic", "concept", "professional", "ultimate", "civil"]
             }
         ]
@@ -157,7 +157,7 @@ export const categories: Category[] = [
             {
                 id: "urban-landscape",
                 name: "Şehir Bölge Planlaması ve Peyzaj Tasarımı",
-                description: "Kitle modelleri, kentsel ve peyzaj tasarımı, dikim planları.",
+                description: "Kitle modelleri, kentsel ve peysaj tasarımı ve ayrıca dikim planları için işlevler.",
                 packages: ["basic", "concept", "professional", "ultimate", "civil"]
             },
             {
