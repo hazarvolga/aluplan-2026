@@ -37,7 +37,7 @@ export default function ClientPage() {
     { icon: Phone, title: "Telefon", details: ["(+90) 216 225 84 41", "(+90) 549 499 73 79"] },
     { icon: Mail, title: "E-posta", details: ["info@aluplan.com.tr"] },
     { icon: MapPin, title: "Adres", details: ["Quick Tower – Workinton", "İçerenköy Mah. Topçu İbrahim Sok. No: 5, Ataşehir"] },
-    { icon: Clock, title: "Çalışma Saatleri", details: ["Pazartesi - Cuma: 09:00 - 18:00", "7/24 Acil Destek"] },
+    { icon: Clock, title: "Çalışma Saatleri", details: ["Pazartesi - Cuma: 09:00 - 18:00"] },
   ];
   return (
     <div className="dark min-h-screen bg-graphite-950">
@@ -102,8 +102,8 @@ export default function ClientPage() {
                   </CardContent>
                 </Card>
                 <div className="mt-8 p-6 bg-accent/10 rounded-lg">
-                  <h4 className="font-semibold mb-2">Acil Destek mi Gerekiyor?</h4>
-                  <p className="text-sm text-muted-foreground mb-4">Mevcut müşterilerimiz için 7/24 teknik destek hattımız aktif.</p>
+                  <h4 className="font-semibold mb-2">Teknik Destek</h4>
+                  <p className="text-sm text-muted-foreground mb-4">Mevcut müşterilerimiz için teknik destek hattımız aktif.</p>
                   <Button variant="outline" size="sm" asChild>
                     <a href="https://aluplan.net.tr" target="_blank" rel="noopener noreferrer">
                       Destek Merkezine Git
