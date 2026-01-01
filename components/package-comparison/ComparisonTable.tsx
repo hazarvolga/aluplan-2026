@@ -71,6 +71,9 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                         <>
                             {/* Feature Rows */}
                             {category.features.map((feature, index) => {
+                                // Show special header for SCIA Engineer category before first feature
+                                const showSciaHeader = category.id === 'scia' && index === 0;
+
                                 // Add thick separator after these features
                                 const needsSeparator = [
                                     'visualization',           // Görselleştirme
@@ -78,63 +81,79 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                                     'site-planning',          // Şantiye Planlaması
                                     'prestressed-tendons',    // Parametrik Öngerilimli Tendonlar
                                     'bridge-design',          // Kod Bazlı Köprü Tasarımı
-                                    'prefab-connectors'       // Prefabrik Konnektörler
+                                    'prefab-connectors',      // Prefabrik Konnektörler
+                                    'all-languages'           // Diğer Tüm Diller
                                 ].includes(feature.id);
 
                                 return (
-                                    <tr
-                                        key={feature.id}
-                                        className={`hover:bg-muted/20 transition-colors ${needsSeparator
-                                            ? 'border-b-2 border-border'
-                                            : 'border-b border-border/10'
-                                            }`}
-                                    >
-                                        <td className="p-4 font-medium text-foreground">
-                                            {feature.name}
-                                        </td>
-                                        <td className="p-4 text-sm text-muted-foreground">
-                                            {feature.description}
-                                        </td>
-                                        <td className="bg-muted/10"></td>
-                                        {packages.map((pkg) => {
-                                            const hasFeature = feature.packages.includes(pkg.id);
-
-                                            // Use starPackages array if defined, otherwise no stars
-                                            const useStarIcon = hasFeature &&
-                                                feature.starPackages?.includes(pkg.id);
-
-                                            return (
+                                    <React.Fragment key={feature.id}>
+                                        {/* SCIA Engineer Header */}
+                                        {showSciaHeader && (
+                                            <tr className="bg-muted/20">
                                                 <td
-                                                    key={`${feature.id}-${pkg.id}`}
-                                                    className="p-4 text-center"
+                                                    colSpan={2 + 1 + packages.length}
+                                                    className="p-3 font-bold text-foreground text-sm"
                                                 >
-                                                    {hasFeature ? (
-                                                        useStarIcon ? (
-                                                            <svg
-                                                                className="h-5 w-5 mx-auto"
-                                                                fill="currentColor"
-                                                                viewBox="0 0 20 20"
-                                                                style={{ color: pkg.color }}
-                                                            >
-                                                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                                            </svg>
-                                                        ) : (
-                                                            <svg
-                                                                className="h-4 w-4 mx-auto"
-                                                                fill="currentColor"
-                                                                viewBox="0 0 20 20"
-                                                                style={{ color: pkg.color }}
-                                                            >
-                                                                <rect x="4" y="4" width="12" height="12" />
-                                                            </svg>
-                                                        )
-                                                    ) : (
-                                                        <X className="h-5 w-5 mx-auto text-muted-foreground/30" />
-                                                    )}
+                                                    YAPISAL ANALİZ VE TASARIM - SCIA ENGINEER • ¹
                                                 </td>
-                                            );
-                                        })}
-                                    </tr>
+                                            </tr>
+                                        )}
+
+                                        {/* Feature Row */}
+                                        <tr
+                                            key={feature.id}
+                                            className={`hover:bg-muted/20 transition-colors ${needsSeparator
+                                                ? 'border-b-2 border-border'
+                                                : 'border-b border-border/10'
+                                                }`}
+                                        >
+                                            <td className="p-4 font-medium text-foreground">
+                                                {feature.name}
+                                            </td>
+                                            <td className="p-4 text-sm text-muted-foreground">
+                                                {feature.description}
+                                            </td>
+                                            <td className="bg-muted/10"></td>
+                                            {packages.map((pkg) => {
+                                                const hasFeature = feature.packages.includes(pkg.id);
+
+                                                // Use starPackages array if defined, otherwise no stars
+                                                const useStarIcon = hasFeature &&
+                                                    feature.starPackages?.includes(pkg.id);
+
+                                                return (
+                                                    <td
+                                                        key={`${feature.id}-${pkg.id}`}
+                                                        className="p-4 text-center"
+                                                    >
+                                                        {hasFeature ? (
+                                                            useStarIcon ? (
+                                                                <svg
+                                                                    className="h-5 w-5 mx-auto"
+                                                                    fill="currentColor"
+                                                                    viewBox="0 0 20 20"
+                                                                    style={{ color: pkg.color }}
+                                                                >
+                                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                                </svg>
+                                                            ) : (
+                                                                <svg
+                                                                    className="h-4 w-4 mx-auto"
+                                                                    fill="currentColor"
+                                                                    viewBox="0 0 20 20"
+                                                                    style={{ color: pkg.color }}
+                                                                >
+                                                                    <rect x="4" y="4" width="12" height="12" />
+                                                                </svg>
+                                                            )
+                                                        ) : (
+                                                            <X className="h-5 w-5 mx-auto text-muted-foreground/30" />
+                                                        )}
+                                                    </td>
+                                                );
+                                            })}
+                                        </tr>
+                                    </React.Fragment>
                                 );
                             })}
                         </>
