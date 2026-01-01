@@ -19,7 +19,7 @@ export default function Page() {
     "Otomatik metraj ve raporlama",
     "50+ dosya formatı desteği",
     "Python API ile özelleştirme",
-    "7/24 teknik destek",
+    "Profesyonel teknik destek",
   ];
 
   const packages = [
@@ -40,7 +40,7 @@ export default function Page() {
       name: "ALLPLAN Ultimate",
       price: "Teklif alın",
       description: "Kurumsal projeler için tam paket",
-      features: ["Tüm Professional özellikleri", "Gelişmiş analiz araçları", "Özel kütüphaneler", "Python API erişimi", "7/24 premium destek", "Eğitim ve danışmanlık", "Özel entegrasyonlar"],
+      features: ["Tüm Professional özellikleri", "Gelişmiş analiz araçları", "Özel kütüphaneler", "Python API erişimi", "Öncelikli premium destek", "Eğitim ve danışmanlık", "Özel entegrasyonlar"],
     },
   ];
 
