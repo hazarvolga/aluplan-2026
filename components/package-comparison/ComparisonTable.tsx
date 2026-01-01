@@ -100,6 +100,30 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                                             </tr>
                                         )}
 
+                                        {/* Cloud Services Header */}
+                                        {category.id === 'cloud-services' && index === 0 && (
+                                            <tr className="bg-muted/20">
+                                                <td
+                                                    colSpan={2 + 1 + packages.length}
+                                                    className="p-3 font-bold text-foreground text-sm"
+                                                >
+                                                    ALLPLAN CLOUD SERVICES ²
+                                                </td>
+                                            </tr>
+                                        )}
+
+                                        {/* Purchasable Options Header */}
+                                        {category.id === 'purchasable' && index === 0 && (
+                                            <tr className="bg-muted/20">
+                                                <td
+                                                    colSpan={2 + 1 + packages.length}
+                                                    className="p-3 font-bold text-foreground text-sm"
+                                                >
+                                                    SATINALINABİLİR SEÇENEKLER
+                                                </td>
+                                            </tr>
+                                        )}
+
                                         {/* Feature Row */}
                                         <tr
                                             key={feature.id}
