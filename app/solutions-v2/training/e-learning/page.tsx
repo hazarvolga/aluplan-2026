@@ -5,11 +5,11 @@ export default function ELearningPage() {
         <TrainingDetailTemplate
             title="E-Learning & Video Eğitimler"
             subtitle="Kendi hızınızda, istediğiniz zaman, istediğiniz yerde öğrenin."
-            overview="Allplan E-Learning platformu, yüzlerce video ders, adım adım rehberler ve sertifika programları sunar. Eğitim takvimlerine bağlı kalmadan, 7/24 erişebileceğiniz bu kütüphane, sürekli öğrenme için en büyük kaynağınızdır."
+            overview="Allplan E-Learning platformu, yüzlerce video ders, adım adım rehberler ve sertifika programları sunar. Eğitim takvimlerine bağlı kalmadan, her an erişebileceğiniz bu kütüphane, sürekli öğrenme için en büyük kaynağınızdır."
             heroCategory="DİJİTAL KÜTÜPHANE"
             stats={[
                 { value: "100+", label: "Video Ders" },
-                { value: "7/24", label: "Sınırsız Erişim" },
+                { value: "Her An", label: "Sınırsız Erişim" },
                 { value: "Mobil", label: "Uyumlu" },
                 { value: "Sertifika", label: "Tamamlama" }
             ]}
