@@ -154,13 +154,20 @@ export default function ConnectLicensePage() {
                 <div className="max-w-2xl mx-auto">
                     <h2 className="text-3xl font-bold text-white mb-6">Lisanslarınızı Yönetmeye Başlayın</h2>
                     <p className="text-gray-400 mb-10">
-                        Allplan Connect portalına giriş yaparak lisanslarınızı hemen organize edin.
+                        Allplan Connect portalına giriş yaparak lisanslarınızı hemen organize edin veya yönetici değişikliği için form doldurun.
                     </p>
-                    <Button asChild size="lg" className="bg-[#3B82F6] hover:bg-[#2563eb] text-white rounded-full px-12 py-6 text-lg shadow-lg shadow-blue-900/20">
-                        <a href="https://connect2.allplan.com/" target="_blank" rel="noopener noreferrer">
-                            Allplan Connect&apos;e Git <ArrowRight className="ml-2 h-5 w-5" />
-                        </a>
-                    </Button>
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <Button asChild size="lg" className="bg-[#3B82F6] hover:bg-[#2563eb] text-white rounded-full px-8 py-6 text-lg shadow-lg shadow-blue-900/20 w-full sm:w-auto">
+                            <a href="https://connect2.allplan.com/" target="_blank" rel="noopener noreferrer">
+                                Allplan Connect&apos;e Git <ArrowRight className="ml-2 h-5 w-5" />
+                            </a>
+                        </Button>
+                        <Button asChild size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 hover:text-white rounded-full px-8 py-6 text-lg w-full sm:w-auto">
+                            <a href="https://forms.office.com/r/HSrhvAkYmb" target="_blank" rel="noopener noreferrer">
+                                Lisans Yöneticisi Bilgi Formu
+                            </a>
+                        </Button>
+                    </div>
                 </div>
             </section>
         </PageWrapper>
