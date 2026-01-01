@@ -59,13 +59,6 @@ export const packages: Package[] = [
         description: "Altyapı, yol ve köprü projeleri için özel çözüm."
     },
     {
-        id: "precast",
-        name: "Precast",
-        tagline: "Prekast Özel Çözüm",
-        color: "#EF4444",
-        description: "Prekast üretimi ve detaylandırma otomasyonu."
-    },
-    {
         id: "precast-slabs",
         name: "Precast Slabs",
         tagline: "Prekast Döşeme",
@@ -78,6 +71,13 @@ export const packages: Package[] = [
         tagline: "Prekast Duvar",
         color: "#6366F1",
         description: "Prekast duvar üretimi için özel çözüm."
+    },
+    {
+        id: "precast",
+        name: "Precast",
+        tagline: "Prekast Özel Çözüm",
+        color: "#EF4444",
+        description: "Prekast üretimi ve detaylandırma otomasyonu."
     }
 ];
 

@@ -23,11 +23,11 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                     <tr className="absolute inset-0 pointer-events-none overflow-hidden">
                         <th colSpan={100} className="relative">
                             <div
-                                className="absolute inset-0 flex items-center justify-center opacity-[0.05] select-none text-foreground"
+                                className="absolute bottom-0 right-0 flex items-end justify-end opacity-[0.05] select-none text-foreground pr-4 pb-2"
                                 style={{
-                                    fontSize: '8rem',
+                                    fontSize: '6rem',
                                     fontWeight: 900,
-                                    letterSpacing: '0.5rem'
+                                    letterSpacing: '0.3rem'
                                 }}
                             >
                                 ALLPLAN
@@ -51,7 +51,7 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                                         writingMode: 'vertical-rl',
                                         transform: 'rotate(180deg)',
                                         fontSize: '1.5rem',
-                                        letterSpacing: '0.2rem'
+                                        letterSpacing: '0.05rem'
                                     }}
                                 >
                                     EDITIONS
