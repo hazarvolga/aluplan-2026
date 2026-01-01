@@ -1,4 +1,5 @@
 "use client"
+import React from "react";
 import { Category, Package } from "@/data/PackageComparisonData";
 import { Check, X } from "lucide-react";
 import * as Icons from "lucide-react";
