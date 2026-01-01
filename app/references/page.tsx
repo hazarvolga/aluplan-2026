@@ -10,6 +10,7 @@ import { Building2, GraduationCap, Building, School, HardHat, Landmark } from "l
 const references = [
     { name: "Ağırman Mimarlık Mühendsilik", category: "architecture" },
     { name: "Ahmet Tahir Gül Mimarlık", category: "architecture" },
+    { name: "Akat Prefabrike", category: "prefabrik" },
     { name: "Akyükselen İnşaat", category: "engineering" },
     { name: "Alpkon Yapı Tasarım", category: "engineering" },
     { name: "Altay ve Altay Müh. Mim.", category: "architecture" },
@@ -115,6 +116,7 @@ const references = [
     { name: "Toki - Toplu Konut İdaresi", category: "kamu" },
     { name: "Tolkim Dış Ticaret", category: "architecture" },
     { name: "Tözün Mimarlık", category: "architecture" },
+    { name: "Türk Alman Üniversitesi", category: "universite" },
     { name: "Türk Teknik", category: "engineering" },
     { name: "Türk Ytong", category: "architecture" },
     { name: "Türkerler Gama", category: "architecture" },
