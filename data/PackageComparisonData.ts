@@ -469,7 +469,7 @@ export const categories: Category[] = [
                 id: "bim2form",
                 name: "BIM²form Add On - Kalıp",
                 description: "Kalıp yerleştirme, atama ve yönetme araçları.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: ["ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             }
         ]
     }
