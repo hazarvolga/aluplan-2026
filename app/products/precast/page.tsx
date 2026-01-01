@@ -115,6 +115,7 @@ export default function Page() {
               <Button size="lg" className="bg-accent hover:bg-accent/90" asChild><a href="https://www.allplan.com/trial-or-subscription/" target="_blank" rel="noopener noreferrer">Ücretsiz Dene<ArrowRight className="ml-2 h-5 w-5" /></a></Button>
               <Button size="lg" variant="outline" asChild><a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">Teklif Talep Formu</a></Button>
               <Button size="lg" variant="outline" asChild><a href="/solutions-v2/faq"><ExternalLink className="mr-2 h-4 w-4" />Abonelik SSS</a></Button>
+              <Button size="lg" variant="outline" asChild><Link href="/paket-karsilastirma">Paket Karşılaştırma</Link></Button>
             </div>
           </div>
         </div>
