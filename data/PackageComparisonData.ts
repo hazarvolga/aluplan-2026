@@ -296,13 +296,13 @@ export const categories: Category[] = [
                 id: "bridge-analysis",
                 name: "Yapısal Köprü Analizi",
                 description: "Köprülerin doğrusal yapısal analizi için özel çözüm.",
-                packages: []
+                packages: ["civil"]
             },
             {
                 id: "bridge-design",
                 name: "Kod Bazlı Köprü Tasarımı",
                 description: "Ulusal ekler ve AASHTO LRFD ile Eurocode'a göre tasarım ve kontroller.",
-                packages: []
+                packages: ["civil"]
             }
         ]
     },
