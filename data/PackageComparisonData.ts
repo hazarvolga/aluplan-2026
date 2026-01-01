@@ -91,37 +91,37 @@ export const categories: Category[] = [
                 id: "interface",
                 name: "Arayüz",
                 description: "IFC, BCF, PDF, RVT, 3DM, SKP, OBJ, LandXML, DWG, DGN, C4D, STL, WRL, SAF ve diğerleri dahil olmak üzere sorunsuz veri alışverişi için tüm ilgili dosya arayüzleri. Yazılım arayüzleri (örn. Python API ve Visual Scripting) otomatik iş akışlarını mümkün kılar.",
-                packages: []
+                packages: ["basic", "concept", "professional"]
             },
             {
                 id: "3d-modeling",
                 name: "3B Modelleme",
                 description: "En karmaşık ve zorlu geometri için bile yüksek performanslı 3B modelleme. Modelleme işlevi, Siemens Parasolid modelleme çekirdeği tarafından desteklenmektedir.",
-                packages: []
+                packages: ["basic", "concept", "professional"]
             },
             {
                 id: "2d-drawing",
                 name: "2B Çizim",
                 description: "Çekici, özlü ve ayrıntılı çizimler için hassas 2B çizim için kapsamlı işlevsellik.",
-                packages: []
+                packages: ["basic", "concept", "professional"]
             },
             {
                 id: "clash-detection",
                 name: "Çakışma Kontrolü",
                 description: "Yumuşak ve sert çakışmaları tespit eden araç.",
-                packages: []
+                packages: ["basic", "concept", "professional"]
             },
             {
                 id: "bim-easy",
                 name: "İçerik Paketi BIM Easy",
                 description: "Önceden tanımlanmış ancak özelleştirilebilir şirket standardı. Kapsamlı sihirbazlar aracılığıyla modeller ve çizimler oluştururken tutarlı bir çalışma şekli sağlar. Başlamayı kolaylaştırır, üretkenliği artırır ve özellikle openBIM projelerinde iyi yapılandırılmış veri alışverişi sağlar.",
-                packages: []
+                packages: ["basic", "concept", "professional"]
             },
             {
                 id: "visualization",
                 name: "Görselleştirme",
                 description: "Vulkan gibi en son teknolojilere dayalı geniş çeşitlilikte görselleştirme yetenekleri. Real-time Render ve CineWare, Lumion ve Twinmotion'a canlı bağlantılar içerir.",
-                packages: []
+                packages: ["basic", "concept", "professional"]
             },
             {
                 id: "external-data",
