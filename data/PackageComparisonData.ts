@@ -327,7 +327,8 @@ export const categories: Category[] = [
                 id: "prefab-connectors",
                 name: "Prefabrik Konnektörler",
                 description: "Kurumsal Kaynak Planlama (ERP), Üretim Yürütme Sistemleri (MES) ve Hasır Kaynak Sistemlerine (MWS) optimum bağlantılar, otomatik, tamamen dijital üretime olanak tanır.",
-                packages: []
+                packages: ["precast"],
+                starPackages: ["precast"]
             }
         ]
     },
