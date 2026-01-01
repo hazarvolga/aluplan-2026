@@ -19,21 +19,6 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
             <table className="w-full border-collapse">
                 {/* Header */}
                 <thead className="sticky top-0 bg-background z-10 relative">
-                    {/* Watermark Background - positioned next to EDITIONS */}
-                    <tr className="absolute inset-0 pointer-events-none overflow-hidden">
-                        <th colSpan={100} className="relative">
-                            <div
-                                className="absolute bottom-0 left-[calc(180px+300px+60px)] flex items-end justify-start opacity-[0.15] select-none text-foreground pl-2 pb-2"
-                                style={{
-                                    fontSize: '6rem',
-                                    fontWeight: 900,
-                                    letterSpacing: '0.3rem'
-                                }}
-                            >
-                                ALLPLAN
-                            </div>
-                        </th>
-                    </tr>
 
                     <tr className="relative z-10">
                         <th className="text-left p-4 border-b-2 border-border font-bold text-foreground w-[180px]">
