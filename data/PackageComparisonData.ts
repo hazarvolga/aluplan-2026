@@ -457,19 +457,19 @@ export const categories: Category[] = [
                 id: "bimplus-extra",
                 name: "BIMPLUS",
                 description: "Bulut işbirliği kapasitenizi genişletmek için 10 GB depolama alanına sahip ek BIMPLUS lisansı.",
-                packages: []
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "cloud-storage",
                 name: "Allplan Cloud Storage",
                 description: "Projelerinizin kesintiye uğramadan devam edebilmesi için ek 100 GB depolama alanı.",
-                packages: []
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "bim2form",
                 name: "BIM²form Add On - Kalıp",
                 description: "Kalıp yerleştirme, atama ve yönetme araçları.",
-                packages: []
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             }
         ]
     }
