@@ -23,7 +23,7 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                     <tr className="absolute inset-0 pointer-events-none overflow-hidden">
                         <th colSpan={100} className="relative">
                             <div
-                                className="absolute inset-0 flex items-center justify-center opacity-[0.03] select-none"
+                                className="absolute inset-0 flex items-center justify-center opacity-[0.08] select-none"
                                 style={{
                                     fontSize: '8rem',
                                     fontWeight: 900,
@@ -49,7 +49,7 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                                 className="p-2 border-b-2 text-center font-bold min-w-[50px] relative"
                                 style={{ borderColor: pkg.color }}
                             >
-                                <div className="flex items-center justify-center h-32">
+                                <div className="flex items-end justify-center h-32">
                                     <div
                                         className="whitespace-nowrap text-sm font-bold"
                                         style={{
