@@ -341,7 +341,8 @@ export const categories: Category[] = [
                 id: "tr-en",
                 name: "İngilizce, Türkçe Dil ve Ülke Ayarları",
                 description: "İngilizce artı aşağıdaki dillerden biri Bulgarca, Çince, Hırvatça, Çekçe, Felemenkçe, İngilizce, Fransızca, Almanca, Yunanca, Macarca, İtalyanca, Japonca, Litvanyaca, Lehçe, Portekizce, Rumence, Rusça, Sırpça, Slovakça, Slovence, İspanyolca, Türkçe, Vietnamca ve ilgili ülke ayarları.",
-                packages: []
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["basic", "concept", "professional"]
             },
             {
                 id: "all-languages",
