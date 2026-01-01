@@ -21,8 +21,10 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                 <thead className="sticky top-0 bg-background z-10 relative">
 
                     <tr className="relative z-10">
-                        <th colSpan={2} className="text-left p-4 border-b-2 border-border font-bold text-foreground">
-                            FONKSİYONLAR
+                        <th colSpan={2} className="p-4 border-b-2 border-border font-bold text-foreground align-bottom">
+                            <div className="h-32 flex items-end">
+                                FONKSİYONLAR
+                            </div>
                         </th>
                         {/* EDITIONS Column */}
                         <th className="p-2 border-b-2 border-border text-center font-bold min-w-[60px] relative">
