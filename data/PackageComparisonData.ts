@@ -90,19 +90,19 @@ export const categories: Category[] = [
             {
                 id: "interface",
                 name: "Arayüz",
-                description: "IFC, BCF, PDF, RVT, 3DM, SKP, OBJ, LandXML, DWG, DGN, C4D, STL, WRL, SAF ve diğerleri. Python API ve Visual Scripting ile otomatik iş akışları.",
+                description: "IFC, BCF, PDF, RVT, 3DM, SKP, OBJ, LandXML, DWG, DGN, C4D, STL, WRL, SAF ve diğerleri dahil olmak üzere sorunsuz veri alışverişi için tüm ilgili dosya arayüzleri. Yazılım arayüzleri (örn. Python API ve Visual Scripting) otomatik iş akışlarını mümkün kılar.",
                 packages: ["basic", "concept", "professional", "ultimate", "civil"]
             },
             {
                 id: "3d-modeling",
                 name: "3B Modelleme",
-                description: "Siemens Parasolid modelleme çekirdeği ile yüksek performanslı 3B modelleme.",
+                description: "En karmaşık ve zorlu geometri için bile yüksek performanslı 3B modelleme. Modelleme işlevi, Siemens Parasolid modelleme çekirdeği tarafından desteklenmektedir.",
                 packages: ["basic", "concept", "professional", "ultimate", "civil"]
             },
             {
                 id: "2d-drawing",
                 name: "2B Çizim",
-                description: "Hassas 2B çizim için kapsamlı işlevsellik.",
+                description: "Çekici, özlü ve ayrıntılı çizimler için hassas 2B çizim için kapsamlı işlevsellik.",
                 packages: ["basic", "concept", "professional", "ultimate", "civil"]
             },
             {
@@ -114,13 +114,13 @@ export const categories: Category[] = [
             {
                 id: "bim-easy",
                 name: "İçerik Paketi BIM Easy",
-                description: "Önceden tanımlanmış ancak özelleştirilebilir şirket standardı. Kapsamlı sihirbazlar ile tutarlı çalışma.",
+                description: "Önceden tanımlanmış ancak özelleştirilebilir şirket standardı. Kapsamlı sihirbazlar aracılığıyla modeller ve çizimler oluştururken tutarlı bir çalışma şekli sağlar. Başlamayı kolaylaştırır, üretkenliği artırır ve özellikle openBIM projelerinde iyi yapılandırılmış veri alışverişi sağlar.",
                 packages: ["basic", "concept", "professional", "ultimate", "civil"]
             },
             {
                 id: "visualization",
                 name: "Görselleştirme",
-                description: "Vulkan teknolojisi, Real-time Render, CineWare. Lumion ve Twinmotion'a canlı bağlantılar.",
+                description: "Vulkan gibi en son teknolojilere dayalı geniş çeşitlilikte görselleştirme yetenekleri. Real-time Render ve CineWare, Lumion ve Twinmotion'a canlı bağlantılar içerir.",
                 packages: ["basic", "concept", "professional", "ultimate", "civil"]
             },
             {
