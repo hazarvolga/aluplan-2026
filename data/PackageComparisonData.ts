@@ -361,7 +361,8 @@ export const categories: Category[] = [
                 id: "scia-concept",
                 name: "SCIA Engineer - Concept Edition",
                 description: "Bu sürüm, öncelikle beton ve keresteden yapılmış yaygın yapıları modelleyen ve tasarlayan mühendisleri hedeflemektedir. Ancak, temel çelik kontrolleri de desteklenmektedir. Temel doğrusal olmayan hesaplamalar, stabilite ve dinamik analizle birlikte gerçekleştirilebilir. Bu sürüm, öncelikle konut binaları tasarlayan mühendislere uygun olacaktır.",
-                packages: []
+                packages: ["ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["ultimate"]
             },
             {
                 id: "scia-ultimate",
