@@ -11,7 +11,7 @@ export default function OnlineTrainingPage() {
                 { value: "%100", label: "Canlı Etkileşim" },
                 { value: "0", label: "Seyahat Süresi" },
                 { value: "Full", label: "HD Kayıtlar" },
-                { value: "7/24", label: "Erişim" }
+                { value: "Her An", label: "Erişim" }
             ]}
             benefits={[
                 {
