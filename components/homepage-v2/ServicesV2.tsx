@@ -100,7 +100,7 @@ const services = [
     },
     {
         icon: Key,
-        title: "Connect: Lisans",
+        title: "Admin Lisans : Lisans Yöneticisi Bilgi Formu",
         description: "Lisanslarınızı yönetin, transfer edin veya güncelleyin.",
         status: "active",
         href: "/solutions-v2/connect-license",
@@ -167,7 +167,7 @@ const services = [
 const ServicesV2 = () => {
     // Categorize services
     const servicesList = services.filter(s => ["Eğitim", "Teknik Destek", "Danışmanlık", "Sertifika", "Destek Platformu", "Partner"].includes(s.title));
-    const connectList = services.filter(s => ["Connect: Giriş", "Connect: Lisans", "Download", "Tüm Gereksinimler"].includes(s.title));
+    const connectList = services.filter(s => ["Connect: Giriş", "Admin Lisans : Lisans Yöneticisi Bilgi Formu", "Download", "Tüm Gereksinimler"].includes(s.title));
     const resourcesList = services.filter(s => ["ALLPLAN FAQ", "Blog Global", "Canlı Webinarlar", "BIM Rehberi", "OPENBIM", "Sistem Gereksinimleri", "Sürüm Notları"].includes(s.title));
 
     const renderGrid = (items: typeof services) => (
