@@ -132,7 +132,7 @@ export const categories: Category[] = [
             {
                 id: "building-components",
                 name: "Yapı Bileşenleri",
-                description: "Duvarlar, döşemeler, kirişler, kolonlar, temeller, merdivenler, çatılar, pencereler, kapılar ve cepheler.",
+                description: "Duvarlar, döşemeler, kirişler, kolonlar, temeller, merdivenler, çatılar, pencereler, kapılar ve cepheler gibi esnek yapı bileşenleri.",
                 packages: ["basic", "concept", "professional", "ultimate", "civil"]
             },
             {
@@ -181,7 +181,7 @@ export const categories: Category[] = [
             },
             {
                 id: "advanced-viz",
-                name: "Gelişmiş Görselleştirme",
+                name: "Gelişmiş Görseleştirme",
                 description: "MAXON'dan yüksek performanslı GPU hızlandırmalı Redshift renderer.",
                 packages: ["concept", "professional", "ultimate", "civil"]
             }
@@ -195,13 +195,13 @@ export const categories: Category[] = [
             {
                 id: "reinforcement",
                 name: "Donatı",
-                description: "Çubuk donatısı, hasır donatısı ve BAMTEC hasırları dahil olmak üzere son derece güçlü donatılandırma.",
+                description: "Çubuk donatısı, hasır donatısı ve BAMTEC hasırları dahil olmak üzere son derece güçlü donatılandırma işlevi.",
                 packages: ["professional", "ultimate", "civil"]
             },
             {
                 id: "steel-connections",
                 name: "Çelik Bağlantılar",
-                description: "Kaynaklı ve cıvatalı çelik bağlantıları için araçlar.",
+                description: "Kaynaklı ve Bolded çelik bağlantıları için araçlar.",
                 packages: ["professional", "ultimate", "civil"]
             }
         ]
@@ -214,13 +214,13 @@ export const categories: Category[] = [
             {
                 id: "road",
                 name: "Yol (Road)",
-                description: "Yollar, trafik ringleri ve süpürülmüş yol analizi dahil olmak üzere tamamen parametrik yol tasarımı.",
+                description: "Yollar, Trafik ringleri ve süpürülmüş yol analizi dahil olmak üzere tamamen parametrik yol tasarımı.",
                 packages: ["professional", "ultimate", "civil"]
             },
             {
                 id: "site-planning",
                 name: "Şantiye Planlaması",
-                description: "Vinçler, konteynerler, şantiye çitleri ve diğer ekipmanlar ile inşaat alanı yerleşimi planlama.",
+                description: "İnşaat alanı yerleşimini planlamak için vinçler, konteynerler, şantiye çitleri ve diğer ekipmanlar.",
                 packages: ["professional", "ultimate", "civil"]
             },
             {
@@ -257,7 +257,7 @@ export const categories: Category[] = [
             {
                 id: "parametric-modeling",
                 name: "Parametrik Modelleme",
-                description: "Köprüler, tüneller, istinat duvarları, ses bariyerleri ve prekast kirişli köprüler için dört boyutlu parametrik modelleme.",
+                description: "Köprüler, tüneller, istinat duvarları, ses bariyerleri ve prekast kirişli köprüler gibi özel köprü tipleri de dahil olmak üzere altyapıların dört boyutlu parametrik modellemesi ve detaylandırılması için özel çözüm.",
                 packages: ["professional", "ultimate", "civil"]
             }
         ]
@@ -307,7 +307,7 @@ export const categories: Category[] = [
             {
                 id: "prefab-connectors",
                 name: "Prefabrik Konnektörler",
-                description: "ERP, MES ve MWS sistemlerine optimum bağlantılar, otomatik, tamamen dijital üretime olanak tanır.",
+                description: "Kurumsal Kaynak Planlama (ERP), Üretim Yürütme Sistemleri (MES) ve Hasır Kaynak Sistemlerine (MWS) optimum bağlantılar, otomatik, tamamen dijital üretime olanak tanır.",
                 packages: ["precast", "precast-slabs", "precast-walls"]
             }
         ]
@@ -320,13 +320,13 @@ export const categories: Category[] = [
             {
                 id: "tr-en",
                 name: "İngilizce, Türkçe Dil ve Ülke Ayarları",
-                description: "İngilizce artı Bulgarca, Çince, Hırvatça, Çekçe, Felemenkçe, Fransızca, Almanca, Yunanca, Macarca, İtalyanca, Japonca, Litvanyaca, Lehçe, Portekizce, Rumence, Rusça, Sırpça, Slovakça, Slovence, İspanyolca, Türkçe, Vietnamca.",
+                description: "İngilizce artı aşağıdaki dillerden biri Bulgarca, Çince, Hırvatça, Çekçe, Felemenkçe, İngilizce, Fransızca, Almanca, Yunanca, Macarca, İtalyanca, Japonca, Litvanyaca, Lehçe, Portekizce, Rumence, Rusça, Sırpça, Slovakça, Slovence, İspanyolca, Türkçe, Vietnamca ve ilgili ülke ayarları.",
                 packages: ["basic", "concept", "professional", "ultimate", "civil"]
             },
             {
                 id: "all-languages",
                 name: "Diğer Tüm Diller ve Ülke Ayarları",
-                description: "23 Allplan dilinin tümü ve ilgili ülke ayarları.",
+                description: "23 Allplan dilinin tümü, yani Bulgarca, Çince, Hırvatça, Çekçe, Felemenkce, İngilizce, Fransızca, Almanca, Yunanca, Macarca, İtalyanca, Japonca, Litince, Lehçe, Portekizce, Romence, Rusça, Sırpça, Slovakça, Slovence, İspanyolca, Türkçe, Vietnamca ve ilgili ülke ayarları.",
                 packages: ["basic", "concept", "professional", "ultimate", "civil"]
             }
         ]
