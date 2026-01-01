@@ -23,7 +23,7 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                     <tr className="absolute inset-0 pointer-events-none overflow-hidden">
                         <th colSpan={100} className="relative">
                             <div
-                                className="absolute bottom-0 left-[calc(180px+300px+60px)] flex items-end justify-start opacity-[0.05] select-none text-foreground pl-2 pb-2"
+                                className="absolute bottom-0 left-[calc(180px+300px+60px)] flex items-end justify-start opacity-[0.15] select-none text-foreground pl-2 pb-2"
                                 style={{
                                     fontSize: '6rem',
                                     fontWeight: 900,
