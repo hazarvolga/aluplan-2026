@@ -13,6 +13,7 @@ export interface Feature {
     name: string;
     description: string;
     packages: string[]; // Package IDs that include this feature
+    starPackages?: string[]; // Package IDs that should show star icon (others show square)
 }
 
 export interface Category {
@@ -91,55 +92,64 @@ export const categories: Category[] = [
                 id: "interface",
                 name: "Arayüz",
                 description: "IFC, BCF, PDF, RVT, 3DM, SKP, OBJ, LandXML, DWG, DGN, C4D, STL, WRL, SAF ve diğerleri dahil olmak üzere sorunsuz veri alışverişi için tüm ilgili dosya arayüzleri. Yazılım arayüzleri (örn. Python API ve Visual Scripting) otomatik iş akışlarını mümkün kılar.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["basic", "concept", "professional"]
             },
             {
                 id: "3d-modeling",
                 name: "3B Modelleme",
                 description: "En karmaşık ve zorlu geometri için bile yüksek performanslı 3B modelleme. Modelleme işlevi, Siemens Parasolid modelleme çekirdeği tarafından desteklenmektedir.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["basic", "concept", "professional"]
             },
             {
                 id: "2d-drawing",
                 name: "2B Çizim",
                 description: "Çekici, özlü ve ayrıntılı çizimler için hassas 2B çizim için kapsamlı işlevsellik.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["basic", "concept", "professional"]
             },
             {
                 id: "clash-detection",
                 name: "Çakışma Kontrolü",
                 description: "Yumuşak ve sert çakışmaları tespit eden araç.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["basic", "concept", "professional"]
             },
             {
                 id: "bim-easy",
                 name: "İçerik Paketi BIM Easy",
                 description: "Önceden tanımlanmış ancak özelleştirilebilir şirket standardı. Kapsamlı sihirbazlar aracılığıyla modeller ve çizimler oluştururken tutarlı bir çalışma şekli sağlar. Başlamayı kolaylaştırır, üretkenliği artırır ve özellikle openBIM projelerinde iyi yapılandırılmış veri alışverişi sağlar.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["basic", "concept", "professional"]
             },
             {
                 id: "visualization",
                 name: "Görselleştirme",
                 description: "Vulkan gibi en son teknolojilere dayalı geniş çeşitlilikte görselleştirme yetenekleri. Real-time Render ve CineWare, Lumion ve Twinmotion'a canlı bağlantılar içerir.",
-                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["basic", "concept", "professional"]
             },
             {
                 id: "external-data",
                 name: "Dış Veri Kaynakları",
                 description: "GIS (Coğrafi Bilgi Sistemi) bilgilerini, 3B içeriği ve dokuları içe aktarmak için GIS Konnektörü ve İçerik Bağlayıcısı.",
-                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["concept", "professional"]
             },
             {
                 id: "building-components",
                 name: "Yapı Bileşenleri",
                 description: "Duvarlar, döşemeler, kirişler, kolonlar, temeller, merdivenler, çatılar, pencereler, kapılar ve cepheler gibi esnek yapı bileşenleri.",
-                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["concept", "professional"]
             },
             {
                 id: "info-management",
                 name: "Gelişmiş Bilgi Modellemesi ve Yönetimi",
                 description: "Gelişmiş araçlar, Dijitalleştirilmiş modellerin etkili bilgi modellemesi ve yönetimi için Bilgi paleti ve referanslı belgelerin yönetimi için Xref Yöneticisi.",
-                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["concept", "professional"]
             }
         ]
     },
@@ -152,19 +162,22 @@ export const categories: Category[] = [
                 id: "terrain-model",
                 name: "Arazi Modeli",
                 description: "Koordinat noktalarına veya nokta bulutlarına dayalı güçlü arazi modellemesi.",
-                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["concept", "professional"]
             },
             {
                 id: "urban-landscape",
                 name: "Şehir Bölge Planlaması ve Peyzaj Tasarımı",
                 description: "Kitle modelleri, kentsel ve peysaj tasarımı ve ayrıca dikim planları için işlevler.",
-                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["concept", "professional"]
             },
             {
                 id: "utilities",
                 name: "Kanalizasyon ve Tesisler",
                 description: "Su, kanalizasyon, elektrik, internet, doğal gaz veya bölgesel ısıtma gibi hizmetlerin yönlendirilmesi.",
-                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["concept", "professional"]
             }
         ]
     },
@@ -177,7 +190,8 @@ export const categories: Category[] = [
                 id: "quantity-cost",
                 name: "Metraj ve Maliyet",
                 description: "Modellenmiş ve modellenmemiş objelerin kesin, doğrulanabilir metrajı ve maliyeti.",
-                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
+                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["concept", "professional"]
             },
             {
                 id: "advanced-viz",

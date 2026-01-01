@@ -99,16 +99,9 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                                         {packages.map((pkg) => {
                                             const hasFeature = feature.packages.includes(pkg.id);
 
-                                            // First 6 features use star for Basic, Concept, Professional
-                                            const isFirstSixFeatures = [
-                                                'interface', '3d-modeling', '2d-drawing',
-                                                'clash-detection', 'bim-easy', 'visualization'
-                                            ].includes(feature.id);
-
-                                            // Concept and Professional ALWAYS use star
-                                            // Basic uses star only for first 6 features
-                                            const useStarIcon = ['concept', 'professional'].includes(pkg.id) ||
-                                                (isFirstSixFeatures && pkg.id === 'basic');
+                                            // Use starPackages array if defined, otherwise no stars
+                                            const useStarIcon = hasFeature &&
+                                                feature.starPackages?.includes(pkg.id);
 
                                             return (
                                                 <td
