@@ -127,19 +127,19 @@ export const categories: Category[] = [
                 id: "external-data",
                 name: "Dış Veri Kaynakları",
                 description: "GIS (Coğrafi Bilgi Sistemi) bilgilerini, 3B içeriği ve dokuları içe aktarmak için GIS Konnektörü ve İçerik Bağlayıcısı.",
-                packages: []
+                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "building-components",
                 name: "Yapı Bileşenleri",
                 description: "Duvarlar, döşemeler, kirişler, kolonlar, temeller, merdivenler, çatılar, pencereler, kapılar ve cepheler gibi esnek yapı bileşenleri.",
-                packages: []
+                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "info-management",
                 name: "Gelişmiş Bilgi Modellemesi ve Yönetimi",
                 description: "Gelişmiş araçlar, Dijitalleştirilmiş modellerin etkili bilgi modellemesi ve yönetimi için Bilgi paleti ve referanslı belgelerin yönetimi için Xref Yöneticisi.",
-                packages: []
+                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             }
         ]
     },
