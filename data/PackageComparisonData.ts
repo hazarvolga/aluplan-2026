@@ -25,56 +25,56 @@ export interface Category {
 export const packages: Package[] = [
     {
         id: "basic",
-        name: "ALLPLAN Basic",
+        name: "Basic",
         tagline: "Temel 2D/3D Çizim",
         color: "#3B82F6",
         description: "Temel çizim ve modelleme çözümümüz."
     },
     {
         id: "concept",
-        name: "ALLPLAN Concept",
+        name: "Concept",
         tagline: "Konsept Tasarım",
         color: "#8B5CF6",
         description: "Konsept tasarım ve modelleme için ideal."
     },
     {
         id: "professional",
-        name: "ALLPLAN Professional",
+        name: "Professional",
         tagline: "Tam Kapsamlı BIM",
         color: "#10B981",
         description: "Tam kapsamlı BIM modelleme ve dokümantasyon."
     },
     {
         id: "ultimate",
-        name: "ALLPLAN Ultimate",
+        name: "Ultimate",
         tagline: "En Kapsamlı Paket",
         color: "#F59E0B",
         description: "Tüm disiplinler için en kapsamlı paketimiz."
     },
     {
         id: "civil",
-        name: "ALLPLAN Civil",
+        name: "Civil",
         tagline: "Altyapı Özel Çözüm",
         color: "#F97316",
         description: "Altyapı, yol ve köprü projeleri için özel çözüm."
     },
     {
         id: "precast",
-        name: "ALLPLAN Precast",
+        name: "Precast",
         tagline: "Prekast Özel Çözüm",
         color: "#EF4444",
         description: "Prekast üretimi ve detaylandırma otomasyonu."
     },
     {
         id: "precast-slabs",
-        name: "ALLPLAN Precast Slabs",
+        name: "Precast Slabs",
         tagline: "Prekast Döşeme",
         color: "#EC4899",
         description: "Prekast döşeme üretimi için özel çözüm."
     },
     {
         id: "precast-walls",
-        name: "ALLPLAN Precast Walls",
+        name: "Precast Walls",
         tagline: "Prekast Duvar",
         color: "#6366F1",
         description: "Prekast duvar üretimi için özel çözüm."

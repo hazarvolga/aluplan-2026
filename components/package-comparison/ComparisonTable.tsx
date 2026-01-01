@@ -18,8 +18,25 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
         <div className="overflow-x-auto">
             <table className="w-full border-collapse">
                 {/* Header */}
-                <thead className="sticky top-0 bg-background z-10">
-                    <tr>
+                <thead className="sticky top-0 bg-background z-10 relative">
+                    {/* Watermark Background */}
+                    <tr className="absolute inset-0 pointer-events-none overflow-hidden">
+                        <th colSpan={100} className="relative">
+                            <div
+                                className="absolute inset-0 flex items-center justify-center opacity-[0.03] select-none"
+                                style={{
+                                    fontSize: '8rem',
+                                    fontWeight: 900,
+                                    letterSpacing: '0.5rem',
+                                    color: '#000'
+                                }}
+                            >
+                                ALLPLAN
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr className="relative z-10">
                         <th className="text-left p-4 border-b-2 border-border font-bold text-foreground w-[180px]">
                             Özellik
                         </th>
