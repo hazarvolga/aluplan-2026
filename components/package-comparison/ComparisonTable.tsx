@@ -234,6 +234,10 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                         <span>Ücretli Seçenek Olarak Mevcuttur</span>
                     </div>
                 </div>
+
+                <div className="mt-4 pt-4 border-t border-border/50 text-xs text-muted-foreground">
+                    ¹ SCIA Engineer: Tüm projeleriniz için yüksek performanslı, güvenilir çok malzemeli yapısal analiz ve tasarım yazılımı.
+                </div>
             </div>
         </div>
     );
