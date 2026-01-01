@@ -381,55 +381,64 @@ export const categories: Category[] = [
                 id: "bimplus",
                 name: "Bulut tabanlı işbirliği",
                 description: "Bimplus Pro 10 GB bulut tabanlı BIM işbirliği platformu.",
-                packages: []
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "share",
                 name: "Proje Ekip Çalışması",
                 description: "Allplan Share, uzaktan çalışan ekip üyeleri için de ideal olan bir şirket ağı üzerinden ekip çalışmasına olanak sağlar.",
-                packages: []
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "workgroup",
                 name: "Ofis Ekip Çalışması (Workgroup)",
                 description: "Allplan Workgroup Yöneticisi aracılığıyla yerel bir şirket ağı içerisinde verimli ekip çalışmasını kolaylaştırın.",
-                packages: []
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "exchange",
                 name: "Çizim ve Plan Dağıtımı",
                 description: "Web tabanlı plan dağıtım aracı Allplan Exchange, çeşitli plan formatlarının oluşturulmasını ve dağıtımını yönetmek ve e-posta grupları aracılığıyla otomatik değişiklik bildirimleri sağlamak için özel olarak tasarlanmıştır.",
-                packages: []
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "cloud-resources",
                 name: "Bulut Destekli Proje Kaynakları",
                 description: "Bulut ofis kaynakları, ALLPLAN proje kaynaklarının tam bulut tabanlı dağıtımına olanak tanır.",
-                packages: []
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "autoconverter",
                 name: "Analitik Model Oluşturma",
                 description: "AutoConverter aracılığıyla geometrik modellerin, Frilo Statics, Scia Engineer ve diğerleri gibi yapısal analiz çözümleri tarafından doğrudan kullanılabilecek analitik modellere akıllı dönüşümü.",
-                packages: []
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "bluebeam",
                 name: "ALLPLAN - Bluebeam Bağlantısı",
                 description: "Gelişmiş iş akışları – Dijital teslimat sürecini desteklemek için Bluebeam ile bağlantı, kullanıcıların 2B dokümantasyonu Bluebeam Studio Proje ortamından ALLPLAN iş akışlarına getirmelerine olanak tanır.",
-                packages: []
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "model-viewer",
                 name: "ALLPLAN Model Görüntüleyici",
                 description: "BIMPLUS'a gömülü IFC dosya görüntüleyicisi, kullanıcıların proje verilerini hızla görselleştirmesine olanak tanır. Yüklemek ve işlemeyi beklemek yerine, kullanıcılar artık BIMPLUS'ta bir revizyon oluşturmadan ve tam olarak yüklemeden önce modelleri görsel olarak hızlı bir şekilde önizleyebilir ve kontrol edebilir.",
-                packages: []
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "ai-viz",
                 name: "AI-Destekli Görseleştirme (yeni)",
                 description: "İlham verici, ayrıntılı AI destekli görselleştirmeler oluşturmak için bağlantılar. Nemetschek AI Visualizer'ı ve EvolveLab'ın Veras AI Visualizer'ına entegrasyonu içerir ³.",
-                packages: []
+                packages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"],
+                starPackages: ["basic", "concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             }
         ]
     },
