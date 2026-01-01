@@ -13,7 +13,7 @@ export default function ClientPage() {
   ];
   const values = [
     { icon: Target, title: "Misyonumuz", description: "Türkiye'de BIM teknolojilerinin yaygınlaşması ve mimari/mühendislik projelerinin dijital dönüşümüne öncülük etmek." },
-    { icon: Users, title: "Müşteri Odaklılık", description: "Müşterilerimizin başarısı bizim başarımızdır. 7/24 destek ve danışmanlık hizmetimizle her zaman yanınızdayız." },
+    { icon: Users, title: "Müşteri Odaklılık", description: "Müşterilerimizin başarısı bizim başarımızdır. Profesyonel destek ve danışmanlık hizmetimizle her zaman yanınızdayız." },
     { icon: Award, title: "Kalite ve Uzmanlık", description: "Sertifikalı uzman kadromuz ve sürekli eğitimlerimizle sektörün en kaliteli hizmetini sunuyoruz." },
     { icon: TrendingUp, title: "Sürekli İnovasyon", description: "Teknolojinin nabzını tutarak, en güncel çözümleri müşterilerimize sunmak için çalışıyoruz." },
   ];
@@ -51,7 +51,7 @@ export default function ClientPage() {
             <div className="prose prose-lg max-w-none space-y-6 text-muted-foreground">
               <p>Aluplan Program Sistemleri, 1995 yılında mimarlık ve mühendislik sektörüne profesyonel yazılım çözümleri sunmak amacıyla kuruldu. Kurulduğumuz günden bu yana Allplan&apos;ın Türkiye distribütörü olarak, sektörün dijital dönüşümüne öncülük ediyoruz.</p>
               <p>Allplan Architecture, Allplan Engineering, Allplan Bridge ve Allplan Precast ürünleriyle mimarlık, inşaat mühendisliği, köprü tasarımı ve prekast beton üretimi alanlarında çözümler sunuyoruz. BIM (Building Information Modeling) teknolojilerinin Türkiye&apos;de yaygınlaşması için eğitim, danışmanlık ve teknik destek hizmetleri veriyoruz.</p>
-              <p>İstanbul Ataşehir&apos;deki ofisimizden Türkiye geneline hizmet veren 50&apos;den fazla uzman kadromuz, müşterilerimizin projelerinde başarılı olmalarını sağlamak için 7/24 çalışmaktadır. Belediyeler, üniversiteler, özel mimarlık ve mühendislik ofisleri ile büyük ölçekli inşaat firmalarına hizmet vermekteyiz.</p>
+              <p>İstanbul Ataşehir&apos;deki ofisimizden Türkiye geneline hizmet veren 50&apos;den fazla uzman kadromuz, müşterilerimizin projelerinde başarılı olmalarını sağlamak için özveriyle çalışmaktadır. Belediyeler, üniversiteler, özel mimarlık ve mühendislik ofisleri ile büyük ölçekli inşaat firmalarına hizmet vermekteyiz.</p>
             </div>
           </div>
         </div>
