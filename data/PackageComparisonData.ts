@@ -348,7 +348,7 @@ export const categories: Category[] = [
                 id: "all-languages",
                 name: "Diğer Tüm Diller ve Ülke Ayarları",
                 description: "23 Allplan dilinin tümü, yani Bulgarca, Çince, Hırvatça, Çekçe, Felemenkce, İngilizce, Fransızca, Almanca, Yunanca, Macarca, İtalyanca, Japonca, Litince, Lehçe, Portekizce, Romence, Rusça, Sırpça, Slovakça, Slovence, İspanyolca, Türkçe, Vietnamca ve ilgili ülke ayarları.",
-                packages: []
+                packages: ["ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             }
         ]
     },
