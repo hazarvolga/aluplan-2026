@@ -152,19 +152,19 @@ export const categories: Category[] = [
                 id: "terrain-model",
                 name: "Arazi Modeli",
                 description: "Koordinat noktalarına veya nokta bulutlarına dayalı güçlü arazi modellemesi.",
-                packages: []
+                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "urban-landscape",
                 name: "Şehir Bölge Planlaması ve Peyzaj Tasarımı",
                 description: "Kitle modelleri, kentsel ve peysaj tasarımı ve ayrıca dikim planları için işlevler.",
-                packages: []
+                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "utilities",
                 name: "Kanalizasyon ve Tesisler",
                 description: "Su, kanalizasyon, elektrik, internet, doğal gaz veya bölgesel ısıtma gibi hizmetlerin yönlendirilmesi.",
-                packages: []
+                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             }
         ]
     },
@@ -177,7 +177,7 @@ export const categories: Category[] = [
                 id: "quantity-cost",
                 name: "Metraj ve Maliyet",
                 description: "Modellenmiş ve modellenmemiş objelerin kesin, doğrulanabilir metrajı ve maliyeti.",
-                packages: []
+                packages: ["concept", "professional", "ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "advanced-viz",
