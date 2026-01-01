@@ -23,12 +23,11 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                     <tr className="absolute inset-0 pointer-events-none overflow-hidden">
                         <th colSpan={100} className="relative">
                             <div
-                                className="absolute inset-0 flex items-center justify-center opacity-[0.08] select-none"
+                                className="absolute inset-0 flex items-center justify-center opacity-[0.05] select-none text-foreground"
                                 style={{
                                     fontSize: '8rem',
                                     fontWeight: 900,
-                                    letterSpacing: '0.5rem',
-                                    color: '#000'
+                                    letterSpacing: '0.5rem'
                                 }}
                             >
                                 ALLPLAN
@@ -42,6 +41,22 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                         </th>
                         <th className="text-left p-4 border-b-2 border-border font-bold text-foreground min-w-[300px]">
                             Açıklama
+                        </th>
+                        {/* EDITIONS Column */}
+                        <th className="p-2 border-b-2 border-border text-center font-bold min-w-[60px] relative">
+                            <div className="flex items-end justify-center h-32">
+                                <div
+                                    className="whitespace-nowrap font-black text-muted-foreground/30"
+                                    style={{
+                                        writingMode: 'vertical-rl',
+                                        transform: 'rotate(180deg)',
+                                        fontSize: '1.5rem',
+                                        letterSpacing: '0.2rem'
+                                    }}
+                                >
+                                    EDITIONS
+                                </div>
+                            </div>
                         </th>
                         {packages.map((pkg) => (
                             <th
@@ -81,6 +96,7 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                                         {category.name}
                                     </div>
                                 </td>
+                                <td className="bg-muted/30"></td>
                                 <td colSpan={packages.length} className="bg-muted/30"></td>
                             </tr>
 
@@ -110,6 +126,7 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                                         <td className="p-4 text-sm text-muted-foreground">
                                             {feature.description}
                                         </td>
+                                        <td className="bg-muted/10"></td>
                                         {packages.map((pkg) => {
                                             const hasFeature = feature.packages.includes(pkg.id);
                                             return (
