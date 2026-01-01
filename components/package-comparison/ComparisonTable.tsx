@@ -188,9 +188,7 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                                                                         <rect x="4" y="4" width="12" height="12" />
                                                                     </svg>
                                                                 )
-                                                            ) : (
-                                                                <X className="h-5 w-5 mx-auto text-muted-foreground/30" />
-                                                            )}
+                                                            ) : null}
                                                         </td>
                                                     );
                                                 })}
