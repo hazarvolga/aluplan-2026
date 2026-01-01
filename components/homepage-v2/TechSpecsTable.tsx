@@ -55,9 +55,16 @@ const specs: Spec[] = [
 
 const TechSpecsTable = () => {
     const [filter, setFilter] = useState("Tümü");
+    const [searchQuery, setSearchQuery] = useState("");
 
     const categories = ["Tümü", ...new Set(specs.map(s => s.category))];
-    const filteredSpecs = filter === "Tümü" ? specs : specs.filter(s => s.category === filter);
+
+    const filteredSpecs = specs.filter(s => {
+        const matchesCategory = filter === "Tümü" || s.category === filter;
+        const matchesSearch = s.feature.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            s.category.toLowerCase().includes(searchQuery.toLowerCase());
+        return matchesCategory && matchesSearch;
+    });
 
     return (
         <section className="bg-background py-24 px-6 md:px-12 lg:px-24 border-y border-border/10">
@@ -73,6 +80,8 @@ const TechSpecsTable = () => {
                             <input
                                 type="text"
                                 placeholder="Özellik ara..."
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
                                 className="bg-muted border border-border/20 rounded-full py-2 pl-10 pr-4 text-sm text-foreground focus:outline-none focus:border-border w-full md:w-64"
                             />
                         </div>
