@@ -246,13 +246,13 @@ export const categories: Category[] = [
                 id: "foundation-works",
                 name: "Temel İşleri",
                 description: "Fore kazık ve palplanş duvarları ve zemin ankrajları gibi akıllı kazı iksaları.",
-                packages: []
+                packages: ["ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "excavation",
                 name: "Arazi Kazılar",
                 description: "Kazıları modellemek ve kazı çizimleri oluşturmak için araçlar.",
-                packages: []
+                packages: ["ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             }
         ]
     },
@@ -265,19 +265,19 @@ export const categories: Category[] = [
                 id: "precast-components",
                 name: "Prekast Tasarım ve Detaylandırma",
                 description: "Kirişler, kolonlar, merdivenler vb. gibi akıllı prefabrik beton bileşenler.",
-                packages: []
+                packages: ["ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "production-drawings",
                 name: "Eleman Planı (Üretim Paftası)",
                 description: "Bireysel elemanların ayrıntılı üretim paftalarını otomatik, şablon tabanlı oluşturulması.",
-                packages: []
+                packages: ["ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "parametric-modeling",
                 name: "Parametrik Modelleme",
                 description: "Köprüler, tüneller, istinat duvarları, ses bariyerleri ve prekast kirişli köprüler gibi özel köprü tipleri de dahil olmak üzere altyapıların dört boyutlu parametrik modellemesi ve detaylandırılması için özel çözüm.",
-                packages: []
+                packages: ["ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             }
         ]
     },
@@ -290,7 +290,7 @@ export const categories: Category[] = [
                 id: "prestressed-tendons",
                 name: "Parametrik Öngerilimli Tendonlar",
                 description: "Öngerilme tendonlarının modellenmesi ve analizi.",
-                packages: []
+                packages: ["ultimate", "civil", "precast", "precast-slabs", "precast-walls"]
             },
             {
                 id: "bridge-analysis",
