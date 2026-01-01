@@ -22,6 +22,11 @@ type SolutionHeroProps = {
     href?: string;
     onClick?: () => void;
   };
+  tertiaryButton?: {
+    text: string;
+    href: string;
+    external?: boolean;
+  };
   stats?: Array<{
     value: string;
     label: string;
@@ -100,6 +105,7 @@ const SolutionHero = ({
   customBackground,
   primaryButton,
   secondaryButton,
+  tertiaryButton,
   stats,
 }: SolutionHeroProps) => {
   const prefersReducedMotion = useReducedMotion();
@@ -221,7 +227,7 @@ const SolutionHero = ({
                   {description}
                 </motion.div>
               )}
-              {(primaryButton || secondaryButton) && (
+              {(primaryButton || secondaryButton || tertiaryButton) && (
                 <motion.div variants={fadeUpVariants} className="flex flex-col sm:flex-row gap-4 pt-2">
                   {primaryButton && (
                     <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
@@ -264,6 +270,21 @@ const SolutionHero = ({
                             {secondaryButton.text}
                           </>
                         )}
+                      </Button>
+                    </motion.div>
+                  )}
+                  {tertiaryButton && (
+                    <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+                      <Button
+                        size="lg"
+                        variant="outline"
+                        className="border-white/20 bg-white/5 backdrop-blur-xl text-white hover:bg-white/10 hover:border-white/30 transition-all duration-300 px-8 py-6 text-base font-semibold"
+                        asChild
+                      >
+                        <a href={tertiaryButton.href} target={tertiaryButton.external ? "_blank" : undefined} rel={tertiaryButton.external ? "noopener noreferrer" : undefined} className="flex items-center">
+                          {tertiaryButton.text}
+                          {tertiaryButton.external && <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />}
+                        </a>
                       </Button>
                     </motion.div>
                   )}

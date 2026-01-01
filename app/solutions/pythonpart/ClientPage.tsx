@@ -163,6 +163,7 @@ export default function ClientPage() {
         description="Allplan Ortak Çözümü olarak ALLTO, ALLPLAN yazılımıyla uyumlu profesyonel eklentiler geliştirir. Kullanıcılar ayrıca uzmanlığımızı ve bireysel ihtiyaçlarını karşılamak için onlarla yakın çalışma isteğimizi takdir ediyor."
         primaryButton={{ text: "İletişime Geçin", href: "/contact" }}
         secondaryButton={{ text: "Daha Fazla Bilgi", href: "https://allplantools.com/" }}
+        tertiaryButton={{ text: "Başvuru Formu", href: "https://forms.office.com/r/XLQm9JPTSR", external: true }}
       />
 
       <div className="bg-background">
