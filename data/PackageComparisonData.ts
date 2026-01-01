@@ -368,7 +368,7 @@ export const categories: Category[] = [
                 id: "scia-ultimate",
                 name: "SCIA Engineer Ultimate Edition",
                 description: "Ultimate Edition, yüksek katlı veya karmaşık binalar, köprüler ve sivil yapılar gibi en zorlu yapıları tasarlayan yapı mühendislerine uygundur. Toprak-yapı etkileşimi, beton için malzeme doğrusal olmayan analizi, inşaat aşamaları analizi ve ön gerilimli beton tasarımı gibi gelişmiş analiz türlerini içerir.",
-                packages: []
+                packages: ["civil"]
             }
         ]
     },
