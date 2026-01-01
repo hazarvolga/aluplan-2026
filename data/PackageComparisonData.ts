@@ -321,7 +321,7 @@ export const categories: Category[] = [
                 id: "precast-walls-manufacturing",
                 name: "Prekast Duvar İmalatı",
                 description: "Prekast duvarların otomatik elementasyonu, bağlantısı, detaylandırılması ve imalatı için özel çözüm.",
-                packages: []
+                packages: ["precast-walls", "precast"]
             },
             {
                 id: "prefab-connectors",
