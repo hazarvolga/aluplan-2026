@@ -236,7 +236,7 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                 </div>
 
                 <div className="mt-4 pt-4 border-t border-border/50 text-xs text-muted-foreground">
-                    ¹ SCIA Engineer: Tüm projeleriniz için yüksek performanslı, güvenilir çok malzemeli yapısal analiz ve tasarım yazılımı.
+                    ¹ SCIA Engineer: Tüm projeleriniz için yüksek performanslı, güvenilir çok malzemeli yapısal analiz ve tasarım yazılımı. SCIA Engineer karşılaştırmasına <a href="https://www.scia.net/en/scia-engineer/editions-comparison" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground transition-colors">buradan ulaşabilirsiniz</a>.
                 </div>
             </div>
         </div>
