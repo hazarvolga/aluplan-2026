@@ -9,6 +9,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about",
     "/contact",
     "/health",
+    "/paket-karsilastirma",
+    "/kvkk",
+    "/gizlilik-politikasi",
   ];
 
   // Ürün sayfaları
