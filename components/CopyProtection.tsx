@@ -10,20 +10,22 @@ export default function CopyProtection() {
     const [iconType, setIconType] = useState<"shield" | "coffee" | "ban">("shield");
 
     useEffect(() => {
+        const triggerWarning = (msg: string, icon: "shield" | "coffee" | "ban") => {
+            setMessage(msg);
+            setIconType(icon);
+            setShowWarning(true);
+            // Reset after animation + read time (approx 4-5s total)
+            setTimeout(() => setShowWarning(false), 4500);
+        };
+
         const handleContextMenu = (e: MouseEvent) => {
             e.preventDefault();
-            setMessage("Sağ tık yok, ama kahve var! ☕\nİçeriklerimiz koruma altındadır.");
-            setIconType("coffee");
-            setShowWarning(true);
-            setTimeout(() => setShowWarning(false), 3000);
+            triggerWarning("Sağ tık yok, ama kahve var! ☕\nİçeriklerimiz koruma altındadır.", "coffee");
         };
 
         const handleCopy = (e: ClipboardEvent) => {
             e.preventDefault();
-            setMessage("Kopyalamak yerine ilham almayı deneyin! 😉\nBizimle iletişime geçin.");
-            setIconType("shield");
-            setShowWarning(true);
-            setTimeout(() => setShowWarning(false), 3000);
+            triggerWarning("Kopyalamak yerine ilham almayı deneyin! 😉\nBizimle iletişime geçin.", "shield");
         };
 
         const handleKeyDown = (e: KeyboardEvent) => {
@@ -35,15 +37,10 @@ export default function CopyProtection() {
                 (e.ctrlKey && e.shiftKey && e.key === 'I')
             ) {
                 const target = e.target as HTMLElement;
-                if (target.tagName === "INPUT" || target.tagName === "TEXTAREA") {
-                    return;
-                }
+                if (target.tagName === "INPUT" || target.tagName === "TEXTAREA") return;
 
                 e.preventDefault();
-                setMessage("Kısayollar işlemiyor... \nMühendislik sırları güvende! 🔒");
-                setIconType("ban");
-                setShowWarning(true);
-                setTimeout(() => setShowWarning(false), 3000);
+                triggerWarning("Kısayollar işlemiyor... \nMühendislik sırları güvende! 🔒", "ban");
             }
         };
 
@@ -60,81 +57,95 @@ export default function CopyProtection() {
 
     const getIcon = () => {
         switch (iconType) {
-            case 'coffee': return <Coffee className="w-8 h-8 text-amber-500" />;
-            case 'ban': return <Ban className="w-8 h-8 text-red-500" />;
-            default: return <ShieldAlert className="w-8 h-8 text-accent" />;
+            case 'coffee': return <Coffee className="w-6 h-6 text-amber-500" />;
+            case 'ban': return <Ban className="w-6 h-6 text-red-500" />;
+            default: return <ShieldAlert className="w-6 h-6 text-accent" />;
         }
     };
 
-    const Stickman = () => (
+    const WalkingStickman = () => (
         <svg
             width="100"
             height="140"
             viewBox="0 0 100 140"
-            className="w-32 h-44 text-foreground/80 drop-shadow-lg"
+            className="w-32 h-44 text-foreground drop-shadow-2xl"
             fill="none"
             stroke="currentColor"
             strokeWidth="5"
             strokeLinecap="round"
             strokeLinejoin="round"
         >
-            {/* Head - Looking up/straining? */}
-            <circle cx="50" cy="30" r="14" />
+            {/* Head */}
+            <circle cx="50" cy="30" r="14" className="fill-background" />
 
             {/* Body */}
             <path d="M50 44 L50 90" />
 
-            {/* Arms - Pushing UP against the popup */}
-            {/* Starting from shoulders (50, 50) going up to (20, 0) and (80, 0) where popup sits */}
-            <path d="M25 5 L50 55 L75 5" />
+            {/* Arms - Swing animation handled by parent or path variants if needed, keeping simple for now */}
+            <motion.path
+                d="M50 50 L80 70"
+                animate={{ d: ["M50 50 L80 70", "M50 50 L20 70", "M50 50 L80 70"] }}
+                transition={{ duration: 0.5, repeat: Infinity, ease: "linear" }}
+            />
+            <motion.path
+                d="M50 50 L20 70"
+                animate={{ d: ["M50 50 L20 70", "M50 50 L80 70", "M50 50 L20 70"] }}
+                transition={{ duration: 0.5, repeat: Infinity, ease: "linear" }}
+            />
 
-            {/* Legs - Wide stance for pushing */}
-            <path d="M50 90 L20 135" />
-            <path d="M50 90 L80 135" />
+            {/* Legs - Walking animation */}
+            <motion.path
+                d="M50 90 L80 135"
+                animate={{ d: ["M50 90 L80 135", "M50 90 L20 135", "M50 90 L80 135"] }}
+                transition={{ duration: 0.5, repeat: Infinity, ease: "linear" }}
+            />
+            <motion.path
+                d="M50 90 L20 135"
+                animate={{ d: ["M50 90 L20 135", "M50 90 L80 135", "M50 90 L20 135"] }}
+                transition={{ duration: 0.5, repeat: Infinity, ease: "linear" }}
+            />
         </svg>
     );
 
     return (
         <AnimatePresence>
             {showWarning && (
-                <div className="fixed inset-0 z-[9999] pointer-events-none flex flex-col items-center justify-end pb-0 overflow-hidden bg-black/5 backdrop-blur-[1px]">
-                    {/* The container moving up from bottom */}
+                <div className="fixed inset-0 z-[99999] pointer-events-none flex items-center justify-center overflow-hidden bg-black/10 backdrop-blur-[2px]">
+
+                    {/* Container for Stickman + Popup */}
                     <motion.div
-                        initial={{ y: "100%" }}
-                        animate={{ y: "-50vh" }} // Move up to center screen
-                        exit={{ y: "100%" }}
+                        initial={{ x: "-100vw" }}
+                        animate={{ x: 0 }}
+                        exit={{ x: "100vw", opacity: 0 }}
                         transition={{
                             type: "spring",
-                            damping: 12,
-                            stiffness: 80,
-                            mass: 0.8
+                            damping: 20,
+                            stiffness: 60,
+                            duration: 1.5
                         }}
-                        className="flex flex-col items-center relative"
+                        className="relative flex flex-col items-center"
                     >
-                        {/* The Popup */}
-                        <div className="bg-background/95 backdrop-blur-md border border-border/50 p-6 rounded-2xl shadow-2xl text-center w-80 mb-[-10px] relative z-20 border-b-4 border-b-accent/20">
-                            <div className="flex justify-center mb-4">
-                                <div className="bg-accent/10 p-3 rounded-full ring-1 ring-accent/20 animate-pulse">
-                                    {getIcon()}
-                                </div>
-                            </div>
-                            <h3 className="text-lg font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/80">
-                                Hop! İçerik Korumalı 🚧
-                            </h3>
-                            <p className="text-sm text-muted-foreground whitespace-pre-line leading-relaxed">
-                                {message}
-                            </p>
-                        </div>
-
-                        {/* The Stickman pushing it */}
+                        {/* Popup Bubble - Appears after walking in */}
                         <motion.div
-                            className="relative z-10"
-                            initial={{ scale: 0.9 }}
-                            animate={{ scale: 1 }}
-                            transition={{ yoyo: Infinity, duration: 0.2 }} // Straining effect?
+                            initial={{ opacity: 0, scale: 0, y: 20 }}
+                            animate={{ opacity: 1, scale: 1, y: 0 }}
+                            transition={{ delay: 0.8, type: "spring" }} // Wait for walk to approx finish
+                            className="mb-4 relative"
                         >
-                            <Stickman />
+                            <div className="bg-background/95 backdrop-blur-md border border-border/50 p-5 rounded-2xl rounded-bl-sm shadow-2xl text-center w-72 border-l-4 border-l-accent">
+                                <div className="flex items-center gap-2 mb-2 justify-center">
+                                    {getIcon()}
+                                    <div className="font-bold text-base bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">Güvenlik Uyarısı</div>
+                                </div>
+                                <p className="text-sm text-muted-foreground whitespace-pre-line leading-relaxed font-medium">
+                                    {message}
+                                </p>
+                            </div>
                         </motion.div>
+
+                        {/* Walking Stickman */}
+                        <WalkingStickman />
+
                     </motion.div>
                 </div>
             )}
