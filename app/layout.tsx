@@ -75,7 +75,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="tr" className={`${inter.variable} ${spaceGrotesk.variable} ${ibmPlexMono.variable}`} suppressHydrationWarning>
       <body suppressHydrationWarning>
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-DQYT0D9MQ5"
+          src="https://www.googletagmanager.com/gtag/js?id=GT-5TQ6VQ4"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -84,6 +84,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-DQYT0D9MQ5');
+            gtag('config', 'GT-5TQ6VQ4');
           `}
         </Script>
         <ThemeProvider
