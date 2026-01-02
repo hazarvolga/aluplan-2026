@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Box, Layers, Zap, Crown, HardHat, Blocks } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
@@ -9,37 +9,31 @@ import { Button } from "@/components/ui/button";
 
 const packages = [
     {
-        icon: <Box className="w-6 h-6 text-blue-400" />,
         title: "ALLPLAN Basic",
         description: "Temel 2D/3D tasarım ve çizim araçları.",
         color: "bg-blue-500/10 border-blue-500/20 text-blue-400"
     },
     {
-        icon: <Layers className="w-6 h-6 text-purple-400" />,
         title: "ALLPLAN Concept",
         description: "Konsept tasarım, modelleme ve görselleştirme.",
         color: "bg-purple-500/10 border-purple-500/20 text-purple-400"
     },
     {
-        icon: <Zap className="w-6 h-6 text-amber-400" />,
         title: "ALLPLAN Professional",
         description: "Tam kapsamlı BIM, metraj ve işbirliği.",
         color: "bg-amber-500/10 border-amber-500/20 text-amber-400"
     },
     {
-        icon: <Crown className="w-6 h-6 text-emerald-400" />,
         title: "ALLPLAN Ultimate",
         description: "Tüm disiplinler ve ileri seviye mühendislik.",
         color: "bg-emerald-500/10 border-emerald-500/20 text-emerald-400"
     },
     {
-        icon: <HardHat className="w-6 h-6 text-orange-400" />,
         title: "CIVIL",
         description: "Altyapı, yol ve köprü mühendisliği çözümleri.",
         color: "bg-orange-500/10 border-orange-500/20 text-orange-400"
     },
     {
-        icon: <Blocks className="w-6 h-6 text-cyan-400" />,
         title: "PRECAST",
         description: "Prefabrik üretim planlama ve detaylandırma.",
         color: "bg-cyan-500/10 border-cyan-500/20 text-cyan-400"
@@ -84,12 +78,8 @@ export default function TechSpecsTable() {
                             viewport={{ once: true }}
                         >
                             <Link href="/paket-karsilastirma">
-                                <Card className="h-full bg-card/50 backdrop-blur-sm border-border/50 hover:border-accent/40 transition-colors p-6 group cursor-pointer hover:shadow-lg hover:shadow-accent/5">
-                                    <div className={`w-12 h-12 rounded-lg ${pkg.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                                        {pkg.icon}
-                                    </div>
-
-                                    <h3 className="font-bold text-xl text-foreground mb-2">{pkg.title}</h3>
+                                <Card className="h-full bg-card/50 backdrop-blur-sm border-border/50 hover:border-accent/40 transition-colors p-6 group cursor-pointer hover:shadow-lg hover:shadow-accent/5 flex flex-col justify-center">
+                                    <h3 className={`font-bold text-xl mb-2 ${pkg.color.split(' ').pop()}`}>{pkg.title}</h3>
                                     <p className="text-muted-foreground leading-relaxed text-sm">
                                         {pkg.description}
                                     </p>
