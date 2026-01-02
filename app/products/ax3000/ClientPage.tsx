@@ -74,6 +74,12 @@ export default function ClientPage() {
           external: true,
           variant: "outline"
         },
+        {
+          text: "Paket Karşılaştırma",
+          href: "/paket-karsilastirma",
+          external: false,
+          variant: "outline"
+        },
       ]}
     >
       <section className="py-16 bg-background">

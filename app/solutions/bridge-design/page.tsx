@@ -77,6 +77,12 @@ const quickActions = [
     variant: "outline" as const,
     icon: <Activity className="h-4 w-4" />
   },
+  {
+    text: "Paket Karşılaştırma",
+    href: "/paket-karsilastirma",
+    external: false,
+    variant: "outline" as const,
+  },
 ];
 
 const postHeroSection = (
