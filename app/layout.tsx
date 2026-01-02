@@ -10,6 +10,7 @@ import Breadcrumb from "@/components/ui/breadcrumb";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import CopyProtection from "@/components/CopyProtection";
 import CookieConsent from "@/components/CookieConsent";
+import Script from "next/script";
 
 
 const inter = Inter({
@@ -73,6 +74,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="tr" className={`${inter.variable} ${spaceGrotesk.variable} ${ibmPlexMono.variable}`} suppressHydrationWarning>
       <body suppressHydrationWarning>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-DQYT0D9MQ5"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-DQYT0D9MQ5');
+          `}
+        </Script>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
