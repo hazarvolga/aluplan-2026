@@ -34,7 +34,7 @@ export default function ClientPage() {
     }
   };
   const contactInfo = [
-    { icon: Phone, title: "Telefon", details: ["(+90) 216 225 84 41", "(+90) 549 499 73 79"] },
+    { icon: Phone, title: "Telefon", details: ["(+90) 216 225 84 41", "(+90) 549 499 73 79", "(+90) 543 211 94 42"] },
     { icon: Mail, title: "E-posta", details: ["info@aluplan.com.tr"] },
     { icon: MapPin, title: "Adres", details: ["Quick Tower – Workinton", "İçerenköy Mah. Topçu İbrahim Sok. No: 5, Ataşehir"] },
     { icon: Clock, title: "Çalışma Saatleri", details: ["Pazartesi - Cuma: 09:00 - 18:00"] },

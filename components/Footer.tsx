@@ -84,6 +84,10 @@ const Footer = () => {
                 <a href="tel:+902162258441" className="text-gray-400 hover:text-white transition-colors">
                   (+90) 216 225 84 41
                 </a>
+                <br />
+                <a href="tel:+905432119442" className="text-gray-400 hover:text-white transition-colors">
+                  (+90) 543 211 94 42
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 flex-shrink-0 text-gray-500" />
