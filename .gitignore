@@ -32,3 +32,9 @@ ts-debug.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Development artifacts
+Bilgi Bankası/
+.gemini/
+.vscode/
+.idea/
