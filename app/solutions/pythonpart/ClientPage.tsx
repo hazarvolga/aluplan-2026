@@ -154,16 +154,36 @@ const turkishTools = [
   }
 ];
 
+import QuickActionsSection from "@/components/QuickActionsSection";
+import { ArrowRight, ExternalLink } from "lucide-react";
+
+// ... (existing imports)
+
 export default function ClientPage() {
+  const actions = [
+    {
+      text: "Daha Fazla Bilgi",
+      href: "https://allplantools.com/",
+      external: true, // Assuming this is external based on URL? Yes
+      variant: "outline" as const
+    },
+    {
+      text: "Başvuru Formu",
+      href: "https://forms.office.com/r/XLQm9JPTSR",
+      external: true,
+      variant: "default" as const,
+      icon: <ArrowRight className="h-4 w-4" />
+    }
+  ];
+
   return (
     <div className="dark min-h-screen bg-graphite-950">
       <SolutionHero
         badge="ALLPLAN ADD-ON"
         title="ALLTO PythonParts"
         description="Allplan Ortak Çözümü olarak ALLTO, ALLPLAN yazılımıyla uyumlu profesyonel eklentiler geliştirir. Kullanıcılar ayrıca uzmanlığımızı ve bireysel ihtiyaçlarını karşılamak için onlarla yakın çalışma isteğimizi takdir ediyor."
-        secondaryButton={{ text: "Daha Fazla Bilgi", href: "https://allplantools.com/" }}
-        tertiaryButton={{ text: "Başvuru Formu", href: "https://forms.office.com/r/XLQm9JPTSR", external: true }}
       />
+      <QuickActionsSection actions={actions} className="bg-background border-t border-border" />
 
       <div className="bg-background">
         {/* PostHero Section */}

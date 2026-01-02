@@ -111,7 +111,18 @@ const FeatureCard = ({ feature }: { feature: FeatureItem }) => (
   </Card>
 );
 
+import QuickActionsSection from "@/components/QuickActionsSection";
+
+// ... (existing imports)
+
 export default function Page() {
+  const quickActions = [
+    { text: "Ücretsiz Dene", href: "https://www.allplan.com/trial-or-subscription/", external: true, variant: "default" as const, icon: <ArrowRight className="h-4 w-4" /> },
+    { text: "Teklif Talep Formu", href: "https://forms.office.com/r/hXhnKAG912", external: true, variant: "outline" as const },
+    { text: "Abonelik SSS", href: "/solutions-v2/faq", external: false, variant: "outline" as const, icon: <ExternalLink className="h-4 w-4" /> },
+    { text: "Paket Karşılaştırma", href: "/paket-karsilastirma", external: false, variant: "outline" as const }
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -132,15 +143,11 @@ export default function Page() {
           <div className="max-w-3xl">
             <span className="text-accent font-medium text-sm tracking-wider uppercase mb-4 block">/ ALLPLAN PROFESSIONAL</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">DETAYLANDIRMA VE İLERİ DÜZEY OTOMASYON İÇİN <span className="text-accent">BIM ÇÖZÜMÜ</span></h1>
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-accent hover:bg-accent/90" asChild><a href="https://www.allplan.com/trial-or-subscription/" target="_blank" rel="noopener noreferrer">Ücretsiz Dene<ArrowRight className="ml-2 h-5 w-5" /></a></Button>
-              <Button size="lg" variant="outline" asChild><a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">Teklif Talep Formu</a></Button>
-              <Button size="lg" variant="outline" asChild><a href="/solutions-v2/faq"><ExternalLink className="mr-2 h-4 w-4" />Abonelik SSS</a></Button>
-              <Button size="lg" variant="outline" asChild><Link href="/paket-karsilastirma">Paket Karşılaştırma</Link></Button>
-            </div>
           </div>
         </div>
       </section>
+
+      <QuickActionsSection actions={quickActions} />
 
       {/* PostHero Section */}
       <section className="py-20 bg-background">

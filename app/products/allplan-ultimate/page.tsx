@@ -48,8 +48,20 @@ import bimplusProImg from "@/assets/products/allplan-ultimate/bimplus-pro.jpg";
 import cloudStorageImg from "@/assets/products/allplan-ultimate/cloud-storage.jpg";
 import sciaConceptImg from "@/assets/products/allplan-ultimate/scia-concept.jpg";
 
+import QuickActionsSection from "@/components/QuickActionsSection";
+
+// ... (existing imports - no change needed as imports are at top)
+
 export default function Page() {
+  const quickActions = [
+    { text: "Ücretsiz Dene", href: "https://www.allplan.com/trial-or-subscription/", external: true, variant: "default" as const, icon: <ArrowRight className="h-4 w-4" /> },
+    { text: "Teklif Talep Formu", href: "https://forms.office.com/r/hXhnKAG912", external: true, variant: "outline" as const },
+    { text: "Abonelik SSS", href: "/solutions-v2/faq", external: false, variant: "outline" as const, icon: <ExternalLink className="h-4 w-4" /> },
+    { text: "Paket Karşılaştırma", href: "/paket-karsilastirma", external: false, variant: "outline" as const }
+  ];
+
   const benefits = [
+    // ... benefits array
     { icon: workWayWantIcon, subtitle: "İstediğiniz Gibi", title: "Çalışın", description: "2D, 2.5D ve 3D'de esnek iş akışları." },
     { icon: powerfulModelingIcon, subtitle: "Güçlü &", title: "Sezgisel modelleme.", description: "Herhangi bir formu kolayca modelleme özgürlüğü, yapı bileşenlerini hızlıca geliştirmek için güçlü araçlarla desteklenir." },
     { icon: productiveCollabIcon, subtitle: "Verimli İş Birliği", title: "", description: "Bulut tabanlı iş birliği ve plan dağıtımı için entegre hizmetler." },
@@ -128,15 +140,11 @@ export default function Page() {
           <div className="max-w-3xl">
             <span className="text-accent font-medium text-sm tracking-wider uppercase mb-4 block">/ ALLPLAN ULTIMATE</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">Tasarımdan inşaata kadar tam iş akışı için kapsamlı <span className="text-accent">BIM</span> çözümü.</h1>
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" asChild className="bg-accent hover:bg-accent/90"><a href="https://www.allplan.com/trial-or-subscription/" target="_blank" rel="noopener noreferrer">Ücretsiz Dene<ArrowRight className="ml-2 h-5 w-5" /></a></Button>
-              <Button variant="outline" size="lg" asChild><a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">Teklif Talep Formu</a></Button>
-              <Button variant="outline" size="lg" asChild><a href="/solutions-v2/faq"><ExternalLink className="mr-2 h-4 w-4" />Abonelik SSS</a></Button>
-              <Button variant="outline" size="lg" asChild><Link href="/paket-karsilastirma">Paket Karşılaştırma</Link></Button>
-            </div>
           </div>
         </div>
       </section>
+
+      <QuickActionsSection actions={quickActions} />
 
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
