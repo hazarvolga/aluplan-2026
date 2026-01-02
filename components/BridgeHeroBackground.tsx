@@ -73,7 +73,7 @@ function BosphorusBridgeSequence({ globalTime }: { globalTime: number }) {
             <group position={pos}>
                 <lineSegments>
                     <edgesGeometry args={[new THREE.BoxGeometry(...size)]} />
-                    <lineBasicMaterial color="#1e40af" linewidth={2} transparent opacity={0.9} />
+                    <lineBasicMaterial color="#ea580c" linewidth={2} transparent opacity={0.9} />
                 </lineSegments>
             </group>
         )
@@ -174,7 +174,7 @@ function BosphorusBridgeSequence({ globalTime }: { globalTime: number }) {
             {axisProgress > 0 && (
                 <CustomLine
                     points={deckAxisPoints}
-                    color="#60a5fa"
+                    color="#fb923c"
                     opacity={axisProgress}
                     linewidth={3}
                 />
@@ -195,13 +195,13 @@ function BosphorusBridgeSequence({ globalTime }: { globalTime: number }) {
                 <>
                     <CustomLine
                         points={mainCablePoints}
-                        color="#3b82f6"
+                        color="#f97316"
                         opacity={mainCableProgress}
                         linewidth={2}
                     />
                     <CustomLine
                         points={mainCablePointsRight}
-                        color="#3b82f6"
+                        color="#f97316"
                         opacity={mainCableProgress}
                         linewidth={2}
                     />
@@ -239,7 +239,7 @@ function BosphorusBridgeSequence({ globalTime }: { globalTime: number }) {
                                 itemSize={3}
                             />
                         </bufferGeometry>
-                        <lineBasicMaterial color="#94a3b8" transparent opacity={0.6} linewidth={1} />
+                        <lineBasicMaterial color="#fed7aa" transparent opacity={0.6} linewidth={1} />
                     </line>
                 )
             })}
@@ -319,9 +319,9 @@ export default function BridgeHeroBackground() {
 
             {/* Legend / Subtitle Overlay - Bottom Right */}
             <div className="absolute bottom-10 right-10 text-right z-0">
-                <div className="text-xs font-mono text-blue-400 tracking-widest mb-1">ALLPLAN BRIDGE</div>
+                <div className="text-xs font-mono text-orange-400 tracking-widest mb-1">ALLPLAN BRIDGE</div>
                 <div className="text-2xl font-bold text-slate-200 tracking-tight">{subtitleText}</div>
-                <div className="h-1 w-24 bg-blue-500 ml-auto mt-2 rounded-full animate-pulse"></div>
+                <div className="h-1 w-24 bg-orange-500 ml-auto mt-2 rounded-full animate-pulse"></div>
             </div>
         </div>
     )
