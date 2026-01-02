@@ -41,7 +41,6 @@ export const solutionsMenu: MegaMenuSection[] = [
   {
     title: "DİĞER ÜRÜNLER",
     items: [
-      { name: "Allplan BIMPLUS", href: "/solutions/bimplus" },
       { name: "Donatı Mühendisliği", href: "/solutions/rebar-engineering" },
       { name: "İmar Yönetmeliği BIM Eklentisi", href: "/solutions/imar-yonetmeligi-bim-eklentisi" },
       { name: "BIMX5", href: "/solutions/bimx5" },
@@ -50,4 +49,3 @@ export const solutionsMenu: MegaMenuSection[] = [
     ],
   },
 ];
-
