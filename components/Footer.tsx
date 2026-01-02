@@ -15,7 +15,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#050505] text-white relative overflow-hidden border-t border-white/5">
+    <footer className="bg-background dark:bg-[#050505] text-foreground relative overflow-hidden border-t border-border">
       {/* Technical Grid Background */}
       <div className="absolute inset-0 opacity-[0.03] bg-technical-grid pointer-events-none" />
 
@@ -34,7 +34,7 @@ const Footer = () => {
               {socialLinks.map((social, i) => {
                 const Icon = social.icon;
                 return (
-                  <a key={i} href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.label} className="h-9 w-9 rounded-md bg-white/5 border border-white/10 hover:bg-[#3B82F6]/20 hover:border-[#3B82F6]/50 hover:text-[#3B82F6] transition-all flex items-center justify-center text-gray-400">
+                  <a key={i} href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.label} className="h-9 w-9 rounded-md bg-muted border border-border hover:bg-accent/20 hover:border-accent/50 hover:text-accent transition-all flex items-center justify-center text-muted-foreground">
                     <Icon className="h-4 w-4" />
                   </a>
                 );
@@ -44,36 +44,36 @@ const Footer = () => {
 
           {/* Products */}
           <div>
-            <h3 className="font-mono text-xs font-bold uppercase tracking-widest text-[#3B82F6] mb-6">Ürünler</h3>
+            <h3 className="font-mono text-xs font-bold uppercase tracking-widest text-accent mb-6">Ürünler</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/products/allplan-basic" className="text-gray-400 hover:text-white transition-colors">ALLPLAN Basic</Link></li>
-              <li><Link href="/products/allplan-concept" className="text-gray-400 hover:text-white transition-colors">ALLPLAN Concept</Link></li>
-              <li><Link href="/products/allplan-professional" className="text-gray-400 hover:text-white transition-colors">ALLPLAN Professional</Link></li>
-              <li><Link href="/products/allplan-ultimate" className="text-gray-400 hover:text-white transition-colors">ALLPLAN Ultimate</Link></li>
-              <li><Link href="/products/civil" className="text-gray-400 hover:text-white transition-colors">CIVIL</Link></li>
-              <li><Link href="/products/precast" className="text-gray-400 hover:text-white transition-colors">PRECAST</Link></li>
+              <li><Link href="/products/allplan-basic" className="text-muted-foreground hover:text-foreground transition-colors">ALLPLAN Basic</Link></li>
+              <li><Link href="/products/allplan-concept" className="text-muted-foreground hover:text-foreground transition-colors">ALLPLAN Concept</Link></li>
+              <li><Link href="/products/allplan-professional" className="text-muted-foreground hover:text-foreground transition-colors">ALLPLAN Professional</Link></li>
+              <li><Link href="/products/allplan-ultimate" className="text-muted-foreground hover:text-foreground transition-colors">ALLPLAN Ultimate</Link></li>
+              <li><Link href="/products/civil" className="text-muted-foreground hover:text-foreground transition-colors">CIVIL</Link></li>
+              <li><Link href="/products/precast" className="text-muted-foreground hover:text-foreground transition-colors">PRECAST</Link></li>
             </ul>
           </div>
 
           {/* Resources */}
           <div>
-            <h3 className="font-mono text-xs font-bold uppercase tracking-widest text-[#3B82F6] mb-6">ÇÖZÜMLER</h3>
+            <h3 className="font-mono text-xs font-bold uppercase tracking-widest text-accent mb-6">ÇÖZÜMLER</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/solutions-v2/building-design" className="text-gray-400 hover:text-white transition-colors">BİNA TASARIMI</Link></li>
-              <li><Link href="/solutions-v2/infrastructure" className="text-gray-400 hover:text-white transition-colors">ALTYAPI TASARIMI</Link></li>
-              <li><Link href="/solutions-v2/construction" className="text-gray-400 hover:text-white transition-colors">İNŞAAT PLANLAMASI</Link></li>
-              <li><Link href="/solutions-v2/addons" className="text-gray-400 hover:text-white transition-colors">EKLENTİLER</Link></li>
-              <li><Link href="/solutions-v2/other" className="text-gray-400 hover:text-white transition-colors">DİĞER ÜRÜNLER</Link></li>
+              <li><Link href="/solutions-v2/building-design" className="text-muted-foreground hover:text-foreground transition-colors">BİNA TASARIMI</Link></li>
+              <li><Link href="/solutions-v2/infrastructure" className="text-muted-foreground hover:text-foreground transition-colors">ALTYAPI TASARIMI</Link></li>
+              <li><Link href="/solutions-v2/construction" className="text-muted-foreground hover:text-foreground transition-colors">İNŞAAT PLANLAMASI</Link></li>
+              <li><Link href="/solutions-v2/addons" className="text-muted-foreground hover:text-foreground transition-colors">EKLENTİLER</Link></li>
+              <li><Link href="/solutions-v2/other" className="text-muted-foreground hover:text-foreground transition-colors">DİĞER ÜRÜNLER</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h3 className="font-mono text-xs font-bold uppercase tracking-widest text-[#3B82F6] mb-6">İletişim</h3>
+            <h3 className="font-mono text-xs font-bold uppercase tracking-widest text-accent mb-6">İletişim</h3>
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0 text-gray-500" />
-                <span className="text-gray-400 leading-relaxed">
+                <span className="text-muted-foreground leading-relaxed">
                   Quick Tower – Workinton<br />
                   İçerenköy Mah. Topçu İbrahim Sok.<br />
                   8/10D No: 5, 34752 Ataşehir / İstanbul
@@ -81,17 +81,17 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 flex-shrink-0 text-gray-500" />
-                <a href="tel:+902162258441" className="text-gray-400 hover:text-white transition-colors">
+                <a href="tel:+902162258441" className="text-muted-foreground hover:text-foreground transition-colors">
                   (+90) 216 225 84 41
                 </a>
                 <br />
-                <a href="tel:+905432119442" className="text-gray-400 hover:text-white transition-colors">
+                <a href="tel:+905432119442" className="text-muted-foreground hover:text-foreground transition-colors">
                   (+90) 543 211 94 42
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 flex-shrink-0 text-gray-500" />
-                <a href="mailto:info@aluplan.com.tr" className="text-gray-400 hover:text-white transition-colors">
+                <a href="mailto:info@aluplan.com.tr" className="text-muted-foreground hover:text-foreground transition-colors">
                   info@aluplan.com.tr
                 </a>
               </li>
@@ -100,13 +100,28 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600">
-          <p className="font-mono">© {currentYear} Aluplan Program Sistemleri.</p>
+        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+          <p className="font-mono text-muted-foreground">© {currentYear} Aluplan Program Sistemleri.</p>
           <div className="flex gap-6">
-            <Link href="/gizlilik-politikasi" className="hover:text-gray-300 transition-colors">Gizlilik Politikası</Link>
-            <Link href="/kullanim-sartlari" className="hover:text-gray-300 transition-colors">Kullanım Şartları</Link>
-            <Link href="/kvkk" className="hover:text-gray-300 transition-colors">KVKK</Link>
+            <Link href="/gizlilik-politikasi" className="text-muted-foreground hover:text-foreground transition-colors">Gizlilik Politikası</Link>
+            <Link href="/kullanim-sartlari" className="text-muted-foreground hover:text-foreground transition-colors">Kullanım Şartları</Link>
+            <Link href="/kvkk" className="text-muted-foreground hover:text-foreground transition-colors">KVKK</Link>
           </div>
+        </div>
+
+        {/* Developer Credits */}
+        <div className="pt-4 text-center">
+          <p className="text-xs text-muted-foreground/60">
+            Design & Develop by{' '}
+            <a
+              href="https://hazarvolga.com.tr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-accent transition-colors font-medium"
+            >
+              Hazar Volga Ekiz
+            </a>
+          </p>
         </div>
       </div>
     </footer>
