@@ -61,9 +61,9 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-        display: ["var(--font-space-grotesk)", "Inter", "system-ui", "sans-serif"],
-        mono: ["var(--font-ibm-plex-mono)", "Menlo", "monospace"],
+        sans: ["Inter", "system-ui", "sans-serif"],
+        display: ["Space Grotesk", "Inter", "system-ui", "sans-serif"],
+        mono: ["IBM Plex Mono", "Menlo", "monospace"],
       },
       boxShadow: {
         sm: "var(--shadow-sm)",

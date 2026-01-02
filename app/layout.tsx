@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata, Viewport } from "next";
-import { Inter, Space_Grotesk, IBM_Plex_Mono } from "next/font/google";
+// import { Inter, Space_Grotesk, IBM_Plex_Mono } from "next/font/google";
 import SkipLink from "@/components/a11y/SkipLink";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -13,24 +13,25 @@ import CookieConsent from "@/components/CookieConsent";
 import Script from "next/script";
 
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-space-grotesk",
-  display: "swap",
-});
-
-const ibmPlexMono = IBM_Plex_Mono({
-  weight: ["400", "500", "600"],
-  subsets: ["latin"],
-  variable: "--font-ibm-plex-mono",
-  display: "swap",
-});
+// Fonts disabled for Docker build - loaded via CDN in globals.css
+// const inter = Inter({
+//   subsets: ["latin"],
+//   variable: "--font-inter",
+//   display: "swap",
+// });
+// 
+// const spaceGrotesk = Space_Grotesk({
+//   subsets: ["latin"],
+//   variable: "--font-space-grotesk",
+//   display: "swap",
+// });
+// 
+// const ibmPlexMono = IBM_Plex_Mono({
+//   weight: ["400", "500", "600"],
+//   subsets: ["latin"],
+//   variable: "--font-ibm-plex-mono",
+//   display: "swap",
+// });
 
 export const viewport: Viewport = {
   themeColor: '#0a0e27',
@@ -72,7 +73,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="tr" className={`${inter.variable} ${spaceGrotesk.variable} ${ibmPlexMono.variable}`} suppressHydrationWarning>
+    <html lang="tr" suppressHydrationWarning>
       <body suppressHydrationWarning>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=GT-5TQ6VQ4"
