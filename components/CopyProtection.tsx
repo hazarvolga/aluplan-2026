@@ -7,38 +7,31 @@ import gsap from "gsap";
 
 export default function CopyProtection() {
     const containerRef = useRef<HTMLDivElement>(null);
-    const sideViewRef = useRef<SVGGElement>(null);
-    const frontViewRef = useRef<SVGGElement>(null);
 
     // Refs for animation targets (Side View)
-    const bodyRef = useRef<SVGGElement>(null);      // #B (Whole Body Group)
-    const torsoRef = useRef<SVGGElement>(null);     // #UB (Upper Body)
-    const headRef = useRef<SVGGElement>(null);      // #H (Head)
+    const bodyRef = useRef<SVGGElement>(null);      // #B
+    const torsoRef = useRef<SVGGElement>(null);     // #UB
+    const headRef = useRef<SVGGElement>(null);      // #H
 
-    const legFrontRef = useRef<SVGGElement>(null);  // #FF (Front Leg Group)
-    const legFrontShinRef = useRef<SVGGElement>(null); // .F1
-    const legFrontFootRef = useRef<SVGGElement>(null); // .F2
-    const legFrontToeRef = useRef<SVGGElement>(null);  // .F3
+    const legFrontRef = useRef<SVGGElement>(null);  // #FF
+    const legFrontShinRef = useRef<SVGGElement>(null);
+    const legFrontFootRef = useRef<SVGGElement>(null);
+    const legFrontToeRef = useRef<SVGGElement>(null);
 
-    const legBackRef = useRef<SVGGElement>(null);   // #FB (Back Leg Group)
+    const legBackRef = useRef<SVGGElement>(null);   // #FB
     const legBackShinRef = useRef<SVGGElement>(null);
     const legBackFootRef = useRef<SVGGElement>(null);
     const legBackToeRef = useRef<SVGGElement>(null);
 
-    const armFrontRef = useRef<SVGGElement>(null);  // #HF (Front Arm Group)
-    const armFrontForeRef = useRef<SVGGElement>(null); // .H1
-    const armFrontHandRef = useRef<SVGGElement>(null); // .H2
+    const armFrontRef = useRef<SVGGElement>(null);  // #HF
+    const armFrontForeRef = useRef<SVGGElement>(null);
+    const armFrontHandRef = useRef<SVGGElement>(null);
 
-    const armBackRef = useRef<SVGGElement>(null);   // #HB (Back Arm Group)
+    const armBackRef = useRef<SVGGElement>(null);   // #HB
     const armBackForeRef = useRef<SVGGElement>(null);
     const armBackHandRef = useRef<SVGGElement>(null);
 
-    // Refs for Front View
-    const frontLeftArmRef = useRef<SVGPathElement>(null);
-    const frontRightArmRef = useRef<SVGPathElement>(null);
-
     const [active, setActive] = useState(false);
-    const [view, setView] = useState<"side" | "front">("side");
     const [showPopup, setShowPopup] = useState(false);
     const [message, setMessage] = useState("");
     const [iconType, setIconType] = useState<"shield" | "coffee" | "ban">("shield");
@@ -50,7 +43,6 @@ export default function CopyProtection() {
             setMessage(msg);
             setIconType(icon);
             setActive(true);
-            setView("side");
             setShowPopup(false);
         };
 
@@ -76,7 +68,7 @@ export default function CopyProtection() {
         if (!active) return;
 
         const ctx = gsap.context(() => {
-            // Initial Sets (Side View)
+            // Initial Sets
             gsap.set(bodyRef.current, { y: 10 });
             gsap.set(torsoRef.current, { fill: '#151515', transformOrigin: '50% 100%' });
             gsap.set(headRef.current, { transformOrigin: '5px 50px', rotation: -5, fill: '#454545', scale: 0.967 });
@@ -86,7 +78,7 @@ export default function CopyProtection() {
             gsap.set(armFrontForeRef.current, { transformOrigin: '0px 5px', rotation: -20, y: -5 });
             gsap.set(armFrontHandRef.current, { transformOrigin: '10% 0%', rotation: -10, y: -1.5, scaleY: 1.03 });
 
-            gsap.set(armBackRef.current, { transformOrigin: '-5px 0px', rotation: -10, fill: '#333', y: -3 }); // Back arm dark
+            gsap.set(armBackRef.current, { transformOrigin: '-5px 0px', rotation: -10, fill: '#333', y: -3 });
             gsap.set(armBackForeRef.current, { transformOrigin: '0px 5px', rotation: -20, y: -5 });
             gsap.set(armBackHandRef.current, { transformOrigin: '10% 0%', rotation: -10, y: -1.5, scaleY: 1.03 });
 
@@ -96,122 +88,95 @@ export default function CopyProtection() {
             gsap.set(legFrontFootRef.current, { transformOrigin: '25px 0px' });
             gsap.set(legFrontToeRef.current, { transformOrigin: '4.2px 4.2px' });
 
-            gsap.set(legBackRef.current, { transformOrigin: '55% 10px', rotation: -37, fill: '#A50018' }); // Back leg darker red
+            gsap.set(legBackRef.current, { transformOrigin: '55% 10px', rotation: -37, fill: '#A50018' });
             gsap.set(legBackShinRef.current, { transformOrigin: '21px 2px' });
             gsap.set(legBackFootRef.current, { transformOrigin: '25px 0px' });
             gsap.set(legBackToeRef.current, { transformOrigin: '4.2px 4.2px' });
 
 
-            // Walk Cycle Helper
+            // Walk Cycle Helpers
             const animateLimb = (entireLimb: any, shin: any, foot: any, toe: any) => {
                 const tl = gsap.timeline({ repeat: -1 });
-                // Logic derived from provided code M(p1)
-                // .to(p1,.5,{rotation:27,ease:Sine.easeInOut},'l1')
-                // ...
-                const E0 = "sine.inOut";
-                const E1 = "sine.in";
-                const E2 = "sine.out";
+                const E0 = "sine.inOut"; const E1 = "sine.in"; const E2 = "sine.out";
 
-                tl.addLabel("l1", 0).addLabel("l2", 0.25).addLabel("l3", 0.5).addLabel("l4", 0.75).addLabel("l5", 1);
+                tl.to(entireLimb, { duration: 0.5, rotation: 27, ease: E0 }, 0)
+                    .to(entireLimb, { duration: 0.25, rotation: -37, ease: E1 }, 0.5)
 
-                tl.to(entireLimb, { duration: 0.5, rotation: 27, ease: E0 }, "l1")
-                    .to(entireLimb, { duration: 0.25, rotation: -37, ease: E1 }, "l3")
+                    .to(shin, { duration: 0.25, rotation: 15, ease: E0 }, 0.25)
+                    .to(shin, { duration: 0.25, rotation: 80, ease: E1 }, 0.5)
+                    .to(shin, { duration: 0.25, rotation: 0, ease: E2 }, 0.75)
 
-                    .to(shin, { duration: 0.25, rotation: 15, ease: E0 }, "l2")
-                    .to(shin, { duration: 0.25, rotation: 80, ease: E1 }, "l3")
-                    .to(shin, { duration: 0.25, rotation: 0, ease: E2 }, "l4")
-
-                    .to(foot, { duration: 0.25, rotation: 45, repeat: 1, yoyo: true }, "l3")
-                    .to(toe, { duration: 0.25, rotation: -35, repeat: 1, yoyo: true, scaleX: 0.925 }, "l2");
-
+                    .to(foot, { duration: 0.25, rotation: 45, repeat: 1, yoyo: true }, 0.5)
+                    .to(toe, { duration: 0.25, rotation: -35, repeat: 1, yoyo: true, scaleX: 0.925 }, 0.25);
                 return tl;
             };
 
             const animateArm = (entireArm: any, foreArm: any, hand: any) => {
                 const tl = gsap.timeline({ repeat: -1 });
                 const E0 = "sine.inOut";
-
-                // .to(p2,.5,{rotation:25,ease:E0,yoyo:true,repeat:1},'l1')
-                // .to(p2+' .H1',.5,{rotation:15,ease:E0,yoyo:true,repeat:1},'l1') ...
-
                 tl.to(entireArm, { duration: 0.5, rotation: 25, ease: E0, yoyo: true, repeat: 1 }, 0)
                     .to(foreArm, { duration: 0.5, rotation: 15, ease: E0, yoyo: true, repeat: 1 }, 0)
                     .to(hand, { duration: 0.5, rotation: 0, ease: E0, yoyo: true, repeat: 1 }, 0);
-
                 return tl;
             };
 
-            // Create Master Walk Timeline
-            const masterWalk = gsap.timeline();
-
-            // Front Leg + Back Arm (Synced)
+            // Timelines
             const frontLegTL = animateLimb(legFrontRef.current, legFrontShinRef.current, legFrontFootRef.current, legFrontToeRef.current);
             const backArmTL = animateArm(armBackRef.current, armBackForeRef.current, armBackHandRef.current);
-
-            // Back Leg + Front Arm (Offset by 0.5s)
             const backLegTL = animateLimb(legBackRef.current, legBackShinRef.current, legBackFootRef.current, legBackToeRef.current);
             const frontArmTL = animateArm(armFrontRef.current, armFrontForeRef.current, armFrontHandRef.current);
 
-            // Add to master
-            // Note: animateLimb returns infinite TL. masterWalk just controls them?
-            // Actually, we launch them.
-
-            // Additional Body Bounce
             const bodyBounce = gsap.to(bodyRef.current, { y: "+=20", duration: 0.25, repeat: -1, yoyo: true, ease: "sine.inOut" });
             const headWobble = gsap.to(headRef.current, { rotation: 1, duration: 0.25, repeat: -1, yoyo: true, ease: "sine.inOut" });
 
-            // The Walk (Movement across screen)
-            const walkDuration = 4; // Slow walk
-
-            // Offset Back limbs
+            // Synch
             backLegTL.progress(0.5);
             frontArmTL.progress(0.5);
 
+            // Movement
+            const walkDuration = 3.5; // Slightly faster entrance from far left
+            const startX = -600; // Start well off-screen
+            const endX = window.innerWidth / 2 - 150; // Center ish
 
-            // Animate Container FROM Left
             gsap.fromTo(containerRef.current,
-                { x: -200 },
+                { x: startX },
                 {
-                    x: window.innerWidth < 768 ? window.innerWidth / 2 - 75 : window.innerWidth / 2 - 75,
+                    x: endX,
                     duration: walkDuration,
                     ease: "power1.out",
                     onComplete: () => {
-                        // STOP WALKING
+                        // STOP
                         frontLegTL.pause(); backLegTL.pause();
                         frontArmTL.pause(); backArmTL.pause();
                         bodyBounce.pause(); headWobble.pause();
 
-                        // Reset to standing pose (approx)
+                        // Reset to standing pose
                         gsap.to([legFrontRef.current, legBackRef.current], { rotation: 0, duration: 0.5 });
+                        gsap.to(legFrontShinRef.current, { rotation: 0, duration: 0.5 });
                         gsap.to(bodyRef.current, { y: 10, duration: 0.5 });
+                        gsap.to([armFrontRef.current, armBackRef.current], { rotation: 0, duration: 0.5 });
 
-                        // TURN SEQUENCE
-                        const turnTL = gsap.timeline({
+                        // POINT AT CARD Sequence
+                        // Point Front Arm (HF) UP/RIGHT
+                        const pointTL = gsap.timeline({
                             onComplete: () => {
-                                setView("front");
-                                // POSE SEQUENCE (Front View)
-                                // Hands on Hips
-                                gsap.fromTo([frontLeftArmRef.current, frontRightArmRef.current],
-                                    { rotation: 0 },
-                                    { rotation: -30, duration: 0.5, transformOrigin: "top center" } // Simple rotation for now
-                                );
-
                                 setShowPopup(true);
-
-                                // Reset everything after delay
-                                setTimeout(() => {
-                                    setActive(false);
-                                }, 4500);
+                                setTimeout(() => setActive(false), 5000);
                             }
                         });
 
-                        // Flip Effect
-                        turnTL.to(sideViewRef.current, { scaleX: 0, duration: 0.3, ease: "power1.in" });
+                        // Point Arm Animation
+                        pointTL.to(armFrontRef.current, { rotation: -130, duration: 0.6, ease: "back.out(1.7)" })
+                            .to(armFrontForeRef.current, { rotation: -30, duration: 0.4 }, "<0.2") // Straighten arm slightly
+                            .to(armFrontHandRef.current, { rotation: -60, duration: 0.4 }, "<"); // Point finger implicitly
+
+                        // Head look up slightly
+                        gsap.to(headRef.current, { rotation: -20, duration: 0.5, delay: 0.2 });
                     }
                 }
             );
 
-        }, containerRef); // Scope to container
+        }, containerRef);
 
         return () => ctx.revert();
     }, [active]);
@@ -229,42 +194,38 @@ export default function CopyProtection() {
     return (
         <AnimatePresence>
             {active && (
-                <div className="fixed inset-0 z-[99999] pointer-events-none flex items-center justify-center bg-black/20 backdrop-blur-[2px]">
+                <div className="fixed inset-0 z-[99999] pointer-events-none flex items-center justify-center bg-black/10 backdrop-blur-[1px]">
 
                     {/* Character Container */}
                     <div ref={containerRef} className="relative w-[150px] h-[300px]">
 
-                        {/* POPUP BUBBLE directly above head */}
+                        {/* POPUP BUBBLE - Positioned where arm points */}
                         <AnimatePresence>
                             {showPopup && (
                                 <motion.div
-                                    initial={{ opacity: 0, scale: 0, y: 20 }}
-                                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                                    initial={{ opacity: 0, scale: 0, x: -20, y: 20 }}
+                                    animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
                                     exit={{ opacity: 0, scale: 0 }}
-                                    className="absolute -top-32 left-1/2 -translate-x-1/2 w-64 z-20"
+                                    className="absolute -top-40 -right-20 w-72 z-20 origin-bottom-left"
                                 >
-                                    <div className="bg-background/95 backdrop-blur-md border border-border/50 p-4 rounded-xl shadow-2xl text-center border-b-4 border-b-accent relative">
+                                    <div className="bg-background/95 backdrop-blur-md border border-border/50 p-4 rounded-xl rounded-bl-sm shadow-2xl text-center border-l-4 border-l-accent relative">
                                         <div className="flex justify-center mb-2">{getIcon()}</div>
                                         <p className="text-xs font-bold text-foreground mb-1">HOP! İÇERİK KORUMALI</p>
                                         <p className="text-[11px] text-muted-foreground leading-snug">
                                             {message}
                                         </p>
-                                        {/* Arrow */}
-                                        <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-background border-b border-r border-border/50 transform rotate-45" />
                                     </div>
                                 </motion.div>
                             )}
                         </AnimatePresence>
 
-                        {/* VIEW: SIDE (Walking) */}
+                        {/* VIEW: SIDE */}
                         <svg
-                            ref={sideViewRef}
                             width="325" height="325" viewBox="15 0 315 315"
-                            className={`absolute top-0 left-0 w-full h-full overflow-visible ${view === 'front' ? 'hidden' : 'block'}`}
+                            className="absolute top-0 left-0 w-full h-full overflow-visible"
                         >
-                            {/* HINT: Provided SVG structure adapted to JSX */}
                             <g id="B" ref={bodyRef}>
-                                {/* BACK LIMBS (Behind body) */}
+                                {/* BACK LIMBS */}
                                 <g id="FB" ref={legBackRef}>
                                     <path d="M169.2 223.345c.1-.21-.4-2.11 1.4-20.466-1.9-15.51-4.6-39.88-1.2-52.86 2.9-12.66 16.7-15.83 19.1-1.588.4 11.183.4 15.51-2 35.66-4.6 23.313-9.7 39.243-9.8 40.09-.1.525-2.2 2.32-4.4 2.002-1.7.104-3.3-2.217-3.1-2.85z" />
                                     <g className="F1" ref={legBackShinRef}>
@@ -283,7 +244,7 @@ export default function CopyProtection() {
                                     </g>
                                 </g>
 
-                                {/* UPPER BODY (Torso + Head) */}
+                                {/* UPPER BODY */}
                                 <g id="UB" ref={torsoRef}>
                                     <g id="H" ref={headRef}>
                                         <path d="M188.8.2c-9.1-.3-16.2 7.3-16.2 15.4 0 8.9 7.2 13.8 7.2 13.8s1.3 3.8 0 6.9c-2.1 4.8-6.6 11.1-6.6 11.1l17.6 8.9s-3.8-8.4-2.2-13.8c.8-2.9 4.7-3.5 6.9-3.1 3.8 3.7 7.7 5.5 9.1 4.6 1.9-1.2 4.9-18.4 4.5-26.8-.4-8.5-9.5-16.3-20.3-17z" />
@@ -319,37 +280,6 @@ export default function CopyProtection() {
                                     </g>
                                 </g>
 
-                            </g>
-                        </svg>
-
-                        {/* VIEW: FRONT (Constructed for Pose) */}
-                        <svg
-                            ref={frontViewRef}
-                            width="325" height="325" viewBox="15 0 315 315"
-                            className={`absolute top-0 left-0 w-full h-full overflow-visible ${view === 'front' ? 'block' : 'hidden'}`}
-                            style={{ transform: "scaleX(1)" }} // Initial State
-                        >
-                            {/* Front Head */}
-                            <g transform="translate(170, 20)">
-                                <circle cx="0" cy="0" r="18" fill="#454545" />
-                                <circle cx="0" cy="0" r="14" fill="#666" opacity="0.5" />
-                            </g>
-                            {/* Front Body */}
-                            <path d="M155 45 L185 45 L180 130 L160 130 Z" fill="#151515" />
-
-                            {/* Front Legs */}
-                            <path d="M160 130 L155 250" stroke="#DC0026" strokeWidth="16" strokeLinecap="round" />
-                            <path d="M180 130 L185 250" stroke="#A50018" strokeWidth="16" strokeLinecap="round" />
-
-                            {/* Front Arms (Akimbo Refs) */}
-                            {/* Left Arm */}
-                            <g transform="translate(155, 55)">
-                                <path ref={frontLeftArmRef} d="M0 0 L-20 60" stroke="#454545" strokeWidth="12" strokeLinecap="round" />
-                                {/* We will animate this path d or rotation */}
-                            </g>
-                            {/* Right Arm */}
-                            <g transform="translate(185, 55)">
-                                <path ref={frontRightArmRef} d="M0 0 L20 60" stroke="#333" strokeWidth="12" strokeLinecap="round" />
                             </g>
                         </svg>
 
