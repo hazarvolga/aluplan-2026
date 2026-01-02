@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Box, Layers, Zap, Crown } from "lucide-react";
+import { ArrowRight, Box, Layers, Zap, Crown, HardHat, Blocks } from "lucide-react";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
@@ -10,27 +10,39 @@ import { Button } from "@/components/ui/button";
 const packages = [
     {
         icon: <Box className="w-6 h-6 text-blue-400" />,
-        title: "BASIC",
+        title: "ALLPLAN Basic",
         description: "Temel 2D/3D tasarım ve çizim araçları.",
         color: "bg-blue-500/10 border-blue-500/20 text-blue-400"
     },
     {
         icon: <Layers className="w-6 h-6 text-purple-400" />,
-        title: "CONCEPT",
+        title: "ALLPLAN Concept",
         description: "Konsept tasarım, modelleme ve görselleştirme.",
         color: "bg-purple-500/10 border-purple-500/20 text-purple-400"
     },
     {
         icon: <Zap className="w-6 h-6 text-amber-400" />,
-        title: "PROFESSIONAL",
+        title: "ALLPLAN Professional",
         description: "Tam kapsamlı BIM, metraj ve işbirliği.",
         color: "bg-amber-500/10 border-amber-500/20 text-amber-400"
     },
     {
         icon: <Crown className="w-6 h-6 text-emerald-400" />,
-        title: "ULTIMATE",
+        title: "ALLPLAN Ultimate",
         description: "Tüm disiplinler ve ileri seviye mühendislik.",
         color: "bg-emerald-500/10 border-emerald-500/20 text-emerald-400"
+    },
+    {
+        icon: <HardHat className="w-6 h-6 text-orange-400" />,
+        title: "CIVIL",
+        description: "Altyapı, yol ve köprü mühendisliği çözümleri.",
+        color: "bg-orange-500/10 border-orange-500/20 text-orange-400"
+    },
+    {
+        icon: <Blocks className="w-6 h-6 text-cyan-400" />,
+        title: "PRECAST",
+        description: "Prefabrik üretim planlama ve detaylandırma.",
+        color: "bg-cyan-500/10 border-cyan-500/20 text-cyan-400"
     }
 ];
 
@@ -62,7 +74,7 @@ export default function TechSpecsTable() {
                     </Button>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {packages.map((pkg, index) => (
                         <motion.div
                             key={index}
