@@ -63,6 +63,7 @@ interface ProductPageTemplateProps {
   subtitle?: string;
   description: string;
   heroImage?: string | StaticImageData;
+  heroVideoId?: string;
   features?: string[];
   packages?: Package[];
   ctaTitle?: string;
@@ -114,6 +115,7 @@ const ProductPageTemplate = ({
   subtitle,
   description,
   heroImage,
+  heroVideoId,
   features,
   packages,
   ctaTitle = "Hemen Başlayın",
@@ -160,7 +162,17 @@ const ProductPageTemplate = ({
                 {description}
               </p>
             </div>
-            {heroImage && (
+            {heroVideoId ? (
+              <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl">
+                <iframe
+                  className="w-full h-full"
+                  src={`https://www.youtube.com/embed/${heroVideoId}?rel=0`}
+                  title={title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            ) : heroImage && (
               <div className="relative">
                 {typeof heroImage === 'string' ? (
                   <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl">

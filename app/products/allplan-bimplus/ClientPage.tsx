@@ -186,7 +186,7 @@ export default function ClientPage() {
       badge="İŞBİRLİĞİ"
       title="BIMPLUS projenizi işbirliği için paylaşın, koordine edin ve yönetin"
       description="Açık BIM’e dayalı bulut işbirliği: model veri koordinasyonu, değişiklik yönetimi ve merkezi bilgi kontrolü ile tüm disiplinleri bir araya getirin."
-      heroImage={heroImage}
+      heroVideoId="6rxOZpzX7yE"
       benefitsItems={benefitsItems}
       tabFeatures={{ title: "Bimplus'ın Özellikleri", tabs: [] }}
       workflowCategories={workflowCategories}
