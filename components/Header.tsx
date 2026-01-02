@@ -15,6 +15,7 @@ import { AnimatePresence } from "framer-motion";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeMegaMenu, setActiveMegaMenu] = useState<string | null>(null);
+  const [expandedMobileMenu, setExpandedMobileMenu] = useState<string | null>(null);
   const [language, setLanguage] = useState<"tr" | "en">("tr");
 
   const socialLinks = [
@@ -254,22 +255,94 @@ const Header = () => {
         <AnimatePresence>
           {isMenuOpen && (
             <div className="md:hidden py-4 border-t border-border/10 animate-fade-in bg-background">
-              <div className="flex flex-col space-y-3 px-2">
+              <div className="flex flex-col space-y-2 px-2">
                 {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href || "#"}
-                    className="text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 px-4 py-3 rounded-lg transition-colors"
-                    onClick={(e) => {
-                      if (item.href) handleScroll(e, item.href);
-                      setIsMenuOpen(false);
-                    }}
-                  >
-                    {item.name}
-                  </a>
+                  <div key={item.name}>
+                    {/* Top-level item */}
+                    {item.megaMenu ? (
+                      <button
+                        onClick={() => setExpandedMobileMenu(expandedMobileMenu === item.megaMenu ? null : item.megaMenu!)}
+                        className="w-full flex items-center justify-between text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted/50 px-4 py-3 rounded-lg transition-colors"
+                      >
+                        <span>{item.name}</span>
+                        <ChevronDown className={`h-4 w-4 transition-transform duration-300 ${expandedMobileMenu === item.megaMenu ? 'rotate-180 text-accent' : ''}`} />
+                      </button>
+                    ) : (
+                      <a
+                        href={item.href || "#"}
+                        className="text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted/50 px-4 py-3 rounded-lg transition-colors block"
+                        onClick={(e) => {
+                          if (item.href) handleScroll(e, item.href);
+                          setIsMenuOpen(false);
+                        }}
+                      >
+                        {item.name}
+                      </a>
+                    )}
+
+                    {/* Sub-items (accordion content) */}
+                    <AnimatePresence>
+                      {item.megaMenu && expandedMobileMenu === item.megaMenu && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: 'auto', opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.3, ease: 'easeInOut' }}
+                          className="overflow-hidden"
+                        >
+                          <div className="pl-4 pr-2 py-2 space-y-4">
+                            {item.megaMenu === 'products' && productsMenu.map((section, idx) => (
+                              <div key={idx} className="space-y-2">
+                                <h4 className="text-xs font-bold uppercase tracking-wider text-accent px-2 py-1">
+                                  {section.title}
+                                </h4>
+                                <div className="space-y-1">
+                                  {section.items.map((subItem, subIdx) => (
+                                    <Link
+                                      key={subIdx}
+                                      href={subItem.href}
+                                      className="block text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 px-3 py-2 rounded-md transition-colors"
+                                      onClick={() => {
+                                        setIsMenuOpen(false);
+                                        setExpandedMobileMenu(null);
+                                      }}
+                                    >
+                                      {subItem.name}
+                                    </Link>
+                                  ))}
+                                </div>
+                              </div>
+                            ))}
+                            {item.megaMenu === 'solutions' && solutionsMenu.map((section, idx) => (
+                              <div key={idx} className="space-y-2">
+                                <h4 className="text-xs font-bold uppercase tracking-wider text-accent px-2 py-1">
+                                  {section.title}
+                                </h4>
+                                <div className="space-y-1">
+                                  {section.items.map((subItem, subIdx) => (
+                                    <Link
+                                      key={subIdx}
+                                      href={subItem.href}
+                                      className="block text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 px-3 py-2 rounded-md transition-colors"
+                                      onClick={() => {
+                                        setIsMenuOpen(false);
+                                        setExpandedMobileMenu(null);
+                                      }}
+                                    >
+                                      {subItem.name}
+                                    </Link>
+                                  ))}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
                 ))}
-                <div className="pt-3 border-t border-white/10 flex flex-col space-y-3 px-2">
-                  <Button asChild variant="outline" className="w-full justify-start border-white/10 bg-white/5 text-white hover:bg-white/10">
+                <div className="pt-3 border-t border-border/10 flex flex-col space-y-3 px-2">
+                  <Button asChild variant="outline" className="w-full justify-start border-border/40 bg-muted/50 text-foreground hover:bg-muted">
                     <a href="https://www.allplan.com/trial-or-subscription/" target="_blank" rel="noopener noreferrer">
                       {language === "tr" ? "Ücretsiz Deneme" : "Free Trial"}
                     </a>
