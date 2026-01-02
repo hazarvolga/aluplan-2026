@@ -44,7 +44,7 @@ const HeroV2 = () => {
                     muted
                     loop
                     playsInline
-                    poster="/images/hero-poster.png"
+                    poster="/images/hero-poster.jpg"
                     preload="metadata"
                     className="h-full w-full object-cover scale-105 opacity-80 dark:opacity-100"
                     aria-label="ALLPLAN BIM platform background video"
