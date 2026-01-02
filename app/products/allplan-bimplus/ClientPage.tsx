@@ -98,12 +98,82 @@ export default function ClientPage() {
     "Hatalara, düşük kaliteye ve artan maliyetlere yol açan koordine edilmemiş bilgiler.",
   ];
 
-  const projectManagementVideos = [
-    { title: "Yeni bir proje oluşturun", videoUrl: "" },
-    { title: "Disiplin grupları oluşturun", videoUrl: "" },
-    { title: "Birden çok modeli yönetin, Modeli yükle", videoUrl: "" },
-    { title: "Döküman yönetimi", videoUrl: "" },
-    { title: "ISO 19650 iş akışı", videoUrl: "" },
+  const videoSections = [
+    {
+      title: "Proje Yönetimi",
+      subtitle: "Projeler ve kullanıcılar baştan organize edilmelidir.",
+      features: [
+        "Projenizi mantıklı bir şekilde düzenleyin",
+        "Davet ile katılımcıları seçin",
+        "Hakları ve rolleri atayın",
+        "Tüm planlama ekibi için tam şeffaflık yaratın"
+      ],
+      items: [
+        { title: "Yeni bir proje oluşturun", videoUrl: "https://www.youtube.com/embed/OVbBhD-5UQY" },
+        { title: "Disiplin grupları oluşturun", videoUrl: "https://www.youtube.com/embed/SZjTby08rsE" },
+        { title: "Birden çok modeli yönetin", videoUrl: "https://www.youtube.com/embed/jekHjtSn7iw" }
+      ]
+    },
+    {
+      title: "Bilgi Yönetimi",
+      subtitle: "Daha fazla bilgiyi daha kısa sürede yönetin.",
+      features: [
+        "Birden çok kaynaktan gelen bilgileri birden çok biçimde yönetin",
+        "Bilgi paylaşımı için yönetilen bir ortam oluşturun",
+        "Belgelerin ve modellerin birden çok revizyonunu kaydedin",
+        "Bilgilere her zaman, her yerde ve herhangi bir cihazdan erişin"
+      ],
+      items: [
+        { title: "Modeli yükle", videoUrl: "https://www.youtube.com/embed/2ireMe9Vtpg" },
+        { title: "Döküman yönetimi", videoUrl: "https://www.youtube.com/embed/b5vGou2R3-M" },
+        { title: "ISO 19650 iş akışı", videoUrl: "https://www.youtube.com/embed/WYWOpp8FWW8" }
+      ]
+    },
+    {
+      title: "Revizyon Yönetimi",
+      subtitle: "Revizyon sayısı arttıkça riskleri yönetin ve hataları en aza indirin.",
+      features: [
+        "Herhangi bir modelin revizyonunu görselleştirin",
+        "Aynı modelin revizyonlarını karşılaştırın",
+        "Daha önce bilinçli kararlar verin",
+        "Riskleri ve revizyonların etkilerini azaltın"
+      ],
+      items: [
+        { title: "Otomatik revizyon", videoUrl: "https://www.youtube.com/embed/jVUTdRuaIQw" },
+        { title: "Revizyon karşılaştırması", videoUrl: "https://www.youtube.com/embed/fDM_ZtcuM0Q" },
+        { title: "Proje görevlerini yönet", videoUrl: "https://www.youtube.com/embed/ZGT1e1iBKpU" }
+      ]
+    },
+    {
+      title: "Koordinasyon",
+      subtitle: "Hatalara ve artan maliyetlere yol açan koordinasyon dışı bilgilerden kaçının.",
+      features: [
+        "Modelleri tarafsız bir ortamda toplayın",
+        "Modelleri güçlü bir görüntüleyicide görselleştirin",
+        "Nitelikleri ve diğer obje bilgilerini atayın",
+        "Çakışma kontrolleri, simülasyonlar vb. için modelleri kullanın"
+      ],
+      items: [
+        { title: "BIM Gezgini", videoUrl: "https://www.youtube.com/embed/6L-s5uzzY3o" },
+        { title: "Çakışma algılaması", videoUrl: "https://www.youtube.com/embed/2jmoH05tYgM" },
+        { title: "Zamanlama simülasyonu", videoUrl: "https://www.youtube.com/embed/QWnltJsY5RE" }
+      ]
+    },
+    {
+      title: "İşbirliği",
+      subtitle: "Çeşitli bilgi kaynaklarından gelen verileri standartlaştırın ve herkesin kullanımına açın.",
+      features: [
+        "Slaytlı veya slaytsız görevler oluşturun, atayın ve yönetin",
+        "Modelleme çözümü içindeki görevleri görüntüleyin ve oturumu kapatın",
+        "Proje sunumları için slayt gösterileri oluşturun",
+        "Daha fazla özelleştirme için genişletilmiş ve açık API’yi kullanın"
+      ],
+      items: [
+        { title: "Görev oluştur", videoUrl: "https://www.youtube.com/embed/WJgTKMAhrqY" },
+        { title: "Slayt gösterileri", videoUrl: "https://www.youtube.com/embed/KspCAzYvK_c" },
+        { title: "Excel'de model verileri", videoUrl: "https://www.youtube.com/embed/koxdvy9zQKQ" }
+      ]
+    }
   ];
 
   return (
@@ -122,11 +192,17 @@ export default function ClientPage() {
       ctaTitle="Bimplus'ı Ücretsiz Deneyin"
       ctaDescription="Bulut tabanlı BIM işbirliği ile projelerinizi koordine edin"
       afterInfoChildren={
-        <VideoGridSection
-          title="Proje Yönetimi"
-          subtitle="Projeler ve kullanıcılar baştan organize edilmelidir."
-          items={projectManagementVideos}
-        />
+        <>
+          {videoSections.map((section, index) => (
+            <VideoGridSection
+              key={index}
+              title={section.title}
+              subtitle={section.subtitle}
+              features={section.features}
+              items={section.items}
+            />
+          ))}
+        </>
       }
     >
       <PostHeroSection title={postHeroTitle} paragraphs={postHeroParagraphs} videoUrl={"https://www.youtube.com/embed/DTSdM7tSBlU"} />
