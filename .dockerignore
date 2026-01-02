@@ -5,4 +5,8 @@ npm-debug.log
 README.md
 .next
 .git
-.DS_Store
+Bilgi Bankası
+.gemini
+*.md
+.vscode
+.idea
