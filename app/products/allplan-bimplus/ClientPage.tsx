@@ -102,6 +102,7 @@ export default function ClientPage() {
     {
       title: "Proje Yönetimi",
       subtitle: "Projeler ve kullanıcılar baştan organize edilmelidir.",
+      description: "Bimplus ile yapabilecekleriniz…",
       features: [
         "Projenizi mantıklı bir şekilde düzenleyin",
         "Davet ile katılımcıları seçin",
@@ -117,6 +118,7 @@ export default function ClientPage() {
     {
       title: "Bilgi Yönetimi",
       subtitle: "Daha fazla bilgiyi daha kısa sürede yönetin.",
+      description: "Bimplus ile yapabilecekleriniz…",
       features: [
         "Birden çok kaynaktan gelen bilgileri birden çok biçimde yönetin",
         "Bilgi paylaşımı için yönetilen bir ortam oluşturun",
@@ -132,6 +134,7 @@ export default function ClientPage() {
     {
       title: "Revizyon Yönetimi",
       subtitle: "Revizyon sayısı arttıkça riskleri yönetin ve hataları en aza indirin.",
+      description: "Bimplus ile yapabilecekleriniz…",
       features: [
         "Herhangi bir modelin revizyonunu görselleştirin",
         "Aynı modelin revizyonlarını karşılaştırın",
@@ -147,6 +150,7 @@ export default function ClientPage() {
     {
       title: "Koordinasyon",
       subtitle: "Hatalara ve artan maliyetlere yol açan koordinasyon dışı bilgilerden kaçının.",
+      description: "Bimplus ile yapabilecekleriniz…",
       features: [
         "Modelleri tarafsız bir ortamda toplayın",
         "Modelleri güçlü bir görüntüleyicide görselleştirin",
@@ -162,6 +166,7 @@ export default function ClientPage() {
     {
       title: "İşbirliği",
       subtitle: "Çeşitli bilgi kaynaklarından gelen verileri standartlaştırın ve herkesin kullanımına açın.",
+      description: "Bimplus ile yapabilecekleriniz…",
       features: [
         "Slaytlı veya slaytsız görevler oluşturun, atayın ve yönetin",
         "Modelleme çözümü içindeki görevleri görüntüleyin ve oturumu kapatın",
@@ -198,6 +203,7 @@ export default function ClientPage() {
               key={index}
               title={section.title}
               subtitle={section.subtitle}
+              description={section.description}
               features={section.features}
               items={section.items}
             />
