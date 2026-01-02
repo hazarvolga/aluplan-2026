@@ -47,30 +47,41 @@ const reasons = [
   { title: "KALİTELİ TEKNİK DESTEK", description: "30+ yıl köprü uzmanlığı ve kapsamlı destek.", image: iconEnhancedComm },
 ];
 
-const quickLinks = [
-  { label: "ÖNÜMLÜ KİRİŞLİ KÖPRÜ MODELLEMESİ", href: "/solutions/modeling-of-precast-girder-bridges" },
-  { label: "Allplan Bridge Özellikleri", href: "/solutions/features-allplan-bridge" },
+import QuickActionsSection from "@/components/QuickActionsSection";
+import { ArrowRight, FileText, Layers, Activity } from "lucide-react";
+
+const quickActions = [
+  {
+    text: "Ücretsiz Dene",
+    href: "https://www.allplan.com/trial-or-subscription/",
+    external: true,
+    variant: "default" as const,
+    icon: <ArrowRight className="h-4 w-4" />
+  },
+  {
+    text: "Teklif Talep Formu",
+    href: "https://forms.office.com/r/hXhnKAG912",
+    external: true,
+    variant: "outline" as const,
+    icon: <FileText className="h-4 w-4" />
+  },
+  {
+    text: "Öngermeli Kirişli Köprü",
+    href: "/solutions/modeling-of-precast-girder-bridges",
+    variant: "outline" as const,
+    icon: <Layers className="h-4 w-4" />
+  },
+  {
+    text: "Özellikler",
+    href: "/solutions/features-allplan-bridge",
+    variant: "outline" as const,
+    icon: <Activity className="h-4 w-4" />
+  },
 ];
 
 const postHeroSection = (
   <>
-    <section className="py-10 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {quickLinks.map((l, i) => (
-            l.href.startsWith("/") ? (
-              <Button key={i} className="w-full" asChild>
-                <Link href={l.href}>{l.label}</Link>
-              </Button>
-            ) : (
-              <Button key={i} className="w-full" asChild>
-                <a href={l.href}>{l.label}</a>
-              </Button>
-            )
-          ))}
-        </div>
-      </div>
-    </section>
+    <QuickActionsSection actions={quickActions} />
     <PostHeroSection
       title="ALLPLAN – KÖPRÜ MÜHENDİSLİĞİ İÇİN BIM ÇÖZÜMLERİ"
       paragraphs={[
