@@ -134,9 +134,12 @@ export default function CopyProtection() {
             frontArmTL.progress(0.5);
 
             // Movement
-            const walkDuration = 3.5; // Slightly faster entrance from far left
-            const startX = -600; // Start well off-screen
-            const endX = window.innerWidth / 2 - 150; // Center ish
+            // Screen Center (x=0 relative to parent flex-center)
+            // Screen Left Edge = -window.innerWidth / 2
+
+            const startX = -(window.innerWidth / 2) - 200; // Start off-screen LEFT
+            const endX = 0; // Stop at CENTER
+            const walkDuration = 4;
 
             gsap.fromTo(containerRef.current,
                 { x: startX },
