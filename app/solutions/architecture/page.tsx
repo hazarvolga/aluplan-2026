@@ -3,6 +3,8 @@ import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
 import SolutionHero from "@/components/SolutionHero";
 import ArchitecturalHeroBackground from "@/components/ArchitecturalHeroBackground";
 import WorkflowTabsTemplate from "@/components/WorkflowTabsTemplate";
+import QuickActionsSection from "@/components/QuickActionsSection";
+import { ArrowRight, ExternalLink } from "lucide-react";
 import heroBg from "@/assets/solutions/omniturm-bg.jpg"; // Keeping original imports
 
 import icon1 from "@/assets/solutions/architecture/reasons/work_way_want.png";
@@ -133,28 +135,38 @@ const preWorkflowSection = (
   </section>
 );
 
+const quickActions = [
+  { text: "Ücretsiz Dene", href: "https://www.allplan.com/trial-or-subscription/", external: true, variant: "default" as const, icon: <ArrowRight className="h-4 w-4" /> },
+  { text: "Teklif Talep Formu", href: "https://forms.office.com/r/hXhnKAG912", external: true, variant: "outline" as const },
+  { text: "Abonelik SSS", href: "/solutions-v2/faq", external: false, variant: "outline" as const, icon: <ExternalLink className="h-4 w-4" /> },
+  { text: "Paket Karşılaştırma", href: "/paket-karsilastirma", external: false, variant: "outline" as const }
+];
+
 const postHeroSection = (
-  <section className="py-20 bg-background">
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h3 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">MİMARİ İÇİN ALLPLAN – BIM ÇÖZÜMLERİ</h3>
-          <p className="text-muted-foreground text-lg leading-relaxed mb-6">Müstakil evlerden olağanüstü önemli projelere kadar, çarpıcı mimari tasarım ve güvenilir proje teslimi için bilgi, yaratıcılık ve hassas araçlar gerekir.</p>
-          <p className="text-muted-foreground leading-relaxed">Allplan ile konseptlerinizi kolayca oluşturabilir ve görselleştirebilir, değişkenleri hızlı bir şekilde detaylandırabilir, zahmetsizce işbirliği yapabilir, değişiklikleri verimli bir şekilde yönetebilir ve tasarımlarınızın daha başarılı bir şekilde gerçekleştirilmesini sağlamak için kesin metrajlarla hızlı bir şekilde doğru raporlar oluşturabilirsiniz.</p>
-        </div>
-        <div className="aspect-video rounded-2xl overflow-hidden shadow-xl">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/SnuaHSL18e8"
-            title="Allplan Architecture"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
+  <>
+    <QuickActionsSection actions={quickActions} />
+    <section className="py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h3 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">MİMARİ İÇİN ALLPLAN – BIM ÇÖZÜMLERİ</h3>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">Müstakil evlerden olağanüstü önemli projelere kadar, çarpıcı mimari tasarım ve güvenilir proje teslimi için bilgi, yaratıcılık ve hassas araçlar gerekir.</p>
+            <p className="text-muted-foreground leading-relaxed">Allplan ile konseptlerinizi kolayca oluşturabilir ve görselleştirebilir, değişkenleri hızlı bir şekilde detaylandırabilir, zahmetsizce işbirliği yapabilir, değişiklikleri verimli bir şekilde yönetebilir ve tasarımlarınızın daha başarılı bir şekilde gerçekleştirilmesini sağlamak için kesin metrajlarla hızlı bir şekilde doğru raporlar oluşturabilirsiniz.</p>
+          </div>
+          <div className="aspect-video rounded-2xl overflow-hidden shadow-xl">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/SnuaHSL18e8"
+              title="Allplan Architecture"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </>
 );
 
 const customHero = (
