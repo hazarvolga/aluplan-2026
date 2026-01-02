@@ -110,9 +110,8 @@ export default function ClientPage() {
       ctaHref="https://www.allplan.com/trial-or-subscription/"
       ctaExternal={true}
       showDemoButton={false}
-      additionalButtons={[
-        { text: "Teklif Talep Formu", href: "https://forms.office.com/r/hXhnKAG912", external: true },
-        { text: "Abonelik SSS", href: "/solutions-v2/faq", external: false },
+      quickActions={[
+        { text: "Paket Karşılaştırma", href: "/paket-karsilastirma", external: false, variant: "outline" },
       ]}
       ctaDescription="Prefabrik elemanlar için tam çözüm"
     >
