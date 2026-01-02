@@ -129,7 +129,7 @@ export default function Page() {
   return (
     <ProductPageTemplate
       badge="BİNA VE ALTYAPI"
-      title="ALLPLAN 2025"
+      title="ALLPLAN"
       subtitle="THE ULTIMATE BIM SOLUTION FOR AEC PROFESSIONALS FROM DESIGN TO BUILD"
       description="ALLPLAN'in mimariye yönelik BIM çözümleri, verimli tasarım ve sorunsuz proje yönetimi için tüm tasarımı inşa sürecine de taşır. İşbirliğine dayalı iş akışları, tüm proje yaşam döngüsü boyunca artan hassasiyet ve daha fazla üretkenlik sağlar. Mimari tasarım yazılımınızdan daha fazlasını bekleyin!"
       heroImage={heroImg}
