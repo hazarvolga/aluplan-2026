@@ -4,6 +4,7 @@ import PostHeroSection from "@/components/PostHeroSection";
 import ChallengesSection from "@/components/ChallengesSection";
 import StatsSection from "@/components/StatsSection";
 import SectionHeader from "@/components/SectionHeader";
+import VideoGridSection from "@/components/VideoGridSection";
 import heroImage from "@/assets/products/bimplus-hero.jpg";
 import imgDisciplineGroups from "@/assets/products/bimplus/workflows/discipline-groups.png";
 import imgMultipleModels from "@/assets/products/bimplus/workflows/multiple-models.png";
@@ -96,6 +97,15 @@ export default function ClientPage() {
     "Tutarsızlıklara yol açan ve artan risklere neden olan çok sayıda zaman alan değişiklik.",
     "Hatalara, düşük kaliteye ve artan maliyetlere yol açan koordine edilmemiş bilgiler.",
   ];
+
+  const projectManagementVideos = [
+    { title: "Yeni bir proje oluşturun", videoUrl: "" },
+    { title: "Disiplin grupları oluşturun", videoUrl: "" },
+    { title: "Birden çok modeli yönetin, Modeli yükle", videoUrl: "" },
+    { title: "Döküman yönetimi", videoUrl: "" },
+    { title: "ISO 19650 iş akışı", videoUrl: "" },
+  ];
+
   return (
     <ProductPageTemplate
       badge="İŞBİRLİĞİ"
@@ -111,6 +121,13 @@ export default function ClientPage() {
       ]}
       ctaTitle="Bimplus'ı Ücretsiz Deneyin"
       ctaDescription="Bulut tabanlı BIM işbirliği ile projelerinizi koordine edin"
+      afterInfoChildren={
+        <VideoGridSection
+          title="Proje Yönetimi"
+          subtitle="Projeler ve kullanıcılar baştan organize edilmelidir."
+          items={projectManagementVideos}
+        />
+      }
     >
       <PostHeroSection title={postHeroTitle} paragraphs={postHeroParagraphs} videoUrl={"https://www.youtube.com/embed/DTSdM7tSBlU"} />
       <StatsSection items={statsItems} variant="animated" />
