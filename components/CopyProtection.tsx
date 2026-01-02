@@ -16,20 +16,20 @@ export default function CopyProtection() {
     const legFrontRef = useRef<SVGGElement>(null);  // #FF
     const legFrontShinRef = useRef<SVGGElement>(null);
     const legFrontFootRef = useRef<SVGGElement>(null);
-    const legFrontToeRef = useRef<SVGGElement>(null);
+    const legFrontToeRef = useRef<SVGPathElement>(null);  // .F3
 
-    const legBackRef = useRef<SVGGElement>(null);   // #FB
+    const legBackRef = useRef<SVGGElement>(null);   // #FB (Back Leg Group)
     const legBackShinRef = useRef<SVGGElement>(null);
     const legBackFootRef = useRef<SVGGElement>(null);
-    const legBackToeRef = useRef<SVGGElement>(null);
+    const legBackToeRef = useRef<SVGPathElement>(null);
 
-    const armFrontRef = useRef<SVGGElement>(null);  // #HF
+    const armFrontRef = useRef<SVGGElement>(null);  // #HF (Front Arm Group)
     const armFrontForeRef = useRef<SVGGElement>(null);
-    const armFrontHandRef = useRef<SVGGElement>(null);
+    const armFrontHandRef = useRef<SVGPathElement>(null);
 
-    const armBackRef = useRef<SVGGElement>(null);   // #HB
+    const armBackRef = useRef<SVGGElement>(null);   // #HB (Back Arm Group)
     const armBackForeRef = useRef<SVGGElement>(null);
-    const armBackHandRef = useRef<SVGGElement>(null);
+    const armBackHandRef = useRef<SVGPathElement>(null);
 
     const [active, setActive] = useState(false);
     const [showPopup, setShowPopup] = useState(false);
@@ -169,7 +169,7 @@ export default function CopyProtection() {
                         });
 
                         // Point Arm Animation - Adjusted x/y to keep shoulder attached
-                        pointTL.to(armFrontRef.current, { rotation: -130, x: 2, y: 5, duration: 0.6, ease: "back.out(1.7)" })
+                        pointTL.to(armFrontRef.current, { rotation: -130, x: 4, y: 8, duration: 0.6, ease: "back.out(1.7)" })
                             .to(armFrontForeRef.current, { rotation: -30, duration: 0.4 }, "<0.2") // Straighten arm slightly
                             .to(armFrontHandRef.current, { rotation: -60, duration: 0.4 }, "<"); // Point finger implicitly
 
@@ -209,7 +209,7 @@ export default function CopyProtection() {
                                     initial={{ opacity: 0, scale: 0, x: -20, y: 20 }}
                                     animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
                                     exit={{ opacity: 0, scale: 0 }}
-                                    className="absolute -top-32 -right-20 w-72 z-20 origin-bottom-left"
+                                    className="absolute -top-20 -right-20 w-72 z-20 origin-bottom-left"
                                 >
                                     <div className="bg-background/95 backdrop-blur-md border border-border/50 p-4 rounded-xl rounded-bl-sm shadow-2xl text-center border-l-4 border-l-accent relative">
                                         <div className="flex justify-center mb-2">{getIcon()}</div>
