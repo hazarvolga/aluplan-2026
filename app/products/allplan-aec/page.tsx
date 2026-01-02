@@ -134,9 +134,7 @@ export default function Page() {
       description="ALLPLAN'in mimariye yönelik BIM çözümleri, verimli tasarım ve sorunsuz proje yönetimi için tüm tasarımı inşa sürecine de taşır. İşbirliğine dayalı iş akışları, tüm proje yaşam döngüsü boyunca artan hassasiyet ve daha fazla üretkenlik sağlar. Mimari tasarım yazılımınızdan daha fazlasını bekleyin!"
       heroImage={heroImg}
       quickActions={[
-        { text: "Ücretsiz Dene", href: "https://www.allplan.com/trial-or-subscription/", external: true, variant: "default" },
-        { text: "Teklif Talep Formu", href: "https://forms.office.com/r/hXhnKAG912", external: true, variant: "outline" },
-        { text: "Abonelik SSS", href: "/solutions-v2/faq", external: false, variant: "outline" }
+        { text: "Paket Karşılaştırma", href: "/paket-karsilastirma", external: false, variant: "outline" }
       ]}
       whatIsInfoMedia={whatIsInfoMedia}
       benefitsItems={benefitsItems}
