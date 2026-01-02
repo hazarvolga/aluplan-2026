@@ -9,6 +9,7 @@ import GlobalTrialCTA from "@/components/GlobalTrialCTA";
 import Breadcrumb from "@/components/ui/breadcrumb";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import CopyProtection from "@/components/CopyProtection";
+import CookieConsent from "@/components/CookieConsent";
 
 
 const inter = Inter({
@@ -85,6 +86,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <GlobalTrialCTA />
           <Footer />
           <CopyProtection />
+          <CookieConsent />
           <ScrollToTopButton />
         </ThemeProvider>
       </body>
