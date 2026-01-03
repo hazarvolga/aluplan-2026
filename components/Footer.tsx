@@ -79,15 +79,19 @@ const Footer = () => {
                   8/10D No: 5, 34752 Ataşehir / İstanbul
                 </span>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 flex-shrink-0 text-gray-500" />
-                <a href="tel:+902162258441" className="text-muted-foreground hover:text-foreground transition-colors">
-                  (+90) 216 225 84 41
-                </a>
-                <br />
-                <a href="tel:+905432119442" className="text-muted-foreground hover:text-foreground transition-colors">
-                  (+90) 543 211 94 42
-                </a>
+              <li className="flex items-start gap-3">
+                <Phone className="h-5 w-5 mt-0.5 flex-shrink-0 text-gray-500" />
+                <div className="flex flex-col gap-2">
+                  <a href="tel:+902162258441" className="text-muted-foreground hover:text-foreground transition-colors">
+                    (+90) 216 225 84 41
+                  </a>
+                  <a href="tel:+905432119442" className="text-muted-foreground hover:text-foreground transition-colors">
+                    (+90) 543 211 94 42
+                  </a>
+                  <a href="tel:+905494997379" className="text-muted-foreground hover:text-foreground transition-colors">
+                    (+90) 549 499 73 79
+                  </a>
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 flex-shrink-0 text-gray-500" />
