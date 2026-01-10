@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Facebook, Twitter, Linkedin, Youtube, Mail, Phone, MapPin, Instagram } from "lucide-react";
-import logoWhite from "@/assets/logo-white.png";
+import logoWhite from "@/assets/aluplan-logo-white.svg";
 import Image from "next/image";
 
 const Footer = () => {

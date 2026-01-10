@@ -7,8 +7,8 @@ import { Menu, X, ChevronDown, Globe, Facebook, Twitter, Linkedin, Youtube, Inst
 import MegaMenu from "./MegaMenu";
 import { solutionsMenu } from "@/data/solutionsMenu";
 import Image from "next/image";
-import logoWhite from "@/assets/logo-white.png";
-import logoBlack from "@/assets/logo-black.png";
+import logoWhite from "@/assets/aluplan-logo-white.svg";
+import logoBlack from "@/assets/aluplan-logo-black.svg";
 import { ThemeToggle } from "./ThemeToggle";
 import { AnimatePresence } from "framer-motion";
 
