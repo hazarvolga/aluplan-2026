@@ -1,6 +1,6 @@
 "use client"
-import AddonDetailTemplate from "@/components/AddonDetailTemplate";
-import SectionHeader from "@/components/SectionHeader";
+import AddonDetailTemplate from "@/components/templates/AddonDetailTemplate";
+import SectionHeader from "@/components/sections/SectionHeader";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import ax3000Brosur from "@/assets/documents/AX3000_Brosur_V2022.pdf";

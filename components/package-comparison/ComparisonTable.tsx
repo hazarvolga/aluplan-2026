@@ -236,7 +236,7 @@ const ComparisonTable = ({ packages, categories }: ComparisonTableProps) => {
                 <div className="mt-4 pt-4 border-t border-border/50 text-xs text-muted-foreground space-y-1">
                     <div>¹ SCIA Engineer: Tüm projeleriniz için yüksek performanslı, güvenilir çok malzemeli yapısal analiz ve tasarım yazılımı. SCIA Engineer karşılaştırmasına <a href="https://www.scia.net/en/scia-engineer/editions-comparison" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground transition-colors">buradan ulaşabilirsiniz</a>.</div>
                     <div>² Yalnızca ALLPLAN Abonelik lisanslarına dahildir.</div>
-                    <div>³ Veras lisanslarının ayrı olarak ve doğrudan Evolvelab'dan satın alınması gerekiyor.</div>
+                    <div>³ Veras lisanslarının ayrı olarak ve doğrudan Evolvelab&apos;dan satın alınması gerekiyor.</div>
                 </div>
             </div>
         </div>

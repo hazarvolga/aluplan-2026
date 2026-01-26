@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import { PageWrapper } from "@/components/layout-v2/PageWrapper";
-import SolutionHero from "@/components/SolutionHero";
+import SolutionHero from "@/components/sections/SolutionHero";
 import Image from "next/image";
 import { ArrowRight, CheckCircle2, Globe, Database, FileCode, Layers, Cloud, Map, Leaf, Play } from "lucide-react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";

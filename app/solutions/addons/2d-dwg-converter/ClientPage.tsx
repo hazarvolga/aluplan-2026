@@ -1,11 +1,11 @@
 "use client"
 import dynamic from "next/dynamic";
-import AddonDetailTemplate from "@/components/AddonDetailTemplate";
-import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
-import SectionHeader from "@/components/SectionHeader";
-import CDSLicenseInfoSection from "@/components/CDSLicenseInfoSection";
+import AddonDetailTemplate from "@/components/templates/AddonDetailTemplate";
+import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
+import SectionHeader from "@/components/sections/SectionHeader";
+import CDSLicenseInfoSection from "@/components/sections/CDSLicenseInfoSection";
 import { Card } from "@/components/ui/card";
-import MasonryVideoGrid from "@/components/MasonryVideoGrid";
+import MasonryVideoGrid from "@/components/specialized-ui/MasonryVideoGrid";
 
 
 // Static Imports for Gallery

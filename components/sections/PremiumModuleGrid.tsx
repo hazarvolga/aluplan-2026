@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ModuleCard from "./ModuleCard";
+import ModuleCard from "@/components/specialized-ui/ModuleCard";
 import { StaticImageData } from "next/image";
 
 type Module = {
@@ -49,7 +49,7 @@ const PremiumModuleGrid = ({ title, subtitle, modules }: PremiumModuleGridProps)
       </div>
 
       {/* Grid Pattern */}
-      <div 
+      <div
         className="absolute inset-0 opacity-[0.02]"
         style={{
           backgroundImage: `
@@ -85,13 +85,12 @@ const PremiumModuleGrid = ({ title, subtitle, modules }: PremiumModuleGridProps)
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className={`grid grid-cols-1 md:grid-cols-2 gap-6 ${
-            modules.length === 5 
-              ? 'lg:grid-cols-5' 
-              : modules.length === 4 
-              ? 'lg:grid-cols-4' 
-              : 'lg:grid-cols-3'
-          }`}
+          className={`grid grid-cols-1 md:grid-cols-2 gap-6 ${modules.length === 5
+              ? 'lg:grid-cols-5'
+              : modules.length === 4
+                ? 'lg:grid-cols-4'
+                : 'lg:grid-cols-3'
+            }`}
         >
           {modules.map((module, index) => (
             <motion.div key={index} variants={itemVariants}>

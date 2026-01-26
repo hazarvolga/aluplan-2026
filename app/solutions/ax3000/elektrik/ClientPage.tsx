@@ -1,6 +1,6 @@
 "use client"
-import AddonDetailTemplate from "@/components/AddonDetailTemplate";
-import SectionHeader from "@/components/SectionHeader";
+import AddonDetailTemplate from "@/components/templates/AddonDetailTemplate";
+import SectionHeader from "@/components/sections/SectionHeader";
 import { Button } from "@/components/ui/button";
 import { Box, Cable, Copy, Eye, LayoutGrid, Library, Lightbulb, MoveRight, RotateCw, Ruler, Sparkles, Tags } from "lucide-react";
 import Link from "next/link";

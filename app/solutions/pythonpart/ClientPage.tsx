@@ -1,6 +1,6 @@
 "use client"
-import SolutionHero from "@/components/SolutionHero";
-import SectionHeader from "@/components/SectionHeader";
+import SolutionHero from "@/components/sections/SolutionHero";
+import SectionHeader from "@/components/sections/SectionHeader";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -154,7 +154,7 @@ const turkishTools = [
   }
 ];
 
-import QuickActionsSection from "@/components/QuickActionsSection";
+import QuickActionsSection from "@/components/sections/QuickActionsSection";
 import { ArrowRight, ExternalLink } from "lucide-react";
 
 // ... (existing imports)

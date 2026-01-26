@@ -1,5 +1,5 @@
 /* eslint-disable */
-import ProductPageTemplate from "@/components/ProductPageTemplate";
+import ProductPageTemplate from "@/components/templates/ProductPageTemplate";
 import heroImage from "@/assets/products/allplan-hero.jpg";
 import { Metadata } from "next";
 

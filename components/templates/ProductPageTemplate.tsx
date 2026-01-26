@@ -1,13 +1,14 @@
 import Image, { StaticImageData } from "next/image";
-import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
-import StatsSection from "@/components/StatsSection";
+import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
+import StatsSection from "@/components/sections/StatsSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import ChallengesSection from "@/components/ChallengesSection";
-import WorkflowTabsTemplate from "@/components/WorkflowTabsTemplate";
+import ChallengesSection from "@/components/sections/ChallengesSection";
+import WorkflowTabsTemplate from "@/components/templates/WorkflowTabsTemplate";
 import { ArrowRight, Check, Play } from "lucide-react";
 import { ReactNode } from "react";
+import ModuleCard from "@/components/specialized-ui/ModuleCard";
 
 interface Package {
   name: string;
@@ -59,6 +60,7 @@ interface WhatIsSection {
 
 interface ProductPageTemplateProps {
   badge: string;
+  heroVariant?: "default" | "background";
   title: string;
   subtitle?: string;
   description: string;
@@ -89,7 +91,16 @@ interface ProductPageTemplateProps {
   tabFeatures?: TabFeature[] | TabFeaturesSection;
   progressItems?: ProgressItem[];
   challenges?: string[];
-  benefitsItems?: { title: string; description: string; image?: string | StaticImageData }[];
+  benefitsItems?: {
+    title: string;
+    description: string;
+    image?: string | StaticImageData;
+    link?: string;
+    external?: boolean;
+    buttonText?: string;
+    videoUrl?: string;
+  }[];
+  benefitsVariant?: "default" | "cards";
   statsItems?: { label: string; value: string | number; description: string }[];
   statsVariant?: "default" | "animated";
   workflowCategories?: { key: string; label: string; items: { title: string; description: string; image?: string | StaticImageData; videoUrl?: string }[] }[];
@@ -111,6 +122,7 @@ interface ProductPageTemplateProps {
 
 const ProductPageTemplate = ({
   badge,
+  heroVariant = "default",
   title,
   subtitle,
   description,
@@ -132,6 +144,7 @@ const ProductPageTemplate = ({
   progressItems,
   challenges = [],
   benefitsItems = [],
+  benefitsVariant = "default",
   statsItems,
   statsVariant = "default",
   workflowCategories,
@@ -142,10 +155,29 @@ const ProductPageTemplate = ({
 }: ProductPageTemplateProps) => {
   return (
     <div className="min-h-screen">
-      <section className="py-24 gradient-primary relative">
-        <div className="absolute inset-0 bg-technical-grid opacity-30" />
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className={`relative overflow-hidden ${heroVariant === 'background' ? 'h-[600px] flex items-center' : 'py-24 gradient-primary'}`}>
+        {heroVariant === 'background' && heroImage && (
+          <>
+            <div className="absolute inset-0 z-0">
+              <Image
+                src={heroImage}
+                alt={title}
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+            {/* Overlay for readability */}
+            <div className="absolute inset-0 bg-black/60 z-10" />
+          </>
+        )}
+
+        {heroVariant !== 'background' && (
+          <div className="absolute inset-0 bg-technical-grid opacity-30" />
+        )}
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+          <div className={`grid grid-cols-1 ${heroVariant === 'background' ? 'lg:grid-cols-1 text-left max-w-4xl' : 'lg:grid-cols-2 gap-12 items-center'}`}>
             <div>
               <span className="text-white/70 font-medium text-sm tracking-wider uppercase mb-4 block">
                 {badge}
@@ -162,39 +194,43 @@ const ProductPageTemplate = ({
                 {description}
               </p>
             </div>
-            {heroVideoId ? (
-              <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl">
-                <iframe
-                  className="w-full h-full"
-                  src={`https://www.youtube.com/embed/${heroVideoId}?rel=0`}
-                  title={title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            ) : heroImage && (
-              <div className="relative">
-                {typeof heroImage === 'string' ? (
-                  <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl">
+
+            {/* Show side visual only if NOT background variant */}
+            {heroVariant !== 'background' && (
+              heroVideoId ? (
+                <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl">
+                  <iframe
+                    className="w-full h-full"
+                    src={`https://www.youtube.com/embed/${heroVideoId}?rel=0`}
+                    title={title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              ) : heroImage && (
+                <div className="relative">
+                  {typeof heroImage === 'string' ? (
+                    <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl">
+                      <Image
+                        src={heroImage.startsWith('http') ? '/placeholder.svg' : heroImage}
+                        alt={title}
+                        fill
+                        className="object-cover"
+                        priority
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
+                    </div>
+                  ) : (
                     <Image
-                      src={heroImage.startsWith('http') ? '/placeholder.svg' : heroImage}
+                      src={heroImage}
                       alt={title}
-                      fill
-                      className="object-cover"
+                      className="rounded-2xl shadow-2xl w-full h-auto"
                       priority
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
-                  </div>
-                ) : (
-                  <Image
-                    src={heroImage}
-                    alt={title}
-                    className="rounded-2xl shadow-2xl w-full h-auto"
-                    priority
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                )}
-              </div>
+                  )}
+                </div>
+              )
             )}
           </div>
         </div>
@@ -382,27 +418,41 @@ const ProductPageTemplate = ({
         <ChallengesSection items={challenges} />
       )}
       {benefitsItems && benefitsItems.length > 0 && (
-        <section className="py-16 bg-muted" aria-label="Faydalar">
+        <section className={`py-16 ${benefitsVariant === 'cards' ? 'bg-background' : 'bg-muted'}`} aria-label="Faydalar">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ${benefitsVariant === 'cards' ? 'gap-y-12' : ''}`}>
               {benefitsItems.map((item, index) => (
-                <div
-                  key={index}
-                  className="group relative bg-card p-6 pr-20 pb-10 rounded-2xl border border-border shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
-                >
-                  <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-accent/10 to-transparent rounded-bl-full -mr-4 -mt-4 transition-all group-hover:from-accent/20" />
-                  {item.image && (
-                    <div className="absolute top-4 right-4 z-10 w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-sm">
-                      <Image src={item.image} alt={item.title} width={28} height={28} className="w-7 h-7 object-contain" />
-                    </div>
-                  )}
-                  <h3 className="font-display text-lg font-bold text-foreground mb-3 group-hover:text-accent transition-colors">
-                    {item.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
+                benefitsVariant === 'cards' ? (
+                  <div key={index} className="h-full">
+                    <ModuleCard
+                      title={item.title}
+                      description={item.description}
+                      imageSrc={item.image || '/placeholder.svg'}
+                      link={item.link}
+                      external={item.external}
+                      buttonText={item.buttonText}
+                      videoUrl={item.videoUrl}
+                    />
+                  </div>
+                ) : (
+                  <div
+                    key={index}
+                    className="group relative bg-card p-6 pr-20 pb-10 rounded-2xl border border-border shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
+                  >
+                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-accent/10 to-transparent rounded-bl-full -mr-4 -mt-4 transition-all group-hover:from-accent/20" />
+                    {item.image && (
+                      <div className="absolute top-4 right-4 z-10 w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                        <Image src={item.image} alt={item.title} width={28} height={28} className="w-7 h-7 object-contain" />
+                      </div>
+                    )}
+                    <h3 className="font-display text-lg font-bold text-foreground mb-3 group-hover:text-accent transition-colors">
+                      {item.title}
+                    </h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                )
               ))}
             </div>
           </div>

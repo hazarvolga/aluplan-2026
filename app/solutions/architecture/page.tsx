@@ -1,9 +1,9 @@
 "use client"
-import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
-import SolutionHero from "@/components/SolutionHero";
-import ArchitecturalHeroBackground from "@/components/ArchitecturalHeroBackground";
-import WorkflowTabsTemplate from "@/components/WorkflowTabsTemplate";
-import QuickActionsSection from "@/components/QuickActionsSection";
+import EnhancedSolutionTemplate from "@/components/templates/EnhancedSolutionTemplate";
+import SolutionHero from "@/components/sections/SolutionHero";
+import ArchitecturalHeroBackground from "@/components/backgrounds/ArchitecturalHeroBackground";
+import WorkflowTabsTemplate from "@/components/templates/WorkflowTabsTemplate";
+import QuickActionsSection from "@/components/sections/QuickActionsSection";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import heroBg from "@/assets/solutions/omniturm-bg.jpg"; // Keeping original imports
 

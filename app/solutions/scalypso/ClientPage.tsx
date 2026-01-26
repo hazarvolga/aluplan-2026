@@ -1,11 +1,11 @@
 "use client"
-import Footer from "@/components/Footer";
-import SolutionHero from "@/components/SolutionHero";
-import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
-import PremiumFeatureSection from "@/components/PremiumFeatureSection";
-import PremiumModuleGrid from "@/components/PremiumModuleGrid";
-import SupportedSoftwareList from "@/components/SupportedSoftwareList";
-import SystemRequirementsCard from "@/components/SystemRequirementsCard";
+import Footer from "@/components/layout/Footer";
+import SolutionHero from "@/components/sections/SolutionHero";
+import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
+import PremiumFeatureSection from "@/components/sections/PremiumFeatureSection";
+import PremiumModuleGrid from "@/components/sections/PremiumModuleGrid";
+import SupportedSoftwareList from "@/components/sections/SupportedSoftwareList";
+import SystemRequirementsCard from "@/components/specialized-ui/SystemRequirementsCard";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Layers, Zap, Link2 } from "lucide-react";
 import Image from "next/image";

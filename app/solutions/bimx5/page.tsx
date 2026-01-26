@@ -1,10 +1,10 @@
-import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
-import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
-import SolutionHero from "@/components/SolutionHero";
-import SectionHeader from "@/components/SectionHeader";
-import BenefitsGrid from "@/components/BenefitsGrid";
+import EnhancedSolutionTemplate from "@/components/templates/EnhancedSolutionTemplate";
+import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
+import SolutionHero from "@/components/sections/SolutionHero";
+import SectionHeader from "@/components/sections/SectionHeader";
+import BenefitsGrid from "@/components/sections/BenefitsGrid";
 import { FileCheck, Building2, Briefcase } from "lucide-react";
-import VideoGrid from "@/components/VideoGrid";
+import VideoGrid from "@/components/specialized-ui/VideoGrid";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 

@@ -6,9 +6,9 @@ import { ArrowRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
-import VideoModal from "@/components/VideoModal";
-import CloudServicesSection from "@/components/CloudServicesSection";
-import { WorkflowLinksSection } from "@/components/WorkflowLinksSection";
+import VideoModal from "@/components/specialized-ui/VideoModal";
+import CloudServicesSection from "@/components/sections/CloudServicesSection";
+import { WorkflowLinksSection } from "@/components/sections/WorkflowLinksSection";
 
 import heroImg from "@/assets/products/allplan-ultimate/hero.jpg";
 
@@ -48,7 +48,7 @@ import bimplusProImg from "@/assets/products/allplan-ultimate/bimplus-pro.jpg";
 import cloudStorageImg from "@/assets/products/allplan-ultimate/cloud-storage.jpg";
 import sciaConceptImg from "@/assets/products/allplan-ultimate/scia-concept.jpg";
 
-import QuickActionsSection from "@/components/QuickActionsSection";
+import QuickActionsSection from "@/components/sections/QuickActionsSection";
 
 // ... (existing imports - no change needed as imports are at top)
 

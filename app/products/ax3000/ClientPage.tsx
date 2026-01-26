@@ -1,8 +1,8 @@
 "use client"
-import ProductPageTemplate from "@/components/ProductPageTemplate";
-import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
-import SectionHeader from "@/components/SectionHeader";
-import FeatureGrid from "@/components/FeatureGrid";
+import ProductPageTemplate from "@/components/templates/ProductPageTemplate";
+import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
+import SectionHeader from "@/components/sections/SectionHeader";
+import FeatureGrid from "@/components/sections/FeatureGrid";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";

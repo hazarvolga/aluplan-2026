@@ -1,10 +1,10 @@
 "use client"
-import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
-import SolutionHero from "@/components/SolutionHero";
-import WorkflowTabsTemplate from "@/components/WorkflowTabsTemplate";
-import PostHeroSection from "@/components/PostHeroSection";
+import EnhancedSolutionTemplate from "@/components/templates/EnhancedSolutionTemplate";
+import SolutionHero from "@/components/sections/SolutionHero";
+import WorkflowTabsTemplate from "@/components/templates/WorkflowTabsTemplate";
+import PostHeroSection from "@/components/sections/PostHeroSection";
 import heroBg from "@/assets/solutions/infrastructure-hero-bg.png";
-import InfrastructureHeroBackground from "@/components/InfrastructureHeroBackground";
+import InfrastructureHeroBackground from "@/components/backgrounds/InfrastructureHeroBackground";
 import iconEnhancedProjectComm from "@/assets/solutions/architecture/reasons/enhanced_project_comm.png";
 import iconPowerfulModeling from "@/assets/solutions/architecture/reasons/structural-engineering-allplan-turkey-powerful_modeling.png";
 import iconPlanableMultiMaterials from "@/assets/solutions/architecture/reasons/planable_multi_materials.png";

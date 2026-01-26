@@ -1,4 +1,4 @@
-import SectionHeader from "@/components/SectionHeader";
+import SectionHeader from "@/components/sections/SectionHeader";
 import { Card } from "@/components/ui/card";
 
 interface TableRow { keyTR: string }

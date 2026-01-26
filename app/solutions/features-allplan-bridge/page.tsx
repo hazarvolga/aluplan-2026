@@ -1,7 +1,7 @@
 "use client"
-import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
-import SolutionHero from "@/components/SolutionHero";
-import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
+import EnhancedSolutionTemplate from "@/components/templates/EnhancedSolutionTemplate";
+import SolutionHero from "@/components/sections/SolutionHero";
+import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
 import terrainVideo from "@/assets/solutions/bridge/features/01_Terrain_visualization_with_parametric_referencing_Video.mp4";
 import importSuperelevationImage from "@/assets/solutions/bridge/features/csm_02_Import_of_super-elevation_data_via_Allplan_Cloud_1c567fda80-768x431.jpg";
 import parametricReinfVideo from "@/assets/solutions/bridge/features/03_Parametric_Reinforcement_Connection_Video.mp4";

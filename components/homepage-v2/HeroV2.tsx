@@ -144,7 +144,11 @@ const HeroV2 = () => {
                             </Link>
 
                             <Link href="/solutions/allplan-bulut-hizmetleri" className="group flex items-center justify-center gap-3 border border-foreground/20 bg-foreground/5 px-8 py-4 backdrop-blur-md transition-all hover:bg-foreground/10 hover:scale-105 text-foreground">
-                                <span className="font-bold tracking-tight">ALLPLAN CLOUD</span>
+                                <span className="font-bold tracking-tight">ALLPLAN CLOUD VE Genel Geliştirmeler</span>
+                            </Link>
+
+                            <Link href="/products/allplan-cloud-services" className="group flex items-center justify-center gap-3 border border-foreground/20 bg-foreground/5 px-8 py-4 backdrop-blur-md transition-all hover:bg-foreground/10 hover:scale-105 text-foreground">
+                                <span className="font-bold tracking-tight">ALLPLAN CLOUD Hizmetleri</span>
                             </Link>
                         </div>
                     </div>

@@ -6,11 +6,11 @@ import { ArrowRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import { Check } from "lucide-react";
-import VideoModal from "@/components/VideoModal";
-import PostHeroSection from "@/components/PostHeroSection";
-import ReasonsSection from "@/components/ReasonsSection";
-import CloudServicesSection from "@/components/CloudServicesSection";
-import { WorkflowLinksSection } from "@/components/WorkflowLinksSection";
+import VideoModal from "@/components/specialized-ui/VideoModal";
+import PostHeroSection from "@/components/sections/PostHeroSection";
+import ReasonsSection from "@/components/sections/ReasonsSection";
+import CloudServicesSection from "@/components/sections/CloudServicesSection";
+import { WorkflowLinksSection } from "@/components/sections/WorkflowLinksSection";
 
 import heroImg from "@/assets/products/allplan-professional/hero.jpg";
 
@@ -111,7 +111,7 @@ const FeatureCard = ({ feature }: { feature: FeatureItem }) => (
   </Card>
 );
 
-import QuickActionsSection from "@/components/QuickActionsSection";
+import QuickActionsSection from "@/components/sections/QuickActionsSection";
 
 // ... (existing imports)
 

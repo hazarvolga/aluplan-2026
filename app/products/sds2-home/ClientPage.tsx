@@ -1,7 +1,7 @@
 "use client"
-import ProductPageTemplate from "@/components/ProductPageTemplate";
+import ProductPageTemplate from "@/components/templates/ProductPageTemplate";
 import { Button } from "@/components/ui/button";
-import ReasonsSection from "@/components/ReasonsSection";
+import ReasonsSection from "@/components/sections/ReasonsSection";
 import heroImage from "@/assets/solutions/steel-hero.jpg";
 import {
   Home,

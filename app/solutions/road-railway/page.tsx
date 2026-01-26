@@ -1,8 +1,8 @@
 "use client"
-import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
-import SolutionHero from "@/components/SolutionHero";
-import WorkflowTabsTemplate from "@/components/WorkflowTabsTemplate";
-import PostHeroSection from "@/components/PostHeroSection";
+import EnhancedSolutionTemplate from "@/components/templates/EnhancedSolutionTemplate";
+import SolutionHero from "@/components/sections/SolutionHero";
+import WorkflowTabsTemplate from "@/components/templates/WorkflowTabsTemplate";
+import PostHeroSection from "@/components/sections/PostHeroSection";
 import heroBg from "@/assets/solutions/road-railway-hero-bg.png";
 
 import imgModellingTools from "@/assets/solutions/road-railway/modelling-tools.png";
@@ -100,7 +100,7 @@ const preWorkflowSection = (
   <WorkflowTabsTemplate categories={workflowCategories} title="Yol ve Altyapı Tasarımı İçin Allplan İş Akışları" subtitle="Allplan ile altyapı projelerinizde verimliliği artırın" />
 );
 
-import RoadHeroBackground from "@/components/RoadHeroBackground";
+import RoadHeroBackground from "@/components/backgrounds/RoadHeroBackground";
 
 export default function Page() {
   return (

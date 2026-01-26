@@ -1,4 +1,4 @@
-import BenefitsGrid from "@/components/BenefitsGrid";
+import BenefitsGrid from "@/components/sections/BenefitsGrid";
 import Image, { StaticImageData } from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";

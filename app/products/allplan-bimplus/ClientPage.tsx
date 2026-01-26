@@ -1,10 +1,10 @@
 "use client"
-import ProductPageTemplate from "@/components/ProductPageTemplate";
-import PostHeroSection from "@/components/PostHeroSection";
-import ChallengesSection from "@/components/ChallengesSection";
-import StatsSection from "@/components/StatsSection";
-import SectionHeader from "@/components/SectionHeader";
-import VideoGridSection from "@/components/VideoGridSection";
+import ProductPageTemplate from "@/components/templates/ProductPageTemplate";
+import PostHeroSection from "@/components/sections/PostHeroSection";
+import ChallengesSection from "@/components/sections/ChallengesSection";
+import StatsSection from "@/components/sections/StatsSection";
+import SectionHeader from "@/components/sections/SectionHeader";
+import VideoGridSection from "@/components/sections/VideoGridSection";
 import heroImage from "@/assets/products/bimplus-hero.jpg";
 import imgDisciplineGroups from "@/assets/products/bimplus/workflows/discipline-groups.png";
 import imgMultipleModels from "@/assets/products/bimplus/workflows/multiple-models.png";

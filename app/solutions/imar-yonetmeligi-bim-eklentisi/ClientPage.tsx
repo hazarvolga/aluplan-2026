@@ -1,7 +1,7 @@
 "use client"
-import SolutionHero from "@/components/SolutionHero";
-import SectionHeader from "@/components/SectionHeader";
-import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
+import SolutionHero from "@/components/sections/SolutionHero";
+import SectionHeader from "@/components/sections/SectionHeader";
+import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
 import { Check } from "lucide-react";
 import Image from "next/image";
 

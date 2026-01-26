@@ -1,8 +1,8 @@
 "use client"
-import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
-import SolutionHero from "@/components/SolutionHero";
-import PostHeroSection from "@/components/PostHeroSection";
-import WorkflowTabsTemplate from "@/components/WorkflowTabsTemplate";
+import EnhancedSolutionTemplate from "@/components/templates/EnhancedSolutionTemplate";
+import SolutionHero from "@/components/sections/SolutionHero";
+import PostHeroSection from "@/components/sections/PostHeroSection";
+import WorkflowTabsTemplate from "@/components/templates/WorkflowTabsTemplate";
 import iconEnhancedProjectComm from "@/assets/solutions/architecture/reasons/enhanced_project_comm.png";
 import iconPowerfulModeling from "@/assets/solutions/architecture/reasons/structural-engineering-allplan-turkey-powerful_modeling.png";
 import iconPlanableMultiMaterials from "@/assets/solutions/architecture/reasons/planable_multi_materials.png";
@@ -17,7 +17,7 @@ import iconInterdisciplinaryAEC from "@/assets/solutions/architecture/reasons/st
 import iconReliableEarlierCost from "@/assets/solutions/architecture/reasons/realiable_earlier_cost_estimates.png";
 import heroImage from "@/assets/solutions/mep-hero.jpg";
 import heroBg from "@/assets/solutions/mep-hero-bg.jpg";
-import MEPHeroBackground from "@/components/MEPHeroBackground";
+import MEPHeroBackground from "@/components/backgrounds/MEPHeroBackground";
 import imgProjeKoordinasyonu from "@/assets/solutions/mep/workflows/mep-proje-koordinasyonu.jpg";
 import imgSihhiTesisat from "@/assets/solutions/mep/workflows/mep-sihhi-tesisat.jpg";
 import imgSprinkler from "@/assets/solutions/mep/workflows/mep-sprinkler.jpg";

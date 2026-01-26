@@ -1,8 +1,8 @@
 "use client"
-import AddonDetailTemplate from "@/components/AddonDetailTemplate";
-import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
-import ImageGallery from "@/components/ImageGallery";
-import SectionHeader from "@/components/SectionHeader";
+import AddonDetailTemplate from "@/components/templates/AddonDetailTemplate";
+import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
+import ImageGallery from "@/components/specialized-ui/ImageGallery";
+import SectionHeader from "@/components/sections/SectionHeader";
 import Image from "next/image";
 import axBg1 from "@/assets/solutions/ax3000/yapi-fizigi/ax-bg-1.jpg";
 import ekbImage from "@/assets/solutions/ax3000/yapi-fizigi/ekb.jpg";

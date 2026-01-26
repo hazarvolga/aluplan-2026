@@ -1,7 +1,7 @@
 "use client"
 import { Card, CardContent } from "@/components/ui/card";
 import Image, { StaticImageData } from "next/image";
-import VideoModal from "@/components/VideoModal";
+import VideoModal from "@/components/specialized-ui/VideoModal";
 
 // Bulut hizmetleri görselleri - allplan-professional'dan referans
 import cloudResourcesImg from "@/assets/products/allplan-professional/cloud-resources.jpg";

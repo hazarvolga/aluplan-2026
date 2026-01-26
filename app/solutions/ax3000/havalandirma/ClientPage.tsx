@@ -1,6 +1,6 @@
 "use client"
-import AddonDetailTemplate from "@/components/AddonDetailTemplate";
-import SectionHeader from "@/components/SectionHeader";
+import AddonDetailTemplate from "@/components/templates/AddonDetailTemplate";
+import SectionHeader from "@/components/sections/SectionHeader";
 import { Button } from "@/components/ui/button";
 import { BarChart3, Calculator, CircleDot, Copy, Gauge, LayoutGrid, Layers, Library, List, Ruler, Scan, Send, Snowflake, Table, Tag, Thermometer, Wind, Wrench } from "lucide-react";
 import Link from "next/link";

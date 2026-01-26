@@ -1,14 +1,14 @@
 "use client"
-import AddonDetailTemplate from "@/components/AddonDetailTemplate";
-import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
-import ApplicationAreas from "@/components/ApplicationAreas";
-import VideoTwoColumn from "@/components/VideoTwoColumn";
-import MasonryVideoGrid from "@/components/MasonryVideoGrid";
-import SpecificationTables from "@/components/SpecificationTables";
-import RegulaTabs from "@/components/RegulaTabs";
+import AddonDetailTemplate from "@/components/templates/AddonDetailTemplate";
+import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
+import ApplicationAreas from "@/components/sections/ApplicationAreas";
+import VideoTwoColumn from "@/components/sections/VideoTwoColumn";
+import MasonryVideoGrid from "@/components/specialized-ui/MasonryVideoGrid";
+import SpecificationTables from "@/components/sections/SpecificationTables";
+import RegulaTabs from "@/components/sections/RegulaTabs";
 import { Car, Truck, GitFork, MoveHorizontal, Map, Route } from "lucide-react";
-import ImageGallery from "@/components/ImageGallery";
-import SectionHeader from "@/components/SectionHeader";
+import ImageGallery from "@/components/specialized-ui/ImageGallery";
+import SectionHeader from "@/components/sections/SectionHeader";
 import iconFahrspur from "@/assets/solutions/cds/drive-curve/islevsel-genel-bakis/Fahrspur.webp";
 import iconFahrspurErzeugen from "@/assets/solutions/cds/drive-curve/islevsel-genel-bakis/Fahrspur-erzeugen.webp";
 import iconFahrzeugEditor from "@/assets/solutions/cds/drive-curve/islevsel-genel-bakis/Fahrzeug-Editor.webp";

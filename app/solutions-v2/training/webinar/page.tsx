@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { TrainingDetailTemplate } from "@/components/training/TrainingDetailTemplate";
+import { TrainingDetailTemplate } from "@/components/templates/TrainingDetailTemplate";
 // Use dynamic import for VideoModal to avoid hydration mismatch if needed, but standard import works here
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { X } from "lucide-react";

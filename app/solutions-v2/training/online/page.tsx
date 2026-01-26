@@ -1,4 +1,4 @@
-import { TrainingDetailTemplate } from "@/components/training/TrainingDetailTemplate";
+import { TrainingDetailTemplate } from "@/components/templates/TrainingDetailTemplate";
 
 export default function OnlineTrainingPage() {
     return (

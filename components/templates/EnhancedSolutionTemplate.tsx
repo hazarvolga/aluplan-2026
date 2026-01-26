@@ -5,8 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Check, Download, Play } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
-import StatsSection from "@/components/StatsSection";
-import ChallengesSection from "@/components/ChallengesSection";
+import StatsSection from "@/components/sections/StatsSection";
+import ChallengesSection from "@/components/sections/ChallengesSection";
 
 interface Stat {
   value: string;

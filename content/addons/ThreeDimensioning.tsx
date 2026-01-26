@@ -1,10 +1,10 @@
 "use client"
-import AddonDetailTemplate from "@/components/AddonDetailTemplate";
-import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
-import SectionHeader from "@/components/SectionHeader";
-import VideoGrid from "@/components/VideoGrid";
-import CDSLicenseInfoSection from "@/components/CDSLicenseInfoSection";
-import ImageGallery from "@/components/ImageGallery";
+import AddonDetailTemplate from "@/components/templates/AddonDetailTemplate";
+import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
+import SectionHeader from "@/components/sections/SectionHeader";
+import VideoGrid from "@/components/specialized-ui/VideoGrid";
+import CDSLicenseInfoSection from "@/components/sections/CDSLicenseInfoSection";
+import ImageGallery from "@/components/specialized-ui/ImageGallery";
 import { Card } from "@/components/ui/card";
 import imgLicense from "@/assets/solutions/cds/drive-curve/islevsel-genel-bakis/Lizenz-anzeigen.webp";
 import { icons, galleryImages as galleryImagesRaw } from "@/assets/solutions/cds/3d-dimensioning/images";

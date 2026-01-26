@@ -1,5 +1,5 @@
 "use client"
-import SolutionHero from "@/components/SolutionHero";
+import SolutionHero from "@/components/sections/SolutionHero";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Check } from "lucide-react";
 

@@ -1,6 +1,6 @@
 "use client"
-import SolutionHero from "@/components/SolutionHero";
-import SectionHeader from "@/components/SectionHeader";
+import SolutionHero from "@/components/sections/SolutionHero";
+import SectionHeader from "@/components/sections/SectionHeader";
 import Image from "next/image";
 import { CheckCircle2, Keyboard, Palette, Moon, AlertTriangle, Info, Box, Bot, Scissors, Eye, Network, Link } from "lucide-react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";

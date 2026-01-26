@@ -6,12 +6,12 @@ import { ArrowRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
-import VideoModal from "@/components/VideoModal";
-import PostHeroSection from "@/components/PostHeroSection";
-import ChallengesSection from "@/components/ChallengesSection";
-import StatsTemplate from "@/components/StatsTemplate";
-import CloudServicesSection, { CloudServiceItem } from "@/components/CloudServicesSection";
-import { WorkflowLinksSection } from "@/components/WorkflowLinksSection";
+import VideoModal from "@/components/specialized-ui/VideoModal";
+import PostHeroSection from "@/components/sections/PostHeroSection";
+import ChallengesSection from "@/components/sections/ChallengesSection";
+import StatsTemplate from "@/components/templates/StatsTemplate";
+import CloudServicesSection, { CloudServiceItem } from "@/components/sections/CloudServicesSection";
+import { WorkflowLinksSection } from "@/components/sections/WorkflowLinksSection";
 
 import heroImg from "@/assets/products/civil/hero.jpg";
 

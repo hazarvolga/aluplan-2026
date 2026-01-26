@@ -1,6 +1,6 @@
 "use client"
-import SolutionHero from "@/components/SolutionHero";
-import ResourceCardGrid from "@/components/ResourceCardGrid";
+import SolutionHero from "@/components/sections/SolutionHero";
+import ResourceCardGrid from "@/components/specialized-ui/ResourceCardGrid";
 import imgDriveCurve from "@/assets/solutions/cds/surus-egirisi.webp";
 import imgSteelComponents from "@/assets/solutions/cds/celik-profil-bilesenleri.webp";
 import imgParametricTerrain from "@/assets/solutions/cds/parametrik-arazi.webp";

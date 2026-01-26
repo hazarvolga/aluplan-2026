@@ -1,4 +1,4 @@
-import AnimatedCounter from "@/components/AnimatedCounter";
+import AnimatedCounter from "@/components/specialized-ui/AnimatedCounter";
 import { cn } from "@/lib/utils";
 
 type StatItem = {

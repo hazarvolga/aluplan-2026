@@ -1,8 +1,8 @@
 "use client"
-import AddonDetailTemplate from "@/components/AddonDetailTemplate";
-import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
-import SectionHeader from "@/components/SectionHeader";
-import FeatureGrid from "@/components/FeatureGrid";
+import AddonDetailTemplate from "@/components/templates/AddonDetailTemplate";
+import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
+import SectionHeader from "@/components/sections/SectionHeader";
+import FeatureGrid from "@/components/sections/FeatureGrid";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";

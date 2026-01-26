@@ -1,6 +1,6 @@
 "use client"
-import SectionHeader from "@/components/SectionHeader";
-import SideImageSection from "@/components/SideImageSection";
+import SectionHeader from "@/components/sections/SectionHeader";
+import SideImageSection from "@/components/sections/SideImageSection";
 import Image from "next/image";
 import heroBanner from "@/assets/solutions/oska/hero-banner.jpg";
 import bimx5Section from "@/assets/solutions/oska/bimx5-section.jpg";

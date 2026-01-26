@@ -1,13 +1,13 @@
 "use client"
-import AddonDetailTemplate from "@/components/AddonDetailTemplate";
-import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
-import SectionHeader from "@/components/SectionHeader";
-import CDSLicenseInfoSection from "@/components/CDSLicenseInfoSection";
+import AddonDetailTemplate from "@/components/templates/AddonDetailTemplate";
+import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
+import SectionHeader from "@/components/sections/SectionHeader";
+import CDSLicenseInfoSection from "@/components/sections/CDSLicenseInfoSection";
 import { Card } from "@/components/ui/card";
-import MasonryVideoGrid from "@/components/MasonryVideoGrid";
-import ImageGallery from "@/components/ImageGallery";
-import VideoTwoColumn from "@/components/VideoTwoColumn";
-import RegulaTabs from "@/components/RegulaTabs";
+import MasonryVideoGrid from "@/components/specialized-ui/MasonryVideoGrid";
+import ImageGallery from "@/components/specialized-ui/ImageGallery";
+import VideoTwoColumn from "@/components/sections/VideoTwoColumn";
+import RegulaTabs from "@/components/sections/RegulaTabs";
 import { Button } from "@/components/ui/button";
 import iconProfilbauteile from "@/assets/solutions/cds/steel-components/islevsel-genel-bakis/2000_657c59af501ad.webp";
 import iconProfilbauteilErzeugen from "@/assets/solutions/cds/steel-components/islevsel-genel-bakis/2000_657c59bc12245.webp";

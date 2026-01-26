@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import TrialCTA from "@/components/TrialCTA";
+import TrialCTA from "@/components/sections/TrialCTA";
 
 const GlobalTrialCTA = () => {
     const pathname = usePathname();

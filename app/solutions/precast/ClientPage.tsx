@@ -1,7 +1,7 @@
 "use client"
-import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
-import SolutionHero from "@/components/SolutionHero";
-import PostHeroSection from "@/components/PostHeroSection";
+import EnhancedSolutionTemplate from "@/components/templates/EnhancedSolutionTemplate";
+import SolutionHero from "@/components/sections/SolutionHero";
+import PostHeroSection from "@/components/sections/PostHeroSection";
 import heroImage from "@/assets/solutions/precast-hero.jpg";
 import iconAutomatedWorkflows from "@/assets/products/precast/reasons/automated_workflows.png";
 import iconHighDesignQuality from "@/assets/products/precast/reasons/high_design_quality.png";
@@ -16,7 +16,7 @@ import iconDigitalizationPlant from "@/assets/products/precast/reasons/digitaliz
 import iconOptimizedDecisions from "@/assets/products/precast/reasons/optimized_decisions-1.png";
 import iconMobileSolutions from "@/assets/products/precast/reasons/mobile_solutions-1.png";
 
-import PrecastHeroBackground from "@/components/PrecastHeroBackground";
+import PrecastHeroBackground from "@/components/backgrounds/PrecastHeroBackground";
 
 export default function ClientPage() {
   const stats = [

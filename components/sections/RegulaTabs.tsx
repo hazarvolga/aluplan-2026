@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import SectionHeader from "@/components/SectionHeader";
+import SectionHeader from "@/components/sections/SectionHeader";
 
 interface TabItem {
   value: string;

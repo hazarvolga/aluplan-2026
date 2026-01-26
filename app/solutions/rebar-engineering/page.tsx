@@ -1,8 +1,8 @@
 "use client"
-import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
-import SolutionHero from "@/components/SolutionHero";
-import SectionHeader from "@/components/SectionHeader";
-import VideoGrid from "@/components/VideoGrid";
+import EnhancedSolutionTemplate from "@/components/templates/EnhancedSolutionTemplate";
+import SolutionHero from "@/components/sections/SolutionHero";
+import SectionHeader from "@/components/sections/SectionHeader";
+import VideoGrid from "@/components/specialized-ui/VideoGrid";
 
 
 

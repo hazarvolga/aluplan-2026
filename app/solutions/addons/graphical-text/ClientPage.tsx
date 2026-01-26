@@ -1,9 +1,9 @@
 "use client"
-import AddonDetailTemplate from "@/components/AddonDetailTemplate";
-import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
-import SectionHeader from "@/components/SectionHeader";
-import CDSLicenseInfoSection from "@/components/CDSLicenseInfoSection";
-import MasonryVideoGrid from "@/components/MasonryVideoGrid";
+import AddonDetailTemplate from "@/components/templates/AddonDetailTemplate";
+import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
+import SectionHeader from "@/components/sections/SectionHeader";
+import CDSLicenseInfoSection from "@/components/sections/CDSLicenseInfoSection";
+import MasonryVideoGrid from "@/components/specialized-ui/MasonryVideoGrid";
 
 
 // Static Import

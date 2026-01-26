@@ -1,7 +1,7 @@
 "use client"
-import AddonDetailTemplate from "@/components/AddonDetailTemplate";
-import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
-import ImageGallery from "@/components/ImageGallery";
+import AddonDetailTemplate from "@/components/templates/AddonDetailTemplate";
+import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
+import ImageGallery from "@/components/specialized-ui/ImageGallery";
 import { Button } from "@/components/ui/button";
 import { Building2 } from "lucide-react";
 import Image from "next/image";

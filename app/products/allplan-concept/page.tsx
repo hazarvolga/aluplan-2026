@@ -6,9 +6,9 @@ import { ArrowRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import { Check } from "lucide-react";
-import VideoModal from "@/components/VideoModal";
-import CloudServicesSection from "@/components/CloudServicesSection";
-import { WorkflowLinksSection } from "@/components/WorkflowLinksSection";
+import VideoModal from "@/components/specialized-ui/VideoModal";
+import CloudServicesSection from "@/components/sections/CloudServicesSection";
+import { WorkflowLinksSection } from "@/components/sections/WorkflowLinksSection";
 
 import heroImg from "@/assets/products/allplan-concept/hero.jpg";
 import workWayWantIcon from "@/assets/products/allplan-concept/work-way-want.png";
@@ -87,7 +87,7 @@ const FeatureCard = ({ feature }: { feature: FeatureItem }) => (
   </Card>
 );
 
-import QuickActionsSection from "@/components/QuickActionsSection";
+import QuickActionsSection from "@/components/sections/QuickActionsSection";
 
 // ... (existing imports - no change needed as imports are at top)
 

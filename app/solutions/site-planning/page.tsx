@@ -1,9 +1,9 @@
 "use client"
-import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
-import SitePlanningHeroBackground from "@/components/SitePlanningHeroBackground";
-import SolutionHero from "@/components/SolutionHero";
-import WorkflowTabsTemplate from "@/components/WorkflowTabsTemplate";
-import PostHeroSection from "@/components/PostHeroSection";
+import EnhancedSolutionTemplate from "@/components/templates/EnhancedSolutionTemplate";
+import SitePlanningHeroBackground from "@/components/backgrounds/SitePlanningHeroBackground";
+import SolutionHero from "@/components/sections/SolutionHero";
+import WorkflowTabsTemplate from "@/components/templates/WorkflowTabsTemplate";
+import PostHeroSection from "@/components/sections/PostHeroSection";
 import iconAccurateVisualScheduling from "@/assets/solutions/site-planning/icons/accurate_visual_scheduling-2.png";
 import iconDetailPrecast from "@/assets/solutions/site-planning/icons/detail_precast-2.png";
 import iconInterdisciplinaryAecDesign from "@/assets/solutions/site-planning/icons/interdisciplinary_aec_design.png";

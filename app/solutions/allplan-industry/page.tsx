@@ -1,10 +1,10 @@
 "use client"
 import React from "react";
 import { PageWrapper } from "@/components/layout-v2/PageWrapper";
-import SolutionHero from "@/components/SolutionHero";
-import SideImageSection from "@/components/SideImageSection";
-import ChallengesSection from "@/components/ChallengesSection";
-import StatsSection from "@/components/StatsSection";
+import SolutionHero from "@/components/sections/SolutionHero";
+import SideImageSection from "@/components/sections/SideImageSection";
+import ChallengesSection from "@/components/sections/ChallengesSection";
+import StatsSection from "@/components/sections/StatsSection";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import productArch from "@/assets/product-architecture.jpg";

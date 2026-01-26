@@ -1,6 +1,6 @@
 "use client"
-import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
-import ResourceCardGrid from "@/components/ResourceCardGrid";
+import EnhancedSolutionTemplate from "@/components/templates/EnhancedSolutionTemplate";
+import ResourceCardGrid from "@/components/specialized-ui/ResourceCardGrid";
 import heroImage from "@/assets/solutions/structural-hero.jpg";
 import imgDriveCurve from "@/assets/solutions/cds/surus-egirisi.webp";
 import imgSteelComponents from "@/assets/solutions/cds/celik-profil-bilesenleri.webp";

@@ -1,5 +1,5 @@
 "use client"
-import ProductPageTemplate from "@/components/ProductPageTemplate";
+import ProductPageTemplate from "@/components/templates/ProductPageTemplate";
 import reasonWorkWayWant from "@/assets/solutions/architecture/reasons/work_way_want.png";
 import reasonPowerfulModeling from "@/assets/solutions/architecture/reasons/structural-engineering-allplan-turkey-powerful_modeling.png";
 import reasonProductiveCollab from "@/assets/solutions/steel/reasons/productive_collab-1.png";

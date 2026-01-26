@@ -1,10 +1,10 @@
 "use client"
-import AddonDetailTemplate from "@/components/AddonDetailTemplate";
-import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
-import SectionHeader from "@/components/SectionHeader";
-import CDSLicenseInfoSection from "@/components/CDSLicenseInfoSection";
+import AddonDetailTemplate from "@/components/templates/AddonDetailTemplate";
+import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
+import SectionHeader from "@/components/sections/SectionHeader";
+import CDSLicenseInfoSection from "@/components/sections/CDSLicenseInfoSection";
 import { Card } from "@/components/ui/card";
-import ImageGallery from "@/components/ImageGallery";
+import ImageGallery from "@/components/specialized-ui/ImageGallery";
 import imgSketchUp from "@/assets/solutions/cds/sketchup-converter.jpg";
 
 const SketchUpConverter = () => {

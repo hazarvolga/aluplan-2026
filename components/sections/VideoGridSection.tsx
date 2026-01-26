@@ -1,5 +1,5 @@
 import React from "react";
-import SectionHeader from "@/components/SectionHeader";
+import SectionHeader from "@/components/sections/SectionHeader";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 
 interface VideoItem {

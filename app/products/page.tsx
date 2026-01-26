@@ -14,7 +14,7 @@ import imgProfessional from "@/assets/products/allplan-professional/hero.jpg";
 import imgConcept from "@/assets/products/allplan-concept/hero.jpg";
 import imgBasic from "@/assets/products/allplan-basic/hero.jpg";
 import imgPrecast from "@/assets/solutions/precast-hero.jpg";
-import ProductInnovations from "@/components/ProductInnovations";
+import ProductInnovations from "@/components/sections/ProductInnovations";
 
 export default function ProductsPage() {
     const products = [

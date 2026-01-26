@@ -1,6 +1,6 @@
 "use client"
-import SolutionHero from "@/components/SolutionHero";
-import VideoGrid from "@/components/VideoGrid";
+import SolutionHero from "@/components/sections/SolutionHero";
+import VideoGrid from "@/components/specialized-ui/VideoGrid";
 
 export default function ClientPage() {
   const videoSections = [

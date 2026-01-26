@@ -1,7 +1,7 @@
 "use client"
-import AddonDetailTemplate from "@/components/AddonDetailTemplate";
-import BenefitsGrid from "@/components/BenefitsGrid";
-import SectionHeader from "@/components/SectionHeader";
+import AddonDetailTemplate from "@/components/templates/AddonDetailTemplate";
+import BenefitsGrid from "@/components/sections/BenefitsGrid";
+import SectionHeader from "@/components/sections/SectionHeader";
 import { Button } from "@/components/ui/button";
 import { Calculator, CircleDot, Droplet, Eye, GitMerge, Layers, Link2, Repeat2, Ruler, Scan, Tag, Wrench } from "lucide-react";
 import Link from "next/link";

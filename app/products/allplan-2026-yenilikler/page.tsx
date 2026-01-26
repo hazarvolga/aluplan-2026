@@ -1,9 +1,9 @@
 "use client";
 
-import ProductPageTemplate from "@/components/ProductPageTemplate";
-import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
-import RegulaTabs from "@/components/RegulaTabs";
-import SideImageSection from "@/components/SideImageSection";
+import ProductPageTemplate from "@/components/templates/ProductPageTemplate";
+import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
+import RegulaTabs from "@/components/sections/RegulaTabs";
+import SideImageSection from "@/components/sections/SideImageSection";
 import heroImage from "@/assets/solutions/steel-hero.jpg"; // Using existing hero as placeholder
 import freeformStairNew from "@/assets/products/allplan-2026/freeform-stair-new.jpg";
 import slabFoundationNew from "@/assets/products/allplan-2026/slab-foundation-new.jpg";

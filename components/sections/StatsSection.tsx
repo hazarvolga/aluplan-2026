@@ -1,4 +1,4 @@
-import StatsTemplate from "@/components/StatsTemplate";
+import StatsTemplate from "@/components/templates/StatsTemplate";
 
 type StatItem = {
   label: string;

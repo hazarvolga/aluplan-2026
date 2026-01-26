@@ -1,15 +1,15 @@
 import "@/styles/globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "@/components/layout/theme-provider";
 import type { Metadata, Viewport } from "next";
 // import { Inter, Space_Grotesk, IBM_Plex_Mono } from "next/font/google";
 import SkipLink from "@/components/a11y/SkipLink";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import GlobalTrialCTA from "@/components/GlobalTrialCTA";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import GlobalTrialCTA from "@/components/sections/GlobalTrialCTA";
 import Breadcrumb from "@/components/ui/breadcrumb";
-import ScrollToTopButton from "@/components/ScrollToTopButton";
-import CopyProtection from "@/components/CopyProtection";
-import CookieConsent from "@/components/CookieConsent";
+import ScrollToTopButton from "@/components/layout/ScrollToTopButton";
+import CopyProtection from "@/components/sections/CopyProtection";
+import CookieConsent from "@/components/layout/CookieConsent";
 import Script from "next/script";
 
 
@@ -48,7 +48,11 @@ export const metadata: Metadata = {
   keywords: ["BIM", "Allplan", "İnşaat Mühendisliği", "Mimari Tasarım", "Aluplan", "Yazılım", "AX3000", "Statik Analiz"],
   authors: [{ name: "Aluplan Ekibi" }],
   creator: "Aluplan",
+  publisher: "Aluplan",
   metadataBase: new URL("https://aluplan.com.tr"),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     type: "website",
     locale: "tr_TR",
@@ -56,15 +60,31 @@ export const metadata: Metadata = {
     title: "Aluplan - Premium Mühendislik Çözümleri",
     description: "Mimarlık, mühendislik ve inşaat sektörü için premium yazılım çözümleri.",
     siteName: "Aluplan",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Aluplan",
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Aluplan - Premium Mühendislik Çözümleri',
     description: 'Mimarlık, mühendislik ve inşaat sektörü için premium yazılım çözümleri.',
+    images: ["/opengraph-image.png"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   icons: {
     icon: "/favicon.ico",
@@ -94,7 +114,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </Script>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >

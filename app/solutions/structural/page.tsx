@@ -1,10 +1,10 @@
 "use client"
-import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
-import SolutionHero from "@/components/SolutionHero";
-import WorkflowTabsTemplate from "@/components/WorkflowTabsTemplate";
-import PostHeroSection from "@/components/PostHeroSection";
+import EnhancedSolutionTemplate from "@/components/templates/EnhancedSolutionTemplate";
+import SolutionHero from "@/components/sections/SolutionHero";
+import WorkflowTabsTemplate from "@/components/templates/WorkflowTabsTemplate";
+import PostHeroSection from "@/components/sections/PostHeroSection";
 import heroBg from "@/assets/solutions/structural-hero-bg.png";
-import StructuralHeroBackground from "@/components/StructuralHeroBackground";
+import StructuralHeroBackground from "@/components/backgrounds/StructuralHeroBackground";
 import architectureHero from "@/assets/solutions/architecture-hero.jpg";
 import imgDataExchange from "@/assets/solutions/structural/workflows/site-analysis/data-exchange.jpg";
 import imgTerrainSurvey from "@/assets/solutions/structural/workflows/site-analysis/terrain-survey.jpg";

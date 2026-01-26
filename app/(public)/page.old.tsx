@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
-import EngineeringHero from "@/components/EngineeringHero";
-import Products from "@/components/Products";
-import Features from "@/components/Features";
+import EngineeringHero from "@/components/sections/EngineeringHero";
+import Products from "@/components/sections/Products";
+import Features from "@/components/sections/Features";
 import Divider from "@/components/ui/Divider";
 
 export const metadata: Metadata = {

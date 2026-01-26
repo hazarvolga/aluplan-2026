@@ -1,5 +1,5 @@
 "use client"
-import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
+import EnhancedSolutionTemplate from "@/components/templates/EnhancedSolutionTemplate";
 import heroImage from "@/assets/solutions/structural-hero.jpg";
 
 export default function Page() {

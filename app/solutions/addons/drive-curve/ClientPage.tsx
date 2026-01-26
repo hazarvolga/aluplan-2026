@@ -1,11 +1,11 @@
 "use client"
-import AddonDetailTemplate from "@/components/AddonDetailTemplate";
-import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
-import ImageGallery from "@/components/ImageGallery";
-import RegulaTabs from "@/components/RegulaTabs";
-import SpecificationTables from "@/components/SpecificationTables";
-import MasonryVideoGrid from "@/components/MasonryVideoGrid";
-import ApplicationAreas from "@/components/ApplicationAreas";
+import AddonDetailTemplate from "@/components/templates/AddonDetailTemplate";
+import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
+import ImageGallery from "@/components/specialized-ui/ImageGallery";
+import RegulaTabs from "@/components/sections/RegulaTabs";
+import SpecificationTables from "@/components/sections/SpecificationTables";
+import MasonryVideoGrid from "@/components/specialized-ui/MasonryVideoGrid";
+import ApplicationAreas from "@/components/sections/ApplicationAreas";
 import { Car, Truck, GitFork, MoveHorizontal, Map, Route } from "lucide-react";
 import Image from "next/image";
 import iconFahrspur from "@/assets/solutions/cds/drive-curve/islevsel-genel-bakis/Fahrspur.webp";

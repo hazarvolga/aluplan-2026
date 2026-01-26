@@ -1,7 +1,7 @@
 "use client"
-import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
-import SolutionHero from "@/components/SolutionHero";
-import PostHeroSection from "@/components/PostHeroSection";
+import EnhancedSolutionTemplate from "@/components/templates/EnhancedSolutionTemplate";
+import SolutionHero from "@/components/sections/SolutionHero";
+import PostHeroSection from "@/components/sections/PostHeroSection";
 import heroImage from "@/assets/solutions/steel-hero.jpg";
 
 import iconSmartFabrication from "@/assets/solutions/steel/reasons/work_way_want-1.png";
@@ -38,7 +38,7 @@ const reasons = [
   { title: "OTOMATİK KARMAŞIK MODELLEME GÖREVLERİ", description: "Merdivenleri, korkulukları, karmaşık geometriyi ve daha fazlasını modellemek için otomatik araçlarla çeşitli çeliği modellemede zamandan tasarruf edin.", image: iconComplexModeling },
 ];
 
-import SteelHeroBackground from "@/components/SteelHeroBackground";
+import SteelHeroBackground from "@/components/backgrounds/SteelHeroBackground";
 
 export default function Page() {
   return (

@@ -1,4 +1,4 @@
-import SectionHeader from "@/components/SectionHeader";
+import SectionHeader from "@/components/sections/SectionHeader";
 import { Card } from "@/components/ui/card";
 import Image, { StaticImageData } from "next/image";
 

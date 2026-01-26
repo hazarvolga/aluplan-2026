@@ -5,14 +5,14 @@ import { ArrowRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import { Check } from "lucide-react";
-import VideoModal from "@/components/VideoModal";
-import ReasonsSection from "@/components/ReasonsSection";
-import CloudServicesSection from "@/components/CloudServicesSection";
-import PostHeroSection from "@/components/PostHeroSection";
+import VideoModal from "@/components/specialized-ui/VideoModal";
+import ReasonsSection from "@/components/sections/ReasonsSection";
+import CloudServicesSection from "@/components/sections/CloudServicesSection";
+import PostHeroSection from "@/components/sections/PostHeroSection";
 
 // Statik görseller
 import heroImg from "@/assets/products/allplan-basic/hero.jpg";
-import { WorkflowLinksSection } from "@/components/WorkflowLinksSection";
+import { WorkflowLinksSection } from "@/components/sections/WorkflowLinksSection";
 import interfacesImg from "@/assets/products/allplan-basic/interfaces.jpg";
 import clashDetectionImg from "@/assets/products/allplan-basic/clash-detection.jpg";
 import layoutingImg from "@/assets/products/allplan-basic/layouting.png";
@@ -80,7 +80,7 @@ const FeatureCard = ({ feature }: { feature: FeatureItem }) => (
   </Card>
 );
 
-import QuickActionsSection from "@/components/QuickActionsSection";
+import QuickActionsSection from "@/components/sections/QuickActionsSection";
 
 // ... (existing imports - no change needed as imports are at top)
 

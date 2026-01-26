@@ -1,7 +1,7 @@
 "use client"
-import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
-import SolutionHero from "@/components/SolutionHero";
-import InfoMediaTwoColumn from "@/components/InfoMediaTwoColumn";
+import EnhancedSolutionTemplate from "@/components/templates/EnhancedSolutionTemplate";
+import SolutionHero from "@/components/sections/SolutionHero";
+import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
 import imgWorkflow from "@/assets/solutions/structural/workflows/modeling/parametric-modeling.jpg";
 
 export default function ClientPage() {

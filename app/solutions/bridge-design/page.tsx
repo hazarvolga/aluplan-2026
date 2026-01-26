@@ -1,7 +1,7 @@
 "use client"
-import EnhancedSolutionTemplate from "@/components/EnhancedSolutionTemplate";
-import SolutionHero from "@/components/SolutionHero";
-import PostHeroSection from "@/components/PostHeroSection";
+import EnhancedSolutionTemplate from "@/components/templates/EnhancedSolutionTemplate";
+import SolutionHero from "@/components/sections/SolutionHero";
+import PostHeroSection from "@/components/sections/PostHeroSection";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import iconReinforcement from "@/assets/solutions/bridge/reasons/structural-engineering-allplan-turkey-powerful_modeling.png";
@@ -47,7 +47,7 @@ const reasons = [
   { title: "KALİTELİ TEKNİK DESTEK", description: "30+ yıl köprü uzmanlığı ve kapsamlı destek.", image: iconEnhancedComm },
 ];
 
-import QuickActionsSection from "@/components/QuickActionsSection";
+import QuickActionsSection from "@/components/sections/QuickActionsSection";
 import { ArrowRight, FileText, Layers, Activity } from "lucide-react";
 
 const quickActions = [
@@ -99,7 +99,7 @@ const postHeroSection = (
   </>
 );
 
-import BridgeHeroBackground from "@/components/BridgeHeroBackground";
+import BridgeHeroBackground from "@/components/backgrounds/BridgeHeroBackground";
 import heroBg from "@/assets/solutions/kopru-bg.png";
 
 export default function Page() {
