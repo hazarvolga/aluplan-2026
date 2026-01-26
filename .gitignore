@@ -35,6 +35,17 @@ next-env.d.ts
 
 # Development artifacts
 Bilgi Bankası/
+Bilgi/
 .gemini/
 .vscode/
 .idea/
+
+# Large demo files
+.agent/skills/loki-mode/demo/
+assets/solutions/scalypso/ast-block-templates-json/
+assets/solutions/scalypso/astra-sites/
+
+# Temporary files
+*.log
+*.tmp
+*.temp
