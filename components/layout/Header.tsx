@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown, Globe, Facebook, Twitter, Linkedin, Youtube, Instagram } from "lucide-react";
+import { Menu, X, ChevronDown, Globe, Facebook, Twitter, Linkedin, Youtube, Instagram, Search } from "lucide-react";
 import MegaMenu from "./MegaMenu";
 import { solutionsMenu } from "@/data/solutionsMenu";
 import Image from "next/image";
@@ -11,9 +11,11 @@ import logoWhite from "@/assets/aluplan-logo-white.svg";
 import logoBlack from "@/assets/aluplan-logo-black.svg";
 import { ThemeToggle } from "./ThemeToggle";
 import { AnimatePresence, motion } from "framer-motion";
+import { CommandMenu } from "@/components/search/CommandMenu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [activeMegaMenu, setActiveMegaMenu] = useState<string | null>(null);
   const [expandedMobileMenu, setExpandedMobileMenu] = useState<string | null>(null);
   const [language, setLanguage] = useState<"tr" | "en">("tr");
@@ -226,6 +228,16 @@ const Header = () => {
               {language.toUpperCase()}
             </Button> */}
 
+            <Button
+              variant="ghost"
+              size="icon"
+              className="text-muted-foreground hover:text-foreground"
+              onClick={() => setIsSearchOpen(true)}
+              aria-label="Arama"
+            >
+              <Search className="h-5 w-5" />
+            </Button>
+
             <ThemeToggle />
 
             <Button asChild variant="outline" size="sm" className="hidden sm:inline-flex border-border/40 bg-muted/50 text-foreground hover:bg-muted hover:border-border">
@@ -369,6 +381,8 @@ const Header = () => {
           <MegaMenu key="products" sections={productsMenu} onClose={closeMegaMenu} />
         )}
       </AnimatePresence>
+
+      <CommandMenu open={isSearchOpen} setOpen={setIsSearchOpen} />
     </header>
   );
 };
