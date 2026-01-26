@@ -24,10 +24,10 @@ export const searchIndex: SearchItem[] = [
     },
     {
         title: "ALLPLAN Cloud Services",
-        description: "Tüm aboneliklere dahil olan bulut tabanlı iş birliği, çizim dağıtımı ve proje yönetimi araçları. Bimplus, Autoconverter ve daha fazlası.",
+        description: "Tüm aboneliklere dahil olan bulut tabanlı iş birliği platformu. Çizim dağıtımı, proje ekip çalışması, Model Görüntüleyici, Autoconverter, Bluebeam entegrasyonu ve yapay zeka destekli görselleştirme araçları.",
         url: "/products/allplan-cloud-services",
         category: "Ürün",
-        tags: ["cloud", "bulut", "bimplus", "autoconverter", "share", "workgroup"]
+        tags: ["cloud", "bulut", "bimplus", "autoconverter", "share", "workgroup", "iş birliği", "collaboration", "yapay zeka", "ai"]
     },
     {
         title: "BIMPLUS",

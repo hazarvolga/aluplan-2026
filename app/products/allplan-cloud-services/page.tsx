@@ -17,84 +17,84 @@ import SectionHeader from "@/components/sections/SectionHeader";
 import imgServiceMap from "@/assets/products/allplan-cloud-services/cloud-service-map.jpg";
 
 const whatIsInfoMedia = {
-    title: "What is ALLPLAN Cloud?",
+    title: "ALLPLAN Cloud Nedir?",
     descriptions: [
-        "ALLPLAN Cloud is a consolidated solution, included by default in all ALLPLAN Subscriptions, that makes the most out of your data, while connecting ALLPLAN desktop and cloud applications.",
-        "Benefit from a powerful cloud-based BIM collaboration platform, tools to work on projects in teams, to manage and distribute drawings/plans, and for efficient office teamworking.",
-        "All this plus special cloud applications to exchange with structural analysis solutions, rapidly visualize IFC files, integrate 2D documentation.",
-        "ALLPLAN Cloud will enhance your design-to-build workflows for optimal efficiency."
+        "ALLPLAN Cloud, tüm ALLPLAN aboneliklerine varsayılan olarak dahil edilen, verilerinizden en iyi şekilde yararlanmanızı sağlayan ve ALLPLAN masaüstü ile bulut uygulamalarını birbirine bağlayan entegre bir çözümdür.",
+        "Güçlü bulut tabanlı BIM iş birliği platformu, ekip çalışması araçları, çizim/plan yönetimi ve dağıtım araçları ile verimli ofis içi ekip çalışması imkanlarından faydalanın.",
+        "Tüm bunlara ek olarak, statik analiz çözümleriyle veri alışverişi, IFC dosyalarının hızlı görselleştirilmesi ve 2D dokümantasyon entegrasyonu için özel bulut uygulamaları.",
+        "ALLPLAN Cloud, tasarımdan üretime iş akışlarınızı optimum verimlilik için geliştirir."
     ],
     videoUrl: "https://www.youtube.com/embed/DTSdM7tSBlU",
 };
 
 const benefitsItems = [
     {
-        title: "Drawing and Plan Distribution",
-        description: "ALLPLAN offers a web-based plan distribution tool specifically designed to manage the creation and distribution of various plan formats and provide automatic change notifications via email groups. The platform provides a 2D drawing download environment and tracks shipping and download activity for inclusion in an audit report.",
+        title: "Çizim ve Plan Dağıtımı",
+        description: "ALLPLAN, çeşitli plan formatlarının oluşturulmasını ve dağıtımını yönetmek ve e-posta grupları aracılığıyla otomatik değişiklik bildirimleri sağlamak için özel olarak tasarlanmış web tabanlı bir plan dağıtım aracı sunar. Platform, 2D çizim indirme ortamı sağlar ve denetim raporuna dahil edilmek üzere sevkiyat ve indirme faaliyetlerini takip eder.",
         image: imgDistribution
     },
     {
-        title: "Project Teamworking",
-        description: "The combination of ALLPLAN as well as a BIMPLUS account makes it possible to work together with planning partners around the world directly on one and the same ALLPLAN project. Project teamworking is based on the BIM platform BIMPLUS which offers you additional functions, such as the Model Viewer, the task management tool: Task Board or audit control and much more.",
+        title: "Proje Ekip Çalışması",
+        description: "ALLPLAN ve BIMPLUS hesabının birleşimi, dünyanın her yerindeki planlama ortaklarıyla doğrudan aynı ALLPLAN projesi üzerinde birlikte çalışmayı mümkün kılar. Proje ekip çalışması, size Model Görüntüleyici, görev yönetim aracı Task Board, denetim kontrolü ve çok daha fazlası gibi ek işlevler sunan BIM platformu BIMPLUS'a dayanmaktadır.",
         image: imgTeamworking
     },
     {
-        title: "Office Teamworking",
-        description: "ALLPLAN enables organization of CAD work stations in local networks (LAN) as well as via Internet. It creates clear synergy effects in medium-sized and large planning and construction firms. Work at an individual network work station is just as simple as work at a normal individual station.",
+        title: "Ofis İçi Ekip Çalışması",
+        description: "ALLPLAN, CAD iş istasyonlarının yerel ağlarda (LAN) ve İnternet üzerinden organize edilmesini sağlar. Orta ve büyük ölçekli planlama ve inşaat firmalarında net sinerji etkileri yaratır. Bireysel ağ iş istasyonunda çalışmak, normal bireysel istasyonda çalışmak kadar basittir.",
         image: imgOffice
     },
     {
-        title: "ALLPLAN Model Viewer",
-        description: "The ALLPLAN Model Viewer incorporates state-of-the-art technology allowing users to rapidly visualize an IFC file. Rather than uploading and waiting for large IFC files, users can now quickly preview a new file, view, and check IFC models visually before fully uploading and creating a revision in Bimplus.",
+        title: "ALLPLAN Model Görüntüleyici",
+        description: "ALLPLAN Model Görüntüleyici, kullanıcıların bir IFC dosyasını hızla görselleştirmesine olanak tanıyan son teknoloji içerir. Büyük IFC dosyalarını yükleyip beklemek yerine, kullanıcılar artık yeni bir dosyayı hızlıca önizleyebilir, IFC modellerini görsel olarak görüntüleyebilir ve Bimplus'ta tam olarak yükleyip revizyon oluşturmadan önce kontrol edebilir.",
         image: imgModelViewer
     },
     {
-        title: "ALLPLAN - Bluebeam Connection",
-        description: "For enhanced design to build workflows and to aid the digital delivery process there is now a connection with Bluebeam. Users will be able to bring 2D documentation into ALLPLAN workflows from within the Bluebeam Studio Project environment.",
+        title: "ALLPLAN - Bluebeam Bağlantısı",
+        description: "Gelişmiş tasarımdan üretime iş akışları ve dijital teslimat sürecine yardımcı olmak için artık Bluebeam ile bir bağlantı bulunmaktadır. Kullanıcılar, Bluebeam Studio Project ortamı içinden ALLPLAN iş akışlarına 2D dokümantasyon getirebilecekler.",
         image: imgBluebeam
     },
     {
         title: "BIMPLUS",
-        description: "BIMPLUS is the open model-based data and information management collaboration platform for all disciplines involved in construction projects. ALLPLAN cloud technology ensures interoperability across various software tools during the entire project lifecycle from design to build, into operation, fostering efficient collaboration among all project stakeholders.",
+        description: "BIMPLUS, inşaat projelerinde yer alan tüm disiplinler için açık model tabanlı veri ve bilgi yönetimi iş birliği platformudur. ALLPLAN bulut teknolojisi, tasarımdan üretime, işletmeye kadar tüm proje yaşam döngüsü boyunca çeşitli yazılım araçları arasında birlikte çalışabilirliği sağlayarak tüm proje paydaşları arasında verimli iş birliğini teşvik eder.",
         image: imgBimplus,
         link: "/products/allplan-bimplus",
-        buttonText: "Read more"
+        buttonText: "Devamını oku"
     },
     {
-        title: "Autoconverter",
-        description: "When working with structural engineers, BIMPLUS offers an advantage through the AutoConverter. Improved and accelerated communication with structural designers has a direct influence on a faster review and decision. The export and import of SAF files including revision comparison is breaking down barriers in the collaboration between architecture and structural analysis, as neither architects or structural engineers need to rebuild their models.",
+        title: "Autoconverter (Otomatik Dönüştürücü)",
+        description: "Statik mühendisleriyle çalışırken, BIMPLUS, AutoConverter aracılığıyla bir avantaj sunar. Statik tasarımcılarla geliştirilmiş ve hızlandırılmış iletişim, daha hızlı inceleme ve karar üzerinde doğrudan etkiye sahiptir. Revizyon karşılaştırması dahil SAF dosyalarının dışa ve içe aktarımı, mimarlık ve statik analiz arasındaki iş birliğindeki engelleri ortadan kaldırır, çünkü ne mimarların ne de statik mühendislerin modellerini yeniden oluşturması gerekmez.",
         image: imgAutoconverter,
         videoUrl: "https://youtu.be/twQPsbxq3QY",
-        buttonText: "View Video"
+        buttonText: "Videoyu İzle"
     },
     {
-        title: "AI-Based Visualization",
-        description: "Connections for creating inspiring, detailed AI driven visualizations. Includes Nemetschek AI Visualizer and integration to EvolveLab's Veras AI Visualizer.",
+        title: "Yapay Zeka Tabanlı Görselleştirme",
+        description: "İlham verici, detaylı yapay zeka destekli görselleştirmeler oluşturmak için bağlantılar. Nemetschek AI Visualizer ve EvolveLab'in Veras AI Visualizer entegrasyonunu içerir.",
         image: imgAiViz,
         videoUrl: "https://youtu.be/ldc4IjJDlwc",
-        buttonText: "View Video"
+        buttonText: "Videoyu İzle"
     },
     {
-        title: "AI Assistant",
-        description: "The AI Assistant, available through the Connect platform, is a groundbreaking tool designed to transform the way you work with ALLPLAN software solutions (ALLPLAN, SCIA, FRILO, SDS2 and BIMPLUS). With expertise spanning architecture, engineering, fabrication, and collaboration, this intelligent assistant provides comprehensive support across all areas of the platform. Beyond its deep knowledge of ALLPLAN-specific topics, it also serves as a valuable resource for broader AEC industry standards and best practices.\n\nSupport of IRC standard for accurate and compliant bridge planning in India.",
+        title: "Yapay Zeka Asistanı",
+        description: "Connect platformu aracılığıyla kullanılabilen Yapay Zeka Asistanı, ALLPLAN yazılım çözümleriyle (ALLPLAN, SCIA, FRILO, SDS2 ve BIMPLUS) çalışma şeklinizi dönüştürmek için tasarlanmış çığır açan bir araçtır. Mimarlık, mühendislik, imalat ve iş birliği konularında uzmanlığa sahip olan bu akıllı asistan, platformun tüm alanlarında kapsamlı destek sağlar. ALLPLAN'a özgü konulardaki derin bilgisinin ötesinde, daha geniş AEC endüstrisi standartları ve en iyi uygulamalar için de değerli bir kaynak olarak hizmet eder.\n\nHindistan'da doğru ve uyumlu köprü planlaması için IRC standardı desteği.",
         image: imgAiAssistant,
         link: "https://www.allplan.com/ai-assistant/",
         external: true,
-        buttonText: "Learn more"
+        buttonText: "Daha fazla bilgi"
     }
 ];
 
 export default function AllplanCloudServicesPage() {
     return (
         <ProductPageTemplate
-            badge="CLOUD SERVICES"
+            badge="BULUT HİZMETLERİ"
             heroVariant="background"
-            title="ALLPLAN Cloud services"
-            subtitle="Benefit from instant access to tools boosting your collaboration to the next level."
-            description="Discover the power of connected workflows. ALLPLAN Cloud brings your teams, data, and workflows together in one unified environment."
+            title="ALLPLAN Bulut Hizmetleri"
+            subtitle="İş birliğinizi bir üst seviyeye taşıyan araçlara anında erişimin keyfini çıkarın."
+            description="Bağlantılı iş akışlarının gücünü keşfedin. ALLPLAN Cloud, ekiplerinizi, verilerinizi ve iş akışlarınızı tek bir birleşik ortamda bir araya getirir."
             heroImage={imgHero}
             quickActions={[
-                { text: "View Editions", href: "https://www.allplan.com/package-overview/", external: true, variant: "outline" }
+                { text: "Paketleri Görüntüle", href: "https://www.allplan.com/package-overview/", external: true, variant: "outline" }
             ]}
             whatIsInfoMedia={whatIsInfoMedia}
             benefitsItems={benefitsItems}
@@ -102,17 +102,17 @@ export default function AllplanCloudServicesPage() {
         >
             <SideImageSection
                 imageSrc={imgServiceMap}
-                imageAlt="ALLPLAN Cloud Services Process Map"
+                imageAlt="ALLPLAN Bulut Hizmetleri Süreç Haritası"
                 imagePosition="left"
-                title="ALLPLAN Cloud Services in each design phase"
-                content="ALLPLAN Cloud incorporates the functionality of BIMPLUS, and former standalone products such as ALLPLAN Share, ALLPLAN Exchange and ALLPLAN Workgroup Manager. Also included are additional applications such as Autoconverter for integration with structural analysis solutions, ALLPLAN Model Viewer for rapid IFC model viewing, a Bluebeam Connection to integrate 2D documentation into ALLPLAN workflows. From conceptual design, through developed and detailed design into fabrication and construction execution, ALLPLAN Cloud supports superior and collaborative workflows across the lifecycle of your projects."
+                title="Her tasarım aşamasında ALLPLAN Bulut Hizmetleri"
+                content="ALLPLAN Cloud, BIMPLUS'ın işlevselliğini ve ALLPLAN Share, ALLPLAN Exchange ve ALLPLAN Workgroup Manager gibi eski bağımsız ürünleri içerir. Ayrıca statik analiz çözümleriyle entegrasyon için Autoconverter, hızlı IFC model görüntüleme için ALLPLAN Model Viewer, ALLPLAN iş akışlarına 2D dokümantasyon entegre etmek için Bluebeam Bağlantısı gibi ek uygulamalar da dahildir. Konsept tasarımdan, geliştirilmiş ve detaylı tasarıma, imalat ve inşaat uygulamasına kadar, ALLPLAN Cloud projelerinizin yaşam döngüsü boyunca üstün ve iş birliğine dayalı iş akışlarını destekler."
                 backgroundColor="transparent"
-                theme="dark" // Matches the dark mode generally used, or adjust if needed. Checking ProductPageTemplate theme.
+                theme="dark"
             />
             <SectionHeader
-                title="ALLPLAN Cloud Services includes:"
+                title="ALLPLAN Bulut Hizmetleri şunları içerir:"
                 align="center"
-                className="pb-0" // Reduce bottom padding since it sits right above the grid
+                className="pb-0"
             />
         </ProductPageTemplate>
     );
