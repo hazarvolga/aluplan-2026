@@ -16,7 +16,7 @@ const navItems = [
 export default function QuickStartPage() {
     return (
         <PageWrapper>
-            <div className="pt-32 pb-24 px-6 md:px-12 lg:px-24 bg-[#050505] min-h-screen">
+            <div className="pt-32 pb-24 px-6 md:px-12 lg:px-24 bg-background min-h-screen">
                 <div className="max-w-[1600px] mx-auto">
                     <div className="flex flex-col lg:flex-row gap-12 xl:gap-24">
                         {/* Sticky Navigation */}

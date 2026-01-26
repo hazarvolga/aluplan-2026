@@ -63,7 +63,7 @@ const HeroV2 = () => {
                 */}
                 {/* Cinematic Overlay - Enhanced for Cloud/Structure feel */}
                 {/* 1. Base Dark Layer */}
-                <div className="absolute inset-0 bg-background/60 dark:bg-[#020617]/40" />
+                <div className="absolute inset-0 bg-background/60 dark:bg-background/80" />
 
                 {/* 2. Technical Dot Grid (Engineering feel) */}
                 <div

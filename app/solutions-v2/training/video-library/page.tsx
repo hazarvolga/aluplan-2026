@@ -13,7 +13,7 @@ export default function VideoLibraryPage() {
                 subtitle="İhtiyacınız olan bilgiye görsel olarak ulaşın."
             />
 
-            <section className="py-24 px-6 md:px-12 lg:px-24 bg-[#050505] border-t border-white/5">
+            <section className="py-24 px-6 md:px-12 lg:px-24 bg-background border-t border-white/5">
                 <div className="max-w-[1400px] mx-auto">
                     <div className="mb-16">
                         <h2 className="text-3xl font-bold text-white mb-4">Önerilen Oynatma Listeleri ve Kanallar</h2>
@@ -61,7 +61,7 @@ export default function VideoLibraryPage() {
                                 href={item.url || "#"}
                                 target={item.url?.startsWith("http") ? "_blank" : "_self"}
                                 rel={item.url?.startsWith("http") ? "noopener noreferrer" : ""}
-                                className={`group relative bg-[#111] border rounded-2xl p-6 hover:bg-[#161616] hover:border-[#3B82F6]/30 transition-all duration-300 flex flex-col items-start ${item.url?.startsWith("/solutions-v2")
+                                className={`group relative bg-[#111] border rounded-2xl p-6 hover:bg-[#161616] hover:border-primary/30 transition-all duration-300 flex flex-col items-start ${item.url?.startsWith("/solutions-v2")
                                     ? "border-red-900"
                                     : "border-white/5"
                                     }`}

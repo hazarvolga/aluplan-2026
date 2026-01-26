@@ -146,15 +146,15 @@ export default function ReferencesPage() {
                 subtitle="Bizi tercih eden ve birlikte başarılı projelere imza attığımız değerli müşterilerimizden bazıları."
             />
 
-            <section className="py-20 px-6 md:px-12 lg:px-24 bg-[#050505] min-h-screen">
+            <section className="py-20 px-6 md:px-12 lg:px-24 bg-background min-h-screen">
                 <div className="max-w-[1400px] mx-auto">
                     <Tabs defaultValue="all" className="w-full">
-                        <TabsList className="flex flex-wrap justify-center gap-2 bg-transparent mb-16 h-auto p-0 sticky top-24 z-30 py-4 bg-[#050505]/80 backdrop-blur-md border-b border-white/5 w-full">
+                        <TabsList className="flex flex-wrap justify-center gap-2 bg-transparent mb-16 h-auto p-0 sticky top-24 z-30 py-4 bg-background/80 backdrop-blur-md border-b border-white/5 w-full">
                             {categories.map((cat) => (
                                 <TabsTrigger
                                     key={cat.id}
                                     value={cat.id}
-                                    className="px-6 py-3 rounded-full border border-white/10 bg-[#111] text-gray-400 data-[state=active]:bg-[#3B82F6] data-[state=active]:text-white data-[state=active]:border-[#3B82F6] transition-all duration-300 flex items-center gap-2"
+                                    className="px-6 py-3 rounded-full border border-white/10 bg-[#111] text-gray-400 data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:border-primary transition-all duration-300 flex items-center gap-2"
                                 >
                                     {cat.icon && <cat.icon className="h-4 w-4" />}
                                     {cat.label}
@@ -187,9 +187,9 @@ const ReferenceGrid = ({ items }: { items: typeof references }) => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.3, delay: index * 0.02 }}
-                    className="p-6 rounded-xl bg-[#0a0a0a] border border-white/5 hover:border-[#3B82F6]/30 hover:bg-[#0f0f0f] transition-all duration-300 group flex items-center gap-4"
+                    className="p-6 rounded-xl bg-card border border-white/5 hover:border-primary/30 hover:bg-[#0f0f0f] transition-all duration-300 group flex items-center gap-4"
                 >
-                    <div className="h-10 w-10 rounded-lg bg-[#111] border border-white/5 flex items-center justify-center shrink-0 group-hover:bg-[#3B82F6]/10 group-hover:text-[#3B82F6] transition-colors">
+                    <div className="h-10 w-10 rounded-lg bg-[#111] border border-white/5 flex items-center justify-center shrink-0 group-hover:bg-primary/10 group-hover:text-primary transition-colors">
                         <ReferenceIcon category={item.category} />
                     </div>
                     <span className="font-medium text-gray-300 group-hover:text-white transition-colors">

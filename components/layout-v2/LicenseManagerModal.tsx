@@ -49,7 +49,7 @@ export function LicenseManagerModal({ isOpen, onClose }: LicenseManagerModalProp
                         </p>
                         <Button
                             onClick={handleClose}
-                            className="bg-[#3B82F6] hover:bg-[#2563eb] text-white rounded-full px-8 mt-4"
+                            className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 mt-4"
                         >
                             Tamam
                         </Button>
@@ -82,7 +82,7 @@ export function LicenseManagerModal({ isOpen, onClose }: LicenseManagerModalProp
                             id="company"
                             required
                             placeholder="Firma Adı"
-                            className="bg-[#1a1a1a] border-white/10 text-white placeholder:text-gray-600 focus:border-[#3B82F6] focus:ring-[#3B82F6]/20"
+                            className="bg-muted border-border text-foreground placeholder:text-muted-foreground focus:border-primary focus:ring-primary/20"
                         />
                     </div>
 
@@ -96,7 +96,7 @@ export function LicenseManagerModal({ isOpen, onClose }: LicenseManagerModalProp
                             type="tel"
                             required
                             placeholder="+90 5XX XXX XX XX"
-                            className="bg-[#1a1a1a] border-white/10 text-white placeholder:text-gray-600 focus:border-[#3B82F6] focus:ring-[#3B82F6]/20"
+                            className="bg-muted border-border text-foreground placeholder:text-muted-foreground focus:border-primary focus:ring-primary/20"
                         />
                     </div>
 
@@ -109,7 +109,7 @@ export function LicenseManagerModal({ isOpen, onClose }: LicenseManagerModalProp
                             id="managerName"
                             required
                             placeholder="Ad Soyad"
-                            className="bg-[#1a1a1a] border-white/10 text-white placeholder:text-gray-600 focus:border-[#3B82F6] focus:ring-[#3B82F6]/20"
+                            className="bg-muted border-border text-foreground placeholder:text-muted-foreground focus:border-primary focus:ring-primary/20"
                         />
                     </div>
 
@@ -123,7 +123,7 @@ export function LicenseManagerModal({ isOpen, onClose }: LicenseManagerModalProp
                             type="email"
                             required
                             placeholder="ornek@sirketiniz.com (Kurumsal İş E-postası)"
-                            className="bg-[#1a1a1a] border-white/10 text-white placeholder:text-gray-600 focus:border-[#3B82F6] focus:ring-[#3B82F6]/20"
+                            className="bg-muted border-border text-foreground placeholder:text-muted-foreground focus:border-primary focus:ring-primary/20"
                         />
                     </div>
 
@@ -136,7 +136,7 @@ export function LicenseManagerModal({ isOpen, onClose }: LicenseManagerModalProp
                             id="customerNo"
                             required
                             placeholder="C300XXXXXX"
-                            className="bg-[#1a1a1a] border-white/10 text-white placeholder:text-gray-600 focus:border-[#3B82F6] focus:ring-[#3B82F6]/20"
+                            className="bg-muted border-border text-foreground placeholder:text-muted-foreground focus:border-primary focus:ring-primary/20"
                         />
                         <p className="text-xs text-gray-500 ml-1">
                             * Genellikle C300 ile başlayan numaranız.
@@ -146,7 +146,7 @@ export function LicenseManagerModal({ isOpen, onClose }: LicenseManagerModalProp
                     <div className="pt-4">
                         <Button
                             type="submit"
-                            className="w-full bg-[#3B82F6] hover:bg-[#2563eb] text-white py-6 rounded-xl text-lg font-medium"
+                            className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-6 rounded-xl text-lg font-medium"
                             disabled={isSubmitting}
                         >
                             {isSubmitting ? (

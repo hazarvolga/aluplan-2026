@@ -1,0 +1,32 @@
+#!/usr/bin/expect -f
+set timeout 300
+
+# Connect to the server
+spawn ssh -o StrictHostKeyChecking=no root@46.28.238.99
+
+# Handle password prompt
+expect "password:"
+send "HaVoeK23!\r"
+
+# Wait for shell prompt (assuming it ends with # or $)
+expect -re "\[#$]"
+
+# Navigate to project directory (trying probable paths)
+send "cd /var/www/vhosts/aluplan.com.tr/httpdocs || cd /var/www/vhosts/aluplan.com.tr || echo 'Could not find directory'\r"
+expect -re "\[#$]"
+
+# Pull latest changes
+send "git pull\r"
+expect -re "\[#$]"
+
+# Forced rebuild of Docker containers
+send "docker-compose down\r"
+expect -re "\[#$]"
+send "docker-compose up -d --build\r"
+expect -re "\[#$]"
+
+# Log output
+send "echo 'DEPLOYMENT_COMPLETE'\r"
+expect "DEPLOYMENT_COMPLETE"
+send "exit\r"
+expect eof

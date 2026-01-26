@@ -10,7 +10,7 @@ import Image from "next/image";
 import logoWhite from "@/assets/aluplan-logo-white.svg";
 import logoBlack from "@/assets/aluplan-logo-black.svg";
 import { ThemeToggle } from "./ThemeToggle";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -233,7 +233,7 @@ const Header = () => {
               </a>
             </Button>
 
-            <Button asChild className="hidden sm:inline-flex bg-[#3B82F6] hover:bg-[#2563eb] text-white border-0" size="sm">
+            <Button asChild className="hidden sm:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground border-0" size="sm">
               <a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">
                 {language === "tr" ? "Teklif Talep Formu" : "Get Quote"}
               </a>
@@ -347,7 +347,7 @@ const Header = () => {
                       {language === "tr" ? "Ücretsiz Deneme" : "Free Trial"}
                     </a>
                   </Button>
-                  <Button asChild className="w-full bg-[#3B82F6] hover:bg-[#2563eb] text-white">
+                  <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
                     <a href="https://forms.office.com/r/hXhnKAG912" target="_blank" rel="noopener noreferrer">
                       {language === "tr" ? "Teklif Talep Formu" : "Get Quote"}
                     </a>

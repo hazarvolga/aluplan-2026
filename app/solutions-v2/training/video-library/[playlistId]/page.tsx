@@ -108,7 +108,7 @@ export default function PlaylistPage({ params }: { params: { playlistId: string 
                 subtitle={playlist.subtitle}
             />
 
-            <section className="py-12 px-6 md:px-12 lg:px-24 bg-[#050505] min-h-screen">
+            <section className="py-12 px-6 md:px-12 lg:px-24 bg-background min-h-screen">
                 <div className="max-w-[1600px] mx-auto">
                     <div className="grid lg:grid-cols-3 gap-8">
                         {/* Main Video Player Area */}
@@ -127,7 +127,7 @@ export default function PlaylistPage({ params }: { params: { playlistId: string 
                                 </div>
                                 <div className="p-6 md:p-8">
                                     <h1 className="text-2xl md:text-3xl font-bold text-white mb-4 flex items-start gap-4">
-                                        <PlaySquare className="h-8 w-8 text-[#3B82F6] shrink-0 mt-1" />
+                                        <PlaySquare className="h-8 w-8 text-primary shrink-0 mt-1" />
                                         {currentVideo.title}
                                     </h1>
                                     <p className="text-gray-400 leading-relaxed">
@@ -143,7 +143,7 @@ export default function PlaylistPage({ params }: { params: { playlistId: string 
                             <div className="bg-[#111] border border-white/10 rounded-2xl overflow-hidden flex flex-col h-[600px] lg:h-[800px] sticky top-8">
                                 <div className="p-6 border-b border-white/5 bg-[#161616]">
                                     <h3 className="text-lg font-bold text-white flex items-center gap-2">
-                                        <ListVideo className="h-5 w-5 text-[#3B82F6]" />
+                                        <ListVideo className="h-5 w-5 text-primary" />
                                         Oynatma Listesi
                                         <span className="ml-auto text-xs bg-white/10 px-2 py-1 rounded text-gray-400">
                                             {playlist.videos.indexOf(currentVideo) + 1} / {playlist.videos.length}
@@ -158,7 +158,7 @@ export default function PlaylistPage({ params }: { params: { playlistId: string 
                                                 key={video.id}
                                                 onClick={() => setCurrentVideo(video)}
                                                 className={`w-full flex items-start gap-4 p-4 rounded-xl text-left transition-all duration-200 group ${currentVideo.id === video.id
-                                                    ? "bg-[#3B82F6]/10 border border-[#3B82F6]/30"
+                                                    ? "bg-primary/10 border border-primary/30"
                                                     : "hover:bg-white/5 border border-transparent"
                                                     }`}
                                             >
@@ -171,14 +171,14 @@ export default function PlaylistPage({ params }: { params: { playlistId: string 
                                                     />
                                                     {currentVideo.id === video.id && (
                                                         <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-                                                            <div className="w-8 h-8 rounded-full bg-[#3B82F6] flex items-center justify-center animate-pulse">
+                                                            <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center animate-pulse">
                                                                 <Play className="h-4 w-4 text-white ml-0.5" fill="currentColor" />
                                                             </div>
                                                         </div>
                                                     )}
                                                 </div>
                                                 <div>
-                                                    <div className={`text-sm font-medium mb-1 line-clamp-2 ${currentVideo.id === video.id ? "text-[#3B82F6]" : "text-gray-300 group-hover:text-white"
+                                                    <div className={`text-sm font-medium mb-1 line-clamp-2 ${currentVideo.id === video.id ? "text-primary" : "text-gray-300 group-hover:text-white"
                                                         }`}>
                                                         {index + 1}. {video.title}
                                                     </div>

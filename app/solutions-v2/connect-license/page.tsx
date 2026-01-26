@@ -17,7 +17,7 @@ export default function ConnectLicensePage() {
             />
 
             {/* Overview Section with Logo */}
-            <section className="py-20 px-6 md:px-12 lg:px-24 bg-[#050505] relative border-b border-white/5">
+            <section className="py-20 px-6 md:px-12 lg:px-24 bg-background relative border-b border-white/5">
                 <div className="max-w-[1000px] mx-auto text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -75,7 +75,7 @@ export default function ConnectLicensePage() {
             </section>
 
             {/* Benefits Grid - Why Needed? */}
-            <section className="py-24 px-6 md:px-12 lg:px-24 bg-[#0a0a0a]">
+            <section className="py-24 px-6 md:px-12 lg:px-24 bg-card">
                 <div className="max-w-[1400px] mx-auto">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-bold text-white mb-6">Neden Gerekli?</h2>
@@ -87,9 +87,9 @@ export default function ConnectLicensePage() {
                             initial={{ opacity: 0, x: -20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            className="p-8 rounded-3xl bg-[#111] border border-white/5 hover:border-[#3B82F6]/30 transition-colors"
+                            className="p-8 rounded-3xl bg-[#111] border border-white/5 hover:border-primary/30 transition-colors"
                         >
-                            <div className="h-12 w-12 rounded-xl bg-[#3B82F6]/10 flex items-center justify-center mb-6 text-[#3B82F6]">
+                            <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 text-primary">
                                 <ShieldCheck className="h-6 w-6" />
                             </div>
                             <h3 className="text-xl font-bold text-white mb-4">Merkezi Lisans Yönetimi</h3>
@@ -103,7 +103,7 @@ export default function ConnectLicensePage() {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.1 }}
-                            className="p-8 rounded-3xl bg-[#111] border border-white/5 hover:border-[#3B82F6]/30 transition-colors"
+                            className="p-8 rounded-3xl bg-[#111] border border-white/5 hover:border-primary/30 transition-colors"
                         >
                             <div className="h-12 w-12 rounded-xl bg-purple-500/10 flex items-center justify-center mb-6 text-purple-500">
                                 <Laptop className="h-6 w-6" />
@@ -119,7 +119,7 @@ export default function ConnectLicensePage() {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.2 }}
-                            className="p-8 rounded-3xl bg-[#111] border border-white/5 hover:border-[#3B82F6]/30 transition-colors"
+                            className="p-8 rounded-3xl bg-[#111] border border-white/5 hover:border-primary/30 transition-colors"
                         >
                             <div className="h-12 w-12 rounded-xl bg-green-500/10 flex items-center justify-center mb-6 text-green-500">
                                 <BarChart3 className="h-6 w-6" />
@@ -135,7 +135,7 @@ export default function ConnectLicensePage() {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.3 }}
-                            className="p-8 rounded-3xl bg-[#111] border border-white/5 hover:border-[#3B82F6]/30 transition-colors"
+                            className="p-8 rounded-3xl bg-[#111] border border-white/5 hover:border-primary/30 transition-colors"
                         >
                             <div className="h-12 w-12 rounded-xl bg-orange-500/10 flex items-center justify-center mb-6 text-orange-500">
                                 <Globe className="h-6 w-6" />
@@ -157,7 +157,7 @@ export default function ConnectLicensePage() {
                         Allplan Connect portalına giriş yaparak lisanslarınızı hemen organize edin veya yönetici değişikliği için form doldurun.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <Button asChild size="lg" className="bg-[#3B82F6] hover:bg-[#2563eb] text-white rounded-full px-8 py-6 text-lg shadow-lg shadow-blue-900/20 w-full sm:w-auto">
+                        <Button asChild size="lg" className="bg-primary hover:bg-[#2563eb] text-white rounded-full px-8 py-6 text-lg shadow-lg shadow-blue-900/20 w-full sm:w-auto">
                             <a href="https://connect2.allplan.com/" target="_blank" rel="noopener noreferrer">
                                 Allplan Connect&apos;e Git <ArrowRight className="ml-2 h-5 w-5" />
                             </a>

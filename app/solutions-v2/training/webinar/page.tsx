@@ -59,7 +59,7 @@ export default function WebinarPage() {
             ctaText="Webinar Takvimine Göz At"
             ctaSubject="Webinar Bilgi Talebi"
         >
-            <section className="py-24 px-6 md:px-12 lg:px-24 bg-[#050505] border-t border-white/5">
+            <section className="py-24 px-6 md:px-12 lg:px-24 bg-background border-t border-white/5">
                 <div className="max-w-[1400px] mx-auto">
                     <div className="mb-16">
                         <h2 className="text-3xl font-bold text-white mb-4">Kaydedilmiş Webinarlar</h2>
@@ -70,7 +70,7 @@ export default function WebinarPage() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {recordedWebinars.map((webinar, index) => (
-                            <div key={index} className="group bg-[#111] border border-white/5 rounded-2xl overflow-hidden hover:border-[#3B82F6]/30 transition-all duration-300 flex flex-col">
+                            <div key={index} className="group bg-[#111] border border-white/5 rounded-2xl overflow-hidden hover:border-primary/30 transition-all duration-300 flex flex-col">
                                 <div className="aspect-video relative overflow-hidden bg-gray-900 group">
                                     <Image
                                         src={webinar.image}
@@ -86,7 +86,7 @@ export default function WebinarPage() {
                                     </div>
                                 </div>
                                 <div className="p-6 flex flex-col flex-grow">
-                                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#3B82F6] transition-colors">
+                                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
                                         {webinar.title}
                                     </h3>
                                     <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
@@ -96,7 +96,7 @@ export default function WebinarPage() {
                                     {webinar.youtubeId ? (
                                         <button
                                             onClick={() => setSelectedVideo(webinar.youtubeId)}
-                                            className="inline-flex items-center text-[#3B82F6] font-medium text-sm hover:text-blue-400 transition-colors"
+                                            className="inline-flex items-center text-primary font-medium text-sm hover:text-blue-400 transition-colors"
                                         >
                                             Hemen İzle
                                         </button>

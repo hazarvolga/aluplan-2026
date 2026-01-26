@@ -29,10 +29,10 @@ export default function AllplanIndustryPage() {
             />
 
             {/* What is Allplan Section - Custom Video Section */}
-            <section className="py-24 px-6 md:px-12 lg:px-24 bg-[#0a0a0a]">
+            <section className="py-24 px-6 md:px-12 lg:px-24 bg-card">
                 <div className="max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
                     <div>
-                        <div className="inline-flex items-center gap-2 text-[#3B82F6] font-bold text-sm uppercase tracking-widest mb-6 px-3 py-1 bg-[#3B82F6]/10 rounded-full">
+                        <div className="inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest mb-6 px-3 py-1 bg-primary/10 rounded-full">
                             <Layers className="h-4 w-4" />
                             ALLPLAN NEDİR?
                         </div>
@@ -49,7 +49,7 @@ export default function AllplanIndustryPage() {
                                 "Daha başarılı projelerin teslimi, koordinasyonu ve verimli işbirliği için entegre bulut teknolojisi."
                             ].map((item, i) => (
                                 <li key={i} className="flex items-start gap-3">
-                                    <div className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#3B82F6] shrink-0" />
+                                    <div className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                                     <span className="text-gray-300">{item}</span>
                                 </li>
                             ))}
@@ -94,7 +94,7 @@ export default function AllplanIndustryPage() {
             />
 
             {/* Explore Allplan Section - New Request */}
-            <section className="py-24 px-6 md:px-12 lg:px-24 bg-[#0a0a0a] border-t border-white/5">
+            <section className="py-24 px-6 md:px-12 lg:px-24 bg-card border-t border-white/5">
                 <div className="max-w-[1400px] mx-auto">
                     <div className="text-center mb-16 max-w-4xl mx-auto">
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">ALLPLAN&apos;I KEŞFEDİN</h2>
@@ -105,7 +105,7 @@ export default function AllplanIndustryPage() {
 
                     <div className="grid md:grid-cols-3 gap-8">
                         {/* BİNA TASARIMI Card */}
-                        <div className="bg-[#050505] rounded-2xl border border-white/10 overflow-hidden group hover:border-[#3B82F6]/50 transition-all">
+                        <div className="bg-background rounded-2xl border border-white/10 overflow-hidden group hover:border-primary/50 transition-all">
                             <div className="aspect-video relative overflow-hidden">
                                 <Image
                                     src="https://aluplan.com.tr/wp-content/uploads/2022/09/2023-solutions-building-Design-allplan-turkey-370x275.png"
@@ -116,7 +116,7 @@ export default function AllplanIndustryPage() {
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent opacity-60" />
                             </div>
                             <div className="p-8">
-                                <h3 className="text-xl font-bold text-white mb-6 pl-4 border-l-4 border-[#3B82F6]">BİNA TASARIMI</h3>
+                                <h3 className="text-xl font-bold text-white mb-6 pl-4 border-l-4 border-primary">BİNA TASARIMI</h3>
                                 <ul className="space-y-3">
                                     {[
                                         { name: "Mimari", href: "/solutions/architecture" },
@@ -125,7 +125,7 @@ export default function AllplanIndustryPage() {
                                         { name: "ALLPLAN ENDÜSTRİ ÇÖZÜMLERİ", href: "/solutions/allplan-industry" },
                                     ].map((item, i) => (
                                         <li key={i}>
-                                            <a href={item.href} className="flex items-center text-gray-400 hover:text-[#3B82F6] transition-colors group/link">
+                                            <a href={item.href} className="flex items-center text-gray-400 hover:text-primary transition-colors group/link">
                                                 <ArrowRight className="h-4 w-4 mr-2 opacity-0 -ml-6 group-hover/link:opacity-100 group-hover/link:ml-0 transition-all" />
                                                 <span>{item.name}</span>
                                             </a>
@@ -136,7 +136,7 @@ export default function AllplanIndustryPage() {
                         </div>
 
                         {/* ALTYAPI TASARIMI Card */}
-                        <div className="bg-[#050505] rounded-2xl border border-white/10 overflow-hidden group hover:border-[#3B82F6]/50 transition-all">
+                        <div className="bg-background rounded-2xl border border-white/10 overflow-hidden group hover:border-primary/50 transition-all">
                             <div className="aspect-video relative overflow-hidden">
                                 <Image
                                     src="https://aluplan.com.tr/wp-content/uploads/2022/09/solutions-Infrastructure-Design-370x275.png"
@@ -147,7 +147,7 @@ export default function AllplanIndustryPage() {
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent opacity-60" />
                             </div>
                             <div className="p-8">
-                                <h3 className="text-xl font-bold text-white mb-6 pl-4 border-l-4 border-[#3B82F6]">ALTYAPI TASARIMI</h3>
+                                <h3 className="text-xl font-bold text-white mb-6 pl-4 border-l-4 border-primary">ALTYAPI TASARIMI</h3>
                                 <ul className="space-y-3">
                                     {[
                                         { name: "Altyapı Mühendisliği", href: "/solutions/infrastructure" },
@@ -155,7 +155,7 @@ export default function AllplanIndustryPage() {
                                         { name: "Köprü Tasarımı", href: "/solutions/bridge-design" },
                                     ].map((item, i) => (
                                         <li key={i}>
-                                            <a href={item.href} className="flex items-center text-gray-400 hover:text-[#3B82F6] transition-colors group/link">
+                                            <a href={item.href} className="flex items-center text-gray-400 hover:text-primary transition-colors group/link">
                                                 <ArrowRight className="h-4 w-4 mr-2 opacity-0 -ml-6 group-hover/link:opacity-100 group-hover/link:ml-0 transition-all" />
                                                 <span>{item.name}</span>
                                             </a>
@@ -166,7 +166,7 @@ export default function AllplanIndustryPage() {
                         </div>
 
                         {/* İNŞAAT PLANLAMASI Card */}
-                        <div className="bg-[#050505] rounded-2xl border border-white/10 overflow-hidden group hover:border-[#3B82F6]/50 transition-all">
+                        <div className="bg-background rounded-2xl border border-white/10 overflow-hidden group hover:border-primary/50 transition-all">
                             <div className="aspect-video relative overflow-hidden">
                                 <Image
                                     src="https://aluplan.com.tr/wp-content/uploads/2022/09/2023-prefabrication-product-allplan-turkey-370x270.png"
@@ -177,7 +177,7 @@ export default function AllplanIndustryPage() {
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent opacity-60" />
                             </div>
                             <div className="p-8">
-                                <h3 className="text-xl font-bold text-white mb-6 pl-4 border-l-4 border-[#3B82F6]">İNŞAAT PLANLAMASI</h3>
+                                <h3 className="text-xl font-bold text-white mb-6 pl-4 border-l-4 border-primary">İNŞAAT PLANLAMASI</h3>
                                 <ul className="space-y-3">
                                     {[
                                         { name: "Prekast Üretimi", href: "/solutions/precast" },
@@ -185,7 +185,7 @@ export default function AllplanIndustryPage() {
                                         { name: "Şantiye Planlaması", href: "/solutions/site-planning" },
                                     ].map((item, i) => (
                                         <li key={i}>
-                                            <a href={item.href} className="flex items-center text-gray-400 hover:text-[#3B82F6] transition-colors group/link">
+                                            <a href={item.href} className="flex items-center text-gray-400 hover:text-primary transition-colors group/link">
                                                 <ArrowRight className="h-4 w-4 mr-2 opacity-0 -ml-6 group-hover/link:opacity-100 group-hover/link:ml-0 transition-all" />
                                                 <span>{item.name}</span>
                                             </a>
@@ -263,7 +263,7 @@ export default function AllplanIndustryPage() {
             </section>
 
             {/* Design to Build Section - New Request */}
-            <section className="py-24 px-6 md:px-12 lg:px-24 bg-[#050505] border-t border-white/5">
+            <section className="py-24 px-6 md:px-12 lg:px-24 bg-background border-t border-white/5">
                 <div className="max-w-[1000px] mx-auto text-center">
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
                         ALLPLAN İLE TASARIMDAN İNŞAATA<br />
@@ -273,7 +273,7 @@ export default function AllplanIndustryPage() {
                         ALLPLAN, mimarlar, inşaat ve altyapı mühendisleri, imalatçılar ve inşaat profesyonelleri için üretkenliği artıran ve yüksek kaliteli projeler sunmalarını sağlayan yenilikçi &quot;Tasarımdan İnşaata&quot; (Design to Build) iş akışları ve gerçek zamanlı işbirliği sunar. Yapay zeka tabanlı görselleştirme, bina ve altyapı modelleme gereksinimleri için hızlandırılmış ve otomatikleştirilmiş tasarım fonksiyonları sayesinde önemli ölçüde zaman tasarrufu sağlanır. Bağlantılı yapısal analiz süreçleri, üstün birlikte çalışabilirlik (interoperability), farklı malzemeler ve inşaat yöntemleri için gelişmiş detaylandırma yetenekleri ve güçlü bulut teknolojisi ile ekipler güçlenir ve performans artar.
                     </p>
 
-                    <div className="bg-[#0a0a0a] rounded-2xl border border-white/10 p-8 md:p-12 mb-12">
+                    <div className="bg-card rounded-2xl border border-white/10 p-8 md:p-12 mb-12">
                         <h3 className="text-xl font-bold text-white mb-8">ALLPLAN Avantajlarınız:</h3>
                         <div className="grid md:grid-cols-2 gap-6 text-left">
                             {[
@@ -283,8 +283,8 @@ export default function AllplanIndustryPage() {
                                 "Güçlü bulut tabanlı disiplinler arası işbirliği."
                             ].map((benefit, i) => (
                                 <div key={i} className="flex items-start gap-4">
-                                    <div className="h-6 w-6 rounded-full bg-[#3B82F6]/20 flex items-center justify-center shrink-0 mt-0.5">
-                                        <ArrowRight className="h-3.5 w-3.5 text-[#3B82F6]" />
+                                    <div className="h-6 w-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
+                                        <ArrowRight className="h-3.5 w-3.5 text-primary" />
                                     </div>
                                     <span className="text-gray-300 font-medium">{benefit}</span>
                                 </div>
@@ -295,7 +295,7 @@ export default function AllplanIndustryPage() {
                     <div>
                         <a
                             href="/products/allplan-2026-yenilikler"
-                            className="inline-flex items-center gap-2 text-[#3B82F6] font-bold uppercase tracking-wider hover:gap-4 transition-all"
+                            className="inline-flex items-center gap-2 text-primary font-bold uppercase tracking-wider hover:gap-4 transition-all"
                         >
                             TÜM ALLPLAN ÖZELLİKLERİNİ İNCELE
                             <ArrowRight className="h-5 w-5" />
@@ -305,7 +305,7 @@ export default function AllplanIndustryPage() {
             </section>
 
             {/* Product Editions Grid - New Request */}
-            <section className="py-24 px-6 md:px-12 lg:px-24 bg-[#0a0a0a]">
+            <section className="py-24 px-6 md:px-12 lg:px-24 bg-card">
                 <div className="max-w-[1400px] mx-auto">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">ALLPLAN ÜRÜN PAKETLERİ</h2>
@@ -353,7 +353,7 @@ export default function AllplanIndustryPage() {
                                 href: "/products/precast"
                             }
                         ].map((item, i) => (
-                            <div key={i} className="group relative bg-[#050505] rounded-2xl border border-white/10 overflow-hidden hover:border-[#3B82F6]/50 transition-all">
+                            <div key={i} className="group relative bg-background rounded-2xl border border-white/10 overflow-hidden hover:border-primary/50 transition-all">
                                 <div className="aspect-[16/9] relative overflow-hidden">
                                     <Image
                                         src={item.img}
@@ -362,11 +362,11 @@ export default function AllplanIndustryPage() {
                                         className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent opacity-80" />
-                                    <h3 className="absolute bottom-6 left-6 text-2xl font-bold text-white group-hover:text-[#3B82F6] transition-colors">{item.title}</h3>
+                                    <h3 className="absolute bottom-6 left-6 text-2xl font-bold text-white group-hover:text-primary transition-colors">{item.title}</h3>
                                 </div>
                                 <div className="p-6 pt-2">
                                     <p className="text-gray-400 text-sm mb-6 h-10">{item.desc}</p>
-                                    <a href={item.href} className="flex items-center text-sm font-bold text-white hover:text-[#3B82F6] transition-colors gap-2">
+                                    <a href={item.href} className="flex items-center text-sm font-bold text-white hover:text-primary transition-colors gap-2">
                                         ÜRÜNÜ İNCELE
                                         <ArrowRight className="h-4 w-4" />
                                     </a>

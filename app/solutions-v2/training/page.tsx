@@ -163,13 +163,13 @@ export default function TrainingPage() {
             />
 
             {/* Main Tabs Section */}
-            <section className="py-20 px-6 md:px-12 lg:px-24 bg-[#050505] relative overflow-hidden">
+            <section className="py-20 px-6 md:px-12 lg:px-24 bg-background relative overflow-hidden">
                 <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
                 <div className="max-w-[1400px] mx-auto relative z-10">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                            Genişletilmiş Eğitim ve <span className="text-[#3B82F6]">Webinar Teklifimizi Keşfedin</span>
+                            Genişletilmiş Eğitim ve <span className="text-primary">Webinar Teklifimizi Keşfedin</span>
                         </h2>
                         <p className="text-gray-400 max-w-2xl mx-auto text-lg">
                             Profesyonel gelişiminiz için teklifimiz.
@@ -182,7 +182,7 @@ export default function TrainingPage() {
                                 <TabsTrigger
                                     key={cat.value}
                                     value={cat.value}
-                                    className="px-6 py-3 rounded-full border border-white/10 bg-[#111] text-gray-400 data-[state=active]:bg-[#3B82F6] data-[state=active]:text-white data-[state=active]:border-[#3B82F6] transition-all duration-300"
+                                    className="px-6 py-3 rounded-full border border-white/10 bg-[#111] text-gray-400 data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:border-primary transition-all duration-300"
                                 >
                                     {cat.label}
                                 </TabsTrigger>
@@ -195,10 +195,10 @@ export default function TrainingPage() {
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.4 }}
-                                    className="grid lg:grid-cols-2 gap-12 items-center bg-[#0a0a0a] rounded-3xl p-8 md:p-12 border border-white/5"
+                                    className="grid lg:grid-cols-2 gap-12 items-center bg-card rounded-3xl p-8 md:p-12 border border-white/5"
                                 >
                                     <div className="order-2 lg:order-1">
-                                        <div className="inline-flex items-center gap-2 text-[#3B82F6] font-bold text-sm uppercase tracking-widest mb-6 px-3 py-1 bg-[#3B82F6]/10 rounded-full">
+                                        <div className="inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest mb-6 px-3 py-1 bg-primary/10 rounded-full">
                                             <cat.icon className="h-4 w-4" />
                                             {cat.label}
                                         </div>
@@ -210,8 +210,8 @@ export default function TrainingPage() {
                                         <ul className="space-y-4 mb-10">
                                             {cat.features.map((feature, i) => (
                                                 <li key={i} className="flex items-center gap-3 text-gray-300">
-                                                    <div className="h-6 w-6 rounded-full bg-[#3B82F6]/20 flex items-center justify-center shrink-0">
-                                                        <CheckCircle2 className="h-3.5 w-3.5 text-[#3B82F6]" />
+                                                    <div className="h-6 w-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
+                                                        <CheckCircle2 className="h-3.5 w-3.5 text-primary" />
                                                     </div>
                                                     {feature}
                                                 </li>
@@ -221,7 +221,7 @@ export default function TrainingPage() {
                                         {cat.action === "modal" ? (
                                             <Button
                                                 onClick={() => handleOpenModal(`Eğitim Teklifi: ${cat.title}`)}
-                                                className="bg-[#3B82F6] hover:bg-[#2563eb] text-white px-8 py-6 text-lg rounded-full"
+                                                className="bg-primary hover:bg-[#2563eb] text-white px-8 py-6 text-lg rounded-full"
                                             >
                                                 <span className="flex items-center gap-2">
                                                     {cat.cta}
@@ -229,7 +229,7 @@ export default function TrainingPage() {
                                                 </span>
                                             </Button>
                                         ) : (
-                                            <Button asChild className="bg-[#3B82F6] hover:bg-[#2563eb] text-white px-8 py-6 text-lg rounded-full">
+                                            <Button asChild className="bg-primary hover:bg-[#2563eb] text-white px-8 py-6 text-lg rounded-full">
                                                 <Link href={cat.link} className="flex items-center gap-2">
                                                     {cat.cta}
                                                     <ArrowRight className="h-5 w-5" />
@@ -250,7 +250,7 @@ export default function TrainingPage() {
             </section>
 
             {/* Formats Section */}
-            <section className="py-24 px-6 md:px-12 lg:px-24 bg-[#0a0a0a] border-y border-white/5">
+            <section className="py-24 px-6 md:px-12 lg:px-24 bg-card border-y border-white/5">
                 <div className="max-w-[1400px] mx-auto">
                     <div className="mb-16 text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Eğitim Formatlarımız</h2>
@@ -272,15 +272,15 @@ export default function TrainingPage() {
                                     href={item.href}
                                     target={item.href.startsWith("http") ? "_blank" : "_self"}
                                     rel={item.href.startsWith("http") ? "noopener noreferrer" : ""}
-                                    className="group block h-full p-8 rounded-2xl border border-white/5 bg-[#050505] hover:border-[#3B82F6]/30 hover:bg-[#0f0f0f] transition-all duration-300"
+                                    className="group block h-full p-8 rounded-2xl border border-white/5 bg-background hover:border-primary/30 hover:bg-[#0f0f0f] transition-all duration-300"
                                 >
-                                    <div className="mb-6 p-4 rounded-xl bg-[#111] w-fit text-gray-400 group-hover:text-[#3B82F6] group-hover:bg-[#3B82F6]/10 transition-colors">
+                                    <div className="mb-6 p-4 rounded-xl bg-[#111] w-fit text-gray-400 group-hover:text-primary group-hover:bg-primary/10 transition-colors">
                                         <item.icon className="h-8 w-8" />
                                     </div>
-                                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#3B82F6] transition-colors">{item.title}</h3>
+                                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">{item.title}</h3>
                                     <p className="text-gray-400 text-sm leading-relaxed mb-6">{item.description}</p>
 
-                                    <div className="flex items-center gap-2 text-sm font-medium text-gray-500 group-hover:text-[#3B82F6] transition-colors">
+                                    <div className="flex items-center gap-2 text-sm font-medium text-gray-500 group-hover:text-primary transition-colors">
                                         Detayları Gör <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                                     </div>
                                 </a>
@@ -291,7 +291,7 @@ export default function TrainingPage() {
             </section>
 
             {/* Testimonials Section */}
-            <section className="py-24 px-6 md:px-12 lg:px-24 bg-[#050505] relative overflow-hidden">
+            <section className="py-24 px-6 md:px-12 lg:px-24 bg-background relative overflow-hidden">
                 <div className="max-w-[1400px] mx-auto relative z-10">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Müşterilerimiz Ne Diyor?</h2>
@@ -299,8 +299,8 @@ export default function TrainingPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {testimonials.map((t, i) => (
-                            <div key={i} className="p-8 rounded-2xl bg-[#0a0a0a] border border-white/5 relative">
-                                <Quote className="h-8 w-8 text-[#3B82F6]/20 mb-6" />
+                            <div key={i} className="p-8 rounded-2xl bg-card border border-white/5 relative">
+                                <Quote className="h-8 w-8 text-primary/20 mb-6" />
                                 <p className="text-gray-300 mb-6 italic leading-relaxed min-h-[100px]">
                                     &quot;{t.quote}&quot;
                                 </p>
@@ -308,7 +308,7 @@ export default function TrainingPage() {
                                     <div className="h-10 w-10 rounded-full bg-[#111] flex items-center justify-center border border-white/5 font-bold text-gray-500">
                                         {t.author.charAt(0)}
                                     </div>
-                                    <span className="text-sm font-bold text-[#3B82F6]">{t.author}</span>
+                                    <span className="text-sm font-bold text-primary">{t.author}</span>
                                 </div>
                             </div>
                         ))}
@@ -320,7 +320,7 @@ export default function TrainingPage() {
             <section className="py-24 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#0a0a0a] to-black border-t border-white/5">
                 <div className="max-w-[1400px] mx-auto">
                     <div className="bg-[#111] rounded-3xl p-8 md:p-16 border border-white/5 relative overflow-hidden">
-                        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#3B82F6] rounded-full blur-[150px] opacity-[0.05] pointer-events-none" />
+                        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary rounded-full blur-[150px] opacity-[0.05] pointer-events-none" />
 
                         <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
                             <div>
@@ -329,7 +329,7 @@ export default function TrainingPage() {
                                     Öğrenciler ve Okullar İçin
                                 </div>
                                 <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                                    Okul, Öğretim ve Çalışmalar İçin <span className="text-[#3B82F6]">Teklifimiz</span>
+                                    Okul, Öğretim ve Çalışmalar İçin <span className="text-primary">Teklifimiz</span>
                                 </h2>
                                 <p className="text-gray-400 text-lg leading-relaxed mb-8">
                                     Gelecek okul veya çalışma projeleri için genel temellerin yanı sıra, çalışan öğrenci olarak iş başvurusu gibi eğitimdeki özel durumlar için odaklanmış teklifler sunuyoruz.
@@ -359,7 +359,7 @@ export default function TrainingPage() {
             </section>
 
             {/* Partners Section */}
-            <section className="py-24 px-6 md:px-12 lg:px-24 bg-[#050505] border-t border-white/5">
+            <section className="py-24 px-6 md:px-12 lg:px-24 bg-background border-t border-white/5">
                 <div className="max-w-[1400px] mx-auto">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Eğitim İş Ortaklarımız</h2>
@@ -370,11 +370,11 @@ export default function TrainingPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {/* Universities Card */}
-                        <div className="bg-[#0a0a0a] rounded-3xl p-8 md:p-12 border border-white/5 relative overflow-hidden group hover:border-[#3B82F6]/30 transition-colors duration-300">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#3B82F6] rounded-full blur-[100px] opacity-[0.03] pointer-events-none group-hover:opacity-[0.06] transition-opacity" />
+                        <div className="bg-card rounded-3xl p-8 md:p-12 border border-white/5 relative overflow-hidden group hover:border-primary/30 transition-colors duration-300">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-primary rounded-full blur-[100px] opacity-[0.03] pointer-events-none group-hover:opacity-[0.06] transition-opacity" />
 
                             <div className="relative z-10">
-                                <div className="inline-flex items-center gap-2 text-[#3B82F6] font-bold text-sm uppercase tracking-widest mb-8 px-3 py-1 bg-[#3B82F6]/10 rounded-full">
+                                <div className="inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest mb-8 px-3 py-1 bg-primary/10 rounded-full">
                                     <GraduationCap className="h-4 w-4" />
                                     Üniversiteler
                                 </div>
@@ -419,11 +419,11 @@ export default function TrainingPage() {
                         </div>
 
                         {/* Education Centers Card */}
-                        <div className="bg-[#0a0a0a] rounded-3xl p-8 md:p-12 border border-white/5 relative overflow-hidden group hover:border-[#3B82F6]/30 transition-colors duration-300">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#3B82F6] rounded-full blur-[100px] opacity-[0.03] pointer-events-none group-hover:opacity-[0.06] transition-opacity" />
+                        <div className="bg-card rounded-3xl p-8 md:p-12 border border-white/5 relative overflow-hidden group hover:border-primary/30 transition-colors duration-300">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-primary rounded-full blur-[100px] opacity-[0.03] pointer-events-none group-hover:opacity-[0.06] transition-opacity" />
 
                             <div className="relative z-10">
-                                <div className="inline-flex items-center gap-2 text-[#3B82F6] font-bold text-sm uppercase tracking-widest mb-8 px-3 py-1 bg-[#3B82F6]/10 rounded-full">
+                                <div className="inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest mb-8 px-3 py-1 bg-primary/10 rounded-full">
                                     <MapPin className="h-4 w-4" />
                                     Eğitim Merkezlerimiz
                                 </div>
@@ -441,7 +441,7 @@ export default function TrainingPage() {
                                                 <p>TMMOB İnşaat Mühendisleri Odası</p>
                                                 <p>Ankara Şubesi</p>
                                             </div>
-                                            <a href="tel:03122943060" className="inline-flex items-center gap-2 text-[#3B82F6] hover:text-[#2563eb] transition-colors">
+                                            <a href="tel:03122943060" className="inline-flex items-center gap-2 text-primary hover:text-[#2563eb] transition-colors">
                                                 0 312 294 3060
                                             </a>
                                         </div>
@@ -466,7 +466,7 @@ export default function TrainingPage() {
                                                 <a href="mailto:info@lgnprojeakademi.com" className="hover:text-white transition-colors">
                                                     info@lgnprojeakademi.com
                                                 </a>
-                                                <a href="tel:05332189066" className="inline-flex items-center gap-2 text-[#3B82F6] hover:text-[#2563eb] transition-colors">
+                                                <a href="tel:05332189066" className="inline-flex items-center gap-2 text-primary hover:text-[#2563eb] transition-colors">
                                                     0 533 218 90 66
                                                 </a>
                                             </div>

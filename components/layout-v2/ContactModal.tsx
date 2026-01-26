@@ -42,7 +42,7 @@ export function ContactModal({ isOpen, onClose, defaultSubject, title = "İleti�
 
     return (
         <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-            <DialogContent className="sm:max-w-[500px] bg-[#111] border-white/10 text-white">
+            <DialogContent className="sm:max-w-[500px] bg-card border-border text-card-foreground">
                 <DialogHeader>
                     <DialogTitle className="text-xl font-bold">{title}</DialogTitle>
                 </DialogHeader>
@@ -68,33 +68,33 @@ export function ContactModal({ isOpen, onClose, defaultSubject, title = "İleti�
                         <div className="grid grid-cols-2 gap-4">
                             <div className="space-y-2">
                                 <Label htmlFor="name" className="text-gray-400">Ad Soyad</Label>
-                                <Input id="name" name="name" required placeholder="Adınız Soyadınız" className="bg-black/50 border-white/10 focus:border-[#3B82F6]" />
+                                <Input id="name" name="name" required placeholder="Adınız Soyadınız" className="bg-muted border-border focus:border-primary" />
                             </div>
                             <div className="space-y-2">
                                 <Label htmlFor="company" className="text-gray-400">Firma</Label>
-                                <Input id="company" name="company" placeholder="Firma Adı" className="bg-black/50 border-white/10 focus:border-[#3B82F6]" />
+                                <Input id="company" name="company" placeholder="Firma Adı" className="bg-muted border-border focus:border-primary" />
                             </div>
                         </div>
 
                         <div className="grid grid-cols-2 gap-4">
                             <div className="space-y-2">
                                 <Label htmlFor="email" className="text-gray-400">E-posta</Label>
-                                <Input id="email" name="email" type="email" required placeholder="ornek@sirket.com" className="bg-black/50 border-white/10 focus:border-[#3B82F6]" />
+                                <Input id="email" name="email" type="email" required placeholder="ornek@sirket.com" className="bg-muted border-border focus:border-primary" />
                             </div>
                             <div className="space-y-2">
                                 <Label htmlFor="phone" className="text-gray-400">Telefon</Label>
-                                <Input id="phone" name="phone" type="tel" placeholder="05XX XXX XX XX" className="bg-black/50 border-white/10 focus:border-[#3B82F6]" />
+                                <Input id="phone" name="phone" type="tel" placeholder="05XX XXX XX XX" className="bg-muted border-border focus:border-primary" />
                             </div>
                         </div>
 
                         <div className="grid grid-cols-2 gap-4">
                             <div className="space-y-2">
                                 <Label htmlFor="jobTitle" className="text-gray-400">Meslek / Unvan</Label>
-                                <Input id="jobTitle" name="jobTitle" placeholder="Örn: Mimar, İnşaat Mühendisi" className="bg-black/50 border-white/10 focus:border-[#3B82F6]" />
+                                <Input id="jobTitle" name="jobTitle" placeholder="Örn: Mimar, İnşaat Mühendisi" className="bg-muted border-border focus:border-primary" />
                             </div>
                             <div className="space-y-2">
                                 <Label htmlFor="sector" className="text-gray-400">Sektör</Label>
-                                <Input id="sector" name="sector" placeholder="Örn: Yapı, Eğitim, Kamu" className="bg-black/50 border-white/10 focus:border-[#3B82F6]" />
+                                <Input id="sector" name="sector" placeholder="Örn: Yapı, Eğitim, Kamu" className="bg-muted border-border focus:border-primary" />
                             </div>
                         </div>
 
@@ -117,7 +117,7 @@ export function ContactModal({ isOpen, onClose, defaultSubject, title = "İleti�
                                 name="message"
                                 required
                                 placeholder="Size nasıl yardımcı olabiliriz?"
-                                className="min-h-[100px] bg-black/50 border-white/10 focus:border-[#3B82F6]"
+                                className="min-h-[100px] bg-muted border-border focus:border-primary"
                             />
                         </div>
 
@@ -125,13 +125,13 @@ export function ContactModal({ isOpen, onClose, defaultSubject, title = "İleti�
                             <Button type="button" variant="ghost" onClick={onClose} className="text-gray-400 hover:text-white hover:bg-white/5">
                                 İptal
                             </Button>
-                            <Button type="submit" className="bg-[#3B82F6] hover:bg-[#2563eb] text-white min-w-[120px]">
+                            <Button type="submit" className="bg-primary hover:bg-primary/90 text-primary-foreground min-w-[120px]">
                                 Gönder
                             </Button>
                         </div>
                     </form>
                 )}
             </DialogContent>
-        </Dialog>
+        </Dialog >
     );
 }

@@ -17,7 +17,7 @@ export default function ConnectLoginPage() {
             />
 
             {/* Overview Section */}
-            <section className="py-20 px-6 md:px-12 lg:px-24 bg-[#050505] relative border-b border-white/5">
+            <section className="py-20 px-6 md:px-12 lg:px-24 bg-background relative border-b border-white/5">
                 <div className="max-w-[1000px] mx-auto text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -41,25 +41,25 @@ export default function ConnectLoginPage() {
             </section>
 
             {/* Step 1 */}
-            <section className="py-20 px-6 md:px-12 lg:px-24 bg-[#0a0a0a]">
+            <section className="py-20 px-6 md:px-12 lg:px-24 bg-card">
                 <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
                     <div>
-                        <div className="inline-block px-3 py-1 bg-[#3B82F6] text-white text-xs font-bold uppercase tracking-wider rounded-full mb-6">1. Adım</div>
+                        <div className="inline-block px-3 py-1 bg-primary text-white text-xs font-bold uppercase tracking-wider rounded-full mb-6">1. Adım</div>
                         <h3 className="text-3xl font-bold text-white mb-6">Connect Sifre Sıfırlama Sayfasını Başlatın</h3>
                         <p className="text-gray-400 text-lg leading-relaxed mb-6">
                             Öncelikle parola sıfırlama sayfasına gidin. Sayfa açıldığında sağ üst köşeden doğru ülkeyi seçtiğinizden emin olun.
                         </p>
                         <ul className="space-y-4 mb-8">
                             <li className="flex items-start gap-3 text-gray-300">
-                                <Globe className="h-6 w-6 text-[#3B82F6] shrink-0" />
+                                <Globe className="h-6 w-6 text-primary shrink-0" />
                                 <span>Sağ üst köşeden dil/ülke seçiminizi kontrol edin.</span>
                             </li>
                             <li className="flex items-start gap-3 text-gray-300">
-                                <CheckCircle2 className="h-6 w-6 text-[#3B82F6] shrink-0" />
+                                <CheckCircle2 className="h-6 w-6 text-primary shrink-0" />
                                 <span>E-posta adresinizi girin ve gönder butonuna basın.</span>
                             </li>
                         </ul>
-                        <Button asChild size="lg" className="bg-[#3B82F6] hover:bg-[#2563eb] text-white rounded-full px-8">
+                        <Button asChild size="lg" className="bg-primary hover:bg-[#2563eb] text-white rounded-full px-8">
                             <a href="https://connect.allplan.com/pwd" target="_blank" rel="noopener noreferrer">
                                 Parola Sıfırlama Sayfasına Git <ArrowRight className="ml-2 h-5 w-5" />
                             </a>
@@ -78,7 +78,7 @@ export default function ConnectLoginPage() {
             </section>
 
             {/* Step 2 */}
-            <section className="py-20 px-6 md:px-12 lg:px-24 bg-[#050505] border-y border-white/5">
+            <section className="py-20 px-6 md:px-12 lg:px-24 bg-background border-y border-white/5">
                 <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
                     <div className="order-2 lg:order-1 relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black">
                         <Image
@@ -90,7 +90,7 @@ export default function ConnectLoginPage() {
                         />
                     </div>
                     <div className="order-1 lg:order-2">
-                        <div className="inline-block px-3 py-1 bg-[#3B82F6] text-white text-xs font-bold uppercase tracking-wider rounded-full mb-6">2. Adım</div>
+                        <div className="inline-block px-3 py-1 bg-primary text-white text-xs font-bold uppercase tracking-wider rounded-full mb-6">2. Adım</div>
                         <h3 className="text-3xl font-bold text-white mb-6">E-postanızı Kontrol Edin</h3>
                         <p className="text-gray-400 text-lg leading-relaxed mb-6">
                             Şifre sıfırlama talebinizden sonra size gelen maile yanıt vermeniz gerekiyor. Gelen kutunuzu (ve gerekiyorsa Spam/Junk klasörünü) kontrol edin.
@@ -111,10 +111,10 @@ export default function ConnectLoginPage() {
             </section>
 
             {/* Step 3 & Requirements */}
-            <section className="py-20 px-6 md:px-12 lg:px-24 bg-[#0a0a0a]">
+            <section className="py-20 px-6 md:px-12 lg:px-24 bg-card">
                 <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-start">
                     <div>
-                        <div className="inline-block px-3 py-1 bg-[#3B82F6] text-white text-xs font-bold uppercase tracking-wider rounded-full mb-6">3. Adım</div>
+                        <div className="inline-block px-3 py-1 bg-primary text-white text-xs font-bold uppercase tracking-wider rounded-full mb-6">3. Adım</div>
                         <h3 className="text-3xl font-bold text-white mb-6">Yeni Parola Belirleyin</h3>
                         <p className="text-gray-400 text-lg leading-relaxed mb-8">
                             E-postadaki bağlantıya tıkladıktan sonra yeni bir parola belirleyebileceksiniz. Parolanızın güvenliği için aşağıdaki kurallara mutlaka uymalısınız:
@@ -156,7 +156,7 @@ export default function ConnectLoginPage() {
                     <p className="text-gray-400 mb-10">
                         Yeni parolanızla Allplan Connect dünyasına giriş yapın ve tüm avantajlardan faydalanmaya devam edin.
                     </p>
-                    <Button asChild size="lg" className="bg-[#3B82F6] hover:bg-[#2563eb] text-white rounded-full px-12 py-6 text-lg shadow-lg shadow-blue-900/20">
+                    <Button asChild size="lg" className="bg-primary hover:bg-[#2563eb] text-white rounded-full px-12 py-6 text-lg shadow-lg shadow-blue-900/20">
                         <a href="https://connect.allplan.com/pwd" target="_blank" rel="noopener noreferrer">
                             Parola Sıfırlama Connect <ArrowRight className="ml-2 h-5 w-5" />
                         </a>

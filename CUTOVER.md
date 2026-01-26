@@ -7,15 +7,15 @@
 - [ ] **Performance**: Ensure Lightouse score is green (>90) for Performance and SEO.
 
 ## 2. Deployment (Docker/Container)
-- [ ] Build Docker image: `docker build -t aluplan-next ./next`
-- [ ] Push to registry (if applicable).
-- [ ] Deploy to staging environment.
-- [ ] Verify staging URL.
+- [x] Build Docker image: `docker build -t aluplan-next ./next`
+- [x] Push to registry (if applicable).
+- [x] Deploy to staging environment.
+- [x] Verify staging URL.
 
 ## 3. DNS & Traffic Switch
-- [ ] Lower TTL for `aluplan.com.tr` DNS records (e.g., to 60s).
-- [ ] Update DNS A/CNAME record to point to the new load balancer / server IP.
-- [ ] Monitor logs for 404s or 500s.
+- [x] Lower TTL for `aluplan.com.tr` DNS records (e.g., to 60s).
+- [x] Update DNS A/CNAME record to point to the new load balancer / server IP.
+- [x] Monitor logs for 404s or 500s.
 
 ## 4. Rollback Strategy
 - If critical errors occur (e.g., white screen, broken navigation):

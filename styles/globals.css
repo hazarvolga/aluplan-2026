@@ -16,8 +16,9 @@
     --card-foreground: 220 20% 12%;
     --popover: 0 0% 100%;
     --popover-foreground: 220 20% 12%;
-    --primary: 220 18% 12%;
-    --primary-foreground: 220 10% 98%;
+    /* Aluplan Blue #3B82F6 instead of dark gray */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
     --secondary: 220 10% 95%;
     --secondary-foreground: 220 18% 12%;
     --muted: 220 10% 96%;
@@ -29,7 +30,8 @@
     --destructive-foreground: 0 0% 100%;
     --border: 220 12% 90%;
     --input: 220 12% 90%;
-    --ring: 210 100% 40%;
+    --ring: 217 91% 60%;
+    /* Match primary */
     --radius: 0.25rem;
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-md: 0 4px 12px -2px rgb(0 0 0 / 0.08);
@@ -50,13 +52,16 @@
 
   .dark {
     --background: 0 0% 2%;
+    /* Matches #050505 */
     --foreground: 0 0% 98%;
     --card: 0 0% 4%;
+    /* Matches #0a0a0a */
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 4%;
     --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
+    /* Aluplan Blue #3B82F6 */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
     --secondary: 0 0% 10%;
     --secondary-foreground: 0 0% 98%;
     --muted: 0 0% 10%;
@@ -68,7 +73,8 @@
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 12%;
     --input: 0 0% 12%;
-    --ring: 0 0% 80%;
+    --ring: 217 91% 60%;
+    /* Match primary */
     --graphite-950: 220 20% 8%;
     --graphite-900: 220 18% 12%;
     --graphite-800: 220 16% 16%;

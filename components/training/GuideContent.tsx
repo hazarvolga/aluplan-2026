@@ -10,7 +10,7 @@ export function GuideContent() {
         <div className="space-y-24 max-w-4xl pb-24">
             {/* Introduction */}
             <section id="introduction" className="space-y-6">
-                <div className="bg-[#3B82F6]/10 border border-[#3B82F6]/20 rounded-2xl p-8">
+                <div className="bg-primary/10 border border-primary/20 rounded-2xl p-8">
                     <h1 className="text-4xl font-bold text-white mb-4">Allplan 2026 Kapsamlı Başlangıç Rehberi</h1>
                     <p className="text-xl text-gray-300 leading-relaxed">
                         Bu kılavuz, Allplan BIM yazılımının profesyonel düzeydeki kullanımını, Open BIM iş akışlarını
@@ -43,16 +43,16 @@ export function GuideContent() {
                 </div>
 
                 <Tabs defaultValue="architecture" className="w-full">
-                    <TabsList className="flex flex-wrap h-auto bg-[#111] p-1 rounded-xl mb-8 border border-white/5">
-                        <TabsTrigger value="architecture" className="flex-1 min-w-[120px] rounded-lg py-3 data-[state=active]:bg-[#3B82F6] data-[state=active]:text-white transition-all">Mimari</TabsTrigger>
-                        <TabsTrigger value="engineering" className="flex-1 min-w-[120px] rounded-lg py-3 data-[state=active]:bg-[#3B82F6] data-[state=active]:text-white transition-all">Mühendislik</TabsTrigger>
-                        <TabsTrigger value="infrastructure" className="flex-1 min-w-[120px] rounded-lg py-3 data-[state=active]:bg-[#3B82F6] data-[state=active]:text-white transition-all">Altyapı</TabsTrigger>
-                        <TabsTrigger value="precast" className="flex-1 min-w-[120px] rounded-lg py-3 data-[state=active]:bg-[#3B82F6] data-[state=active]:text-white transition-all">Prekast</TabsTrigger>
+                    <TabsList className="flex flex-wrap h-auto bg-muted p-1 rounded-xl mb-8 border border-border">
+                        <TabsTrigger value="architecture" className="flex-1 min-w-[120px] rounded-lg py-3 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground transition-all">Mimari</TabsTrigger>
+                        <TabsTrigger value="engineering" className="flex-1 min-w-[120px] rounded-lg py-3 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground transition-all">Mühendislik</TabsTrigger>
+                        <TabsTrigger value="infrastructure" className="flex-1 min-w-[120px] rounded-lg py-3 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground transition-all">Altyapı</TabsTrigger>
+                        <TabsTrigger value="precast" className="flex-1 min-w-[120px] rounded-lg py-3 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground transition-all">Prekast</TabsTrigger>
                     </TabsList>
 
                     {/* Architecture Content */}
                     <TabsContent value="architecture" className="space-y-8 animate-in fade-in slide-in-from-bottom-4">
-                        <div className="bg-[#0a0a0a] border border-white/5 rounded-2xl p-8">
+                        <div className="bg-card border border-border rounded-2xl p-8">
                             <div className="flex items-center gap-4 mb-6">
                                 <div className="p-3 bg-red-500/10 rounded-lg text-red-500">
                                     <PenTool className="h-8 w-8" />
@@ -64,7 +64,7 @@ export function GuideContent() {
                             </div>
 
                             <div className="grid md:grid-cols-2 gap-6 mb-8">
-                                <div className="bg-[#111] p-6 rounded-xl border border-white/5">
+                                <div className="bg-muted p-6 rounded-xl border border-border">
                                     <h4 className="text-lg font-bold text-white mb-3">Temel Özellikler</h4>
                                     <p className="text-gray-400 text-sm mb-4">
                                         Üstün modelleme yetenekleri ile karmaşık geometrileri kolayca oluşturun.
@@ -75,7 +75,7 @@ export function GuideContent() {
                                         <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-red-500" /> Akıllı oda filtreleri ve metraj</li>
                                     </ul>
                                 </div>
-                                <div className="bg-[#111] p-6 rounded-xl border border-white/5">
+                                <div className="bg-muted p-6 rounded-xl border border-border">
                                     <h4 className="text-lg font-bold text-white mb-3">Allplan 2026 ile Yeni</h4>
                                     <p className="text-gray-400 text-sm mb-4">
                                         Çok katmanlı dikey bitişler, gerçekçi geometri ve kural tabanlı dağıtım sunar.
@@ -116,7 +116,7 @@ export function GuideContent() {
 
                     {/* Engineering Content */}
                     <TabsContent value="engineering" className="space-y-8 animate-in fade-in slide-in-from-bottom-4">
-                        <div className="bg-[#0a0a0a] border border-white/5 rounded-2xl p-8">
+                        <div className="bg-card border border-border rounded-2xl p-8">
                             <div className="flex items-center gap-4 mb-6">
                                 <div className="p-3 bg-blue-500/10 rounded-lg text-blue-500">
                                     <Zap className="h-8 w-8" />
@@ -128,14 +128,14 @@ export function GuideContent() {
                             </div>
 
                             <div className="grid md:grid-cols-2 gap-6 mb-8">
-                                <div className="bg-[#111] p-6 rounded-xl border border-white/5">
+                                <div className="bg-muted p-6 rounded-xl border border-border">
                                     <h4 className="text-lg font-bold text-white mb-3">Çoklu Malzeme Planlama</h4>
                                     <p className="text-gray-400 text-sm">
                                         Dökme yerinde beton, prekast, çelik ve ahşap dahil olmak üzere tüm malzemeleri optimize edin.
                                         Donatı ve çelik yapıların hızlı tasarımı için otomatik çözümler kullanın.
                                     </p>
                                 </div>
-                                <div className="bg-[#111] p-6 rounded-xl border border-white/5">
+                                <div className="bg-muted p-6 rounded-xl border border-border">
                                     <h4 className="text-lg font-bold text-white mb-3">Otomatik Donatı</h4>
                                     <p className="text-gray-400 text-sm">
                                         Kolon donatı PythonPart&apos;ı gibi araçlarla tekrarlayan elemanları saniyeler içinde donatın.
@@ -168,7 +168,7 @@ export function GuideContent() {
 
                     {/* Infrastructure Content */}
                     <TabsContent value="infrastructure" className="space-y-8 animate-in fade-in slide-in-from-bottom-4">
-                        <div className="bg-[#0a0a0a] border border-white/5 rounded-2xl p-8">
+                        <div className="bg-card border border-border rounded-2xl p-8">
                             <div className="flex items-center gap-4 mb-6">
                                 <div className="p-3 bg-green-500/10 rounded-lg text-green-500">
                                     <Layers className="h-8 w-8" />
@@ -180,7 +180,7 @@ export function GuideContent() {
                             </div>
 
                             <div className="space-y-6">
-                                <div className="bg-[#111] p-6 rounded-xl border border-white/5">
+                                <div className="bg-muted p-6 rounded-xl border border-border">
                                     <h4 className="text-lg font-bold text-white mb-3 flex items-center gap-2">
                                         <FileJson className="w-4 h-4 text-green-500" />
                                         <span>Case Study: Porto Metro &quot;Ruby Line&quot;</span>
@@ -197,14 +197,14 @@ export function GuideContent() {
                                 <div className="border-t border-white/10 pt-6">
                                     <h4 className="text-lg font-bold text-white mb-4">Altyapı İş Akışları</h4>
                                     <div className="grid md:grid-cols-2 gap-4">
-                                        <div className="p-4 bg-[#111] rounded-xl border border-white/5">
+                                        <div className="p-4 bg-muted rounded-xl border border-border">
                                             <h5 className="font-bold text-white mb-1">Arazi Etüdü & Point Cloud</h5>
                                             <p className="text-xs text-gray-400">
                                                 Scalypso gibi entegre araçlarla saha nokta bulutu (Point Cloud) verilerini işleyin
                                                 ve mevcut durumun hassas envanterini (As-built) oluşturun.
                                             </p>
                                         </div>
-                                        <div className="p-4 bg-[#111] rounded-xl border border-white/5">
+                                        <div className="p-4 bg-muted rounded-xl border border-border">
                                             <h5 className="font-bold text-white mb-1">Şantiye Planlama</h5>
                                             <p className="text-xs text-gray-400">
                                                 Kule vinç gibi şantiye ekipmanlarını yerleştirin, çarpışma tespiti yapın
@@ -219,7 +219,7 @@ export function GuideContent() {
 
                     {/* Precast Content */}
                     <TabsContent value="precast" className="space-y-8 animate-in fade-in slide-in-from-bottom-4">
-                        <div className="bg-[#0a0a0a] border border-white/5 rounded-2xl p-8">
+                        <div className="bg-card border border-border rounded-2xl p-8">
                             <div className="flex items-center gap-4 mb-6">
                                 <div className="p-3 bg-orange-500/10 rounded-lg text-orange-500">
                                     <Box className="h-8 w-8" />
@@ -230,7 +230,7 @@ export function GuideContent() {
                                 </div>
                             </div>
 
-                            <div className="mb-6 p-6 bg-[#111] rounded-xl border border-white/5">
+                            <div className="mb-6 p-6 bg-muted rounded-xl border border-border">
                                 <h4 className="text-lg font-bold text-white mb-3">Vaka Çalışması: BFU (Rütihof)</h4>
                                 <p className="text-gray-400 text-sm mb-4">
                                     Önceden kağıt planlar (2D) ve manuel kontrollerle yürüyen süreç, <strong>Allplan IFC-Assistant</strong> ile tamamen dijitalleşti.
@@ -243,11 +243,11 @@ export function GuideContent() {
                             </div>
 
                             <ul className="grid md:grid-cols-2 gap-4 mb-8">
-                                <li className="bg-[#111] p-4 rounded-xl border border-white/5">
+                                <li className="bg-muted p-4 rounded-xl border border-border">
                                     <strong className="text-white block mb-1">Otomatik Atölye Çizimleri</strong>
                                     <span className="text-xs text-gray-400">Donatı, armatür ve boyutlandırma dahil yüksek düzeyde otomatik kalıp planları oluşturun.</span>
                                 </li>
-                                <li className="bg-[#111] p-4 rounded-xl border border-white/5">
+                                <li className="bg-muted p-4 rounded-xl border border-border">
                                     <strong className="text-white block mb-1">Üretim Entegrasyonu</strong>
                                     <span className="text-xs text-gray-400">Duvar ve döşemeleri fabrika kapasitesine göre otomatik bölün ve CAM verilerini gönderin.</span>
                                 </li>
@@ -269,8 +269,8 @@ export function GuideContent() {
                     </div>
                 </div>
 
-                <div className="bg-[#0a0a0a] border border-white/5 rounded-2xl p-8">
-                    <div className="mb-8 p-6 bg-[#111] rounded-xl border-l-4 border-l-indigo-500">
+                <div className="bg-[#0a0a0a] border border-border rounded-2xl p-8">
+                    <div className="mb-8 p-6 bg-muted rounded-xl border-l-4 border-l-indigo-500">
                         <h3 className="text-xl font-bold text-white mb-2">Adım Adım Çakışma Çözümü (Clash Resolution)</h3>
                         <p className="text-gray-400 mb-6">Proje paydaşları arasında verimsiz e-posta trafiği yerine, Bimplus entegrasyonu ile şu adımları izleyin:</p>
 
@@ -343,35 +343,35 @@ export function GuideContent() {
                     <h2 className="text-3xl font-bold text-white">5 Profesyonel İpucu</h2>
                 </div>
                 <div className="grid gap-4">
-                    <div className="p-4 rounded-xl bg-[#111] border border-white/5 flex gap-4">
+                    <div className="p-4 rounded-xl bg-muted border border-border flex gap-4">
                         <span className="flex-none flex items-center justify-center w-8 h-8 rounded-full bg-yellow-500 text-black font-bold">1</span>
                         <div>
                             <h4 className="text-white font-bold">Veri Kaybını Önleyin</h4>
                             <p className="text-sm text-gray-400">IFC dışa aktarımda &quot;Attribute Mapping&quot; ve &quot;Yalnızca Atanan Nitelikleri Aktar&quot; seçeneklerini kullanın.</p>
                         </div>
                     </div>
-                    <div className="p-4 rounded-xl bg-[#111] border border-white/5 flex gap-4">
+                    <div className="p-4 rounded-xl bg-muted border border-border flex gap-4">
                         <span className="flex-none flex items-center justify-center w-8 h-8 rounded-full bg-yellow-500 text-black font-bold">2</span>
                         <div>
                             <h4 className="text-white font-bold">Otomasyon Kullanın</h4>
                             <p className="text-sm text-gray-400">Tekrarlayan işler için PythonParts veya Visual Scripting scriptlerini devreye sokun.</p>
                         </div>
                     </div>
-                    <div className="p-4 rounded-xl bg-[#111] border border-white/5 flex gap-4">
+                    <div className="p-4 rounded-xl bg-muted border border-border flex gap-4">
                         <span className="flex-none flex items-center justify-center w-8 h-8 rounded-full bg-yellow-500 text-black font-bold">3</span>
                         <div>
                             <h4 className="text-white font-bold">Parametrik Yönetim</h4>
                             <p className="text-sm text-gray-400">Revizyonları hızlandırmak için yol ve altyapı projelerinde parametrik modellemeyi tercih edin.</p>
                         </div>
                     </div>
-                    <div className="p-4 rounded-xl bg-[#111] border border-white/5 flex gap-4">
+                    <div className="p-4 rounded-xl bg-muted border border-border flex gap-4">
                         <span className="flex-none flex items-center justify-center w-8 h-8 rounded-full bg-yellow-500 text-black font-bold">4</span>
                         <div>
                             <h4 className="text-white font-bold">BCF ile Koordinasyon</h4>
                             <p className="text-sm text-gray-400">Bimplus entegrasyonu ile çakışmaları e-posta yerine BCF üzerinden yönetin.</p>
                         </div>
                     </div>
-                    <div className="p-4 rounded-xl bg-[#111] border border-white/5 flex gap-4">
+                    <div className="p-4 rounded-xl bg-muted border border-border flex gap-4">
                         <span className="flex-none flex items-center justify-center w-8 h-8 rounded-full bg-yellow-500 text-black font-bold">5</span>
                         <div>
                             <h4 className="text-white font-bold">Entegre Analiz</h4>
@@ -390,7 +390,7 @@ export function GuideContent() {
                     <h2 className="text-3xl font-bold text-white">Gerçek Hayat Senaryoları</h2>
                 </div>
                 <div className="grid md:grid-cols-3 gap-6">
-                    <div className="bg-[#111] p-6 rounded-2xl border border-white/5">
+                    <div className="bg-muted p-6 rounded-2xl border border-border">
                         <h3 className="text-lg font-bold text-white mb-2">Zürih &quot;The Circle&quot;</h3>
                         <p className="text-xs text-gray-400 mb-4 line-clamp-4">
                             1 Milyar İsviçre frangı yatırım ve 180.000 m² alan. Allplan ile tamamen BIM olarak planlanan devasa kompleks.
@@ -398,7 +398,7 @@ export function GuideContent() {
                         </p>
                         <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded">Architecture</span>
                     </div>
-                    <div className="bg-[#111] p-6 rounded-2xl border border-white/5">
+                    <div className="bg-muted p-6 rounded-2xl border border-border">
                         <h3 className="text-lg font-bold text-white mb-2">Porto Metro &quot;Ruby Line&quot;</h3>
                         <p className="text-xs text-gray-400 mb-4 line-clamp-4">
                             Tünel, viyadük ve istasyonların karmaşık etkileşimi.
@@ -406,7 +406,7 @@ export function GuideContent() {
                         </p>
                         <span className="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded">Infrastructure</span>
                     </div>
-                    <div className="bg-[#111] p-6 rounded-2xl border border-white/5">
+                    <div className="bg-muted p-6 rounded-2xl border border-border">
                         <h3 className="text-lg font-bold text-white mb-2">Rütihof (BFU)</h3>
                         <p className="text-xs text-gray-400 mb-4 line-clamp-4">
                             Manuel 2D süreçlerden tam otomatik BIM&apos;e geçiş. <strong>10.000m² döşeme</strong> sadece 9 ayda üretildi.
@@ -426,11 +426,11 @@ export function GuideContent() {
                     <h2 className="text-3xl font-bold text-white">Allplan 2026 Yenilikleri</h2>
                 </div>
                 <div className="grid md:grid-cols-2 gap-4">
-                    <div className="p-6 rounded-2xl bg-[#111] border border-white/5">
+                    <div className="p-6 rounded-2xl bg-muted border border-border">
                         <h3 className="font-bold text-white mb-2">Öncelik Tabanlı Bağlantılar (PBC)</h3>
                         <p className="text-sm text-gray-400">Özel bileşenler ile yapı elemanları arasında otomatik ve akıllı birleşimler.</p>
                     </div>
-                    <div className="p-6 rounded-2xl bg-[#111] border border-white/5">
+                    <div className="p-6 rounded-2xl bg-muted border border-border">
                         <h3 className="font-bold text-white mb-2">Gelişmiş Bitiş Modellemesi</h3>
                         <p className="text-sm text-gray-400">Gerçekçi geometriye sahip çok katmanlı dikey bitişler ve süpürgelikler.</p>
                     </div>

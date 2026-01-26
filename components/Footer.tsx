@@ -15,7 +15,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-background dark:bg-[#050505] text-foreground relative overflow-hidden border-t border-border">
+    <footer className="bg-background text-foreground relative overflow-hidden border-t border-border">
       {/* Technical Grid Background */}
       <div className="absolute inset-0 opacity-[0.03] bg-technical-grid pointer-events-none" />
 
