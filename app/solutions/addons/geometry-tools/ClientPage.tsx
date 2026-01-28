@@ -1,5 +1,6 @@
 "use client"
 import AddonDetailTemplate from "@/components/templates/AddonDetailTemplate";
+import Image from "next/image";
 import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
 import SectionHeader from "@/components/sections/SectionHeader";
 import MasonryVideoGrid from "@/components/specialized-ui/MasonryVideoGrid";
@@ -168,8 +169,8 @@ export default function ClientPage() {
               className="p-4 flex flex-col items-center text-center bg-slate-100 dark:bg-white/5 border-slate-200 dark:border-white/10 hover:bg-slate-200 dark:hover:bg-white/10 transition-colors hover:shadow-technical"
             >
               {icons[idx] && (
-                <img
-                  src={icons[idx].src}
+                <Image
+                  src={icons[idx]}
                   alt={feature.titleTr}
                   className="w-20 h-20 mb-3 object-contain"
                 />

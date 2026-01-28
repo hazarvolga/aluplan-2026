@@ -78,7 +78,7 @@ function SearchPageContent() {
                     ) : results.length > 0 ? (
                         <>
                             <p className="text-muted-foreground mb-4 font-mono text-sm">
-                                "{query}" için <span className="font-bold text-foreground">{results.length}</span> sonuç bulundu.
+                                &quot;{query}&quot; için <span className="font-bold text-foreground">{results.length}</span> sonuç bulundu.
                             </p>
                             <div className="grid gap-4">
                                 {results.map((item, idx) => (
@@ -90,8 +90,8 @@ function SearchPageContent() {
                                                 <div>
                                                     <div className="flex items-center gap-2 mb-2">
                                                         <span className={`text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${item.category === 'Ürün' ? 'bg-blue-500/10 text-blue-500' :
-                                                                item.category === 'Çözüm' ? 'bg-orange-500/10 text-orange-500' :
-                                                                    'bg-gray-500/10 text-gray-500'
+                                                            item.category === 'Çözüm' ? 'bg-orange-500/10 text-orange-500' :
+                                                                'bg-gray-500/10 text-gray-500'
                                                             }`}>
                                                             {item.category}
                                                         </span>
@@ -127,7 +127,7 @@ function SearchPageContent() {
                             <FileText className="h-12 w-12 mx-auto mb-4 text-muted-foreground opacity-50" />
                             <h3 className="text-lg font-medium mb-2">Sonuç bulunamadı</h3>
                             <p className="text-muted-foreground">
-                                "{query}" ile ilgili bir içerik bulamadık. Daha genel kelimeler denemeyi veya anahtar kelimeleri kontrol etmeyi deneyin.
+                                &quot;{query}&quot; ile ilgili bir içerik bulamadık. Daha genel kelimeler denemeyi veya anahtar kelimeleri kontrol etmeyi deneyin.
                             </p>
                         </div>
                     )}

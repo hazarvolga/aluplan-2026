@@ -101,7 +101,7 @@ function BosphorusBridgeSequence({ globalTime }: { globalTime: number }) {
     const deckAxisPoints = useMemo(() => [
         new THREE.Vector3(-span / 2 - 5, deckY, 0),
         new THREE.Vector3(span / 2 + 5, deckY, 0)
-    ], [])
+    ], [span, deckY])
 
     // 3. Main Cable (Catenary)
     const mainCablePoints = useMemo(() => {
@@ -134,7 +134,7 @@ function BosphorusBridgeSequence({ globalTime }: { globalTime: number }) {
             pts.push(new THREE.Vector3(x, y, -1)) // Left cable (-1 Z)
         }
         return pts
-    }, [])
+    }, [span, pylonH, deckY, sag])
 
     // Right cable points
     const mainCablePointsRight = useMemo(() => mainCablePoints.map(v => new THREE.Vector3(v.x, v.y, 1)), [mainCablePoints])
@@ -161,7 +161,7 @@ function BosphorusBridgeSequence({ globalTime }: { globalTime: number }) {
             lines.push({ x, yTop: cableY, yBottom: deckY, z: 1 })  // Right
         }
         return lines
-    }, [])
+    }, [span, hangerCount, pylonH, deckY, sag])
 
     return (
         <group>

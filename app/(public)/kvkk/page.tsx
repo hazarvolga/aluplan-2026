@@ -21,7 +21,7 @@ export default function KvkkPage() {
                         <div>
                             <h2 className="text-2xl font-bold mb-4 text-foreground">Veri Sorumlusu Kimliği</h2>
                             <p>
-                                Veri sorumlusu sıfatıyla Aluplan Program Sistemleri Kurumsal ("Şirket") olarak, müşterilerimizden/potansiyel müşterilerimizden elde ettiğimiz kişisel verilere istinaden Kişisel Verilerin Korunması Kanunu’na (“Kanun”) uygun hareket edebilmemizi teminen aydınlatma yükümlülüğü kapsamında aşağıdaki hususları bilgilerinize sunuyoruz.
+                                Veri sorumlusu sıfatıyla Aluplan Program Sistemleri Kurumsal (&quot;Şirket&quot;) olarak, müşterilerimizden/potansiyel müşterilerimizden elde ettiğimiz kişisel verilere istinaden Kişisel Verilerin Korunması Kanunu’na (“Kanun”) uygun hareket edebilmemizi teminen aydınlatma yükümlülüğü kapsamında aşağıdaki hususları bilgilerinize sunuyoruz.
                             </p>
                         </div>
 

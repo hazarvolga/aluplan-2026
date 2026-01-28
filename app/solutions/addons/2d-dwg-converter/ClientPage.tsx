@@ -1,5 +1,6 @@
 "use client"
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import AddonDetailTemplate from "@/components/templates/AddonDetailTemplate";
 import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
 import SectionHeader from "@/components/sections/SectionHeader";
@@ -105,7 +106,7 @@ export default function ClientPage() {
           {features.map((feature, idx) => (
             <Card key={idx} className="p-5 flex flex-col items-center text-center bg-slate-100 dark:bg-white/5 border-slate-200 dark:border-white/10 hover:bg-slate-200 dark:hover:bg-white/10 transition-colors">
               {icons[idx] && (
-                <img src={icons[idx].src} alt={feature} className="w-20 h-20 mb-3 object-contain" />
+                <Image src={icons[idx]} alt={feature} className="w-20 h-20 mb-3 object-contain" />
               )}
               <h3 className="text-sm font-semibold text-foreground leading-tight">{feature}</h3>
             </Card>

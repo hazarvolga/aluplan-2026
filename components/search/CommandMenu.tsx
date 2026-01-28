@@ -49,7 +49,7 @@ export function CommandMenu({ open, setOpen }: { open: boolean; setOpen: (open: 
                         className="mt-2 text-primary underline block mx-auto font-medium hover:text-primary/80 transition-colors"
                         onClick={() => runCommand(() => router.push(`/search?q=${encodeURIComponent(inputValue)}`))}
                     >
-                        "{inputValue}" için tüm sonuçlarda ara &rarr;
+                        &quot;{inputValue}&quot; için tüm sonuçlarda ara &rarr;
                     </button>
                 </CommandEmpty>
 
@@ -60,7 +60,7 @@ export function CommandMenu({ open, setOpen }: { open: boolean; setOpen: (open: 
                             value={`search:${inputValue}`}
                         >
                             <Sparkles className="mr-2 h-4 w-4" />
-                            <span className="font-bold">Tüm sonuçlarda ara: "{inputValue}"</span>
+                            <span className="font-bold">Tüm sonuçlarda ara: &quot;{inputValue}&quot;</span>
                         </CommandItem>
                     </CommandGroup>
                 )}

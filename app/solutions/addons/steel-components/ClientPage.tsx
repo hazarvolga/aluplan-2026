@@ -1,5 +1,6 @@
 "use client"
 import AddonDetailTemplate from "@/components/templates/AddonDetailTemplate";
+import Image from "next/image";
 import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
 import SectionHeader from "@/components/sections/SectionHeader";
 import CDSLicenseInfoSection from "@/components/sections/CDSLicenseInfoSection";
@@ -153,7 +154,7 @@ export default function ClientPage() {
             { icon: iconLizenzAnzeigen2, titleDE: "Lizenz anzeigen", titleTR: "Lisansı Göster" },
           ].map((item, idx) => (
             <Card key={idx} className="p-4 flex flex-col items-center text-center bg-slate-100 dark:bg-white/5 border-slate-200 dark:border-white/10 hover:bg-slate-200 dark:hover:bg-white/10 transition-colors">
-              <img src={item.icon.src} alt={item.titleTR} className="w-20 h-20 mb-3 object-contain" />
+              <Image src={item.icon} alt={item.titleTR} className="w-20 h-20 mb-3 object-contain" />
               <h3 className="text-base font-bold text-foreground leading-tight mb-1">{item.titleTR}</h3>
               <p className="text-xs text-muted-foreground font-medium">{item.titleDE}</p>
             </Card>
