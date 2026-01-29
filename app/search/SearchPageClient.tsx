@@ -22,13 +22,46 @@ function SearchPageContent() {
             return;
         }
 
-        const lowerQuery = query.toLowerCase();
+        const normalizeString = (str: string) => {
+            return str
+                .replace(/Ğ/g, "g")
+                .replace(/Ü/g, "u")
+                .replace(/Ş/g, "s")
+                .replace(/I/g, "i")
+                .replace(/İ/g, "i")
+                .replace(/Ö/g, "o")
+                .replace(/Ç/g, "c")
+                .replace(/ğ/g, "g")
+                .replace(/ü/g, "u")
+                .replace(/ş/g, "s")
+                .replace(/ı/g, "i")
+                .replace(/ö/g, "o")
+                .replace(/ç/g, "c")
+                .toLowerCase();
+        };
+
+        const normalizedQuery = normalizeString(query);
+        const queryTokens = normalizedQuery.split(" ").filter(t => t.length > 0);
+
         const filtered = searchIndex.filter((item) => {
-            const matchTitle = item.title.toLowerCase().includes(lowerQuery);
-            const matchDesc = item.description.toLowerCase().includes(lowerQuery);
-            const matchTags = item.tags?.some(tag => tag.toLowerCase().includes(lowerQuery));
-            const matchContent = item.content?.toLowerCase().includes(lowerQuery);
-            return matchTitle || matchDesc || matchTags || matchContent;
+            const normTitle = normalizeString(item.title);
+            const normDesc = normalizeString(item.description);
+            const normContent = item.content ? normalizeString(item.content) : "";
+            const normTags = item.tags?.map(t => normalizeString(t)) || [];
+
+            // Check if ALL tokens match at least one field (AND logic for tokens)
+            // Or use OR logic depending on preference. Usually users expect ALL words to be present.
+            // But for "harf harf" input, we usually want to search the whole phrase or parts.
+            // Let's stick to: If the query is "geo ref", both parts must exist somewhere.
+
+            return queryTokens.every(token => {
+                return (
+                    normTitle.includes(token) ||
+                    normDesc.includes(token) ||
+                    normContent.includes(token) ||
+                    normTags.some(t => t.includes(token))
+                );
+            });
         });
 
         setResults(filtered);

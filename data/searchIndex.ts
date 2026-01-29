@@ -641,9 +641,24 @@ const manualSearchIndex: SearchItem[] = [
     }
 ];
 
-// Merge logic: Manual items take precedence. Auto items are added if their URL is not already in manual index.
+// Merge logic:
+// 1. Create a map of auto-generated items for O(1) lookup
+const autoIndexMap = new Map(autoSearchIndex.map(item => [item.url, item]));
+
+// 2. Enhance manual items with content from auto-index (if available)
+const enhancedManualIndex = manualSearchIndex.map(manualItem => {
+    const autoItem = autoIndexMap.get(manualItem.url);
+    if (autoItem && autoItem.content) {
+        return {
+            ...manualItem,
+            content: autoItem.content
+        };
+    }
+    return manualItem;
+});
+
+// 3. Filter out auto items that are already covered by manual index
 const manualUrls = new Set(manualSearchIndex.map(item => item.url));
+const uniqueAutoItems = autoSearchIndex.filter(item => !manualUrls.has(item.url));
 
-const filteredAutoIndex = autoSearchIndex.filter(item => !manualUrls.has(item.url));
-
-export const searchIndex: SearchItem[] = [...manualSearchIndex, ...filteredAutoIndex];
+export const searchIndex: SearchItem[] = [...enhancedManualIndex, ...uniqueAutoItems];
