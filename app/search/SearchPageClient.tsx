@@ -27,7 +27,8 @@ function SearchPageContent() {
             const matchTitle = item.title.toLowerCase().includes(lowerQuery);
             const matchDesc = item.description.toLowerCase().includes(lowerQuery);
             const matchTags = item.tags?.some(tag => tag.toLowerCase().includes(lowerQuery));
-            return matchTitle || matchDesc || matchTags;
+            const matchContent = item.content?.toLowerCase().includes(lowerQuery);
+            return matchTitle || matchDesc || matchTags || matchContent;
         });
 
         setResults(filtered);

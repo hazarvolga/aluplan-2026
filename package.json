@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev -p 8083",
-    "build": "next build",
+    "build-index": "node scripts/build-search-index.js",
+    "build": "npm run build-index && next build",
     "postbuild": "mkdir -p .next/standalone/.next/static && cp -r .next/static/* .next/standalone/.next/static/ 2>/dev/null || true",
     "start": "next start -p 8090",
     "lint": "next lint",

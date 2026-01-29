@@ -1,12 +1,18 @@
+import autoSearchIndexData from './auto-search-index.json';
+
 export type SearchItem = {
     title: string;
     description: string;
     url: string;
     category: "Ürün" | "Çözüm" | "Eğitim" | "Genel";
     tags?: string[];
+    content?: string;
 };
 
-export const searchIndex: SearchItem[] = [
+// Cast to SearchItem[] because JSON import might be inferred loosely
+const autoSearchIndex = autoSearchIndexData as SearchItem[];
+
+const manualSearchIndex: SearchItem[] = [
     // --- Ürünler ---
     {
         title: "ALLPLAN 2026 Yenilikler",
@@ -634,3 +640,10 @@ export const searchIndex: SearchItem[] = [
         tags: ["deneme", "trial", "indir", "download"]
     }
 ];
+
+// Merge logic: Manual items take precedence. Auto items are added if their URL is not already in manual index.
+const manualUrls = new Set(manualSearchIndex.map(item => item.url));
+
+const filteredAutoIndex = autoSearchIndex.filter(item => !manualUrls.has(item.url));
+
+export const searchIndex: SearchItem[] = [...manualSearchIndex, ...filteredAutoIndex];
