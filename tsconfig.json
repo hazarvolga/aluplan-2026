@@ -12,7 +12,9 @@
     "strict": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": [
+        "./*"
+      ]
     },
     "allowJs": false,
     "resolveJsonModule": true,
@@ -29,9 +31,7 @@
   },
   "exclude": [
     "node_modules",
-    "src_backup",
-    "components/ui/**/*.ts",
-    "components/ui/**/*.tsx"
+    "src_backup"
   ],
   "include": [
     "next-env.d.ts",
