@@ -100,6 +100,12 @@ const nextConfig = {
     ]
   },
   webpack: (config) => {
+    // Add explicit alias for @ path
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': path.resolve(__dirname, './')
+    }
+
     // Add support for importing PDF and MP4 files
     config.module.rules.push({
       test: /\.(pdf|mp4)$/,
