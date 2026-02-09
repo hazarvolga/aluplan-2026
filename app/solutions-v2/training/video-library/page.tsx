@@ -96,6 +96,11 @@ export default function VideoLibraryPage() {
 
 const playlists = [
     {
+        title: "Allplan 2026",
+        description: "Allplan 2026 sürümü için hazırlanmış kapsamlı eğitim videoları ve yenilikler.",
+        url: "https://youtube.com/playlist?list=PLowC-ZFUywGMotfHSyzqoNZCQYWl_6G1x&si=BSEJvgjsQWgbIwVe"
+    },
+    {
         title: "Youtube Allplan English",
         description: "Allplan global İngilizce içerikleri, uluslararası örnekler ve eğitimler.",
         url: "https://www.youtube.com/@AllplanInternational"
