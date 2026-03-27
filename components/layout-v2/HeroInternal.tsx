@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
 interface HeroInternalProps {
-    title: string;
+    title: React.ReactNode;
     subtitle: string;
     category: string;
 }

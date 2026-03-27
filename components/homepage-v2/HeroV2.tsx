@@ -130,7 +130,7 @@ const HeroV2 = () => {
                             Yenilikçi AEC iş akışları, otomasyon ve bulut tabanlı iş birliği ile daha başarılı projeler.
                         </p>
 
-                        <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 animate-fade-in-up delay-300">
                             <Link href="/products/allplan-2026-yenilikler" className="group flex items-center justify-center gap-3 bg-foreground text-background px-8 py-4 transition-transform hover:scale-105">
                                 <span className="font-bold tracking-tight">
                                     Yenilikleri İncele
