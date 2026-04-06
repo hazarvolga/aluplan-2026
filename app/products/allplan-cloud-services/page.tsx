@@ -94,7 +94,7 @@ export default function AllplanCloudServicesPage() {
             description="Bağlantılı iş akışlarının gücünü keşfedin. ALLPLAN Cloud, ekiplerinizi, verilerinizi ve iş akışlarınızı tek bir birleşik ortamda bir araya getirir."
             heroImage={imgHero}
             quickActions={[
-                { text: "Paketleri Görüntüle", href: "https://www.allplan.com/package-overview/", external: true, variant: "outline" }
+                { text: "Paketleri Karşılaştır", href: "/docs/V2026_Paket_Karsilastirma-Q4-2025_R01.pdf", external: true, variant: "outline" }
             ]}
             whatIsInfoMedia={whatIsInfoMedia}
             benefitsItems={benefitsItems}
