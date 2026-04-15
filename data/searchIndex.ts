@@ -638,6 +638,13 @@ const manualSearchIndex: SearchItem[] = [
         url: "https://www.allplan.com/trial-or-subscription/",
         category: "Genel",
         tags: ["deneme", "trial", "indir", "download"]
+    },
+    {
+        title: "IFC Export El Kitabı",
+        description: "buildingSMART Türkiye tarafından hazırlanan IFC Aktarım El Kitabı. Sektör paydaşlarının birlikte çalışabilme potansiyelini artırmak ve openBIM kültürünü yaygınlaştırmak amacıyla yayımlandı.",
+        url: "/#professional-services",
+        category: "Genel",
+        tags: ["ifc", "ifc export", "ifc aktarım", "el kitabı", "openBIM", "buildingSMART", "open bim", "veri değişimi", "interoperability", "data exchange", "ifc el kitabı", "ifc aktarım el kitabı"]
     }
 ];
 
