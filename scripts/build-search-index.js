@@ -293,6 +293,146 @@ if (fs.existsSync(addonsDir)) {
 }
 
 // ===============================================
+// PHASE 5: Generic component scanner
+// Scans homepage-v2/, sections/, solutions/ for
+// title/description data embedded in arrays/objects
+// ===============================================
+console.log('\n--- Phase 5: Scanning all components ---');
+
+const componentScanDirs = [
+    'homepage-v2',
+    'homepage',
+    'sections',
+    'solutions'
+];
+
+// URL mapping for components
+const componentUrlMap = {
+    'BentoGrid.tsx': '/',
+    'PathwayProductSystem.tsx': '/',
+    'PathwaySelector.tsx': '/',
+    'InnovationsTeaser.tsx': '/products/allplan-2026-yenilikler',
+    'TechSpecsTable.tsx': '/paket-karsilastirma',
+    'CloudServicesSection.tsx': '/products/allplan-cloud-services',
+    'ProductInnovations.tsx': '/products/allplan-2026-yenilikler',
+    'Features.tsx': '/products/allplan-2026',
+    'AllplanBulutContent.tsx': '/products/allplan-cloud-services',
+    'ProductShowcase.tsx': '/',
+    'ValueProposition.tsx': '/',
+    'IndustrySegments.tsx': '/',
+    'LatestNews.tsx': '/',
+    'Products.tsx': '/',
+};
+
+const componentCategoryMap = {
+    'BentoGrid.tsx': 'Çözüm',
+    'PathwayProductSystem.tsx': 'Ürün',
+    'InnovationsTeaser.tsx': 'Ürün',
+    'TechSpecsTable.tsx': 'Ürün',
+    'CloudServicesSection.tsx': 'Ürün',
+    'ProductInnovations.tsx': 'Ürün',
+    'Features.tsx': 'Ürün',
+    'AllplanBulutContent.tsx': 'Ürün',
+};
+
+// Already scanned in Phase 3
+const alreadyScanned = ['ServicesV2.tsx'];
+
+componentScanDirs.forEach(subDir => {
+    const dir = path.join(componentsDir, subDir);
+    if (!fs.existsSync(dir)) return;
+
+    const files = fs.readdirSync(dir).filter(f => f.endsWith('.tsx') && !alreadyScanned.includes(f));
+
+    files.forEach(filename => {
+        const filePath = path.join(dir, filename);
+        const rawContent = fs.readFileSync(filePath, 'utf8');
+
+        // Extract title + description pairs using multiple regex patterns
+        const pairs = [];
+
+        // Pattern 1: { title: "...", description: "..." }
+        const p1 = /title:\s*["']([^"']{3,120})["'][,\s]*(?:subtitle|description):\s*["']([^"']{5,500})["']/g;
+        let m;
+        while ((m = p1.exec(rawContent)) !== null) {
+            pairs.push({ title: m[1], description: m[2] });
+        }
+
+        // Pattern 2: { title: "..." } without description (use title as content)
+        if (pairs.length === 0) {
+            const p2 = /title:\s*["']([^"']{5,120})["']/g;
+            while ((m = p2.exec(rawContent)) !== null) {
+                // Skip TypeScript type declarations and imports
+                if (m[1].includes('string') || m[1].includes('number')) continue;
+                pairs.push({ title: m[1], description: '' });
+            }
+        }
+
+        if (pairs.length === 0) return;
+
+        const url = componentUrlMap[filename] || '/';
+        const category = componentCategoryMap[filename] || 'Genel';
+
+        // Combine all content from this component into a single searchable entry
+        const allTitles = pairs.map(p => p.title).join(' | ');
+        const allDescriptions = pairs.map(p => p.description).filter(Boolean).join(' ');
+        const combinedContent = pairs.map(p => `${p.title} ${p.description}`).join(' ');
+
+        searchItems.push({
+            title: `${allTitles.slice(0, 100)}`,
+            description: allDescriptions.slice(0, 300) || allTitles,
+            url: url,
+            category: category,
+            tags: [],
+            content: combinedContent.slice(0, 5000),
+            source: 'component'
+        });
+        console.log(`  [component] ${subDir}/${filename} → ${pairs.length} items extracted`);
+    });
+});
+
+// ===============================================
+// PHASE 6: Data files (PackageComparisonData, etc.)
+// ===============================================
+console.log('\n--- Phase 6: Scanning data files ---');
+
+const dataDir = path.join(process.cwd(), 'data');
+const pkgFile = path.join(dataDir, 'PackageComparisonData.ts');
+if (fs.existsSync(pkgFile)) {
+    const pkgContent = fs.readFileSync(pkgFile, 'utf8');
+
+    // Extract all feature/category names
+    const names = [];
+    const nameRegex = /name:\s*["']([^"']{3,100})["']/g;
+    let nm;
+    while ((nm = nameRegex.exec(pkgContent)) !== null) {
+        if (!['string', 'number', 'boolean'].includes(nm[1])) {
+            names.push(nm[1]);
+        }
+    }
+
+    // Extract description fields
+    const descs = [];
+    const descRegex = /description:\s*["']([^"']{5,300})["']/g;
+    while ((nm = descRegex.exec(pkgContent)) !== null) {
+        descs.push(nm[1]);
+    }
+
+    const combinedContent = [...names, ...descs].join(' ');
+
+    searchItems.push({
+        title: 'Paket Karşılaştırma Detayları',
+        description: `ALLPLAN paket özellikleri: ${names.slice(0, 10).join(', ')}...`,
+        url: '/paket-karsilastirma',
+        category: 'Ürün',
+        tags: ['paket', 'karşılaştırma', 'basic', 'concept', 'professional', 'ultimate', 'civil', 'precast'],
+        content: combinedContent.slice(0, 5000),
+        source: 'data'
+    });
+    console.log(`  [data] PackageComparisonData → ${names.length} features, ${descs.length} descriptions`);
+}
+
+// ===============================================
 // OUTPUT
 // ===============================================
 console.log('\n--- Summary ---');

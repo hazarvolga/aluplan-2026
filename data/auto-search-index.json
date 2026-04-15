@@ -1546,5 +1546,158 @@
     ],
     "content": "use client const ThreeDimensioning > const galleryImages galleryImagesRaw.map src, idx: number > id: `ex-$ idx `, src: src.src, alt: `Müşteri örneği $ idx + 1 `, title: Müşteri örneği , description: , category: örnek , const features titleTr: Masslinie erzeugen , titleTr: Kotenbemassung erzeugen , titleTr: Winkelbemassung erzeugen , titleTr: Gefällebemassung erzeugen , titleTr: Höhenkote erzeugen , titleTr: Kreisbemassung erzeugen , titleTr: Textzeiger erzeugen , titleTr: Referenz-Punkt hinzufügen , titleTr: Referenz-Punkt löschen , titleTr: Referenz-Punkt verschieben , titleTr: Masslinie verschieben , titleTr: Text verschieben , titleTr: Textposition zurücksetzen , titleTr: Symbol modifizieren , titleTr: Masslinie aktualisieren , titleTr: Eigenschaften übertragen , titleTr: Masslinie modifizieren , titleTr: Bemassung löschen , const sections , features.map feature, idx > icons idx && feature.titleTr , Özellikler • Sezgisel olarak öğrenilebilir • Uzayda 3B boyutlar • Dinamik önizlemeler • Favorileri kaydedin ve yükleyin • Ölçü çizgileri, seviyeler, açı, koordinat ve eğim boyutları • Yarıçap, çap ve yay boyutlarıyla daire boyutları • Koordinat listeleri oluşturun • Boyutlarla kesitler, görünümler ve perspektifler elde edin • BIM süreci için ek özellikler • 3B PDF / IFC / BIMPLUS u ölçülerle dışa aktarın , , , , return export default ThreeDimensioning",
     "source": "addon"
+  },
+  {
+    "title": "BİNA TASARIMI | ALTYAPI TASARIMI | İNŞAAT PLANLAMASI | EKLENTİLER | DİĞER ÇÖZÜMLERİMİZ",
+    "description": "Mimari & Mühendislik Yol & Köprü Prekast & Çelik Add-ons & Tools Bimplus & More",
+    "url": "/",
+    "category": "Çözüm",
+    "tags": [],
+    "content": "BİNA TASARIMI Mimari & Mühendislik ALTYAPI TASARIMI Yol & Köprü İNŞAAT PLANLAMASI Prekast & Çelik EKLENTİLER Add-ons & Tools DİĞER ÇÖZÜMLERİMİZ Bimplus & More",
+    "source": "component"
+  },
+  {
+    "title": "AI Görselleştirme | Donatıdan Şantiyeye | Birleşik Arazi Modeli",
+    "description": "Yapay zeka destekli render araçları ile tasarımlarınızı saniyeler içinde hayata geçirin. Tamamen dijital, çizimsiz şantiye iş akışları ile hatasız üretim ve montaj. Büyük ölçekli altyapı projeleri için yeni nesil hassas arazi modelleme motoru.",
+    "url": "/products/allplan-2026-yenilikler",
+    "category": "Ürün",
+    "tags": [],
+    "content": "AI Görselleştirme Yapay zeka destekli render araçları ile tasarımlarınızı saniyeler içinde hayata geçirin. Donatıdan Şantiyeye Tamamen dijital, çizimsiz şantiye iş akışları ile hatasız üretim ve montaj. Birleşik Arazi Modeli Büyük ölçekli altyapı projeleri için yeni nesil hassas arazi modelleme motoru.",
+    "source": "component"
+  },
+  {
+    "title": "Özgür Tasarım | Hassas Analiz | Akıllı Üretim | ALLPLAN Basic | ALLPLAN Concept | ALLPLAN Profession",
+    "description": "Sınırsız modelleme yetenekleri ve entegre görselleştirme ile tasarım vizyonunuzu kısıtlamadan gerçeğe dönüştürün. Tek model üzerinden yapısal analiz, donatı detaylandırma ve metraj. Hatasız projeler, optimize edilmiş maliyetler. Modelden doğrudan fabrikaya veri aktarımı. Prekast ve çelik üretiminde ",
+    "url": "/",
+    "category": "Ürün",
+    "tags": [],
+    "content": "Özgür Tasarım Sınırsız modelleme yetenekleri ve entegre görselleştirme ile tasarım vizyonunuzu kısıtlamadan gerçeğe dönüştürün. Hassas Analiz Tek model üzerinden yapısal analiz, donatı detaylandırma ve metraj. Hatasız projeler, optimize edilmiş maliyetler. Akıllı Üretim Modelden doğrudan fabrikaya veri aktarımı. Prekast ve çelik üretiminde maksimum verimlilik ve sıfır hata. ALLPLAN Basic Temel 2D/3D çizim ve modelleme çözümümüz. ALLPLAN Concept Konsept tasarım ve modelleme için ideal. ALLPLAN Professional Tam kapsamlı BIM modelleme ve dokümantasyon. ALLPLAN Ultimate Tüm disiplinler için en kapsamlı paketimiz. ALLPLAN Civil Altyapı, yol ve köprü projeleri için özel çözüm. ALLPLAN Precast Prekast üretimi ve detaylandırma otomasyonu.",
+    "source": "component"
+  },
+  {
+    "title": "Özgür Tasarım | Hassas Analiz | Akıllı Üretim",
+    "description": "Özgür Tasarım | Hassas Analiz | Akıllı Üretim",
+    "url": "/",
+    "category": "Genel",
+    "tags": [],
+    "content": "Özgür Tasarım  Hassas Analiz  Akıllı Üretim ",
+    "source": "component"
+  },
+  {
+    "title": "ALLPLAN Basic | ALLPLAN Concept | ALLPLAN Professional | ALLPLAN Ultimate | CIVIL | PRECAST",
+    "description": "Temel 2D/3D tasarım ve çizim araçları. Konsept tasarım, modelleme ve görselleştirme. Tam kapsamlı BIM, metraj ve işbirliği. Tüm disiplinler ve ileri seviye mühendislik. Altyapı, yol ve köprü mühendisliği çözümleri. Prefabrik üretim planlama ve detaylandırma.",
+    "url": "/paket-karsilastirma",
+    "category": "Ürün",
+    "tags": [],
+    "content": "ALLPLAN Basic Temel 2D/3D tasarım ve çizim araçları. ALLPLAN Concept Konsept tasarım, modelleme ve görselleştirme. ALLPLAN Professional Tam kapsamlı BIM, metraj ve işbirliği. ALLPLAN Ultimate Tüm disiplinler ve ileri seviye mühendislik. CIVIL Altyapı, yol ve köprü mühendisliği çözümleri. PRECAST Prefabrik üretim planlama ve detaylandırma.",
+    "source": "component"
+  },
+  {
+    "title": "Mimari Tasarım | Yapısal Mühendislik | Altyapı & Köprü | Prefabrik Üretim | Mekanik Tesisat",
+    "description": "Architects Structural Engineers Civil Engineers Precast Manufacturers MEP Engineers",
+    "url": "/",
+    "category": "Genel",
+    "tags": [],
+    "content": "Mimari Tasarım Architects Yapısal Mühendislik Structural Engineers Altyapı & Köprü Civil Engineers Prefabrik Üretim Precast Manufacturers Mekanik Tesisat MEP Engineers",
+    "source": "component"
+  },
+  {
+    "title": "ALLPLAN 2026 Yenilikleri | BIM Türkiye Konferansı 2025 | Prefabrik Otomasyonu Webinarı",
+    "description": "ALLPLAN 2026 Yenilikleri | BIM Türkiye Konferansı 2025 | Prefabrik Otomasyonu Webinarı",
+    "url": "/",
+    "category": "Genel",
+    "tags": [],
+    "content": "ALLPLAN 2026 Yenilikleri  BIM Türkiye Konferansı 2025  Prefabrik Otomasyonu Webinarı ",
+    "source": "component"
+  },
+  {
+    "title": "Giriş Seviyesi | Konsept Tasarım | En Popüler | En Kapsamlı",
+    "description": "Temel BIM yetenekleriyle güvenilir modelleme Erken aşama görselleştirme ve hızlı iterasyon Profesyonel ekipler için kapsamlı çözüm Büyük projeler için maksimum yetenek",
+    "url": "/",
+    "category": "Genel",
+    "tags": [],
+    "content": "Giriş Seviyesi Temel BIM yetenekleriyle güvenilir modelleme Konsept Tasarım Erken aşama görselleştirme ve hızlı iterasyon En Popüler Profesyonel ekipler için kapsamlı çözüm En Kapsamlı Büyük projeler için maksimum yetenek",
+    "source": "component"
+  },
+  {
+    "title": "Eğitim | Teknik Destek | Sertifika Programı | Danışmanlık | E-Mağaza | Partner Programı",
+    "description": "Online ve yüz yüze profesyonel ALLPLAN eğitimleri Uzman ekibimizle profesyonel teknik destek hizmeti ALLPLAN Uzman sertifikası ve kariyer gelişimi Proje bazlı BIM danışmanlık ve implementasyon Online lisans satışı, yenileme ve upgrade Çözüm ortağı ve reseller ağımıza katılın",
+    "url": "/",
+    "category": "Genel",
+    "tags": [],
+    "content": "Eğitim Online ve yüz yüze profesyonel ALLPLAN eğitimleri Teknik Destek Uzman ekibimizle profesyonel teknik destek hizmeti Sertifika Programı ALLPLAN Uzman sertifikası ve kariyer gelişimi Danışmanlık Proje bazlı BIM danışmanlık ve implementasyon E-Mağaza Online lisans satışı, yenileme ve upgrade Partner Programı Çözüm ortağı ve reseller ağımıza katılın",
+    "source": "component"
+  },
+  {
+    "title": "Design to Build | Tek Platform, Tüm Disiplinler | Bulut Tabanlı İşbirliği | Eğitim & Sertifika | Ver",
+    "description": "Tasarımdan üretime kesintisiz iş akışı. Tek model, tüm çıktılar. Mimari, yapısal, altyapı ve MEP tek yerde entegre. Bimplus ile her yerden eşzamanlı çalışma ve veri paylaşımı. Kapsamlı eğitim programları ve ALLPLAN uzman sertifikası. ISO 27001 standartlarında veri koruma ve yedekleme. Türkçe teknik ",
+    "url": "/",
+    "category": "Genel",
+    "tags": [],
+    "content": "Design to Build Tasarımdan üretime kesintisiz iş akışı. Tek model, tüm çıktılar. Tek Platform, Tüm Disiplinler Mimari, yapısal, altyapı ve MEP tek yerde entegre. Bulut Tabanlı İşbirliği Bimplus ile her yerden eşzamanlı çalışma ve veri paylaşımı. Eğitim & Sertifika Kapsamlı eğitim programları ve ALLPLAN uzman sertifikası. Veri Güvenliği ISO 27001 standartlarında veri koruma ve yedekleme. Yerel Destek Türkçe teknik destek, yerel eğitimler ve danışmanlık.",
+    "source": "component"
+  },
+  {
+    "title": "Bulut Tabanlı İşbirliği | Proje Takım Çalışması | Çizim ve Plan Dağıtımı | Analitik Model Üretimi | ",
+    "description": "Bimplus Pro, bulut tabanlı BIM işbirliği platformu. ALLPLAN Share, bir şirket ağı üzerinden ekip çalışmasını sağlar; uzaktan çalışan ekip üyeleri için de idealdir. Çeşitli plan formatlarının oluşturulmasını ve dağıtımını yönetmek için özel olarak tasarlanmış web tabanlı plan dağıtım aracı ALLPLAN Ex",
+    "url": "/products/allplan-cloud-services",
+    "category": "Ürün",
+    "tags": [],
+    "content": "Bulut Tabanlı İşbirliği Bimplus Pro, bulut tabanlı BIM işbirliği platformu. Proje Takım Çalışması ALLPLAN Share, bir şirket ağı üzerinden ekip çalışmasını sağlar; uzaktan çalışan ekip üyeleri için de idealdir. Çizim ve Plan Dağıtımı Çeşitli plan formatlarının oluşturulmasını ve dağıtımını yönetmek için özel olarak tasarlanmış web tabanlı plan dağıtım aracı ALLPLAN Exchange, ayrıca e-posta grupları aracılığıyla otomatik değişiklik bildirimleri sağlar. Analitik Model Üretimi AutoConverter aracılığıyla geometrik modellerin, Frilo Statics, Scia Engineer gibi yapısal analiz çözümleri tarafından doğrudan kullanılabilen analitik modellere akıllı bir şekilde dönüştürülmesi. Tasarım Kontrolü Solibri Inside, kullanıcı istediği zaman ALLPLAN modellerinde kontroller gerçekleştirebilir; bu, ALLPLAN içindeki BIM Explorer Ofis Ekip Çalışması ALLPLAN Çalışma Grubu Yöneticisi aracılığıyla yerel bir şirket ağı içinde verimli ekip çalışmasını kolaylaştırın. Bulut Destekli Proje Kaynakları Bulut ofis kaynakları, ALLPLAN proje kaynaklarının tamamen bulut tabanlı dağıtımını sağlar. ALLPLAN Model Viewer Yeni bir dosyayı hızlıca önizlemek, IFC modellerini görsel olarak görüntülemek ve tam olarak yüklemeden önce kontrol etmek için kullanılır. (Sadece ALLPLAN Aboneliği veya Bimplus Professional satın alımı ile kullanılabilir.) ALLPLAN - Bluebeam Bağlantısı Geliştirilmiş iş akışları – dijital teslim sürecine yardımcı olmak için Bluebeam ile bağlantı kuracağız. Kullanıcılar, Bluebeam Studio Proje ortamından ALLPLAN iş akışlarına 2D belgeleri kolayca aktarabilecekler. Bulut Tabanlı İşbirliği Bimplus Pro, bulut tabanlı BIM işbirliği platformu. Proje Takım Çalışması ALLPLAN Share, bir şirket ağı üzerinden ekip çalışmasını sağlar; uzaktan çalışan ekip üyeleri için de idealdir. Çizim ve Plan Dağıtımı Çeşitli plan formatlarının oluşturulmasını ve dağıtımını yönetmek için özel olarak tasarlanmış web tabanlı plan dağıtım aracı ALLPLAN Exchange, ayrıca e-posta grupları aracılığıyla otomatik değişiklik bildirimleri sağlar. Analitik Model Üretimi AutoConverter aracılığıyla geometrik modellerin, Frilo Statics, Scia Engineer gibi yapısal analiz çözümleri tarafından doğrudan kullanılabilen analitik modellere akıllı bir şekilde dönüştürülmesi. Ofis Ekip Çalışması ALLPLAN Çalışma Grubu Yöneticisi aracılığıyla yerel bir şirket ağı içinde verimli ekip çalışmasını kolaylaştırın. Bulut Destekli Proje Kaynakları Bulut ofis kaynakları, ALLPLAN proje kaynaklarının tamamen bulut tabanlı dağıtımını sağlar. ALLPLAN Model Viewer Yeni bir dosyayı hızlıca önizlemek, IFC modellerini görsel olarak görüntülemek ve tam olarak yüklemeden önce kontrol etmek için kullanılır. (Sadece ALLPLAN Aboneliği veya Bimplus Professional satın alımı ile kullanılabilir.) ALLPLAN - Bluebeam Bağlantısı Geliştirilmiş iş akışları – dijital teslim sürecine yardımcı olmak için Bluebeam ile bağlantı kuracağız. Kullanıcılar, Bluebeam Studio Proje ortamından ALLPLAN iş akışlarına 2D belgeleri kolayca aktarabilecekler. AI Tabanlı Görselleştirme İlham verici, ayrıntılı AI destekli görselleştirmeler oluşturmak için bağlantılar. Nemetschek AI Visualizer ve EvolveLab",
+    "source": "component"
+  },
+  {
+    "title": "2024 Yeni Özellikleri | Hızlı Performans | Veri Güvenliği | Ekip Çalışması | Bulut Entegrasyonu | Ko",
+    "description": "En son teknolojilerle güçlendirilmiş BIM araçları Büyük projelerde bile akıcı çalışma deneyimi Proje verileriniz için maksimum güvenlik Gerçek zamanlı işbirliği ve paylaşım Her yerden erişim ve senkronizasyon İhtiyaçlarınıza göre uyarlanabilir araçlar",
+    "url": "/products/allplan-2026",
+    "category": "Ürün",
+    "tags": [],
+    "content": "2024 Yeni Özellikleri En son teknolojilerle güçlendirilmiş BIM araçları Hızlı Performans Büyük projelerde bile akıcı çalışma deneyimi Veri Güvenliği Proje verileriniz için maksimum güvenlik Ekip Çalışması Gerçek zamanlı işbirliği ve paylaşım Bulut Entegrasyonu Her yerden erişim ve senkronizasyon Kolay Özelleştirme İhtiyaçlarınıza göre uyarlanabilir araçlar",
+    "source": "component"
+  },
+  {
+    "title": "Georeferans Konumlandırma | Preoptima Entegrasyonu | Karanlık Mod | Model Görüntüleyici | Gelişmiş Ç",
+    "description": "Survey Point ve Base Point ile hassas proje koordinasyonu ve gerçek kuzey ayarları. Erken tasarım aşamasında karbon ayak izi değerlendirmesi ve sürdürülebilirlik analizi. Göz yorgunluğunu azaltan ve pil ömrünü uzatan modern karanlık mod arayüzü. Tarayıcı tabanlı ücretsiz IFC model görüntüleyici ile ",
+    "url": "/products/allplan-2026-yenilikler",
+    "category": "Ürün",
+    "tags": [],
+    "content": "Georeferans Konumlandırma Survey Point ve Base Point ile hassas proje koordinasyonu ve gerçek kuzey ayarları. Preoptima Entegrasyonu Erken tasarım aşamasında karbon ayak izi değerlendirmesi ve sürdürülebilirlik analizi. Karanlık Mod Göz yorgunluğunu azaltan ve pil ömrünü uzatan modern karanlık mod arayüzü. Model Görüntüleyici Tarayıcı tabanlı ücretsiz IFC model görüntüleyici ile anında erişim. Gelişmiş Çakışma Yönetimi Filtrelenebilir çakışma testleri ve detaylı raporlama ile hatasız koordinasyon. BSDD Entegrasyonu buildingSMART Data Dictionary ile standartlaştırılmış veri girişi. AI Asistanı AEC süreçleri için özelleşmiş yapay zeka destekli rehberlik ve destek. Gelişmiş Bilgi Paleti Esnek gruplama, otomatik toplamlar ve daha sezgisel veri yönetimi. Bulut Referansı (XRef) BIMPLUS üzerinden IFC, DWG ve PDF dosyalarını bulut referansı olarak ekleme. Geopackage Desteği CBS verilerinin (Shapefile vb.) doğrudan içe aktarımı ve arazi uyumu. Serbest Merdiven Kurallara bağlı kalmadan özgür formda merdiven modelleme aracı. Çok Katmanlı Döşeme Döşeme katmanlarının hassas yönetimi ve birleşim detayları. 2D Belge Kırpma Bindirme (Overlay) yöneticisi ile 2D planların sadece ilgili kısımlarını gösterin. Bluebeam Bağlantısı Bluebeam Studio ile doğrudan 2D/3D PDF iş akışı entegrasyonu. IDS Tabanlı Veri Information Delivery Specification (IDS) ile otomatik nitelik kontrolü ve doğrulama. Grafik Geçersiz Kılma Model görünümünü kurallara göre otomatik renklendirme ve stilize etme. Donatıdan Şantiyeye Kağıtsız, tamamen dijital model üzerinden donatı montaj iş akışı. Otomatik Kolon Donatısı Farklı bölge ve kurallara göre kolon donatılarının otomatik yerleşimi. Strüktürel Çerçeveleme Çelik konstrüksiyon bağlantılarının otomatik güncellenmesi ve detaylandırılması. Kural Bazlı Ölçülendirme Prefabrik elemanlar için otomatik, kural tabanlı ölçü çizgileri. Yerel Görünümler Ana modelden bağımsız, ölçeklenebilir ve detaylandırılabilir yerel görünümler. Parça Numaralandırma Prefabrik elemanların üretim sırası ve lojistiği için akıllı numaralandırma. Birleşik Arazi Modeli Yüksek performanslı, hassas ve büyük ölçekli yeni dijital arazi motoru. Parametrik Tünel Eksen ve kesit bazlı, tam parametrik tünel modelleme yetenekleri. 3B Yol Kavşağı Düşey profil kontrolü ile daha hassas ve akıcı yol kesişimleri. BIMPLUS Model Aktarımı Altyapı modellerinin (yol, köprü) doğrudan buluta entegrasyonu. Parametrik Kesitler Altyapı elemanları için esnek ve güçlü 2D/3D parametrik kesit editörü. Temel ve Kazı Karmaşık kazı çukurları ve iksa sistemleri için iyileştirilmiş araçlar. Altyapı Yapı Strüktürü Köprü ve tünel projeleri için bina benzeri kat ve yapı yönetimi. 3B Katman Yönetimi Altyapı modellerinde disiplinler arası katman ve görünürlük kontrolü. Hacimsel FEM Köprü ayakları ve temeller için 3D solid (hacim) sonlu elemanlar analizi. Prefabrik Köprü Öngerilmeli kirişli köprüler için hızlandırılmış modelleme iş akışları. Filigran Döşeme Çözümü Yarı prefabrik döşemeler için donatı ve hasır otomasyonu. Gizli Donatı Gösterimi Beton içinde kalan ve çıkan donatıların çizimlerde otomatik ayrımı. Özelleştirilebilir Metraj ERP sistemlerine uygun, esnek ve kural tabanlı metraj raporları.",
+    "source": "component"
+  },
+  {
+    "title": "ALLPLAN Basic | ALLPLAN Concept | ALLPLAN Professional | ALLPLAN Ultimate | CIVIL | PRECAST",
+    "description": "ALLPLAN Basic | ALLPLAN Concept | ALLPLAN Professional | ALLPLAN Ultimate | CIVIL | PRECAST",
+    "url": "/",
+    "category": "Genel",
+    "tags": [],
+    "content": "ALLPLAN Basic  ALLPLAN Concept  ALLPLAN Professional  ALLPLAN Ultimate  CIVIL  PRECAST ",
+    "source": "component"
+  },
+  {
+    "title": "Çok Harfli Klavye Kısayolları Desteği | Daha hızlı komutlar ve daha akıllı iş akışları parmaklarınız",
+    "description": "Çok Harfli Klavye Kısayolları Desteği | Daha hızlı komutlar ve daha akıllı iş akışları parmaklarınızın ucunda | Yeni Grafik Geçersiz Kılma | Daha hızlı ve yaratıcı BIM iş akışları için görsel kuralları zahmetsizce uygulayın | Karanlık Mod | Aydınlatma ne olursa olsun zahmetsiz konfor ve netlik | Geliştirilmiş Çakışma Yönetimi | Daha iyi proje koordinasyonu için kolay çakışma tespiti ve hızlı çözüm | Geliştirilmiş Bilgi Paleti | Daha akıllı ve hızlı proje yönetimi için kolay organizasyon ve kontrol | Geliştirilmiş Yapısal Çerçeveleme | Çerçeveleme düzenlerini hızlıca modelleyin ve güncelleyin | Yapısal Çerçeveleme Montajları | Bağlantıları otomatik olarak doğru tutun | Yapay Zeka Asistanı | AEC Yenilikleri için Uzman Yol Arkadaşınız | Kaplamalar – 2D Belge Kırpma | 3B koordinasyon için daha net ve hızlı odaklanma – 2B düzenlerde önemli detaylara kolayca odaklanın | ALLPLAN Model Görüntüleyici | Ücretsiz, Hızlı ve Her Yerden Erişilebilir – Tarayıcınızda anında model görselleştirme | Daha Akıllı İş Birliği – SCIA Engineer için Geliştirilmiş Model Yönetimi ve Takım Çalışması | Mühendislik ekiplerinin tasarımları koordine etmesi ve ilerlemeyi paylaşması için daha akıllı bir yöntem | ALLPLAN-Bluebeam Bağlantı Uzantısı | 2B ve 3B belgelerin dijital aktarımı için stabil iş akışı",
+    "url": "/products/allplan-cloud-services",
+    "category": "Ürün",
+    "tags": [],
+    "content": "Çok Harfli Klavye Kısayolları Desteği  Daha hızlı komutlar ve daha akıllı iş akışları parmaklarınızın ucunda  Yeni Grafik Geçersiz Kılma  Daha hızlı ve yaratıcı BIM iş akışları için görsel kuralları zahmetsizce uygulayın  Karanlık Mod  Aydınlatma ne olursa olsun zahmetsiz konfor ve netlik  Geliştirilmiş Çakışma Yönetimi  Daha iyi proje koordinasyonu için kolay çakışma tespiti ve hızlı çözüm  Geliştirilmiş Bilgi Paleti  Daha akıllı ve hızlı proje yönetimi için kolay organizasyon ve kontrol  Geliştirilmiş Yapısal Çerçeveleme  Çerçeveleme düzenlerini hızlıca modelleyin ve güncelleyin  Yapısal Çerçeveleme Montajları  Bağlantıları otomatik olarak doğru tutun  Yapay Zeka Asistanı  AEC Yenilikleri için Uzman Yol Arkadaşınız  Kaplamalar – 2D Belge Kırpma  3B koordinasyon için daha net ve hızlı odaklanma – 2B düzenlerde önemli detaylara kolayca odaklanın  ALLPLAN Model Görüntüleyici  Ücretsiz, Hızlı ve Her Yerden Erişilebilir – Tarayıcınızda anında model görselleştirme  Daha Akıllı İş Birliği – SCIA Engineer için Geliştirilmiş Model Yönetimi ve Takım Çalışması  Mühendislik ekiplerinin tasarımları koordine etmesi ve ilerlemeyi paylaşması için daha akıllı bir yöntem  ALLPLAN-Bluebeam Bağlantı Uzantısı  2B ve 3B belgelerin dijital aktarımı için stabil iş akışı ",
+    "source": "component"
+  },
+  {
+    "title": "Paket Karşılaştırma Detayları",
+    "description": "ALLPLAN paket özellikleri: Basic, Concept, Professional, Ultimate, Civil, Precast Slabs, Precast Walls, Precast, Temel Özellikler, Arayüz...",
+    "url": "/paket-karsilastirma",
+    "category": "Ürün",
+    "tags": [
+      "paket",
+      "karşılaştırma",
+      "basic",
+      "concept",
+      "professional",
+      "ultimate",
+      "civil",
+      "precast"
+    ],
+    "content": "Basic Concept Professional Ultimate Civil Precast Slabs Precast Walls Precast Temel Özellikler Arayüz 3B Modelleme 2B Çizim Çakışma Kontrolü İçerik Paketi BIM Easy Görselleştirme Dış Veri Kaynakları Yapı Bileşenleri Gelişmiş Bilgi Modellemesi ve Yönetimi Arazi ve Peyzaj Arazi Modeli Şehir Bölge Planlaması ve Peyzaj Tasarımı Kanalizasyon ve Tesisler Analiz ve Metraj Metraj ve Maliyet Gelişmiş Görseleştirme Yapısal Mühendislik Donatı Çelik Bağlantılar Altyapı ve Yol Yol (Road) Şantiye Planlaması Temel İşleri Arazi Kazılar Prekast Tasarım Prekast Tasarım ve Detaylandırma Eleman Planı (Üretim Paftası) Parametrik Modelleme Köprü ve Öngerilme Parametrik Öngerilimli Tendonlar Yapısal Köprü Analizi Kod Bazlı Köprü Tasarımı Prekast İmalat Prekast Döşeme İmalatı Prekast Duvar İmalatı Prefabrik Konnektörler Dil Desteği İngilizce, Türkçe Dil ve Ülke Ayarları Diğer Tüm Diller ve Ülke Ayarları Yapısal Analiz ve Tasarım - SCIA Engineer SCIA Engineer - Concept Edition SCIA Engineer Ultimate Edition ALLPLAN Cloud Services Bulut tabanlı işbirliği Proje Ekip Çalışması Ofis Ekip Çalışması (Workgroup) Çizim ve Plan Dağıtımı Bulut Destekli Proje Kaynakları Analitik Model Oluşturma ALLPLAN - Bluebeam Bağlantısı ALLPLAN Model Görüntüleyici AI-Destekli Görseleştirme (yeni) Satınalınabilir Seçenekler License Server/Yüzer Lisans BIMPLUS Allplan Cloud Storage BIM²form Add On - Kalıp SCIA Engineer - Concept Edition SCIA Engineer - Ultimate Edition Bulut tabanlı işbirliği Proje Ekip Çalışması Ofis Ekip Çalışması (Workgroup) Çizim ve Plan Dağıtımı Bulut Destekli Proje Kaynakları Analitik Model Oluşturma ALLPLAN - Bluebeam Bağlantısı ALLPLAN Model Görüntüleyici AI-Destekli Görselleştirme (YENİ) License Server/Yüzer Lisans BIMPLUS Allplan Cloud Storage BIM²form Add On - Kalıp Temel çizim ve modelleme çözümümüz. Konsept tasarım ve modelleme için ideal. Tam kapsamlı BIM modelleme ve dokümantasyon. Tüm disiplinler için en kapsamlı paketimiz. Altyapı, yol ve köprü projeleri için özel çözüm. Prekast döşeme üretimi için özel çözüm. Prekast duvar üretimi için özel çözüm. Prekast üretimi ve detaylandırma otomasyonu. IFC, BCF, PDF, RVT, 3DM, SKP, OBJ, LandXML, DWG, DGN, C4D, STL, WRL, SAF ve diğerleri dahil olmak üzere sorunsuz veri alışverişi için tüm ilgili dosya arayüzleri. Yazılım arayüzleri (örn. Python API ve Visual Scripting) otomatik iş akışlarını mümkün kılar. En karmaşık ve zorlu geometri için bile yüksek performanslı 3B modelleme. Modelleme işlevi, Siemens Parasolid modelleme çekirdeği tarafından desteklenmektedir. Çekici, özlü ve ayrıntılı çizimler için hassas 2B çizim için kapsamlı işlevsellik. Yumuşak ve sert çakışmaları tespit eden araç. Önceden tanımlanmış ancak özelleştirilebilir şirket standardı. Kapsamlı sihirbazlar aracılığıyla modeller ve çizimler oluştururken tutarlı bir çalışma şekli sağlar. Başlamayı kolaylaştırır, üretkenliği artırır ve özellikle openBIM projelerinde iyi yapılandırılmış veri alışverişi sağlar. Vulkan gibi en son teknolojilere dayalı geniş çeşitlilikte görselleştirme yetenekleri. Real-time Render ve CineWare, Lumion ve Twinmotion GIS (Coğrafi Bilgi Sistemi) bilgilerini, 3B içeriği ve dokuları içe aktarmak için GIS Konnektörü ve İçerik Bağlayıcısı. Duvarlar, döşemeler, kirişler, kolonlar, temeller, merdivenler, çatılar, pencereler, kapılar ve cepheler gibi esnek yapı bileşenleri. Gelişmiş araçlar, Dijitalleştirilmiş modellerin etkili bilgi modellemesi ve yönetimi için Bilgi paleti ve referanslı belgelerin yönetimi için Xref Yöneticisi. Koordinat noktalarına veya nokta bulutlarına dayalı güçlü arazi modellemesi. Kitle modelleri, kentsel ve peysaj tasarımı ve ayrıca dikim planları için işlevler. Su, kanalizasyon, elektrik, internet, doğal gaz veya bölgesel ısıtma gibi hizmetlerin yönlendirilmesi. Modellenmiş ve modellenmemiş objelerin kesin, doğrulanabilir metrajı ve maliyeti. MAXON Çubuk donatısı, hasır donatısı ve BAMTEC hasırları dahil olmak üzere son derece güçlü donatılandırma işlevi. Kaynaklı ve Bolded çelik bağlantıları için araçlar. Yollar, Trafik ringleri ve süpürülmüş yol analizi dahil olmak üzere tamamen parametrik yol tasarımı. İnşaat alanı yerleşimini planlamak için vinçler, konteynerler, şantiye çitleri ve diğer ekipmanlar. Fore kazık ve palplanş duvarları ve zemin ankrajları gibi akıllı kazı iksaları. Kazıları modellemek ve kazı çizimleri oluşturmak için araçlar. Kirişler, kolonlar, merdivenler vb. gibi akıllı prefabrik beton bileşenler. Bireysel elemanların ayrıntılı üretim paftalarını otomatik, şablon tabanlı oluşturulması. Köprüler, tüneller, istinat duvarları, ses bariyerleri ve prekast kirişli köprüler gibi özel köprü tipleri de dahil olmak üzere altyapıların dört boyutlu parametrik modellemesi ve detaylandırılması için özel çözüm. Öngerilme tendonlarının modellenmesi ve analizi. Köprülerin doğrusal yapısal analizi için özel çözüm. Ulusal ekler ve AASHTO LRFD ile Eurocode Prekast döşemelerin otomatik elementasyonu, bağlantısı, detaylandırılması ve imalatı için özel çözüm. Prekast duvarların ",
+    "source": "data"
   }
 ]
