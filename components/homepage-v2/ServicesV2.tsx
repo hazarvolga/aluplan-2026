@@ -1,5 +1,6 @@
 "use client"
 import Link from "next/link";
+import { BookDown } from "lucide-react";
 import { motion } from "framer-motion";
 import {
     GraduationCap,
@@ -161,6 +162,14 @@ const services = [
         status: "active",
         href: "https://www.allplan.com/tr/system/releasenotes/?no_cache=1",
         cta: "Oku"
+    },
+    {
+        icon: BookDown,
+        title: "IFC Aktarım El Kitabı",
+        description: "Sektör paydaşlarının birlikte çalışabilme potansiyelini artırmak, openBIM kültürünü tanıtmak ve yaygınlaştırmak amacıyla buildingSMART Türkiye tarafından hazırlanan IFC Aktarım El Kitabı.",
+        status: "active",
+        href: "/docs/ifc_aktarim_el_kitabi.pdf",
+        cta: "İndir"
     }
 ];
 
@@ -168,13 +177,67 @@ const ServicesV2 = () => {
     // Categorize services
     const servicesList = services.filter(s => ["Eğitim", "Teknik Destek", "Danışmanlık", "Sertifika", "Destek Platformu", "Partner"].includes(s.title));
     const connectList = services.filter(s => ["Connect: Giriş", "Admin Lisans : Lisans Yöneticisi Bilgi Formu", "Download", "Tüm Gereksinimler"].includes(s.title));
-    const resourcesList = services.filter(s => ["ALLPLAN FAQ", "Blog Global", "Canlı Webinarlar", "BIM Rehberi", "OPENBIM", "Sistem Gereksinimleri", "Sürüm Notları"].includes(s.title));
+    const resourcesList = services.filter(s => ["ALLPLAN FAQ", "Blog Global", "Canlı Webinarlar", "BIM Rehberi", "OPENBIM", "Sistem Gereksinimleri", "Sürüm Notları", "IFC Aktarım El Kitabı"].includes(s.title));
 
     const renderGrid = (items: typeof services) => (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
             {items.map((service, index) => {
                 const Icon = service.icon;
                 const isActive = service.status === "active";
+                const isPdf = service.href.endsWith(".pdf");
+                const resolvedHref = service.title === "Eğitim" ? "/solutions-v2/training" : (isActive ? service.href : "#");
+
+                const cardClassName = `group relative block h-full p-6 rounded-2xl border transition-all duration-300 overflow-hidden ${isActive
+                    ? "bg-card border-border/10 hover:border-accent/30 hover:bg-card/80 cursor-pointer shadow-sm"
+                    : "bg-muted/20 border-border/5 cursor-not-allowed opacity-60"
+                    }`;
+
+                const cardContent = (
+                    <>
+                        {/* Hover Effect */}
+                        {isActive && (
+                            <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        )}
+
+                        <div className="relative z-10 flex flex-col h-full pt-4">
+                            <div className={`absolute top-[2px] right-[2px] p-3 rounded-xl border ${isActive
+                                ? "bg-muted border-border/10 group-hover:text-accent text-muted-foreground"
+                                : "bg-muted/50 border-border/5 text-muted-foreground/60"
+                                } transition-colors`}>
+                                <Icon className="h-6 w-6" />
+                            </div>
+
+                            {!isActive && (
+                                <div className="mb-6">
+                                    <span className="inline-flex items-center gap-1 text-[10px] uppercase tracking-wider font-medium text-muted-foreground bg-muted px-2 py-1 rounded border border-border/10">
+                                        <Clock className="h-3 w-3" /> Yakında
+                                    </span>
+                                </div>
+                            )}
+
+                            {isActive && <div className="h-4" />}
+
+                            <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors pr-16">
+                                {service.title}
+                            </h3>
+
+                            <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-grow">
+                                {service.description}
+                            </p>
+
+                            <div className={`flex items-center gap-2 text-sm font-medium ${isActive
+                                ? "text-foreground group-hover:text-accent"
+                                : "text-muted-foreground"
+                                } transition-colors`}>
+                                {service.cta}
+                                {isActive && (isPdf
+                                    ? <Download className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
+                                    : <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                                )}
+                            </div>
+                        </div>
+                    </>
+                );
 
                 return (
                     <motion.div
@@ -184,56 +247,24 @@ const ServicesV2 = () => {
                         viewport={{ once: true, margin: "-50px" }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
                     >
-                        <Link
-                            href={service.title === "Eğitim" ? "/solutions-v2/training" : (isActive ? service.href : "#")}
-                            className={`group relative block h-full p-6 rounded-2xl border transition-all duration-300 overflow-hidden ${isActive
-                                ? "bg-card border-border/10 hover:border-accent/30 hover:bg-card/80 cursor-pointer shadow-sm"
-                                : "bg-muted/20 border-border/5 cursor-not-allowed opacity-60"
-                                }`}
-                        >
-                            {/* Hosting Hover Effect */}
-                            {isActive && (
-                                <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                            )}
-
-                            <div className="relative z-10 flex flex-col h-full pt-4">
-                                {/* Icon - Moved to Top Right - 2px as requested */}
-                                <div className={`absolute top-[2px] right-[2px] p-3 rounded-xl border ${isActive
-                                    ? "bg-muted border-border/10 group-hover:text-accent text-muted-foreground"
-                                    : "bg-muted/50 border-border/5 text-muted-foreground/60"
-                                    } transition-colors`}>
-                                    <Icon className="h-6 w-6" />
-                                </div>
-
-                                {/* Badge - Stays relative/left if exists */}
-                                {!isActive && (
-                                    <div className="mb-6">
-                                        <span className="inline-flex items-center gap-1 text-[10px] uppercase tracking-wider font-medium text-muted-foreground bg-muted px-2 py-1 rounded border border-border/10">
-                                            <Clock className="h-3 w-3" /> Yakında
-                                        </span>
-                                    </div>
-                                )}
-
-                                {/* Spacer if active to aligning text consistently or just let it flow since button is gone */}
-                                {isActive && <div className="h-4" />}
-
-                                <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors pr-16">
-                                    {service.title}
-                                </h3>
-
-                                <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-grow">
-                                    {service.description}
-                                </p>
-
-                                <div className={`flex items-center gap-2 text-sm font-medium ${isActive
-                                    ? "text-foreground group-hover:text-accent"
-                                    : "text-muted-foreground"
-                                    } transition-colors`}>
-                                    {service.cta}
-                                    {isActive && <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />}
-                                </div>
-                            </div>
-                        </Link>
+                        {isPdf ? (
+                            <a
+                                href={resolvedHref}
+                                download
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={cardClassName}
+                            >
+                                {cardContent}
+                            </a>
+                        ) : (
+                            <Link
+                                href={resolvedHref}
+                                className={cardClassName}
+                            >
+                                {cardContent}
+                            </Link>
+                        )}
                     </motion.div>
                 );
             })}
