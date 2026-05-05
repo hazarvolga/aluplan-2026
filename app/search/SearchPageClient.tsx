@@ -125,7 +125,9 @@ function SearchPageContent() {
                                                     <div className="flex items-center gap-2 mb-2">
                                                         <span className={`text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${item.category === 'Ürün' ? 'bg-blue-500/10 text-blue-500' :
                                                             item.category === 'Çözüm' ? 'bg-orange-500/10 text-orange-500' :
-                                                                'bg-gray-500/10 text-gray-500'
+                                                                item.category === 'Eğitim' ? 'bg-emerald-500/10 text-emerald-500' :
+                                                                    item.category === 'Destek' ? 'bg-teal-500/10 text-teal-500' :
+                                                                        'bg-gray-500/10 text-gray-500'
                                                             }`}>
                                                             {item.category}
                                                         </span>

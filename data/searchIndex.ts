@@ -4,7 +4,7 @@ export type SearchItem = {
     title: string;
     description: string;
     url: string;
-    category: "Ürün" | "Çözüm" | "Eğitim" | "Genel";
+    category: "Ürün" | "Çözüm" | "Eğitim" | "Genel" | "Destek";
     tags?: string[];
     content?: string;
 };
