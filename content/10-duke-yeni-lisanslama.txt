@@ -8,7 +8,7 @@ POST HERO SECTION:
 - Başlık: Allplan Connect Lisans Yönetim Paneli Nedir?
 
 AÇIKLAMA BÖLÜMÜ:
-🔐 Allplan Connect Lisans Yönetim Paneli Nedir?
+🔐 10 Duke Yeni Lisanslama ve Allplan Connect Lisans Yönetim Paneli Nedir?
 
 Allplan Connect Lisans Yönetim Paneli, Allplan yazılım lisanslarınızı, yönetmek ve etkin bir şekilde kullanabilmek için geliştirilmiş çevrimiçi bir sistemdir.
 

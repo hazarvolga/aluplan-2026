@@ -503,11 +503,18 @@ const manualSearchIndex: SearchItem[] = [
         tags: ["bulut", "cloud", "işbirliği"]
     },
     {
-        title: "Connect - Lisans Yönetimi",
-        description: "ALLPLAN Connect lisans yönetim sistemi.",
+        title: "10 Duke Yeni Lisanslama (Allplan Connect)",
+        description: "ALLPLAN 2026 ile gelen yeni 10 Duke lisanslama sistemi ve Allplan Connect yönetimi hakkında bilgiler.",
         url: "/solutions-v2/connect-license",
         category: "Genel",
-        tags: ["connect", "lisans", "license"]
+        tags: ["connect", "lisans", "license", "10 duke", "10duke", "bulut lisans", "yeni lisanslama", "2026"]
+    },
+    {
+        title: "Ekip Üyelerine Lisans Atama Rehberi (10Duke)",
+        description: "Allplan Connect üzerinden ekip üyelerine lisans atama, ALLPLAN ID oluşturma ve lisans iade işlemleri rehberi.",
+        url: "/solutions-v2/connect-license/how-to-assign",
+        category: "Destek",
+        tags: ["lisans atama", "ekip", "team", "10duke", "allplan id", "lisans iadesi", "connect 2.0", "admin"]
     },
     {
         title: "Connect - Giriş",

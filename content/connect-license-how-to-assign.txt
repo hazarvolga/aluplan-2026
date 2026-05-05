@@ -1,0 +1,20 @@
+# Allplan Connect Ekip Üyelerine Lisans Atama Rehberi
+
+## Yönetici Olarak Ekip Üyelerine Lisans Atama Adımları
+1. Giriş Yapın: Yönetici (Admin) hesabınızla Allplan Connect portalına (connect.allplan.com) giriş yapın.
+2. Davet Edin: Menüden "Ekip Üyeleri" (Team members) bölümüne giderek lisans vereceğiniz kişileri e-posta adresleriyle kurum ağınıza (Company Network) davet edin.
+3. Panoyu Açın: Menüdeki "Admin" sekmesi altından "Lisanslama Panosu" (Licensing Dashboard) alanına tıklayın.
+4. Lisansı Atayın: Panoda listelenen kullanıcıların yanındaki kutucuğu işaretleyerek havuzdaki boş lisanslarınızı tek tıkla atayın.
+
+## Kullanıcılar İçin ALLPLAN ID (10Duke) Oluşturma Adımları
+1. Daveti Yanıtlayın veya Kayıt Olun: Kurum yöneticinizden gelen davet e-postasındaki bağlantıya tıklayın ya da doğrudan Allplan Connect (connect.allplan.com) sayfasına giderek "Kayıt Ol" (Register) seçeneğini seçin.
+2. Bilgileri Doldurun: Kurumsal e-posta adresinizi (bu e-posta sizin kalıcı ALLPLAN ID'niz olacaktır) ve belirlediğiniz şifreyi girerek kayıt formunu eksiksiz doldurun.
+3. Hesabı Doğrulayın: Kayıt işleminden hemen sonra e-posta adresinize gönderilen doğrulama bağlantısına 24 saat içinde tıklayarak hesabınızı aktifleştirin.
+
+## 10Duke Sisteminde Lisans İadesi (Geri Alma) Adımları
+1. Yönetici hesabınızla Allplan Connect portalına giriş yapın.
+2. Admin sekmesi altından "Lisanslama Panosu"na (Licensing Dashboard) gidin.
+3. Lisansını geri almak istediğiniz kullanıcının yanındaki onay kutucuğunun işaretini (tik) kaldırın.
+4. İşlem tamamlandığında lisans anında şirket havuzuna geri döner.
+
+Anahtar Kelimeler: lisans atama, ekip yönetimi, 10duke iade, allplan id oluşturma, connect 2.0, lisans yönetimi, bulut lisanslama, admin rehberi.

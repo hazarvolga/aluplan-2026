@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, ShieldCheck, Laptop, BarChart3, Globe, AlertTriangle } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function ConnectLicensePage() {
     return (
@@ -42,6 +43,138 @@ export default function ConnectLicensePage() {
                             Allplan Connect Lisans Yönetim Paneli, Allplan yazılım lisanslarınızı yönetmek, izlemek ve etkin bir şekilde kullanabilmek için geliştirilmiş güçlü bir çevrimiçi sistemdir.
                         </p>
                     </motion.div>
+                </div>
+            </section>
+
+            {/* 10Duke Transition Section */}
+            <section className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-background to-card relative overflow-hidden">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+                
+                <div className="max-w-[1200px] mx-auto">
+                    <div className="mb-16 text-center">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                        >
+                            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                                Allplan&apos;da Yeni Dönem: <span className="text-primary">10Duke</span> Bulut Tabanlı Lisanslama Sistemi
+                            </h2>
+                            <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
+                                Allplan, çalışma özgürlüğünüzü en üst düzeye çıkarmak için eski CodeMeter (donanım kilitli veya yerel ağ havuzlu) teknolojisini geride bırakarak, tamamen modern ve bulut tabanlı 10Duke Lisanslama Sistemine geçiş yapmıştır.
+                            </p>
+                        </motion.div>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-12">
+                        {/* Column 1: Advantages */}
+                        <motion.div
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            className="space-y-8"
+                        >
+                            <div className="flex items-center gap-4 mb-2">
+                                <div className="h-10 w-1 px-0 bg-primary rounded-full" />
+                                <h3 className="text-2xl font-bold text-white">Bu Yeni Sistem Size Hangi Kolaylıkları Sağlıyor?</h3>
+                            </div>
+
+                            <div className="space-y-6">
+                                <div className="flex gap-4">
+                                    <div className="h-12 w-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0 text-primary">
+                                        <Laptop className="h-6 w-6" />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-lg font-semibold text-white mb-1">Donanım Kilidine Son (Kişiye Özel Lisans)</h4>
+                                        <p className="text-gray-400 text-sm leading-relaxed">
+                                            Lisansınız artık ofisteki bir sunucuya veya fiziksel bir USB kilide bağlı değildir. Doğrudan kendi ALLPLAN ID&apos;nize (e-posta adresinize) tanımlanır.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="flex gap-4">
+                                    <div className="h-12 w-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0 text-green-500">
+                                        <Globe className="h-6 w-6" />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-lg font-semibold text-white mb-1">Mekandan Bağımsız Çalışma Özgürlüğü</h4>
+                                        <p className="text-gray-400 text-sm leading-relaxed">
+                                            Lisansınız bulut üzerinden e-postanıza bağlı olduğu için; ofiste, evde (home-office) veya şantiyede herhangi bir ek ayar yapmadan sadece giriş yaparak çalışmaya başlayabilirsiniz.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="flex gap-4">
+                                    <div className="h-12 w-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0 text-blue-400">
+                                        <ShieldCheck className="h-6 w-6" />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-lg font-semibold text-white mb-1">Tek Şifre, Tam Erişim (Single Sign-On)</h4>
+                                        <p className="text-gray-400 text-sm leading-relaxed">
+                                            Allplan yazılımı, Bimplus ve Allplan Connect portallarına tek bir e-posta ve şifreyle (Tek Oturum Açma) kolayca erişirsiniz.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </motion.div>
+
+                        {/* Column 2: Process */}
+                        <motion.div
+                            initial={{ opacity: 0, x: 30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            className="bg-white/5 border border-white/10 rounded-3xl p-8 relative overflow-hidden group"
+                        >
+                            <div className="absolute top-0 right-0 p-8 opacity-[0.03] group-hover:opacity-[0.05] transition-opacity">
+                                <ArrowRight className="h-48 w-48 -rotate-45" />
+                            </div>
+
+                            <div className="relative z-10">
+                                <div className="flex items-center gap-4 mb-8">
+                                    <div className="h-10 w-1 px-0 bg-primary rounded-full" />
+                                    <h3 className="text-2xl font-bold text-white">Süreç Nasıl İşler? (3 Basit Adım)</h3>
+                                </div>
+
+                                <div className="space-y-8">
+                                    <div className="flex gap-6">
+                                        <div className="text-4xl font-black text-white/10 group-hover:text-primary/20 transition-colors">01</div>
+                                        <div>
+                                            <h4 className="text-lg font-semibold text-white mb-1">Davet</h4>
+                                            <p className="text-gray-400 text-sm">
+                                                Kurum yöneticiniz sizi Allplan Connect veya Bimplus portalı üzerinden şirket ağına davet eder.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex gap-6">
+                                        <div className="text-4xl font-black text-white/10 group-hover:text-primary/20 transition-colors">02</div>
+                                        <div>
+                                            <h4 className="text-lg font-semibold text-white mb-1">Lisans Ataması</h4>
+                                            <p className="text-gray-400 text-sm">
+                                                Yöneticiniz, yenilenen modern &quot;Lisanslama Panosu&quot; (Licensing Dashboard) üzerinden size boşta olan bir lisansı tek tıkla atar.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex gap-6">
+                                        <div className="text-4xl font-black text-white/10 group-hover:text-primary/20 transition-colors">03</div>
+                                        <div>
+                                            <h4 className="text-lg font-semibold text-white mb-1">Kullanım</h4>
+                                            <p className="text-gray-400 text-sm">
+                                                Bilgisayarınızda Allplan&apos;ı açar ve kendi e-posta/şifrenizle giriş yaparsınız. Sistem buluttaki lisansınızı otomatik olarak algılar.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="mt-10 p-4 bg-primary/10 border border-primary/20 rounded-xl">
+                                    <p className="text-primary text-sm font-medium text-center">
+                                        Artık karmaşık ağ ayarlarıyla uğraşmadan, nerede olursanız olun projenize odaklanabilirsiniz!
+                                    </p>
+                                </div>
+                            </div>
+                        </motion.div>
+                    </div>
                 </div>
             </section>
 
@@ -156,13 +289,18 @@ export default function ConnectLicensePage() {
                     <p className="text-gray-400 mb-10">
                         Allplan Connect portalına giriş yaparak lisanslarınızı hemen organize edin veya yönetici değişikliği için form doldurun.
                     </p>
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <Button asChild size="lg" className="bg-primary hover:bg-[#2563eb] text-white rounded-full px-8 py-6 text-lg shadow-lg shadow-blue-900/20 w-full sm:w-auto">
+                    <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+                        <Button asChild size="lg" className="bg-primary hover:bg-[#2563eb] text-white rounded-full px-8 py-6 text-lg shadow-lg shadow-blue-900/20 w-full md:w-auto">
                             <a href="https://connect2.allplan.com/" target="_blank" rel="noopener noreferrer">
                                 Allplan Connect&apos;e Git <ArrowRight className="ml-2 h-5 w-5" />
                             </a>
                         </Button>
-                        <Button asChild size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 hover:text-white rounded-full px-8 py-6 text-lg w-full sm:w-auto">
+                        <Button asChild size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 hover:text-white rounded-full px-8 py-6 text-lg w-full md:w-auto">
+                            <Link href="/solutions-v2/connect-license/how-to-assign">
+                                Ekip Üyelerine Lisans Atama Rehberi
+                            </Link>
+                        </Button>
+                        <Button asChild size="lg" variant="ghost" className="text-gray-400 hover:text-white hover:bg-white/5 rounded-full px-8 py-6 text-lg w-full md:w-auto">
                             <a href="https://forms.office.com/r/HSrhvAkYmb" target="_blank" rel="noopener noreferrer">
                                 Lisans Yöneticisi Bilgi Formu
                             </a>

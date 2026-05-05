@@ -189,7 +189,11 @@ if (fs.existsSync(contentDir)) {
         else if (filename.includes('oska')) url = '/solutions/oska';
         else if (filename.includes('poz')) url = '/solutions/poz-catalog';
         else if (filename.includes('bulut') || filename.includes('cloud')) url = '/products/allplan-cloud-services';
-        else if (filename.includes('onemli')) url = '/#professional-services';
+        else if (filename.includes('how-to-assign')) {
+            url = '/solutions-v2/connect-license/how-to-assign';
+        } else if (filename.includes('10-duke') || filename.includes('license') || filename.includes('lisanslama')) {
+            url = '/solutions-v2/connect-license';
+        } else if (filename.includes('onemli')) url = '/#professional-services';
 
         if (cleanContent.length > 30) {
             searchItems.push({

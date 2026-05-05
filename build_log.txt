@@ -1,0 +1,264 @@
+
+> aluplan-next@0.1.0 build
+> npm run build-index && next build
+
+
+> aluplan-next@0.1.0 build-index
+> node scripts/build-search-index.js
+
+--- Phase 1: Scanning pages ---
+  [page] /(public)/gizlilik-politikasi → "Gizlilik Politikası" (2902 chars)
+  [page] /(public)/kullanim-sartlari → "Kullanım Şartları" (2383 chars)
+  [page] /(public)/kvkk → "KVKK Aydınlatma Metni" (3935 chars)
+  [page] /(public) → "(public)" (286 chars)
+  [page] /about → "Hakkımızda - Aluplan" (35 chars)
+  [page] /contact → "İletişim - Aluplan" (35 chars)
+  [page] /health → "OK" (74 chars)
+  [page] /hero-3d → "Hero 3d" (880 chars)
+  [page] /package-overview → "Package Overview" (73 chars)
+  [page] /paket-karsilastirma → "Paket Karsilastirma" (104 chars)
+  [page] /products/allplan → "Allplan" (1326 chars)
+  [page] /products/allplan-2026 → "Allplan 2026" (8681 chars)
+  [page] /products/allplan-2026-yenilikler → "Allplan 2026 Yenilikler" (18618 chars)
+  [page] /products/allplan-aec → "Allplan Aec" (7681 chars)
+  [page] /products/allplan-basic → "TASARIM, GÖRÜNTÜLEME VE İŞ BİRLİĞİ İÇİN TEMEL ÇÖZÜM" (3277 chars)
+  [page] /products/allplan-bimplus → "Allplan Bimplus - Aluplan" (35 chars)
+  [page] /products/allplan-cloud-services → "Allplan Cloud Services" (4922 chars)
+  [page] /products/allplan-concept → "MODELLEME VE TASARIM DOKÜMANTASYONU İÇİN BIM ÇÖZÜMÜ" (5934 chars)
+  [page] /products/allplan-professional → "DETAYLANDIRMA VE İLERİ DÜZEY OTOMASYON İÇİN BIM ÇÖZÜMÜ" (7818 chars)
+  [page] /products/allplan-ultimate → "Tasarımdan inşaata kadar tam iş akışı için kapsamlı BIM çözümü." (10835 chars)
+  [page] /products/architecture → "Architecture" (428 chars)
+  [page] /products/ax3000 → "AX3000 Ürünleri - Aluplan" (35 chars)
+  [page] /products/civil → "İleri Düzey Altyapı Tasarımından İnşa Akışlarına yönelik Çözüm." (13331 chars)
+  [page] /products → "Products" (1934 chars)
+  [page] /products/precast → "PREKAST TASARIMI İÇİN EŞSİZ BIM ÇÖZÜMÜ" (7274 chars)
+  [page] /products/precast-detail → "Precast Detail" (153 chars)
+  [page] /products/sds2-home → "SDS2 Home - Aluplan" (35 chars)
+  [page] /references → "References" (15692 chars)
+  [page] /search → "Arama Sonuçları | Aluplan" (41 chars)
+  [page] /solutions/addons/2d-dwg-converter → "2D DWG Converter - Aluplan" (35 chars)
+  [page] /solutions/addons/drive-curve → "Drive Curve - Aluplan" (35 chars)
+  [page] /solutions/addons/geometry-tools → "Geometry Tools - Aluplan" (35 chars)
+  [page] /solutions/addons/graphical-text → "Graphical Text - Aluplan" (35 chars)
+  [page] /solutions/addons → "Eklentiler - Aluplan" (35 chars)
+  [page] /solutions/addons/parametric-terrain → "Parametric Terrain - Aluplan" (35 chars)
+  [page] /solutions/addons/ramp → "Ramp - Aluplan" (35 chars)
+  [page] /solutions/addons/sketchup-converter → "SketchUp Converter - Aluplan" (35 chars)
+  [page] /solutions/addons/steel-components → "Steel Components - Aluplan" (35 chars)
+  [page] /solutions/addons/three-dimensioning → "Three Dimensioning - Aluplan" (35 chars)
+  [page] /solutions/allplan-bulut-hizmetleri → "ALLPLAN Bulut Hizmetleri - Aluplan" (35 chars)
+  [page] /solutions/allplan-industry → "Allplan Industry" (5674 chars)
+  [page] /solutions/architecture → "Architecture" (12547 chars)
+  [page] /solutions/ax3000/elektrik → "AX3000 Elektrik - Aluplan" (35 chars)
+  [page] /solutions/ax3000/havalandirma → "AX3000 Havalandırma - Aluplan" (35 chars)
+  [page] /solutions/ax3000/isitma → "AX3000 Isıtma - Aluplan" (35 chars)
+  [page] /solutions/ax3000/konut-havalandirma → "AX3000 Konut Havalandırma - Aluplan" (35 chars)
+  [page] /solutions/ax3000 → "Ax3000" (35 chars)
+  [page] /solutions/ax3000/sihhi-tesisat → "AX3000 Sıhhi Tesisat - Aluplan" (35 chars)
+  [page] /solutions/ax3000/sprinkler → "AX3000 Sprinkler - Aluplan" (35 chars)
+  [page] /solutions/ax3000-mekanik-tesisat → "AX3000 Mekanik Tesisat - Aluplan" (35 chars)
+  [page] /solutions/ax3000-virtual-reality → "AX3000 VR - Aluplan" (35 chars)
+  [page] /solutions/ax3000-yapi-fizigi → "AX3000 Yapı Fiziği - Aluplan" (35 chars)
+  [page] /solutions/bimx5 → "Bimx5" (605 chars)
+  [page] /solutions/bridge-design → "Bridge Design" (3194 chars)
+  [page] /solutions/cds-addon → "Cds Addon" (35 chars)
+  [page] /solutions/features-allplan-bridge → "Features Allplan Bridge" (13321 chars)
+  [page] /solutions/imar-yonetmeligi-bim-eklentisi → "Imar Yonetmeligi Bim Eklentisi" (35 chars)
+  [page] /solutions/industry → "Industry" (162 chars)
+  [page] /solutions/infrastructure → "Infrastructure" (11493 chars)
+  [page] /solutions/mep → "Mep" (9316 chars)
+  [page] /solutions/modeling-of-precast-girder-bridges → "Prefabrik Kirişli Köprü Modelleme - Aluplan" (35 chars)
+  [page] /solutions/oska → "Oska" (35 chars)
+  [page] /solutions → "ALLPLAN Çözümleri | Tüm Çözümler" (5331 chars)
+  [page] /solutions/poz-catalog → "Poz Catalog" (209 chars)
+  [page] /solutions/precast → "Precast" (35 chars)
+  [page] /solutions/pythonpart → "Pythonpart" (35 chars)
+  [page] /solutions/rebar-engineering → "Rebar Engineering" (135 chars)
+  [page] /solutions/road-railway → "Road Railway" (4299 chars)
+  [page] /solutions/scalypso/converter → "Scalypso Converter - Aluplan" (35 chars)
+  [page] /solutions/scalypso/mobile → "Scalypso Mobile - Aluplan" (35 chars)
+  [page] /solutions/scalypso/modeler → "Scalypso Modeler - Aluplan" (35 chars)
+  [page] /solutions/scalypso → "Scalypso - Aluplan" (35 chars)
+  [page] /solutions/scalypso/videos → "Scalypso Eğitim Videoları - Aluplan" (35 chars)
+  [page] /solutions/scalypso/viewer → "Scalypso Viewer - Aluplan" (35 chars)
+  [page] /solutions/site-planning → "Site Planning" (3776 chars)
+  [page] /solutions/steel → "Steel" (2943 chars)
+  [page] /solutions/structural → "Structural" (5433 chars)
+  [page] /solutions-v2/addons → "Addons" (160 chars)
+  [page] /solutions-v2/building-design → "Building Design" (204 chars)
+  [page] /solutions-v2/connect-license → "Connect License" (1822 chars)
+  [page] /solutions-v2/connect-login → "Connect Login" (1552 chars)
+  [page] /solutions-v2/construction → "Construction" (173 chars)
+  [page] /solutions-v2/faq → "Faq" (7404 chars)
+  [page] /solutions-v2/infrastructure → "Infrastructure" (174 chars)
+  [page] /solutions-v2/other → "Other" (162 chars)
+  [page] /solutions-v2/training/classroom → "Classroom" (52 chars)
+  [page] /solutions-v2/training/e-learning → "E Learning" (44 chars)
+  [page] /solutions-v2/training/events → "Events" (41 chars)
+  [page] /solutions-v2/training/individual → "Individual" (53 chars)
+  [page] /solutions-v2/training/online → "Online" (49 chars)
+  [page] /solutions-v2/training → "Training" (6676 chars)
+  [page] /solutions-v2/training/quick-start → "Quick Start" (309 chars)
+  [page] /solutions-v2/training/video-library → "Video Library" (4113 chars)
+  [page] /solutions-v2/training/webinar → "Webinar" (3763 chars)
+  [page] /test-webgl → "Test Webgl" (521 chars)
+
+--- Phase 2: Scanning content/*.txt ---
+  [content] 10-duke-yeni-lisanslama.txt → "ALLPLAN 2026" (1213 chars)
+  [content] 2023-allplan-aec.txt → "Başlık: ALLPLAN 2025" (3594 chars)
+  [content] 2023-mep-engineering.txt → "ALLPLAN MEP MÜHENDİSLİĞİ SAYFASI İÇERİĞİ" (10804 chars)
+  [content] 2024-allplan-aec.txt → "ALLPLAN" (9157 chars)
+  [content] 2024-allplan-precast-product.txt → "allplan precast" (6386 chars)
+  [content] 2024-architecture.txt → "ALLPLAN MİMARİ SAYFASI İÇERİĞİ" (13738 chars)
+  [content] 2024-bridge-design.txt → "Başlık: Bridge Engineering" (4197 chars)
+  [content] 2024-civil-engineering-endustri-cozumleri.txt → "Başlık: ALT YAPI MÜHENDİSLİĞİ" (5247 chars)
+  [content] 2024-precast-fabrication.txt → "Başlık: PREFABRICATION" (2362 chars)
+  [content] 2024-product-bimplus-by-allplan.txt → "Bimplus by Allplan" (3673 chars)
+  [content] 2024-road-and-rail-design.txt → "Başlık: KARAYOLU VE DEMİRYOLU ALTYAPISI" (4112 chars)
+  [content] 2024-site-planning.txt → "Başlık: ŞANTİYE PLANLAMASI" (3183 chars)
+  [content] 2024-steel-detailing-fabrication.txt → "Başlık: ÇELİK ÜRETİCİLERİ" (2336 chars)
+  [content] 2024-structural-engineering.txt → "ALLPLAN STRÜKTÜREL MÜHENDİSLİK SAYFASI İÇERİĞİ" (13191 chars)
+  [content] 2025-allplan-precast-software-for-precast.txt → "allplan precast" (6129 chars)
+  [content] 24907-2.txt → "Allplan Connect: Giriş Problemleri veya Parola Sıfırlama Soru" (1159 chars)
+  [content] add-on-kanal.txt → "Başlık: Allplan Add On KANAL" (3013 chars)
+  [content] addon-aluplan-com-tr.txt → "Başlık: Allplan CDS Eklentiler" (692 chars)
+  [content] allplan-2021-debar-detailing-software.txt → "Başlık: İNŞAAT ENDÜSTRİSİ İÇİN BIM YAZILIMI" (1525 chars)
+  [content] allplan-2026-features-modeling-management-collaboration.txt → "ALLPLAN 2026 ÖZELLİKLERİ - BİLGİ MODELLEME, YÖNETİM VE İŞBİRLİĞİ" (12085 chars)
+  [content] allplan-2026nin-ozellikleri.txt → "SAYFA BAŞLIĞI: ALLPLAN 2026'nın Özellikleri" (25945 chars)
+  [content] allplan-architecture-2022.txt → "Mimarlık için BIM çözümleri" (3112 chars)
+  [content] allplan-basic-2025.txt → "Başlık: ALLPLAN BASIC" (4340 chars)
+  [content] allplan-bimplus-collaborate-coordinate-and-manage-your-project.txt → "Başlık: ALLPLAN 2025" (2100 chars)
+  [content] allplan-bulut-hizmetleri-sunlari-icerir.txt → "BAŞLIK: Allplan Bulut Hizmetleri şunları İçerir" (3081 chars)
+  [content] allplan-concept-2025.txt → "Başlık: ALLPLAN CONCEPT" (4860 chars)
+  [content] allplan-enviroment.txt → "Başlık: Allplan Environment" (5746 chars)
+  [content] allplan-exchange.txt → "CONTENT:" (520 chars)
+  [content] allplan-lisans-server.txt → "CONTENT:" (520 chars)
+  [content] allplan-oska-isbirligi.txt → "Yaklaşık Maliyet, Hakediş ve Kesin Hesap işlemlerinde" (511 chars)
+  [content] allplan-poz-katalogu.txt → "Allplan Poz Kataloğu" (545 chars)
+  [content] allplan-professional-2025.txt → "Başlık: ALLPLAN Professional" (3852 chars)
+  [content] allplan-share-2.txt → "Başlık: İNŞAAT ENDÜSTRİSİ İÇİN BIM YAZILIMI" (3013 chars)
+  [content] allplan-ultimate-2025.txt → "ALLPLAN Ultimate" (13485 chars)
+  [content] allplan-workgroup.txt → "CONTENT:" (521 chars)
+  [content] allto-add-on-s.txt → "MAIN TITLE:" (6717 chars)
+  [content] aluplan-com-tr.txt → "ALLPLAN 2026" (2137 chars)
+  [content] ax3000-aluplan-com-tr.txt → "Logo URL: https://ax3000.aluplan.com.tr/wp-content/uploads/2019/12/alplan-logo-2020-beyaz.png" (2732 chars)
+  [content] case-study-turkiye.txt → "Case Study Türkiye" (543 chars)
+  [content] engineering.txt → "ALLPLAN TASARIMDAN İNŞAATA" (1527 chars)
+  [content] features-allplan-bridge-2024.txt → "BAŞLIK: Features Allplan Bridge 2024" (12873 chars)
+  [content] homepage.txt → "BAŞLIK: Aluplan Program Sistemleri | Allplan Türkiye Distribütörü" (3858 chars)
+  [content] modeling-of-precast-girder-bridges.txt → "Allplan Bridge" (5379 chars)
+  [content] onemli-bilgiler-baglantilar.txt → "İNŞAAT ENDÜSTRİSİ İÇİN BIM YAZILIMI" (2859 chars)
+  [content] oska-aluplan-com-tr.txt → "Görsel URL: /sites/default/files/styles/responsive_image_2000/public/media/image/duzeltme.jpg?itok=2gU0ERS8" (1702 chars)
+  [content] package-overview-2025.txt → "BAŞLIK: Package Overview 2025" (1844 chars)
+  [content] planlialanlar-aluplan-com-tr.txt → "Başlık: DENGELERİ DEĞİŞTİRİN" (3116 chars)
+  [content] product-allplan-civil.txt → "ALLPLAN Civil" (12178 chars)
+
+--- Phase 3: Scanning ServicesV2 cards ---
+  [component] ServicesV2 → "Eğitim"
+  [component] ServicesV2 → "Danışmanlık"
+  [component] ServicesV2 → "Sertifika"
+  [component] ServicesV2 → "Destek Platformu"
+  [component] ServicesV2 → "Partner"
+  [component] ServicesV2 → "Download"
+  [component] ServicesV2 → "ALLPLAN FAQ"
+  [component] ServicesV2 → "Connect: Giriş"
+  [component] ServicesV2 → "Admin Lisans : Lisans Yöneticisi Bilgi Formu"
+  [component] ServicesV2 → "Blog Global"
+  [component] ServicesV2 → "Canlı Webinarlar"
+  [component] ServicesV2 → "BIM Rehberi"
+  [component] ServicesV2 → "OPENBIM"
+  [component] ServicesV2 → "Sistem Gereksinimleri"
+  [component] ServicesV2 → "Tüm Gereksinimler"
+  [component] ServicesV2 → "Sürüm Notları"
+  [component] ServicesV2 → "IFC Export El Kitabı"
+
+--- Phase 4: Scanning content/addons ---
+  [addon] DWG2DConverter.tsx → "D W G2 D Converter" (1259 chars)
+  [addon] DriveCurve.tsx → "Sürüş Eğrisi" (2218 chars)
+  [addon] GeometryTools.tsx → "Geometry Tools" (2517 chars)
+  [addon] GraphicalText.tsx → "Grafiksel Yazı" (274 chars)
+  [addon] ParametricTerrain.tsx → "Parametric Terrain" (3101 chars)
+  [addon] Ramp.tsx → "Rampa" (322 chars)
+  [addon] SketchUpConverter.tsx → "SketchUp Dönüştürücü" (279 chars)
+  [addon] SteelComponents.tsx → "Profilbauteile" (3139 chars)
+  [addon] ThreeDimensioning.tsx → "Müşteri örneği" (1371 chars)
+
+--- Phase 5: Scanning all components ---
+  [component] homepage-v2/BentoGrid.tsx → 5 items extracted
+  [component] homepage-v2/InnovationsTeaser.tsx → 3 items extracted
+  [component] homepage-v2/PathwayProductSystem.tsx → 9 items extracted
+  [component] homepage-v2/PathwaySelector.tsx → 3 items extracted
+  [component] homepage-v2/TechSpecsTable.tsx → 6 items extracted
+  [component] homepage/IndustrySegments.tsx → 5 items extracted
+  [component] homepage/LatestNews.tsx → 3 items extracted
+  [component] homepage/ProductShowcase.tsx → 4 items extracted
+  [component] homepage/ServicesSection.tsx → 6 items extracted
+  [component] homepage/ValueProposition.tsx → 6 items extracted
+  [component] sections/CloudServicesSection.tsx → 18 items extracted
+  [component] sections/Features.tsx → 6 items extracted
+  [component] sections/ProductInnovations.tsx → 35 items extracted
+  [component] sections/Products.tsx → 6 items extracted
+  [component] solutions/AllplanBulutContent.tsx → 24 items extracted
+
+--- Phase 6: Scanning data files ---
+  [data] PackageComparisonData → 81 features, 67 descriptions
+
+--- Summary ---
+  page: 95 items
+  content: 48 items
+  component: 32 items
+  addon: 9 items
+  data: 1 items
+
+Successfully generated 185 search items in /Users/hazarekiz/Projects/aluplan-2026/data/auto-search-index.json
+  ▲ Next.js 14.2.33
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Skipping linting
+   Checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/102) ...
+Could not find files for /_error in .next/build-manifest.json
+Could not find files for /_error in .next/build-manifest.json
+Could not find files for /_error in .next/build-manifest.json
+Could not find files for /_error in .next/build-manifest.json
+   Generating static pages (25/102) 
+   Generating static pages (50/102) 
+   Generating static pages (76/102) 
+TypeError: e[o] is not a function
+    at Object.t [as require] (/Users/hazarekiz/Projects/aluplan-2026/.next/server/webpack-runtime.js:1:127)
+    at require (/Users/hazarekiz/Projects/aluplan-2026/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:16:18839)
+    at I (/Users/hazarekiz/Projects/aluplan-2026/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94364)
+    at /Users/hazarekiz/Projects/aluplan-2026/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:96670
+    at F._fromJSON (/Users/hazarekiz/Projects/aluplan-2026/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:97108)
+    at JSON.parse (<anonymous>)
+    at O (/Users/hazarekiz/Projects/aluplan-2026/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94085)
+    at t (/Users/hazarekiz/Projects/aluplan-2026/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:100584) {
+  digest: '4197347614'
+}
+TypeError: e[o] is not a function
+    at Object.t [as require] (/Users/hazarekiz/Projects/aluplan-2026/.next/server/webpack-runtime.js:1:127)
+    at require (/Users/hazarekiz/Projects/aluplan-2026/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:16:18839)
+    at I (/Users/hazarekiz/Projects/aluplan-2026/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94364)
+    at /Users/hazarekiz/Projects/aluplan-2026/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:96670
+    at F._fromJSON (/Users/hazarekiz/Projects/aluplan-2026/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:97108)
+    at JSON.parse (<anonymous>)
+    at O (/Users/hazarekiz/Projects/aluplan-2026/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94085)
+    at t (/Users/hazarekiz/Projects/aluplan-2026/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:100584)
+
+Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: e[o] is not a function
+    at Object.t [as require] (/Users/hazarekiz/Projects/aluplan-2026/.next/server/webpack-runtime.js:1:127)
+    at require (/Users/hazarekiz/Projects/aluplan-2026/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:16:18839)
+    at I (/Users/hazarekiz/Projects/aluplan-2026/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94364)
+    at /Users/hazarekiz/Projects/aluplan-2026/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:96670
+    at F._fromJSON (/Users/hazarekiz/Projects/aluplan-2026/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:97108)
+    at JSON.parse (<anonymous>)
+    at O (/Users/hazarekiz/Projects/aluplan-2026/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94085)
+    at t (/Users/hazarekiz/Projects/aluplan-2026/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:100584)
+ ✓ Generating static pages (102/102)
+
+> Export encountered errors on following paths:
+	/(public)/page: /
