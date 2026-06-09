@@ -168,7 +168,7 @@ const services = [
         title: "IFC Export El Kitabı",
         description: "Sektör paydaşlarının birlikte çalışabilme potansiyelini artırmak, openBIM kültürünü tanıtmak ve yaygınlaştırmak amacıyla buildingSMART Türkiye tarafından hazırlanan IFC Aktarım El Kitabı.",
         status: "active",
-        href: "/docs/ifc_aktarim_el_kitabi.pdf",
+        href: "/docs/ifc_aktarim_el_kitabi_ifc_4.0_ifc_4.3_2026.pdf",
         cta: "İndir"
     }
 ];
