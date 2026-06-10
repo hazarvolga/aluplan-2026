@@ -103,12 +103,12 @@ const playlists = [
     {
         title: "Youtube Allplan English",
         description: "Allplan global İngilizce içerikleri, uluslararası örnekler ve eğitimler.",
-        url: "https://www.youtube.com/@AllplanInternational"
+        url: "https://www.youtube.com/@ALLPLANEnglish"
     },
     {
         title: "Youtube Allplan Global",
         description: "Dünya genelinden Allplan kullanıcı hikayeleri ve küresel etkinlikler.",
-        url: "https://www.youtube.com/allplan"
+        url: "https://www.youtube.com/@AllplanInternational"
     },
     {
         title: "Youtube Allplan Precast",
@@ -116,7 +116,7 @@ const playlists = [
         url: "https://www.youtube.com/c/AllplanPrecast"
     },
     {
-        title: "Hello Allplan 2024! – Türkçe",
+        title: "Allplan ile Tanışın: Tüm Disiplinler İçin Temel Eğitim Videoları",
         description: "Allplan 2024 sürümü ile gelen tüm yeniliklerin Türkçe anlatımı.",
         url: "/solutions-v2/training/video-library/hello-allplan-2024"
     },

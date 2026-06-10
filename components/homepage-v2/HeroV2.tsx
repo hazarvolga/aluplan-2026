@@ -154,7 +154,7 @@ const HeroV2 = () => {
                         <div className="mt-4 animate-fade-in-up delay-300">
                             <Link href="https://aluplan.com.tr/solutions-v2/training/video-library" className="group flex items-center justify-center gap-3 border border-foreground/20 bg-foreground/5 px-8 py-4 backdrop-blur-md transition-all hover:bg-foreground/10 hover:scale-105 text-foreground text-center">
                                 <Play className="h-5 w-5 fill-current shrink-0" />
-                                <span className="font-bold tracking-tight">Allplan ile Tanışın: Tüm Disiplinler İçin Temel Eğitim Videoları</span>
+                                <span className="font-bold tracking-tight">Eğitim Videoları</span>
                             </Link>
                         </div>
                     </div>

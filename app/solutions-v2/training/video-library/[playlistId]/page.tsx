@@ -24,7 +24,7 @@ import {
 // This would typically be fetched based on the playlistId slug
 const playlistMap: Record<string, { title: string; subtitle: string; videos: typeof helloAllplan2024Data }> = {
     "hello-allplan-2024": {
-        title: "Hello Allplan! 2024",
+        title: "Allplan ile Tanışın: Tüm Disiplinler İçin Temel Eğitim Videoları",
         subtitle: "Allplan 2024 ile gelen tüm yeni özellikler ve geliştirmeler.",
         videos: helloAllplan2024Data
     },
