@@ -170,6 +170,14 @@ const services = [
         status: "active",
         href: "/docs/ifc_aktarim_el_kitabi_ifc_4.0_ifc_4.3_2026.pdf",
         cta: "İndir"
+    },
+    {
+        icon: Key,
+        title: "CodeMeter WebDepot",
+        description: "CodeMeter License Central WebDepot'a hoş geldiniz. Lisanslarınızı bu WebDepot'u kullanarak CmContainer'ınıza aktarabilirsiniz.",
+        status: "active",
+        href: "https://lc.codemeter.com/59885/depot/index.php",
+        cta: "Lisansları Aktar"
     }
 ];
 
@@ -177,7 +185,7 @@ const ServicesV2 = () => {
     // Categorize services
     const servicesList = services.filter(s => ["Eğitim", "Teknik Destek", "Danışmanlık", "Sertifika", "Destek Platformu", "Partner"].includes(s.title));
     const connectList = services.filter(s => ["Connect: Giriş", "Admin Lisans : Lisans Yöneticisi Bilgi Formu", "Download", "Tüm Gereksinimler"].includes(s.title));
-    const resourcesList = services.filter(s => ["ALLPLAN FAQ", "Blog Global", "Canlı Webinarlar", "BIM Rehberi", "OPENBIM", "Sistem Gereksinimleri", "Sürüm Notları", "IFC Export El Kitabı"].includes(s.title));
+    const resourcesList = services.filter(s => ["ALLPLAN FAQ", "Blog Global", "Canlı Webinarlar", "BIM Rehberi", "OPENBIM", "Sistem Gereksinimleri", "Sürüm Notları", "IFC Export El Kitabı", "CodeMeter WebDepot"].includes(s.title));
 
     const renderGrid = (items: typeof services) => (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
@@ -185,6 +193,7 @@ const ServicesV2 = () => {
                 const Icon = service.icon;
                 const isActive = service.status === "active";
                 const isPdf = service.href.endsWith(".pdf");
+                const isExternal = service.href.startsWith("http");
                 const resolvedHref = service.title === "Eğitim" ? "/solutions-v2/training" : (isActive ? service.href : "#");
 
                 const cardClassName = `group relative block h-full p-6 rounded-2xl border transition-all duration-300 overflow-hidden ${isActive
@@ -261,6 +270,7 @@ const ServicesV2 = () => {
                             <Link
                                 href={resolvedHref}
                                 className={cardClassName}
+                                {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                             >
                                 {cardContent}
                             </Link>
