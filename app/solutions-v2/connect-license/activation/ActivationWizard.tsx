@@ -67,6 +67,9 @@ export default function ActivationWizard() {
             <div className="mb-8">
                 <h2 className="text-2xl font-bold text-foreground mb-2">Talep ve Beyan</h2>
                 <h3 className="text-lg text-muted-foreground">Yeni Allplan Lisansının Etkinleştirilmesi</h3>
+                <p className="text-sm font-medium text-amber-600 dark:text-amber-500 mt-2">
+                    Not: ALLPLAN 2019 ila ALLPLAN 2023 versiyonları için geçerlidir.
+                </p>
             </div>
 
             {/* Stepper */}

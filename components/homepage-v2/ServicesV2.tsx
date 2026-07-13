@@ -55,9 +55,9 @@ const services = [
         icon: Award,
         title: "Sertifika",
         description: "Uluslararası geçerliliği olan ALLPLAN Uzman sertifikası.",
-        status: "coming",
-        href: "#",
-        cta: "Yakında"
+        status: "active",
+        href: "https://aluplan.info/",
+        cta: "Görüntüle"
     },
     {
         icon: LifeBuoy,
@@ -182,7 +182,7 @@ const services = [
     {
         icon: FileText,
         title: "Yeni Lisans Etkinleştirme",
-        description: "Yeni Allplan lisansınızın etkinleştirilmesi için talep ve beyan formu.",
+        description: "Yeni Allplan lisansınızın etkinleştirilmesi için talep ve beyan formu. ALLPLAN 2019 ila ALLPLAN 2023 versiyonları için geçerlidir.",
         status: "active",
         href: "/solutions-v2/connect-license/activation",
         cta: "Görüntüle"
