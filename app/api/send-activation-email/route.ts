@@ -12,7 +12,7 @@ export async function POST(req: Request) {
         }
 
         const { data, error } = await resend.emails.send({
-            from: "destek@allplan.net.tr", // Uses the verified domain in your Resend account
+            from: "Acme <onboarding@resend.dev>", // Uses the verified domain in your Resend account
             to: ["info@aluplan.com.tr"],
             subject: `Talep ve Beyan Yeni Allplan Lisansının Etkinleştirilmesi Formu dolduran kişinin adı soyadı: ${firstName} ${lastName} mail bilgisi: ${email}`,
             html: `
