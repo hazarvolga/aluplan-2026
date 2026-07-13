@@ -178,6 +178,14 @@ const services = [
         status: "active",
         href: "https://lc.codemeter.com/59885/depot/index.php",
         cta: "Lisansları Aktar"
+    },
+    {
+        icon: FileText,
+        title: "Yeni Lisans Etkinleştirme",
+        description: "Yeni Allplan lisansınızın etkinleştirilmesi için talep ve beyan formu.",
+        status: "active",
+        href: "/solutions-v2/connect-license/activation",
+        cta: "Görüntüle"
     }
 ];
 
@@ -185,7 +193,7 @@ const ServicesV2 = () => {
     // Categorize services
     const servicesList = services.filter(s => ["Eğitim", "Teknik Destek", "Danışmanlık", "Sertifika", "Destek Platformu", "Partner"].includes(s.title));
     const connectList = services.filter(s => ["Connect: Giriş", "Admin Lisans : Lisans Yöneticisi Bilgi Formu", "Download", "Tüm Gereksinimler"].includes(s.title));
-    const resourcesList = services.filter(s => ["ALLPLAN FAQ", "Blog Global", "Canlı Webinarlar", "BIM Rehberi", "OPENBIM", "Sistem Gereksinimleri", "Sürüm Notları", "IFC Export El Kitabı", "CodeMeter WebDepot"].includes(s.title));
+    const resourcesList = services.filter(s => ["ALLPLAN FAQ", "Blog Global", "Canlı Webinarlar", "BIM Rehberi", "OPENBIM", "Sistem Gereksinimleri", "Sürüm Notları", "IFC Export El Kitabı", "CodeMeter WebDepot", "Yeni Lisans Etkinleştirme"].includes(s.title));
 
     const renderGrid = (items: typeof services) => (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">

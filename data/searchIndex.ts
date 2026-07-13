@@ -517,6 +517,13 @@ const manualSearchIndex: SearchItem[] = [
         tags: ["lisans atama", "ekip", "team", "10duke", "allplan id", "lisans iadesi", "connect 2.0", "admin"]
     },
     {
+        title: "Yeni Lisans Etkinleştirme",
+        description: "Yeni Allplan lisansınızın etkinleştirilmesi için talep ve beyan formu.",
+        url: "/solutions-v2/connect-license/activation",
+        category: "Destek",
+        tags: ["lisans", "etkinleştirme", "talep", "beyan", "form"]
+    },
+    {
         title: "Connect - Giriş",
         description: "ALLPLAN Connect platformuna giriş ve kullanım.",
         url: "/solutions-v2/connect-login",
