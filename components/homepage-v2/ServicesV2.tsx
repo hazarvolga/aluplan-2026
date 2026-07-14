@@ -182,7 +182,7 @@ const services = [
     {
         icon: FileText,
         title: "Deklarasyon Formu",
-        description: "Yeni Allplan lisansınızın etkinleştirilmesi için talep ve beyan formu. ALLPLAN 2019 ila ALLPLAN 2023 versiyonları için geçerlidir.",
+        description: "Yeni Allplan lisansınızın etkinleştirilmesi için talep ve beyan formu. ALLPLAN 2023 ve ALLPLAN 2024 versiyonları için geçerlidir.",
         status: "active",
         href: "/solutions-v2/connect-license/activation",
         cta: "Görüntüle"
