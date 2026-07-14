@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { User, Key, HelpCircle, PenTool, FileCheck, ArrowRight, ArrowLeft, Download, Loader2, CheckSquare } from "lucide-react";
 import { toast } from "sonner";
@@ -16,6 +16,7 @@ const steps = [
 
 export default function ActivationWizard() {
     const [currentStep, setCurrentStep] = useState(1);
+    const containerRef = useRef<HTMLDivElement>(null);
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
@@ -56,14 +57,20 @@ export default function ActivationWizard() {
         }
         
         setCurrentStep(prev => Math.min(prev + 1, steps.length));
+        setTimeout(() => {
+            containerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
     };
 
     const handlePrev = () => {
         setCurrentStep(prev => Math.max(prev - 1, 1));
+        setTimeout(() => {
+            containerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
     };
 
     return (
-        <div className="w-full max-w-4xl mx-auto p-4 md:p-8 bg-card rounded-2xl shadow-sm border border-border mt-8">
+        <div ref={containerRef} className="w-full max-w-4xl mx-auto p-4 md:p-8 bg-card rounded-2xl shadow-sm border border-border mt-8">
             <div className="mb-8">
                 <h2 className="text-2xl font-bold text-foreground mb-2">Talep ve Beyan</h2>
                 <h3 className="text-lg text-muted-foreground">Yeni Allplan Lisansının Etkinleştirilmesi</h3>
@@ -164,7 +171,6 @@ export default function ActivationWizard() {
                                 <ul className="list-decimal pl-5 space-y-2 text-muted-foreground bg-muted p-4 rounded-lg">
                                     <li>Eğer Allplan yüklü ise <strong>Allmenu 202x &gt; Bilgi &gt; Kullanıcı Numarası</strong></li>
                                     <li>Lisans teslimatı yapıldığında tarafınıza verilen pdf dosyasında da bulabilirsiniz.</li>
-                                    <li>Allplan Connect&apos;ten hesabınıza giriş yapınız <a href="https://connect.allplan.com/index.html" target="_blank" rel="noreferrer" className="text-primary hover:underline">https://connect.allplan.com/index.html</a> &gt; En alta ADMIN &gt; Edit profile</li>
                                 </ul>
                             </div>
                         )}

@@ -10,6 +10,25 @@ export async function POST(req: Request) {
             return NextResponse.json({ error: "Eksik bilgi" }, { status: 400 });
         }
 
+        // Webhook'a (Google Sheets) gönder
+        if (process.env.GOOGLE_SHEETS_WEBHOOK_URL) {
+            try {
+                await fetch(process.env.GOOGLE_SHEETS_WEBHOOK_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        firstName, 
+                        lastName, 
+                        email, 
+                        date: new Date().toISOString() 
+                    })
+                });
+            } catch (webhookError) {
+                console.error("Webhook Error:", webhookError);
+                // Hata olsa bile e-posta gönderimine devam et
+            }
+        }
+
         const transporter = nodemailer.createTransport({
             host: process.env.SMTP_HOST,
             port: Number(process.env.SMTP_PORT),
@@ -24,21 +43,45 @@ export async function POST(req: Request) {
             }
         });
 
-        const mailOptions = {
+        // Admin Mail
+        const adminMailOptions = {
             from: `"Allplan Lisans" <${process.env.SMTP_USER}>`,
             to: "info@aluplan.com.tr",
-            subject: `Talep ve Beyan Yeni Allplan Lisansının Etkinleştirilmesi Formu dolduran kişinin adı soyadı: ${firstName} ${lastName} mail bilgisi: ${email}`,
+            subject: `Deklarasyon Formu Başvurusu: ${firstName} ${lastName}`,
             html: `
-                <h2>Yeni Lisans Etkinleştirme Talebi</h2>
+                <h2>Deklarasyon Formu Başvurusu</h2>
                 <p><strong>Ad:</strong> ${firstName}</p>
                 <p><strong>Soyad:</strong> ${lastName}</p>
                 <p><strong>E-posta:</strong> ${email}</p>
+                <br/>
+                <p><strong>📊 İstatistikler:</strong> Tüm listeyi görmek için <a href="${process.env.GOOGLE_SHEETS_VIEW_URL || '#'}">Google Sheets Tablosuna</a> tıklayabilirsiniz.</p>
             `,
         };
 
-        const info = await transporter.sendMail(mailOptions);
+        // User Mail
+        const userMailOptions = {
+            from: `"Allplan Lisans" <${process.env.SMTP_USER}>`,
+            to: email,
+            subject: `Deklarasyon Formu ve Lisans Bilgileri`,
+            html: `
+                <h2>Merhaba ${firstName} ${lastName},</h2>
+                <p>Allplan Deklarasyon Formu talebiniz (1. Aşama) alınmıştır.</p>
+                <p>Web sitemizdeki adımları tamamlayıp formu imzalayarak bize iletmeniz gerekmektedir.</p>
+                <p>Aşağıdaki bağlantıya tıklayarak deklarasyon formunun boş bir örneğini bilgisayarınıza indirebilirsiniz:</p>
+                <p><a href="https://aluplan.com.tr/docs/Declaration_Allplan_2021-06-01.pdf">Deklarasyon Formunu İndir (PDF)</a></p>
+                <br/>
+                <p>İmzaladığınız formu <a href="https://www.allplan.net.tr">destek platformumuz</a> üzerinden bize iletebilirsiniz.</p>
+                <br/>
+                <p>Saygılarımızla,<br/>Aluplan Destek Ekibi</p>
+            `,
+        };
 
-        return NextResponse.json({ success: true, messageId: info.messageId });
+        const info = await Promise.all([
+            transporter.sendMail(adminMailOptions),
+            transporter.sendMail(userMailOptions)
+        ]);
+
+        return NextResponse.json({ success: true, messageId: info[0].messageId });
     } catch (error) {
         console.error("Nodemailer Error:", error);
         return NextResponse.json({ error: "E-posta gönderilemedi" }, { status: 500 });
