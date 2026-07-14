@@ -108,7 +108,7 @@ export default function ActivationWizard() {
                         {currentStep === 1 && (
                             <div className="space-y-6">
                                 <p className="text-sm text-muted-foreground bg-muted p-4 rounded-lg border border-border">
-                                    When you submit this form, it will not automatically collect your details like name and email address unless you provide it yourself.
+                                    Bu formu gönderdiğinizde, adınız ve e-posta adresiniz gibi kişisel bilgileriniz siz kendi isteğinizle girmedikçe otomatik olarak toplanmayacaktır.
                                 </p>
                                 
                                 <div className="space-y-4">
@@ -250,7 +250,7 @@ export default function ActivationWizard() {
                                     <div className="p-4 bg-muted border border-border rounded-lg mb-6">
                                         <p className="text-sm mb-3">Örnek dokümanı incelemek için alttaki linki kullanabilirsiniz:</p>
                                         <a 
-                                            href="https://aluplan.com.tr/declaration/declaration_Allplan_ornek_pdf.jpg" 
+                                            href="/images/Declaration_Allplan_2021-06-01.jpg" 
                                             target="_blank" 
                                             rel="noreferrer"
                                             className="inline-flex items-center gap-2 text-sm bg-background border border-border px-3 py-2 rounded-md hover:bg-accent transition-colors"
