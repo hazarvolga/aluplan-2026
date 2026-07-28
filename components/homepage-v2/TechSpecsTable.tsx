@@ -62,9 +62,9 @@ export default function TechSpecsTable() {
                     </div>
 
                     <Button asChild size="lg" className="bg-foreground text-background hover:bg-foreground/90 shrink-0">
-                        <Link href="/paket-karsilastirma">
-                            Karşılaştırma Tablosuna Git <ArrowRight className="ml-2 w-4 h-4" />
-                        </Link>
+                        <a href="/docs/V2026_paket-karsilastirme-Q3-2026_R01.pdf" download="V2026_paket-karsilastirme-Q3-2026_R01.pdf" target="_blank" rel="noopener noreferrer">
+                            Karşılaştırma Tablosunu İndir (PDF) <ArrowRight className="ml-2 w-4 h-4" />
+                        </a>
                     </Button>
                 </div>
 
@@ -77,14 +77,14 @@ export default function TechSpecsTable() {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             viewport={{ once: true }}
                         >
-                            <Link href="/paket-karsilastirma">
+                            <a href="/docs/V2026_paket-karsilastirme-Q3-2026_R01.pdf" download="V2026_paket-karsilastirme-Q3-2026_R01.pdf" target="_blank" rel="noopener noreferrer">
                                 <Card className="h-full bg-card/50 backdrop-blur-sm border-border/50 hover:border-accent/40 transition-colors p-6 group cursor-pointer hover:shadow-lg hover:shadow-accent/5 flex flex-col justify-center">
                                     <h3 className={`font-bold text-xl mb-2 ${pkg.color.split(' ').pop()}`}>{pkg.title}</h3>
                                     <p className="text-muted-foreground leading-relaxed text-sm">
                                         {pkg.description}
                                     </p>
                                 </Card>
-                            </Link>
+                            </a>
                         </motion.div>
                     ))}
                 </div>
