@@ -45,8 +45,15 @@ Bilgi/
 assets/solutions/scalypso/ast-block-templates-json/
 assets/solutions/scalypso/astra-sites/
 
-# Temporary files
+# Temporary & Log files
 *.log
 *.tmp
 *.temp
+build_log.txt
+*.bak
 live-versiyon/
+
+# Sensitive & Security
+*.expect
+resendapikey.txt
+*.key

@@ -1,6 +1,0 @@
-#!/usr/bin/expect -f
-set timeout 20
-spawn ssh -o StrictHostKeyChecking=no root@46.28.238.99 "echo '---DOCKER PS---' && docker ps --format '{{.ID}} {{.Image}} {{.Names}}' && echo '---SEARCHING---' && find /var/www/vhosts -name 'package.json' -maxdepth 4 2>/dev/null"
-expect "password:"
-send "HaVoeK23!\r"
-expect eof
