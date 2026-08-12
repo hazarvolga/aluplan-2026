@@ -8,6 +8,7 @@ import {
   ExternalLink,
   Layers3,
   PanelTop,
+  PlayCircle,
   Rows3,
   SquareDashedBottom,
   Workflow,
@@ -49,6 +50,12 @@ type ModuleCard = {
   bullets: string[];
   image: StaticImageData;
   icon: typeof Building2;
+};
+
+type VideoCard = {
+  title: string;
+  description: string;
+  youtubeId: string;
 };
 
 const modules: ModuleCard[] = [
@@ -121,6 +128,45 @@ const valueProps = [
   "Allplan içinde çalışan BIM uyumlu yapı elemanları donatısı",
   "Geometri değiştiğinde kendini güncelleyen modül yaklaşımı",
   "Donatı modelleme ve detay hazırlığını saatlerden saniyelere indiren otomasyon",
+];
+
+const videos: VideoCard[] = [
+  {
+    title: "BIMFlex Allplan Column Reinforcement",
+    description:
+      "Kolon elemanlarında boyuna donatı yerleşimi ve etriye sıklaştırma bölgelerinin Allplan içinde nasıl otomatik modellendiğini izleyin.",
+    youtubeId: "1yQ_nxoQuWE",
+  },
+  {
+    title: "BIMFlex Allplan Beam Reinforcement",
+    description:
+      "Kirişlerde açıklık ve mesnet donatıları, etriyeler ve büküm detaylarının geometri değişikliklerine uyumlu hazırlanışını görün.",
+    youtubeId: "eBVa_yAQJFo",
+  },
+  {
+    title: "BIMFlex Allplan Wall Reinforcement",
+    description:
+      "Perde duvarlarda düşey, yatay, çiroz ve başlık bölgesi donatılarının tek akışta modellenmesini adım adım inceleyin.",
+    youtubeId: "Qyy_hRNkOtY",
+  },
+  {
+    title: "BIMFlex Allplan Slab Reinforcement",
+    description:
+      "Döşeme plakalarında üst mesnet ve dağıtım donatılarının komşu döşemelerle hizalı ve revizyona dayanıklı oluşturulmasını izleyin.",
+    youtubeId: "ZFjW2ArzdsE",
+  },
+  {
+    title: "BIMFlex Allplan Slab Opening Edge Reinforcement",
+    description:
+      "Merdiven, asansör ve tesisat boşlukları çevresindeki köşe takviye donatılarının otomatik eklenme sürecini görün.",
+    youtubeId: "4LlhiiWdHpg",
+  },
+  {
+    title: "BIMFlex Allplan Complex Shape Reinforcement",
+    description:
+      "Standart kalıba girmeyen karmaşık betonarme yüzeylerde U, L veya düz profilli donatı üretim akışını keşfedin.",
+    youtubeId: "gwgVeTrtcM8",
+  },
 ];
 
 export default function BimflexPage() {
@@ -257,6 +303,49 @@ export default function BimflexPage() {
                 </article>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-background px-6 py-24 md:px-12 lg:px-24">
+        <div className="mx-auto max-w-[1400px]">
+          <div className="mb-14 grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.28em] text-accent">Tanıtım Videoları</p>
+              <h2 className="mt-4 text-3xl font-black tracking-tight md:text-5xl">
+                BIMFlex modüllerini Allplan içinde çalışırken izleyin.
+              </h2>
+            </div>
+            <p className="max-w-3xl text-lg leading-8 text-muted-foreground">
+              FlexSoft videoları, her donatı modülünün Allplan iş akışında nasıl davrandığını
+              kısa ve doğrudan örneklerle gösterir. Demo öncesi hangi modülün projenize daha
+              hızlı değer katacağını görmek için iyi bir başlangıç noktasıdır.
+            </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-2">
+            {videos.map((video) => (
+              <article key={video.youtubeId} className="overflow-hidden border border-border bg-card">
+                <div className="relative aspect-video bg-black">
+                  <iframe
+                    src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}`}
+                    title={video.title}
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="absolute inset-0 h-full w-full"
+                  />
+                </div>
+                <div className="p-6">
+                  <div className="mb-4 inline-flex items-center gap-2 border border-accent/25 bg-accent/10 px-3 py-1 font-mono text-xs uppercase tracking-[0.2em] text-accent">
+                    <PlayCircle className="h-4 w-4" />
+                    Video
+                  </div>
+                  <h3 className="text-xl font-bold text-white">{video.title}</h3>
+                  <p className="mt-3 leading-7 text-muted-foreground">{video.description}</p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
