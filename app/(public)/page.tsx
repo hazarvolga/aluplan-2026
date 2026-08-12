@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import HeroV2 from "@/components/homepage-v2/HeroV2";
+import BimflexAnnouncement from "@/components/homepage-v2/BimflexAnnouncement";
 import BentoGrid from "@/components/homepage-v2/BentoGrid";
 import PathwayProductSystem from "@/components/homepage-v2/PathwayProductSystem";
 import InnovationsTeaser from "@/components/homepage-v2/InnovationsTeaser";
@@ -18,6 +19,7 @@ export default function Home() {
     return (
         <main className="min-h-screen bg-background text-foreground selection:bg-accent selection:text-accent-foreground">
             <HeroV2 />
+            <BimflexAnnouncement />
             <BentoGrid />
             <PathwayProductSystem />
             <InnovationsTeaser />

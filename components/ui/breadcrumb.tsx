@@ -25,6 +25,7 @@ const routeMapping: Record<string, string> = {
   "allplan-ultimate": "Ultimate",
   "civil": "Civil",
   "precast": "Precast",
+  "bimflex": "BIMFlex",
 };
 
 export default function Breadcrumb() {

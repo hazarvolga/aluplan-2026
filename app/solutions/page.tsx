@@ -18,6 +18,7 @@ import imgSite from "@/assets/solutions/site-planning-hero.jpg"; // Assuming exi
 import imgPlanli from "@/assets/solutions/planli-alanlar/planla-hesapla.png";
 import imgOska from "@/assets/solutions/oska/hero-banner.jpg";
 import imgBimx5 from "@/assets/solutions/oska/bimx5-section.jpg"; // Using what was found
+import imgBimflex from "@/assets/solutions/bimflex/kolon-model.png";
 
 export const metadata: Metadata = {
     title: "ALLPLAN Çözümleri | Tüm Çözümler",
@@ -144,6 +145,12 @@ const solutions = {
         title: "DİĞER ÜRÜNLER",
         icon: Package,
         items: [
+            {
+                title: "BIMFlex",
+                href: "/solutions/bimflex",
+                description: "FlexSoft tarafından geliştirilen Allplan eklenti paketi ile kolon, kiriş, perde ve döşeme donatılarını otomatik modelleyin.",
+                image: imgBimflex
+            },
             {
                 title: "Allplan BIMPLUS",
                 href: "/solutions/bimplus",
