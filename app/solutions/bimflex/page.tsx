@@ -196,13 +196,15 @@ export default function BimflexPage() {
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <Link
-                href="/contact"
+              <a
+                href="https://forms.cloud.microsoft/r/txkapxyBDn"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-3 bg-accent px-7 py-4 text-sm font-bold text-accent-foreground transition-transform hover:-translate-y-0.5"
               >
-                Teklif ve bilgi alın
+                Teklif
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
+              </a>
               <a
                 href="https://flexsoftarge.com/allplan"
                 target="_blank"
