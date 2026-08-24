@@ -409,10 +409,10 @@ const manualSearchIndex: SearchItem[] = [
     },
     {
         title: "BIMFlex",
-        description: "FlexSoft tarafından geliştirilen, Allplan için BIM uyumlu yapı elemanları donatısı ve donatı otomasyonu eklenti paketi.",
+        description: "FlexSoft ve Aluplan satış ortaklığı kapsamında Aluplan tarafından da sunulabilen, Allplan için BIM uyumlu yapı elemanları donatısı eklenti paketi.",
         url: "/solutions/bimflex",
         category: "Çözüm",
-        tags: ["bimflex", "flexsoft", "donatı", "reinforcement", "allplan", "eklenti"]
+        tags: ["bimflex", "flexsoft", "donatı", "reinforcement", "allplan", "eklenti", "satış ortaklığı"]
     },
     {
         title: "Allplan Oska İşbirliği",

@@ -148,7 +148,7 @@ const solutions = {
             {
                 title: "BIMFlex",
                 href: "/solutions/bimflex",
-                description: "FlexSoft tarafından geliştirilen Allplan eklenti paketi ile kolon, kiriş, perde ve döşeme donatılarını otomatik modelleyin.",
+                description: "FlexSoft ve Aluplan satış ortaklığı kapsamında Aluplan tarafından da sunulabilen Allplan donatı otomasyonu eklenti paketi.",
                 image: imgBimflex
             },
             {

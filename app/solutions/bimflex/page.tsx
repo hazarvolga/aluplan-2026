@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
 import {
   ArrowRight,
   BadgeCheck,
@@ -37,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "BIMFlex Allplan Eklenti Paketi",
     description:
-      "Allplan için BIM uyumlu yapı elemanları donatısı. BIMFlex satış ve bilgilendirme süreci Aluplan ekosisteminde.",
+      "Allplan için BIM uyumlu yapı elemanları donatısı. BIMFlex, FlexSoft ve Aluplan satış ortaklığı kapsamında Aluplan tarafından da sunulabilecektir.",
     url: "https://aluplan.com.tr/solutions/bimflex",
     type: "website",
   },
@@ -191,18 +190,18 @@ export default function BimflexPage() {
 
             <p className="mt-8 max-w-3xl text-lg leading-8 text-gray-300 md:text-xl">
               Allplan için BIM uyumlu yapı elemanları donatısı. FlexSoft tarafından geliştirilen
-              BIMFlex donatı otomasyonu ürün ailesinin satış hakları Aluplan tarafından üstlenildi
-              ve proje ekipleriyle Aluplan ekosisteminde buluşuyor.
+              BIMFlex donatı otomasyonu ürün ailesi, satış ortaklığı kapsamında Aluplan
+              tarafından da kullanıcılara sunulabilecektir.
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
-                href="https://forms.cloud.microsoft/r/txkapxyBDn"
+                href="https://flexsoftarge.com/allplan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-3 bg-accent px-7 py-4 text-sm font-bold text-accent-foreground transition-transform hover:-translate-y-0.5"
               >
-                Teklif
+                Demo ve lisans talebi
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
               <a
@@ -361,16 +360,18 @@ export default function BimflexPage() {
             </h2>
             <p className="mt-4 max-w-2xl leading-7 text-muted-foreground">
               Modülleri gerçek bir Allplan iş akışında incelemek veya lisanslama hakkında bilgi almak için
-              Aluplan ekibiyle iletişime geçin.
+              FlexSoft ürün sayfası üzerinden demo ve lisans talebi oluşturabilirsiniz.
             </p>
           </div>
-          <Link
-            href="/contact"
+          <a
+            href="https://flexsoftarge.com/allplan"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex shrink-0 items-center justify-center gap-3 bg-foreground px-7 py-4 text-sm font-bold text-background transition-transform hover:-translate-y-0.5"
           >
-            İletişime geç
+            FlexSoft üzerinden talep oluştur
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </Link>
+          </a>
         </div>
       </section>
     </PageWrapper>

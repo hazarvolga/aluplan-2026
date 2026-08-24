@@ -34,7 +34,7 @@ export default function BimflexAnnouncement() {
             <div>
               <div className="mb-6 flex flex-wrap items-center gap-3">
                 <span className="border border-accent/40 bg-accent/10 px-3 py-1 font-mono text-xs uppercase tracking-[0.28em] text-accent">
-                  Satış Hakları Aluplan&apos;da
+                  FlexSoft x Aluplan satış ortaklığı
                 </span>
                 <span className="text-sm text-muted-foreground">
                   FlexSoft AR-GE x Aluplan
@@ -52,9 +52,9 @@ export default function BimflexAnnouncement() {
               <p className="mt-4 max-w-2xl text-base leading-8 text-muted-foreground md:text-lg">
                 <strong className="font-semibold text-foreground">FlexSoft</strong> tarafından
                 geliştirilen <strong className="font-semibold text-foreground">BIMFlex</strong>,
-                Aluplan satış ekosistemine katılmıştır. Allplan içindeki kolon, kiriş, perde
-                duvar ve döşemelerinizi BIM uyumlu gerçek donatı nesneleriyle otomatik
-                donatılandırır.
+                satış ortaklığı kapsamında Aluplan tarafından da sunulabilecektir. Allplan
+                içindeki kolon, kiriş, perde duvar ve döşemelerinizi BIM uyumlu gerçek donatı
+                nesneleriyle otomatik donatılandırır.
               </p>
             </div>
 
