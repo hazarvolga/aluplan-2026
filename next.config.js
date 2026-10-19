@@ -106,9 +106,9 @@ const nextConfig = {
       '@': path.resolve(__dirname, './')
     }
 
-    // Add support for importing PDF and MP4 files
+    // Emit downloadable documents and videos as static assets.
     config.module.rules.push({
-      test: /\.(pdf|mp4)$/,
+      test: /\.(pdf|docx|mp4)$/,
       type: 'asset/resource',
       generator: {
         filename: 'static/chunks/[path][name].[hash][ext]'

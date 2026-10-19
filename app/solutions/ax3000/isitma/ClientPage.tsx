@@ -5,7 +5,6 @@ import SectionHeader from "@/components/sections/SectionHeader";
 import { Button } from "@/components/ui/button";
 import { Calculator, CircleDot, Droplet, Eye, GitMerge, Layers, Link2, Repeat2, Ruler, Scan, Tag, Wrench } from "lucide-react";
 import Link from "next/link";
-import ax3000Brosur from "@/assets/documents/AX3000_Brosur_V2022.pdf";
 export default function ClientPage() {
   const featuresLeft = [
     { Icon: Layers, text: "Akıllı Çizim Elemanları (2B/3B Boru Hattı Konstrüksiyonu)" },
@@ -88,7 +87,7 @@ export default function ClientPage() {
             <Button asChild variant="outline" className="w-full"><Link href="/solutions/ax3000/sprinkler">Sprinkler (Fıskiye)</Link></Button>
             <Button asChild variant="outline" className="w-full"><Link href="/solutions/ax3000/sihhi-tesisat">Sıhhi Tesisat</Link></Button>
             <div className="border-t border-border my-4"></div>
-            <Button asChild variant="default" className="w-full"><a href={ax3000Brosur} download="AX3000_Brosur_V2022.pdf">AX3000 PDF İndir</a></Button>
+            <Button asChild variant="default" className="w-full"><Link href="/products/ax3000/dokumanlar">AX3000 Dokümanları</Link></Button>
           </div>
         </div>
       </div>

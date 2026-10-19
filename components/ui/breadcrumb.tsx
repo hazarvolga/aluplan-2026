@@ -6,6 +6,8 @@ import { ChevronRight, Home } from "lucide-react";
 import { Fragment } from "react";
 
 const routeMapping: Record<string, string> = {
+  "ax3000": "AX3000",
+  "dokumanlar": "Dokümanlar",
   "solutions": "Çözümler",
   "solutions-v2": "Çözümler",
   "products": "Ürünler",

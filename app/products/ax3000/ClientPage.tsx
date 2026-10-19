@@ -69,9 +69,9 @@ export default function ClientPage() {
           variant: "outline"
         },
         {
-          text: "AX3000 Broşür İndir",
-          href: "https://ax3000.aluplan.com.tr/wp-content/uploads/2022/01/AX3000_Brosur_V2022.pdf",
-          external: true,
+          text: "AX3000 Dokümanları",
+          href: "/products/ax3000/dokumanlar",
+          external: false,
           variant: "outline"
         },
         {

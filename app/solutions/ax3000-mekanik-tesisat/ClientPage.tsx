@@ -7,7 +7,6 @@ import Link from "next/link";
 import Image from "next/image";
 import iklimImage from "@/assets/solutions/ax3000/mekanik-tesisat/iklim.png";
 import uygunImage from "@/assets/solutions/ax3000/mekanik-tesisat/uygun.jpg";
-import ax3000Brosur from "@/assets/documents/AX3000_Brosur_V2022.pdf";
 import marketingIcon from "@/assets/solutions/ax3000/mekanik-tesisat/icons/marketing.png";
 import seoIcon from "@/assets/solutions/ax3000/mekanik-tesisat/icons/seo.png";
 import ecommerceIcon from "@/assets/solutions/ax3000/mekanik-tesisat/icons/ecommerce.png";
@@ -109,7 +108,7 @@ export default function ClientPage() {
       </div>
     </section>,
     <section key="ekb" className="py-16 bg-background"><div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center"><h3 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">Enerji Kimlik Belgesi</h3><p className="text-muted-foreground mb-6 max-w-2xl mx-auto">BEP Yönetmeliğine göre çizimden hesap yapan tek çözüm</p><Button asChild size="lg"><Link href="/solutions/ax3000-yapi-fizigi">Devamını Oku</Link></Button></div></section>,
-    <section key="brosur" className="py-12 bg-background"><div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center"><Button asChild size="lg" className="bg-accent hover:bg-accent/90"><a href={ax3000Brosur} download="AX3000_Brosur_V2022.pdf">AX3000 Broşür İndir</a></Button></div></section>,
+    <section key="brosur" className="py-12 bg-background"><div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center"><Button asChild size="lg" className="bg-accent hover:bg-accent/90"><Link href="/products/ax3000/dokumanlar">AX3000 Dokümanları</Link></Button></div></section>,
     <section key="download" className="py-16 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-12">AX3000 Download</h2>

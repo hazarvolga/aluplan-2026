@@ -62,7 +62,7 @@ export default function ClientPage() {
                 <a href="https://www.youtube.com/watch?v=EXVlk83zcIs&list=PL5ma0JNNoskbikv2hCg83KVa1pvQ4fvZW" target="_blank" rel="noopener noreferrer">Youtube Kanalımız<ExternalLink className="ml-2 h-4 w-4" /></a>
               </Button>
               <Button asChild variant="outline">
-                <a href="https://ax3000.aluplan.com.tr/wp-content/uploads/2022/01/AX3000_Brosur_V2022.pdf" target="_blank" rel="noopener noreferrer">AX3000 Broşür İndir<ExternalLink className="ml-2 h-4 w-4" /></a>
+                <Link href="/products/ax3000/dokumanlar">AX3000 Dokümanları</Link>
               </Button>
             </div>
           </div>

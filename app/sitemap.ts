@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/products/allplan-ultimate",
     "/products/architecture",
     "/products/ax3000",
+    "/products/ax3000/dokumanlar",
     "/products/bimplus-signup",
     "/products/civil",
     "/products/partner-solutions",

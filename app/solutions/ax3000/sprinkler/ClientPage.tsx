@@ -3,7 +3,6 @@ import AddonDetailTemplate from "@/components/templates/AddonDetailTemplate";
 import SectionHeader from "@/components/sections/SectionHeader";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import ax3000Brosur from "@/assets/documents/AX3000_Brosur_V2022.pdf";
 export default function ClientPage() {
   const features = [
     "Soğuk Yükü Hesabı",
@@ -29,7 +28,7 @@ export default function ClientPage() {
             <Button asChild variant="outline" className="w-full"><Link href="/solutions/ax3000/sprinkler">Sprinkler (Fıskiye)</Link></Button>
             <Button asChild variant="outline" className="w-full"><Link href="/solutions/ax3000/sihhi-tesisat">Sıhhi Tesisat</Link></Button>
             <div className="border-t border-border my-4"></div>
-            <Button asChild variant="default" className="w-full"><a href={ax3000Brosur} download="AX3000_Brosur_V2022.pdf">AX3000 PDF İndir</a></Button>
+            <Button asChild variant="default" className="w-full"><Link href="/products/ax3000/dokumanlar">AX3000 Dokümanları</Link></Button>
           </div>
         </div>
       </div>
@@ -47,7 +46,7 @@ export default function ClientPage() {
         </div>
       </div>
     </section>,
-    <section key="download" className="py-12 bg-background"><div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center"><Button asChild size="lg" className="bg-accent hover:bg-accent/90"><a href={ax3000Brosur} download="AX3000_Brosur_V2022.pdf">AX3000 PDF İndir</a></Button></div></section>,
+    <section key="download" className="py-12 bg-background"><div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center"><Button asChild size="lg" className="bg-accent hover:bg-accent/90"><Link href="/products/ax3000/dokumanlar">AX3000 Dokümanları</Link></Button></div></section>,
   ];
   return (
     <AddonDetailTemplate
