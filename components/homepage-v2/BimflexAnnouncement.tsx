@@ -18,18 +18,18 @@ const previewImages = [
 
 export default function BimflexAnnouncement() {
   return (
-    <section className="relative overflow-hidden bg-background px-6 py-12 text-foreground md:px-12 lg:px-24">
+    <section className="relative overflow-hidden bg-background text-foreground">
       <motion.div
         initial={{ opacity: 0, y: 28 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-        className="relative mx-auto max-w-[1400px] overflow-hidden border border-white/10 bg-[#090D12] shadow-2xl shadow-black/30"
+        className="relative w-full overflow-hidden border border-white/10 bg-[#090D12] shadow-2xl shadow-black/30"
       >
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(180deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:48px_48px] opacity-30" />
         <div className="absolute -right-24 top-[-140px] h-80 w-80 rounded-full bg-accent/20 blur-3xl" />
 
-        <div className="relative grid gap-10 p-6 md:p-10 lg:grid-cols-[1.05fr_0.95fr] lg:p-12">
+        <div className="relative mx-auto grid max-w-[1400px] gap-10 p-6 md:p-10 lg:grid-cols-[1.05fr_0.95fr] lg:p-12">
           <div className="flex flex-col justify-between gap-10">
             <div>
               <div className="mb-6 flex flex-wrap items-center gap-3">
@@ -41,7 +41,7 @@ export default function BimflexAnnouncement() {
                 </span>
               </div>
 
-              <h2 className="max-w-4xl text-3xl font-black leading-[0.95] tracking-tight md:text-5xl lg:text-6xl">
+              <h2 className="max-w-4xl text-2xl font-bold leading-tight tracking-tight md:text-3xl lg:text-4xl">
                 Allplan için BIM uyumlu yapı elemanları donatısı
               </h2>
 

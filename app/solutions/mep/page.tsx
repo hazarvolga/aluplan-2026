@@ -1,4 +1,9 @@
 "use client"
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import ax3000Ventilation from "@/assets/solutions/ax3000/ventilation.jpg";
 import EnhancedSolutionTemplate from "@/components/templates/EnhancedSolutionTemplate";
 import SolutionHero from "@/components/sections/SolutionHero";
 import PostHeroSection from "@/components/sections/PostHeroSection";
@@ -87,6 +92,36 @@ const preWorkflowSection = (
   <WorkflowTabsTemplate title="MEP Mühendisliği İş akışları" categories={mepCategories} />
 );
 
+const ax3000Section = (
+  <section aria-labelledby="ax3000-cta-title" className="border-y border-border bg-muted/30 py-16 md:py-24">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+        <div>
+          <p className="mb-4 font-mono text-sm uppercase tracking-widest text-accent">ALLPLAN + AX3000</p>
+          <h2 id="ax3000-cta-title" className="mb-5 font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+            MEP projeleriniz için AX3000’i keşfedin
+          </h2>
+          <p className="mb-8 max-w-xl text-lg leading-relaxed text-muted-foreground">
+            Havalandırma, ısıtma, sıhhi tesisat ve elektrik tasarımına yönelik AX3000 modüllerini inceleyin.
+            Ürün özelliklerine ve teknik dokümanlara ulaşın.
+          </p>
+          <div className="flex flex-col items-start gap-5 sm:flex-row sm:flex-wrap sm:items-center">
+            <Button asChild size="lg">
+              <Link href="/products/ax3000">AX3000’i İncele <ArrowRight aria-hidden="true" /></Link>
+            </Button>
+            <Link href="/products/ax3000/dokumanlar" className="text-sm font-medium text-accent underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+              Broşür ve Teknik Dokümanlar
+            </Link>
+          </div>
+        </div>
+        <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-lg">
+          <Image src={ax3000Ventilation} alt="AX3000 ile modellenmiş üç boyutlu havalandırma tesisatı" className="h-auto w-full" sizes="(max-width: 1023px) 100vw, 50vw" />
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
 const postHeroSection = (
   <PostHeroSection
     title="ALLPLAN – MEP MÜHENDİSLİĞİ İÇİN BIM ÇÖZÜMLERİ"
@@ -122,6 +157,7 @@ export default function Page() {
       reasons={reasons}
       statsVariant="animated"
       preWorkflowSection={preWorkflowSection}
+      bottomSection={ax3000Section}
       showCta={false}
     />
   );

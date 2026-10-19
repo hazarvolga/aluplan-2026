@@ -4,6 +4,7 @@ import InfoMediaTwoColumn from "@/components/sections/InfoMediaTwoColumn";
 import SectionHeader from "@/components/sections/SectionHeader";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { ArrowRight, FileText } from "lucide-react";
 import Image from "next/image";
 import iklimImage from "@/assets/solutions/ax3000/mekanik-tesisat/iklim.png";
 import uygunImage from "@/assets/solutions/ax3000/mekanik-tesisat/uygun.jpg";
@@ -108,19 +109,21 @@ export default function ClientPage() {
       </div>
     </section>,
     <section key="ekb" className="py-16 bg-background"><div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center"><h3 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">Enerji Kimlik Belgesi</h3><p className="text-muted-foreground mb-6 max-w-2xl mx-auto">BEP Yönetmeliğine göre çizimden hesap yapan tek çözüm</p><Button asChild size="lg"><Link href="/solutions/ax3000-yapi-fizigi">Devamını Oku</Link></Button></div></section>,
-    <section key="brosur" className="py-12 bg-background"><div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center"><Button asChild size="lg" className="bg-accent hover:bg-accent/90"><Link href="/products/ax3000/dokumanlar">AX3000 Dokümanları</Link></Button></div></section>,
-    <section key="download" className="py-16 bg-background">
+    <section key="documents" aria-labelledby="ax3000-documents-title" className="border-y border-border bg-muted/30 py-16 md:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-12">AX3000 Download</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          <div className="space-y-4">
-            <Button asChild variant="outline" className="w-full bg-card text-foreground hover:bg-muted"><a href="https://aluplan-my.sharepoint.com/:f:/g/personal/melih_aluplan_com_tr/ElgDJKYY5EVBrY2pHMToyhUBYEEzBn_AG5f0w8SCCQm9fA?e=EVV4CZ" target="_blank" rel="noopener noreferrer">Download AX3000</a></Button>
-            <Button asChild variant="outline" className="w-full bg-card text-foreground hover:bg-muted"><a href="https://aluplan-my.sharepoint.com/:f:/g/personal/melih_aluplan_com_tr/Eq5wXLCQwDFBp588TW4C0yoBp2uvUNrhGmseafJkoXwWvA?e=cWEqN3" target="_blank" rel="noopener noreferrer">Araçlar</a></Button>
-          </div>
-          <div className="space-y-4">
-            <Button asChild variant="outline" className="w-full bg-card text-foreground hover:bg-muted"><a href="https://aluplan-my.sharepoint.com/:f:/g/personal/melih_aluplan_com_tr/ElPxUBlhESBAuSP9lKIa0lABXJFx9lzngcSPJEdzRtWJ7Q?e=OUMpiG" target="_blank" rel="noopener noreferrer">Dökümanlar AX3000</a></Button>
-            <Button asChild variant="outline" className="w-full bg-card text-foreground hover:bg-muted"><a href="https://aluplan-my.sharepoint.com/:f:/g/personal/melih_aluplan_com_tr/EqEVBfMIy4tKs8ETfRVao1wBWVS5qZdREQ806SImJJQ91Q?e=UmDTIZ" target="_blank" rel="noopener noreferrer">Video</a></Button>
-          </div>
+        <div className="mx-auto max-w-3xl text-center">
+          <FileText className="mx-auto mb-5 h-10 w-10 text-accent" aria-hidden="true" />
+          <p className="mb-3 font-mono text-xs uppercase tracking-widest text-accent">AX3000 Doküman Merkezi</p>
+          <h2 id="ax3000-documents-title" className="mb-5 font-display text-3xl font-bold text-foreground md:text-4xl">
+            Broşürler ve teknik dokümanlar tek yerde
+          </h2>
+          <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
+            AX3000 modüllerini ve teknik fonksiyonlarını inceleyin.
+            Ürün broşürlerini ve fonksiyon açıklamalarını PDF veya Word formatında indirin.
+          </p>
+          <Button asChild size="lg">
+            <Link href="/products/ax3000/dokumanlar">AX3000 Dokümanları <ArrowRight aria-hidden="true" /></Link>
+          </Button>
         </div>
       </div>
     </section>,

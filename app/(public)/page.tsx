@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import HeroQuickLinks from "@/components/homepage-v2/HeroQuickLinks";
 import HeroV2 from "@/components/homepage-v2/HeroV2";
 import BimflexAnnouncement from "@/components/homepage-v2/BimflexAnnouncement";
 import BentoGrid from "@/components/homepage-v2/BentoGrid";
@@ -19,6 +20,7 @@ export default function Home() {
     return (
         <main className="min-h-screen bg-background text-foreground selection:bg-accent selection:text-accent-foreground">
             <HeroV2 />
+            <HeroQuickLinks />
             <BimflexAnnouncement />
             <BentoGrid />
             <PathwayProductSystem />

@@ -1,7 +1,5 @@
 "use client"
-import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowRight, Play, ChevronDown } from "lucide-react";
 import { useRef } from "react";
 
 // Data Particles Configuration
@@ -33,7 +31,7 @@ const HeroV2 = () => {
     const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
     return (
-        <div ref={containerRef} className="relative h-screen w-full overflow-hidden bg-background text-foreground selection:bg-accent selection:text-accent-foreground">
+        <div ref={containerRef} className="relative w-full overflow-hidden bg-background text-foreground selection:bg-accent selection:text-accent-foreground">
             {/* Background Video Layer */}
             <motion.div
                 style={{ y, opacity }}
@@ -103,7 +101,7 @@ const HeroV2 = () => {
             </motion.div>
 
             {/* Content Layer */}
-            <div className="relative z-10 flex h-full flex-col justify-center px-6 md:px-12 lg:px-24">
+            <div className="relative z-10 flex min-h-[320px] flex-col justify-center px-6 py-10 md:min-h-[380px] md:px-12 md:py-12 lg:min-h-[420px] lg:px-24">
                 <motion.div
                     initial={{ opacity: 0, y: 100 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -111,12 +109,12 @@ const HeroV2 = () => {
                     className="max-w-[1400px]"
                 >
                     {/* Eyebrow */}
-                    <div className="mb-6 flex items-center gap-2 text-accent font-mono text-lg tracking-widest uppercase">
+                    <div className="mb-4 flex items-center gap-2 text-accent font-mono text-base tracking-widest uppercase">
                         / ALLPLAN 2026
                     </div>
 
                     {/* Super Big Typography */}
-                    <h1 className="font-[900] text-[7vw] leading-[0.9] tracking-tighter mix-blend-normal dark:mix-blend-screen md:text-[5vw] max-w-5xl text-foreground">
+                    <h1 className="font-[900] text-[6.5vw] leading-[0.9] tracking-tighter mix-blend-normal dark:mix-blend-screen md:text-[4.5vw] max-w-5xl text-foreground">
                         DAHA İYİ BİR GELECEK
                         <br />
                         <span className="text-muted-foreground">
@@ -124,52 +122,17 @@ const HeroV2 = () => {
                         </span>
                     </h1>
 
-                    {/* Subtitle & CTA */}
-                    <div className="mt-12 max-w-2xl">
-                        <p className="text-xl md:text-2xl font-light text-muted-foreground leading-relaxed mb-8">
+                    {/* Subtitle */}
+                    <div className="mt-6 max-w-2xl">
+                        <p className="text-lg md:text-xl font-light text-muted-foreground leading-relaxed">
                             Yenilikçi AEC iş akışları, otomasyon ve bulut tabanlı iş birliği ile daha başarılı projeler.
                         </p>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 animate-fade-in-up delay-300">
-                            <Link href="/products/allplan-2026-yenilikler" className="group flex items-center justify-center gap-3 bg-foreground text-background px-8 py-4 transition-transform hover:scale-105">
-                                <span className="font-bold tracking-tight">
-                                    Yenilikleri İncele
-                                </span>
-                                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-                            </Link>
 
-                            <Link href="/products/allplan-2026" className="group flex items-center justify-center gap-3 border border-foreground/20 bg-foreground/5 px-8 py-4 backdrop-blur-md transition-all hover:bg-foreground/10 hover:scale-105 text-foreground">
-                                <Play className="h-5 w-5 fill-current" />
-                                <span className="font-bold tracking-tight">ALLPLAN 2026 İncele</span>
-                            </Link>
-
-                            <Link href="/solutions/allplan-bulut-hizmetleri" className="group flex items-center justify-center gap-3 border border-foreground/20 bg-foreground/5 px-8 py-4 backdrop-blur-md transition-all hover:bg-foreground/10 hover:scale-105 text-foreground">
-                                <span className="font-bold tracking-tight">ALLPLAN CLOUD VE Genel Geliştirmeler</span>
-                            </Link>
-
-                            <Link href="/products/allplan-cloud-services" className="group flex items-center justify-center gap-3 border border-foreground/20 bg-foreground/5 px-8 py-4 backdrop-blur-md transition-all hover:bg-foreground/10 hover:scale-105 text-foreground">
-                                <span className="font-bold tracking-tight">ALLPLAN CLOUD Hizmetleri</span>
-                            </Link>
-                        </div>
-                        <div className="mt-4 animate-fade-in-up delay-300">
-                            <Link href="https://aluplan.com.tr/solutions-v2/training/video-library" className="group flex items-center justify-center gap-3 border border-foreground/20 bg-foreground/5 px-8 py-4 backdrop-blur-md transition-all hover:bg-foreground/10 hover:scale-105 text-foreground text-center">
-                                <Play className="h-5 w-5 fill-current shrink-0" />
-                                <span className="font-bold tracking-tight">Eğitim Videoları</span>
-                            </Link>
-                        </div>
                     </div>
                 </motion.div>
 
-                {/* Scroll Indicator */}
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 1.5, duration: 1 }}
-                    className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-                >
-                    <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Keşfet</span>
-                    <ChevronDown className="h-6 w-6 animate-bounce text-muted-foreground" />
-                </motion.div>
+
             </div>
 
             {/* Decorative Grid Lines */}
