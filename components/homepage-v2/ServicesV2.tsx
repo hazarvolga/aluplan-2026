@@ -64,7 +64,7 @@ const services = [
         title: "Destek Platformu",
         description: "Ticket sistemi üzerinden destek taleplerinizi oluşturun ve süreçlerinizi kolayca takip edin.",
         status: "active",
-        href: "https://aluplan.net.tr",
+        href: "https://allplan.net.tr/",
         cta: "Talep Oluştur"
     },
     {

@@ -78,7 +78,7 @@ export default function ClientPage() {
                 <h3 className="font-display text-2xl font-bold mb-4">Teknik Destek</h3>
                 <p className="text-muted-foreground mb-6 flex-grow">Mevcut müşterilerimiz için teknik destek hattımız aktif.</p>
                 <Button variant="outline" className="w-full" asChild>
-                  <a href="https://aluplan.net.tr" target="_blank" rel="noopener noreferrer">
+                  <a href="https://allplan.net.tr/" target="_blank" rel="noopener noreferrer">
                     Destek Merkezine Git
                   </a>
                 </Button>
